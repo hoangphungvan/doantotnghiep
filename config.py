@@ -3,9 +3,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://openrouter.ai/api/v1")
-LLM_MODEL = os.getenv("LLM_MODEL", "google/gemini-2.0-flash-exp:free")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://generativelanguage.googleapis.com/v1beta/openai/")
+# LLM_MODEL = os.getenv("LLM_MODEL", "gemini-2.0-flash")
+LLM_MODEL = os.getenv("LLM_MODEL", "gemini-3.1-flash-lite")
+GEMINI_RPM_LIMIT = 15  # Free tier: 15 requests/minute cho gemini-2.0-flash
 
 EMBEDDING_MODEL_NAME = os.getenv("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
 

@@ -1,5 +1,5 @@
 """
-Module trích xuất thực thể từ văn bản CV/JD sử dụng LLM API (OpenRouter).
+Module trích xuất thực thể từ văn bản CV/JD sử dụng Google Gemini API.
 Trích xuất 6 loại: soft_skills, hard_skills, education,
 field_of_education, industry_sector, role.
 """
@@ -20,17 +20,15 @@ def _print(*args, **kwargs):
     """Print with flush for immediate output."""
     print(*args, **kwargs, flush=True)
 
-FALLBACK_MODELS = [
-    "meta-llama/llama-3.3-70b-instruct:free",
-    "google/gemma-4-31b-it:free",
-    "nousresearch/hermes-3-llama-3.1-405b:free",
-    "google/gemma-4-26b-a4b-it:free",
-]
+# Free tier quota: 15 RPM cho gemini-2.0-flash.
+# Tất cả Gemini models dùng chung quota theo API key nên không fallback giữa chúng.
+# Chỉ retry với cùng model và chờ đủ 60s để quota reset.
+RETRY_WAIT_SECONDS = 62  # chờ hơn 60s để đảm bảo Gemini reset quota
 
 client = OpenAI(
-    api_key=config.OPENAI_API_KEY,
+    api_key=config.GEMINI_API_KEY,
     base_url=config.OPENAI_BASE_URL,
-    timeout=60.0,
+    timeout=120.0,
 )
 
 EXTRACTION_PROMPT = """Bạn là chuyên gia phân tích CV và Job Description (JD).
@@ -80,21 +78,14 @@ def read_document(file_path: str) -> str:
 
 def extract_entities(text: str, model: Optional[str] = None, max_retries: int = 3) -> dict:
     """
-    Gọi LLM API để trích xuất 6 loại thực thể từ văn bản.
-    Tự động retry với model khác nếu bị rate limit.
+    Gọi Gemini API để trích xuất 6 loại thực thể từ văn bản.
+    Khi bị rate limit (429), chờ 62s rồi retry (đủ để Gemini reset quota 1 phút).
 
     Returns:
         dict với keys: soft_skills, hard_skills, education,
                        field_of_education, industry_sector, role
     """
-    models_to_try = [model or config.LLM_MODEL] + FALLBACK_MODELS
-    seen = set()
-    unique_models = []
-    for m in models_to_try:
-        if m not in seen:
-            seen.add(m)
-            unique_models.append(m)
-
+    current_model = model or config.LLM_MODEL
     prompt = EXTRACTION_PROMPT.format(text=text[:8000])
     messages = [
         {"role": "system", "content": "Bạn là trợ lý AI chuyên trích xuất thông tin có cấu trúc. Luôn trả về JSON thuần túy."},
@@ -102,31 +93,31 @@ def extract_entities(text: str, model: Optional[str] = None, max_retries: int = 
     ]
 
     raw = None
-    for current_model in unique_models:
-        for attempt in range(max_retries):
-            try:
-                response = client.chat.completions.create(
-                    model=current_model,
-                    messages=messages,
-                    temperature=0.1,
-                    max_tokens=2000,
-                )
-                raw = response.choices[0].message.content.strip()
-                break
-            except Exception as e:
-                err_str = str(e)
-                if "429" in err_str or "rate" in err_str.lower():
-                    wait = 2 ** (attempt + 1)
-                    _print(f"[WARN] Rate limited on {current_model}, retry in {wait}s...")
-                    time.sleep(wait)
-                else:
-                    _print(f"[WARN] Error with {current_model}: {err_str[:200]}")
-                    break
-        if raw:
+    for attempt in range(1, max_retries + 1):
+        try:
+            _print(f"[INFO] Gọi {current_model} (lần {attempt}/{max_retries})...")
+            response = client.chat.completions.create(
+                model=current_model,
+                messages=messages,
+                temperature=0.1,
+                max_tokens=2000,
+            )
+            raw = response.choices[0].message.content.strip()
+            _print(f"[INFO] Thành công!")
             break
+        except Exception as e:
+            err_str = str(e)
+            if "429" in err_str or "rate" in err_str.lower() or "quota" in err_str.lower():
+                if attempt < max_retries:
+                    _print(f"[WARN] Rate limit (429) — chờ {RETRY_WAIT_SECONDS}s để Gemini reset quota...")
+                    time.sleep(RETRY_WAIT_SECONDS)
+                else:
+                    _print(f"[ERROR] Đã thử {max_retries} lần, vẫn bị rate limit. Trả về entity rỗng.")
+            else:
+                _print(f"[ERROR] Lỗi không phải rate limit: {err_str[:300]}")
+                break
 
     if not raw:
-        _print("[ERROR] All models failed, returning empty entities.")
         return {etype: [] for etype in config.ENTITY_TYPES}
 
     json_match = re.search(r'\{[\s\S]*\}', raw)
