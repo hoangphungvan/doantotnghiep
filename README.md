@@ -88,14 +88,6 @@ AI GCN/
 └── models/                 # Saved models
 ```
 
-## Cấu hình (.env)
-
-```env
-OPENAI_API_KEY=sk-or-v1-xxx        # OpenRouter API key
-OPENAI_BASE_URL=https://openrouter.ai/api/v1
-LLM_MODEL=google/gemini-2.0-flash-exp:free
-EMBEDDING_MODEL=all-MiniLM-L6-v2
-```
 
 ## Thông số kỹ thuật
 
