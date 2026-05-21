@@ -107,7 +107,8 @@ def train(data_list: list,
           lr: float = None,
           device: Optional[torch.device] = None,
           save_path: str = None,
-          patience: int = 15) -> tuple:
+          patience: int = 15,
+          pos_weight: float = None) -> tuple:
     """
     Pipeline huấn luyện đầy đủ.
 
@@ -117,6 +118,7 @@ def train(data_list: list,
         val_ratio: Tỷ lệ validation set
         num_epochs: Số epoch huấn luyện
         batch_size: Kích thước batch
+        pos_weight: Trọng số cho class positive (mặc định config.POS_WEIGHT)
         lr: Learning rate
         device: CPU hoặc CUDA
         save_path: Đường dẫn lưu model tốt nhất
@@ -151,7 +153,7 @@ def train(data_list: list,
     model = GCNModel(input_dim=input_dim).to(device)
     optimizer = Adam(model.parameters(), lr=lr, weight_decay=config.WEIGHT_DECAY)
     scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=5)
-    loss_fn = get_loss_fn().to(device)
+    loss_fn = get_loss_fn(pos_weight=pos_weight).to(device)
 
     best_val_loss = float('inf')
     best_epoch = 0
@@ -214,17 +216,47 @@ def train(data_list: list,
 
 
 if __name__ == "__main__":
-    from dataset import create_sample_dataset
+    import argparse
+    from prepare_training_data import load_all_graphs
 
-    print("=== Training với sample data ===")
-    dataset = create_sample_dataset(num_samples=50, positive_ratio=0.1)
+    parser = argparse.ArgumentParser(description="Train GCN model từ dữ liệu đã chuẩn bị")
+    parser.add_argument("--epochs",    type=int,   default=config.NUM_EPOCHS)
+    parser.add_argument("--batch",     type=int,   default=config.BATCH_SIZE)
+    parser.add_argument("--lr",        type=float, default=config.LEARNING_RATE)
+    parser.add_argument("--patience",  type=int,   default=20)
+    parser.add_argument("--save",      type=str,   default=None,
+                        help="Đường dẫn lưu model (mặc định: models/best_model.pt)")
+    args = parser.parse_args()
 
-    input_dim = dataset[0].x.shape[1]
-    print(f"Input dim: {input_dim}")
+    graphs = load_all_graphs()
 
+    if len(graphs) == 0:
+        print("[ERROR] Chưa có dữ liệu training.")
+        print("  Chạy trước: python prepare_training_data.py --mode file")
+        print("           hoặc: python prepare_training_data.py --mode text")
+        raise SystemExit(1)
+
+    labels  = [g.y.item() for g in graphs]
+    n_pos   = sum(1 for l in labels if l == 1.0)
+    n_neg   = len(labels) - n_pos
+    print(f"\n[Train] Dataset: {len(graphs)} graphs — MATCH: {n_pos}, NOT MATCH: {n_neg}")
+
+    if n_pos == 0 or n_neg == 0:
+        print("[ERROR] Dataset cần có cả mẫu MATCH (1) và NOT MATCH (0).")
+        raise SystemExit(1)
+
+    # pos_weight tự động theo tỷ lệ thực tế
+    auto_pos_weight = n_neg / n_pos
+    print(f"[Train] Auto pos_weight = {auto_pos_weight:.1f} (neg/pos ratio)")
+
+    input_dim = graphs[0].x.shape[1]
     model, history = train(
-        data_list=dataset.data_list,
+        data_list=graphs,
         input_dim=input_dim,
-        num_epochs=30,
-        batch_size=8,
+        num_epochs=args.epochs,
+        batch_size=args.batch,
+        lr=args.lr,
+        save_path=args.save,
+        patience=args.patience,
+        pos_weight=auto_pos_weight,
     )

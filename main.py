@@ -245,8 +245,23 @@ def main():
         "--mode",
         type=str,
         default="demo",
-        choices=["demo", "train", "predict", "extract", "pipeline"],
-        help="Chế độ chạy: demo, train, predict, extract, pipeline",
+        choices=["demo", "predict", "extract", "pipeline", "prepare", "train"],
+        help=(
+            "demo     : Test nhanh với data ngẫu nhiên\n"
+            "prepare  : Thu thập & chuẩn bị training data (text hoặc file PDF)\n"
+            "train    : Huấn luyện model từ data đã chuẩn bị\n"
+            "predict  : Dự đoán tương tác\n"
+            "extract  : Test trích xuất thực thể LLM\n"
+            "pipeline : Full pipeline demo với LLM\n"
+        ),
+    )
+    parser.add_argument(
+        "--input", type=str, choices=["text", "file"], default="file",
+        help="(mode=prepare) Kiểu nhập: text hoặc file",
+    )
+    parser.add_argument(
+        "--csv", type=str, default=None,
+        help="(mode=prepare --input file) CSV có sẵn để batch process",
     )
     args = parser.parse_args()
 
@@ -256,8 +271,20 @@ def main():
         run_extract_demo()
     elif args.mode == "pipeline":
         run_pipeline()
+    elif args.mode == "prepare":
+        from prepare_training_data import collect_text_mode, collect_file_mode
+        if args.input == "text":
+            collect_text_mode()
+        else:
+            collect_file_mode(csv_path=args.csv)
     elif args.mode == "train":
-        run_train_from_csv()
+        import sys
+        # Chuyển args còn lại cho train.py
+        sys.argv = ["train.py"]
+        import train as train_module
+        # Chạy __main__ block của train.py
+        import importlib, runpy
+        runpy.run_module("train", run_name="__main__")
     elif args.mode == "predict":
         from predict import predict_interactive
         predict_interactive()

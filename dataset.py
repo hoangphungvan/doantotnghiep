@@ -16,7 +16,7 @@ from torch_geometric.data import Dataset, Data
 from tqdm import tqdm
 
 import config
-from entity_extractor import extract_entities, read_document
+from entity_extractor import extract_from_file
 from embedding_generator import EmbeddingGenerator
 from graph_builder import build_graph
 
@@ -101,11 +101,9 @@ class CJMDataset(Dataset):
             label = float(row["label"])
 
             try:
-                cv_text = read_document(cv_path)
-                jd_text = read_document(jd_path)
-
-                cv_entities = extract_entities(cv_text)
-                jd_entities = extract_entities(jd_text)
+                # extract_from_file tự chọn text mode hay Vision mode
+                cv_entities = extract_from_file(cv_path)
+                jd_entities = extract_from_file(jd_path)
 
                 cv_main, cv_feats = self.embedding_gen.build_node_features(cv_entities)
                 jd_main, jd_feats = self.embedding_gen.build_node_features(jd_entities)

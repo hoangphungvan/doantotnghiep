@@ -10,7 +10,7 @@ import torch
 from torch_geometric.data import Data
 
 import config
-from entity_extractor import extract_entities, read_document
+from entity_extractor import extract_entities, extract_from_file, normalize_path
 from embedding_generator import EmbeddingGenerator
 from graph_builder import build_graph
 from model import GCNModel
@@ -60,10 +60,13 @@ class CJMPredictor:
         return self._predict_from_entities(cv_entities, jd_entities)
 
     def predict_from_files(self, cv_path: str, jd_path: str) -> dict:
-        """Dự đoán từ file CV và JD."""
-        cv_text = read_document(cv_path)
-        jd_text = read_document(jd_path)
-        return self.predict_from_text(cv_text, jd_text)
+        """
+        Dự đoán từ file CV và JD.
+        Tự động chọn text mode hoặc Vision mode tùy loại PDF.
+        """
+        cv_entities = extract_from_file(cv_path)
+        jd_entities = extract_from_file(jd_path)
+        return self._predict_from_entities(cv_entities, jd_entities)
 
     def predict_from_entities(self, cv_entities: dict, jd_entities: dict) -> dict:
         """Dự đoán từ entities đã trích xuất sẵn."""
@@ -155,8 +158,8 @@ def predict_interactive():
             result = predictor.predict_from_text(cv_text, jd_text)
 
         elif choice == "2":
-            cv_path = input("Đường dẫn file CV: ").strip()
-            jd_path = input("Đường dẫn file JD: ").strip()
+            cv_path = normalize_path(input("Đường dẫn file CV: "))
+            jd_path = normalize_path(input("Đường dẫn file JD: "))
             result = predictor.predict_from_files(cv_path, jd_path)
 
         elif choice == "3":

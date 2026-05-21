@@ -21,11 +21,28 @@ ENTITY_TYPES = [
 ]
 NUM_ENTITY_TYPES = len(ENTITY_TYPES)
 
+# Trọng số cho từng loại entity — ảnh hưởng đến edge weight trong đồ thị.
+# Nguyên tắc: loại entity càng quyết định khả năng match → trọng số càng cao.
+# role: quan trọng nhất — sai level (fresher vs senior) là lỗi nghiêm trọng.
+# hard_skills: kỹ năng chuyên môn — phải khớp mới đủ điều kiện.
+# field_of_education: ngành học — quan trọng với vị trí chuyên sâu.
+# industry_sector: lĩnh vực ngành — ảnh hưởng đến sự phù hợp văn hóa.
+# education: trình độ — quan trọng nhưng có thể linh hoạt hơn.
+# soft_skills: ít quyết định nhất — hầu như JD nào cũng yêu cầu tương tự.
+ENTITY_WEIGHTS = {
+    "role":              3.0,
+    "hard_skills":       2.5,
+    "field_of_education": 2.0,
+    "industry_sector":   1.5,
+    "education":         1.5,
+    "soft_skills":       1.0,
+}
+
 NUM_NODES = 2 + NUM_ENTITY_TYPES * 2  # 14 nodes: 2 main + 6 candidate + 6 JD
 
 NODE_CANDIDATE = 0
 NODE_JD = 1
-CANDIDATE_ENTITY_START = 2       # nodes 2-7
+CANDIDATE_ENTITY_START = 2           # nodes 2-7
 JD_ENTITY_START = 2 + NUM_ENTITY_TYPES  # nodes 8-13
 
 HIDDEN_DIM = 128
