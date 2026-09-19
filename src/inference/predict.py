@@ -4,16 +4,21 @@ Pipeline dự đoán: đánh giá mức độ phù hợp giữa CV và JD.
 
 import os
 import json
+import sys
 from typing import Optional
 
 import torch
 from torch_geometric.data import Data
 
+# Hỗ trợ chạy trực tiếp: python src/inference/predict.py (từ thư mục gốc dự án)
+if __package__ in (None, ""):
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+
 import config
-from entity_extractor import extract_entities, extract_from_file, normalize_path
-from embedding_generator import EmbeddingGenerator
-from graph_builder import build_graph
-from model import GCNModel
+from src.extraction.entity_extractor import extract_entities, extract_from_file, normalize_path
+from src.representation.embedding_generator import EmbeddingGenerator
+from src.representation.graph_builder import build_graph
+from src.modeling.model import GCNModel, target_to_grade
 
 
 class CJMPredictor:
@@ -83,11 +88,14 @@ class CJMPredictor:
 
         logits = self.model(data)
         score = torch.sigmoid(logits).item()
-        label = "MATCH" if score >= 0.5 else "NOT MATCH"
+        grade = target_to_grade(score)
+        match = "MATCH" if grade >= config.RELEVANT_GRADE else "NOT MATCH"
 
         return {
             "score": round(score, 4),
-            "label": label,
+            "grade": grade,
+            "grade_label": config.GRADE_LABELS[grade],
+            "label": match,
             "cv_entities": cv_entities,
             "jd_entities": jd_entities,
         }
@@ -171,6 +179,7 @@ def predict_interactive():
         print("\n" + "=" * 40)
         print(f"  KẾT QUẢ: {result['label']}")
         print(f"  Điểm phù hợp: {result['score']}")
+        print(f"  Mức phù hợp: {result['grade']}/3 — {result['grade_label']}")
         print("=" * 40)
 
         if "cv_entities" in result:

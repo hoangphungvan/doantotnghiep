@@ -22,7 +22,7 @@ import config
 
 def run_extract_demo():
     """Demo trích xuất thực thể bằng LLM."""
-    from entity_extractor import extract_entities
+    from src.extraction.entity_extractor import extract_entities
 
     sample_cv = """
     Nguyễn Văn Minh - Senior Software Engineer
@@ -83,21 +83,22 @@ def run_extract_demo():
 
 def run_demo():
     """Demo toàn bộ pipeline với dữ liệu mẫu (không cần LLM API)."""
-    from dataset import create_sample_dataset
-    from train import train
+    from src.modeling.dataset import create_sample_dataset
+    from src.modeling.train import train
 
     print("=" * 60)
     print("  DEMO: CANDIDATE-JOB MATCHING GCN")
     print("=" * 60)
 
-    print("\n[1/3] Tạo sample dataset...")
-    dataset = create_sample_dataset(num_samples=50, positive_ratio=0.1)
+    print("\n[1/3] Tạo sample dataset (mỗi CV ghép với nhiều JD, grade 0-3)...")
+    dataset = create_sample_dataset(num_queries=10, jds_per_query=5)
     print(f"  Dataset size: {len(dataset)}")
     print(f"  Sample graph: {dataset[0]}")
     print(f"  Feature dim: {dataset[0].x.shape[1]}")
 
-    labels = [d.y.item() for d in dataset.data_list]
-    print(f"  Positive: {sum(l==1 for l in labels)}, Negative: {sum(l==0 for l in labels)}")
+    grades = [d.y.item() for d in dataset.data_list]
+    for g in sorted(set(grades)):
+        print(f"  {config.GRADE_LABELS[int(g)]} ({int(g)}): {grades.count(g)}")
 
     print("\n[2/3] Huấn luyện GCN model...")
     input_dim = dataset[0].x.shape[1]
@@ -113,8 +114,10 @@ def run_demo():
     with torch.no_grad():
         sample = dataset[0]
         logits = model(sample)
-        prob = torch.sigmoid(logits).item()
-        print(f"  Sample prediction: score={prob:.4f}, label={'MATCH' if prob >= 0.5 else 'NOT MATCH'}")
+        score = torch.sigmoid(logits).item()
+        grade = round(score * config.NUM_GRADES)
+        print(f"  Sample prediction: score={score:.4f}, "
+              f"grade={grade}/3 ({config.GRADE_LABELS[grade]})")
 
     print("\n✓ Demo hoàn tất!")
 
@@ -124,11 +127,11 @@ def run_pipeline():
     Chạy toàn bộ pipeline: Extract -> Embed -> Build Graph -> Train.
     Sử dụng LLM API để trích xuất thực thể.
     """
-    from entity_extractor import extract_entities
-    from embedding_generator import EmbeddingGenerator
-    from graph_builder import build_graph
-    from dataset import CJMInMemoryDataset
-    from train import train
+    from src.extraction.entity_extractor import extract_entities
+    from src.representation.embedding_generator import EmbeddingGenerator
+    from src.representation.graph_builder import build_graph
+    from src.modeling.dataset import CJMInMemoryDataset
+    from src.modeling.train import train
 
     print("=" * 60)
     print("  FULL PIPELINE: CANDIDATE-JOB MATCHING")
@@ -144,7 +147,7 @@ def run_pipeline():
             Yêu cầu: Python, Django/FastAPI, SQL, Docker.
             Học vấn: Cử nhân CNTT trở lên.
             Ngành: Công nghệ thông tin.""",
-            "label": 1.0,
+            "label": 3.0,
         },
         {
             "cv": """Kế toán viên với 3 năm kinh nghiệm.
@@ -166,7 +169,7 @@ def run_pipeline():
             Yêu cầu: Python, ML/DL, cloud, Docker.
             Học vấn: Thạc sĩ trở lên ngành CNTT/Toán.
             Ngành: AI/Machine Learning.""",
-            "label": 1.0,
+            "label": 2.0,
         },
     ]
 
@@ -193,15 +196,18 @@ def run_pipeline():
     print(f"\n[4/4] Huấn luyện model với {len(dataset)} samples...")
     if len(dataset) < 3:
         print("  [WARN] Quá ít dữ liệu để train thực tế, chỉ demo forward pass.")
-        from model import GCNModel, get_loss_fn
+        from src.modeling.model import GCNModel, get_loss_fn
         input_dim = dataset[0].x.shape[1]
         model = GCNModel(input_dim=input_dim)
         model.eval()
         with torch.no_grad():
             for i in range(len(dataset)):
                 logits = model(dataset[i])
-                prob = torch.sigmoid(logits).item()
-                print(f"  Pair {i+1}: score={prob:.4f}, actual={'MATCH' if cv_jd_pairs[i]['label']==1 else 'NOT MATCH'}")
+                score = torch.sigmoid(logits).item()
+                grade = round(score * config.NUM_GRADES)
+                actual = int(cv_jd_pairs[i]["label"])
+                print(f"  Pair {i+1}: score={score:.4f}, grade={grade}/3 "
+                      f"(actual={actual}/3 — {config.GRADE_LABELS[actual]})")
     else:
         input_dim = dataset[0].x.shape[1]
         model, history = train(
@@ -216,8 +222,8 @@ def run_pipeline():
 
 def run_train_from_csv():
     """Huấn luyện từ file CSV."""
-    from dataset import CJMDataset
-    from train import train
+    from src.modeling.dataset import CJMDataset
+    from src.modeling.train import train
 
     csv_path = input("Đường dẫn file CSV (cv_path,jd_path,label): ").strip()
     if not os.path.exists(csv_path):
@@ -239,13 +245,39 @@ def run_train_from_csv():
     )
 
 
+def run_hybrid_demo():
+    """Demo Hybrid Score + Baselines với sample data (không cần API key)."""
+    from src.modeling.dataset import create_sample_dataset
+    from src.modeling.train import train
+    from src.evaluation.hybrid import run_comparison
+
+    print("=" * 60)
+    print("  DEMO: HYBRID SCORE (GCN + SBERT) & BASELINES")
+    print("=" * 60)
+
+    print("\n[1/3] Tạo sample dataset...")
+    dataset = create_sample_dataset(num_queries=10, jds_per_query=5)
+    input_dim = dataset[0].x.shape[1]
+
+    print("\n[2/3] Huấn luyện GCN (thành phần graph_score)...")
+    model, _ = train(
+        data_list=dataset.data_list,
+        input_dim=input_dim,
+        num_epochs=30,
+        batch_size=8,
+    )
+
+    print("\n[3/3] Tune α & so sánh các phương pháp...")
+    run_comparison(dataset.data_list, model=model, alpha="auto")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Candidate-Job Matching GCN")
     parser.add_argument(
         "--mode",
         type=str,
         default="demo",
-        choices=["demo", "predict", "extract", "pipeline", "prepare", "train"],
+        choices=["demo", "predict", "extract", "pipeline", "prepare", "train", "hybrid"],
         help=(
             "demo     : Test nhanh với data ngẫu nhiên\n"
             "prepare  : Thu thập & chuẩn bị training data (text hoặc file PDF)\n"
@@ -253,6 +285,7 @@ def main():
             "predict  : Dự đoán tương tác\n"
             "extract  : Test trích xuất thực thể LLM\n"
             "pipeline : Full pipeline demo với LLM\n"
+            "hybrid   : Hybrid Score + baseline so sánh (NDCG/MRR/Recall)\n"
         ),
     )
     parser.add_argument(
@@ -272,22 +305,21 @@ def main():
     elif args.mode == "pipeline":
         run_pipeline()
     elif args.mode == "prepare":
-        from prepare_training_data import collect_text_mode, collect_file_mode
+        from src.data_collection.prepare_training_data import collect_text_mode, collect_file_mode
         if args.input == "text":
             collect_text_mode()
         else:
             collect_file_mode(csv_path=args.csv)
     elif args.mode == "train":
-        import sys
-        # Chuyển args còn lại cho train.py
+        # Reset sys.argv để argparse của train.py nhận đúng tham số của nó
         sys.argv = ["train.py"]
-        import train as train_module
-        # Chạy __main__ block của train.py
-        import importlib, runpy
-        runpy.run_module("train", run_name="__main__")
+        import runpy
+        runpy.run_module("src.modeling.train", run_name="__main__")
     elif args.mode == "predict":
-        from predict import predict_interactive
+        from src.inference.predict import predict_interactive
         predict_interactive()
+    elif args.mode == "hybrid":
+        run_hybrid_demo()
 
 
 if __name__ == "__main__":

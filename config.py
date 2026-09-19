@@ -9,7 +9,9 @@ OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://generativelanguage.googl
 LLM_MODEL = os.getenv("LLM_MODEL", "gemini-3.1-flash-lite")
 GEMINI_RPM_LIMIT = 15  # Free tier: 15 requests/minute cho gemini-2.0-flash
 
-EMBEDDING_MODEL_NAME = os.getenv("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
+# Model đa ngôn ngữ (hỗ trợ tiếng Việt tốt hơn all-MiniLM-L6-v2 vốn chủ yếu tiếng Anh).
+# paraphrase-multilingual-MiniLM-L12-v2 cùng dim 384 nên không đổi kiến trúc model.
+EMBEDDING_MODEL_NAME = os.getenv("EMBEDDING_MODEL", "paraphrase-multilingual-MiniLM-L12-v2")
 
 ENTITY_TYPES = [
     "soft_skills",
@@ -39,6 +41,23 @@ ENTITY_WEIGHTS = {
 }
 
 NUM_NODES = 2 + NUM_ENTITY_TYPES * 2  # 14 nodes: 2 main + 6 candidate + 6 JD
+
+# ---------------------------------------------------------------------------
+# Thang nhãn mức độ phù hợp (graded relevance) 0..NUM_GRADES
+# Dùng cho ranking metrics (NDCG@K, MRR, Recall@K).
+# Model output sigmoid score trong [0,1]; target train = grade / NUM_GRADES.
+# ---------------------------------------------------------------------------
+NUM_GRADES = 3
+GRADE_LABELS = {
+    0: "Không phù hợp",
+    1: "Liên quan ngành",
+    2: "Phù hợp một phần",
+    3: "Phù hợp tốt",
+}
+# Ngưỡng grade coi là "relevant" khi tính Recall@K / MRR
+RELEVANT_GRADE = 2
+# Các giá trị K để báo cáo NDCG@K / Recall@K
+RANKING_KS = [1, 3, 5, 10]
 
 NODE_CANDIDATE = 0
 NODE_JD = 1

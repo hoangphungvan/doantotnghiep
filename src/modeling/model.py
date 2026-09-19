@@ -7,7 +7,8 @@ Kiến trúc:
 3. Readout: Concatenate node embeddings của v_c và v_jd
 4. Classification head: MLP -> single logit
 
-Sử dụng BCEWithLogitsLoss với pos_weight để xử lý mất cân bằng lớp.
+Sử dụng BCEWithLogitsLoss trên soft target = grade/NUM_GRADES
+(thang mức phù hợp 0..3), sigmoid output là điểm liên tục để xếp hạng JD.
 """
 
 import torch
@@ -129,17 +130,30 @@ class GCNModel(nn.Module):
         return torch.sigmoid(logits)
 
 
+def grade_to_target(grades: torch.Tensor) -> torch.Tensor:
+    """
+    Chuyển grade (0..NUM_GRADES) thành soft target trong [0, 1]
+    để train bằng BCEWithLogitsLoss.
+    Ví dụ NUM_GRADES=3: grade 0→0.0, 1→0.333, 2→0.667, 3→1.0.
+    """
+    return grades.float() / config.NUM_GRADES
+
+
+def target_to_grade(score) -> int:
+    """Chuyển sigmoid score [0,1] thành grade nguyên 0..NUM_GRADES."""
+    return int(round(float(score) * config.NUM_GRADES))
+
+
 def get_loss_fn(pos_weight: float = None) -> nn.BCEWithLogitsLoss:
     """
-    Tạo loss function BCEWithLogitsLoss với pos_weight.
+    BCEWithLogitsLoss trên soft target grade/NUM_GRADES.
 
-    pos_weight=10 vì dữ liệu có ~95% negative (bị loại),
-    giúp model không "lười" predict toàn negative.
+    Với nhãn thang mức phù hợp, target là giá trị liên tục trong [0,1]
+    nên mặc định KHÔNG dùng pos_weight (chỉ dành cho nhãn nhị phân thuần).
     """
-    pw = pos_weight or config.POS_WEIGHT
-    return nn.BCEWithLogitsLoss(
-        pos_weight=torch.tensor([pw])
-    )
+    if pos_weight is not None:
+        return nn.BCEWithLogitsLoss(pos_weight=torch.tensor([pos_weight]))
+    return nn.BCEWithLogitsLoss()
 
 
 if __name__ == "__main__":
@@ -154,7 +168,7 @@ if __name__ == "__main__":
     j_main = np.random.randn(feat_dim)
     j_ents = {e: np.random.randn(feat_dim) for e in config.ENTITY_TYPES}
 
-    data = build_graph(c_main, c_ents, j_main, j_ents, label=1.0)
+    data = build_graph(c_main, c_ents, j_main, j_ents, label=2.0)
 
     model = GCNModel(input_dim=feat_dim)
     print(f"Model:\n{model}")
@@ -166,5 +180,7 @@ if __name__ == "__main__":
     print(f"Probability: {prob.item():.4f}")
 
     loss_fn = get_loss_fn()
-    loss = loss_fn(logits.squeeze(), data.y)
+    target = grade_to_target(data.y)
+    loss = loss_fn(logits.squeeze(-1), target)
+    print(f"Grade: {data.y.item()} -> soft target: {target.item():.4f}")
     print(f"Loss: {loss.item():.4f}")

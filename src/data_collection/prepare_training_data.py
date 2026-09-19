@@ -1,18 +1,26 @@
 """
 Tool thu thập và chuẩn bị dữ liệu training cho CJM model.
 
+Nhãn là mức độ phù hợp (grade) theo thang 0-3:
+  0 = Không phù hợp, 1 = Liên quan ngành,
+  2 = Phù hợp một phần, 3 = Phù hợp tốt
+
 Hỗ trợ 2 chế độ nhập liệu:
   --mode text  : Nhập trực tiếp văn bản CV và JD qua terminal
   --mode file  : Chỉ định đường dẫn file PDF/TXT
 
+Để đánh giá xếp hạng (NDCG@K/MRR/Recall@K), nên ghép MỘT CV với NHIỀU JD —
+các cặp dùng chung CV (cùng file hoặc cùng Nhóm CV ID) sẽ được group lại.
+
 Dữ liệu đã thu thập được lưu vào:
-  data/training_pairs.csv  — bảng cv_path/cv_text, jd_path/jd_text, label
-  data/processed/graphs/   — file .pt đồ thị đã build sẵn (tăng tốc training)
+  data/processed/training_pairs.csv — bảng cv_path/cv_text, jd_path/jd_text, label
+  data/processed/graphs/            — file .pt đồ thị đã build sẵn (tăng tốc training)
 
 Chạy:
-  python prepare_training_data.py --mode text
-  python prepare_training_data.py --mode file
-  python prepare_training_data.py --mode file --csv data/my_pairs.csv
+  python main.py --mode prepare
+  python src/data_collection/prepare_training_data.py --mode text
+  python src/data_collection/prepare_training_data.py --mode file
+  python src/data_collection/prepare_training_data.py --mode file --csv data/my_pairs.csv
 """
 
 import argparse
@@ -25,10 +33,14 @@ from pathlib import Path
 import torch
 from tqdm import tqdm
 
+# Hỗ trợ chạy trực tiếp: python src/data_collection/prepare_training_data.py
+if __package__ in (None, ""):
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+
 import config
-from entity_extractor import extract_entities, extract_from_file, normalize_path
-from embedding_generator import EmbeddingGenerator
-from graph_builder import build_graph
+from src.extraction.entity_extractor import extract_entities, extract_from_file, normalize_path
+from src.representation.embedding_generator import EmbeddingGenerator
+from src.representation.graph_builder import build_graph
 
 
 TRAINING_CSV = os.path.join(config.DATA_PROCESSED_DIR, "training_pairs.csv")
@@ -67,12 +79,29 @@ def _save_csv(rows: list[dict]):
 
 
 def _get_label() -> float:
-    """Hỏi label từ người dùng: 1 = MATCH, 0 = NOT MATCH."""
+    """
+    Hỏi mức độ phù hợp (grade) từ người dùng theo thang 0..NUM_GRADES:
+        0 = Không phù hợp, 1 = Liên quan ngành,
+        2 = Phù hợp một phần, 3 = Phù hợp tốt
+    """
     while True:
-        ans = input("  Label (1=MATCH / 0=NOT MATCH): ").strip()
-        if ans in ("0", "1"):
+        print("  Thang mức phù hợp:")
+        for g, desc in config.GRADE_LABELS.items():
+            print(f"    {g} = {desc}")
+        ans = input(f"  Mức phù hợp (0-{config.NUM_GRADES}): ").strip()
+        if ans.isdigit() and 0 <= int(ans) <= config.NUM_GRADES:
             return float(ans)
-        print("  Chỉ nhập 0 hoặc 1.")
+        print(f"  Chỉ nhập số nguyên từ 0 đến {config.NUM_GRADES}.")
+
+
+def _get_cv_group(default: str) -> str:
+    """
+    Hỏi id nhóm CV (dùng để gom các JD của cùng một CV khi tính ranking
+    metrics). Enter = dùng default. Nên dùng cùng một ID cho các JD
+    khác nhau của cùng một CV.
+    """
+    ans = input(f"  Nhóm CV ID (Enter = {default}): ").strip()
+    return ans or default
 
 
 def _read_multiline(prompt: str) -> str:
@@ -88,14 +117,19 @@ def _read_multiline(prompt: str) -> str:
 
 
 def _build_and_save_graph(idx: int, cv_entities: dict, jd_entities: dict,
-                           label: float, gen: EmbeddingGenerator) -> str:
-    """Build graph, lưu .pt, trả về đường dẫn."""
+                           label: float, gen: EmbeddingGenerator,
+                           cv_source: str = None, jd_source: str = None) -> str:
+    """Build graph, lưu .pt, trả về đường dẫn. cv_source dùng để group theo CV."""
     cv_main, cv_feats = gen.build_node_features(cv_entities)
     jd_main, jd_feats = gen.build_node_features(jd_entities)
     data = build_graph(cv_main, cv_feats, jd_main, jd_feats, label=label)
 
     data.cv_entities = json.dumps(cv_entities, ensure_ascii=False)
     data.jd_entities = json.dumps(jd_entities, ensure_ascii=False)
+    if cv_source:
+        data.cv_source = cv_source
+    if jd_source:
+        data.jd_source = jd_source
 
     graph_path = os.path.join(GRAPH_DIR, f"graph_{idx:06d}.pt")
     torch.save(data, graph_path)
@@ -144,6 +178,7 @@ def collect_text_mode():
             break
 
         label = _get_label()
+        cv_group = _get_cv_group(f"pair_{pair_no}_cv")
 
         print("\n  [INFO] Đang trích xuất thực thể bằng LLM...")
         cv_entities = extract_entities(cv_text)
@@ -154,7 +189,10 @@ def collect_text_mode():
 
         print("\n  [INFO] Đang build đồ thị...")
         global_idx = start_idx + len(session_rows)
-        graph_path = _build_and_save_graph(global_idx, cv_entities, jd_entities, label, gen)
+        graph_path = _build_and_save_graph(
+            global_idx, cv_entities, jd_entities, label, gen,
+            cv_source=cv_group, jd_source=f"pair_{pair_no}_jd",
+        )
 
         row = {
             "mode":       "text",
@@ -233,7 +271,10 @@ def collect_file_mode(csv_path: str = None):
 
         print("\n  [INFO] Đang build đồ thị...")
         global_idx = start_idx + len(session_rows)
-        graph_path = _build_and_save_graph(global_idx, cv_entities, jd_entities, label, gen)
+        graph_path = _build_and_save_graph(
+            global_idx, cv_entities, jd_entities, label, gen,
+            cv_source=cv_path, jd_source=jd_path,
+        )
 
         row = {
             "mode":       "file",
@@ -290,7 +331,10 @@ def _batch_from_csv(csv_path: str, gen: EmbeddingGenerator):
             cv_entities = extract_from_file(cv_path)
             jd_entities = extract_from_file(jd_path)
             global_idx  = start_idx + len(new_rows)
-            graph_path  = _build_and_save_graph(global_idx, cv_entities, jd_entities, label, gen)
+            graph_path  = _build_and_save_graph(
+                global_idx, cv_entities, jd_entities, label, gen,
+                cv_source=cv_path, jd_source=jd_path,
+            )
             new_rows.append({
                 "mode":       "file",
                 "cv_source":  cv_path,

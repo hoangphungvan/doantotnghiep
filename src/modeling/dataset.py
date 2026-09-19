@@ -16,9 +16,9 @@ from torch_geometric.data import Dataset, Data
 from tqdm import tqdm
 
 import config
-from entity_extractor import extract_from_file
-from embedding_generator import EmbeddingGenerator
-from graph_builder import build_graph
+from src.extraction.entity_extractor import extract_from_file
+from src.representation.embedding_generator import EmbeddingGenerator
+from src.representation.graph_builder import build_graph
 
 
 class CJMDataset(Dataset):
@@ -100,6 +100,9 @@ class CJMDataset(Dataset):
             jd_path = row["jd_path"]
             label = float(row["label"])
 
+            if not (0 <= label <= config.NUM_GRADES):
+                print(f"[WARN] Pair {idx}: label {label} ngoài thang 0..{config.NUM_GRADES}")
+
             try:
                 # extract_from_file tự chọn text mode hay Vision mode
                 cv_entities = extract_from_file(cv_path)
@@ -112,6 +115,8 @@ class CJMDataset(Dataset):
 
                 data.cv_path = cv_path
                 data.jd_path = jd_path
+                data.cv_source = cv_path  # dùng để group theo CV khi tính ranking metrics
+                data.jd_source = jd_path
                 data.cv_entities = json.dumps(cv_entities, ensure_ascii=False)
                 data.jd_entities = json.dumps(jd_entities, ensure_ascii=False)
 
@@ -158,17 +163,24 @@ class CJMInMemoryDataset:
         return cls(data_list)
 
 
-def create_sample_dataset(num_samples: int = 20,
-                          positive_ratio: float = 0.05) -> CJMInMemoryDataset:
+def create_sample_dataset(num_queries: int = 10,
+                          jds_per_query: int = 5) -> CJMInMemoryDataset:
     """
     Tạo dataset mẫu với dữ liệu ngẫu nhiên để test pipeline.
-    Mô phỏng mất cân bằng lớp: ~5% positive.
+
+    Mỗi query là một CV ghép với `jds_per_query` JD; grade (0..NUM_GRADES)
+    được gán theo số loại entity trùng nhau giữa CV và JD:
+        >= 5 loại trùng → grade 3 (Phù hợp tốt)
+        3-4 loại trùng  → grade 2 (Phù hợp một phần)
+        1-2 loại trùng  → grade 1 (Liên quan ngành)
+        0 loại trùng    → grade 0 (Không phù hợp)
+
+    Graph có thuộc tính cv_source/jd_source để group khi tính ranking metrics.
     """
     import numpy as np
     np.random.seed(42)
 
     gen = EmbeddingGenerator()
-    feat_dim = gen.embedding_dim * 3
     dataset = CJMInMemoryDataset()
 
     sample_entities_pool = {
@@ -200,25 +212,53 @@ def create_sample_dataset(num_samples: int = 20,
         ],
     }
 
-    num_positive = max(1, int(num_samples * positive_ratio))
-    labels = [1.0] * num_positive + [0.0] * (num_samples - num_positive)
-    np.random.shuffle(labels)
-
-    for i, label in enumerate(tqdm(labels, desc="Generating sample data")):
-        cv_ents = {
-            etype: items[np.random.randint(len(items))]
-            for etype, items in sample_entities_pool.items()
-        }
-        jd_ents = {
+    def random_profile() -> dict:
+        return {
             etype: items[np.random.randint(len(items))]
             for etype, items in sample_entities_pool.items()
         }
 
-        cv_main, cv_feats = gen.build_node_features(cv_ents)
-        jd_main, jd_feats = gen.build_node_features(jd_ents)
+    def grade_between(cv_ents: dict, jd_ents: dict) -> int:
+        matches = sum(cv_ents[e] == jd_ents[e] for e in config.ENTITY_TYPES)
+        if matches >= 5:
+            return 3
+        if matches >= 3:
+            return 2
+        if matches >= 1:
+            return 1
+        return 0
 
-        data = build_graph(cv_main, cv_feats, jd_main, jd_feats, label=label)
-        dataset.add(data)
+    def opposite_profile(ref: dict) -> dict:
+        """Profile không trùng loại entity nào với profile tham chiếu `ref`."""
+        result = {}
+        for etype, items in sample_entities_pool.items():
+            base_idx = items.index(ref[etype])
+            offset = np.random.randint(1, len(items))
+            result[etype] = items[(base_idx + offset) % len(items)]
+        return result
+
+    pbar_total = num_queries * jds_per_query
+    with tqdm(total=pbar_total, desc="Generating sample data") as pbar:
+        for q in range(num_queries):
+            cv_ents = random_profile()
+            cv_main, cv_feats = gen.build_node_features(cv_ents)
+
+            # JD đầu tiên trùng hoàn toàn CV (grade 3), JD thứ hai khác hẳn (grade 0),
+            # các JD còn lại random để có đủ các mức trung gian.
+            jd_profiles = [dict(cv_ents), opposite_profile(cv_ents)]
+            jd_profiles += [random_profile() for _ in range(max(0, jds_per_query - 2))]
+
+            for j, jd_ents in enumerate(jd_profiles[:jds_per_query]):
+                jd_main, jd_feats = gen.build_node_features(jd_ents)
+
+                grade = float(grade_between(cv_ents, jd_ents))
+                data = build_graph(cv_main, cv_feats, jd_main, jd_feats, label=grade)
+                data.cv_source = f"query_{q:04d}"
+                data.jd_source = f"query_{q:04d}_jd_{j:02d}"
+                data.cv_entities = json.dumps(cv_ents, ensure_ascii=False)
+                data.jd_entities = json.dumps(jd_ents, ensure_ascii=False)
+                dataset.add(data)
+                pbar.update(1)
 
     return dataset
 

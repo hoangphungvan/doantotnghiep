@@ -12,11 +12,16 @@ import base64
 import json
 import os
 import re
+import sys
 import time
 from typing import Optional
 
 import fitz  # PyMuPDF
 from openai import OpenAI
+
+# Hỗ trợ chạy trực tiếp: python src/extraction/entity_extractor.py (từ thư mục gốc dự án)
+if __package__ in (None, ""):
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 import config
 
@@ -35,11 +40,24 @@ PDF_TEXT_MIN_CHARS = 50
 # Số trang tối đa gửi lên Vision (tránh vượt token limit)
 VISION_MAX_PAGES = 5
 
-client = OpenAI(
-    api_key=config.GEMINI_API_KEY,
-    base_url=config.OPENAI_BASE_URL,
-    timeout=120.0,
-)
+_client: Optional[OpenAI] = None
+
+
+def _get_client() -> OpenAI:
+    """Lazy-init OpenAI client — chỉ tạo (và yêu cầu API key) khi thực sự gọi LLM."""
+    global _client
+    if _client is None:
+        if not config.GEMINI_API_KEY:
+            raise RuntimeError(
+                "Thiếu GEMINI_API_KEY. Set biến môi trường trong file .env "
+                "để dùng tính năng trích xuất thực thể bằng LLM."
+            )
+        _client = OpenAI(
+            api_key=config.GEMINI_API_KEY,
+            base_url=config.OPENAI_BASE_URL,
+            timeout=120.0,
+        )
+    return _client
 
 EXTRACTION_PROMPT_TEXT = """Bạn là chuyên gia phân tích CV và Job Description (JD).
 Hãy trích xuất các thực thể từ đoạn văn bản dưới đây và trả về **chỉ** JSON thuần túy (không markdown, không giải thích).
@@ -158,7 +176,7 @@ def _call_gemini(messages: list, model: str, max_retries: int = 3) -> Optional[s
     for attempt in range(1, max_retries + 1):
         try:
             _print(f"[INFO] Gọi {model} (lần {attempt}/{max_retries})...")
-            resp = client.chat.completions.create(
+            resp = _get_client().chat.completions.create(
                 model=model,
                 messages=messages,
                 temperature=0.1,
