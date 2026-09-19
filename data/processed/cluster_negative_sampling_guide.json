@@ -1,0 +1,1082 @@
+{
+  "0": {
+    "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 0,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 12,
+        "cluster_name": "Doanh / Kinh (Tin học văn phòng, Tin học văn phòng (Word, Excel, PowerPoint), Sử dụng CRM)",
+        "similarity": 0.6602,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 4,
+        "cluster_name": "Kinh / Doanh (Kỹ năng giao tiếp, Kỹ năng đàm phán, Kỹ năng bán hàng)",
+        "similarity": 0.483,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 16,
+        "cluster_name": "triển / kinh (Google Ads, B2B sales, Facebook Ads)",
+        "similarity": 0.4458,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 6,
+        "cluster_name": "Developer / Java (Java, MySQL, Oracle)",
+        "similarity": 0.116,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 8,
+        "cluster_name": "Developer / Nhà (CSS, HTML, JavaScript)",
+        "similarity": 0.1216,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "1": {
+    "cluster_name": "CNC / Máy (Lập trình CNC, NX, Mastercam)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 1,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 5,
+        "cluster_name": "IT / Thuật (Hệ điều hành Windows, Phần mềm văn phòng, Mạng máy tính)",
+        "similarity": 0.7577,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 18,
+        "cluster_name": "Nhà / kinh (Jira, Figma, Confluence)",
+        "similarity": 0.7285,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 7,
+        "cluster_name": "Thiết / Kế (Quay dựng video, audio editing, voice acting)",
+        "similarity": 0.7259,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 1,
+        "cluster_name": "CNC / Máy (Lập trình CNC, NX, Mastercam)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.3035,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 8,
+        "cluster_name": "Developer / Nhà (CSS, HTML, JavaScript)",
+        "similarity": 0.4849,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "2": {
+    "cluster_name": "Engineer / Developer (Python, Docker, Kubernetes)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 2,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 18,
+        "cluster_name": "Nhà / kinh (Jira, Figma, Confluence)",
+        "similarity": 0.9193,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 6,
+        "cluster_name": "Developer / Java (Java, MySQL, Oracle)",
+        "similarity": 0.9008,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 17,
+        "cluster_name": "Hệ / Engineer (Linux, Network, Storage)",
+        "similarity": 0.8675,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 2,
+        "cluster_name": "Engineer / Developer (Python, Docker, Kubernetes)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.1509,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 12,
+        "cluster_name": "Doanh / Kinh (Tin học văn phòng, Tin học văn phòng (Word, Excel, PowerPoint), Sử dụng CRM)",
+        "similarity": 0.3852,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "3": {
+    "cluster_name": "Thiết / Kế (Adobe Photoshop, Adobe Illustrator, Illustrator)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 3,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 9,
+        "cluster_name": "Thiết / Kế (Photoshop, Illustrator, Figma)",
+        "similarity": 0.9305,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 7,
+        "cluster_name": "Thiết / Kế (Quay dựng video, audio editing, voice acting)",
+        "similarity": 0.7729,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 13,
+        "cluster_name": "3D / Thiết (Photoshop, Unity, Maya)",
+        "similarity": 0.7644,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 3,
+        "cluster_name": "Thiết / Kế (Adobe Photoshop, Adobe Illustrator, Illustrator)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.2459,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 11,
+        "cluster_name": "IT / Quản (VMware, Triển khai và vận hành hệ thống VOIP (Asterisk, FreePbx, FreeSWITCH, Kamailio, OpenSIPS, 3CX), Giao thức SIP, RTP, WebRTC, STUN/TURN/ICE, NAT Traversal)",
+        "similarity": 0.3015,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "4": {
+    "cluster_name": "Kinh / Doanh (Kỹ năng giao tiếp, Kỹ năng đàm phán, Kỹ năng bán hàng)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 4,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 19,
+        "cluster_name": "Nhà / kinh (Quản lý dự án, Phân tích nghiệp vụ, Phân tích yêu cầu)",
+        "similarity": 0.8011,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 16,
+        "cluster_name": "triển / kinh (Google Ads, B2B sales, Facebook Ads)",
+        "similarity": 0.7997,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 18,
+        "cluster_name": "Nhà / kinh (Jira, Figma, Confluence)",
+        "similarity": 0.7217,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 4,
+        "cluster_name": "Kinh / Doanh (Kỹ năng giao tiếp, Kỹ năng đàm phán, Kỹ năng bán hàng)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 3,
+        "cluster_name": "Thiết / Kế (Adobe Photoshop, Adobe Illustrator, Illustrator)",
+        "similarity": 0.3617,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.483,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "5": {
+    "cluster_name": "IT / Thuật (Hệ điều hành Windows, Phần mềm văn phòng, Mạng máy tính)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 5,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 11,
+        "cluster_name": "IT / Quản (VMware, Triển khai và vận hành hệ thống VOIP (Asterisk, FreePbx, FreeSWITCH, Kamailio, OpenSIPS, 3CX), Giao thức SIP, RTP, WebRTC, STUN/TURN/ICE, NAT Traversal)",
+        "similarity": 0.8748,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 17,
+        "cluster_name": "Hệ / Engineer (Linux, Network, Storage)",
+        "similarity": 0.8442,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 19,
+        "cluster_name": "Nhà / kinh (Quản lý dự án, Phân tích nghiệp vụ, Phân tích yêu cầu)",
+        "similarity": 0.8314,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 5,
+        "cluster_name": "IT / Thuật (Hệ điều hành Windows, Phần mềm văn phòng, Mạng máy tính)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.3697,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 3,
+        "cluster_name": "Thiết / Kế (Adobe Photoshop, Adobe Illustrator, Illustrator)",
+        "similarity": 0.4215,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "6": {
+    "cluster_name": "Developer / Java (Java, MySQL, Oracle)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 6,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 2,
+        "cluster_name": "Engineer / Developer (Python, Docker, Kubernetes)",
+        "similarity": 0.9008,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 8,
+        "cluster_name": "Developer / Nhà (CSS, HTML, JavaScript)",
+        "similarity": 0.855,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 15,
+        "cluster_name": "Developer / Tiếng (Java, Swift, Kotlin)",
+        "similarity": 0.8345,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 6,
+        "cluster_name": "Developer / Java (Java, MySQL, Oracle)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.116,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 12,
+        "cluster_name": "Doanh / Kinh (Tin học văn phòng, Tin học văn phòng (Word, Excel, PowerPoint), Sử dụng CRM)",
+        "similarity": 0.3485,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "7": {
+    "cluster_name": "Thiết / Kế (Quay dựng video, audio editing, voice acting)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 7,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 9,
+        "cluster_name": "Thiết / Kế (Photoshop, Illustrator, Figma)",
+        "similarity": 0.79,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 13,
+        "cluster_name": "3D / Thiết (Photoshop, Unity, Maya)",
+        "similarity": 0.7843,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 3,
+        "cluster_name": "Thiết / Kế (Adobe Photoshop, Adobe Illustrator, Illustrator)",
+        "similarity": 0.7729,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 7,
+        "cluster_name": "Thiết / Kế (Quay dựng video, audio editing, voice acting)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.3943,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 6,
+        "cluster_name": "Developer / Java (Java, MySQL, Oracle)",
+        "similarity": 0.4562,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "8": {
+    "cluster_name": "Developer / Nhà (CSS, HTML, JavaScript)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 8,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 6,
+        "cluster_name": "Developer / Java (Java, MySQL, Oracle)",
+        "similarity": 0.855,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 2,
+        "cluster_name": "Engineer / Developer (Python, Docker, Kubernetes)",
+        "similarity": 0.7959,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 15,
+        "cluster_name": "Developer / Tiếng (Java, Swift, Kotlin)",
+        "similarity": 0.7535,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 8,
+        "cluster_name": "Developer / Nhà (CSS, HTML, JavaScript)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.1216,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 12,
+        "cluster_name": "Doanh / Kinh (Tin học văn phòng, Tin học văn phòng (Word, Excel, PowerPoint), Sử dụng CRM)",
+        "similarity": 0.2962,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "9": {
+    "cluster_name": "Thiết / Kế (Photoshop, Illustrator, Figma)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 9,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 3,
+        "cluster_name": "Thiết / Kế (Adobe Photoshop, Adobe Illustrator, Illustrator)",
+        "similarity": 0.9305,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 13,
+        "cluster_name": "3D / Thiết (Photoshop, Unity, Maya)",
+        "similarity": 0.9081,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 7,
+        "cluster_name": "Thiết / Kế (Quay dựng video, audio editing, voice acting)",
+        "similarity": 0.79,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 9,
+        "cluster_name": "Thiết / Kế (Photoshop, Illustrator, Figma)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.2192,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 12,
+        "cluster_name": "Doanh / Kinh (Tin học văn phòng, Tin học văn phòng (Word, Excel, PowerPoint), Sử dụng CRM)",
+        "similarity": 0.3963,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "10": {
+    "cluster_name": "Tester / Manual (Kiểm thử phần mềm, SQL, Viết Testcase)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 10,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 14,
+        "cluster_name": "tích / Phân (SQL, Excel, Python)",
+        "similarity": 0.7353,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 19,
+        "cluster_name": "Nhà / kinh (Quản lý dự án, Phân tích nghiệp vụ, Phân tích yêu cầu)",
+        "similarity": 0.7221,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 18,
+        "cluster_name": "Nhà / kinh (Jira, Figma, Confluence)",
+        "similarity": 0.7177,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 10,
+        "cluster_name": "Tester / Manual (Kiểm thử phần mềm, SQL, Viết Testcase)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.2148,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 3,
+        "cluster_name": "Thiết / Kế (Adobe Photoshop, Adobe Illustrator, Illustrator)",
+        "similarity": 0.3576,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "11": {
+    "cluster_name": "IT / Quản (VMware, Triển khai và vận hành hệ thống VOIP (Asterisk, FreePbx, FreeSWITCH, Kamailio, OpenSIPS, 3CX), Giao thức SIP, RTP, WebRTC, STUN/TURN/ICE, NAT Traversal)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 11,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 5,
+        "cluster_name": "IT / Thuật (Hệ điều hành Windows, Phần mềm văn phòng, Mạng máy tính)",
+        "similarity": 0.8748,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 17,
+        "cluster_name": "Hệ / Engineer (Linux, Network, Storage)",
+        "similarity": 0.8441,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 19,
+        "cluster_name": "Nhà / kinh (Quản lý dự án, Phân tích nghiệp vụ, Phân tích yêu cầu)",
+        "similarity": 0.7666,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 11,
+        "cluster_name": "IT / Quản (VMware, Triển khai và vận hành hệ thống VOIP (Asterisk, FreePbx, FreeSWITCH, Kamailio, OpenSIPS, 3CX), Giao thức SIP, RTP, WebRTC, STUN/TURN/ICE, NAT Traversal)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.256,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 3,
+        "cluster_name": "Thiết / Kế (Adobe Photoshop, Adobe Illustrator, Illustrator)",
+        "similarity": 0.3015,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "12": {
+    "cluster_name": "Doanh / Kinh (Tin học văn phòng, Tin học văn phòng (Word, Excel, PowerPoint), Sử dụng CRM)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 12,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 5,
+        "cluster_name": "IT / Thuật (Hệ điều hành Windows, Phần mềm văn phòng, Mạng máy tính)",
+        "similarity": 0.7293,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 19,
+        "cluster_name": "Nhà / kinh (Quản lý dự án, Phân tích nghiệp vụ, Phân tích yêu cầu)",
+        "similarity": 0.6993,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 4,
+        "cluster_name": "Kinh / Doanh (Kỹ năng giao tiếp, Kỹ năng đàm phán, Kỹ năng bán hàng)",
+        "similarity": 0.6971,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 12,
+        "cluster_name": "Doanh / Kinh (Tin học văn phòng, Tin học văn phòng (Word, Excel, PowerPoint), Sử dụng CRM)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 8,
+        "cluster_name": "Developer / Nhà (CSS, HTML, JavaScript)",
+        "similarity": 0.2962,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 6,
+        "cluster_name": "Developer / Java (Java, MySQL, Oracle)",
+        "similarity": 0.3485,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "13": {
+    "cluster_name": "3D / Thiết (Photoshop, Unity, Maya)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 13,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 9,
+        "cluster_name": "Thiết / Kế (Photoshop, Illustrator, Figma)",
+        "similarity": 0.9081,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 18,
+        "cluster_name": "Nhà / kinh (Jira, Figma, Confluence)",
+        "similarity": 0.8552,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 7,
+        "cluster_name": "Thiết / Kế (Quay dựng video, audio editing, voice acting)",
+        "similarity": 0.7843,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 13,
+        "cluster_name": "3D / Thiết (Photoshop, Unity, Maya)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.202,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 12,
+        "cluster_name": "Doanh / Kinh (Tin học văn phòng, Tin học văn phòng (Word, Excel, PowerPoint), Sử dụng CRM)",
+        "similarity": 0.399,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "14": {
+    "cluster_name": "tích / Phân (SQL, Excel, Python)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 14,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 6,
+        "cluster_name": "Developer / Java (Java, MySQL, Oracle)",
+        "similarity": 0.8175,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 18,
+        "cluster_name": "Nhà / kinh (Jira, Figma, Confluence)",
+        "similarity": 0.8001,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 2,
+        "cluster_name": "Engineer / Developer (Python, Docker, Kubernetes)",
+        "similarity": 0.7732,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 14,
+        "cluster_name": "tích / Phân (SQL, Excel, Python)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.2752,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 3,
+        "cluster_name": "Thiết / Kế (Adobe Photoshop, Adobe Illustrator, Illustrator)",
+        "similarity": 0.4168,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "15": {
+    "cluster_name": "Developer / Tiếng (Java, Swift, Kotlin)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 15,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 18,
+        "cluster_name": "Nhà / kinh (Jira, Figma, Confluence)",
+        "similarity": 0.8624,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 2,
+        "cluster_name": "Engineer / Developer (Python, Docker, Kubernetes)",
+        "similarity": 0.8612,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 6,
+        "cluster_name": "Developer / Java (Java, MySQL, Oracle)",
+        "similarity": 0.8345,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 15,
+        "cluster_name": "Developer / Tiếng (Java, Swift, Kotlin)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.2523,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 12,
+        "cluster_name": "Doanh / Kinh (Tin học văn phòng, Tin học văn phòng (Word, Excel, PowerPoint), Sử dụng CRM)",
+        "similarity": 0.46,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "16": {
+    "cluster_name": "triển / kinh (Google Ads, B2B sales, Facebook Ads)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 16,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 19,
+        "cluster_name": "Nhà / kinh (Quản lý dự án, Phân tích nghiệp vụ, Phân tích yêu cầu)",
+        "similarity": 0.8295,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 4,
+        "cluster_name": "Kinh / Doanh (Kỹ năng giao tiếp, Kỹ năng đàm phán, Kỹ năng bán hàng)",
+        "similarity": 0.7997,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 18,
+        "cluster_name": "Nhà / kinh (Jira, Figma, Confluence)",
+        "similarity": 0.7435,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 16,
+        "cluster_name": "triển / kinh (Google Ads, B2B sales, Facebook Ads)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.4458,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 3,
+        "cluster_name": "Thiết / Kế (Adobe Photoshop, Adobe Illustrator, Illustrator)",
+        "similarity": 0.4527,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "17": {
+    "cluster_name": "Hệ / Engineer (Linux, Network, Storage)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 17,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 2,
+        "cluster_name": "Engineer / Developer (Python, Docker, Kubernetes)",
+        "similarity": 0.8675,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 18,
+        "cluster_name": "Nhà / kinh (Jira, Figma, Confluence)",
+        "similarity": 0.8635,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 5,
+        "cluster_name": "IT / Thuật (Hệ điều hành Windows, Phần mềm văn phòng, Mạng máy tính)",
+        "similarity": 0.8442,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 17,
+        "cluster_name": "Hệ / Engineer (Linux, Network, Storage)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.1645,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 3,
+        "cluster_name": "Thiết / Kế (Adobe Photoshop, Adobe Illustrator, Illustrator)",
+        "similarity": 0.3869,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "18": {
+    "cluster_name": "Nhà / kinh (Jira, Figma, Confluence)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 18,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 2,
+        "cluster_name": "Engineer / Developer (Python, Docker, Kubernetes)",
+        "similarity": 0.9193,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 17,
+        "cluster_name": "Hệ / Engineer (Linux, Network, Storage)",
+        "similarity": 0.8635,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 15,
+        "cluster_name": "Developer / Tiếng (Java, Swift, Kotlin)",
+        "similarity": 0.8624,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 18,
+        "cluster_name": "Nhà / kinh (Jira, Figma, Confluence)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.2865,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 12,
+        "cluster_name": "Doanh / Kinh (Tin học văn phòng, Tin học văn phòng (Word, Excel, PowerPoint), Sử dụng CRM)",
+        "similarity": 0.5469,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  },
+  "19": {
+    "cluster_name": "Nhà / kinh (Quản lý dự án, Phân tích nghiệp vụ, Phân tích yêu cầu)",
+    "same_cluster_for_positive_label_3": {
+      "cluster_id": 19,
+      "label": 3,
+      "desc": "Phù hợp tốt (Ứng viên khớp mạnh vị trí và kỹ năng của cụm này)"
+    },
+    "hard_negatives_label_1": [
+      {
+        "cluster_id": 18,
+        "cluster_name": "Nhà / kinh (Jira, Figma, Confluence)",
+        "similarity": 0.8444,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 5,
+        "cluster_name": "IT / Thuật (Hệ điều hành Windows, Phần mềm văn phòng, Mạng máy tính)",
+        "similarity": 0.8314,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      },
+      {
+        "cluster_id": 16,
+        "cluster_name": "triển / kinh (Google Ads, B2B sales, Facebook Ads)",
+        "similarity": 0.8295,
+        "label": 1,
+        "desc": "Liên quan ngành (Cùng khối ngành CNTT nhưng lệch stack/chuyên môn chính)"
+      }
+    ],
+    "easy_negatives_label_0": [
+      {
+        "cluster_id": 19,
+        "cluster_name": "Nhà / kinh (Quản lý dự án, Phân tích nghiệp vụ, Phân tích yêu cầu)",
+        "similarity": -1.0,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 0,
+        "cluster_name": "Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",
+        "similarity": 0.3798,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      },
+      {
+        "cluster_id": 3,
+        "cluster_name": "Thiết / Kế (Adobe Photoshop, Adobe Illustrator, Illustrator)",
+        "similarity": 0.4919,
+        "label": 0,
+        "desc": "Không phù hợp (Khác biệt hoàn toàn về vai trò & kỹ năng)"
+      }
+    ]
+  }
+}

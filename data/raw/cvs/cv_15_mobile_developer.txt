@@ -1,0 +1,15 @@
+HỌ VÀ TÊN: Hoàng Đức Nam - Mobile App Developer
+Email: nam.hoang@email.com | SĐT: 0945678901 | Địa chỉ: TP. Hồ Chí Minh
+HỌC VẤN:
+- Kỹ sư Công nghệ Thông tin, Đại học Bách Khoa TP.HCM (2018-2022)
+KỸ NĂNG CHUYÊN MÔN:
+- Cross-platform: Flutter (Dart), React Native
+- Native: Android (Kotlin, Java), iOS cơ bản (Swift)
+- Kiến trúc & State Management: BLoC, Provider, MVC, MVVM
+- Tích hợp: RESTful API, Firebase (Auth, Firestore, Cloud Messaging), Google Maps SDK, Push Notifications
+- Công cụ: Android Studio, Xcode, Git, Postman, CI/CD for Mobile (Fastlane)
+KỸ NĂNG MỀM:
+- Tinh thần học hỏi cao, chú trọng trải nghiệm người dùng di động (UI/UX), giải quyết vấn đề độc lập
+KINH NGHIỆM LÀM VIỆC:
+- Flutter Developer tại VNPAY (2022 - Nay): Phát triển các tính năng thanh toán, ví điện tử trên ứng dụng di động đa nền tảng Flutter.
+- Android Developer tại Gameloft (2021 - 2022): Tham gia bảo trì và nâng cấp ứng dụng game trên nền tảng Android.

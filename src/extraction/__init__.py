@@ -1,1 +1,1 @@
-"""Bước 1: Trích xuất thực thể CV/JD bằng LLM (Gemini qua OpenAI-compatible API)."""
+"""Bước 1: Trích xuất thực thể CV/JD bằng LLM (Groq qua OpenAI-compatible API)."""

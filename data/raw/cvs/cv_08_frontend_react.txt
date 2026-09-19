@@ -1,0 +1,14 @@
+HỌ VÀ TÊN: Trần Thị Mai - Frontend Web Developer
+Email: mai.tran@email.com | SĐT: 0987654321 | Địa chỉ: Hà Nội
+HỌC VẤN:
+- Cử nhân Công nghệ Thông tin, Đại học Công nghệ - ĐHQGHN (2018-2022)
+KỸ NĂNG CHUYÊN MÔN:
+- Kỹ thuật Web: HTML5, CSS3, JavaScript (ES6+), TypeScript
+- Frameworks/Libraries: ReactJS, NextJS, Redux Toolkit, TailwindCSS, Bootstrap, Material UI
+- API & Tools: RESTful API, GraphQL, Webpack, Vite, Git, Postman, Figma to Code
+- Testing: Jest, React Testing Library
+KỸ NĂNG MỀM:
+- Giao tiếp tốt, thẩm mỹ giao diện người dùng cao, tỉ mỉ, làm việc nhóm hiệu quả
+KINH NGHIỆM LÀM VIỆC:
+- Frontend Developer tại Tiki (2022 - Nay): Xây dựng giao diện thương mại điện tử responsive bằng ReactJS và NextJS, tối ưu hóa Core Web Vitals và SEO.
+- Web Developer Intern tại CMC Telecom (2021 - 2022): Lập trình giao diện web bằng HTML, CSS, JavaScript và tích hợp API.

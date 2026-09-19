@@ -1,11 +1,11 @@
 """
-Module trích xuất thực thể từ văn bản CV/JD sử dụng Google Gemini API.
+Module trích xuất thực thể từ văn bản CV/JD sử dụng Groq API (OpenAI-compatible).
 Trích xuất 6 loại: soft_skills, hard_skills, education,
 field_of_education, industry_sector, role.
 
 Hỗ trợ 2 chế độ:
-- Text mode : PDF có text layer → đọc text → gửi LLM
-- Vision mode: PDF scan/ảnh → chuyển ảnh base64 → gửi Gemini Vision
+- Text mode : Đọc text từ PDF/TXT → gửi Groq API
+- Vision mode: PDF scan/ảnh → chuyển ảnh base64 → gửi Vision Model
 """
 
 import base64
@@ -16,6 +16,7 @@ import sys
 import time
 from typing import Optional
 
+import hashlib
 import fitz  # PyMuPDF
 from openai import OpenAI
 
@@ -31,8 +32,61 @@ def _print(*args, **kwargs):
     print(*args, **kwargs, flush=True)
 
 
-# Free tier: 15 RPM. Khi 429, chờ đủ 62s để quota reset.
-RETRY_WAIT_SECONDS = 62
+# ---------------------------------------------------------------------------
+# Entity Cache Mechanism (Hash-based & File-based)
+# ---------------------------------------------------------------------------
+
+_entity_cache: Optional[dict] = None
+
+
+def _load_cache() -> dict:
+    global _entity_cache
+    if _entity_cache is None:
+        if os.path.exists(config.ENTITY_CACHE_FILE):
+            try:
+                with open(config.ENTITY_CACHE_FILE, "r", encoding="utf-8") as f:
+                    _entity_cache = json.load(f)
+            except Exception:
+                _entity_cache = {}
+        else:
+            _entity_cache = {}
+    return _entity_cache
+
+
+def _save_cache():
+    global _entity_cache
+    if _entity_cache is not None:
+        os.makedirs(config.DATA_CACHE_DIR, exist_ok=True)
+        with open(config.ENTITY_CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump(_entity_cache, f, ensure_ascii=False, indent=2)
+
+
+def get_cache_key(text: str) -> str:
+    """Tạo hash SHA256 cho nội dung văn bản."""
+    return hashlib.sha256(text.strip().encode("utf-8")).hexdigest()
+
+
+def get_cached_entity(key: str) -> Optional[dict]:
+    """Lấy thực thể từ cache theo hash hoặc đường dẫn."""
+    cache = _load_cache()
+    return cache.get(key)
+
+
+def set_cached_entity(key: str, data: dict, save: bool = True):
+    """Lưu thực thể vào cache."""
+    cache = _load_cache()
+    cache[key] = data
+    if save:
+        _save_cache()
+
+
+def save_entire_cache():
+    """Ghi toàn bộ cache ra đĩa."""
+    _save_cache()
+
+
+# Groq Rate Limit retry wait time (giây)
+RETRY_WAIT_SECONDS = 10
 
 # Ngưỡng ký tự tối thiểu để coi PDF có text layer hợp lệ
 PDF_TEXT_MIN_CHARS = 50
@@ -44,16 +98,16 @@ _client: Optional[OpenAI] = None
 
 
 def _get_client() -> OpenAI:
-    """Lazy-init OpenAI client — chỉ tạo (và yêu cầu API key) khi thực sự gọi LLM."""
+    """Lazy-init OpenAI client cho LLM API — chỉ tạo khi thực sự gọi LLM."""
     global _client
     if _client is None:
-        if not config.GEMINI_API_KEY:
+        if not config.LLM_API_KEY:
             raise RuntimeError(
-                "Thiếu GEMINI_API_KEY. Set biến môi trường trong file .env "
+                "Thiếu LLM_API_KEY (hoặc GROQ_API_KEY). Set biến môi trường trong file .env "
                 "để dùng tính năng trích xuất thực thể bằng LLM."
             )
         _client = OpenAI(
-            api_key=config.GEMINI_API_KEY,
+            api_key=config.LLM_API_KEY,
             base_url=config.OPENAI_BASE_URL,
             timeout=120.0,
         )
@@ -171,8 +225,8 @@ def _parse_entities(raw: str) -> dict:
 # Core API call with retry
 # ---------------------------------------------------------------------------
 
-def _call_gemini(messages: list, model: str, max_retries: int = 3) -> Optional[str]:
-    """Gọi Gemini API, retry khi 429. Trả về raw string hoặc None nếu thất bại."""
+def _call_llm(messages: list, model: str, max_retries: int = 3) -> Optional[str]:
+    """Gọi LLM API (Groq), retry khi 429. Trả về raw string hoặc None nếu thất bại."""
     for attempt in range(1, max_retries + 1):
         try:
             _print(f"[INFO] Gọi {model} (lần {attempt}/{max_retries})...")
@@ -189,7 +243,7 @@ def _call_gemini(messages: list, model: str, max_retries: int = 3) -> Optional[s
             err = str(e)
             if "429" in err or "rate" in err.lower() or "quota" in err.lower():
                 if attempt < max_retries:
-                    _print(f"[WARN] Rate limit — chờ {RETRY_WAIT_SECONDS}s để reset quota...")
+                    _print(f"[WARN] Rate limit — chờ {RETRY_WAIT_SECONDS}s để thử lại...")
                     time.sleep(RETRY_WAIT_SECONDS)
                 else:
                     _print(f"[ERROR] Đã thử {max_retries} lần, vẫn bị rate limit.")
@@ -203,7 +257,7 @@ def _call_gemini(messages: list, model: str, max_retries: int = 3) -> Optional[s
 # Public API
 # ---------------------------------------------------------------------------
 
-def extract_entities(text: str, model: Optional[str] = None, max_retries: int = 3) -> dict:
+def extract_entities(text: str, model: Optional[str] = None, max_retries: int = 3, use_cache: bool = True) -> dict:
     """
     Trích xuất thực thể từ chuỗi văn bản (text mode).
     Dùng khi đã có text từ PDF hoặc file txt.
@@ -213,6 +267,12 @@ def extract_entities(text: str, model: Optional[str] = None, max_retries: int = 
     if not text.strip():
         _print("[ERROR] Text rỗng — không thể trích xuất. Với PDF scan hãy dùng extract_entities_vision().")
         return {etype: [] for etype in config.ENTITY_TYPES}
+
+    cache_key = get_cache_key(text)
+    if use_cache:
+        cached = get_cached_entity(cache_key)
+        if cached:
+            return cached
 
     messages = [
         {
@@ -225,19 +285,27 @@ def extract_entities(text: str, model: Optional[str] = None, max_retries: int = 
         },
     ]
 
-    raw = _call_gemini(messages, model, max_retries)
+    raw = _call_llm(messages, model, max_retries)
     if not raw:
         return {etype: [] for etype in config.ENTITY_TYPES}
-    return _parse_entities(raw)
+    result = _parse_entities(raw)
+    if use_cache and result:
+        set_cached_entity(cache_key, result)
+    return result
 
 
-def extract_entities_vision(pdf_path: str, model: Optional[str] = None, max_retries: int = 3) -> dict:
+def extract_entities_vision(pdf_path: str, model: Optional[str] = None, max_retries: int = 3, use_cache: bool = True) -> dict:
     """
-    Trích xuất thực thể từ PDF scan bằng Gemini Vision.
+    Trích xuất thực thể từ PDF scan.
     Chuyển từng trang PDF → ảnh PNG base64 → gửi multimodal message.
     """
     model = model or config.LLM_MODEL
     pdf_path = normalize_path(pdf_path)
+
+    if use_cache:
+        cached = get_cached_entity(pdf_path)
+        if cached:
+            return cached
 
     _print(f"[INFO] Vision mode: chuyển '{os.path.basename(pdf_path)}' sang ảnh...")
     images_b64 = pdf_to_images_base64(pdf_path)
@@ -246,7 +314,7 @@ def extract_entities_vision(pdf_path: str, model: Optional[str] = None, max_retr
         _print("[ERROR] Không render được trang nào từ PDF.")
         return {etype: [] for etype in config.ENTITY_TYPES}
 
-    _print(f"[INFO] Gửi {len(images_b64)} trang lên Gemini Vision...")
+    _print(f"[INFO] Gửi {len(images_b64)} trang lên Vision Model...")
 
     # Tạo multimodal message: text prompt + danh sách ảnh
     content = [{"type": "text", "text": EXTRACTION_PROMPT_VISION}]
@@ -258,35 +326,127 @@ def extract_entities_vision(pdf_path: str, model: Optional[str] = None, max_retr
 
     messages = [{"role": "user", "content": content}]
 
-    raw = _call_gemini(messages, model, max_retries)
+    raw = _call_llm(messages, model, max_retries)
     if not raw:
         return {etype: [] for etype in config.ENTITY_TYPES}
-    return _parse_entities(raw)
+    result = _parse_entities(raw)
+    if use_cache and result:
+        set_cached_entity(pdf_path, result)
+    return result
 
 
-def extract_from_file(file_path: str, model: Optional[str] = None) -> dict:
+_vietjobs_df = None
+
+
+def get_vietjobs_df():
+    """Lazy-load DataFrame của VietJobs_cntt.csv với index theo jd_id."""
+    global _vietjobs_df
+    if _vietjobs_df is None:
+        csv_path = getattr(config, "VIETJOBS_IT_CSV", os.path.join(config.DATA_RAW_DIR, "VietJobs_cntt.csv"))
+        if os.path.exists(csv_path):
+            import pandas as pd
+            df = pd.read_csv(csv_path)
+            if "jd_id" in df.columns:
+                _vietjobs_df = df.set_index("jd_id", drop=False)
+            else:
+                _vietjobs_df = df
+        else:
+            _vietjobs_df = None
+    return _vietjobs_df
+
+
+def get_jd_text_by_id(identifier: str) -> Optional[str]:
     """
-    Entry point tự động: đọc file và trích xuất thực thể.
+    Tra cứu formatted_jd_text từ file CSV VietJobs_cntt.csv theo jd_id hoặc tên file cũ.
+    Hỗ trợ:
+    - 'jd_0021'
+    - 21 hoặc '21'
+    - 'jd_0021_nha_phan_tich_kinh_doanh_cao_cap.txt'
+    - 'data/raw/jds/cntt/jd_0021_nha_phan_tich_kinh_doanh_cao_cap.txt'
+    """
+    df = get_vietjobs_df()
+    if df is None or len(df) == 0:
+        return None
+
+    clean_id = str(identifier).strip().replace("\\", "/")
+    match = re.search(r"jd_(\d+)", clean_id)
+    if match:
+        target_id = f"jd_{int(match.group(1)):04d}"
+    elif clean_id.isdigit():
+        target_id = f"jd_{int(clean_id):04d}"
+    else:
+        target_id = clean_id
+
+    if target_id in df.index:
+        row = df.loc[target_id]
+        if hasattr(row, "iloc"):
+            import pandas as pd
+            if isinstance(row, pd.DataFrame):
+                row = row.iloc[0]
+        return str(row.get("formatted_jd_text", ""))
+    return None
+
+
+def extract_from_file(file_path: str, model: Optional[str] = None, use_cache: bool = True) -> dict:
+    """
+    Entry point tự động: đọc file hoặc tra cứu từ VietJobs_cntt.csv và trích xuất thực thể.
     - PDF có text layer  → text mode
     - PDF scan (text < 50 ký tự) → Vision mode
     - File text (.txt, v.v.) → text mode
+    - jd_id (vd: 'jd_0021') hoặc đường dẫn JD VietJobs → nạp trực tiếp từ VietJobs_cntt.csv
     """
     path = normalize_path(file_path)
 
-    if path.lower().endswith(".pdf"):
-        text = read_pdf_text(path)
-        char_count = len(text)
-        _print(f"[INFO] PDF '{os.path.basename(path)}': đọc được {char_count} ký tự.")
+    if use_cache:
+        cached = get_cached_entity(path)
+        if cached:
+            return cached
+        # Kiểm tra theo jd_id nếu path có chứa jd_xxxx
+        match = re.search(r"jd_(\d+)", path)
+        if match:
+            target_id = f"jd_{int(match.group(1)):04d}"
+            cached = get_cached_entity(target_id)
+            if cached:
+                return cached
 
-        if char_count < PDF_TEXT_MIN_CHARS:
-            _print("[INFO] Ít text → chuyển sang Vision mode (PDF scan).")
-            return extract_entities_vision(path, model)
+    # 1. Nếu file thực sự tồn tại trên đĩa
+    if os.path.exists(path):
+        if path.lower().endswith(".pdf"):
+            text = read_pdf_text(path)
+            char_count = len(text)
+            _print(f"[INFO] PDF '{os.path.basename(path)}': đọc được {char_count} ký tự.")
 
-        return extract_entities(text, model)
+            if char_count < PDF_TEXT_MIN_CHARS:
+                _print("[INFO] Ít text → chuyển sang Vision mode (PDF scan).")
+                res = extract_entities_vision(path, model, use_cache=use_cache)
+                if use_cache and res:
+                    set_cached_entity(path, res)
+                return res
 
-    # File text thường
-    text = read_text_file(path)
-    return extract_entities(text, model)
+            res = extract_entities(text, model, use_cache=use_cache)
+            if use_cache and res:
+                set_cached_entity(path, res)
+            return res
+
+        # File text thường trên đĩa
+        text = read_text_file(path)
+        res = extract_entities(text, model, use_cache=use_cache)
+        if use_cache and res:
+            set_cached_entity(path, res)
+        return res
+
+    # 2. Nếu không phải file trên đĩa, tra cứu trực tiếp từ VietJobs_cntt.csv theo jd_id
+    jd_text = get_jd_text_by_id(path)
+    if jd_text:
+        res = extract_entities(jd_text, model, use_cache=use_cache)
+        if use_cache and res:
+            set_cached_entity(path, res)
+            match = re.search(r"jd_(\d+)", path)
+            if match:
+                set_cached_entity(f"jd_{int(match.group(1)):04d}", res)
+        return res
+
+    raise FileNotFoundError(f"Không tìm thấy file hoặc JD ID trong VietJobs: {file_path}")
 
 
 if __name__ == "__main__":

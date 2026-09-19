@@ -38,7 +38,7 @@ if __package__ in (None, ""):
     sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 import config
-from src.extraction.entity_extractor import extract_entities, extract_from_file, normalize_path
+from src.extraction.entity_extractor import extract_entities, extract_from_file, normalize_path, get_jd_text_by_id
 from src.representation.embedding_generator import EmbeddingGenerator
 from src.representation.graph_builder import build_graph
 
@@ -323,8 +323,8 @@ def _batch_from_csv(csv_path: str, gen: EmbeddingGenerator):
         if not os.path.exists(cv_path):
             print(f"[SKIP] CV không tồn tại: {cv_path}")
             continue
-        if not os.path.exists(jd_path):
-            print(f"[SKIP] JD không tồn tại: {jd_path}")
+        if not os.path.exists(jd_path) and get_jd_text_by_id(jd_path) is None:
+            print(f"[SKIP] JD không tồn tại (cả file lẫn trong VietJobs_cntt.csv): {jd_path}")
             continue
 
         try:

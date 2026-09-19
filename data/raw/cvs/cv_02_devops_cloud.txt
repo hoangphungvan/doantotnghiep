@@ -1,0 +1,15 @@
+HỌ VÀ TÊN: Lê Quốc Bảo - DevOps & Cloud Engineer
+Email: bao.le@email.com | SĐT: 0934567890 | Địa chỉ: TP. Hồ Chí Minh
+HỌC VẤN:
+- Kỹ sư Mạng máy tính & Truyền thông dữ liệu, ĐH Bách Khoa TP.HCM (2016-2021)
+KỸ NĂNG CHUYÊN MÔN:
+- Cloud Providers: AWS (EC2, S3, RDS, EKS, Lambda, CloudWatch), GCP
+- Container & Orchestration: Docker, Kubernetes (K8s), Helm
+- CI/CD & Automation: Jenkins, GitLab CI, GitHub Actions, Ansible, Terraform
+- Giám sát & Logging: Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana)
+- Scripting: Bash Shell, Python, Linux OS (Ubuntu, CentOS)
+KỸ NĂNG MỀM:
+- Khả năng xử lý sự cố nhanh, tư duy tự động hóa, làm việc độc lập và phối hợp nhóm tốt
+KINH NGHIỆM LÀM VIỆC:
+- DevOps Engineer tại Viettel Digital (2021 - Nay): Vận hành cụm Kubernetes production, xây dựng pipeline CI/CD tự động hóa kiểm thử và triển khai microservices lên AWS.
+- Cloud Systems Admin tại NashTech (2020 - 2021): Quản trị hạ tầng máy chủ Linux và triển khai Docker container.

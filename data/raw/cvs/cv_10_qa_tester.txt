@@ -1,0 +1,14 @@
+HỌ VÀ TÊN: Phạm Thu Trang - QA / Software Tester
+Email: trang.pham@email.com | SĐT: 0978123456 | Địa chỉ: Hà Nội
+HỌC VẤN:
+- Cử nhân Hệ thống Thông tin, Học viện Công nghệ Bưu chính Viễn thông (2018-2022)
+KỸ NĂNG CHUYÊN MÔN:
+- Kiểm thử thủ công (Manual Testing): Phân tích yêu cầu, thiết kế Test Case, Test Scenario, Test Plan, Bug Tracking (Jira, Mantis)
+- Kiểm thử tự động (Automation Testing): Selenium WebDriver, Postman (API Testing), JMeter (Performance/Load Test), Python/Java cơ bản
+- Cơ sở dữ liệu: SQL truy vấn dữ liệu kiểm tra (MySQL, SQL Server)
+- Phương pháp: Agile/Scrum, Black-box testing, Regression testing
+KỸ NĂNG MỀM:
+- Cẩn thận, chi tiết, kỹ năng giao tiếp phản hồi lỗi với lập trình viên, tư duy phản biện
+KINH NGHIỆM LÀM VIỆC:
+- QA Engineer tại KMS Technology (2022 - Nay): Kiểm thử chức năng và hiệu năng cho hệ thống Fintech, viết kịch bản tự động hóa API bằng Postman và Selenium.
+- Tester tại MISA (2021 - 2022): Kiểm thử phần mềm kế toán, tạo báo cáo lỗi và theo dõi tiến độ fix bug trên Jira.

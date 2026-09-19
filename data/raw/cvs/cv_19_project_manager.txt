@@ -1,0 +1,16 @@
+HỌ VÀ TÊN: Đinh Tuấn Anh - IT Project Manager
+Email: anh.dinh@email.com | SĐT: 0909876543 | Địa chỉ: Hà Nội
+HỌC VẤN:
+- Thạc sĩ Quản trị Dự án Công nghệ, Đại học Bách Khoa Hà Nội (2019-2021)
+- Cử nhân Công nghệ Thông tin, Đại học Bách Khoa Hà Nội (2014-2018)
+- Chứng chỉ: PMP (Project Management Professional), PMI-ACP
+KỸ NĂNG CHUYÊN MÔN:
+- Quản trị dự án: Lập kế hoạch dự án (Project Planning), Quản lý tiến độ (Scheduling), Quản lý ngân sách & rủi ro
+- Phương pháp luận: Agile/Scrum, Kanban, Waterfall, Sprint Planning, Daily Standup, Retrospective
+- Công cụ: Jira Software, Confluence, MS Project, ClickUp, Trello
+- Kỹ thuật: Hiểu biết sâu về kiến trúc phần mềm, quy trình CI/CD, cơ sở dữ liệu và API
+KỸ NĂNG MỀM:
+- Lãnh đạo đội ngũ (Team Leadership), giải quyết xung đột, đàm phán với khách hàng, quản lý thời gian
+KINH NGHIỆM LÀM VIỆC:
+- Project Manager tại Savvycom (2021 - Nay): Quản lý tiến độ và chất lượng cho 3 dự án phát triển phần mềm quy mô 20+ thành viên, đảm bảo giao hàng đúng hạn (On-time Delivery).
+- Scrum Master / Technical Lead tại Rikkeisoft (2018 - 2021): Điều phối sprint cho đội ngũ lập trình viên Backend và Frontend.

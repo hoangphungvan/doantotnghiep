@@ -1,0 +1,13 @@
+HỌ VÀ TÊN: Đỗ Minh Tuấn - Data Analyst
+Email: tuan.do@email.com | SĐT: 0965432109 | Địa chỉ: Hà Nội
+HỌC VẤN:
+- Cử nhân Toán - Tin ứng dụng, Đại học Khoa học Tự nhiên Hà Nội (2017-2021)
+KỸ NĂNG CHUYÊN MÔN:
+- Phân tích dữ liệu & BI: SQL nâng cao, Power BI, Tableau, Advanced Excel
+- Ngôn ngữ lập trình: Python (Pandas, NumPy, Matplotlib, Seaborn), R
+- Xử lý dữ liệu: Data Cleaning, Data Modeling, ETL cơ bản, thống kê mô tả, A/B Testing
+KỸ NĂNG MỀM:
+- Trình bày trực quan hóa dữ liệu (Storytelling with Data), giao tiếp liên phòng ban, tư duy kinh doanh
+KINH NGHIỆM LÀM VIỆC:
+- Data Analyst tại Shopee Vietnam (2021 - Nay): Xây dựng dashboard theo dõi KPI vận hành và doanh thu trên Power BI, thực hiện các truy vấn SQL phân tích hành vi người dùng.
+- Junior Data Analyst tại MoMo (2020 - 2021): Hỗ trợ xử lý dữ liệu giao dịch và lập báo cáo tài chính định kỳ.

@@ -3,11 +3,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://generativelanguage.googleapis.com/v1beta/openai/")
-# LLM_MODEL = os.getenv("LLM_MODEL", "gemini-2.0-flash")
-LLM_MODEL = os.getenv("LLM_MODEL", "gemini-3.1-flash-lite")
-GEMINI_RPM_LIMIT = 15  # Free tier: 15 requests/minute cho gemini-2.0-flash
+LLM_API_KEY = os.getenv("LLM_API_KEY") or os.getenv("GROQ_API_KEY") or os.getenv("GEMINI_API_KEY")
+GROQ_API_KEY = LLM_API_KEY
+# Alias tương thích ngược nếu còn dùng tên cũ
+GEMINI_API_KEY = LLM_API_KEY
+OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.groq.com/openai/v1")
+LLM_MODEL = os.getenv("LLM_MODEL", "qwen/qwen3.8-27b")
+LLM_RPM_LIMIT = 28  # để chừa margin dưới mức 30 RPM thật
+GEMINI_RPM_LIMIT = 28
 
 # Model đa ngôn ngữ (hỗ trợ tiếng Việt tốt hơn all-MiniLM-L6-v2 vốn chủ yếu tiếng Anh).
 # paraphrase-multilingual-MiniLM-L12-v2 cùng dim 384 nên không đổi kiến trúc model.
@@ -73,11 +76,17 @@ SHARPENING_P = 4.0
 
 LEARNING_RATE = 1e-3
 WEIGHT_DECAY = 1e-4
-POS_WEIGHT = 10.0
+# Với soft target ordinal 4 mức (grade / NUM_GRADES in {0, 0.33, 0.67, 1.0}),
+# đặt None để không nhân hệ số phạt dương tính lệch, phân bố tự cân bằng qua dữ liệu.
+POS_WEIGHT = None
 NUM_EPOCHS = 100
 BATCH_SIZE = 32
 
 DATA_RAW_DIR = os.path.join(os.path.dirname(__file__), "data", "raw")
+VIETJOBS_IT_CSV = os.path.join(DATA_RAW_DIR, "VietJobs_cntt.csv")
 DATA_PROCESSED_DIR = os.path.join(os.path.dirname(__file__), "data", "processed")
+DATA_CACHE_DIR = os.path.join(os.path.dirname(__file__), "data", "cache")
+ENTITY_CACHE_FILE = os.path.join(DATA_CACHE_DIR, "entity_cache.json")
+JD_EMBEDDINGS_CACHE_FILE = os.path.join(DATA_CACHE_DIR, "jd_embeddings_cache.pt")
 GRAPH_DIR = os.path.join(DATA_PROCESSED_DIR, "graphs")
 MODEL_DIR = os.path.join(os.path.dirname(__file__), "models")
