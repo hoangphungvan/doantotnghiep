@@ -195,13 +195,12 @@ doantotnghiep/
 │
 ├── data/
 │   ├── cache/                       # Cache hệ thống (tăng tốc xử lý)
-│   │   ├── entity_cache.json        # Cache thực thể theo SHA-256
+│   │   ├── entity_cache.json        # Cache thực thể theo SHA-256 & jd_id
 │   │   └── jd_embeddings_cache.pt   # Cache vector DeepSets của 1.906 JD
 │   ├── raw/
 │   │   ├── cvs/                     # File văn bản hồ sơ CV
-│   │   ├── jds/cntt/                # File văn bản mô tả công việc (JD)
-│   │   ├── VietJobs_cntt.csv        # Bảng dữ liệu 1.906 JD CNTT
-│   │   └── pairs_it.csv             # Bảng 60 cặp huấn luyện (cv_path, jd_path, label)
+│   │   ├── VietJobs_cntt.csv        # Bảng dữ liệu duy nhất chứa toàn bộ 1.906 JD CNTT (có cột jd_id & formatted_jd_text)
+│   │   └── pairs_it.csv             # Bảng 60 cặp huấn luyện (cv_path, jd_path=jd_id, label)
 │   └── processed/
 │       ├── graphs/                  # Đồ thị PyG đã tiền xử lý (.pt)
 │       ├── training_pairs.csv       # Metadata danh sách cặp đồ thị
