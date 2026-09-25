@@ -1,16 +1,14 @@
-HỌ VÀ TÊN: Nguyễn Văn Huy - Senior Backend Java Developer
+HỌ VÀ TÊN: Nguyễn Văn Huy - Senior Server-side Software Engineer (JVM Platform Specialist)
 Email: huy.nguyen@email.com | SĐT: 0912345678 | Địa chỉ: Hà Nội
 HỌC VẤN:
 - Cử nhân Công nghệ Thông tin, Đại học Bách Khoa Hà Nội (2015-2019)
 - Chuyên ngành: Khoa học Máy tính, Kỹ thuật phần mềm
 KỸ NĂNG CHUYÊN MÔN:
-- Ngôn ngữ: Java (Java 8, 11, 17, 21), SQL, JavaScript
-- Frameworks: Spring Boot, Spring Cloud, Spring MVC, Hibernate, JPA
-- Cơ sở dữ liệu: Oracle, MySQL, PostgreSQL, MongoDB, Redis Cache
-- Hệ thống & Kiến trúc: Microservices, RESTful API, Kafka, RabbitMQ, Docker
-- Công cụ & Quy trình: Git, Jenkins, CI/CD, Maven, Jira, Agile/Scrum
+- Server-side Development: Object-oriented JVM platform developer, enterprise backend framework, RESTful web services, Microservices architecture, high-throughput distributed architectures.
+- Data Storage & Caching: Relational Database Management Systems (RDBMS, enterprise relational databases), complex query tuning, distributed in-memory data cache, asynchronous event streaming message brokers.
+- System Operations: Container runtime environment, service-oriented systems, automated build pipelines, distributed version control.
 KỸ NĂNG MỀM:
-- Tư duy logic, giải quyết vấn đề phức tạp, kỹ năng làm việc nhóm, quản lý thời gian
+- Analytical problem solving, cross-functional collaboration, system design communication.
 KINH NGHIỆM LÀM VIỆC:
-- Senior Java Developer tại VNG Corporation (2021 - Nay): Thiết kế kiến trúc Microservices xử lý hàng triệu giao dịch/ngày, tối ưu truy vấn cơ sở dữ liệu Oracle/PostgreSQL.
-- Backend Developer tại FPT Software (2019 - 2021): Phát triển REST API bằng Spring Boot, tích hợp message queue Kafka và Redis caching.
+- Senior Backend Software Engineer tại VNG Corporation (2021 - Nay): Architected and maintained distributed microservices handling millions of daily transactions, optimized enterprise relational queries.
+- Backend Developer tại FPT Software (2019 - 2021): Built scalable backend REST services, integrated asynchronous message pipelines and in-memory cache layers.

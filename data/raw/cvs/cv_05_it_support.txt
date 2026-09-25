@@ -1,14 +1,14 @@
-HỌ VÀ TÊN: Ngô Văn Đạt - IT Helpdesk & Support
+HỌ VÀ TÊN: Ngô Văn Đạt - Workplace Technology Specialist & Desktop Support
 Email: dat.ngo@email.com | SĐT: 0938112233 | Địa chỉ: Hà Nội
 HỌC VẤN:
 - Cao đẳng Công nghệ Thông tin, Cao đẳng FPT Polytechnic (2019-2022)
 KỸ NĂNG CHUYÊN MÔN:
-- Hỗ trợ người dùng: Cài đặt và khắc phục sự cố hệ điều hành Windows 10/11, macOS, phần mềm văn phòng MS Office, Google Workspace
-- Phần cứng: Lắp ráp, sửa chữa, thay thế linh kiện PC, Laptop, máy in, máy scan, thiết bị chấm công
-- Mạng nội bộ: Bấm dây mạng, cấu hình Router Wi-Fi, Switch, kiểm tra thông mạng LAN/WAN cơ bản
-- Quản trị tài khoản: Active Directory, cấp quyền truy cập, email doanh nghiệp
+- End-User Support: Workstation setup and operating system support, business office suite troubleshooting, enterprise cloud collaboration platforms.
+- Hardware Maintenance: Desktop PC and laptop diagnostics, component replacement, office peripherals maintenance (printers, document scanners).
+- Network Operations: Network cabling termination, wireless router setup, office switch administration, basic local network troubleshooting.
+- User Access Administration: Directory administration, user provisioning, corporate email account configuration.
 KỸ NĂNG MỀM:
-- Nhiệt tình, kiên nhẫn, hỗ trợ tận tâm, giao tiếp thân thiện, phản ứng nhanh nhẹn
+- Customer-focused service attitude, prompt incident response, positive technical communication.
 KINH NGHIỆM LÀM VIỆC:
-- Nhân viên IT Support tại Kangaroo Group (2022 - Nay): Hỗ trợ kỹ thuật máy tính cho hơn 300 nhân sự văn phòng, quản lý tài sản thiết bị CNTT.
-- Thực tập sinh IT Helpdesk tại Thế Giới Di Động (2021 - 2022): Cài đặt máy và hỗ trợ xử lý sự cố thiết bị tại cửa hàng.
+- Workplace Support Specialist tại Kangaroo Group (2022 - Nay): Provided workplace technical support for over 300 corporate staff, managed hardware asset inventories.
+- Technical Support Intern tại Thế Giới Di Động (2021 - 2022): Prepared computer workstations and provided on-site hardware troubleshooting.

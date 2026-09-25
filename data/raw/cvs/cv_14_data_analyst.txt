@@ -1,13 +1,13 @@
-HỌ VÀ TÊN: Đỗ Minh Tuấn - Data Analyst
+HỌ VÀ TÊN: Đỗ Minh Tuấn - Business Intelligence & Data Insights Specialist
 Email: tuan.do@email.com | SĐT: 0965432109 | Địa chỉ: Hà Nội
 HỌC VẤN:
 - Cử nhân Toán - Tin ứng dụng, Đại học Khoa học Tự nhiên Hà Nội (2017-2021)
 KỸ NĂNG CHUYÊN MÔN:
-- Phân tích dữ liệu & BI: SQL nâng cao, Power BI, Tableau, Advanced Excel
-- Ngôn ngữ lập trình: Python (Pandas, NumPy, Matplotlib, Seaborn), R
-- Xử lý dữ liệu: Data Cleaning, Data Modeling, ETL cơ bản, thống kê mô tả, A/B Testing
+- Business Intelligence: Complex data querying, executive visual dashboard development, advanced spreadsheet analytics and financial modeling.
+- Statistical Computing: Data manipulation and statistical analysis using scientific computing languages and statistical libraries.
+- Data Operations: Exploratory data analysis, data cleansing pipelines, relational data modeling, basic ETL workflows, statistical hypothesis testing.
 KỸ NĂNG MỀM:
-- Trình bày trực quan hóa dữ liệu (Storytelling with Data), giao tiếp liên phòng ban, tư duy kinh doanh
+- Data storytelling for business stakeholders, translating metrics into strategic business insights.
 KINH NGHIỆM LÀM VIỆC:
-- Data Analyst tại Shopee Vietnam (2021 - Nay): Xây dựng dashboard theo dõi KPI vận hành và doanh thu trên Power BI, thực hiện các truy vấn SQL phân tích hành vi người dùng.
-- Junior Data Analyst tại MoMo (2020 - 2021): Hỗ trợ xử lý dữ liệu giao dịch và lập báo cáo tài chính định kỳ.
+- Data Insights Specialist tại Shopee Vietnam (2021 - Nay): Designed operational and revenue KPI dashboards, executed complex data queries to evaluate user behavior.
+- Junior Data Specialist tại MoMo (2020 - 2021): Processed payment transaction logs and prepared periodic financial analysis reports.

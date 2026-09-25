@@ -1,15 +1,15 @@
-HỌ VÀ TÊN: Lê Quốc Bảo - DevOps & Cloud Engineer
+HỌ VÀ TÊN: Lê Quốc Bảo - Cloud Infrastructure & Site Reliability Specialist (SRE Specialist)
 Email: bao.le@email.com | SĐT: 0934567890 | Địa chỉ: TP. Hồ Chí Minh
 HỌC VẤN:
 - Kỹ sư Mạng máy tính & Truyền thông dữ liệu, ĐH Bách Khoa TP.HCM (2016-2021)
 KỸ NĂNG CHUYÊN MÔN:
-- Cloud Providers: AWS (EC2, S3, RDS, EKS, Lambda, CloudWatch), GCP
-- Container & Orchestration: Docker, Kubernetes (K8s), Helm
-- CI/CD & Automation: Jenkins, GitLab CI, GitHub Actions, Ansible, Terraform
-- Giám sát & Logging: Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana)
-- Scripting: Bash Shell, Python, Linux OS (Ubuntu, CentOS)
+- Cloud Platforms: Amazon Web Services public cloud infrastructure, virtual compute instances, scalable object storage, managed database services, Google Cloud Platform.
+- Container Orchestration: Container runtime engines, automated cluster orchestration for microservices, container release packaging.
+- Automation & CI/CD: Automated continuous integration and delivery pipelines, Infrastructure as Code declarative configuration, configuration management automation.
+- Systems Observability: Telemetry metric collection, real-time visual dashboards, centralized system log aggregation.
+- Operating Systems: Unix/Linux operating system administration, command-line shell automation, script automation.
 KỸ NĂNG MỀM:
-- Khả năng xử lý sự cố nhanh, tư duy tự động hóa, làm việc độc lập và phối hợp nhóm tốt
+- Production incident management, automation mindset, cross-team reliability collaboration.
 KINH NGHIỆM LÀM VIỆC:
-- DevOps Engineer tại Viettel Digital (2021 - Nay): Vận hành cụm Kubernetes production, xây dựng pipeline CI/CD tự động hóa kiểm thử và triển khai microservices lên AWS.
-- Cloud Systems Admin tại NashTech (2020 - 2021): Quản trị hạ tầng máy chủ Linux và triển khai Docker container.
+- Cloud Systems Specialist tại Viettel Digital (2021 - Nay): Operated production distributed cluster infrastructure, built automated software delivery pipelines.
+- Systems Administrator tại NashTech (2020 - 2021): Managed Linux server environments and containerized application deployments.

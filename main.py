@@ -277,15 +277,16 @@ def main():
         "--mode",
         type=str,
         default="demo",
-        choices=["demo", "predict", "extract", "pipeline", "prepare", "train", "hybrid"],
+        choices=["demo", "predict", "extract", "pipeline", "prepare", "train", "hybrid", "ranking-eval"],
         help=(
-            "demo     : Test nhanh với data ngẫu nhiên\n"
-            "prepare  : Thu thập & chuẩn bị training data (text hoặc file PDF)\n"
-            "train    : Huấn luyện model từ data đã chuẩn bị\n"
-            "predict  : Dự đoán tương tác\n"
-            "extract  : Test trích xuất thực thể LLM\n"
-            "pipeline : Full pipeline demo với LLM\n"
-            "hybrid   : Hybrid Score + baseline so sánh (NDCG/MRR/Recall)\n"
+            "demo         : Test nhanh với data ngẫu nhiên\n"
+            "prepare      : Thu thập & chuẩn bị training data (text hoặc file PDF)\n"
+            "train        : Huấn luyện model từ data đã chuẩn bị\n"
+            "predict      : Dự đoán tương tác\n"
+            "extract      : Test trích xuất thực thể LLM\n"
+            "pipeline     : Full pipeline demo với LLM\n"
+            "hybrid       : Hybrid Score + baseline so sánh (NDCG/MRR/Recall)\n"
+            "ranking-eval : Bảng ranking 4 phương pháp trên pairs_it.csv\n"
         ),
     )
     parser.add_argument(
@@ -320,6 +321,9 @@ def main():
         predict_interactive()
     elif args.mode == "hybrid":
         run_hybrid_demo()
+    elif args.mode == "ranking-eval":
+        from src.evaluation.ranking_eval import main as ranking_main
+        ranking_main()
 
 
 if __name__ == "__main__":

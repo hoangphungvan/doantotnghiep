@@ -192,4 +192,34 @@ def predict_interactive():
 
 
 if __name__ == "__main__":
-    predict_interactive()
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Du doan CV-JD (text/PDF)")
+    parser.add_argument("--cv", type=str, help="Duong dan CV (PDF/TXT)")
+    parser.add_argument("--jd", type=str, help="Duong dan JD (PDF/TXT) hoac jd_id (vd jd_0105)")
+    parser.add_argument("--model", type=str, default=None)
+    parser.add_argument("--interactive", action="store_true")
+    args = parser.parse_args()
+
+    if args.interactive or not (args.cv and args.jd):
+        predict_interactive()
+    else:
+        predictor = CJMPredictor(model_path=args.model)
+        cv_path = normalize_path(args.cv)
+        jd_path = normalize_path(args.jd)
+        if os.path.exists(cv_path) and (os.path.exists(jd_path) or jd_path.lower().startswith("jd_")):
+            result = predictor.predict_from_files(cv_path, jd_path)
+        else:
+            parser.error("Can file CV/JD hop le, hoac --jd jd_xxxx")
+        print(f"\nKET QUA: {result['label']}")
+        print(f"Diem: {result['score']}")
+        print(f"Muc: {result['grade']}/3 — {result['grade_label']}")
+        print("\nCV Entities:")
+        for k, v in result["cv_entities"].items():
+            if v:
+                print(f"  {k}: {v}")
+        print("\nJD Entities:")
+        for k, v in result["jd_entities"].items():
+            if v:
+                print(f"  {k}: {v}")
+

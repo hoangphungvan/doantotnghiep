@@ -1,15 +1,15 @@
-HỌ VÀ TÊN: Bùi Thị Yến - Senior Business Analyst (IT BA)
+HỌ VÀ TÊN: Bùi Thị Yến - Business Systems Analyst & Solution Architect
 Email: yen.bui@email.com | SĐT: 0918765432 | Địa chỉ: Hà Nội
 HỌC VẤN:
 - Cử nhân Hệ thống Thông tin Quản lý, Đại học Kinh tế Quốc dân (2016-2020)
-- Chứng chỉ: CBAP (Certified Business Analysis Professional), Professional Scrum Master (PSM I)
+- Professional Certifications: Certified Business Analysis Professional, Professional Scrum Master
 KỸ NĂNG CHUYÊN MÔN:
-- Kỹ năng BA: Khảo sát & thu thập yêu cầu (Elicitation), Phân tích nghiệp vụ, Quản lý phạm vi dự án
-- Tài liệu hóa: Viết BRD, SRS, User Stories, Acceptance Criteria, Use Case, Activity Diagram, BPMN 2.0
-- Công cụ: Jira, Confluence, Figma, Balsamiq, Draw.io, MS Visio, Trello, SQL cơ bản
-- Phương pháp: Agile/Scrum, Waterfall
+- Business Analysis: Stakeholder requirement discovery and elicitation, business process analysis, functional scope management.
+- Documentation & Modeling: Business Requirements Documents, Software Requirements Specifications, user stories with acceptance criteria, Business Process Model and Notation diagrams.
+- Visual Tools: Workflow diagramming, collaborative interactive wireframing, agile requirement tracking systems.
+- Delivery Methods: Agile delivery framework, sprint backlog grooming, functional acceptance validation.
 KỸ NĂNG MỀM:
-- Đàm phán và thuyết phục các bên liên quan, kỹ năng thuyết trình, tư duy giải pháp
+- Stakeholder negotiation, consensus building, clear presentations, solution-oriented mindset.
 KINH NGHIỆM LÀM VIỆC:
-- Senior IT BA tại One Mount Group (2021 - Nay): Cầu nối giữa bộ phận nghiệp vụ kinh doanh và đội ngũ kỹ thuật phần mềm, làm rõ các tính năng cho ứng dụng VinID.
-- Business Analyst tại CMC Global (2020 - 2021): Viết tài liệu đặc tả yêu cầu phần mềm cho dự án khách hàng Nhật Bản.
+- Senior Systems Analyst tại One Mount Group (2021 - Nay): Bridged business stakeholders and engineering teams, clarified technical features for the enterprise platform.
+- Business Analyst tại CMC Global (2020 - 2021): Authored software specification documents for international clients.

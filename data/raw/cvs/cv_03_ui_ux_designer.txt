@@ -1,13 +1,13 @@
-HỌ VÀ TÊN: Nguyễn Thu Hà - UI/UX Designer
+HỌ VÀ TÊN: Nguyễn Thu Hà - Digital Product Experience & Interface Designer
 Email: ha.nguyen@email.com | SĐT: 0915998877 | Địa chỉ: TP. Hồ Chí Minh
 HỌC VẤN:
 - Cử nhân Thiết kế Đồ họa, Đại học Mỹ thuật Công nghiệp (2017-2021)
 KỸ NĂNG CHUYÊN MÔN:
-- Thiết kế UI/UX: Figma, Adobe XD, Sketch, Wireframing, Prototyping, Design System, User Journey Map
-- Thiết kế Đồ họa: Adobe Photoshop, Adobe Illustrator, After Effects cơ bản
-- Kiến thức kỹ thuật: Hiểu biết về HTML/CSS, lưới bố cục (Grid system), responsive design cho Web và Mobile
+- Product Experience Design: User experience and user interface design, interactive prototyping and wireframing, design system creation, user journey mapping.
+- Visual Graphics: Digital visual asset editing, vector asset illustration, motion design micro-interactions.
+- Frontend Principles: Understanding of stylesheet layout rules, visual grid hierarchy, responsive design across mobile and desktop viewports.
 KỸ NĂNG MỀM:
-- Tư duy sáng tạo, thẩm mỹ hiện đại, khả năng nghiên cứu hành vi người dùng, làm việc nhóm ăn ý với Developer
+- Creative visual problem solving, user psychology empathy, seamless collaboration with frontend developers.
 KINH NGHIỆM LÀM VIỆC:
-- UI/UX Designer tại Be Group (2021 - Nay): Thiết kế giao diện ứng dụng gọi xe và giao đồ ăn, xây dựng Design System đồng nhất trên iOS và Android.
-- Graphic Designer tại VCCorp (2020 - 2021): Thiết kế banner quảng cáo, infographic và ấn phẩm truyền thông số.
+- Product Interface Designer tại Be Group (2021 - Nay): Designed user flows and UI screens for ride-hailing and food delivery apps, maintained cross-platform Design System.
+- Visual Asset Designer tại VCCorp (2020 - 2021): Created marketing banners, infographics, and digital promotional assets.

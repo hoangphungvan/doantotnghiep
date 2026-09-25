@@ -1,14 +1,14 @@
-HỌ VÀ TÊN: Trần Thị Mai - Frontend Web Developer
+HỌ VÀ TÊN: Trần Thị Mai - Senior Client-side Web Engineer (Web Applications Specialist)
 Email: mai.tran@email.com | SĐT: 0987654321 | Địa chỉ: Hà Nội
 HỌC VẤN:
 - Cử nhân Công nghệ Thông tin, Đại học Công nghệ - ĐHQGHN (2018-2022)
 KỸ NĂNG CHUYÊN MÔN:
-- Kỹ thuật Web: HTML5, CSS3, JavaScript (ES6+), TypeScript
-- Frameworks/Libraries: ReactJS, NextJS, Redux Toolkit, TailwindCSS, Bootstrap, Material UI
-- API & Tools: RESTful API, GraphQL, Webpack, Vite, Git, Postman, Figma to Code
-- Testing: Jest, React Testing Library
+- Web Client Architecture: Single-page application development, component-driven web frameworks, server-rendered web applications, type-safe frontend scripting.
+- Interface Styling: Modern stylesheet layout engines, responsive web layouts, component design systems, mobile-first design approaches.
+- State & Data: Centralized client application state store, RESTful web services consumption, asynchronous data fetching.
+- Performance & Quality: Client rendering speed optimization, automated component verification, modern web bundle build tools.
 KỸ NĂNG MỀM:
-- Giao tiếp tốt, thẩm mỹ giao diện người dùng cao, tỉ mỉ, làm việc nhóm hiệu quả
+- Visual aesthetic empathy, product usability focus, collaborative teamwork.
 KINH NGHIỆM LÀM VIỆC:
-- Frontend Developer tại Tiki (2022 - Nay): Xây dựng giao diện thương mại điện tử responsive bằng ReactJS và NextJS, tối ưu hóa Core Web Vitals và SEO.
-- Web Developer Intern tại CMC Telecom (2021 - 2022): Lập trình giao diện web bằng HTML, CSS, JavaScript và tích hợp API.
+- Client-side Web Engineer tại Tiki (2022 - Nay): Developed responsive e-commerce web interfaces, optimized Core Web Vitals and client rendering speeds.
+- Web Development Intern tại CMC Telecom (2021 - 2022): Built interactive web views and consumed backend web service endpoints.

@@ -1,15 +1,15 @@
-HỌ VÀ TÊN: Vũ Văn Thắng - Network & Security Engineer
+HỌ VÀ TÊN: Vũ Văn Thắng - Telecommunications & Information Defense Specialist
 Email: thang.vu@email.com | SĐT: 0923456789 | Địa chỉ: Hà Nội
 HỌC VẤN:
 - Kỹ sư An toàn Thông tin, Học viện An ninh Nhân dân / PTIT (2016-2021)
-- Chứng chỉ: CCNA, CCNP Security, CEH (Certified Ethical Hacker)
+- Professional Certifications: Network Associate Certification, Certified Ethical Security Practitioner
 KỸ NĂNG CHUYÊN MÔN:
-- Mạng máy tính: Cisco Router/Switch, LAN, WAN, VPN, BGP, OSPF, VLAN
-- Bảo mật hệ thống: Firewall (Fortinet, Palo Alto, Cisco ASA), IDS/IPS, WAF, SIEM, Antivirus Enterprise
-- Hệ thống máy chủ: Linux (Ubuntu, RHEL), Windows Server, Active Directory, VMware ESXi
-- Đánh giá lỗ hổng: Nessus, Wireshark, Nmap, Pentest cơ bản
+- Network Infrastructure: Enterprise network routing and switching hardware, LAN/WAN topology design, encrypted private tunneling, dynamic routing protocols, network segmentation.
+- Defense Systems: Next-generation enterprise firewalls, intrusion detection and prevention systems, application protection gateways, security information and event monitoring.
+- Server Platforms: Enterprise Linux administration, directory services and domain controller administration, virtualization environments.
+- Vulnerability Assessment: Network vulnerability scanning, packet inspection analysis, penetration testing fundamentals.
 KỸ NĂNG MỀM:
-- Tinh thần trách nhiệm cao, phản ứng nhanh với sự cố an ninh mạng, làm việc nhóm
+- Rapid incident response, strict security compliance adherence, high ethical responsibility.
 KINH NGHIỆM LÀM VIỆC:
-- Network Security Specialist tại Ngân hàng Techcombank (2021 - Nay): Vận hành hệ thống tường lửa, giám sát nhật ký an ninh SIEM và triển khai chính sách bảo mật mạng nội bộ.
-- Kỹ sư mạng tại FPT Telecom (2019 - 2021): Cấu hình và xử lý sự cố thiết bị mạng doanh nghiệp.
+- Information Defense Specialist tại Ngân hàng Techcombank (2021 - Nay): Administered enterprise firewalls, monitored security telemetry, enforced corporate security policies.
+- Network Infrastructure Engineer tại FPT Telecom (2019 - 2021): Configured enterprise telecommunication equipment and resolved connectivity incidents.
