@@ -2,11 +2,11 @@
 Pipeline đánh giá ranking: so sánh 4 phương pháp trên ground truth.
 
 Dữ liệu nhẹ (mặc định):
-    data/raw/pairs_it.csv              — 60 cặp, nhãn 0-3
+    data/raw/pairs_it.csv              — các cặp CV-JD, nhãn 0-3
     data/raw/cvs/cv_*.txt              — CV text
     data/processed/representative_jds.csv + entity_cache — JD text
     data/processed/training_pairs.csv  — map tới graph_*.pt (GCN)
-    models/best_model.pt               — checkpoint GCN
+    models/best_model_v4_certification_catalog_expanded.pt — checkpoint GCN hiện tại
 
 Không đọc VietJobs.csv (nặng). Không đọc VietJobs_cntt.csv trừ khi
 truyền --use-vietjobs-it.
@@ -106,7 +106,7 @@ def load_jd_text_map(use_vietjobs_it: bool = False) -> dict[str, str]:
     """
     JD text theo jd_id, ưu tiên nguồn nhẹ:
     1) representative_jds.csv (title + skills)
-    2) entity_cache.json keyed by jd_xxxx
+    2) entity_cache_v4_certification_catalog_expanded.json keyed by jd_xxxx
     3) (tuỳ chọn) VietJobs_cntt.csv — không dùng mặc định
     """
     texts: dict[str, str] = {}
@@ -291,7 +291,7 @@ def gcn_scores_from_model(rows: list[dict], model_path: str = None) -> Optional[
         if len(ordered) != len(rows):
             return None
 
-    model_path = model_path or os.path.join(config.MODEL_DIR, "best_model.pt")
+    model_path = model_path or config.MODEL_FILE
     if not os.path.exists(model_path):
         print(f"[WARN] Chưa có model: {model_path}")
         return None

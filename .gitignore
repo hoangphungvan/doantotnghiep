@@ -13,6 +13,9 @@ data/cache/*.json
 # Graphs da sinh trong qua trinh preprocess/training
 data/processed/graphs/
 data/processed/graphs_v*/
+data/processed/gcn_predictions.csv
+data/processed/ranking_eval_results.csv
+data/processed/ranking_eval_results.md
 
 # Dataset goc lon
 data/raw/VietJobs.csv
