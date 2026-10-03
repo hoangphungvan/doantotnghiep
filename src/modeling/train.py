@@ -29,6 +29,7 @@ if __package__ in (None, ""):
 import config
 from src.modeling.model import GCNModel, get_loss_fn, grade_to_target
 from src.evaluation.metrics import evaluate_ranking, format_ranking_metrics
+from src.evaluation.certification import certification_bonus_for_graph
 
 
 # ---------------------------------------------------------------------------
@@ -182,7 +183,8 @@ def evaluate_ranking_model(model: GCNModel, data_list: list,
             continue
         data = data.to(device)
         logits = model(data)
-        score = torch.sigmoid(logits).item()
+        base_score = torch.sigmoid(logits).item()
+        score = min(1.0, base_score + certification_bonus_for_graph(data))
         query_groups.setdefault(qid, []).append((data.y.item(), score))
 
     if not query_groups:
@@ -246,7 +248,7 @@ def train(data_list: list,
     epochs_no_improve = 0
     history = {"train_loss": [], "val_loss": [], "val_mae": [], "val_auc": []}
 
-    save_path = save_path or os.path.join(config.MODEL_DIR, "best_model.pt")
+    save_path = save_path or config.MODEL_FILE
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
 
     print(f"\n{'='*70}")
@@ -319,7 +321,7 @@ if __name__ == "__main__":
     parser.add_argument("--lr",        type=float, default=config.LEARNING_RATE)
     parser.add_argument("--patience",  type=int,   default=20)
     parser.add_argument("--save",      type=str,   default=None,
-                        help="Đường dẫn lưu model (mặc định: models/best_model.pt)")
+                        help=f"Đường dẫn lưu model (mặc định: {config.MODEL_FILE})")
     args = parser.parse_args()
 
     graphs = load_all_graphs()

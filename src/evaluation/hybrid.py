@@ -38,6 +38,8 @@ if __package__ in (None, ""):
 
 import config
 from src.evaluation.metrics import evaluate_ranking
+from src.evaluation.certification import apply_certification_bonus_to_scores
+from src.evaluation.scoring import cosine_to_semantic_score
 from src.modeling.model import GCNModel
 from src.modeling.train import get_query_id
 
@@ -126,8 +128,7 @@ def tune_alpha(graphs: list, graph_scores: np.ndarray,
     Trả về (best_alpha, metrics_tại_α_tốt_nhất).
     Nếu không tune được (thiếu query hợp lệ) → trả về (0.5, None).
     """
-    normalize = _minmax_fit(semantic_scores)
-    semantic_norm = normalize(semantic_scores)
+    semantic_norm = cosine_to_semantic_score(semantic_scores)
     grid = np.linspace(0.0, 1.0, 21) if grid is None else grid
 
     best_alpha, best_metrics, best_score = 0.5, None, -1.0
@@ -204,7 +205,7 @@ def run_comparison(graphs: list, model: GCNModel = None,
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     if model is None:
-        model_path = model_path or os.path.join(config.MODEL_DIR, "best_model.pt")
+        model_path = model_path or config.MODEL_FILE
         checkpoint = torch.load(model_path, weights_only=False, map_location=device)
         model = GCNModel(input_dim=checkpoint["input_dim"]).to(device)
         model.load_state_dict(checkpoint["model_state_dict"])
@@ -215,9 +216,11 @@ def run_comparison(graphs: list, model: GCNModel = None,
     tfidf_scores = tfidf_cosine_scores(val_data)
     semantic_raw = compute_semantic_scores(val_data)
     graph_scores = compute_graph_scores(model, val_data, device)
+    # Chứng chỉ chỉ cộng điểm khi CV có chứng chỉ mà JD yêu cầu; trường hợp
+    # không liên quan giữ nguyên graph score nền.
+    graph_scores = apply_certification_bonus_to_scores(val_data, graph_scores)
 
-    normalize = _minmax_fit(semantic_raw)
-    semantic_norm = normalize(semantic_raw)
+    semantic_norm = cosine_to_semantic_score(semantic_raw)
 
     results = OrderedDict()
     results["TF-IDF + cosine"] = evaluate_ranking(
@@ -254,7 +257,7 @@ def run_comparison(graphs: list, model: GCNModel = None,
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Hybrid Score: GCN + SBERT cosine")
     parser.add_argument("--model", type=str, default=None,
-                        help="Đường dẫn model GCN đã train (mặc định models/best_model.pt)")
+                        help=f"Đường dẫn model GCN đã train (mặc định {config.MODEL_FILE})")
     parser.add_argument("--alpha", type=str, default="auto",
                         help="'auto' để tune theo NDCG@K, hoặc số trong [0,1]")
     parser.add_argument("--ndcg-k", type=int, default=10,

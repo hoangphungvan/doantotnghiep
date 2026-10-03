@@ -3,14 +3,14 @@ Bước 1: JD-Only Pass — Trích xuất thực thể và Cache Embeddings cho 
 
 Tác vụ:
 1. Đọc toàn bộ 1.906 JD ngành CNTT từ data/raw/VietJobs_cntt.csv.
-2. Trích xuất 6 loại thực thể cho mỗi JD (từ các trường cấu trúc sẵn có và nội dung văn bản).
-3. Lưu vào Entity Cache (data/cache/entity_cache.json) theo cả:
+2. Trích xuất 7 loại thực thể cho mỗi JD (từ các trường cấu trúc sẵn có và nội dung văn bản).
+3. Lưu vào Entity Cache theo cả:
    - Hash SHA256 của nội dung văn bản JD
    - Đường dẫn file text: data/raw/jds/cntt/jd_xxxx_....txt
    - Đường dẫn tuyệt đối
    -> Giúp bất kỳ lệnh nào sau này gọi extract_entities hoặc extract_from_file đều trúng cache ngay lập tức (0% tốn LLM API call).
 4. Sinh DeepSets Embeddings (paraphrase-multilingual-MiniLM-L12-v2) cho toàn bộ 1.906 JD.
-5. Tạo vector đặc trưng phân cụm (kết hợp role + hard_skills) và lưu toàn bộ vào data/cache/jd_embeddings_cache.pt.
+5. Tạo vector đặc trưng phân cụm (kết hợp role + hard_skills) và lưu toàn bộ vào cache phiên bản hiện tại.
 """
 
 import ast
@@ -34,6 +34,7 @@ from src.extraction.entity_extractor import (
     set_cached_entity,
     save_entire_cache,
     normalize_path,
+    extract_supported_certifications,
 )
 from src.representation.embedding_generator import EmbeddingGenerator
 
@@ -61,7 +62,7 @@ def slugify(text: str) -> str:
 
 def extract_jd_entities_from_row(row: pd.Series) -> dict:
     """
-    Trích xuất 6 nhóm thực thể chuẩn hóa cho 1 JD từ dòng dữ liệu VietJobs.
+    Trích xuất 7 nhóm thực thể chuẩn hóa cho 1 JD từ dòng dữ liệu VietJobs.
     """
     # 1. Role: lấy từ job_title
     role = [str(row.get("job_title", "")).strip()] if pd.notna(row.get("job_title")) else []
@@ -94,6 +95,12 @@ def extract_jd_entities_from_row(row: pd.Series) -> dict:
     # 6. Industry sector
     industry_sector = ["Công nghệ thông tin", "Kỹ thuật số"]
 
+    # 7. Certifications: chỉ nhận các loại nằm trong whitelist cấu hình.
+    formatted_text = row.get("formatted_jd_text", "")
+    certifications = extract_supported_certifications(
+        "" if pd.isna(formatted_text) else str(formatted_text)
+    )
+
     return {
         "soft_skills": soft_skills,
         "hard_skills": hard_skills,
@@ -101,6 +108,7 @@ def extract_jd_entities_from_row(row: pd.Series) -> dict:
         "field_of_education": field_of_edu,
         "industry_sector": industry_sector,
         "role": role,
+        "certifications": certifications,
     }
 
 

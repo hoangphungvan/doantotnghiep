@@ -37,7 +37,7 @@ class GCNModel(nn.Module):
     """
     Graph Convolutional Network cho Candidate-Job Matching.
 
-    Input: Đồ thị bipartite 14 nút
+    Input: Đồ thị bipartite 16 nút
     Output: Logit score (match probability sau sigmoid)
     """
 

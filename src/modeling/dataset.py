@@ -25,7 +25,7 @@ class CJMDataset(Dataset):
     """
     Dataset cho Candidate-Job Matching bằng GCN.
 
-    Mỗi sample là một đồ thị bipartite 14 nút biểu diễn
+    Mỗi sample là một đồ thị bipartite 16 nút biểu diễn
     một cặp Candidate-JD.
     """
 
@@ -111,7 +111,10 @@ class CJMDataset(Dataset):
                 cv_main, cv_feats = self.embedding_gen.build_node_features(cv_entities)
                 jd_main, jd_feats = self.embedding_gen.build_node_features(jd_entities)
 
-                data = build_graph(cv_main, cv_feats, jd_main, jd_feats, label=label)
+                data = build_graph(
+                    cv_main, cv_feats, jd_main, jd_feats, label=label,
+                    candidate_entities=cv_entities, jd_entities=jd_entities,
+                )
 
                 data.cv_path = cv_path
                 data.jd_path = jd_path
@@ -210,6 +213,11 @@ def create_sample_dataset(num_queries: int = 10,
             ["Data Analyst"],
             ["Project Manager"],
         ],
+        "certifications": [
+            ["AWS Certification"],
+            ["Cisco CCNA"],
+            ["PMP"],
+        ],
     }
 
     def random_profile() -> dict:
@@ -252,7 +260,10 @@ def create_sample_dataset(num_queries: int = 10,
                 jd_main, jd_feats = gen.build_node_features(jd_ents)
 
                 grade = float(grade_between(cv_ents, jd_ents))
-                data = build_graph(cv_main, cv_feats, jd_main, jd_feats, label=grade)
+                data = build_graph(
+                    cv_main, cv_feats, jd_main, jd_feats, label=grade,
+                    candidate_entities=cv_ents, jd_entities=jd_ents,
+                )
                 data.cv_source = f"query_{q:04d}"
                 data.jd_source = f"query_{q:04d}_jd_{j:02d}"
                 data.cv_entities = json.dumps(cv_ents, ensure_ascii=False)

@@ -2,7 +2,7 @@
 Bước 2 & 3: Phân cụm 1.906 JD, chọn tập con đại diện & Tạo ma trận Hard/Easy Negatives.
 
 Tác vụ:
-1. Đọc 1.906 embedding vector đặc trưng (role + hard_skills) từ data/cache/jd_embeddings_cache.pt.
+1. Đọc 1.906 embedding vector đặc trưng (role + hard_skills) từ cache phiên bản hiện tại.
 2. Áp dụng KMeans (K=20 cụm) để phân chia thị trường việc làm CNTT thành các nhóm chuyên môn chuẩn xác:
    - Backend Java / Spring Boot
    - Frontend React / NextJS / Vue

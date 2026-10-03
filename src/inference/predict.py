@@ -19,6 +19,8 @@ from src.extraction.entity_extractor import extract_entities, extract_from_file,
 from src.representation.embedding_generator import EmbeddingGenerator
 from src.representation.graph_builder import build_graph
 from src.modeling.model import GCNModel, target_to_grade
+from src.evaluation.certification import apply_certification_bonus, certification_match_ratio
+from src.evaluation.scoring import combine_hybrid_score
 
 
 class CJMPredictor:
@@ -35,7 +37,7 @@ class CJMPredictor:
             "cuda" if torch.cuda.is_available() else "cpu"
         )
 
-        model_path = model_path or os.path.join(config.MODEL_DIR, "best_model.pt")
+        model_path = model_path or config.MODEL_FILE
         if not os.path.exists(model_path):
             raise FileNotFoundError(f"Không tìm thấy model tại: {model_path}")
 
@@ -45,6 +47,7 @@ class CJMPredictor:
         self.model = GCNModel(input_dim=input_dim).to(self.device)
         self.model.load_state_dict(checkpoint["model_state_dict"])
         self.model.eval()
+        self.default_alpha = float(os.getenv("HYBRID_ALPHA", "0.2"))
 
         self.embedding_gen = EmbeddingGenerator()
 
@@ -52,7 +55,9 @@ class CJMPredictor:
         print(f"[Predictor] Trained epoch: {checkpoint.get('epoch', '?')}")
         print(f"[Predictor] Val metrics: {checkpoint.get('val_metrics', {})}")
 
-    def predict_from_text(self, cv_text: str, jd_text: str) -> dict:
+    def predict_from_text(
+        self, cv_text: str, jd_text: str, alpha: Optional[float] = None
+    ) -> dict:
         """
         Dự đoán từ text thô.
 
@@ -62,40 +67,81 @@ class CJMPredictor:
         cv_entities = extract_entities(cv_text)
         jd_entities = extract_entities(jd_text)
 
-        return self._predict_from_entities(cv_entities, jd_entities)
+        return self._predict_from_entities(cv_entities, jd_entities, alpha=alpha)
 
-    def predict_from_files(self, cv_path: str, jd_path: str) -> dict:
+    def predict_from_files(
+        self, cv_path: str, jd_path: str, alpha: Optional[float] = None
+    ) -> dict:
         """
         Dự đoán từ file CV và JD.
         Tự động chọn text mode hoặc Vision mode tùy loại PDF.
         """
         cv_entities = extract_from_file(cv_path)
         jd_entities = extract_from_file(jd_path)
-        return self._predict_from_entities(cv_entities, jd_entities)
+        return self._predict_from_entities(cv_entities, jd_entities, alpha=alpha)
 
-    def predict_from_entities(self, cv_entities: dict, jd_entities: dict) -> dict:
+    def predict_from_entities(
+        self,
+        cv_entities: dict,
+        jd_entities: dict,
+        alpha: Optional[float] = None,
+    ) -> dict:
         """Dự đoán từ entities đã trích xuất sẵn."""
-        return self._predict_from_entities(cv_entities, jd_entities)
+        return self._predict_from_entities(cv_entities, jd_entities, alpha=alpha)
 
     @torch.no_grad()
-    def _predict_from_entities(self, cv_entities: dict, jd_entities: dict) -> dict:
+    def _predict_from_entities(
+        self,
+        cv_entities: dict,
+        jd_entities: dict,
+        alpha: Optional[float] = None,
+    ) -> dict:
         """Core prediction logic."""
         cv_main, cv_feats = self.embedding_gen.build_node_features(cv_entities)
         jd_main, jd_feats = self.embedding_gen.build_node_features(jd_entities)
 
-        data = build_graph(cv_main, cv_feats, jd_main, jd_feats)
+        data = build_graph(
+            cv_main, cv_feats, jd_main, jd_feats,
+            candidate_entities=cv_entities, jd_entities=jd_entities,
+        )
         data = data.to(self.device)
 
         logits = self.model(data)
-        score = torch.sigmoid(logits).item()
-        grade = target_to_grade(score)
+        base_score = torch.sigmoid(logits).item()
+        cert_ratio = certification_match_ratio(cv_entities, jd_entities)
+        graph_score = apply_certification_bonus(base_score, cert_ratio)
+        embedding_dim = data.x.shape[1] // 3
+        semantic_cosine = torch.nn.functional.cosine_similarity(
+            data.x[0, :embedding_dim], data.x[1, :embedding_dim], dim=0
+        ).item()
+        semantic_score = max(0.0, min(1.0, (semantic_cosine + 1.0) / 2.0))
+        used_alpha = self.default_alpha if alpha is None else float(alpha)
+        hybrid_score = float(
+            combine_hybrid_score(graph_score, semantic_score, used_alpha)
+        )
+        graph_grade = target_to_grade(graph_score)
+        grade = target_to_grade(hybrid_score)
+        graph_label = (
+            "MATCH" if graph_grade >= config.RELEVANT_GRADE else "NOT MATCH"
+        )
         match = "MATCH" if grade >= config.RELEVANT_GRADE else "NOT MATCH"
 
         return {
-            "score": round(score, 4),
+            "score": round(hybrid_score, 4),
+            "hybrid_score": round(hybrid_score, 4),
+            "hybrid_alpha": used_alpha,
+            "graph_score": round(graph_score, 4),
+            "base_score": round(base_score, 4),
+            "semantic_score": round(semantic_score, 4),
+            "certification_match_ratio": round(cert_ratio, 4),
             "grade": grade,
             "grade_label": config.GRADE_LABELS[grade],
             "label": match,
+            "graph_grade": graph_grade,
+            "graph_grade_label": config.GRADE_LABELS[graph_grade],
+            "graph_label": graph_label,
+            "graph_nodes": int(data.num_nodes),
+            "graph_edges": int(data.edge_index.shape[1]),
             "cv_entities": cv_entities,
             "jd_entities": jd_entities,
         }

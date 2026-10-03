@@ -1,12 +1,11 @@
 """
 Module xây dựng đồ thị Bipartite Graph cho cặp Candidate-JD.
 
-Cấu trúc đồ thị (14 nút):
+Cấu trúc đồ thị (16 nút):
 - Node 0: Candidate (v_c)
 - Node 1: Job Description (v_jd)
-- Nodes 2-7: Candidate entities (soft_skills, hard_skills, education,
-             field_of_education, industry_sector, role)  — theo thứ tự ENTITY_TYPES
-- Nodes 8-13: JD entities (tương tự)
+- Nodes 2-8: Candidate entities — theo thứ tự ENTITY_TYPES
+- Nodes 9-15: JD entities — theo thứ tự ENTITY_TYPES
 
 Loại cạnh:
 1. Star edges       : v_c ↔ entity_candidate, v_jd ↔ entity_jd  (trọng số = ENTITY_WEIGHTS)
@@ -28,13 +27,15 @@ import config
 # Edge builders
 # ---------------------------------------------------------------------------
 
-def build_star_edges() -> tuple[list[tuple[int, int]], list[float]]:
+def build_star_edges(active_entity_types: set[str] = None) -> tuple[list[tuple[int, int]], list[float]]:
     """
     Cạnh hình sao v_c ↔ entity_candidate và v_jd ↔ entity_jd.
     Trọng số = ENTITY_WEIGHTS theo loại entity (cả 2 chiều).
     """
     edges, weights = [], []
     for i, etype in enumerate(config.ENTITY_TYPES):
+        if active_entity_types is not None and etype not in active_entity_types:
+            continue
         w = config.ENTITY_WEIGHTS[etype]
 
         c_node = config.CANDIDATE_ENTITY_START + i
@@ -58,7 +59,10 @@ def build_star_edges() -> tuple[list[tuple[int, int]], list[float]]:
     return edges, weights
 
 
-def build_cross_entity_edges(features: torch.Tensor) -> tuple[list[tuple[int, int]], list[float]]:
+def build_cross_entity_edges(
+    features: torch.Tensor,
+    active_entity_types: set[str] = None,
+) -> tuple[list[tuple[int, int]], list[float]]:
     """
     Cạnh ngang nối trực tiếp entity_candidate[i] ↔ entity_jd[i] (cùng loại).
     Trọng số = cosine_similarity * ENTITY_WEIGHTS[etype].
@@ -72,6 +76,8 @@ def build_cross_entity_edges(features: torch.Tensor) -> tuple[list[tuple[int, in
     normalized = features / norms
 
     for i, etype in enumerate(config.ENTITY_TYPES):
+        if active_entity_types is not None and etype not in active_entity_types:
+            continue
         c_node = config.CANDIDATE_ENTITY_START + i
         jd_node = config.JD_ENTITY_START + i
 
@@ -89,7 +95,8 @@ def build_cross_entity_edges(features: torch.Tensor) -> tuple[list[tuple[int, in
 
 
 def build_knn_edges(features: torch.Tensor,
-                    k: int = None) -> tuple[list[tuple[int, int]], list[float]]:
+                    k: int = None,
+                    active_nodes: list[int] = None) -> tuple[list[tuple[int, int]], list[float]]:
     """
     k-NN edges giữa tất cả các nút.
     Trọng số = (cosine_sim)^p, chuẩn hóa theo hàng (sharpening).
@@ -98,15 +105,22 @@ def build_knn_edges(features: torch.Tensor,
     k = k or config.KNN_K
     p = config.SHARPENING_P
     num_nodes = features.shape[0]
-    k = min(k, num_nodes - 1)
+    active_nodes = list(range(num_nodes)) if active_nodes is None else list(active_nodes)
+    k = min(k, len(active_nodes) - 1)
+    if k <= 0:
+        return [], []
 
     norms = features.norm(dim=1, keepdim=True).clamp(min=1e-8)
     sim_matrix = torch.mm(features / norms, (features / norms).t())
 
     edges, weights = [], []
-    for i in range(num_nodes):
+    active_set = set(active_nodes)
+    for i in active_nodes:
         sims = sim_matrix[i].clone()
         sims[i] = -1.0
+        for node_idx in range(num_nodes):
+            if node_idx not in active_set:
+                sims[node_idx] = -1.0
 
         topk_vals, topk_idx = torch.topk(sims, k)
         sharpened = torch.clamp(topk_vals, min=0.0) ** p
@@ -172,37 +186,70 @@ def build_graph(candidate_main_feat: np.ndarray,
                 candidate_entity_feats: dict,
                 jd_main_feat: np.ndarray,
                 jd_entity_feats: dict,
-                label: float = None) -> Data:
+                label: float = None,
+                candidate_entities: dict = None,
+                jd_entities: dict = None) -> Data:
     """
     Xây dựng đồ thị PyG Data cho một cặp Candidate-JD.
 
     Nodes (14):
         0: Candidate,  1: JD
-        2-7: CV entities (thứ tự ENTITY_TYPES)
-        8-13: JD entities (thứ tự ENTITY_TYPES)
+        2-8: CV entities (thứ tự ENTITY_TYPES)
+        9-15: JD entities (thứ tự ENTITY_TYPES)
 
     Edges:
         Star  : v_c/v_jd ↔ entity nodes (ENTITY_WEIGHTS)
         Cross : entity_cv[i] ↔ entity_jd[i] (cosine_sim * ENTITY_WEIGHTS)
         kNN   : k nearest neighbors toàn đồ thị
     """
+    # Chứng chỉ chỉ được đưa vào cấu trúc ảnh hưởng đến GCN khi CV và JD có
+    # ít nhất một chứng chỉ chuẩn hóa trùng nhau. Nếu không, graph giữ đúng
+    # điểm nền: các nút chứng chỉ bị cô lập và không tham gia k-NN.
+    cert_type = "certifications"
+    all_entity_types = set(config.ENTITY_TYPES)
+    certification_match = True
+    certification_ratio = 0.0
+    if candidate_entities is not None and jd_entities is not None:
+        cv_certs = set(candidate_entities.get(cert_type, []))
+        jd_certs = set(jd_entities.get(cert_type, []))
+        certification_ratio = (
+            len(cv_certs & jd_certs) / len(jd_certs) if jd_certs else 0.0
+        )
+        certification_match = certification_ratio > 0.0
+
+    active_entity_types = all_entity_types
+    if not certification_match:
+        active_entity_types = all_entity_types - {cert_type}
+
     node_features = []
     node_features.append(candidate_main_feat)   # Node 0: v_c
     node_features.append(jd_main_feat)           # Node 1: v_jd
 
-    for etype in config.ENTITY_TYPES:            # Nodes 2-7: CV entities
+    for etype in config.ENTITY_TYPES:            # Nodes 2-8: CV entities
         feat = candidate_entity_feats.get(etype, np.zeros_like(candidate_main_feat))
+        if etype not in active_entity_types:
+            feat = np.zeros_like(candidate_main_feat)
         node_features.append(feat)
 
-    for etype in config.ENTITY_TYPES:            # Nodes 8-13: JD entities
+    for etype in config.ENTITY_TYPES:            # Nodes 9-15: JD entities
         feat = jd_entity_feats.get(etype, np.zeros_like(jd_main_feat))
+        if etype not in active_entity_types:
+            feat = np.zeros_like(jd_main_feat)
         node_features.append(feat)
 
     x = torch.tensor(np.array(node_features), dtype=torch.float)
 
-    star_edges,  star_weights  = build_star_edges()
-    cross_edges, cross_weights = build_cross_entity_edges(x)
-    knn_edges,   knn_weights   = build_knn_edges(x, k=config.KNN_K)
+    star_edges,  star_weights  = build_star_edges(active_entity_types)
+    cross_edges, cross_weights = build_cross_entity_edges(x, active_entity_types)
+
+    active_nodes = list(range(config.NUM_NODES))
+    if not certification_match:
+        cert_offset = config.ENTITY_TYPES.index(cert_type)
+        active_nodes.remove(config.CANDIDATE_ENTITY_START + cert_offset)
+        active_nodes.remove(config.JD_ENTITY_START + cert_offset)
+    knn_edges, knn_weights = build_knn_edges(
+        x, k=config.KNN_K, active_nodes=active_nodes
+    )
 
     edge_index, edge_weight = merge_edges(
         star_edges, star_weights,
@@ -215,6 +262,8 @@ def build_graph(candidate_main_feat: np.ndarray,
         edge_index=edge_index,
         edge_attr=edge_weight,
         num_nodes=config.NUM_NODES,
+        certification_match=torch.tensor([certification_match], dtype=torch.bool),
+        certification_match_ratio=torch.tensor([certification_ratio], dtype=torch.float),
     )
     if label is not None:
         data.y = torch.tensor([label], dtype=torch.float)

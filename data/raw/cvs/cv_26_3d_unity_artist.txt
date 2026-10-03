@@ -1,0 +1,14 @@
+HỌ VÀ TÊN: Đỗ Anh Tuấn - 3D Artist and Unity Developer
+Email: tuan.do@email.com | SĐT: 0922334455 | Địa chỉ: TP. Hồ Chí Minh
+HỌC VẤN:
+- Cử nhân Thiết kế Game và Đồ họa 3D, Đại học Hoa Sen (2017-2021)
+KỸ NĂNG CHUYÊN MÔN:
+- Blender, Maya, 3ds Max, ZBrush và Substance Painter
+- Unity, C#, animation, lighting, texture và tối ưu asset cho mobile
+- Thiết kế nhân vật, environment, low-poly model và 3D visualization
+- Photoshop, Illustrator và quy trình quản lý asset trên Git
+KỸ NĂNG MỀM:
+- Tư duy hình ảnh, sáng tạo, phối hợp với game designer và lập trình viên
+KINH NGHIỆM LÀM VIỆC:
+- 3D Artist tại studio game (2021 - Nay): Xây dựng asset 3D và tối ưu hiệu năng cho game mobile.
+- Junior Unity Developer (2020 - 2021): Phát triển prototype và tích hợp animation.

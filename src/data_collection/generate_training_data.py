@@ -292,6 +292,272 @@ KỸ NĂNG MỀM:
 KINH NGHIỆM LÀM VIỆC:
 - Chuyên viên Kinh doanh SaaS tại Base.vn (2022 - Nay): Tiếp cận khách hàng doanh nghiệp, tư vấn giải pháp quản trị doanh nghiệp và hoàn thành 110% KPI doanh số năm.
 - Nhân viên tư vấn bán hàng tại KiotViet (2021 - 2022): Tìm kiếm khách hàng mở rộng thị trường phần mềm bán hàng.
+        """,
+    },
+    {
+        "cid": 1,
+        "name": "Nguyen_Huu_Tri",
+        "role": "CNC Programmer and Automation Engineer",
+        "title": "cv_20_cnc_automation.txt",
+        "text": """HỌ VÀ TÊN: Nguyễn Hữu Trí - CNC Programmer and Automation Engineer
+Email: tri.nguyen@email.com | SĐT: 0901122334 | Địa chỉ: Hải Phòng
+HỌC VẤN:
+- Kỹ sư Cơ điện tử, Đại học Bách Khoa Hà Nội (2016-2020)
+KỸ NĂNG CHUYÊN MÔN:
+- Lập trình và vận hành máy CNC, máy tiện và máy phay
+- Phần mềm: Mastercam, NX, AutoCAD, SolidWorks
+- Đọc bản vẽ kỹ thuật, GD&T, kiểm tra kích thước và tối ưu quy trình gia công
+- Tự động hóa cơ bản với PLC, cảm biến và robot công nghiệp
+KỸ NĂNG MỀM:
+- Cẩn thận, tư duy kỹ thuật, xử lý sự cố nhanh, tuân thủ an toàn lao động
+KINH NGHIỆM LÀM VIỆC:
+- CNC Programmer tại một công ty cơ khí chính xác (2020 - Nay): Viết chương trình gia công và tối ưu thời gian chu kỳ cho máy CNC.
+- Kỹ thuật viên tự động hóa (2019 - 2020): Bảo trì dây chuyền và hỗ trợ triển khai robot gắp sản phẩm.
+""",
+    },
+    {
+        "cid": 4,
+        "name": "Pham_Ngoc_Linh",
+        "role": "Technical Account Manager",
+        "title": "cv_21_technical_account_manager.txt",
+        "text": """HỌ VÀ TÊN: Phạm Ngọc Linh - Technical Account Manager
+Email: linh.pham@email.com | SĐT: 0911223344 | Địa chỉ: Hà Nội
+HỌC VẤN:
+- Cử nhân Hệ thống Thông tin, Đại học Kinh tế Quốc dân (2017-2021)
+KỸ NĂNG CHUYÊN MÔN:
+- Tư vấn giải pháp SaaS, CRM, ERP và dịch vụ công nghệ cho khách hàng doanh nghiệp
+- Phân tích nhu cầu, viết proposal, demo sản phẩm và quản lý pipeline bán hàng
+- Công cụ: Salesforce, HubSpot, Jira, Confluence, Excel, PowerPoint
+- Hiểu biết cơ bản về API, cơ sở dữ liệu, cloud và quy trình triển khai phần mềm
+KỸ NĂNG MỀM:
+- Giao tiếp, thuyết trình, đàm phán, quản lý quan hệ khách hàng và phối hợp đa phòng ban
+KINH NGHIỆM LÀM VIỆC:
+- Technical Account Manager tại một công ty SaaS (2021 - Nay): Tư vấn giải pháp và duy trì khách hàng doanh nghiệp.
+- Sales Engineer (2020 - 2021): Phối hợp với đội kỹ thuật để trình diễn sản phẩm và xử lý yêu cầu khách hàng.
+""",
+    },
+    {
+        "cid": 7,
+        "name": "Le_Minh_Quan",
+        "role": "Multimedia Video Editor",
+        "title": "cv_22_multimedia_video_editor.txt",
+        "text": """HỌ VÀ TÊN: Lê Minh Quân - Multimedia Video Editor
+Email: quan.le@email.com | SĐT: 0933445566 | Địa chỉ: TP. Hồ Chí Minh
+HỌC VẤN:
+- Cử nhân Truyền thông đa phương tiện, Đại học FPT (2018-2022)
+KỸ NĂNG CHUYÊN MÔN:
+- Dựng video: Adobe Premiere Pro, After Effects, DaVinci Resolve
+- Thiết kế âm thanh, motion graphic, color grading và storyboard
+- Sản xuất nội dung cho YouTube, TikTok, quảng cáo và sự kiện doanh nghiệp
+- Adobe Photoshop, Illustrator và quản lý tài nguyên media
+KỸ NĂNG MỀM:
+- Sáng tạo, quản lý thời hạn, tiếp nhận feedback và phối hợp với đội marketing
+KINH NGHIỆM LÀM VIỆC:
+- Video Editor tại một agency truyền thông (2022 - Nay): Sản xuất video quảng cáo và nội dung mạng xã hội.
+- Multimedia Intern (2021 - 2022): Hỗ trợ quay, dựng và hậu kỳ video sự kiện.
+""",
+    },
+    {
+        "cid": 9,
+        "name": "Vo_Thanh_Hang",
+        "role": "Senior Graphic Designer",
+        "title": "cv_23_visual_graphic_designer.txt",
+        "text": """HỌ VÀ TÊN: Võ Thanh Hằng - Senior Graphic Designer
+Email: hang.vo@email.com | SĐT: 0988776655 | Địa chỉ: Hà Nội
+HỌC VẤN:
+- Cử nhân Thiết kế Đồ họa, Đại học Mỹ thuật Việt Nam (2016-2020)
+KỸ NĂNG CHUYÊN MÔN:
+- Adobe Photoshop, Adobe Illustrator, InDesign và Figma
+- Brand identity, key visual, social media design, banner và infographic
+- Thiết kế layout, typography, màu sắc và chuẩn hóa brand guideline
+- Wireframe cơ bản và phối hợp với UI/UX Designer, Frontend Developer
+KỸ NĂNG MỀM:
+- Tư duy thẩm mỹ, sáng tạo, phản biện thiết kế và làm việc theo deadline
+KINH NGHIỆM LÀM VIỆC:
+- Senior Graphic Designer tại một công ty thương mại điện tử (2020 - Nay): Xây dựng ấn phẩm và nhận diện thương hiệu.
+- Graphic Designer (2019 - 2020): Thiết kế banner và tài liệu truyền thông số.
+""",
+    },
+    {
+        "cid": 11,
+        "name": "Tran_Duc_Long",
+        "role": "Linux System Administrator",
+        "title": "cv_24_linux_system_admin.txt",
+        "text": """HỌ VÀ TÊN: Trần Đức Long - Linux System Administrator
+Email: long.tran@email.com | SĐT: 0902233445 | Địa chỉ: Hà Nội
+HỌC VẤN:
+- Kỹ sư Mạng máy tính, Học viện Công nghệ Bưu chính Viễn thông (2016-2020)
+CHỨNG CHỈ:
+- Red Hat Certified System Administrator (RHCSA)
+- CompTIA Linux+
+KỸ NĂNG CHUYÊN MÔN:
+- Linux Ubuntu, CentOS, Red Hat Enterprise Linux, Bash Shell
+- VMware, Docker, Nginx, Apache, DNS, DHCP, storage và backup
+- Monitoring với Zabbix, Prometheus; xử lý sự cố và hardening máy chủ
+- Active Directory, Windows Server và quản trị tài khoản người dùng
+KỸ NĂNG MỀM:
+- Trực sự cố, viết tài liệu vận hành, làm việc theo ca và phối hợp đội network
+KINH NGHIỆM LÀM VIỆC:
+- System Administrator tại một doanh nghiệp viễn thông (2020 - Nay): Vận hành máy chủ Linux và hệ thống giám sát.
+- IT Infrastructure Intern (2019 - 2020): Hỗ trợ quản trị máy chủ và sao lưu dữ liệu.
+""",
+    },
+    {
+        "cid": 12,
+        "name": "Nguyen_Thu_Thao",
+        "role": "Business Operations Specialist",
+        "title": "cv_25_business_operations.txt",
+        "text": """HỌ VÀ TÊN: Nguyễn Thu Thảo - Business Operations Specialist
+Email: thao.nguyen@email.com | SĐT: 0977665544 | Địa chỉ: Hà Nội
+HỌC VẤN:
+- Cử nhân Quản trị Kinh doanh, Đại học Ngoại thương (2018-2022)
+KỸ NĂNG CHUYÊN MÔN:
+- Quản lý vận hành, theo dõi KPI, xây dựng báo cáo và tối ưu quy trình
+- Excel nâng cao, PowerPoint, Google Workspace và CRM
+- Phân tích dữ liệu kinh doanh cơ bản, lập kế hoạch và phối hợp nhà cung cấp
+- Hỗ trợ triển khai phần mềm quản lý doanh nghiệp và đào tạo người dùng
+KỸ NĂNG MỀM:
+- Giao tiếp, tổ chức công việc, tư duy phân tích và quản lý thời gian
+KINH NGHIỆM LÀM VIỆC:
+- Business Operations Specialist tại một công ty công nghệ (2022 - Nay): Theo dõi hiệu quả vận hành và hỗ trợ các phòng ban.
+- Operations Executive (2021 - 2022): Chuẩn hóa quy trình và lập báo cáo định kỳ.
+""",
+    },
+    {
+        "cid": 13,
+        "name": "Do_Anh_Tuan",
+        "role": "3D Artist and Unity Developer",
+        "title": "cv_26_3d_unity_artist.txt",
+        "text": """HỌ VÀ TÊN: Đỗ Anh Tuấn - 3D Artist and Unity Developer
+Email: tuan.do@email.com | SĐT: 0922334455 | Địa chỉ: TP. Hồ Chí Minh
+HỌC VẤN:
+- Cử nhân Thiết kế Game và Đồ họa 3D, Đại học Hoa Sen (2017-2021)
+KỸ NĂNG CHUYÊN MÔN:
+- Blender, Maya, 3ds Max, ZBrush và Substance Painter
+- Unity, C#, animation, lighting, texture và tối ưu asset cho mobile
+- Thiết kế nhân vật, environment, low-poly model và 3D visualization
+- Photoshop, Illustrator và quy trình quản lý asset trên Git
+KỸ NĂNG MỀM:
+- Tư duy hình ảnh, sáng tạo, phối hợp với game designer và lập trình viên
+KINH NGHIỆM LÀM VIỆC:
+- 3D Artist tại studio game (2021 - Nay): Xây dựng asset 3D và tối ưu hiệu năng cho game mobile.
+- Junior Unity Developer (2020 - 2021): Phát triển prototype và tích hợp animation.
+""",
+    },
+    {
+        "cid": 16,
+        "name": "Pham_Hoang_Nam",
+        "role": "Digital Sales and Marketing Specialist",
+        "title": "cv_27_digital_sales_marketing.txt",
+        "text": """HỌ VÀ TÊN: Phạm Hoàng Nam - Digital Sales and Marketing Specialist
+Email: nam.pham@email.com | SĐT: 0966554433 | Địa chỉ: Hà Nội
+HỌC VẤN:
+- Cử nhân Marketing, Đại học Kinh tế Quốc dân (2017-2021)
+KỸ NĂNG CHUYÊN MÔN:
+- Digital marketing, Google Ads, Facebook Ads, SEO và content marketing
+- Bán hàng B2B, xây dựng lead funnel, email marketing và CRM
+- Phân tích campaign với Google Analytics, Excel và Power BI cơ bản
+- Lập kế hoạch truyền thông, quản lý ngân sách và đo lường conversion
+KỸ NĂNG MỀM:
+- Sáng tạo nội dung, giao tiếp, đàm phán và chịu áp lực doanh số
+KINH NGHIỆM LÀM VIỆC:
+- Digital Sales Specialist tại một công ty công nghệ (2021 - Nay): Tạo lead và tư vấn giải pháp phần mềm.
+- Marketing Executive (2020 - 2021): Quản lý chiến dịch quảng cáo và nội dung số.
+""",
+    },
+    {
+        "cid": 2,
+        "name": "Bui_Quang_Hieu",
+        "role": "Data Engineer and Machine Learning Engineer",
+        "title": "cv_28_data_engineer_ml.txt",
+        "text": """HỌ VÀ TÊN: Bùi Quang Hiếu - Data Engineer and Machine Learning Engineer
+Email: hieu.bui@email.com | SĐT: 0913445566 | Địa chỉ: Hà Nội
+HỌC VẤN:
+- Thạc sĩ Khoa học Dữ liệu, Đại học Bách Khoa Hà Nội (2018-2022)
+CHỨNG CHỈ:
+- Databricks Data Engineer Associate
+- TensorFlow Developer Certificate
+KỸ NĂNG CHUYÊN MÔN:
+- Python, SQL, Apache Spark, Airflow, Kafka và dbt
+- Data warehouse, ETL/ELT, Databricks, Snowflake và PostgreSQL
+- Machine learning với Scikit-learn, TensorFlow, MLflow
+- Docker, Kubernetes, GitLab CI và triển khai model trên cloud
+KỸ NĂNG MỀM:
+- Tư duy phân tích, giải quyết vấn đề, viết tài liệu và làm việc nhóm
+KINH NGHIỆM LÀM VIỆC:
+- Data Engineer tại một công ty fintech (2021 - Nay): Xây dựng pipeline dữ liệu và kho dữ liệu phân tích.
+- Machine Learning Engineer (2020 - 2021): Huấn luyện và triển khai mô hình dự báo.
+""",
+    },
+    {
+        "cid": 6,
+        "name": "Vu_Minh_Kiet",
+        "role": ".NET Backend Developer",
+        "title": "cv_29_dotnet_backend.txt",
+        "text": """HỌ VÀ TÊN: Vũ Minh Kiệt - .NET Backend Developer
+Email: kiet.vu@email.com | SĐT: 0944556677 | Địa chỉ: TP. Hồ Chí Minh
+HỌC VẤN:
+- Cử nhân Kỹ thuật Phần mềm, Đại học Công nghệ TP.HCM (2017-2021)
+KỸ NĂNG CHUYÊN MÔN:
+- C#, .NET 6, ASP.NET Core, Entity Framework và LINQ
+- REST API, microservices, RabbitMQ, Redis và Docker
+- SQL Server, PostgreSQL, Azure DevOps và Git
+- Unit testing, clean architecture, code review và CI/CD
+KỸ NĂNG MỀM:
+- Tư duy logic, chủ động, làm việc nhóm và giao tiếp kỹ thuật
+KINH NGHIỆM LÀM VIỆC:
+- Backend Developer tại một công ty phần mềm (2021 - Nay): Phát triển API và dịch vụ backend bằng ASP.NET Core.
+- Software Engineer (2020 - 2021): Xây dựng chức năng quản lý dữ liệu và tích hợp hệ thống.
+""",
+    },
+    {
+        "cid": 17,
+        "name": "Nguyen_Bao_An",
+        "role": "Network Security Architect",
+        "title": "cv_30_network_security_architect.txt",
+        "text": """HỌ VÀ TÊN: Nguyễn Bảo An - Network Security Architect
+Email: an.nguyen@email.com | SĐT: 0905667788 | Địa chỉ: Hà Nội
+HỌC VẤN:
+- Kỹ sư An toàn Thông tin, Học viện Kỹ thuật Mật mã (2015-2019)
+CHỨNG CHỈ:
+- CCNA
+- Certified Ethical Hacker
+- Fortinet NSE 4 Network Security Professional
+KỸ NĂNG CHUYÊN MÔN:
+- Cisco routing and switching, BGP, OSPF, VLAN, VPN và SD-WAN
+- Firewall Fortinet, Palo Alto, IDS/IPS, WAF và SIEM
+- Linux, Windows Server, Active Directory và VMware
+- Vulnerability assessment, incident response, Wireshark và Nmap
+KỸ NĂNG MỀM:
+- Phân tích sự cố, viết tài liệu, phản ứng nhanh và phối hợp với SOC
+KINH NGHIỆM LÀM VIỆC:
+- Network Security Engineer tại một ngân hàng (2019 - Nay): Thiết kế và vận hành kiến trúc bảo mật mạng.
+- Security Analyst (2018 - 2019): Giám sát cảnh báo và xử lý sự cố an ninh.
+""",
+    },
+    {
+        "cid": 19,
+        "name": "Le_Thanh_Son",
+        "role": "Agile Delivery Manager",
+        "title": "cv_31_agile_delivery_manager.txt",
+        "text": """HỌ VÀ TÊN: Lê Thanh Sơn - Agile Delivery Manager
+Email: son.le@email.com | SĐT: 0985667788 | Địa chỉ: Hà Nội
+HỌC VẤN:
+- Thạc sĩ Quản trị Kinh doanh, Đại học Kinh tế TP.HCM (2015-2017)
+- Cử nhân Công nghệ Thông tin, Đại học Đà Nẵng (2011-2015)
+CHỨNG CHỈ:
+- PMP (Project Management Professional)
+- Professional Scrum Master I
+KỸ NĂNG CHUYÊN MÔN:
+- Agile/Scrum, Kanban, release planning, sprint planning và risk management
+- Quản lý scope, ngân sách, tiến độ, chất lượng và stakeholder
+- Jira, Confluence, Azure DevOps, MS Project và Miro
+- Hiểu biết về software development lifecycle, API, cloud và CI/CD
+KỸ NĂNG MỀM:
+- Lãnh đạo, điều phối, giải quyết xung đột, đàm phán và thuyết trình
+KINH NGHIỆM LÀM VIỆC:
+- Delivery Manager tại một công ty phần mềm (2020 - Nay): Điều phối nhiều squad phát triển sản phẩm.
+- Scrum Master (2017 - 2020): Hỗ trợ đội Agile cải thiện quy trình và tốc độ giao hàng.
 """,
     },
 ]

@@ -1,0 +1,17 @@
+HỌ VÀ TÊN: Trần Đức Long - Linux System Administrator
+Email: long.tran@email.com | SĐT: 0902233445 | Địa chỉ: Hà Nội
+HỌC VẤN:
+- Kỹ sư Mạng máy tính, Học viện Công nghệ Bưu chính Viễn thông (2016-2020)
+CHỨNG CHỈ:
+- Red Hat Certified System Administrator (RHCSA)
+- CompTIA Linux+
+KỸ NĂNG CHUYÊN MÔN:
+- Linux Ubuntu, CentOS, Red Hat Enterprise Linux, Bash Shell
+- VMware, Docker, Nginx, Apache, DNS, DHCP, storage và backup
+- Monitoring với Zabbix, Prometheus; xử lý sự cố và hardening máy chủ
+- Active Directory, Windows Server và quản trị tài khoản người dùng
+KỸ NĂNG MỀM:
+- Trực sự cố, viết tài liệu vận hành, làm việc theo ca và phối hợp đội network
+KINH NGHIỆM LÀM VIỆC:
+- System Administrator tại một doanh nghiệp viễn thông (2020 - Nay): Vận hành máy chủ Linux và hệ thống giám sát.
+- IT Infrastructure Intern (2019 - 2020): Hỗ trợ quản trị máy chủ và sao lưu dữ liệu.

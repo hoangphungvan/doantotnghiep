@@ -14,7 +14,7 @@ các cặp dùng chung CV (cùng file hoặc cùng Nhóm CV ID) sẽ được gr
 
 Dữ liệu đã thu thập được lưu vào:
   data/processed/training_pairs.csv — bảng cv_path/cv_text, jd_path/jd_text, label
-  data/processed/graphs/            — file .pt đồ thị đã build sẵn (tăng tốc training)
+  data/processed/graphs_v4_certification_catalog_expanded/ — file .pt đồ thị đã build sẵn
 
 Chạy:
   python main.py --mode prepare
@@ -122,7 +122,10 @@ def _build_and_save_graph(idx: int, cv_entities: dict, jd_entities: dict,
     """Build graph, lưu .pt, trả về đường dẫn. cv_source dùng để group theo CV."""
     cv_main, cv_feats = gen.build_node_features(cv_entities)
     jd_main, jd_feats = gen.build_node_features(jd_entities)
-    data = build_graph(cv_main, cv_feats, jd_main, jd_feats, label=label)
+    data = build_graph(
+        cv_main, cv_feats, jd_main, jd_feats, label=label,
+        candidate_entities=cv_entities, jd_entities=jd_entities,
+    )
 
     data.cv_entities = json.dumps(cv_entities, ensure_ascii=False)
     data.jd_entities = json.dumps(jd_entities, ensure_ascii=False)

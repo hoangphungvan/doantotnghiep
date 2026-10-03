@@ -1,7 +1,7 @@
 """
 Module trích xuất thực thể từ văn bản CV/JD sử dụng Groq API (OpenAI-compatible).
-Trích xuất 6 loại: soft_skills, hard_skills, education,
-field_of_education, industry_sector, role.
+Trích xuất 7 loại: soft_skills, hard_skills, education,
+field_of_education, industry_sector, role, certifications.
 
 Hỗ trợ 2 chế độ:
 - Text mode : Đọc text từ PDF/TXT → gửi Groq API
@@ -14,6 +14,7 @@ import os
 import re
 import sys
 import time
+import unicodedata
 from typing import Optional
 
 import hashlib
@@ -66,16 +67,61 @@ def get_cache_key(text: str) -> str:
     return hashlib.sha256(text.strip().encode("utf-8")).hexdigest()
 
 
+def _cache_storage_key(key: str) -> str:
+    """Tách cache theo schema để không dùng lại cache thiếu chứng chỉ."""
+    return f"{config.ARTIFACT_VERSION}:{key}"
+
+
+def extract_supported_certifications(text: str) -> list[str]:
+    """Trích xuất và chuẩn hóa chứng chỉ nằm trong catalog cấu hình."""
+    if not text:
+        return []
+
+    def normalize_for_search(value: str) -> str:
+        value = unicodedata.normalize("NFKD", str(value))
+        value = value.encode("ascii", "ignore").decode("ascii").casefold()
+        value = re.sub(r"[^a-z0-9+#]+", " ", value)
+        return re.sub(r"\s+", " ", value).strip()
+
+    searchable = f" {normalize_for_search(text)} "
+    matched = []
+    for canonical in config.CERTIFICATION_CATALOG:
+        candidates = (canonical,) + tuple(
+            config.CERTIFICATION_ALIASES.get(canonical, ())
+        )
+        if any(f" {normalize_for_search(candidate)} " in searchable
+               for candidate in candidates):
+            matched.append(canonical)
+    return matched
+
+
+def normalize_entities(entities: Optional[dict]) -> dict:
+    """Đưa entity về đúng schema và loại chứng chỉ ngoài whitelist."""
+    entities = entities or {}
+    result = {}
+    for etype in config.ENTITY_TYPES:
+        values = entities.get(etype, [])
+        if not isinstance(values, list):
+            values = []
+        result[etype] = list(dict.fromkeys(
+            str(value).strip() for value in values if str(value).strip()
+        ))
+
+    result["certifications"] = extract_supported_certifications(
+        " ".join(result.get("certifications", []))
+    )
+    return result
+
 def get_cached_entity(key: str) -> Optional[dict]:
     """Lấy thực thể từ cache theo hash hoặc đường dẫn."""
     cache = _load_cache()
-    return cache.get(key)
-
+    value = cache.get(_cache_storage_key(key))
+    return normalize_entities(value) if value is not None else None
 
 def set_cached_entity(key: str, data: dict, save: bool = True):
     """Lưu thực thể vào cache."""
     cache = _load_cache()
-    cache[key] = data
+    cache[_cache_storage_key(key)] = normalize_entities(data)
     if save:
         _save_cache()
 
@@ -116,13 +162,14 @@ def _get_client() -> OpenAI:
 EXTRACTION_PROMPT_TEXT = """Bạn là chuyên gia phân tích CV và Job Description (JD).
 Hãy trích xuất các thực thể từ đoạn văn bản dưới đây và trả về **chỉ** JSON thuần túy (không markdown, không giải thích).
 
-6 loại thực thể cần trích xuất:
+7 loại thực thể cần trích xuất:
 1. "soft_skills": Kỹ năng mềm (giao tiếp, teamwork, lãnh đạo, quản lý thời gian, ...)
 2. "hard_skills": Kỹ năng chuyên môn (Python, SQL, Machine Learning, Excel, ...)
 3. "education": Trình độ học vấn (Cử nhân, Thạc sĩ, Tiến sĩ, ...)
 4. "field_of_education": Ngành/Chuyên ngành học (Khoa học máy tính, Quản trị kinh doanh, ...)
 5. "industry_sector": Ngành nghề/Lĩnh vực (Công nghệ thông tin, Tài chính, Y tế, ...)
 6. "role": Vị trí/Vai trò (Software Engineer, Data Analyst, Project Manager, ...)
+7. "certifications": Chứng chỉ thuộc whitelist được hỗ trợ (AWS, Azure, CCNA, ...)
 
 Mỗi loại trả về dạng danh sách các chuỗi. Nếu không tìm thấy, trả về danh sách rỗng [].
 
@@ -132,23 +179,24 @@ Văn bản:
 ---
 
 Trả về JSON đúng định dạng:
-{{"soft_skills": [...], "hard_skills": [...], "education": [...], "field_of_education": [...], "industry_sector": [...], "role": [...]}}"""
+{{"soft_skills": [...], "hard_skills": [...], "education": [...], "field_of_education": [...], "industry_sector": [...], "role": [...], "certifications": [...]}}"""
 
 EXTRACTION_PROMPT_VISION = """Bạn là chuyên gia phân tích CV và Job Description (JD).
 Hãy đọc nội dung từ hình ảnh tài liệu bên dưới, sau đó trích xuất thực thể và trả về **chỉ** JSON thuần túy (không markdown, không giải thích).
 
-6 loại thực thể cần trích xuất:
+7 loại thực thể cần trích xuất:
 1. "soft_skills": Kỹ năng mềm (giao tiếp, teamwork, lãnh đạo, quản lý thời gian, ...)
 2. "hard_skills": Kỹ năng chuyên môn (Python, SQL, Machine Learning, Excel, ...)
 3. "education": Trình độ học vấn (Cử nhân, Thạc sĩ, Tiến sĩ, ...)
 4. "field_of_education": Ngành/Chuyên ngành học (Khoa học máy tính, Quản trị kinh doanh, ...)
 5. "industry_sector": Ngành nghề/Lĩnh vực (Công nghệ thông tin, Tài chính, Y tế, ...)
 6. "role": Vị trí/Vai trò (Software Engineer, Data Analyst, Project Manager, ...)
+7. "certifications": Chứng chỉ thuộc whitelist được hỗ trợ (AWS, Azure, CCNA, ...)
 
 Mỗi loại trả về dạng danh sách các chuỗi. Nếu không tìm thấy, trả về danh sách rỗng [].
 
 Trả về JSON đúng định dạng:
-{"soft_skills": [...], "hard_skills": [...], "education": [...], "field_of_education": [...], "industry_sector": [...], "role": [...]}"""
+{"soft_skills": [...], "hard_skills": [...], "education": [...], "field_of_education": [...], "industry_sector": [...], "role": [...], "certifications": [...]}"""
 
 
 # ---------------------------------------------------------------------------
@@ -218,7 +266,7 @@ def _parse_entities(raw: str) -> dict:
     for key in result:
         if key in parsed and isinstance(parsed[key], list):
             result[key] = [str(item) for item in parsed[key]]
-    return result
+    return normalize_entities(result)
 
 
 # ---------------------------------------------------------------------------
@@ -289,6 +337,10 @@ def extract_entities(text: str, model: Optional[str] = None, max_retries: int = 
     if not raw:
         return {etype: [] for etype in config.ENTITY_TYPES}
     result = _parse_entities(raw)
+    # Bổ sung detector chính quy từ toàn văn, vì certification là nhóm
+    # whitelist và không nên phụ thuộc hoàn toàn vào cách LLM diễn đạt.
+    result["certifications"] = extract_supported_certifications(text)
+    result = normalize_entities(result)
     if use_cache and result:
         set_cached_entity(cache_key, result)
     return result

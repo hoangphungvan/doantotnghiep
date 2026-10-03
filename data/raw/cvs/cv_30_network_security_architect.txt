@@ -1,0 +1,18 @@
+HỌ VÀ TÊN: Nguyễn Bảo An - Network Security Architect
+Email: an.nguyen@email.com | SĐT: 0905667788 | Địa chỉ: Hà Nội
+HỌC VẤN:
+- Kỹ sư An toàn Thông tin, Học viện Kỹ thuật Mật mã (2015-2019)
+CHỨNG CHỈ:
+- CCNA
+- Certified Ethical Hacker
+- Fortinet NSE 4 Network Security Professional
+KỸ NĂNG CHUYÊN MÔN:
+- Cisco routing and switching, BGP, OSPF, VLAN, VPN và SD-WAN
+- Firewall Fortinet, Palo Alto, IDS/IPS, WAF và SIEM
+- Linux, Windows Server, Active Directory và VMware
+- Vulnerability assessment, incident response, Wireshark và Nmap
+KỸ NĂNG MỀM:
+- Phân tích sự cố, viết tài liệu, phản ứng nhanh và phối hợp với SOC
+KINH NGHIỆM LÀM VIỆC:
+- Network Security Engineer tại một ngân hàng (2019 - Nay): Thiết kế và vận hành kiến trúc bảo mật mạng.
+- Security Analyst (2018 - 2019): Giám sát cảnh báo và xử lý sự cố an ninh.

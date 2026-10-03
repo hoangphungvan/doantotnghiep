@@ -3,6 +3,8 @@ Module tạo embedding cho các thực thể sử dụng sentence-transformers.
 Áp dụng DeepSets pooling (Mean, Sum, Max) cho nhóm thực thể.
 """
 
+import os
+
 import torch
 import torch.nn as nn
 import numpy as np
@@ -16,9 +18,32 @@ class EmbeddingGenerator:
 
     def __init__(self, model_name: str = None):
         self.model_name = model_name or config.EMBEDDING_MODEL_NAME
-        self.model = SentenceTransformer(self.model_name)
+        model_source = self._resolve_local_model(self.model_name)
+        self.model = SentenceTransformer(
+            model_source,
+            local_files_only=os.path.isdir(model_source),
+        )
         self.embedding_dim = self.model.get_embedding_dimension()
         print(f"[EmbeddingGenerator] Model: {self.model_name}, dim={self.embedding_dim}")
+
+    @staticmethod
+    def _resolve_local_model(model_name: str) -> str:
+        """Use an existing Hugging Face snapshot without a network HEAD request."""
+        if os.path.isdir(model_name):
+            return model_name
+        try:
+            from huggingface_hub import snapshot_download
+
+            repo_id = model_name if "/" in model_name else f"sentence-transformers/{model_name}"
+            local_path = snapshot_download(repo_id, local_files_only=True)
+            # Transformers may probe optional adapter files even when the
+            # snapshot is complete. Keep that probe offline as well.
+            os.environ.setdefault("HF_HUB_OFFLINE", "1")
+            return local_path
+        except Exception:
+            # A first-time setup may not have a local snapshot yet. In that
+            # case SentenceTransformer keeps its normal download behavior.
+            return model_name
 
     def encode(self, texts: list[str]) -> np.ndarray:
         """Encode danh sách text thành embedding vectors."""
@@ -71,6 +96,10 @@ class EmbeddingGenerator:
         features = {}
         all_texts = []
         for etype in config.ENTITY_TYPES:
+            # Certification chỉ được xét như tín hiệu riêng của graph và
+            # không làm thay đổi semantic score nền của toàn văn CV/JD.
+            if etype == "certifications":
+                continue
             items = entities.get(etype, [])
             all_texts.extend(items)
 

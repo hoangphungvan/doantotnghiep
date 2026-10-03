@@ -1,0 +1,17 @@
+HỌ VÀ TÊN: Bùi Quang Hiếu - Data Engineer and Machine Learning Engineer
+Email: hieu.bui@email.com | SĐT: 0913445566 | Địa chỉ: Hà Nội
+HỌC VẤN:
+- Thạc sĩ Khoa học Dữ liệu, Đại học Bách Khoa Hà Nội (2018-2022)
+CHỨNG CHỈ:
+- Databricks Data Engineer Associate
+- TensorFlow Developer Certificate
+KỸ NĂNG CHUYÊN MÔN:
+- Python, SQL, Apache Spark, Airflow, Kafka và dbt
+- Data warehouse, ETL/ELT, Databricks, Snowflake và PostgreSQL
+- Machine learning với Scikit-learn, TensorFlow, MLflow
+- Docker, Kubernetes, GitLab CI và triển khai model trên cloud
+KỸ NĂNG MỀM:
+- Tư duy phân tích, giải quyết vấn đề, viết tài liệu và làm việc nhóm
+KINH NGHIỆM LÀM VIỆC:
+- Data Engineer tại một công ty fintech (2021 - Nay): Xây dựng pipeline dữ liệu và kho dữ liệu phân tích.
+- Machine Learning Engineer (2020 - 2021): Huấn luyện và triển khai mô hình dự báo.

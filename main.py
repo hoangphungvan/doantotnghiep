@@ -189,7 +189,10 @@ def run_pipeline():
         jd_main, jd_feats = embedding_gen.build_node_features(jd_entities)
 
         print("  [3/4] Xây dựng đồ thị...")
-        data = build_graph(cv_main, cv_feats, jd_main, jd_feats, label=pair["label"])
+        data = build_graph(
+            cv_main, cv_feats, jd_main, jd_feats, label=pair["label"],
+            candidate_entities=cv_entities, jd_entities=jd_entities,
+        )
         dataset.add(data)
         print(f"    Graph: {data.num_nodes} nodes, {data.edge_index.shape[1]} edges")
 

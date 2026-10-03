@@ -1,0 +1,14 @@
+HỌ VÀ TÊN: Vũ Minh Kiệt - .NET Backend Developer
+Email: kiet.vu@email.com | SĐT: 0944556677 | Địa chỉ: TP. Hồ Chí Minh
+HỌC VẤN:
+- Cử nhân Kỹ thuật Phần mềm, Đại học Công nghệ TP.HCM (2017-2021)
+KỸ NĂNG CHUYÊN MÔN:
+- C#, .NET 6, ASP.NET Core, Entity Framework và LINQ
+- REST API, microservices, RabbitMQ, Redis và Docker
+- SQL Server, PostgreSQL, Azure DevOps và Git
+- Unit testing, clean architecture, code review và CI/CD
+KỸ NĂNG MỀM:
+- Tư duy logic, chủ động, làm việc nhóm và giao tiếp kỹ thuật
+KINH NGHIỆM LÀM VIỆC:
+- Backend Developer tại một công ty phần mềm (2021 - Nay): Phát triển API và dịch vụ backend bằng ASP.NET Core.
+- Software Engineer (2020 - 2021): Xây dựng chức năng quản lý dữ liệu và tích hợp hệ thống.

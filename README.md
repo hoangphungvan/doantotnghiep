@@ -6,13 +6,14 @@ Hệ thống đánh giá và xếp hạng mức độ phù hợp giữa Ứng vi
 
 ## Kiến trúc Hệ thống
 
-### 1. Cấu trúc Đồ thị Bipartite (14 nút)
+### 1. Cấu trúc Đồ thị Bipartite (16 nút)
 
-Mỗi cặp (CV, JD) được mô hình hóa thành một đồ thị dị thể (bipartite graph) gồm 14 nút:
+Mỗi cặp (CV, JD) được mô hình hóa thành một đồ thị dị thể (bipartite graph) gồm 16 nút:
 
 ```
         [Soft Skills]──┐                  ┌──[Soft Skills]
-       [Hard Skills]───┤                  ├───[Hard Skills]
+         [Hard Skills]───┤                  ├───[Hard Skills]
+       [Certifications]──┤                  ├──[Certifications]
          [Education]───┤                  ├───[Education]
   [Field of Education]─┼──[Candidate]────[JD]──┼─[Field of Education]
     [Industry Sector]──┤                  ├──[Industry Sector]
@@ -20,21 +21,59 @@ Mỗi cặp (CV, JD) được mô hình hóa thành một đồ thị dị thể
 ```
 
 - **2 nút trung tâm**: Ứng viên ($v_c$) và Việc làm ($v_{jd}$).
-- **12 nút thực thể**: 6 loại cho mỗi bên (`role`, `hard_skills`, `field_of_education`, `industry_sector`, `education`, `soft_skills`).
+- **14 nút thực thể**: 7 loại cho mỗi bên, bổ sung `certifications`.
+- Chỉ các chứng chỉ thuộc whitelist trong `config.py` được đưa vào nhóm `certifications` và tính điểm.
+
+Nếu chứng chỉ CV khớp với chứng chỉ JD, hệ thống cộng điểm thưởng:
+$$r_{cert}=\frac{|Cert_{CV}\cap Cert_{JD}|}{|Cert_{JD}|},\quad
+Score'=\min(1,Score+0.10\times r_{cert})$$
+Khi JD không yêu cầu chứng chỉ hoặc không có chứng chỉ trùng nhau, $r_{cert}=0$ và điểm nền được giữ nguyên.
 - **Topology kết nối**:
   - *Star Topology*: Nút trung tâm kết nối với các nút thực thể tương ứng của mình.
   - *Cross-edges*: Kết nối giữa các nút thực thể cùng loại giữa CV và JD với trọng số $w_e$ dựa trên độ tương đồng Cosine kết hợp hàm k-NN sharpening ($p=4.0$).
 
 ### 2. Pipeline Xử lý 7 Bước
 
-1. **Trích xuất thực thể**: Sử dụng **Groq API** (`qwen/qwen3.8-27b`) trích xuất 6 loại thực thể từ văn bản thô, tích hợp cơ chế **2-Layer Entity Cache** (SHA-256 + đường dẫn file).
+1. **Trích xuất thực thể**: Sử dụng **Groq API** (`qwen/qwen3.8-27b`) trích xuất 7 loại thực thể từ văn bản thô, trong đó `certifications` chỉ nhận các chứng chỉ thuộc whitelist cấu hình.
 2. **Tạo Embedding**: Mô hình `paraphrase-multilingual-MiniLM-L12-v2` (dim 384, hỗ trợ tiếng Việt) kết hợp cơ chế gom cụm **DeepSets** (Mean, Max, Sum pooling → 1152 chiều).
-3. **Xây dựng Đồ thị**: Khởi tạo 14 nút với feature DeepSets, tính toán trọng số cạnh có định hướng mức độ ưu tiên thực thể (`role` > `hard_skills` > `field_of_education` > ...).
+3. **Xây dựng Đồ thị**: Khởi tạo 16 nút với feature DeepSets, tính toán trọng số cạnh có định hướng mức độ ưu tiên thực thể (`role` > `hard_skills` > `certifications` > ...).
 4. **Mô hình GCN**: Pre-aggregation $\rightarrow$ 3 lớp `GCNConv` $\rightarrow$ Global Readout $\rightarrow$ Classifier MLP.
 5. **Huấn luyện**: Hàm mất mát `BCEWithLogitsLoss` trên mục tiêu liên tục ($\text{target} = \text{grade} / 3$), chia tập train/val theo cơ chế **Query-aware Split** (tách theo nhóm CV để tránh data leakage).
 6. **Mô hình lai (Hybrid)**: Kết hợp điểm đồ thị và tương đồng ngữ nghĩa:
    $$\text{Score}_{\text{Hybrid}} = \alpha \cdot \text{Score}_{\text{GCN}} + (1 - \alpha) \cdot \text{Score}_{\text{Semantic}}$$
 7. **Đánh giá & Suy luận**: Xếp hạng JD cho từng ứng viên bằng **NDCG@K, Recall@K, MRR**.
+
+### 3. Schema Entity và quy tắc điểm
+
+Thứ tự entity được cố định trong `config.py` và phải được giữ nguyên khi đọc
+cache hoặc graph đã tiền xử lý:
+
+```python
+[
+    "soft_skills",
+    "hard_skills",
+    "education",
+    "field_of_education",
+    "industry_sector",
+    "role",
+    "certifications",
+]
+```
+
+`certifications` chỉ nhận các giá trị được chuẩn hóa về
+`CERTIFICATION_CATALOG`. Chứng chỉ không nằm trong catalog bị bỏ qua. Nhóm
+chứng chỉ cũng không được đưa vào semantic text chính; tín hiệu này chỉ tham
+gia graph và certification bonus khi CV có chứng chỉ mà JD yêu cầu.
+
+Điểm thưởng chứng chỉ được tính như sau:
+
+```text
+r_cert = |Cert_CV ∩ Cert_JD| / |Cert_JD|   nếu JD có yêu cầu chứng chỉ
+bonus  = min(0.10 × r_cert, 0.10)
+```
+
+Nếu JD không yêu cầu chứng chỉ hoặc không có chứng chỉ trùng nhau, điểm nền
+được giữ nguyên.
 
 ---
 
@@ -68,10 +107,10 @@ Dự án tích hợp bộ dữ liệu thực tế từ [dinhieufam/VietJobs](htt
 [KMeans K=20 Cụm + Ma trận Tương đồng + Hướng dẫn Negative Sampling]
          │
          ▼ (src/data_collection/generate_training_data.py)
-[12 CV Chuyên ngành + 60 Cặp Huấn luyện Cân bằng (pairs_it.csv)]
+[24 CV Chuyên ngành + 120 Cặp Huấn luyện Cân bằng (pairs_it.csv)]
          │
          ▼ (src/data_collection/prepare_training_data.py)
-[60 Đồ thị PyG Huấn luyện (data/processed/graphs/*.pt)]
+[120 Đồ thị PyG Huấn luyện (data/processed/graphs_v4_certification_catalog_expanded/*.pt)]
 ```
 
 ---
@@ -114,6 +153,51 @@ python -X utf8 main.py --mode demo
 python -X utf8 main.py --mode predict
 ```
 
+### 1.1. Chạy FastAPI AI Service
+
+FastAPI cung cấp service độc lập cho Spring Boot hoặc frontend:
+
+```bash
+python -m uvicorn src.api.main:app --host 0.0.0.0 --port 8000
+```
+
+Các endpoint chính:
+
+| Method | Endpoint | Chức năng |
+|---|---|---|
+| GET | `/health/live` | Kiểm tra process còn hoạt động |
+| GET | `/health/ready` | Kiểm tra checkpoint AI đã sẵn sàng |
+| GET | `/v1/meta` | Schema entity, embedding và graph hiện tại |
+| POST | `/v1/entities/extract` | Trích xuất entity từ CV/JD text |
+| POST | `/v1/match` | Matching một CV với một JD |
+| POST | `/v1/rank` | Xếp hạng nhiều JD cho một CV |
+| POST | `/v1/match/files` | Matching từ file PDF/TXT multipart |
+
+Swagger UI được mở tại `http://localhost:8000/docs`.
+
+Ví dụ request ranking:
+
+```json
+{
+  "cv_text": "Backend Developer, Python, FastAPI, PostgreSQL",
+  "jobs": [
+    {"job_id": "job-001", "jd_text": "Backend Engineer, Python, FastAPI"},
+    {"job_id": "job-002", "jd_text": "iOS Developer, Swift, UIKit"}
+  ]
+}
+```
+
+Response được sắp xếp theo `rank` và gồm `hybrid_score`, `graph_score`, `semantic_score`, `certification_match_ratio`, mức grade và phần giải thích entity khớp/thiếu.
+
+Biến môi trường tùy chọn:
+
+```env
+HYBRID_ALPHA=0.2
+CORS_ORIGINS=http://localhost:3000,http://localhost:5173
+AI_SERVICE_EAGER_LOAD=false
+AI_MAX_UPLOAD_BYTES=10485760
+```
+
 ### 2. Tái tạo Toàn bộ Dữ liệu từ VietJobs
 
 ```bash
@@ -126,7 +210,7 @@ python -X utf8 src/data_collection/cache_jd_embeddings.py
 # Bước 3: Phân 1.906 JD thành 20 cụm việc làm và tạo hướng dẫn ghép Hard/Easy Negative
 python -X utf8 src/data_collection/cluster_jds.py
 
-# Bước 4: Tự động sinh 12 profile CV kỹ thuật và tạo 60 cặp huấn luyện cân bằng
+# Bước 4: Tự động sinh 24 profile CV kỹ thuật và tạo 120 cặp huấn luyện cân bằng
 python -X utf8 src/data_collection/generate_training_data.py
 
 # Bước 5: Chuyển đổi các cặp sang đồ thị PyG huấn luyện
@@ -139,7 +223,7 @@ python -X utf8 src/data_collection/prepare_training_data.py --mode file --csv da
 python -X utf8 src/modeling/train.py --epochs 60 --batch 16 --lr 0.001 --patience 15
 ```
 
-Mô hình tốt nhất được lưu tự động tại `models/best_model.pt`.
+Mô hình tốt nhất được lưu tự động tại `models/best_model_v4_certification_catalog_expanded.pt`.
 
 ### 4. Đánh giá Xếp hạng & Mô hình Lai (Hybrid Evaluation)
 
@@ -153,6 +237,9 @@ python -X utf8 src/evaluation/hybrid.py --alpha 0.7
 # So sánh với các baseline truyền thống (TF-IDF + Cosine, SBERT thuần)
 python -X utf8 src/evaluation/baselines.py
 ```
+
+Khi chạy `src/evaluation/hybrid.py --alpha auto`, alpha được tune trên tập
+validation theo NDCG@10. Không dùng kết quả tune này để kết luận trên test set.
 
 ---
 
@@ -178,7 +265,7 @@ doantotnghiep/
 │   │
 │   ├── representation/              # Biểu diễn vector và đồ thị
 │   │   ├── embedding_generator.py   # SBERT đa ngôn ngữ + DeepSets pooling (1152-d)
-│   │   └── graph_builder.py         # Xây dựng đồ thị 14 nút và k-NN cross-edges
+│   │   └── graph_builder.py         # Xây dựng đồ thị 16 nút và k-NN cross-edges
 │   │
 │   ├── modeling/                    # Kiến trúc GCN & Huấn luyện
 │   │   ├── dataset.py               # Dataset loader & query-aware splitting
@@ -195,14 +282,14 @@ doantotnghiep/
 │
 ├── data/
 │   ├── cache/                       # Cache hệ thống (tăng tốc xử lý)
-│   │   ├── entity_cache.json        # Cache thực thể theo SHA-256 & jd_id
-│   │   └── jd_embeddings_cache.pt   # Cache vector DeepSets của 1.906 JD
+│   │   ├── entity_cache_v4_certification_catalog_expanded.json
+│   │   └── jd_embeddings_cache_v4_certification_catalog_expanded.pt
 │   ├── raw/
 │   │   ├── cvs/                     # File văn bản hồ sơ CV
 │   │   ├── VietJobs_cntt.csv        # Bảng dữ liệu duy nhất chứa toàn bộ 1.906 JD CNTT (có cột jd_id & formatted_jd_text)
-│   │   └── pairs_it.csv             # Bảng 60 cặp huấn luyện (cv_path, jd_path=jd_id, label)
+│   │   └── pairs_it.csv             # Bảng 120 cặp huấn luyện (cv_path, jd_path=jd_id, label)
 │   └── processed/
-│       ├── graphs/                  # Đồ thị PyG đã tiền xử lý (.pt)
+│       ├── graphs_v4_certification_catalog_expanded/ # Đồ thị PyG đã tiền xử lý (.pt)
 │       ├── training_pairs.csv       # Metadata danh sách cặp đồ thị
 │       ├── jd_clusters.csv          # Bảng gán cụm cho 1.906 JD
 │       ├── representative_jds.csv   # 40 JD đại diện cho 20 cụm
@@ -210,7 +297,7 @@ doantotnghiep/
 │       └── cluster_negative_sampling_guide.json # Hướng dẫn chọn Hard/Easy Negative
 │
 └── models/
-    └── best_model.pt                # Checkpoint mô hình GCN tốt nhất
+    └── best_model_v4_certification_catalog_expanded.pt
 ```
 
 ---
@@ -219,11 +306,13 @@ doantotnghiep/
 
 | Thông số | Giá trị cấu hình | Mô tả |
 |:---|:---|:---|
-| **Số nút đồ thị** | 14 nút | 2 nút trung tâm + 12 nút thực thể (6 loại mỗi bên) |
+| **Số nút đồ thị** | 16 nút | 2 nút trung tâm + 14 nút thực thể (7 loại mỗi bên) |
 | **Embedding Model** | `paraphrase-multilingual-MiniLM-L12-v2` | Sentence-BERT 384 chiều, hỗ trợ tiếng Việt |
 | **Feature Pooling** | DeepSets (Mean + Max + Sum) | $384 \times 3 = 1152$ chiều mỗi nút |
 | **Số lớp GCN** | 3 lớp `GCNConv` | Kích thước ẩn (Hidden dimension) = 128 |
 | **k-NN & Sharpening** | $k=10$, $p=4.0$ | Tăng cường độ phân biệt của các cạnh tương đồng |
 | **Loss Function** | `BCEWithLogitsLoss` | Soft target continuous: $\text{target} = \text{grade}/3$ |
 | **LLM Extractor** | `qwen/qwen3.8-27b` (Groq) | Trích xuất JSON thực thể với độ trễ thấp |
+| **Relevant threshold** | `grade >= 2` | Ngưỡng dùng cho Recall@K và MRR |
+| **Artifact version** | `v4_certification_catalog_expanded` | Version của entity cache, graph cache và checkpoint |
 | **Ranking Metrics** | NDCG@K, Recall@K, MRR | Đánh giá tại $K \in \{1, 3, 5, 10\}$ theo từng CV query |

@@ -1,3 +1,22 @@
 .env
 __pycache__/
 *.pyc
+
+# Model checkpoints va binary artifacts
+models/*.pt
+models/*.pth
+
+# Embedding/entity caches co the tai tao lai
+data/cache/*.pt
+data/cache/*.json
+
+# Graphs da sinh trong qua trinh preprocess/training
+data/processed/graphs/
+data/processed/graphs_v*/
+
+# Dataset goc lon
+data/raw/VietJobs.csv
+data/raw/VietJobs_cntt.csv
+
+# CV tong hop sinh boi LLM
+data/generated/

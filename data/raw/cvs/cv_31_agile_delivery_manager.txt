@@ -1,0 +1,18 @@
+HỌ VÀ TÊN: Lê Thanh Sơn - Agile Delivery Manager
+Email: son.le@email.com | SĐT: 0985667788 | Địa chỉ: Hà Nội
+HỌC VẤN:
+- Thạc sĩ Quản trị Kinh doanh, Đại học Kinh tế TP.HCM (2015-2017)
+- Cử nhân Công nghệ Thông tin, Đại học Đà Nẵng (2011-2015)
+CHỨNG CHỈ:
+- PMP (Project Management Professional)
+- Professional Scrum Master I
+KỸ NĂNG CHUYÊN MÔN:
+- Agile/Scrum, Kanban, release planning, sprint planning và risk management
+- Quản lý scope, ngân sách, tiến độ, chất lượng và stakeholder
+- Jira, Confluence, Azure DevOps, MS Project và Miro
+- Hiểu biết về software development lifecycle, API, cloud và CI/CD
+KỸ NĂNG MỀM:
+- Lãnh đạo, điều phối, giải quyết xung đột, đàm phán và thuyết trình
+KINH NGHIỆM LÀM VIỆC:
+- Delivery Manager tại một công ty phần mềm (2020 - Nay): Điều phối nhiều squad phát triển sản phẩm.
+- Scrum Master (2017 - 2020): Hỗ trợ đội Agile cải thiện quy trình và tốc độ giao hàng.

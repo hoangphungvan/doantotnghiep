@@ -1,0 +1,14 @@
+HỌ VÀ TÊN: Nguyễn Hữu Trí - CNC Programmer and Automation Engineer
+Email: tri.nguyen@email.com | SĐT: 0901122334 | Địa chỉ: Hải Phòng
+HỌC VẤN:
+- Kỹ sư Cơ điện tử, Đại học Bách Khoa Hà Nội (2016-2020)
+KỸ NĂNG CHUYÊN MÔN:
+- Lập trình và vận hành máy CNC, máy tiện và máy phay
+- Phần mềm: Mastercam, NX, AutoCAD, SolidWorks
+- Đọc bản vẽ kỹ thuật, GD&T, kiểm tra kích thước và tối ưu quy trình gia công
+- Tự động hóa cơ bản với PLC, cảm biến và robot công nghiệp
+KỸ NĂNG MỀM:
+- Cẩn thận, tư duy kỹ thuật, xử lý sự cố nhanh, tuân thủ an toàn lao động
+KINH NGHIỆM LÀM VIỆC:
+- CNC Programmer tại một công ty cơ khí chính xác (2020 - Nay): Viết chương trình gia công và tối ưu thời gian chu kỳ cho máy CNC.
+- Kỹ thuật viên tự động hóa (2019 - 2020): Bảo trì dây chuyền và hỗ trợ triển khai robot gắp sản phẩm.
