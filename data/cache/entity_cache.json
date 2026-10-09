@@ -280693,102 +280693,6 @@
       "Nhân Viên Kinh Doanh - Lĩnh Vực Phần Mềm"
     ]
   },
-  "D:\\doantotnghiep\\data\\raw\\cvs\\cv_06_backend_java.txt": {
-    "soft_skills": [],
-    "hard_skills": [],
-    "education": [],
-    "field_of_education": [],
-    "industry_sector": [],
-    "role": []
-  },
-  "D:\\doantotnghiep\\data\\raw\\cvs\\cv_08_frontend_react.txt": {
-    "soft_skills": [],
-    "hard_skills": [],
-    "education": [],
-    "field_of_education": [],
-    "industry_sector": [],
-    "role": []
-  },
-  "D:\\doantotnghiep\\data\\raw\\cvs\\cv_02_devops_cloud.txt": {
-    "soft_skills": [],
-    "hard_skills": [],
-    "education": [],
-    "field_of_education": [],
-    "industry_sector": [],
-    "role": []
-  },
-  "D:\\doantotnghiep\\data\\raw\\cvs\\cv_10_qa_tester.txt": {
-    "soft_skills": [],
-    "hard_skills": [],
-    "education": [],
-    "field_of_education": [],
-    "industry_sector": [],
-    "role": []
-  },
-  "D:\\doantotnghiep\\data\\raw\\cvs\\cv_14_data_analyst.txt": {
-    "soft_skills": [],
-    "hard_skills": [],
-    "education": [],
-    "field_of_education": [],
-    "industry_sector": [],
-    "role": []
-  },
-  "D:\\doantotnghiep\\data\\raw\\cvs\\cv_15_mobile_developer.txt": {
-    "soft_skills": [],
-    "hard_skills": [],
-    "education": [],
-    "field_of_education": [],
-    "industry_sector": [],
-    "role": []
-  },
-  "D:\\doantotnghiep\\data\\raw\\cvs\\cv_17_network_security.txt": {
-    "soft_skills": [],
-    "hard_skills": [],
-    "education": [],
-    "field_of_education": [],
-    "industry_sector": [],
-    "role": []
-  },
-  "D:\\doantotnghiep\\data\\raw\\cvs\\cv_18_business_analyst.txt": {
-    "soft_skills": [],
-    "hard_skills": [],
-    "education": [],
-    "field_of_education": [],
-    "industry_sector": [],
-    "role": []
-  },
-  "D:\\doantotnghiep\\data\\raw\\cvs\\cv_19_project_manager.txt": {
-    "soft_skills": [],
-    "hard_skills": [],
-    "education": [],
-    "field_of_education": [],
-    "industry_sector": [],
-    "role": []
-  },
-  "D:\\doantotnghiep\\data\\raw\\cvs\\cv_05_it_support.txt": {
-    "soft_skills": [],
-    "hard_skills": [],
-    "education": [],
-    "field_of_education": [],
-    "industry_sector": [],
-    "role": []
-  },
-  "D:\\doantotnghiep\\data\\raw\\cvs\\cv_03_ui_ux_designer.txt": {
-    "soft_skills": [],
-    "hard_skills": [],
-    "education": [],
-    "field_of_education": [],
-    "industry_sector": [],
-    "role": []
-  },
-  "D:\\doantotnghiep\\data\\raw\\cvs\\cv_00_software_sales.txt": {
-    "soft_skills": [],
-    "hard_skills": [],
-    "education": [],
-    "field_of_education": [],
-    "industry_sector": [],
-    "role": []
-  },
   "70f59cc0651dbb057d7e585aee2e2b1af45c8a99f6309e4defdf9546ca170203": {
     "soft_skills": [
       "Tư duy logic",
@@ -393329,6 +393233,886 @@
     ],
     "role": [
       "Nhân Viên Kinh Doanh - Lĩnh Vực Phần Mềm"
+    ]
+  },
+  "4faf6d33c701c7375e8be09d06e34241ef828f536c59b322776164dc3fa255ce": {
+    "soft_skills": [
+      "Persuasive commercial communication",
+      "quota-driven motivation",
+      "enterprise client relationship building"
+    ],
+    "hard_skills": [
+      "B2B enterprise software sales",
+      "software-as-a-service solution presentations",
+      "corporate software consulting",
+      "enterprise resource management solutions",
+      "Contract terms negotiation",
+      "commercial proposal authoring",
+      "value-based pricing",
+      "sales closing strategies",
+      "Pipeline management systems",
+      "executive business presentations",
+      "spreadsheet tools",
+      "presentation tools"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Quản trị Kinh doanh"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Phần mềm doanh nghiệp",
+      "Bán lẻ"
+    ],
+    "role": [
+      "Enterprise Software Commercial Representative",
+      "Commercial Solutions Representative"
+    ]
+  },
+  "data\\raw\\cvs\\cv_00_software_sales.txt": {
+    "soft_skills": [
+      "Persuasive commercial communication",
+      "quota-driven motivation",
+      "enterprise client relationship building"
+    ],
+    "hard_skills": [
+      "B2B enterprise software sales",
+      "software-as-a-service solution presentations",
+      "corporate software consulting",
+      "enterprise resource management solutions",
+      "Contract terms negotiation",
+      "commercial proposal authoring",
+      "value-based pricing",
+      "sales closing strategies",
+      "Pipeline management systems",
+      "executive business presentations",
+      "spreadsheet tools",
+      "presentation tools"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Quản trị Kinh doanh"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Phần mềm doanh nghiệp",
+      "Bán lẻ"
+    ],
+    "role": [
+      "Enterprise Software Commercial Representative",
+      "Commercial Solutions Representative"
+    ]
+  },
+  "212232f3c437ad00f54a60cacd0ef35df10554f8d29c450faca07fa1bfa06dea": {
+    "soft_skills": [
+      "Production incident management",
+      "automation mindset",
+      "cross-team reliability collaboration"
+    ],
+    "hard_skills": [
+      "Amazon Web Services",
+      "Google Cloud Platform",
+      "Container orchestration",
+      "Microservices",
+      "CI/CD",
+      "Infrastructure as Code",
+      "Telemetry metric collection",
+      "System log aggregation",
+      "Unix/Linux administration",
+      "Shell scripting"
+    ],
+    "education": [
+      "Kỹ sư"
+    ],
+    "field_of_education": [
+      "Mạng máy tính & Truyền thông dữ liệu"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin"
+    ],
+    "role": [
+      "Cloud Infrastructure & Site Reliability Specialist",
+      "Cloud Systems Specialist",
+      "Systems Administrator"
+    ]
+  },
+  "data\\raw\\cvs\\cv_02_devops_cloud.txt": {
+    "soft_skills": [
+      "Production incident management",
+      "automation mindset",
+      "cross-team reliability collaboration"
+    ],
+    "hard_skills": [
+      "Amazon Web Services",
+      "Google Cloud Platform",
+      "Container orchestration",
+      "Microservices",
+      "CI/CD",
+      "Infrastructure as Code",
+      "Telemetry metric collection",
+      "System log aggregation",
+      "Unix/Linux administration",
+      "Shell scripting"
+    ],
+    "education": [
+      "Kỹ sư"
+    ],
+    "field_of_education": [
+      "Mạng máy tính & Truyền thông dữ liệu"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin"
+    ],
+    "role": [
+      "Cloud Infrastructure & Site Reliability Specialist",
+      "Cloud Systems Specialist",
+      "Systems Administrator"
+    ]
+  },
+  "5263b060174924008baf10b47291e73f5d3539979b2a1d52cd8150f79b2303f2": {
+    "soft_skills": [
+      "Creative visual problem solving",
+      "user psychology empathy",
+      "seamless collaboration"
+    ],
+    "hard_skills": [
+      "User experience design",
+      "User interface design",
+      "interactive prototyping",
+      "wireframing",
+      "design system creation",
+      "user journey mapping",
+      "Digital visual asset editing",
+      "vector asset illustration",
+      "motion design micro-interactions",
+      "stylesheet layout rules",
+      "visual grid hierarchy",
+      "responsive design"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Thiết kế Đồ họa"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Dịch vụ vận tải",
+      "Giao đồ ăn",
+      "Truyền thông"
+    ],
+    "role": [
+      "Digital Product Experience & Interface Designer",
+      "Product Interface Designer",
+      "Visual Asset Designer"
+    ]
+  },
+  "data\\raw\\cvs\\cv_03_ui_ux_designer.txt": {
+    "soft_skills": [
+      "Creative visual problem solving",
+      "user psychology empathy",
+      "seamless collaboration"
+    ],
+    "hard_skills": [
+      "User experience design",
+      "User interface design",
+      "interactive prototyping",
+      "wireframing",
+      "design system creation",
+      "user journey mapping",
+      "Digital visual asset editing",
+      "vector asset illustration",
+      "motion design micro-interactions",
+      "stylesheet layout rules",
+      "visual grid hierarchy",
+      "responsive design"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Thiết kế Đồ họa"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Dịch vụ vận tải",
+      "Giao đồ ăn",
+      "Truyền thông"
+    ],
+    "role": [
+      "Digital Product Experience & Interface Designer",
+      "Product Interface Designer",
+      "Visual Asset Designer"
+    ]
+  },
+  "4373cdb85b0a3620a8692cdf5397054c4ac772e22c257a361a312fb14587754d": {
+    "soft_skills": [
+      "Customer-focused service attitude",
+      "prompt incident response",
+      "positive technical communication"
+    ],
+    "hard_skills": [
+      "End-User Support",
+      "Workstation setup",
+      "operating system support",
+      "business office suite troubleshooting",
+      "enterprise cloud collaboration platforms",
+      "Hardware Maintenance",
+      "Desktop PC and laptop diagnostics",
+      "component replacement",
+      "office peripherals maintenance",
+      "Network Operations",
+      "Network cabling termination",
+      "wireless router setup",
+      "office switch administration",
+      "basic local network troubleshooting",
+      "User Access Administration",
+      "Directory administration",
+      "user provisioning",
+      "corporate email account configuration"
+    ],
+    "education": [
+      "Cao đẳng"
+    ],
+    "field_of_education": [
+      "Công nghệ Thông tin"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Bán lẻ"
+    ],
+    "role": [
+      "Workplace Technology Specialist",
+      "Desktop Support",
+      "Workplace Support Specialist",
+      "Technical Support Intern"
+    ]
+  },
+  "data\\raw\\cvs\\cv_05_it_support.txt": {
+    "soft_skills": [
+      "Customer-focused service attitude",
+      "prompt incident response",
+      "positive technical communication"
+    ],
+    "hard_skills": [
+      "End-User Support",
+      "Workstation setup",
+      "operating system support",
+      "business office suite troubleshooting",
+      "enterprise cloud collaboration platforms",
+      "Hardware Maintenance",
+      "Desktop PC and laptop diagnostics",
+      "component replacement",
+      "office peripherals maintenance",
+      "Network Operations",
+      "Network cabling termination",
+      "wireless router setup",
+      "office switch administration",
+      "basic local network troubleshooting",
+      "User Access Administration",
+      "Directory administration",
+      "user provisioning",
+      "corporate email account configuration"
+    ],
+    "education": [
+      "Cao đẳng"
+    ],
+    "field_of_education": [
+      "Công nghệ Thông tin"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Bán lẻ"
+    ],
+    "role": [
+      "Workplace Technology Specialist",
+      "Desktop Support",
+      "Workplace Support Specialist",
+      "Technical Support Intern"
+    ]
+  },
+  "4b69d04f2ffe9fdd67281dea3a7d40b731c7c4b8cf4455fd6c60335ad2bc033f": {
+    "soft_skills": [
+      "Visual aesthetic empathy",
+      "product usability focus",
+      "collaborative teamwork"
+    ],
+    "hard_skills": [
+      "Single-page application development",
+      "component-driven web frameworks",
+      "server-rendered web applications",
+      "type-safe frontend scripting",
+      "Modern stylesheet layout engines",
+      "responsive web layouts",
+      "component design systems",
+      "mobile-first design approaches",
+      "Centralized client application state store",
+      "RESTful web services consumption",
+      "asynchronous data fetching",
+      "Client rendering speed optimization",
+      "automated component verification",
+      "modern web bundle build tools",
+      "Core Web Vitals"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Công nghệ Thông tin"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Thương mại điện tử"
+    ],
+    "role": [
+      "Senior Client-side Web Engineer",
+      "Web Applications Specialist",
+      "Client-side Web Engineer",
+      "Web Development Intern"
+    ]
+  },
+  "data\\raw\\cvs\\cv_08_frontend_react.txt": {
+    "soft_skills": [
+      "Visual aesthetic empathy",
+      "product usability focus",
+      "collaborative teamwork"
+    ],
+    "hard_skills": [
+      "Single-page application development",
+      "component-driven web frameworks",
+      "server-rendered web applications",
+      "type-safe frontend scripting",
+      "Modern stylesheet layout engines",
+      "responsive web layouts",
+      "component design systems",
+      "mobile-first design approaches",
+      "Centralized client application state store",
+      "RESTful web services consumption",
+      "asynchronous data fetching",
+      "Client rendering speed optimization",
+      "automated component verification",
+      "modern web bundle build tools",
+      "Core Web Vitals"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Công nghệ Thông tin"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Thương mại điện tử"
+    ],
+    "role": [
+      "Senior Client-side Web Engineer",
+      "Web Applications Specialist",
+      "Client-side Web Engineer",
+      "Web Development Intern"
+    ]
+  },
+  "35048e16e14e9a4f6e573c83710e88cbe6adec08d5cb04ff2d0c5e3839b6a6aa": {
+    "soft_skills": [
+      "High attention to detail",
+      "constructive defect reporting",
+      "strong communication"
+    ],
+    "hard_skills": [
+      "Quality Assurance",
+      "manual software verification",
+      "test requirements analysis",
+      "test scenario design",
+      "defect tracking",
+      "lifecycle management",
+      "Test Automation",
+      "Browser automation scripts",
+      "web service endpoint validation",
+      "performance load simulation",
+      "automated script execution",
+      "Data Validation",
+      "Structured database querying",
+      "Agile software validation",
+      "black-box functional testing",
+      "regression test cycles",
+      "quality metrics reporting"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Hệ thống Thông tin"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Digital banking",
+      "Accounting enterprise software"
+    ],
+    "role": [
+      "Quality Assurance & Software Validation Specialist",
+      "Quality Assurance Specialist",
+      "Software Verification Specialist"
+    ]
+  },
+  "data\\raw\\cvs\\cv_10_qa_tester.txt": {
+    "soft_skills": [
+      "High attention to detail",
+      "constructive defect reporting",
+      "strong communication"
+    ],
+    "hard_skills": [
+      "Quality Assurance",
+      "manual software verification",
+      "test requirements analysis",
+      "test scenario design",
+      "defect tracking",
+      "lifecycle management",
+      "Test Automation",
+      "Browser automation scripts",
+      "web service endpoint validation",
+      "performance load simulation",
+      "automated script execution",
+      "Data Validation",
+      "Structured database querying",
+      "Agile software validation",
+      "black-box functional testing",
+      "regression test cycles",
+      "quality metrics reporting"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Hệ thống Thông tin"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Digital banking",
+      "Accounting enterprise software"
+    ],
+    "role": [
+      "Quality Assurance & Software Validation Specialist",
+      "Quality Assurance Specialist",
+      "Software Verification Specialist"
+    ]
+  },
+  "87505305e7cf8a65163f31863e6df934dea6bfd4179d12232faf783be9aa51f6": {
+    "soft_skills": [
+      "Data storytelling",
+      "translating metrics into strategic business insights"
+    ],
+    "hard_skills": [
+      "Business Intelligence",
+      "Complex data querying",
+      "executive visual dashboard development",
+      "advanced spreadsheet analytics",
+      "financial modeling",
+      "Statistical Computing",
+      "Data manipulation",
+      "statistical analysis",
+      "scientific computing languages",
+      "statistical libraries",
+      "Exploratory data analysis",
+      "data cleansing pipelines",
+      "relational data modeling",
+      "ETL workflows",
+      "statistical hypothesis testing"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Toán - Tin ứng dụng"
+    ],
+    "industry_sector": [
+      "Thương mại điện tử",
+      "Công nghệ tài chính"
+    ],
+    "role": [
+      "Business Intelligence & Data Insights Specialist",
+      "Data Insights Specialist",
+      "Junior Data Specialist"
+    ]
+  },
+  "data\\raw\\cvs\\cv_14_data_analyst.txt": {
+    "soft_skills": [
+      "Data storytelling",
+      "translating metrics into strategic business insights"
+    ],
+    "hard_skills": [
+      "Business Intelligence",
+      "Complex data querying",
+      "executive visual dashboard development",
+      "advanced spreadsheet analytics",
+      "financial modeling",
+      "Statistical Computing",
+      "Data manipulation",
+      "statistical analysis",
+      "scientific computing languages",
+      "statistical libraries",
+      "Exploratory data analysis",
+      "data cleansing pipelines",
+      "relational data modeling",
+      "ETL workflows",
+      "statistical hypothesis testing"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Toán - Tin ứng dụng"
+    ],
+    "industry_sector": [
+      "Thương mại điện tử",
+      "Công nghệ tài chính"
+    ],
+    "role": [
+      "Business Intelligence & Data Insights Specialist",
+      "Data Insights Specialist",
+      "Junior Data Specialist"
+    ]
+  },
+  "4a9c2c0ff0b704779fd37705dad0344c377e3d3e00aa3cedcf64e95a0e2ab7e8": {
+    "soft_skills": [
+      "Touchscreen interaction empathy",
+      "proactive problem solving",
+      "continuous technical learning"
+    ],
+    "hard_skills": [
+      "Cross-platform mobile application development frameworks",
+      "open-source mobile operating system development",
+      "mobile component architecture",
+      "Reactive mobile state management patterns",
+      "clean architectural separation of mobile UI and business logic",
+      "Cloud backend integration",
+      "serverless mobile database",
+      "remote push notification infrastructure",
+      "geolocation mapping services",
+      "Mobile integrated development environments",
+      "version control",
+      "mobile application release management"
+    ],
+    "education": [
+      "Kỹ sư"
+    ],
+    "field_of_education": [
+      "Công nghệ Thông tin"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Tài chính",
+      "Game"
+    ],
+    "role": [
+      "Handheld Smart Device Application Engineer",
+      "Mobile Applications Engineer",
+      "Mobile Software Developer"
+    ]
+  },
+  "data\\raw\\cvs\\cv_15_mobile_developer.txt": {
+    "soft_skills": [
+      "Touchscreen interaction empathy",
+      "proactive problem solving",
+      "continuous technical learning"
+    ],
+    "hard_skills": [
+      "Cross-platform mobile application development frameworks",
+      "open-source mobile operating system development",
+      "mobile component architecture",
+      "Reactive mobile state management patterns",
+      "clean architectural separation of mobile UI and business logic",
+      "Cloud backend integration",
+      "serverless mobile database",
+      "remote push notification infrastructure",
+      "geolocation mapping services",
+      "Mobile integrated development environments",
+      "version control",
+      "mobile application release management"
+    ],
+    "education": [
+      "Kỹ sư"
+    ],
+    "field_of_education": [
+      "Công nghệ Thông tin"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Tài chính",
+      "Game"
+    ],
+    "role": [
+      "Handheld Smart Device Application Engineer",
+      "Mobile Applications Engineer",
+      "Mobile Software Developer"
+    ]
+  },
+  "3cd26d090802c138f1dad3c2b9d3aef4676a1f7602a1aaafb6809c5f632e1bfa": {
+    "soft_skills": [
+      "Rapid incident response",
+      "Strict security compliance adherence",
+      "High ethical responsibility"
+    ],
+    "hard_skills": [
+      "Enterprise network routing and switching hardware",
+      "LAN/WAN topology design",
+      "Encrypted private tunneling",
+      "Dynamic routing protocols",
+      "Network segmentation",
+      "Next-generation enterprise firewalls",
+      "Intrusion detection and prevention systems",
+      "Application protection gateways",
+      "Security information and event monitoring",
+      "Enterprise Linux administration",
+      "Directory services and domain controller administration",
+      "Virtualization environments",
+      "Network vulnerability scanning",
+      "Packet inspection analysis",
+      "Penetration testing fundamentals",
+      "Network Associate Certification",
+      "Certified Ethical Security Practitioner"
+    ],
+    "education": [
+      "Kỹ sư"
+    ],
+    "field_of_education": [
+      "An toàn Thông tin"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Viễn thông",
+      "Tài chính",
+      "Ngân hàng"
+    ],
+    "role": [
+      "Telecommunications & Information Defense Specialist",
+      "Information Defense Specialist",
+      "Network Infrastructure Engineer"
+    ]
+  },
+  "data\\raw\\cvs\\cv_17_network_security.txt": {
+    "soft_skills": [
+      "Rapid incident response",
+      "Strict security compliance adherence",
+      "High ethical responsibility"
+    ],
+    "hard_skills": [
+      "Enterprise network routing and switching hardware",
+      "LAN/WAN topology design",
+      "Encrypted private tunneling",
+      "Dynamic routing protocols",
+      "Network segmentation",
+      "Next-generation enterprise firewalls",
+      "Intrusion detection and prevention systems",
+      "Application protection gateways",
+      "Security information and event monitoring",
+      "Enterprise Linux administration",
+      "Directory services and domain controller administration",
+      "Virtualization environments",
+      "Network vulnerability scanning",
+      "Packet inspection analysis",
+      "Penetration testing fundamentals",
+      "Network Associate Certification",
+      "Certified Ethical Security Practitioner"
+    ],
+    "education": [
+      "Kỹ sư"
+    ],
+    "field_of_education": [
+      "An toàn Thông tin"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Viễn thông",
+      "Tài chính",
+      "Ngân hàng"
+    ],
+    "role": [
+      "Telecommunications & Information Defense Specialist",
+      "Information Defense Specialist",
+      "Network Infrastructure Engineer"
+    ]
+  },
+  "3ed1451b5a75001348f19f57bbbe56560195c14fe977657e64d5c82bc1bdbf70": {
+    "soft_skills": [
+      "Stakeholder negotiation",
+      "consensus building",
+      "clear presentations",
+      "solution-oriented mindset"
+    ],
+    "hard_skills": [
+      "Business Analysis",
+      "Stakeholder requirement discovery and elicitation",
+      "business process analysis",
+      "functional scope management",
+      "Business Requirements Documents",
+      "Software Requirements Specifications",
+      "user stories",
+      "acceptance criteria",
+      "Business Process Model and Notation diagrams",
+      "Workflow diagramming",
+      "collaborative interactive wireframing",
+      "agile requirement tracking systems",
+      "Agile delivery framework",
+      "sprint backlog grooming",
+      "functional acceptance validation",
+      "Certified Business Analysis Professional",
+      "Professional Scrum Master"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Hệ thống Thông tin Quản lý"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin"
+    ],
+    "role": [
+      "Business Systems Analyst",
+      "Solution Architect",
+      "Senior Systems Analyst",
+      "Business Analyst"
+    ]
+  },
+  "data\\raw\\cvs\\cv_18_business_analyst.txt": {
+    "soft_skills": [
+      "Stakeholder negotiation",
+      "consensus building",
+      "clear presentations",
+      "solution-oriented mindset"
+    ],
+    "hard_skills": [
+      "Business Analysis",
+      "Stakeholder requirement discovery and elicitation",
+      "business process analysis",
+      "functional scope management",
+      "Business Requirements Documents",
+      "Software Requirements Specifications",
+      "user stories",
+      "acceptance criteria",
+      "Business Process Model and Notation diagrams",
+      "Workflow diagramming",
+      "collaborative interactive wireframing",
+      "agile requirement tracking systems",
+      "Agile delivery framework",
+      "sprint backlog grooming",
+      "functional acceptance validation",
+      "Certified Business Analysis Professional",
+      "Professional Scrum Master"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Hệ thống Thông tin Quản lý"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin"
+    ],
+    "role": [
+      "Business Systems Analyst",
+      "Solution Architect",
+      "Senior Systems Analyst",
+      "Business Analyst"
+    ]
+  },
+  "777751d8a462f77813a1f19685f681ce05174065c69789dce532f23d7c33a629": {
+    "soft_skills": [
+      "Cross-functional team leadership",
+      "conflict resolution",
+      "client expectations negotiation",
+      "timeline management"
+    ],
+    "hard_skills": [
+      "Project Governance",
+      "software project planning",
+      "project milestone scheduling",
+      "budget forecasting",
+      "resource allocation",
+      "risk mitigation strategies",
+      "Agile Methodologies",
+      "Agile",
+      "Kanban",
+      "sprint planning",
+      "daily standup coordination",
+      "retrospective reviews",
+      "Work management and tracking systems",
+      "project portfolio tracking",
+      "engineering collaboration tools",
+      "Distributed software architecture",
+      "continuous delivery practices",
+      "database integrations",
+      "web service integrations",
+      "Project Management Professional",
+      "Agile Certified Practitioner"
+    ],
+    "education": [
+      "Thạc sĩ",
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Quản trị Dự án Công nghệ",
+      "Công nghệ Thông tin"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Phần mềm"
+    ],
+    "role": [
+      "Technology Project Director",
+      "Delivery Lead",
+      "Technical Delivery Lead"
+    ]
+  },
+  "data\\raw\\cvs\\cv_19_project_manager.txt": {
+    "soft_skills": [
+      "Cross-functional team leadership",
+      "conflict resolution",
+      "client expectations negotiation",
+      "timeline management"
+    ],
+    "hard_skills": [
+      "Project Governance",
+      "software project planning",
+      "project milestone scheduling",
+      "budget forecasting",
+      "resource allocation",
+      "risk mitigation strategies",
+      "Agile Methodologies",
+      "Agile",
+      "Kanban",
+      "sprint planning",
+      "daily standup coordination",
+      "retrospective reviews",
+      "Work management and tracking systems",
+      "project portfolio tracking",
+      "engineering collaboration tools",
+      "Distributed software architecture",
+      "continuous delivery practices",
+      "database integrations",
+      "web service integrations",
+      "Project Management Professional",
+      "Agile Certified Practitioner"
+    ],
+    "education": [
+      "Thạc sĩ",
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Quản trị Dự án Công nghệ",
+      "Công nghệ Thông tin"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Phần mềm"
+    ],
+    "role": [
+      "Technology Project Director",
+      "Delivery Lead",
+      "Technical Delivery Lead"
     ]
   }
 }
