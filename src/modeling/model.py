@@ -14,8 +14,8 @@ Sử dụng BCEWithLogitsLoss trên soft target = grade/NUM_GRADES
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch_geometric.nn import GCNConv, global_mean_pool
-from torch_geometric.data import Data, Batch
+from torch_geometric.nn import GCNConv
+from torch_geometric.data import Data
 
 import config
 
@@ -123,11 +123,6 @@ class GCNModel(nn.Module):
 
         logits = self.classifier(h_combined)
         return logits
-
-    def predict_proba(self, data: Data) -> torch.Tensor:
-        """Trả về xác suất match sau sigmoid."""
-        logits = self.forward(data)
-        return torch.sigmoid(logits)
 
 
 def grade_to_target(grades: torch.Tensor) -> torch.Tensor:

@@ -5,12 +5,8 @@ load_dotenv()
 
 LLM_API_KEY = os.getenv("LLM_API_KEY") or os.getenv("GROQ_API_KEY") or os.getenv("GEMINI_API_KEY")
 GROQ_API_KEY = LLM_API_KEY
-# Alias tương thích ngược nếu còn dùng tên cũ
-GEMINI_API_KEY = LLM_API_KEY
 OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.groq.com/openai/v1")
 LLM_MODEL = os.getenv("LLM_MODEL", "qwen/qwen3.8-27b")
-LLM_RPM_LIMIT = 28  # để chừa margin dưới mức 30 RPM thật
-GEMINI_RPM_LIMIT = 28
 
 # Model đa ngôn ngữ (hỗ trợ tiếng Việt tốt hơn all-MiniLM-L6-v2 vốn chủ yếu tiếng Anh).
 # paraphrase-multilingual-MiniLM-L12-v2 cùng dim 384 nên không đổi kiến trúc model.
@@ -45,6 +41,12 @@ ENTITY_WEIGHTS = {
 
 NUM_NODES = 2 + NUM_ENTITY_TYPES * 2  # 14 nodes: 2 main + 6 candidate + 6 JD
 
+# Cosine tối thiểu để coi hai kỹ năng là khớp ngữ nghĩa (diễn giải kết quả).
+# 0.75 chọn theo kiểm tra tay trên 60 cặp với paraphrase-multilingual-MiniLM-L12-v2: dưới ~0.70 nhiều
+# khớp sai (JPA~gRPC, Git~Ruby), từ 0.75 khớp xuyên ngôn ngữ mới đáng tin (làm việc nhóm~Good teamwork).
+# NDCG@5 cao nhất ở 0.60 nhưng là do khớp rộng theo lĩnh vực. Phải hiệu chỉnh lại nếu đổi EMBEDDING_MODEL.
+SEMANTIC_MATCH_THRESHOLD = 0.75
+
 # ---------------------------------------------------------------------------
 # Thang nhãn mức độ phù hợp (graded relevance) 0..NUM_GRADES
 # Dùng cho ranking metrics (NDCG@K, MRR, Recall@K).
@@ -76,9 +78,6 @@ SHARPENING_P = 4.0
 
 LEARNING_RATE = 1e-3
 WEIGHT_DECAY = 1e-4
-# Với soft target ordinal 4 mức (grade / NUM_GRADES in {0, 0.33, 0.67, 1.0}),
-# đặt None để không nhân hệ số phạt dương tính lệch, phân bố tự cân bằng qua dữ liệu.
-POS_WEIGHT = None
 NUM_EPOCHS = 100
 BATCH_SIZE = 32
 

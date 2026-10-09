@@ -268,8 +268,6 @@ def load_eval_graphs() -> list:
 
 
 def gcn_scores_from_model(rows: list[dict], model_path: str = None) -> Optional[np.ndarray]:
-    import torch
-    from src.modeling.model import GCNModel
     from src.evaluation.hybrid import compute_graph_scores
 
     graphs = load_eval_graphs()
@@ -291,6 +289,17 @@ def gcn_scores_from_model(rows: list[dict], model_path: str = None) -> Optional[
         if len(ordered) != len(rows):
             return None
 
+    loaded = _load_gcn(model_path, len(ordered))
+    if loaded is None:
+        return None
+    model, device = loaded
+    return compute_graph_scores(model, ordered, device)
+
+
+def _load_gcn(model_path: str = None, n_graphs: int = 0):
+    import torch
+    from src.modeling.model import GCNModel
+
     model_path = model_path or os.path.join(config.MODEL_DIR, "best_model.pt")
     if not os.path.exists(model_path):
         print(f"[WARN] Chưa có model: {model_path}")
@@ -301,8 +310,69 @@ def gcn_scores_from_model(rows: list[dict], model_path: str = None) -> Optional[
     model = GCNModel(input_dim=ckpt["input_dim"]).to(device)
     model.load_state_dict(ckpt["model_state_dict"])
     model.eval()
-    print(f"[GCN] Loaded {model_path} (epoch={ckpt.get('epoch', '?')}) trên {len(ordered)} graphs")
-    return compute_graph_scores(model, ordered, device)
+    print(f"[GCN] Loaded {model_path} (epoch={ckpt.get('epoch', '?')}) trên {n_graphs} graphs")
+    return model, device
+
+
+EXPLAIN_CSV = os.path.join(config.DATA_PROCESSED_DIR, "match_explanations.csv")
+
+
+def explain_pairs(rows: list[dict], model_path: str = None, path: str = None):
+    """
+    Ghi diễn giải cho từng cặp trong ground truth ra CSV. Không ảnh hưởng metrics.
+    Thực thể lấy từ thuộc tính cv_entities/jd_entities của graph đã lưu.
+    """
+    import json
+    from src.inference.explain import gcn_attribution, match_entities, summarize
+    from src.representation.embedding_generator import EmbeddingGenerator
+
+    graphs = load_eval_graphs()
+    graph_index = {(g._cv_id, g._jd_id): g for g in graphs}
+    loaded = _load_gcn(model_path, len(graphs))
+    if loaded is None:
+        return None
+    model, _ = loaded
+    embedder = EmbeddingGenerator()
+
+    path = path or EXPLAIN_CSV
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    fieldnames = ["cv_id", "jd_id", "label", "weighted_coverage", "missing_hard_skills",
+                  "extra_hard_skills", "top_positive_node", "explanation_vi", "explanation_en"]
+    empty_cv = 0
+    with open(path, "w", newline="", encoding="utf-8-sig") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        for r in rows:
+            g = graph_index.get((r["cv_id"], r["jd_id"]))
+            if g is None:
+                print(f"[WARN] Không có graph cho {r['cv_id']} / {r['jd_id']} → bỏ qua diễn giải.")
+                continue
+            cv_ents = json.loads(g.cv_entities)
+            jd_ents = json.loads(g.jd_entities)
+            if not any(cv_ents.values()):
+                empty_cv += 1
+            match = match_entities(cv_ents, jd_ents, embedder)
+            attr = gcn_attribution(model, g)
+            text = summarize(match, attr)
+            top = max(attr.items(), key=lambda kv: kv[1])[0]
+            writer.writerow({
+                "cv_id": r["cv_id"],
+                "jd_id": r["jd_id"],
+                "label": int(r["label"]),
+                "weighted_coverage": "" if match["weighted_coverage"] is None
+                                     else f"{match['weighted_coverage']:.4f}",
+                "missing_hard_skills": "; ".join(match["hard_skills"]["missing"]),
+                "extra_hard_skills": "; ".join(match["hard_skills"]["extra"]),
+                "top_positive_node": top,
+                "explanation_vi": text["vi"],
+                "explanation_en": text["en"],
+            })
+    if empty_cv:
+        print(f"[WARN] {empty_cv} cặp có CV không có thực thể trong graph → phần đối chiếu "
+              "kỹ năng không có ý nghĩa cho các cặp này. Xem README/ghi chú về cache CV.")
+    print(f"[OK] Ghi diễn giải: {path}")
+    return path
+
 
 
 def save_gcn_predictions(rows: list[dict], scores: np.ndarray, path: str = None):
@@ -396,7 +466,8 @@ def save_results(results: OrderedDict, path_csv: str, path_md: str):
 
 def run_eval(pairs_csv: str = None, query_axis: str = "cv",
              alpha: str = "auto", gcn_csv: str = None,
-             model_path: str = None, use_vietjobs_it: bool = False) -> OrderedDict:
+             model_path: str = None, use_vietjobs_it: bool = False,
+             explain: bool = False) -> OrderedDict:
     print("=" * 60)
     print("  RANKING EVALUATION PIPELINE")
     print("=" * 60)
@@ -444,6 +515,8 @@ def run_eval(pairs_csv: str = None, query_axis: str = "cv",
     table = markdown_table(results)
     print("\n" + table + "\n")
     save_results(results, RESULT_CSV, RESULT_MD)
+    if explain:
+        explain_pairs(rows, model_path=model_path)
     return results
 
 
@@ -459,6 +532,8 @@ def main():
     parser.add_argument("--model", default=None)
     parser.add_argument("--use-vietjobs-it", action="store_true",
                         help="Nạp formatted_jd_text từ VietJobs_cntt.csv (nặng hơn)")
+    parser.add_argument("--explain", action="store_true",
+                        help="Ghi diễn giải từng cặp ra match_explanations.csv (không đổi metrics)")
     args = parser.parse_args()
     run_eval(
         pairs_csv=args.pairs,
@@ -467,6 +542,7 @@ def main():
         gcn_csv=args.gcn_csv,
         model_path=args.model,
         use_vietjobs_it=args.use_vietjobs_it,
+        explain=args.explain,
     )
 
 

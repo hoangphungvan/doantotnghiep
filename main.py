@@ -220,31 +220,6 @@ def run_pipeline():
     print("\n✓ Pipeline hoàn tất!")
 
 
-def run_train_from_csv():
-    """Huấn luyện từ file CSV."""
-    from src.modeling.dataset import CJMDataset
-    from src.modeling.train import train
-
-    csv_path = input("Đường dẫn file CSV (cv_path,jd_path,label): ").strip()
-    if not os.path.exists(csv_path):
-        print(f"[ERROR] File không tồn tại: {csv_path}")
-        return
-
-    print(f"\n[1/2] Loading & processing dataset từ {csv_path}...")
-    dataset = CJMDataset(csv_path=csv_path)
-
-    if len(dataset) == 0:
-        print("[ERROR] Dataset rỗng. Kiểm tra lại CSV và dữ liệu.")
-        return
-
-    print(f"\n[2/2] Training model trên {len(dataset)} samples...")
-    input_dim = dataset[0].x.shape[1]
-    model, history = train(
-        data_list=[dataset[i] for i in range(len(dataset))],
-        input_dim=input_dim,
-    )
-
-
 def run_hybrid_demo():
     """Demo Hybrid Score + Baselines với sample data (không cần API key)."""
     from src.modeling.dataset import create_sample_dataset

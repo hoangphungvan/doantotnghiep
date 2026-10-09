@@ -3,8 +3,6 @@ Module tạo embedding cho các thực thể sử dụng sentence-transformers.
 Áp dụng DeepSets pooling (Mean, Sum, Max) cho nhóm thực thể.
 """
 
-import torch
-import torch.nn as nn
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
@@ -84,24 +82,6 @@ class EmbeddingGenerator:
         main_padded[:self.embedding_dim] = main_embedding
 
         return main_padded, features
-
-
-class DeepSetsProjection(nn.Module):
-    """
-    Lớp projection cho DeepSets output.
-    Chuyển từ 3*embedding_dim -> target_dim.
-    """
-
-    def __init__(self, input_dim: int, target_dim: int):
-        super().__init__()
-        self.projection = nn.Sequential(
-            nn.Linear(input_dim, target_dim),
-            nn.ReLU(),
-            nn.LayerNorm(target_dim),
-        )
-
-    def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return self.projection(x)
 
 
 if __name__ == "__main__":

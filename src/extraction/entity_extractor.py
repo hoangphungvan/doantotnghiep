@@ -57,7 +57,8 @@ def _save_cache():
     global _entity_cache
     if _entity_cache is not None:
         os.makedirs(config.DATA_CACHE_DIR, exist_ok=True)
-        with open(config.ENTITY_CACHE_FILE, "w", encoding="utf-8") as f:
+        # newline="\n": giữ LF như file đã commit, tránh diff toàn file khi chạy trên Windows
+        with open(config.ENTITY_CACHE_FILE, "w", encoding="utf-8", newline="\n") as f:
             json.dump(_entity_cache, f, ensure_ascii=False, indent=2)
 
 
@@ -67,13 +68,16 @@ def get_cache_key(text: str) -> str:
 
 
 def get_cached_entity(key: str) -> Optional[dict]:
-    """Lấy thực thể từ cache theo hash hoặc đường dẫn."""
+    """Lấy thực thể từ cache theo hash hoặc đường dẫn. Kết quả rỗng coi như chưa có."""
     cache = _load_cache()
-    return cache.get(key)
+    cached = cache.get(key)
+    return cached if cached and any(cached.values()) else None
 
 
 def set_cached_entity(key: str, data: dict, save: bool = True):
-    """Lưu thực thể vào cache."""
+    """Lưu thực thể vào cache. Không lưu kết quả rỗng (thường do LLM lỗi) để lần sau gọi lại."""
+    if not any(data.values()):
+        return
     cache = _load_cache()
     cache[key] = data
     if save:
@@ -189,14 +193,6 @@ def read_text_file(file_path: str) -> str:
     """Đọc file text thuần."""
     with open(file_path, "r", encoding="utf-8") as f:
         return f.read()
-
-
-def read_document(file_path: str) -> str:
-    """Đọc tài liệu, hỗ trợ PDF (text layer) và file text."""
-    path = normalize_path(file_path)
-    if path.lower().endswith(".pdf"):
-        return read_pdf_text(path)
-    return read_text_file(path)
 
 
 # ---------------------------------------------------------------------------

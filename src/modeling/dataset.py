@@ -154,14 +154,6 @@ class CJMInMemoryDataset:
     def __getitem__(self, idx):
         return self.data_list[idx]
 
-    def save(self, path: str):
-        torch.save(self.data_list, path)
-
-    @classmethod
-    def load(cls, path: str):
-        data_list = torch.load(path, weights_only=False)
-        return cls(data_list)
-
 
 def create_sample_dataset(num_queries: int = 10,
                           jds_per_query: int = 5) -> CJMInMemoryDataset:
