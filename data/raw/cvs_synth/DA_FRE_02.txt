@@ -1,0 +1,45 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Thống kê kinh tế và có 8 tháng thực tập phân tích dữ liệu Digital Marketing tại agency quảng cáo. Tôi muốn phát triển chuyên môn về Marketing Analytics, đặc biệt trong việc theo dõi hiệu quả chiến dịch, phân tích marketing funnel và trực quan hóa dữ liệu. Mục tiêu của tôi là nâng cao khả năng sử dụng SQL, BigQuery và Looker Studio để hỗ trợ việc đánh giá hoạt động marketing dựa trên số liệu.
+
+HỌC VẤN
+
+Cử nhân Thống kê kinh tế
+Đại học công lập khối kinh tế.
+
+Có nền tảng kiến thức về thống kê, xử lý và phân tích số liệu kinh tế.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Google Sheets, Microsoft Excel: Tổng hợp và xử lý bảng dữ liệu.
+- SQL cơ bản, Google BigQuery cơ bản: Truy vấn dữ liệu phục vụ báo cáo.
+- Looker Studio: Xây dựng dashboard trực quan.
+- Google Analytics 4: Theo dõi dữ liệu marketing ở mức cơ bản.
+- Marketing Funnel Analysis: Phân tích các giai đoạn trong phễu marketing.
+- Data Cleaning, Data Visualization.
+- Google Tag Manager cơ bản, Python pandas cơ bản.
+- Canva; kiến thức lý thuyết về A/B Testing.
+
+KỸ NĂNG MỀM
+
+- Tổng hợp và trình bày thông tin marketing theo yêu cầu báo cáo.
+- Phối hợp trong quá trình chuẩn bị dữ liệu đánh giá chiến dịch.
+- Tiếng Việt: Bản ngữ.
+- Tiếng Anh: B2, đọc hiểu tài liệu và giao tiếp công việc.
+
+KINH NGHIỆM LÀM VIỆC
+
+Marketing Data Analyst Intern
+Công ty TNHH Truyền thông BlueWave
+02/2026 – 10/2026 (8 tháng)
+
+- Thu thập và tổng hợp dữ liệu từ các nền tảng marketing vào Google Sheets, tạo bảng dữ liệu phục vụ theo dõi chiến dịch.
+- Hỗ trợ làm sạch và kiểm tra dữ liệu quảng cáo trước khi lập báo cáo.
+- Sử dụng Looker Studio để trực quan hóa số liệu, hỗ trợ nhóm marketing đánh giá hiệu quả chiến dịch.
+- Hỗ trợ tổng hợp thông tin theo marketing funnel và chuẩn bị báo cáo định kỳ cho người phụ trách.
+
+DỰ ÁN
+
+Báo cáo hiệu quả chiến dịch Digital Marketing
+
+Tham gia nhóm tổng hợp dữ liệu quảng cáo từ nhiều nền tảng. Sử dụng Google Sheets để xử lý dữ liệu và Looker Studio để thể hiện kết quả. Công việc tập trung vào chuẩn bị dữ liệu, cập nhật báo cáo và hỗ trợ phân tích hiệu quả chiến dịch theo yêu cầu của nhóm.

@@ -1,0 +1,43 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp Cao đẳng ngành Mạng máy tính và Truyền thông dữ liệu, đã có khoảng 8 tháng thực tập và hỗ trợ triển khai mạng LAN cho các văn phòng nhỏ. Tôi muốn tiếp tục theo công việc về hệ thống mạng, đặc biệt là cấu hình và vận hành thiết bị Cisco. Mong muốn được tham gia các công việc triển khai thực tế để nâng cao tay nghề, hiểu rõ hơn việc xử lý sự cố kết nối và cách tổ chức hệ thống mạng văn phòng.
+
+HỌC VẤN
+
+Trường Cao đẳng kỹ thuật
+Ngành: Mạng máy tính và Truyền thông dữ liệu
+Trình độ: Cao đẳng
+
+Trong quá trình học có thực hành cấu hình mạng trên Cisco Packet Tracer, tìm hiểu các mô hình OSI, TCP/IP, địa chỉ mạng và cách kết nối thiết bị trong hệ thống LAN.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Nắm kiến thức về mô hình OSI, giao thức TCP/IP và các thành phần của mạng LAN.
+- Biết cấu hình Cisco IOS cơ bản trên router và switch.
+- Thực hành VLAN, Inter-VLAN Routing và Static Routing ở mức cơ bản.
+- Có kiến thức cấu hình DHCP, NAT và switch Layer 2.
+- Sử dụng ping và traceroute để kiểm tra tình trạng kết nối mạng.
+- Đọc sơ đồ mạng LAN và xác định vị trí thiết bị theo sơ đồ có sẵn.
+- Sử dụng Cisco Packet Tracer để thực hành cấu hình.
+- Biết dùng Wireshark cơ bản để xem gói tin mạng.
+- Có kinh nghiệm bấm cáp mạng, kiểm tra cáp và hỗ trợ cấu hình Access Point.
+
+KỸ NĂNG MỀM
+
+- Có thể làm việc theo hướng dẫn kỹ thuật và tài liệu cấu hình được cung cấp.
+- Biết phối hợp với các thành viên trong quá trình lắp đặt thiết bị và kiểm tra kết nối.
+- Tiếng Anh A2-B1, đọc được các tài liệu cấu hình mạng đơn giản.
+- Có thói quen kiểm tra lại kết nôi sau khi hoàn thành công việc được giao.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Giải pháp Mạng Thành Công
+Vị trí: Thực tập sinh kỹ thuật mạng
+Thời gian: 02/2026 – 09/2026 (8 tháng)
+
+- Tham gia hỗ trợ triển khai mạng LAN cho văn phòng nhỏ, thực hiện bấm cáp, kiểm tra đường dây và kết nối các thiết bị mạng theo sơ đồ được cung cấp.
+- Hỗ trợ cấu hinh switch Layer 2, VLAN và các thông số mạng cơ bản theo tài liệu hướng dẫn của kỹ thuật viên phụ trách.
+- Thực hiện kiểm tra kết nối bằng ping, traceroute, hỗ trợ xác định những vị trí gặp vấn đề kết nối trong quá trình lắp đặt.
+- Hỗ trợ cấu hình Access Point, kiểm tra kết nối mạng sau triển khai và bàn giao thông tin thiết bị cho người phụ trách.
+
+Qua thời gian thực tập, tôi đã quen hơn với việc đọc sơ đồ mạng, lắp đặt thiết bị thực tế và làm theo quy trình triển khai mạng cho văn phòng.

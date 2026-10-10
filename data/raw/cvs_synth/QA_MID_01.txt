@@ -1,0 +1,50 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 3,6 năm kinh nghiệm trong lĩnh vực kiểm thử phần mềm, bắt đầu từ Manual Testing và chuyển sang Automation Testing. Đã tham gia phát triển, bảo trì bộ kiểm thử giao diện tự động cho sản phẩm SaaS và phần mềm quản lý nhân sự. Mong muốn tiếp tục nâng cao năng lực thiết kế và tối ưu automation framework, đồng thời đóng góp vào việc duy trì chất lượng sản phẩm trong các chu kỳ phát triển.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học, chuyên ngành Kỹ thuật phần mềm tại một trường đại học công lập.
+
+Có nền tảng kiến thức về phát triển phần mềm và kiểm thử ứng dụng.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Automation Testing với Playwright.
+- Ngôn ngữ lập trình TypeScript, JavaScript.
+- Xây dựng test script theo Page Object Model.
+- End-to-End Testing và Cross-browser Testing.
+- Tích hợp kiểm thử tự động với Jenkins CI.
+- Sử dụng Git để quản lý mã nguồn.
+- PostgreSQL để kiểm tra dữ liệu liên quan đến kịch bản test.
+- Allure Report, Test Data Management.
+- Docker ở mức cơ bản.
+
+KỸ NĂNG MỀM
+
+- Làm việc theo quy trình Agile/Scrum.
+- Phối hợp với các thành viên phát triển sản phẩm khi xử lý test case thất bại.
+- Tiếng Anh B2, đọc tài liệu kỹ thuật và trao đổi công việc với nhóm quốc tế.
+
+KINH NGHIỆM LÀM VIỆC
+
+Automation Tester
+Công ty TNHH Phần mềm NovaHR
+02/2023 – 09/2026
+
+- Bắt đầu với công việc Manual Tester, thực hiện kiểm tra các chức năng phần mềm quản lý nhân sự trước khi chuyển sang phát triển automation test.
+- Xây dựng và duy trì các kịch bản End-to-End Testing bằng Playwright và TypeScript cho nhóm chức năng được phân công.
+- Áp dụng Page Object Model để tổ chức mã nguồn kiểm thử, giúp việc cập nhật test script thuận tiện hơn khi giao diện sản phẩm thay đổi.
+- Tích hợp bộ kiểm thử vào Jenkins CI, sử dụng Allure Report để theo dõi kết quả chạy test và phân tích những trường hợp thất bại.
+
+DỰ ÁN
+
+Automation Testing cho nền tảng quản lý nhân sự SaaS
+
+Tham gia phát triển bộ kiểm thử giao diện tự động cho các chức năng thuộc hệ thống quản lý nhân sự.
+
+Sử dụng Playwright, TypeScript và JavaScript để viết test script, tổ chức các thành phần theo Page Object Model. Thực hiện Cross-browser Testing và quản lý dữ liệu kiểm thử bằng PostgreSQL.
+
+Các bài test được tích hợp vào Jenkins CI để hỗ trợ kiểm tra sau những thay đổi của sản phẩm. Kết quả được tổng hợp qua Allure Report, giúp nhóm dễ dàng xác định những kịch bản cần kiểm tra lại.
+
+Trong quá trình thực hiện, tôi tập trung vào tính ổn định và khả năng bảo trì của các bài kiểm thử thuộc phạm vi mình phụ trách.

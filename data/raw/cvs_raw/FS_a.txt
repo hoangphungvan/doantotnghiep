@@ -1,0 +1,219 @@
+\=== CV: FS_FRE_01 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Nguyễn Minh Quân\
+Email: [nguyenminhquan@example.com](mailto:nguyenminhquan@example.com)\
+Địa chỉ: Hà Nội
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi là sinh viên mới tốt nghiệp ngành Công nghệ thông tin, có 5 tháng thực tập phát triển ứng dụng web. Trong thời gian thực tập, tôi được tham gia xây dựng giao diện và API cho hệ thống quản lý khóa học. Mong muốn tiếp tục phát triển chuyên môn về React.js, Node.js và Express.js, đồng thời tích lũy kinh nghiệm thực tế trong quá trình phát triển sản phẩm phần mềm.
+
+HỌC VẤN
+
+Đại học công lập – Ngành Công nghệ thông tin\
+Trình độ: Đại học, đã tốt nghiệp.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Frontend: JavaScript ES6+, React.js cơ bản, HTML5, CSS3, Bootstrap.
+- Backend: Node.js, Express.js, xây dựng RESTful API.
+- Database: MongoDB cơ bản, thao tác dữ liệu phục vụ chức năng CRUD.
+- Công cụ: Git/GitHub, Postman, Figma cơ bản.
+- Ngoại ngữ: Tiếng Anh B1, có khả năng đọc hiểu tài liệu kỹ thuật tương đối tốt.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm phối hợp với các thành viên trong nhóm phát triển phần mềm thông qua công việc thực tập.
+- Tiếp nhận yêu cầu và thực hiện các phần việc được giao trong quá trình phát triển ứng dụng.
+- Chủ động tìm hiểu tài liệu kỹ thuật khi thực hiện các chức năng mới.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Phần mềm Minh Phát\
+Thực tập sinh Web Developer\
+04/2026 – 08/2026 (5 tháng)
+
+- Tham gia phát triển giao diện hệ thống quản lý khóa học nội bộ bằng React.js, HTML5 và CSS3.
+- Sử dụng Node.js và Express.js để xây dựng các RESTful API phục vụ thao tác thêm, xem, sửa và xóa thông tin khóa học.
+- Làm việc với MongoDB ở mức cơ bản để lưu trữ và truy xuất dữ liệu cho các chức năng được phân công.
+- Sử dụng Postman kiểm tra các API và Git/GitHub để quản lý mã nguồn trong thời gian thực tập.
+
+DỰ ÁN
+
+Hệ thống quản lý khóa học nội bộ
+
+Vai trò: Thực tập sinh phát triển Web\
+Công nghệ: React.js, Node.js, Express.js, MongoDB, RESTful API.
+
+Tham gia xây dựng giao diện và các chức năng CRUD phục vụ quản lý thông tin khóa học. Phần công việc tập trung vào kết nối giao diện với API và xử lý các thao tác dữ liệu cơ bản. Dự án giúp tôi hiểu rõ hơn cách phối hợp giữa frontend, backend và database trong một ứng dụng web thực tế.
+
+\=== CV: FS_FRE_02 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Trần Văn Hiếu\
+Email: [tranvanhieu@example.com](mailto:tranvanhieu@example.com)\
+Địa chỉ: TP. Hồ Chí Minh
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi học chuyên ngành Lập trình máy tính và đã có 8 tháng thực tập kết hợp làm bán thời gian tại đơn vị thiết kế website. Trong quá trình làm việc, tôi chủ yếu sử dụng PHP, Laravel để phát triển các chức năng quản trị và xử lý dữ liệu. Mục tiêu của tôi là tiếp tục nâng cao khả năng lập trình web, đặc biệt với Laravel và Vue.js 3, để có thể tham gia nhiều hơn vào quá trình xây dựng website cho doanh nghiệp.
+
+HỌC VẤN
+
+Trường Cao đẳng nghề – Ngành Lập trình máy tính\
+Trình độ: Cao đẳng.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Backend: PHP, Laravel cơ bản, Laravel Blade.
+- Frontend: HTML5, CSS3, JavaScript, Vue.js 3 cơ bản, jQuery.
+- Giao diện: Tailwind CSS cơ bản, sử dụng Laravel Blade để xây dựng các trang web.
+- Database: MySQL, thao tác dữ liệu và các chức năng CRUD.
+- Công cụ: Git, XAMPP, Postman.
+- Ngoại ngữ: Tiếng Anh A2, có thể đọc hiểu các tài liệu kỹ thuật đơn giản.
+
+KỸ NĂNG MỀM
+
+- Có khả năng tiếp nhận công việc và phối hợp với các thành viên khác trong quá trình làm website.
+- Biết trao đổi khi cần chỉnh sửa giao diện hoặc chức năng theo yêu cầu.
+- Có tinh thần học hỏi, rèn luyện thêm qua các công việc thực tế được giao.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Thiết kế Web An Phúc\
+Thực tập sinh và nhân viên lập trình Web bán thời gian\
+02/2026 – 09/2026 (8 tháng)
+
+- Sử dụng PHP và Laravel để phát triển các chức năng quản lý sản phẩm trên trang quản trị website.
+- Xây dựng biểu mẫu nhập dữ liệu và thực hiện các chức năng thêm, sửa, xóa, hiển thị thông tin sản phẩm với MySQL.
+- Chỉnh sửa giao diện bằng HTML5, CSS3, JavaScript và Laravel Blade theo các yêu cầu trong quá trình làm website.
+- Sử dụng XAMPP để chạy website ở môi trường local, Git để quản lý source code và Postman để kiểm tra các chức năng liên quan đến API.
+
+DỰ ÁN
+
+Trang quản trị sản phẩm cho website bán lẻ
+
+Công nghệ: PHP, Laravel, Laravel Blade, MySQL, HTML5, CSS3, JavaScript.
+
+Tham gia lập trình khu vực quản trị sản phẩm, tập trung vào các biểu mẫu và chức năng CRUD. Các phần việc đã làm giúp việc nhập, cập nhật và quản lý thông tin sản phẩm được thực hiện thông qua giao diện quản trị thay vì chỉnh sửa trực tiếp dữ liệu.
+
+Qua dự án này tôi đã có thêm kinh nghiệm thực tế về cách tổ chức code Laravel và xử lý dữ liệu giữa giao diện với database.
+
+\=== CV: FS_JUN_01 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Lê Đức Thành\
+Email: [leducthanh@example.com](mailto:leducthanh@example.com)\
+Địa chỉ: Hà Nội
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có khoảng 1,4 năm kinh nghiệm phát triển và bảo trì ứng dụng web sử dụng ASP.NET Core Web API và Angular. Công việc trước đây chủ yếu liên quan đến hệ thống quản lý nhân sự, bao gồm chỉnh sửa biểu mẫu, giao diện và các API phục vụ nghiệp vụ nội bộ. Tôi muốn tiếp tục nâng cao khả năng làm việc với C#, Angular và SQL Server, đồng thời tích lũy thêm kinh nghiệm trong quá trình xây dựng và phát triển các chức năng phần mềm hoàn chỉnh.
+
+HỌC VẤN
+
+Đại học tư thục – Ngành Kỹ thuật phần mềm\
+Trình độ: Đại học.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Backend: C#, ASP.NET Core Web API, RESTful API.
+- Frontend: Angular, TypeScript, HTML5, CSS3, Bootstrap.
+- Database: SQL Server, Entity Framework Core, LINQ.
+- Công cụ: Git, Swagger/OpenAPI, Postman.
+- Ngoại ngữ: Tiếng Anh B1, giao tiếp công việc cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm phối hợp với nhóm phát triển trong quá trình bảo trì phần mềm.
+- Tiếp nhận và xử lý các yêu cầu chỉnh sửa chức năng theo công việc được phân công.
+- Cẩn thận khi làm việc với biểu mẫu và dữ liệu trên hệ thống quản lý nội bộ.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Giải pháp Phần mềm Đại Việt\
+Junior Software Developer\
+05/2025 – 09/2026 (1 năm 5 tháng)
+
+- Tham gia bảo trì hệ thống quản lý nhân sự sử dụng ASP.NET Core Web API, Angular và SQL Server.
+- Chỉnh sửa các màn hình nhập liệu, biểu mẫu quản lý thông tin nhân sự bằng Angular, TypeScript và HTML5/CSS3.
+- Cập nhật các RESTful API đơn giản bằng C#, sử dụng Entity Framework Core và LINQ để thực hiện thao tác dữ liệu.
+- Sử dụng Swagger/OpenAPI và Postman để kiểm tra API sau khi chỉnh sửa, giúp xác nhận các chức năng đáp ứng yêu cầu được giao.
+
+DỰ ÁN
+
+Hệ thống quản lý nhân sự nội bộ
+
+Vai trò: Software Developer\
+Công nghệ: C#, ASP.NET Core Web API, Angular, TypeScript, SQL Server, Entity Framework Core.
+
+Tham gia duy trì và cập nhật các chức năng của hệ thống quản lý nhân sự. Công việc tập trung vào xử lý biểu mẫu, điều chỉnh giao diện và sửa đổi các API đơn giản nhằm đáp ứng thay đổi trong quá trình sử dụng.
+
+Thông qua dự án, tôi tích lũy kinh nghiệm làm việc với ứng dụng có sẵn, tìm hiểu luồng xử lý giữa frontend và backend, cũng như kiểm tra chức năng sau khi cập nhật mã nguồn.
+
+\=== CV: FS_JUN_02 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Phạm Ngọc Anh\
+Email: [phamngocanh@example.com](mailto:phamngocanh@example.com)\
+Địa chỉ: Đà Nẵng
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có khoảng 1,8 năm kinh nghiệm trong lĩnh vực phần mềm, bắt đầu từ kiểm thử thủ công trước khi chuyển sang phát triển ứng dụng Fullstack. Trong khoảng một năm gần đây, tôi tham gia phát triển hệ thống quản lý kho với Django, Django REST Framework và React.js. I want to further improve my backend development skills, đồng thời nâng cao khả năng kết hợp frontend và backend để xây dựng các ứng dụng phục vụ nghiệp vụ doanh nghiệp.
+
+HỌC VẤN
+
+Đại học công lập – Ngành Hệ thống thông tin\
+Trình độ: Đại học.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Backend Development: Python, Django, Django REST Framework, RESTful API.
+- Frontend Development: React.js, JavaScript, HTML5/CSS3.
+- Database: PostgreSQL, thực hiện các thao tác dữ liệu cho ứng dụng.
+- Tools: GitLab, Postman, Docker cơ bản.
+- Testing: Manual Testing, Selenium cơ bản, Pytest cơ bản.
+- Languages: Tiếng Anh B2, có thể đọc viết tài liệu và trao đổi các vấn đề kỹ thuật tương đối tốt.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm phối hợp trong nhóm phát triển và kiểm thử phần mềm.
+- Khả năng tiếp cận vấn đề từ góc nhìn kiểm thử khi tham gia lập trình chức năng.
+- Có tinh thần học hỏi và thích nghi với công việc mới qua quá trình chuyển từ testing sang development.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Công nghệ Nam Việt
+
+Fullstack Developer\
+10/2025 – 09/2026 (12 tháng)
+
+- Tham gia phát triển hệ thống quản lý kho sử dụng Django, Django REST Framework và React.js.
+- Xây dựng các RESTful API bằng Python và Django REST Framework phục vụ thao tác dữ liệu quản lý kho.
+- Phát triển và chỉnh sửa giao diện React.js, kết nối với backend để hiển thị và cập nhật dữ liệu từ PostgreSQL.
+- Sử dụng GitLab quản lý source code, Postman kiểm tra API và áp dụng Pytest ở mức cơ bản trong quá trình phát triển.
+
+Manual Software Tester\
+12/2024 – 09/2025 (10 tháng)
+
+- Tham gia kiểm thử thủ công các chức năng của phần mềm doanh nghiệp.
+- Thực hiện các bước kiểm tra chức năng và ghi nhận những vấn đề phát hiện được trong quá trình testing.
+- Phối hợp với nhóm phát triển để trao đổi về lỗi chức năng và kết quả kiểm tra.
+- Tìm hiểu Selenium ở mức cơ bản để hỗ trợ việc kiểm tra phần mềm.
+
+DỰ ÁN
+
+Warehouse Management System
+
+Role: Fullstack Developer\
+Tech Stack: Python, Django, Django REST Framework, React.js, PostgreSQL, RESTful API.
+
+Tham gia phát triển ứng dụng quản lý kho, tập trung vào xây dựng API và giao diện cho các chức năng thao tác dữ liệu. Phần backend sử dụng Django REST Framework để xử lý request và làm việc với PostgreSQL; frontend sử dụng React.js để tương tác với các API.
+
+Dự án giúp tôi kết hợp kinh nghiệm testing trước đây với công việc development, hiểu rõ hơn quá trình kiểm tra và hoàn thiện chức năng phần mềm.

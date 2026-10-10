@@ -1,0 +1,46 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Hệ thống thông tin và có hơn 3 năm kinh nghiệm làm Product Owner trong lĩnh vực Logistics, tập trung vào hệ thống quản lý kho nội bộ. Trong quá trình làm việc, tôi chủ yếu phụ trách tiếp nhận yêu cầu từ bộ phận vận hành, phân tích nghiệp vụ, quản lý Backlog và phối hợp với đội phát triển để cải tiến các chức năng đang sử dụng. Tôi mong muốn tiếp tục phát huy kinh nghiệm quản lý yêu cầu sản phẩm, đặc biệt là những hệ thống có quy trình nghiệp vụ phức tạp và cần sự phối hợp thường xuyên giữa bộ phận kỹ thuật với người dùng thực tế.
+
+HỌC VẤN
+
+Cử nhân Hệ thống thông tin
+Trường đại học tư thục
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Quản lý Product Backlog cho các sản phẩm phần mềm nội bộ, phân loại và sắp xếp yêu cầu theo mức độ ảnh hưởng đến hoạt động vận hành.
+- Phân tích nghiệp vụ quản lý kho, đặc biệt là quy trình nhập kho, xuất kho và xử lý các yêu cầu phát sinh.
+- Viết Functional Specification để mô tả yêu cầu chức năng và hỗ trợ quá trình phát triển phần mềm.
+- Sử dụng Asana để quản lý công việc và theo dõi tiến độ xử lý yêu cầu.
+- Vẽ BPMN bằng Microsoft Visio, sử dụng Whimsical để thể hiện các luồng nghiệp vụ.
+- Phối hợp UAT, theo dõi lỗi và yêu cầu chỉnh sửa sau triển khai.
+- Tổng hợp báo cáo vận hành bằng Metabase, sử dụng MySQL ở mức cơ bản.
+- Quản lý tài liệu nghiệp vụ và trình bày thông tin bằng Google Slides.
+
+KỸ NĂNG MỀM
+
+- Phối hợp với bộ phận kho vận và nhóm phát triển phần mềm.
+- Sắp xếp thứ tự ưu tiên công việc dựa trên tác động thực tế.
+- Tổng hợp và trình bày yêu cầu nghiệp vụ rõ ràng.
+- Theo dõi, trao đổi và xử lý các vấn đề phát sinh trong quá trình triển khai.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Logistics Nam Việt
+Product Owner | 08/2023 - 09/2026 (3 năm 2 tháng)
+
+- Tiếp nhận yêu cầu từ các bộ phận kho vận, phân tích những bất cập trong quy trình đang sử dụng và chuyển đổi thành các hạng mục cải tiến trong Product Backlog.
+- Xây dựng Functional Specification và sơ đồ BPMN cho nghiệp vụ nhập xuất kho, giúp đội phát triển có tài liệu mô tả rõ các thay đổi cần thực hiện.
+- Quản lý danh sách yêu cầu trên Asana, sắp xếp mức độ ưu tiên dựa trên ảnh hưởng đến hoạt động kho và phối hợp với bộ phận nghiệp vụ trong quá trình UAT.
+- Theo dõi lỗi sau triển khai, cập nhật yêu cầu chỉnh sửa và tổng hợp báo cáo vận hành bằng Metabase để hỗ trợ đánh giá các chức năng đã cải tiến.
+
+DỰ ÁN
+
+Cải tiến hệ thống quản lý kho nội bộ
+
+Tham gia quản lý yêu cầu và phối hợp triển khai các thay đổi đối với chức năng nhập xuất kho. Phụ trách chuẩn hóa mô tả nghiệp vụ, cập nhật Backlog, hỗ trợ UAT và theo dõi các vấn đề phát sinh sau khi đưa chức năng vào sử dụng.
+
+NGOẠI NGỮ
+
+Tiếng Anh B1: Đọc hiểu tài liệu kỹ thuật và giao tiếp công việc cơ bản.

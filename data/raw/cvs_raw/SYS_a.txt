@@ -1,0 +1,214 @@
+\=== CV: SYS_FRE_01 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Nguyễn Minh Quân\
+Email: [minhquan@example.com](mailto:minhquan@example.com)\
+Địa chỉ: Hà Nội
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi mới tốt nghiệp ngành Công nghệ thông tin và đã có 6 tháng thực tập vận hành máy chủ Linux tại doanh nghiệp phần mềm. Trong thời gian thực tập, tôi được tiếp xúc với các công việc quản trị Ubuntu Server, xử lý tác vụ hệ thống và theo dõi tài nguyên máy chủ. Tôi mong muốn tiếp tục phát triển kiến thức về Linux System Administration, nâng cao khả năng xử lý sự cố và tích lũy kinh nghiệm vận hành hệ thống trong môi trường doanh nghiệp.
+
+HỌC VẤN
+
+Đại học công lập – Ngành Công nghệ thông tin\
+Trình độ: Đại học
+
+Trong quá trình học tập, tôi tập trung tìm hiểu hệ điều hành Linux, kiến thức mạng máy tính và thực hành các thao tác quản trị máy chủ cơ bản.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Linux: Sử dụng Ubuntu Server, quản lý tài khoản người dùng, nhóm và phân quyền truy cập.
+- Bash scripting: Viết các script đơn giản phục vụ thao tác quản trị và xử lý tác vụ lặp lại.
+- SSH: Thiết lập và quản lý kết nối từ xa tới máy chủ Linux.
+- Nginx: Thực hiện các cấu hình web server cơ bản.
+- Networking: Nắm kiến thức nền tảng về TCP/IP và DNS.
+- Monitoring: Sử dụng top, htop và journalctl để theo dõi tài nguyên và kiểm tra log hệ thống.
+- Công cụ khác: Git, VirtualBox, rsync và Python scripting cơ bản.
+- Documentation: Viết tài liệu hướng dẫn các thao tác vận hành hệ thống.
+
+KỸ NĂNG MỀM
+
+- Có khả năng đọc hiểu tài liệu kỹ thuật tiếng Anh ở mức B1.
+- Biết ghi chép các bước xử lý và tổng hợp thành tài liệu vận hành.
+- Có kinh nghiệm phối hợp với quản trị viên chính, thực hiện công việc theo hướng dẫn và trao đổi khi gặp vấn đề.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Phần mềm Minh Phát\
+Vị trí: Thực tập sinh Linux System Administrator\
+Thời gian: 04/2026 – 09/2026 (6 tháng)
+
+- Hỗ trợ quản trị các máy chủ Ubuntu Server, thực hiện thao tác quản lý tài khoản và phân quyền theo yêu cầu của quản trị viên chính.
+- Sử dụng SSH để kết nối máy chủ, kiểm tra tài nguyên bằng top, htop và xem log với journalctl, ghi nhận thông tin phục vụ công tác vận hành.
+- Hỗ trợ cấu hình Nginx cơ bản và thực hiện sao lưu dữ liệu bằng rsync theo hướng dẫn, kiểm tra kết quả sau khi thực hiện.
+- Viết Bash script đơn giản cho các tác vụ lặp lại và cập nhật tài liệu hướng dẫn vận hành để thuận tiện cho việc tra cứu.
+
+Trong quá trình thực tập, tôi được làm quen với quy trình vận hành máy chủ tại doanh nghiệp phần mềm và hiểu rõ hơn cách sử dụng các công cụ quản trị Linux trong công việc thực tế.
+
+\=== CV: SYS_FRE_02 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Lê Quốc Bảo\
+Email: [quocbao@example.com](mailto:quocbao@example.com)\
+Địa chỉ: TP. Hồ Chí Minh
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp Cao đẳng ngành Mạng máy tính và Truyền thông dữ liệu, đã có khoảng 8 tháng thực tập và hỗ trợ triển khai mạng LAN cho các văn phòng nhỏ. Tôi muốn tiếp tục theo công việc về hệ thống mạng, đặc biệt là cấu hình và vận hành thiết bị Cisco. Mong muốn được tham gia các công việc triển khai thực tế để nâng cao tay nghề, hiểu rõ hơn việc xử lý sự cố kết nối và cách tổ chức hệ thống mạng văn phòng.
+
+HỌC VẤN
+
+Trường Cao đẳng kỹ thuật\
+Ngành: Mạng máy tính và Truyền thông dữ liệu\
+Trình độ: Cao đẳng
+
+Trong quá trình học có thực hành cấu hình mạng trên Cisco Packet Tracer, tìm hiểu các mô hình OSI, TCP/IP, địa chỉ mạng và cách kết nối thiết bị trong hệ thống LAN.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Nắm kiến thức về mô hình OSI, giao thức TCP/IP và các thành phần của mạng LAN.
+- Biết cấu hình Cisco IOS cơ bản trên router và switch.
+- Thực hành VLAN, Inter-VLAN Routing và Static Routing ở mức cơ bản.
+- Có kiến thức cấu hình DHCP, NAT và switch Layer 2.
+- Sử dụng ping và traceroute để kiểm tra tình trạng kết nối mạng.
+- Đọc sơ đồ mạng LAN và xác định vị trí thiết bị theo sơ đồ có sẵn.
+- Sử dụng Cisco Packet Tracer để thực hành cấu hình.
+- Biết dùng Wireshark cơ bản để xem gói tin mạng.
+- Có kinh nghiệm bấm cáp mạng, kiểm tra cáp và hỗ trợ cấu hình Access Point.
+
+KỸ NĂNG MỀM
+
+- Có thể làm việc theo hướng dẫn kỹ thuật và tài liệu cấu hình được cung cấp.
+- Biết phối hợp với các thành viên trong quá trình lắp đặt thiết bị và kiểm tra kết nối.
+- Tiếng Anh A2-B1, đọc được các tài liệu cấu hình mạng đơn giản.
+- Có thói quen kiểm tra lại kết nôi sau khi hoàn thành công việc được giao.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Giải pháp Mạng Thành Công\
+Vị trí: Thực tập sinh kỹ thuật mạng\
+Thời gian: 02/2026 – 09/2026 (8 tháng)
+
+- Tham gia hỗ trợ triển khai mạng LAN cho văn phòng nhỏ, thực hiện bấm cáp, kiểm tra đường dây và kết nối các thiết bị mạng theo sơ đồ được cung cấp.
+- Hỗ trợ cấu hinh switch Layer 2, VLAN và các thông số mạng cơ bản theo tài liệu hướng dẫn của kỹ thuật viên phụ trách.
+- Thực hiện kiểm tra kết nối bằng ping, traceroute, hỗ trợ xác định những vị trí gặp vấn đề kết nối trong quá trình lắp đặt.
+- Hỗ trợ cấu hình Access Point, kiểm tra kết nối mạng sau triển khai và bàn giao thông tin thiết bị cho người phụ trách.
+
+Qua thời gian thực tập, tôi đã quen hơn với việc đọc sơ đồ mạng, lắp đặt thiết bị thực tế và làm theo quy trình triển khai mạng cho văn phòng.
+
+\=== CV: SYS_JUN_01 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Trần Đức Huy\
+Email: [duchuy@example.com](mailto:duchuy@example.com)\
+Địa chỉ: Hà Nội
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Có 1,5 năm kinh nghiệm vận hành mạng tại nhà cung cấp dịch vụ Internet. Công việc chính là giám sát hệ thống, tiếp nhận cảnh báo và phối hợp xử lý sự cố kết nối theo ca. Mong muốn tiếp tục phát triển trong lĩnh vực Network Operations, tập trung vào khả năng phân tích cảnh báo, theo dõi chất lượng kết nối và cải thiện hiệu quả xử lý sự cố trong hệ thống mạng.
+
+HỌC VẤN
+
+Đại học kỹ thuật\
+Ngành: Điện tử Viễn thông\
+Trình độ: Đại học
+
+Có nền tảng kiến thức về mạng viễn thông và hoạt động của thiết bị mạng, được áp dụng trong công việc giám sát hệ thống tại trung tâm NOC.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Zabbix: Theo dõi trạng thái và cảnh báo của các thiết bị mạng.
+- SNMP monitoring: Giám sát các thông số vận hành mạng.
+- Network troubleshooting: Kiểm tra trạng thái router, switch và xử lý bước đầu các cảnh báo mất kết nối.
+- Log analysis: Đọc và phân tích log thiết bị mạng ở mức cơ bản.
+- Network performance: Kiểm tra độ trễ và packet loss.
+- Incident Management: Quản lý ticket sự cố theo quy trình NOC và ITIL Incident Management.
+- Grafana: Theo dõi thông tin vận hành qua dashboard.
+- MikroTik RouterOS: Có kiến thức thao tác cơ bản.
+- Excel: Tổng hợp dữ liệu và lập báo cáo vận hành.
+
+KỸ NĂNG MỀM
+
+- Quen làm việc theo ca và phối hợp chuyển tiếp sự cố giữa các ca trực.
+- Có khả năng ghi nhận thông tin sự cố rõ ràng trong ticket.
+- Tiếng Anh B1, đọc hiểu log và tài liệu thiết bị mạng.
+- Biết tổng hợp tình trạng vận hành và báo cáo các vấn đề phát sinh.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty Cổ phần Dịch vụ Internet An Việt\
+Vị trí: Network Operations Engineer – NOC\
+Thời gian: 04/2025 – 09/2026 (1 năm 6 tháng)
+
+- Giám sát trạng thái hệ thống mạng bằng Zabbix và SNMP, kiểm tra các cảnh báo liên quan đến router, switch và kết nối mạng trong ca trực.
+- Tiếp nhận các cảnh báo mất kết nối, kiểm tra độ trễ và packet loss, ghi nhận thông tin để xác định tình trạng sự cố ban đầu.
+- Tạo, cập nhật và chuyển tiếp ticket tới bộ phận phụ trách theo quy trình NOC, duy trì thông tin cần thiết để theo dõi tiến độ xử lý.
+- Theo dõi Grafana dashboard, kiểm tra log thiết bị khi cần và tổng hợp báo cáo vận hành bằng Excel phục vụ công tác bàn giao ca.
+
+Kinh nghiệm tập trung vào giám sát, phân loại sự cố và phối hợp vận hành hệ thống mạng của nhà cung cấp dịch vụ Internet.
+
+\=== CV: SYS_JUN_02 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Phạm Ngọc Linh\
+Email: [ngoclinh@example.com](mailto:ngoclinh@example.com)\
+Địa chỉ: TP. Hồ Chí Minh
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 2 năm kinh nghiệm trong lĩnh vực IT, bắt đầu từ IT Helpdesk và sau đó chuyển sang SOC Analyst. Quá trình làm Helpdesk giúp tôi quen với việc hỗ trợ người dùng và kiểm tra các vấn đề trên Windows. Khi chuyển sang SOC, tôi tập trung vào security event monitoring, phân tích alert và xử lý các cảnh báo Level 1. Tôi muốn phát triển chuyên môn về Security Operations, đặc biệt là khả năng phân tích IOC và nhận diện những hoạt động đáng ngờ trên endpoint.
+
+HỌC VẤN
+
+Đại học tư thục\
+Chuyên ngành: Hệ thống thông tin\
+Trình độ: Đại học
+
+Được trang bị kiến thức nền tảng về hệ thống thông tin, sau đó tiếp tục tìm hiểu các công cụ phục vụ công việc giám sát và phân tích sự kiện bảo mật.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- SIEM/Security Monitoring: Sử dụng Wazuh để theo dõi và phân tích security events.
+- Endpoint Security: Microsoft Defender for Endpoint ở mức cơ bản.
+- Windows Logs: Phân tích Windows Event Logs và sử dụng Sysmon để kiểm tra sự kiện trên endpoint.
+- SOC Operations: Tiếp nhận, phân loại và xử lý security alerts ở Level 1.
+- Threat Analysis: Kiểm tra IOC, IP và domain đáng ngờ.
+- Phishing Analysis: Nhận diện các dấu hiệu phishing email.
+- Security Framework: Có kiến thức về MITRE ATT&CK.
+- Tools: VirusTotal và PowerShell cơ bản.
+- Reporting: Viết incident report và tổng hợp thông tin cảnh báo bảo mật.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm giao tiếp và hỗ trợ người dùng từ thời gian làm IT Helpdesk.
+- Biết ghi nhận, phân loại vấn đề và chuyển tiếp thông tin cho bộ phận liên quan.
+- Có khả năng viết báo cáo sự cố ngắn gọn, rõ nội dung.
+- English B1-B2, đọc hiểu security documentation và viết short reports.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Công nghệ Dịch vụ Đông Á\
+Vị trí: IT Helpdesk\
+Thời gian: 10/2024 – 11/2025 (1 năm 2 tháng)
+
+- Tiếp nhận các yêu cầu IT support từ người dùng và hỗ trợ kiểm tra những vấn đề phát sinh trong quá trình sử dụng máy tính.
+- Sử dụng kiến thức Windows và PowerShell cơ bản để hỗ trợ kiểm tra thông tin hệ thống trong phạm vi công việc.
+- Ghi nhận nội dung yêu cầu, theo dõi tình trạng xử lý và phản hồi thông tin tới người dùng.
+
+Công ty Cổ phần Thương mại Số Minh Long\
+Vị trí: SOC Analyst Level 1\
+Thời gian: 12/2025 – 09/2026 (10 tháng)
+
+- Monitor security alerts trên Wazuh, thực hiện initial triage và phân loại sự kiện theo quy trình SOC Level 1.
+- Phân tích Windows Event Logs, kiểm tra Sysmon events và thông tin từ Microsoft Defender for Endpoint để tìm hiểu các cảnh báo endpoint.
+- Sử dụng VirusTotal để kiểm tra suspicious IP, domain và IOC; tham khảo MITRE ATT&CK khi phân tích dấu hiệu bất thường.
+- Kiểm tra các phishing email được ghi nhận, tổng hợp kết quả phân tích và viết incident report để chuyển tiếp các trường hợp cần xử lý thêm.
+
+Quá trình chuyển từ Helpdesk sang SOC giúp tôi có thêm kinh nghiệm làm việc với cả người dùng cuối và các công cụ giám sát bảo mật trong môi trường doanh nghiệp.
+
+Sửa lỗi chính tả và thuật ngữ đồng nhất

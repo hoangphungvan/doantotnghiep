@@ -1,0 +1,48 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 8 năm kinh nghiệm Business Analysis trong các chương trình Enterprise Digital Transformation, đặc biệt ở lĩnh vực Manufacturing, Supply Chain và Enterprise ERP. Career path của tôi bắt đầu từ BA phụ trách từng phân hệ nghiệp vụ, sau đó phát triển thành Lead BA cho các chương trình triển khai ERP liên quan nhiều phòng ban. Tôi tập trung vào Enterprise Business Analysis, Requirements Governance và Business Architecture, với mục tiêu kết nối business requirements và định hướng chuyển đổi quy trình trong doanh nghiệp.
+
+HỌC VẤN
+
+Cử nhân Hệ thống thông tin quản lý – Trường đại học công lập khối kỹ thuật và kinh tế.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Enterprise Business Analysis, phân tích business processes trong Manufacturing và Supply Chain.
+- SAP S/4HANA Functional Analysis, SAP Fiori và SAP Signavio Process Manager.
+- Business Capability Mapping và Business Architecture Modeling với Archi.
+- Requirements Governance, Change Impact Analysis và Stakeholder Negotiation.
+- Data Migration Requirement Analysis cho các chương trình triển khai ERP.
+- Tableau phục vụ phân tích và trình bày dữ liệu.
+- RACI Matrix và Microsoft Project hỗ trợ phân định trách nhiệm, theo dõi kế hoạch.
+- Đào tạo và phát triển đội ngũ Business Analyst.
+
+KỸ NĂNG MỀM
+
+- Workshop Facilitation, tổ chức trao đổi nghiệp vụ giữa các phòng ban và đối tác triển khai.
+- Stakeholder Negotiation, xử lý khác biệt về yêu cầu và ưu tiên giữa các bộ phận.
+- Tiếng Anh C1, làm việc trực tiếp với chuyên gia và đối tác quốc tế.
+- Tiếng Nhật N3, giao tiếp công việc cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Lead Business Analyst – Công ty Cổ phần Giải pháp Doanh nghiệp Đông Á
+10/2022 – 10/2026 (4 năm)
+
+- Lead hoạt động Business Analysis trong chương trình triển khai Enterprise ERP nhiều phòng ban, phối hợp các business stakeholders để thống nhất phạm vi và yêu cầu.
+- Thực hiện Business Capability Mapping và Business Architecture Modeling bằng Archi, giúp mô tả mối liên hệ giữa năng lực nghiệp vụ và các quy trình cần chuyển đổi.
+- Quản lý Requirements Governance, đánh giá Change Impact và Data Migration Requirements trong quá trình triển khai SAP S/4HANA.
+- Facilitate workshops, sử dụng RACI Matrix để làm rõ trách nhiệm và hướng dẫn các thành viên BA trong quá trình phân tích yêu cầu.
+
+Business Analyst – Công ty TNHH Giải pháp Sản xuất Tân Phát
+10/2018 – 10/2022 (4 năm)
+
+- Phân tích quy trình sản xuất, mua hàng và chuỗi cung ứng, xây dựng yêu cầu chức năng cho các phân hệ ERP.
+- Sử dụng SAP Signavio Process Manager để mô hình hóa quy trình hiện tại và đề xuất điều chỉnh theo định hướng chuyển đổi số.
+- Phối hợp với business users trong quá trình SAP Functional Analysis, làm rõ yêu cầu liên quan SAP Fiori và trình bày dữ liệu nghiệp vụ bằng Tableau.
+
+DỰ ÁN
+
+Enterprise ERP Transformation – Manufacturing & Supply Chain
+
+Tham gia chương trình chuyển đổi số các quy trình sản xuất và chuỗi cung ứng trên nền tảng SAP S/4HANA. Phụ trách requirements alignment giữa các phòng ban, business capability mapping và change impact assessment. Đồng thời phối hợp với đội ngũ triển khai trong hoạt động data migration requirements và functional review, bảo đảm các thay đổi nghiệp vụ được phân tích và thống nhất trước khi đưa vào vận hành.

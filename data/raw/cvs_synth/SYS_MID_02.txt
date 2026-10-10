@@ -1,0 +1,44 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 4 năm kinh nghiệm trong lĩnh vực hạ tầng mạng, bắt đầu từ công việc triển khai mạng viễn thông trước khi chuyển sang quản trị và triển khai mạng doanh nghiệp. Tôi muốn tiếp tục phát triển chuyên môn về thiết kế LAN/WAN, định tuyến và bảo mật mạng, đồng thời nâng cao khả năng phân tích, xử lý các sự cố kết nối trong hệ thống nhiều chi nhánh. Tôi ưu tiên các giải pháp có tính ổn định, dễ vận hành và thuận tiện cho việc theo dõi, bảo trì lâu dài.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học ngành Kỹ thuật Viễn thông tại một trường đại học công lập.
+
+Nền tảng chuyên ngành về hạ tầng truyền dẫn và hệ thống mạng viễn thông.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Routing: Quản trị router Juniper Junos, cấu hình OSPF và BGP cơ bản trong mạng doanh nghiệp.
+- Network Security: Fortinet FortiGate Firewall, IPsec Site-to-Site VPN.
+- Switching: STP, Link Aggregation.
+- Network Design: Thiết kế hệ thống LAN/WAN doanh nghiệp.
+- Network Monitoring: NetFlow, PRTG Network Monitor.
+- Troubleshooting: Phân tích và xử lý lỗi kết nối giữa các chi nhánh.
+- Công cụ: GNS3, Microsoft Visio và Ansible cơ bản cho network automation.
+
+KỸ NĂNG MỀM
+
+- Phân tích vấn đề và xác định nguyên nhân khi xảy ra sự cố mạng.
+- Phối hợp với nhóm triển khai, khách hàng và nhà cung cấp thiết bị.
+- Trình bày phương án kỹ thuật thông qua tài liệu và sơ đồ mạng.
+- Tiếng Anh B2, có thể đọc tài liệu chuyên sâu và trao đổi với nhà cung cấp.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Viễn thông Đông Việt
+Kỹ thuật viên triển khai mạng
+10/2022 - 04/2024 (1 năm 6 tháng)
+
+- Tham gia triển khai hạ tầng mạng viễn thông, thực hiện cấu hình và kiểm tra kết nối thiết bị theo phương án kỹ thuật.
+- Hỗ trợ xử lý các vấn đề về đường truyền, kết nối và cấu hình mạng trong quá trình vận hành.
+- Phối hợp với đội kỹ thuật triển khai để kiểm tra trạng thái kết nối, bàn giao và hoàn thiện các hạng mục mạng.
+
+Công ty Cổ phần Giải pháp Hạ tầng Nam Việt
+Network Infrastructure Engineer
+04/2024 - 10/2026 (2 năm 6 tháng)
+
+- Tham gia thiết kế và triển khai mạng LAN/WAN cho khách hàng doanh nghiệp, cấu hình router Juniper với OSPF và BGP theo yêu cầu hệ thống.
+- Cấu hình FortiGate Firewall, thiết lập IPsec Site-to-Site VPN giữa các địa điểm, phục vụ kết nối giữa các chi nhánh.
+- Sử dụng PRTG và NetFlow để theo dõi, phân tích lưu lượng mạng, xác định nguyên nhân sự cố; xây dựng sơ đồ bằng Visio và sử dụng GNS3, Ansible cơ bản để hỗ trợ công việc kỹ thuật.

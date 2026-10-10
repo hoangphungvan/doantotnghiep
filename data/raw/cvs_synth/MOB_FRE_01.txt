@@ -1,0 +1,41 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi là sinh viên năm cuối ngành Công nghệ thông tin, định hướng phát triển ứng dụng Android bằng Kotlin. Sau thời gian thực tập tại công ty phần mềm, tôi muốn tiếp tục nâng cao khả năng xây dựng giao diện, tích hợp RESTful API và tổ chức mã nguồn theo mô hình MVVM. Mục tiêu trước mắt là tích lũy thêm kinh nghiệm thực tế, làm việc tốt hơn với Android SDK và phát triển các ứng dụng có giao diện dễ sử dụng.
+
+HỌC VẤN
+
+Sinh viên năm cuối ngành Công nghệ thông tin
+Trường đại học công lập tại Hà Nội
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ lập trình: Kotlin cơ bản.
+- Android Development: Android SDK, Jetpack Compose cơ bản, Android Activity Lifecycle.
+- Kiến trúc ứng dụng: MVVM cơ bản.
+- Cơ sở dữ liệu: Room Database.
+- Kết nối dữ liệu: Retrofit, RESTful API, Coroutines cơ bản.
+- Công cụ: Android Studio, Git, Postman, Figma.
+- Kiểm thử: JUnit cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm phối hợp với lập trình viên chính trong quá trình thực tập.
+- Tiếp nhận hướng dẫn và phản hồi để điều chỉnh phần việc được giao.
+- Tiếng Anh: Đọc hiểu tài liệu kỹ thuật mức khá, giao tiếp cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Android Developer Intern
+Công ty TNHH Phần mềm Minh Phát
+04/2026 – 09/2026 (khoảng 0,5 năm, trong đó 5 tháng tham gia phát triển ứng dụng học tập)
+
+- Tham gia xây dựng giao diện cho ứng dụng học tập Android dưới sự hướng dẫn của lập trình viên chính.
+- Sử dụng Kotlin, Android SDK và Jetpack Compose để triển khai các thành phần giao diện được phân công.
+- Tích hợp RESTful API bằng Retrofit để ứng dụng có thể nhận và hiển thị dữ liệu học tập.
+- Làm việc với cấu trúc MVVM cơ bản, chỉnh sửa các màn hình theo phản hồi trong quá trình phát triển.
+
+DỰ ÁN
+
+Ứng dụng học tập trên Android
+
+Dự án thuộc lĩnh vực giáo dục trực tuyến, được thực hiện trong thời gian thực tập. Tôi chủ yếu phụ trách giao diện và kết nối dữ liệu từ API. Quá trình tham gia giúp tôi hiểu rõ hơn cách tổ chức một ứng dụng Android, sử dụng Android Studio và Git trong công việc thực tế.

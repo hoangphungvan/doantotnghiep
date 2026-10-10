@@ -1,0 +1,45 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 1 năm 6 tháng kinh nghiệm IT Support, bắt đầu từ công việc Helpdesk và sau đó được giao thêm nhiệm vụ quản lý tài khoản người dùng, phân quyền thư mục và hỗ trợ Windows Server. Tôi mong muốn phát triển chuyên sâu trong mảng hỗ trợ hệ thống CNTT doanh nghiệp, nâng cao khả năng xử lý sự cố và quản lý môi trường làm việc của người dùng một cách ổn định, hiệu quả.
+
+HỌC VẤN
+
+Trường đại học công lập
+Ngành: Mạng máy tính và Truyền thông dữ liệu
+Trình độ: Đại học
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Quản lý tài khoản người dùng trong Active Directory, cấu hình Group Policy cơ bản.
+- Hỗ trợ vận hành môi trường Windows Server 2019.
+- Quản lý tài khoản Microsoft 365, xử lý lỗi đăng nhập Outlook và Microsoft Teams.
+- Cấu hình VPN WireGuard phục vụ người dùng làm việc từ xa.
+- Tiếp nhận, phân loại và quản lý ticket bằng GLPI.
+- Xử lý các lỗi kết nối Remote Desktop Protocol (RDP).
+- Kiểm tra và khắc phục sự cố DNS, DHCP.
+- Cấu hình quyền truy cập thư mục dùng chung.
+- Viết PowerShell script đơn giản và quản lý tài sản CNTT.
+- Tiếng Anh: Đọc hiểu tốt, giao tiếp công việc cơ bản.
+
+KỸ NĂNG MỀM
+
+- Giao tiếp và hướng dẫn nhân viên mới sử dụng hệ thống nội bộ.
+- Phối hợp với quản trị viên hệ thống khi xử lý các yêu cầu kỹ thuật.
+- Theo dõi tiến độ xử lý sự cố và cập nhật thông tin ticket rõ ràng.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Giải pháp Phần mềm Hưng Việt
+Vị trí: IT Helpdesk / IT Support Engineer
+Thời gian: 04/2025 - 09/2026 (18 tháng)
+
+- Tiếp nhận và xử lý yêu cầu hỗ trợ qua GLPI, khắc phục lỗi đăng nhập Microsoft 365, Outlook, Teams và Remote Desktop cho nhân viên.
+- Quản lý tài khoản Active Directory, hỗ trợ cấu hình Group Policy và phân quyền thư mục dùng chung dưới sự giám sát của quản trị viên.
+- Cấu hình WireGuard VPN cho người dùng từ xa, kiểm tra DNS và DHCP khi phát sinh lỗi kết nối.
+- Hỗ trợ các công việc liên quan Windows Server 2019, cập nhật thông tin tài sản CNTT và hướng dẫn nhân viên mới sử dụng hệ thống nội bộ.
+
+DỰ ÁN
+
+Hỗ trợ quản lý tài khoản và truy cập hệ thống nội bộ
+
+Tham gia công việc quản lý tài khoản Active Directory và phân quyền truy cập thư mục dùng chung. Phối hợp quản trị viên kiểm tra các lỗi đăng nhập, kết nối từ xa và sử dụng PowerShell script đơn giản để hỗ trợ thao tác quản lý.

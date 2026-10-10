@@ -1,0 +1,46 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Công nghệ thông tin và có 6 tháng thực tập DevOps tại công ty gia công phần mềm. Trong thời gian này, tôi được tham gia hỗ trợ xây dựng CI/CD pipeline và triển khai ứng dụng web trên máy chủ Linux. Mong muốn tiếp tục phát triển kỹ năng quản trị hệ thống, tự động hóa triển khai và làm việc với các dịch vụ cloud. Tôi ưu tiên môi trường có quy trình kỹ thuật rõ ràng, được tiếp xúc với các dự án thực tế và học hỏi từ những kỹ sư có kinh nghiệm.
+
+HỌC VẤN
+
+Đại học công lập tại Hà Nội
+Chuyên ngành: Công nghệ thông tin
+Trình độ: Đại học
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Hệ điều hành: Linux Ubuntu, thao tác và quản trị hệ thống cơ bản.
+- Container: Docker, Docker Compose.
+- CI/CD và quản lý mã nguồn: Git, GitHub Actions.
+- Scripting: Bash Scripting, Python cơ bản.
+- Web Server: Nginx.
+- Cloud: AWS EC2, AWS S3.
+- Kiến thức bổ trợ: TCP/IP cơ bản, YAML, Markdown.
+- Ngoại ngữ: Tiếng Anh B1, đọc hiểu tài liệu kỹ thuật tương đối tốt.
+
+KỸ NĂNG MỀM
+
+- Phối hợp với kỹ sư phụ trách khi triển khai và kiểm tra ứng dụng.
+- Tiếp nhận hướng dẫn kỹ thuật và thực hiện công việc theo quy trình.
+- Chủ động đọc tài liệu để tìm hiểu cách sử dụng công cụ.
+- Trao đổi tiến độ và báo cáo các vấn đề phát sinh trong quá trình thực tập.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Giải pháp Phần mềm Sao Bắc
+Vị trí: DevOps Intern
+Thời gian: 04/2026 - 10/2026 (6 tháng)
+
+- Hỗ trợ xây dựng GitHub Actions workflow cho ứng dụng web, thực hiện các bước build và chuẩn bị triển khai theo hướng dẫn của kỹ sư chính.
+- Sử dụng Docker để đóng gói ứng dụng, hỗ trợ triển khai container trên máy chủ Linux Ubuntu phục vụ kiểm tra nội bộ.
+- Thực hiện các thao tác Git, chỉnh sửa YAML và Bash script đơn giản nhằm hỗ trợ quy trình triển khai.
+- Hỗ trợ cấu hình Nginx và kiểm tra trạng thái ứng dụng sau khi triển khai, ghi nhận lỗi để chuyển cho kỹ sư phụ trách.
+
+DỰ ÁN
+
+Hỗ trợ triển khai ứng dụng web bằng Docker và GitHub Actions
+
+- Tham gia chuẩn bị Docker Compose để chạy các thành phần ứng dụng trong môi trường thử nghiệm.
+- Hỗ trợ chạy workflow GitHub Actions và kiểm tra kết quả build, triển khai.
+- Kết quả: Thực hiện được quy trình đóng gói và triển khai thử nghiệm ứng dụng theo hướng dẫn, hiểu rõ hơn các bước cơ bản trong CI/CD.

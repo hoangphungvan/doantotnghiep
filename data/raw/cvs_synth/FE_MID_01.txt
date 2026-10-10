@@ -1,0 +1,29 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có khoảng 3,2 năm làm frontend, chủ yếu phát triển và duy trì các hệ thống quản lý nội bộ sử dụng Vue 2. Tôi mong muốn tiếp tục làm việc với những sản phẩm có nghiệp vụ rõ ràng, nơi có thể tận dụng kinh nghiệm xử lý dashboard, biểu mẫu và tích hợp dữ liệu từ REST API. Trong thời gian tới, tôi muốn mở rộng phạm vi công việc sang các chức năng mới và từng bước áp dụng Vue 3 vào quá trình phát triển.
+
+HỌC VẤN
+
+Tốt nghiệp đại học ngành Công nghệ phần mềm tại một trường đại học công lập. Kiến thức nền tảng được vận dụng vào công việc phát triển và bảo trì ứng dụng frontend phục vụ doanh nghiệp.
+
+KỸ NĂNG CHUYÊN MÔN
+
+Sử dụng JavaScript ES6+, Vue 2, Vuex và Vue Router để xây dựng các màn hình nghiệp vụ, quản lý trạng thái và điều hướng. Có kinh nghiệm SCSS, Element UI, REST API integration, Webpack và Git. Ngoài ra, tôi sử dụng Axios, Lodash, Postman và Jira trong quá trình làm việc; đã tìm hiểu các chức năng cơ bản của Vue 3.
+
+KỸ NĂNG MỀM
+
+Có thói quen trao đổi yêu cầu của từng biểu mẫu trước khi chỉnh sửa, ghi nhận đầu việc trên Jira và kiểm tra lại giao diện sau khi hoàn thành. Tiếng Anh B1, có thể đọc tài liệu kỹ thuật và trao đổi công việc qua email.
+
+KINH NGHIỆM LÀM VIỆC
+
+Frontend Developer – Công ty TNHH Giải pháp Kho vận An Phát
+08/2023 – 10/2026 (3 năm 2 tháng)
+
+- Duy trì các dashboard Vue 2 cho nghiệp vụ logistics và quản lý kho, cập nhật giao diện theo những thay đổi trong quy trình nội bộ.
+- Phát triển và chỉnh sửa biểu mẫu quản lý bằng Element UI, SCSS; sử dụng Vuex và Vue Router để giữ dữ liệu và luồng thao tác nhất quán.
+- Tích hợp REST API qua Axios, dùng Postman để đối chiếu dữ liệu và xử lý các trường hợp hiển thị chưa đúng trên màn hình.
+- Quản lý thay đổi mã nguồn bằng Git, theo dõi yêu cầu và lỗi trên Jira để bàn giao các bản cập nhật.
+
+DỰ ÁN
+
+Hệ thống dashboard và biểu mẫu quản lý kho: Tham gia duy trì các trang theo dõi dữ liệu vận hành và xử lý biểu mẫu nội bộ. Công việc tập trung vào cải tiến khả năng sử dụng và giữ cho các chức năng hiện có hoạt động nhất quán.

@@ -1,0 +1,48 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có hơn 5 năm kinh nghiệm IT Support trong môi trường factory, chủ yếu hỗ trợ máy tính, thiết bị tại dây chuyền sản xuất và phần mềm vận hành. Tôi mong muốn tiếp tục làm việc trong môi trường sản xuất, tập trung vào việc duy trì hoạt động ổn định của các thiết bị đầu cuối, hỗ trợ người dùng tại xưởng và phối hợp xử lý sự cố nhanh giữa các ca làm việc.
+
+HỌC VẤN
+
+Tốt nghiệp Cao đẳng ngành Công nghệ kỹ thuật điện tử tại trường cao đẳng nghề.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Bảo trì PC tại nhà máy, xử lý lỗi Windows 10/11 trên workstation.
+- Hỗ trợ barcode scanner Zebra và cấu hình máy in tem nhãn Zebra ZDesigner.
+- Hỗ trợ người dùng SAP Business One ở mức application.
+- Kiểm tra kết nối LAN tại dây chuyền sản xuất.
+- Cấu hình cơ bản switch TP-Link Easy Smart.
+- Remote support thông qua UltraVNC.
+- Thực hiện local backup theo lịch.
+- Quản lý ticket và ghi nhận lịch sử sự cố trên hệ thống nội bộ.
+- Kiểm kê máy tính và các thiết bị CNTT trong nhà máy.
+
+KỸ NĂNG MỀM
+
+- Hướng dẫn công nhân sử dụng thiết bị CNTT trong sản xuất.
+- Phối hợp với ERP vendor khi phát sinh lỗi ứng dụng.
+- Điều phối công việc hỗ trợ kỹ thuật giữa các ca.
+- Theo dõi lịch bảo trì và ghi nhận nhật ký sự cố.
+- Tiếng Anh đọc hiểu tài liệu cơ bản; tiếng Trung giao tiếp cơ bản trong môi trường sản xuất.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Điện tử Minh Lâm
+IT Support Technician
+05/2021 - 10/2023 (2 năm 5 tháng)
+
+- Bảo trì PC tại xưởng sản xuất, xử lý các lỗi Windows trên máy trạm phục vụ công nhân và bộ phận vận hành.
+- Kiểm tra LAN connection tại dây chuyền, hỗ trợ barcode scanner Zebra và thiết bị in tem nhãn.
+- Kiểm kê thiết bị, theo dõi lịch bảo trì và ghi nhận sự cố để phục vụ công tác hỗ trợ.
+
+Công ty TNHH Công nghiệp Hưng Thịnh
+Senior IT Support
+10/2023 - 10/2026 (3 năm)
+
+- Phụ trách hỗ trợ chính các workstation chạy Windows 10/11, máy quét mã vạch và Zebra label printer tại khu vực sản xuất.
+- Hỗ trợ SAP Business One ở mức người dùng, tiếp nhận lỗi ứng dụng và phối hợp với ERP vendor để xử lý.
+- Kiểm tra mạng LAN, cấu hình cơ bản TP-Link Easy Smart switch và hỗ trợ máy trạm từ xa bằng UltraVNC.
+- Theo dõi ticket, lịch local backup và điều phối các yêu cầu hỗ trợ giữa những ca sản xuất; hướng dẫn công nhân xử lý các thao tác thiết bị thường gặp.
+
+Công việc của tôi tập trung nhiều vào factory operations. Tôi ưu tiên những sự cố ảnh hưởng trực tiếp đến hoạt động của dây chuyền, đồng thời ghi lại cách xử lý để các ca sau có thông tin tiếp nhận đầy đủ.

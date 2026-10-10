@@ -1,0 +1,56 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp Cao đẳng chuyên ngành Quản trị mạng máy tính, đã có 8 tháng thực tập và làm việc thực tế liên quan đến IT Support và Cloud Operations. Ban đầu tôi hỗ trợ hệ thống Windows Server, user account và các yêu cầu IT nội bộ. Sau đó tôi có cơ hội tiếp cận Microsoft Azure, tham gia deploy thử nghiệm ứng dụng và theo dõi tài nguyên cloud.
+
+Mục tiêu của tôi là phát triển theo hướng Cloud Operations, nâng cao khả năng quản trị Windows Server, Azure Virtual Machines và hỗ trợ vận hành hệ thống ổn định. Tôi mong muốn được làm việc trực tiếp với các hệ thống thực tế và cải thiện khả năng troubleshooting.
+
+HỌC VẤN
+
+Trường cao đẳng nghề tại TP. Hồ Chí Minh
+Chuyên ngành: Quản trị mạng máy tính
+Trình độ: Cao đẳng
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Windows Server Administration, IIS Web Server.
+- Microsoft Azure: Azure Virtual Machines, Azure Storage, Azure Monitor.
+- CI/CD: Azure DevOps Pipelines.
+- Scripting: PowerShell.
+- Networking: TCP/IP Networking, Windows Firewall.
+- Container: Docker Compose.
+- System Administration: Active Directory cơ bản, Microsoft 365 Administration.
+- Version Control: Git.
+- English: A2-B1, đọc được technical documentation cơ bản.
+
+KỸ NĂNG MỀM
+
+- Giao tiếp với user nội bộ khi tiếp nhận yêu cầu support.
+- Xử lý công việc theo quy trình và phối hợp với team kỹ thuật.
+- Ghi nhận thông tin sự cố và phản hồi kết quả xử lý.
+- Tự tìm hiểu tài liệu hướng dẫn khi tiếp cận hệ thống mới.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Công nghệ Minh Phát
+Vị trí: IT Support Intern
+Thời gian: 02/2026 - 05/2026 (3 tháng)
+
+- Hỗ trợ quản trị Windows Server và kiểm tra các dịch vụ nội bộ theo hướng dẫn.
+- Tiếp nhận yêu cầu liên quan đến tài khoản người dùng, hỗ trợ thao tác cơ bản với Active Directory.
+- Hỗ trợ kiểm tra kết nối mạng TCP/IP và các thiết lập Windows Firewall khi phát sinh vấn đề truy cập hệ thống.
+
+Công ty TNHH Công nghệ Minh Phát
+Vị trí: Cloud Operations Trainee
+Thời gian: 05/2026 - 10/2026 (5 tháng)
+
+- Tham gia triển khai thử nghiệm ứng dụng trên Azure Virtual Machines và cấu hình IIS Web Server.
+- Hỗ trợ sử dụng Azure Monitor để kiểm tra trạng thái tài nguyên và ghi nhận thông tin vận hành.
+- Tìm hiểu Azure DevOps Pipelines và tham gia các bước triển khai ứng dụng theo quy trình của team.
+
+DỰ ÁN
+
+Triển khai thử nghiệm ứng dụng web trên Microsoft Azure
+
+- Sử dụng Azure Virtual Machines làm môi trường chạy ứng dụng thử nghiệm.
+- Hỗ trợ kiểm tra IIS Web Server và theo dõi thông tin tài nguyên bằng Azure Monitor.
+- Kết quả: Hoàn thành các bước hỗ trợ triển khai và kiểm tra ứng dụng trong môi trường thử nghiệm theo hướng dẫn của nhóm kỹ thuật.

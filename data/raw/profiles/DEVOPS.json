@@ -1,0 +1,329 @@
+
+[
+  {
+    "profile_id": "DEVOPS_FRE_01",
+    "role_family": "DevOps/Cloud",
+    "target_title": "Fresher DevOps Engineer",
+    "seniority": "Fresher",
+    "years_experience": 0.5,
+    "education": "Đại học, Công nghệ thông tin, trường đại học công lập tại Hà Nội",
+    "core_skills": [
+      "Linux Ubuntu",
+      "Docker",
+      "Git",
+      "GitHub Actions",
+      "Bash Scripting",
+      "Nginx",
+      "AWS EC2",
+      "AWS S3"
+    ],
+    "secondary_skills": [
+      "Python cơ bản",
+      "Docker Compose",
+      "TCP/IP cơ bản",
+      "YAML",
+      "Markdown"
+    ],
+    "known_gaps": [
+      "Chưa triển khai Kubernetes trên môi trường production",
+      "Chưa có kinh nghiệm thực tế với Terraform hoặc Infrastructure as Code",
+      "Chưa xây dựng hệ thống monitoring và alerting hoàn chỉnh"
+    ],
+    "languages": [
+      "Tiếng Anh B1, đọc tài liệu kỹ thuật khá tốt, giao tiếp còn hạn chế"
+    ],
+    "industries": [
+      "Gia công phần mềm",
+      "Phát triển ứng dụng web"
+    ],
+    "career_note": "Có 6 tháng thực tập DevOps tại công ty outsourcing, chủ yếu hỗ trợ xây dựng pipeline CI/CD cho ứng dụng web và triển khai Docker trên máy chủ Linux dưới sự hướng dẫn của kỹ sư chính.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "DEVOPS_FRE_02",
+    "role_family": "DevOps/Cloud",
+    "target_title": "Fresher Cloud Operations Engineer",
+    "seniority": "Fresher",
+    "years_experience": 0.7,
+    "education": "Cao đẳng, Quản trị mạng máy tính, trường cao đẳng nghề tại TP. Hồ Chí Minh",
+    "core_skills": [
+      "Windows Server",
+      "PowerShell",
+      "Microsoft Azure Virtual Machines",
+      "Azure DevOps Pipelines",
+      "Azure Monitor",
+      "IIS Web Server",
+      "Docker Compose",
+      "TCP/IP Networking"
+    ],
+    "secondary_skills": [
+      "Active Directory cơ bản",
+      "Git",
+      "Azure Storage",
+      "Windows Firewall",
+      "Microsoft 365 Administration"
+    ],
+    "known_gaps": [
+      "Chưa thành thạo Linux và Bash Scripting",
+      "Chưa sử dụng Kubernetes hoặc Azure Kubernetes Service",
+      "Chưa có chứng chỉ Microsoft Azure"
+    ],
+    "languages": [
+      "Tiếng Anh A2-B1, đọc tài liệu hướng dẫn kỹ thuật cơ bản"
+    ],
+    "industries": [
+      "Dịch vụ CNTT nội bộ",
+      "Thương mại điện tử"
+    ],
+    "career_note": "Chuyển hướng từ thực tập IT Support sang Cloud Operations, có tổng cộng 8 tháng trải nghiệm gồm hỗ trợ quản trị Windows Server, xử lý tài khoản nội bộ và tham gia triển khai thử nghiệm ứng dụng trên Azure.",
+    "cv_style": "lẫn Anh-Việt"
+  },
+  {
+    "profile_id": "DEVOPS_JUN_01",
+    "role_family": "DevOps/Cloud",
+    "target_title": "Junior DevOps Engineer",
+    "seniority": "Junior",
+    "years_experience": 1.6,
+    "education": "Đại học, Kỹ thuật phần mềm, trường đại học tư thục tại TP. Hồ Chí Minh",
+    "core_skills": [
+      "Linux Administration",
+      "GitLab CI/CD",
+      "Terraform",
+      "Docker",
+      "Amazon ECS",
+      "AWS IAM",
+      "Amazon CloudWatch",
+      "Python Scripting",
+      "AWS Application Load Balancer"
+    ],
+    "secondary_skills": [
+      "AWS ECR",
+      "MySQL",
+      "Shell Scripting",
+      "Git",
+      "AWS Secrets Manager"
+    ],
+    "known_gaps": [
+      "Chưa vận hành Kubernetes cluster trong production",
+      "Chưa có nhiều kinh nghiệm thiết kế hệ thống High Availability đa vùng",
+      "Chưa áp dụng Policy as Code trong quy trình triển khai"
+    ],
+    "languages": [
+      "Tiếng Anh B2, đọc viết tài liệu kỹ thuật tốt, giao tiếp công việc cơ bản"
+    ],
+    "industries": [
+      "SaaS",
+      "Thương mại điện tử"
+    ],
+    "career_note": "Có hơn 1 năm rưỡi làm DevOps tại công ty sản phẩm quy mô nhỏ, phụ trách pipeline GitLab và hạ tầng AWS ECS cho một số dịch vụ, thường thực hiện thay đổi hạ tầng theo thiết kế có sẵn của kỹ sư cấp cao.",
+    "cv_style": "ngắn gọn"
+  },
+  {
+    "profile_id": "DEVOPS_JUN_02",
+    "role_family": "DevOps/Cloud",
+    "target_title": "Junior Google Cloud Engineer",
+    "seniority": "Junior",
+    "years_experience": 1.8,
+    "education": "Đại học, Hệ thống thông tin, trường đại học địa phương tại miền Trung",
+    "core_skills": [
+      "Google Cloud Compute Engine",
+      "Google Cloud Run",
+      "Google Cloud Build",
+      "Artifact Registry",
+      "Docker",
+      "Linux",
+      "Git",
+      "Nginx"
+    ],
+    "secondary_skills": [
+      "Google Cloud Storage",
+      "Cloud Logging",
+      "Node.js cơ bản",
+      "Bash",
+      "PostgreSQL cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa tự thiết kế hạ tầng cloud bằng Terraform",
+      "Ít kinh nghiệm xử lý sự cố production nghiêm trọng",
+      "Chưa vận hành hệ thống có lưu lượng truy cập lớn hoặc kiến trúc multi-region"
+    ],
+    "languages": [
+      "Tiếng Anh B1, chủ yếu đọc tài liệu và trao đổi qua tin nhắn"
+    ],
+    "industries": [
+      "EdTech",
+      "Phần mềm quản lý doanh nghiệp"
+    ],
+    "career_note": "Có 1.8 năm kinh nghiệm nhưng chủ yếu duy trì hai ứng dụng nội bộ trên Google Cloud, công việc lặp lại theo quy trình có sẵn và ít được tham gia thiết kế kiến trúc hoặc xử lý các sự cố phức tạp.",
+    "cv_style": "dài dòng"
+  },
+  {
+    "profile_id": "DEVOPS_MID_01",
+    "role_family": "DevOps/Cloud",
+    "target_title": "Middle Platform Engineer",
+    "seniority": "Middle",
+    "years_experience": 3.7,
+    "education": "Đại học, Công nghệ thông tin, trường đại học kỹ thuật công lập tại Hà Nội",
+    "core_skills": [
+      "Kubernetes",
+      "Helm",
+      "Argo CD",
+      "GitLab CI/CD",
+      "Docker",
+      "Prometheus",
+      "Grafana",
+      "Linux",
+      "Java Spring Boot",
+      "PostgreSQL"
+    ],
+    "secondary_skills": [
+      "Redis",
+      "Kustomize",
+      "RESTful API",
+      "Shell Scripting",
+      "OpenTelemetry cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa có nhiều kinh nghiệm tối ưu chi phí cloud ở quy mô doanh nghiệp",
+      "Chưa thành thạo thiết kế Terraform module dùng chung",
+      "Kiến thức về cloud networking nâng cao còn hạn chế"
+    ],
+    "languages": [
+      "Tiếng Anh B2, giao tiếp kỹ thuật tương đối tốt"
+    ],
+    "industries": [
+      "Fintech",
+      "Phát triển phần mềm doanh nghiệp"
+    ],
+    "career_note": "Bắt đầu với khoảng 1 năm làm Java Backend Developer rồi chuyển sang DevOps và Platform Engineering trong gần 3 năm, có kinh nghiệm container hóa dịch vụ và xây dựng quy trình GitOps cho nhóm phát triển sản phẩm.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "DEVOPS_MID_02",
+    "role_family": "DevOps/Cloud",
+    "target_title": "Middle Infrastructure DevOps Engineer",
+    "seniority": "Middle",
+    "years_experience": 4.0,
+    "education": "Đại học, Mạng máy tính và Truyền thông dữ liệu, trường đại học công lập tại miền Nam",
+    "core_skills": [
+      "VMware vSphere",
+      "Jenkins",
+      "Ansible",
+      "Docker Swarm",
+      "CentOS Stream",
+      "HAProxy",
+      "Zabbix",
+      "Shell Scripting",
+      "Git"
+    ],
+    "secondary_skills": [
+      "Proxmox VE",
+      "MariaDB",
+      "NFS",
+      "SSH",
+      "Network Troubleshooting"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm vận hành Kubernetes thực tế",
+      "Chưa trực tiếp triển khai hệ thống trên AWS, Azure hoặc Google Cloud",
+      "Chưa sử dụng Terraform để quản lý tài nguyên hạ tầng"
+    ],
+    "languages": [
+      "Tiếng Anh B1, đọc hiểu tài liệu quản trị hệ thống, giao tiếp chưa tự tin"
+    ],
+    "industries": [
+      "Sản xuất",
+      "Phần mềm quản trị nội bộ",
+      "Dịch vụ hạ tầng CNTT"
+    ],
+    "career_note": "Có 4 năm làm DevOps và quản trị hạ tầng tại doanh nghiệp vừa nhưng chủ yếu vận hành máy chủ on-premise, Jenkins và các ứng dụng nội bộ, ít tiếp xúc với cloud public hoặc kiến trúc phân tán quy mô lớn.",
+    "cv_style": "có lỗi chính tả nhẹ"
+  },
+  {
+    "profile_id": "DEVOPS_SEN_01",
+    "role_family": "DevOps/Cloud",
+    "target_title": "Senior Site Reliability Engineer",
+    "seniority": "Senior",
+    "years_experience": 7.5,
+    "education": "Đại học, Khoa học máy tính, trường đại học kỹ thuật công lập tại Hà Nội",
+    "core_skills": [
+      "Amazon EKS",
+      "Kubernetes",
+      "Terraform",
+      "Terragrunt",
+      "FluxCD",
+      "Istio Service Mesh",
+      "Prometheus",
+      "Grafana Loki",
+      "Go",
+      "Linux"
+    ],
+    "secondary_skills": [
+      "Kustomize",
+      "AWS Route 53",
+      "AWS IAM",
+      "OpenTelemetry",
+      "SLO và Error Budget",
+      "Incident Response"
+    ],
+    "known_gaps": [
+      "Chưa có nhiều kinh nghiệm triển khai kiến trúc multi-cloud kết hợp Azure và Google Cloud",
+      "Kiến thức chuyên sâu về các tiêu chuẩn tuân thủ như PCI DSS còn hạn chế",
+      "Chưa trực tiếp phụ trách chương trình FinOps ở cấp toàn doanh nghiệp"
+    ],
+    "languages": [
+      "Tiếng Anh C1, có thể chủ trì họp kỹ thuật và viết tài liệu thiết kế bằng tiếng Anh"
+    ],
+    "industries": [
+      "Fintech",
+      "Thanh toán điện tử",
+      "Nền tảng dịch vụ trực tuyến"
+    ],
+    "career_note": "Có 7.5 năm kinh nghiệm DevOps và SRE, từng tham gia vận hành hệ thống giao dịch có yêu cầu sẵn sàng cao, dẫn dắt nhóm kỹ thuật nhỏ trong việc cải thiện độ tin cậy, tự động hóa triển khai và quy trình ứng phó sự cố.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "DEVOPS_SEN_02",
+    "role_family": "DevOps/Cloud",
+    "target_title": "Senior Azure Cloud Infrastructure Engineer",
+    "seniority": "Senior",
+    "years_experience": 5.8,
+    "education": "Đại học, Kỹ thuật máy tính, trường đại học công lập tại TP. Hồ Chí Minh; có chứng chỉ Microsoft Azure Administrator Associate",
+    "core_skills": [
+      "Microsoft Azure",
+      "Azure Kubernetes Service",
+      "Azure Bicep",
+      "Azure DevOps",
+      "Azure Key Vault",
+      "Azure Policy",
+      "Azure Monitor",
+      "Microsoft Entra ID",
+      "PowerShell",
+      "Azure Virtual Network"
+    ],
+    "secondary_skills": [
+      "Azure Application Gateway",
+      "Azure Container Registry",
+      "Python",
+      "Docker",
+      "Azure Backup",
+      "Azure Cost Management"
+    ],
+    "known_gaps": [
+      "Chưa triển khai hệ thống production quy mô lớn trên Google Cloud hoặc AWS",
+      "Kinh nghiệm phát triển ứng dụng bằng Go còn hạn chế",
+      "Chưa có nhiều kinh nghiệm vận hành service mesh trong hệ thống microservices phức tạp"
+    ],
+    "languages": [
+      "Tiếng Anh B2-C1, có khả năng làm việc trực tiếp với khách hàng nước ngoài",
+      "Tiếng Nhật N3, giao tiếp công việc cơ bản"
+    ],
+    "industries": [
+      "Logistics",
+      "Bảo hiểm",
+      "Dịch vụ chuyển đổi số doanh nghiệp"
+    ],
+    "career_note": "Có gần 6 năm làm Cloud Infrastructure Engineer với trọng tâm Microsoft Azure, từng phụ trách thiết kế mạng, bảo mật truy cập và tự động hóa triển khai hạ tầng cho các dự án chuyển đổi số của doanh nghiệp Việt Nam và khách hàng Nhật Bản.",
+    "cv_style": "lẫn Anh-Việt"
+  }
+]

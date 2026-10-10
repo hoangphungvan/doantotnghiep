@@ -1,0 +1,51 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có hơn 5 năm kinh nghiệm làm việc trong lĩnh vực phát triển website và ứng dụng quản lý cho doanh nghiệp. Trong thời gian làm việc, tôi chủ yếu sử dụng PHP, Laravel, React.js và MySQL để phát triển các hệ thống phục vụ hoạt động kinh doanh, bán lẻ và bất động sản.
+
+Tôi mong muốn tiếp tục đảm nhận vai trò Fullstack Developer có kinh nghiệm, phụ trách phát triển các dự án website từ giai đoạn xây dựng chức năng đến triển khai và bảo trì. Bên cạnh công việc lập trình, tôi cũng muốn tiếp tục hỗ trợ các thành viên mới trong nhóm và nâng cao chất lượng sản phẩm thông qua việc cải thiện cấu trúc mã nguồn và quy trình phát triển.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học chuyên ngành Công nghệ phần mềm tại một trường đại học dân lập.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Backend: PHP 8, Laravel, RESTful API.
+- Frontend: React.js, JavaScript, jQuery.
+- Database: MySQL, Redis cơ bản.
+- Server và triển khai: Linux, Nginx, DigitalOcean, Docker Compose.
+- Công cụ: Git, Trello.
+- Testing: PHPUnit cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm hướng dẫn lập trình viên mới trong quá trình tham gia dự án.
+- Chủ động quản lý công việc và phụ trách nhiều dự án website.
+- Có khả năng đọc hiểu tài liệu tiếng Anh và trao đổi kỹ thuật ở mức cơ bản, tương đương B1.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Pixel Web Solutions
+Senior Fullstack Developer | 07/2023 - 10/2026
+
+- Phụ trách phát triển và bảo trì các website kinh doanh, ứng dụng quản lý bán lẻ và hệ thống website bất động sản.
+- Sử dụng Laravel, PHP 8 và MySQL để xây dựng các chức năng xử lý dữ liệu, đồng thời phát triển giao diện bằng React.js và JavaScript.
+- Thực hiện cấu hình và triển khai ứng dụng trên môi trường Linux, Nginx và DigitalOcean.
+- Hướng dẫn lập trình viên mới, theo dõi tiến độ công việc qua Trello và hỗ trợ xử lý lỗi phát sinh trong các dự án phụ trách.
+
+Công ty CP WebTech Studio
+Fullstack PHP Developer | 02/2021 - 07/2023
+
+- Tham gia xây dựng website cho khách hàng thuộc lĩnh vực dịch vụ, bán lẻ và bất động sản.
+- Phát triển Backend bằng PHP, Laravel, MySQL và tích hợp RESTful API cho các chức năng của website.
+- Xây dựng và điều chỉnh giao diện bằng JavaScript, jQuery và React.js để hoàn thiện các yêu cầu chức năng.
+
+DỰ ÁN
+
+Hệ thống website quản lý bất động sản
+
+Tham gia xây dựng các chức năng quản lý thông tin bất động sản trên nền tảng Laravel và MySQL. Công việc bao gồm phát triển giao diện, xử lý dữ liệu phía Backend, kiểm tra hoạt động của website và hỗ trợ triển khai lên máy chủ.
+
+NGOẠI NGỮ
+
+Tiếng Anh B1, đọc hiểu tài liệu và trao đổi kỹ thuật cơ bản.

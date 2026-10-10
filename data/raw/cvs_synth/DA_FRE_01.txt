@@ -1,0 +1,42 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi vừa tốt nghiệp ngành Hệ thống thông tin quản lý và có 6 tháng thực tập tại bộ phận phân tích kinh doanh của doanh nghiệp bán lẻ. Trong quá trình thực tập, tôi chủ yếu làm việc với dữ liệu Excel, hỗ trợ xây dựng dashboard và tổng hợp báo cáo doanh thu. Tôi mong muốn tiếp tục phát triển khả năng phân tích dữ liệu, sử dụng SQL và Power BI hiệu quả hơn trong công việc, đồng thời vận dụng kiến thức thống kê để cung cấp thông tin hữu ích cho hoạt động kinh doanh.
+
+HỌC VẤN
+
+Cử nhân Hệ thống thông tin quản lý – Đại học công lập.
+
+Có kiến thức nền tảng về quản lý thông tin, xử lý dữ liệu và thống kê mô tả.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Microsoft Excel: Sử dụng PivotTable, VLOOKUP và XLOOKUP để tổng hợp, tra cứu và đối chiếu dữ liệu.
+- SQL cơ bản: SELECT, JOIN, GROUP BY để truy vấn dữ liệu.
+- Power BI: Xây dựng báo cáo và dashboard cơ bản.
+- Power Query: Làm sạch, chuyển đổi và chuẩn hóa dữ liệu.
+- Data Cleaning, Data Visualization, Descriptive Statistics.
+- Công cụ bổ trợ: Google Sheets, Python cơ bản, Git cơ bản, Microsoft PowerPoint.
+
+KỸ NĂNG MỀM
+
+- Viết báo cáo phân tích, trình bày kết quả bằng bảng biểu và biểu đồ.
+- Phối hợp với bộ phận phân tích kinh doanh trong việc chuẩn bị dữ liệu báo cáo.
+- Tiếng Việt: Bản ngữ.
+- Tiếng Anh: B1, có khả năng đọc tài liệu kỹ thuật cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Thực tập sinh Phân tích dữ liệu kinh doanh
+Công ty TNHH Bán lẻ Minh Phát
+04/2026 – 10/2026 (6 tháng)
+
+- Tổng hợp dữ liệu bán hàng trên Microsoft Excel, sử dụng PivotTable và các hàm tra cứu để phục vụ báo cáo doanh thu.
+- Thực hiện Data Cleaning, kiểm tra và xử lý dữ liệu trước khi đưa vào báo cáo, giúp dữ liệu đầu vào nhất quán hơn.
+- Hỗ trợ xây dựng dashboard doanh thu bằng Power BI, thể hiện số liệu dưới dạng biểu đồ để thuận tiện theo dõi.
+- Chuẩn bị bảng tổng hợp và nội dung báo cáo phân tích cho bộ phận kinh doanh.
+
+DỰ ÁN
+
+Dashboard theo dõi doanh thu bán lẻ
+
+Tham gia xử lý dữ liệu Excel bằng Power Query, sử dụng Power BI để trực quan hóa thông tin doanh thu. Phần việc của tôi tập trung vào làm sạch dữ liệu, chuẩn bị các bảng tổng hợp và hỗ trợ hoàn thiện dashboard phục vụ theo dõi hoạt động bán hàng.

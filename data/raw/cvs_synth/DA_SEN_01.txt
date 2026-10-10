@@ -1,0 +1,45 @@
+MỤC TIÊU NGHỀ NGHIỆP
+Tôi có hơn 5 năm kinh nghiệm làm việc trong lĩnh vực phân tích dữ liệu và xây dựng hệ thống báo cáo nội bộ, chủ yếu tại doanh nghiệp bảo hiểm và dịch vụ tài chính. Trong quá trình làm việc, tôi tập trung vào việc phát triển, vận hành và bảo trì các báo cáo phục vụ hoạt động quản lý, theo dõi chỉ số kinh doanh và đối chiếu dữ liệu giữa các nguồn. Tôi mong muốn tiếp tục phát huy kinh nghiệm về SQL Server, Enterprise Reporting và Reporting Automation để xây dựng hệ thống báo cáo ổn định, đáp ứng các nhu cầu khai thác dữ liệu của doanh nghiệp.
+
+HỌC VẤN
+Cử nhân Hệ thống thông tin
+Đại học công lập
+Có nền tảng kiến thức về hệ thống thông tin, quản lý và khai thác dữ liệu trong doanh nghiệp.
+
+KỸ NĂNG CHUYÊN MÔN
+- Microsoft SQL Server, T-SQL.
+- Stored Procedures, SQL Server Agent.
+- SQL Server Reporting Services (SSRS).
+- Microsoft Excel VBA.
+- Power BI, DAX.
+- Enterprise Reporting.
+- KPI Dashboard Development.
+- Data Reconciliation.
+- Reporting Automation.
+- Data Governance cơ bản.
+- Business Requirement Gathering.
+- Microsoft PowerPoint.
+
+KỸ NĂNG MỀM
+- Thu thập và làm rõ yêu cầu báo cáo từ các bộ phận nghiệp vụ.
+- Có khả năng hướng dẫn nhân viên phân tích mới trong công việc xây dựng và kiểm tra báo cáo.
+- Chú trọng sự chính xác, nhất quán của dữ liệu và tính ổn định của hệ thống báo cáo.
+- Trình bày các chỉ số và nội dung báo cáo phục vụ hoạt động quản lý.
+- Tiếng Anh B1, đọc tài liệu kỹ thuật và viết email công việc.
+
+KINH NGHIỆM LÀM VIỆC
+Công ty Cổ phần Bảo hiểm An Phúc
+Senior Reporting Data Analyst
+03/2021 - 10/2026 (5 năm 7 tháng)
+
+- Phụ trách xây dựng, bảo trì và cập nhật các báo cáo nội bộ phục vụ hoạt động kinh doanh và quản lý nghiệp vụ bảo hiểm, sử dụng Microsoft SQL Server, T-SQL và SSRS.
+- Phát triển các Stored Procedures để tổng hợp dữ liệu, sử dụng SQL Server Agent và Excel VBA nhằm tự động hóa các công việc báo cáo định kỳ, hạn chế thao tác tổng hợp thủ công.
+- Thiết kế dashboard bằng Power BI, sử dụng DAX để xây dựng các chỉ số KPI, giúp bộ phận quản lý theo dõi kết quả hoạt động trên cùng một hệ thống báo cáo.
+- Thực hiện Data Reconciliation để đối chiếu số liệu giữa các nguồn, đồng thời hướng dẫn nhân viên phân tích mới về quy trình kiểm tra dữ liệu và bảo trì báo cáo.
+
+DỰ ÁN
+Xây dựng và tự động hóa hệ thống báo cáo quản trị bảo hiểm
+
+Trong quá trình làm việc, tôi tham gia phát triển hệ thống báo cáo tổng hợp phục vụ nhu cầu theo dõi các chỉ số kinh doanh của doanh nghiệp. Công việc bao gồm tiếp nhận yêu cầu từ bộ phận nghiệp vụ, thiết kế truy vấn dữ liệu bằng T-SQL, xây dựng báo cáo SSRS và sử dụng SQL Server Agent để lên lịch thực hiện các tác vụ báo cáo.
+
+Bên cạnh đó, tôi sử dụng Power BI và DAX để phát triển các dashboard KPI, thực hiện đối chiếu dữ liệu trước khi cung cấp báo cáo cho bộ phận quản lý. Kết quả là hệ thống có các báo cáo định kỳ được chuẩn hóa, hỗ trợ việc tổng hợp và kiểm tra số liệu thuận tiện hơn.

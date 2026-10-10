@@ -1,0 +1,31 @@
+MỤC TIÊU NGHỀ NGHIỆP
+Tôi có 3,5 năm kinh nghiệm làm việc với sản phẩm phần mềm, bắt đầu từ Frontend Development trước khi chuyển sang Product Design. Nền tảng Công nghệ thông tin giúp tôi phối hợp với đội phát triển. Tôi muốn cải thiện trải nghiệm người dùng SaaS và xây dựng Design System nhất quán.
+
+HỌC VẤN
+Cử nhân Công nghệ thông tin, tốt nghiệp tại một trường đại học công lập. Tự học thiết kế sản phẩm số.
+
+KỸ NĂNG CHUYÊN MÔN
+- Figma, Product Design, Interaction Design và Responsive Design.
+- UX Research, User Journey Mapping, Usability Testing và phân tích hành vi người dùng.
+- Design System, Interactive Prototyping, Design Handoff; Design Tokens ở mức cơ bản.
+- Google Analytics 4, Hotjar, Dovetail; kiến thức HTML/CSS từ giai đoạn làm Frontend.
+
+KỸ NĂNG MỀM
+- Trao đổi với đội phát triển bằng bản prototype và tài liệu Design Handoff, giúp thống nhất cách triển khai giao diện.
+- Trình bày giải pháp thiết kế bằng tiếng Anh ở mức B2; tiếng Việt là ngôn ngữ bản ngữ.
+
+KINH NGHIỆM LÀM VIỆC
+
+Frontend Developer – Công ty Phần mềm Đường Mây (04/2023 – 03/2024)
+- Tham gia xây dựng giao diện phần mềm bằng HTML/CSS theo bản thiết kế được bàn giao.
+- Điều chỉnh cách hiển thị giao diện ở các kích thước màn hình khác nhau theo yêu cầu Responsive Design.
+- Đối chiếu giao diện triển khai với thiết kế khi phối hợp cùng đội sản phẩm.
+
+Product Designer – Công ty Công nghệ Luồng Việt (04/2024 – 09/2026)
+- Thiết kế luồng người dùng cho sản phẩm SaaS phục vụ doanh nghiệp và nghiệp vụ logistics.
+- Xây dựng User Journey Mapping và Interactive Prototyping để kiểm tra các bước thao tác trước khi bàn giao.
+- Sử dụng Hotjar, Google Analytics 4 và Dovetail hỗ trợ tổng hợp quan sát người dùng và kết quả Usability Testing.
+- Duy trì các thành phần trong Design System, bàn giao thiết kế qua Figma để đội phát triển tái sử dụng nhất quán.
+
+DỰ ÁN
+Cải thiện luồng thao tác trong phần mềm doanh nghiệp: tham gia UX Research, tạo prototype có tương tác, kiểm tra tính dễ sử dụng và chuẩn hóa thành phần giao diện. Đầu ra gồm prototype và tài liệu bàn giao.

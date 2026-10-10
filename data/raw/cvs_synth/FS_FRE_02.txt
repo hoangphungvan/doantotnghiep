@@ -1,0 +1,44 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi học chuyên ngành Lập trình máy tính và đã có 8 tháng thực tập kết hợp làm bán thời gian tại đơn vị thiết kế website. Trong quá trình làm việc, tôi chủ yếu sử dụng PHP, Laravel để phát triển các chức năng quản trị và xử lý dữ liệu. Mục tiêu của tôi là tiếp tục nâng cao khả năng lập trình web, đặc biệt với Laravel và Vue.js 3, để có thể tham gia nhiều hơn vào quá trình xây dựng website cho doanh nghiệp.
+
+HỌC VẤN
+
+Trường Cao đẳng nghề – Ngành Lập trình máy tính
+Trình độ: Cao đẳng.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Backend: PHP, Laravel cơ bản, Laravel Blade.
+- Frontend: HTML5, CSS3, JavaScript, Vue.js 3 cơ bản, jQuery.
+- Giao diện: Tailwind CSS cơ bản, sử dụng Laravel Blade để xây dựng các trang web.
+- Database: MySQL, thao tác dữ liệu và các chức năng CRUD.
+- Công cụ: Git, XAMPP, Postman.
+- Ngoại ngữ: Tiếng Anh A2, có thể đọc hiểu các tài liệu kỹ thuật đơn giản.
+
+KỸ NĂNG MỀM
+
+- Có khả năng tiếp nhận công việc và phối hợp với các thành viên khác trong quá trình làm website.
+- Biết trao đổi khi cần chỉnh sửa giao diện hoặc chức năng theo yêu cầu.
+- Có tinh thần học hỏi, rèn luyện thêm qua các công việc thực tế được giao.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Thiết kế Web An Phúc
+Thực tập sinh và nhân viên lập trình Web bán thời gian
+02/2026 – 09/2026 (8 tháng)
+
+- Sử dụng PHP và Laravel để phát triển các chức năng quản lý sản phẩm trên trang quản trị website.
+- Xây dựng biểu mẫu nhập dữ liệu và thực hiện các chức năng thêm, sửa, xóa, hiển thị thông tin sản phẩm với MySQL.
+- Chỉnh sửa giao diện bằng HTML5, CSS3, JavaScript và Laravel Blade theo các yêu cầu trong quá trình làm website.
+- Sử dụng XAMPP để chạy website ở môi trường local, Git để quản lý source code và Postman để kiểm tra các chức năng liên quan đến API.
+
+DỰ ÁN
+
+Trang quản trị sản phẩm cho website bán lẻ
+
+Công nghệ: PHP, Laravel, Laravel Blade, MySQL, HTML5, CSS3, JavaScript.
+
+Tham gia lập trình khu vực quản trị sản phẩm, tập trung vào các biểu mẫu và chức năng CRUD. Các phần việc đã làm giúp việc nhập, cập nhật và quản lý thông tin sản phẩm được thực hiện thông qua giao diện quản trị thay vì chỉnh sửa trực tiếp dữ liệu.
+
+Qua dự án này tôi đã có thêm kinh nghiệm thực tế về cách tổ chức code Laravel và xử lý dữ liệu giữa giao diện với database.

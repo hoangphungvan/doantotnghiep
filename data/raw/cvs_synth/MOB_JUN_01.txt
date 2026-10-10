@@ -1,0 +1,46 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Kỹ thuật phần mềm, có khoảng 1,4 năm kinh nghiệm phát triển và bảo trì ứng dụng iOS bằng Swift. Công việc trước đây chủ yếu liên quan đến ứng dụng quản lý nhân sự nội bộ, bao gồm chỉnh sửa giao diện, xử lý lỗi và tích hợp API. Tôi mong muốn tiếp tục phát triển chuyên môn iOS, nâng cao chất lượng mã nguồn và tham gia sâu hơn vào quá trình phát triển ứng dụng.
+
+HỌC VẤN
+
+Cử nhân Kỹ thuật phần mềm
+Trường đại học tư thục
+Đã tốt nghiệp
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ lập trình: Swift.
+- Phát triển giao diện iOS: UIKit, Auto Layout, Storyboard.
+- Kiến trúc: MVC.
+- Xử lý dữ liệu: URLSession, Codable, REST API.
+- Lưu trữ dữ liệu: Core Data.
+- Công cụ: Xcode, CocoaPods, Git, TestFlight.
+- Kiểm thử: XCTest cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm tiếp nhận và xử lý những công việc bảo trì trên ứng dụng đang sử dụng.
+- Phối hợp trong quá trình sửa lỗi giao diện và cập nhật các chức năng được giao.
+- Tiếng Anh: Đọc hiểu tài liệu kỹ thuật tốt, giao tiếp công việc cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+iOS Developer
+Công ty TNHH Giải pháp Phần mềm Nam Việt
+05/2025 – 09/2026 (khoảng 1,4 năm)
+
+- Bảo trì ứng dụng quản lý nhân sự nội bộ được phát triển bằng Swift và UIKit.
+- Sửa lỗi bố cục màn hình bằng Auto Layout và Storyboard, xử lý các vấn đề giao diện trong quá trình sử dụng.
+- Tích hợp những REST API quy mô nhỏ bằng URLSession, sử dụng Codable để xử lý dữ liệu trả về.
+- Làm việc với cấu trúc MVC, Core Data và Git trong quá trình chỉnh sửa, cập nhật ứng dụng.
+
+DỰ ÁN
+
+Ứng dụng quản lý nhân sự nội bộ trên iOS
+
+Công nghệ: Swift, UIKit, Storyboard, Core Data, REST API.
+
+Tôi tham gia bảo trì và cập nhật ứng dụng phục vụ công việc quản lý nhân sự của doanh nghiệp. Phần việc chính là xử lý lỗi giao diện và bổ sung kết nối API cho các chức năng nhỏ.
+
+Qua dự án, tôi tích lũy được kinh nghiệm đọc hiểu mã nguồn có sẵn, xác định phần cần sửa và thực hiện thay đổi trong phạm vi được phân công. Tôi cũng có kinh nghiệm sử dụng Xcode, CocoaPods và làm việc với các bản ứng dụng thông qua TestFlight.

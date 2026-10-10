@@ -1,0 +1,48 @@
+MỤC TIÊU NGHỀ NGHIỆP
+Tôi có gần 4 năm kinh nghiệm phân tích dữ liệu trong lĩnh vực Fintech và thanh toán điện tử, phát triển từ Junior Data Analyst lên Middle Data Analyst. Công việc tập trung vào phân tích hành vi giao dịch, xây dựng hệ thống chỉ số khách hàng và chuẩn hóa dữ liệu phục vụ báo cáo. Tôi mong muốn tiếp tục phát triển chuyên môn về Data Modeling, phân tích khách hàng và nâng cao chất lượng dữ liệu để hỗ trợ các quyết định kinh doanh.
+
+HỌC VẤN
+Cử nhân Khoa học dữ liệu
+Đại học công lập khối kỹ thuật
+Được đào tạo về khoa học dữ liệu và các phương pháp phân tích thống kê.
+
+KỸ NĂNG CHUYÊN MÔN
+- SQL nâng cao, Snowflake.
+- Python pandas, Jupyter Notebook.
+- Tableau: Xây dựng dashboard và trực quan hóa dữ liệu.
+- dbt, Data Modeling, ETL Data Validation.
+- Cohort Analysis, Customer Segmentation.
+- Statistical Hypothesis Testing.
+- Scikit-learn cơ bản, Excel nâng cao.
+- Git, Agile/Scrum.
+
+KỸ NĂNG MỀM
+- Stakeholder Communication: Trao đổi yêu cầu và kết quả phân tích với các bên liên quan.
+- Phối hợp công việc theo quy trình Agile/Scrum.
+- Có khả năng trình bày kết quả phân tích và giải thích các chỉ số dữ liệu.
+- Tiếng Anh B2, có thể trao đổi với nhóm kỹ thuật quốc tế.
+
+KINH NGHIỆM LÀM VIỆC
+Công ty Công nghệ Thanh toán Ánh Dương
+Middle Data Analyst
+07/2024 - 10/2026 (2 năm 3 tháng)
+
+- Phụ trách phân tích dữ liệu giao dịch và xây dựng bộ chỉ số khách hàng phục vụ báo cáo hoạt động thanh toán điện tử.
+- Sử dụng Snowflake, SQL và Python pandas để xử lý dữ liệu, thực hiện Cohort Analysis và Customer Segmentation.
+- Phối hợp với Data Engineer xây dựng Data Modeling bằng dbt, thực hiện ETL Data Validation nhằm đảm bảo tính nhất quán của dữ liệu báo cáo.
+- Phát triển dashboard Tableau và thực hiện Statistical Hypothesis Testing để cung cấp thông tin cho các bên liên quan.
+
+Công ty Công nghệ Thanh toán Ánh Dương
+Junior Data Analyst
+12/2022 - 07/2024 (1 năm 7 tháng)
+
+- Truy vấn và tổng hợp dữ liệu giao dịch bằng SQL để phục vụ báo cáo định kỳ.
+- Sử dụng Python pandas và Excel nâng cao để làm sạch, kiểm tra và tổng hợp dữ liệu khách hàng.
+- Hỗ trợ phân tích hành vi giao dịch và xây dựng báo cáo trực quan bằng Tableau.
+
+DỰ ÁN
+Phân tích hành vi và phân nhóm khách hàng thanh toán điện tử
+
+- Sử dụng Snowflake, SQL và Python pandas để chuẩn bị bộ dữ liệu phân tích.
+- Áp dụng Cohort Analysis và Customer Segmentation để nghiên cứu đặc điểm giao dịch của các nhóm khách hàng.
+- Xây dựng dashboard Tableau thể hiện các chỉ số khách hàng, hỗ trợ theo dõi hành vi giao dịch theo từng nhóm.

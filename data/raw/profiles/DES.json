@@ -1,0 +1,347 @@
+
+[
+  {
+    "profile_id": "DES_FRE_01",
+    "role_family": "UI/UX và Graphic Designer",
+    "target_title": "Fresher UI Designer",
+    "seniority": "Fresher",
+    "years_experience": 0.5,
+    "education": "Cử nhân Thiết kế đồ họa, trường đại học tư thục, đã tốt nghiệp",
+    "core_skills": [
+      "Figma",
+      "Wireframing",
+      "UI Design",
+      "Auto Layout cơ bản",
+      "Visual Hierarchy",
+      "Typography",
+      "Color Theory",
+      "Responsive Layout",
+      "Prototyping cơ bản"
+    ],
+    "secondary_skills": [
+      "FigJam",
+      "Google Forms",
+      "Adobe Photoshop cơ bản",
+      "User Flow đơn giản",
+      "Giao tiếp nhóm",
+      "Tiếng Anh đọc tài liệu thiết kế"
+    ],
+    "known_gaps": [
+      "Chưa thực hiện usability testing với người dùng thật",
+      "Chưa xây dựng design system cho sản phẩm thực tế",
+      "Chưa có kinh nghiệm phối hợp trực tiếp với lập trình viên trong dự án production"
+    ],
+    "languages": [
+      "Tiếng Việt - bản ngữ",
+      "Tiếng Anh - B1, đọc hiểu tài liệu chuyên ngành"
+    ],
+    "industries": [
+      "Giáo dục trực tuyến",
+      "Ứng dụng học tập"
+    ],
+    "career_note": "Đã thực tập 6 tháng tại một công ty EdTech ở Hà Nội, chủ yếu thiết kế màn hình theo yêu cầu của designer chính và chỉnh sửa giao diện dựa trên phản hồi nội bộ.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "DES_FRE_02",
+    "role_family": "UI/UX và Graphic Designer",
+    "target_title": "Fresher Graphic Designer",
+    "seniority": "Fresher",
+    "years_experience": 0.7,
+    "education": "Cao đẳng chuyên ngành Thiết kế đồ họa, trường cao đẳng nghề, đã tốt nghiệp",
+    "core_skills": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Canva",
+      "Social Media Design",
+      "Banner Design",
+      "Poster Design",
+      "Photo Retouching cơ bản",
+      "Typography",
+      "Color Composition"
+    ],
+    "secondary_skills": [
+      "CapCut",
+      "Thiết kế thumbnail",
+      "Chuẩn bị file in ấn cơ bản",
+      "Quản lý thư viện hình ảnh",
+      "Làm việc theo brief"
+    ],
+    "known_gaps": [
+      "Chưa thành thạo Adobe InDesign và thiết kế tài liệu nhiều trang",
+      "Chưa có kinh nghiệm thiết kế bộ nhận diện thương hiệu hoàn chỉnh",
+      "Chưa biết thiết kế chuyển động bằng After Effects"
+    ],
+    "languages": [
+      "Tiếng Việt - bản ngữ",
+      "Tiếng Anh - A2, đọc hiểu hướng dẫn phần mềm đơn giản"
+    ],
+    "industries": [
+      "Bán lẻ",
+      "Thời trang",
+      "Thương mại điện tử"
+    ],
+    "career_note": "Có 8 tháng làm cộng tác viên thiết kế hình ảnh bán hàng và bài đăng mạng xã hội cho các cửa hàng nhỏ, phần lớn công việc dựa trên mẫu và yêu cầu có sẵn.",
+    "cv_style": "có lỗi chính tả nhẹ"
+  },
+  {
+    "profile_id": "DES_JUN_01",
+    "role_family": "UI/UX và Graphic Designer",
+    "target_title": "Junior UI/UX Designer",
+    "seniority": "Junior",
+    "years_experience": 1.6,
+    "education": "Cử nhân Công nghệ đa phương tiện, trường đại học công lập, đã tốt nghiệp",
+    "core_skills": [
+      "Figma",
+      "UI/UX Design",
+      "User Flow",
+      "Wireframing",
+      "Interactive Prototyping",
+      "Responsive Web Design",
+      "Component Design",
+      "Information Architecture",
+      "Usability Testing cơ bản"
+    ],
+    "secondary_skills": [
+      "Maze",
+      "Notion",
+      "HTML/CSS cơ bản",
+      "Design Handoff",
+      "Agile/Scrum cơ bản",
+      "Phân tích phản hồi người dùng"
+    ],
+    "known_gaps": [
+      "Chưa chủ trì nghiên cứu người dùng với mẫu khảo sát lớn",
+      "Chưa có kinh nghiệm xây dựng design system đa sản phẩm",
+      "Chưa thành thạo các tiêu chuẩn accessibility WCAG"
+    ],
+    "languages": [
+      "Tiếng Việt - bản ngữ",
+      "Tiếng Anh - B1, giao tiếp công việc cơ bản"
+    ],
+    "industries": [
+      "Thương mại điện tử",
+      "Phần mềm quản lý bán hàng"
+    ],
+    "career_note": "Bắt đầu bằng thực tập thiết kế giao diện và tiếp tục làm UI/UX Designer tại một công ty phần mềm ở TP.HCM, đã tham gia hai sản phẩm nhưng phần lớn màn hình vẫn được senior review.",
+    "cv_style": "ngắn gọn"
+  },
+  {
+    "profile_id": "DES_JUN_02",
+    "role_family": "UI/UX và Graphic Designer",
+    "target_title": "Junior Graphic Designer",
+    "seniority": "Junior",
+    "years_experience": 1.8,
+    "education": "Cử nhân Marketing, trường đại học tư thục, đã tốt nghiệp; bổ sung chứng chỉ ngắn hạn về thiết kế đồ họa",
+    "core_skills": [
+      "CorelDRAW",
+      "Adobe Photoshop",
+      "Adobe Lightroom",
+      "Social Media Design",
+      "Marketing Visual Design",
+      "Print Layout",
+      "Image Editing",
+      "Brand Guideline Application",
+      "Campaign Artwork"
+    ],
+    "secondary_skills": [
+      "Canva Pro",
+      "Meta Ads Creative",
+      "Content Planning",
+      "Photo Selection",
+      "Phối hợp với bộ phận Marketing"
+    ],
+    "known_gaps": [
+      "Chưa thành thạo thiết kế vector phức tạp bằng Adobe Illustrator",
+      "Chưa có kinh nghiệm nghiên cứu trải nghiệm người dùng cho website hoặc ứng dụng",
+      "Chưa tự xây dựng chiến lược nhận diện thương hiệu dài hạn"
+    ],
+    "languages": [
+      "Tiếng Việt - bản ngữ",
+      "Tiếng Anh - A2-B1, đọc hiểu brief đơn giản"
+    ],
+    "industries": [
+      "Marketing",
+      "F&B",
+      "Bán lẻ"
+    ],
+    "career_note": "Chuyển từ công việc Content Marketing sang Graphic Design sau khi tự học phần mềm thiết kế, hiện có 1,8 năm trực tiếp sản xuất ấn phẩm quảng cáo cho các chiến dịch nhỏ.",
+    "cv_style": "lẫn Anh-Việt"
+  },
+  {
+    "profile_id": "DES_MID_01",
+    "role_family": "UI/UX và Graphic Designer",
+    "target_title": "Middle Product Designer",
+    "seniority": "Middle",
+    "years_experience": 3.5,
+    "education": "Cử nhân Công nghệ thông tin, trường đại học công lập, đã tốt nghiệp; tự học thêm thiết kế sản phẩm số",
+    "core_skills": [
+      "Figma",
+      "Product Design",
+      "UX Research",
+      "User Journey Mapping",
+      "Design System",
+      "Interactive Prototyping",
+      "Usability Testing",
+      "Responsive Design",
+      "Interaction Design",
+      "Design Handoff"
+    ],
+    "secondary_skills": [
+      "Google Analytics 4",
+      "Hotjar",
+      "Dovetail",
+      "HTML/CSS",
+      "Design Tokens cơ bản",
+      "Phân tích hành vi người dùng"
+    ],
+    "known_gaps": [
+      "Chưa có nhiều kinh nghiệm thiết kế accessibility cho người dùng có nhu cầu đặc biệt",
+      "Chưa trực tiếp quản lý nhóm designer",
+      "Chưa thực hiện nghiên cứu định lượng trên quy mô hàng trăm người dùng"
+    ],
+    "languages": [
+      "Tiếng Việt - bản ngữ",
+      "Tiếng Anh - B2, giao tiếp và trình bày giải pháp thiết kế"
+    ],
+    "industries": [
+      "SaaS",
+      "Phần mềm doanh nghiệp",
+      "Logistics"
+    ],
+    "career_note": "Từng làm Frontend Developer khoảng một năm trước khi chuyển sang Product Design, sau đó tích lũy 3,5 năm thiết kế sản phẩm SaaS và có lợi thế trong việc phối hợp với đội phát triển.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "DES_MID_02",
+    "role_family": "UI/UX và Graphic Designer",
+    "target_title": "Middle Graphic Designer",
+    "seniority": "Middle",
+    "years_experience": 3.2,
+    "education": "Cử nhân Thiết kế đồ họa, trường đại học tư thục, đã tốt nghiệp",
+    "core_skills": [
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Adobe After Effects cơ bản",
+      "Adobe InDesign",
+      "Digital Advertising Design",
+      "Print Production",
+      "Packaging Design",
+      "Image Composition",
+      "Brand Visual Adaptation"
+    ],
+    "secondary_skills": [
+      "Canva",
+      "Photo Retouching",
+      "Motion Graphics đơn giản",
+      "Prepress",
+      "Quản lý file thiết kế",
+      "Phối hợp với nhà in"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm dẫn dắt quá trình sáng tạo bộ nhận diện thương hiệu từ đầu",
+      "Chưa thành thạo thiết kế 3D",
+      "Ít kinh nghiệm nghiên cứu người dùng hoặc đo lường hiệu quả thiết kế"
+    ],
+    "languages": [
+      "Tiếng Việt - bản ngữ",
+      "Tiếng Anh - B1, đọc hiểu tài liệu và trao đổi cơ bản"
+    ],
+    "industries": [
+      "FMCG",
+      "In ấn",
+      "Quảng cáo"
+    ],
+    "career_note": "Có 3,2 năm làm tại doanh nghiệp in ấn và agency nhỏ nhưng kinh nghiệm thực tế chủ yếu là chỉnh sửa key visual, điều chỉnh kích thước ấn phẩm và triển khai mẫu có sẵn, ít tham gia quyết định ý tưởng sáng tạo.",
+    "cv_style": "dài dòng"
+  },
+  {
+    "profile_id": "DES_SEN_01",
+    "role_family": "UI/UX và Graphic Designer",
+    "target_title": "Senior UI/UX Designer",
+    "seniority": "Senior",
+    "years_experience": 7.2,
+    "education": "Cử nhân Thiết kế truyền thông đa phương tiện, trường đại học công lập, đã tốt nghiệp; hoàn thành các khóa đào tạo chuyên sâu về UX Research",
+    "core_skills": [
+      "Figma",
+      "Axure RP",
+      "UXPin",
+      "UX Strategy",
+      "Design System Architecture",
+      "Advanced Prototyping",
+      "User Research",
+      "Information Architecture",
+      "Accessibility Design",
+      "Design Leadership"
+    ],
+    "secondary_skills": [
+      "Miro",
+      "Google Analytics 4",
+      "A/B Testing",
+      "Design Workshop Facilitation",
+      "Mentoring Junior Designers",
+      "Stakeholder Communication"
+    ],
+    "known_gaps": [
+      "Chưa có nhiều kinh nghiệm thiết kế sản phẩm thực tế ảo AR/VR",
+      "Chưa trực tiếp xây dựng hệ thống nghiên cứu UX cho thị trường quốc tế đa ngôn ngữ"
+    ],
+    "languages": [
+      "Tiếng Việt - bản ngữ",
+      "Tiếng Anh - C1, giao tiếp chuyên môn và trình bày giải pháp thiết kế"
+    ],
+    "industries": [
+      "Fintech",
+      "Ngân hàng số",
+      "Bảo hiểm công nghệ",
+      "Phần mềm doanh nghiệp"
+    ],
+    "career_note": "Phát triển từ UI Designer lên Senior UI/UX Designer qua hơn 7 năm, từng phụ trách thiết kế luồng giao dịch tài chính, xây dựng thư viện component và hướng dẫn nhóm 3-4 designer tại doanh nghiệp Việt Nam.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "DES_SEN_02",
+    "role_family": "UI/UX và Graphic Designer",
+    "target_title": "Senior Graphic Designer",
+    "seniority": "Senior",
+    "years_experience": 5.6,
+    "education": "Cử nhân Mỹ thuật ứng dụng, trường đại học chuyên ngành nghệ thuật, đã tốt nghiệp",
+    "core_skills": [
+      "Adobe Illustrator",
+      "Adobe InDesign",
+      "Blender cơ bản",
+      "Adobe Premiere Pro",
+      "Brand Identity Design",
+      "Key Visual Design",
+      "Editorial Design",
+      "Packaging Artwork",
+      "Visual Storytelling",
+      "Print Production Management"
+    ],
+    "secondary_skills": [
+      "Adobe Photoshop",
+      "Art Direction cơ bản",
+      "Creative Brief Interpretation",
+      "Vendor Coordination",
+      "Quality Control",
+      "Hướng dẫn designer mới"
+    ],
+    "known_gaps": [
+      "Chưa có nhiều kinh nghiệm hoạch định chiến lược thương hiệu ở cấp doanh nghiệp",
+      "Chưa thành thạo motion graphics phức tạp",
+      "Chưa có kinh nghiệm quản lý ngân sách sáng tạo hoặc đội thiết kế quy mô lớn"
+    ],
+    "languages": [
+      "Tiếng Việt - bản ngữ",
+      "Tiếng Anh - B1, đọc hiểu tài liệu và trao đổi công việc"
+    ],
+    "industries": [
+      "F&B",
+      "Bất động sản",
+      "Quảng cáo",
+      "In ấn thương mại"
+    ],
+    "career_note": "Có 5,6 năm kinh nghiệm tại các agency quảng cáo địa phương, phần lớn phụ trách thiết kế và triển khai ấn phẩm theo định hướng từ Art Director, có khả năng xử lý sản phẩm độc lập nhưng kinh nghiệm chiến lược và lãnh đạo còn hạn chế so với thâm niên.",
+    "cv_style": "lẫn Anh-Việt"
+  }
+]

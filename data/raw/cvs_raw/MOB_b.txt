@@ -1,0 +1,260 @@
+\=== CV: MOB_MID_01 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Nguyễn Minh Khải\
+Email: [nguyenminhkhai@example.com](mailto:nguyenminhkhai@example.com)\
+Địa chỉ: Hà Nội
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi là Flutter Developer với khoảng 3,3 năm kinh nghiệm phát triển và duy trì ứng dụng di động, chủ yếu trong lĩnh vực quản lý bán hàng và logistics. Trong quá trình làm việc, tôi tập trung vào việc hoàn thiện các chức năng hiện có, bổ sung tính năng theo yêu cầu và xử lý các vấn đề phát sinh trong quá trình vận hành sản phẩm.
+
+Tôi mong muốn tiếp tục phát triển chuyên môn về Flutter, đặc biệt là tổ chức mã nguồn theo Clean Architecture, quản lý trạng thái ứng dụng và nâng cao chất lượng sản phẩm thông qua kiểm thử. Mục tiêu của tôi là tham gia sâu hơn vào quá trình phát triển sản phẩm, đồng thời vận dụng kinh nghiệm bảo trì và mở rộng ứng dụng đã tích lũy.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học – Ngành Công nghệ thông tin\
+Hệ đào tạo: Chính quy, trường đại học công lập.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ lập trình: Dart.
+- Framework: Flutter, phát triển giao diện bằng hệ thống Widget.
+- State Management: BLoC.
+- Kiến trúc: Clean Architecture ở mức cơ bản.
+- Networking và Navigation: Dio, GoRouter.
+- Lưu trữ dữ liệu: SQLite, Hive.
+- Firebase: Firebase Crashlytics, Firebase Cloud Messaging.
+- Tích hợp bản đồ: Google Maps SDK.
+- Testing: Flutter Widget Testing, Postman.
+- Version Control và CI: Git, GitLab CI cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm theo dõi và duy trì một sản phẩm trong thời gian dài, xử lý các yêu cầu thay đổi liên tục.
+- Đọc và viết tài liệu kỹ thuật tiếng Anh khá.
+- Giao tiếp tiếng Anh trong công việc ở mức trung bình.
+
+KINH NGHIỆM LÀM VIỆC
+
+Flutter Developer\
+Công ty TNHH Giải pháp Công nghệ Minh Phát\
+06/2023 – 10/2026 (3 năm 4 tháng)
+
+- Tham gia duy trì và mở rộng ứng dụng Flutter phục vụ quản lý đội ngũ bán hàng, thực hiện các thay đổi về giao diện và luồng thao tác theo nhu cầu vận hành.
+- Sử dụng BLoC để quản lý trạng thái, Dio để xử lý giao tiếp dữ liệu và GoRouter để tổ chức luồng chuyển màn hình, giúp các chức năng được triển khai nhất quán với cấu trúc ứng dụng hiện có.
+- Làm việc với SQLite, Hive và các dịch vụ Firebase trong quá trình phát triển, hỗ trợ lưu trữ dữ liệu, thông báo và theo dõi lỗi ứng dụng.
+- Thực hiện Flutter Widget Testing cho các thành phần giao diện, sử dụng Git để quản lý thay đổi mã nguồn và tham gia các công việc CI cơ bản trên GitLab.
+
+DỰ ÁN
+
+Ứng dụng quản lý đội ngũ bán hàng
+
+Công nghệ: Flutter, Dart, BLoC, Dio, GoRouter, SQLite, Firebase Crashlytics.
+
+Ứng dụng hỗ trợ hoạt động quản lý bán hàng trên thiết bị di động. Công việc của tôi tập trung vào bảo trì chức năng, điều chỉnh giao diện và mở rộng các luồng nghiệp vụ trong quá trình sử dụng thực tế.
+
+\=== CV: MOB_MID_02 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Trần Đức Hoàng\
+Email: [tranduchoang@example.com](mailto:tranduchoang@example.com)\
+Địa chỉ: TP. Hồ Chí Minh
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 4 năm kinh nghiệm phát triển phần mềm, trong đó khoảng 1,2 năm làm Java Backend Developer và 2,8 năm phát triển ứng dụng Android native. Quá trình chuyển từ Backend sang Mobile giúp tôi có góc nhìn về cả xử lý dữ liệu phía máy chủ và cách ứng dụng di động tương tác với hệ thống.
+
+Tôi muốn tiếp tục phát triển chuyên môn Android với Kotlin, tập trung vào việc xây dựng các chức năng ổn định, tổ chức mã nguồn rõ ràng và nâng cao chất lượng kiểm thử. Tôi quan tâm đến các sản phẩm trong lĩnh vực thương mại điện tử, vận tải và giao nhận.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học – Ngành Khoa học máy tính\
+Hệ đào tạo: Chính quy, trường đại học công lập.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ lập trình: Java, Kotlin.
+- Android Development: Android SDK, XML Layout, Jetpack Navigation.
+- Database: Room Database, MySQL.
+- Background Processing: WorkManager.
+- Dependency Injection: Hilt.
+- Networking: Retrofit.
+- Testing: JUnit.
+- Backend: Spring Boot cơ bản.
+- Công cụ: Gradle, Git, Jira.
+- Push Notification: Firebase Cloud Messaging.
+
+KỸ NĂNG MỀM
+
+- Có khả năng tiếp cận công việc từ cả góc độ Backend và Android.
+- Đọc hiểu tài liệu kỹ thuật tiếng Anh tốt, giao tiếp kỹ thuật khá.
+- Có kinh nghiệm phối hợp công việc phát triển phần mềm thông qua Jira.
+
+KINH NGHIỆM LÀM VIỆC
+
+Android Developer\
+Công ty Công nghệ Vận tải Nam Việt\
+12/2023 – 10/2026 (2 năm 10 tháng)
+
+- Phát triển và bảo trì ứng dụng Android phục vụ hoạt động giao nhận, theo dõi trạng thái đơn hàng bằng Kotlin và Android SDK.
+- Xây dựng giao diện với XML Layout, sử dụng Jetpack Navigation để tổ chức luồng màn hình và Retrofit để kết nối ứng dụng với dịch vụ Backend.
+- Sử dụng Room Database để quản lý dữ liệu cục bộ, WorkManager để thực hiện các tác vụ nền và Firebase Cloud Messaging cho chức năng thông báo.
+- Áp dụng Hilt Dependency Injection trong tổ chức mã nguồn, viết kiểm thử với JUnit và quản lý thay đổi bằng Git.
+
+Java Backend Developer\
+Công ty TNHH Phần mềm Đại Tín\
+10/2022 – 12/2023 (1 năm 2 tháng)
+
+- Tham gia phát triển các chức năng Backend bằng Java và Spring Boot cho hệ thống phục vụ hoạt động thương mại điện tử.
+- Làm việc với MySQL trong quá trình xây dựng và điều chỉnh chức năng xử lý dữ liệu.
+- Sử dụng Git để quản lý mã nguồn và Jira để theo dõi công việc phát triển.
+
+DỰ ÁN
+
+Ứng dụng giao nhận và theo dõi đơn hàng
+
+Công nghệ: Kotlin, Android SDK, XML Layout, Retrofit, Room Database, WorkManager, Firebase Cloud Messaging.
+
+Tham gia phát triển các chức năng hiển thị thông tin đơn hàng, theo dõi trạng thái giao nhận và thông báo cập nhật. Tập trung vào phần Android, xử lý luồng dữ liệu và duy trì hoạt động của ứng dụng.
+
+\=== CV: MOB_SEN_02 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Lê Hoàng Nam\
+Email: [lehoangnam@example.com](mailto:lehoangnam@example.com)\
+Địa chỉ: TP. Hồ Chí Minh
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Senior iOS Developer với 6,4 năm kinh nghiệm trong native iOS development, từng tham gia các sản phẩm thuộc healthcare, insurance và utility applications.
+
+Tôi có kinh nghiệm làm việc với cả Objective-C và Swift, tham gia chuyển đổi legacy code sang Swift và đảm nhiệm vai trò technical owner cho ứng dụng chăm sóc sức khỏe. Định hướng tiếp theo là tiếp tục phát triển các ứng dụng iOS có cấu trúc dễ bảo trì, quy trình release ổn định và chú trọng chất lượng code. Tôi cũng mong muốn đóng góp nhiều hơn vào technical mentoring và code review trong nhóm phát triển.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học – Ngành Công nghệ thông tin\
+Hệ đào tạo: Chính quy, trường đại học tư thục.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Programming Languages: Swift nâng cao, Objective-C.
+- UI Development: SwiftUI.
+- Reactive Programming: Combine.
+- Concurrency: Swift Concurrency.
+- Architecture: MVVM-C.
+- Local Persistence: Core Data.
+- Dependency Management: Swift Package Manager.
+- Testing: XCTest, XCUITest.
+- Build và Release: Fastlane, App Store Connect.
+- Notification và Security: APNs, Keychain Services.
+- Performance Analysis: Instruments.
+- Engineering Practices: Technical Documentation, Code Review.
+
+KỸ NĂNG MỀM
+
+- Technical mentoring cho junior developers.
+- Có kinh nghiệm hướng dẫn, review code và trao đổi giải pháp kỹ thuật trong nhóm.
+- Giao tiếp tiếng Anh tốt trong môi trường nhóm quốc tế, đọc viết technical documentation thành thạo.
+
+KINH NGHIỆM LÀM VIỆC
+
+Senior iOS Developer\
+Công ty Giải pháp Y tế An Tâm\
+05/2023 – 10/2026 (3 năm 5 tháng)
+
+- Đảm nhiệm vai trò kỹ thuật chính trong quá trình phát triển và duy trì healthcare application, tham gia xử lý các quyết định kỹ thuật liên quan đến phần iOS.
+- Phát triển tính năng bằng Swift, SwiftUI, Combine và Swift Concurrency; sử dụng MVVM-C để tổ chức các thành phần và luồng điều hướng ứng dụng.
+- Tham gia migration một phần codebase từ Objective-C sang Swift, đồng thời thực hiện Code Review và hỗ trợ junior developers trong quá trình triển khai.
+- Quản lý release workflow với Fastlane, App Store Connect và thực hiện kiểm thử bằng XCTest, XCUITest trước các đợt phát hành.
+
+iOS Developer\
+Công ty Công nghệ Bảo hiểm Đông Phương\
+05/2020 – 05/2023 (3 năm)
+
+- Tham gia phát triển các chức năng iOS cho sản phẩm bảo hiểm và ứng dụng tiện ích sử dụng Swift, Objective-C.
+- Làm việc với Core Data để lưu trữ dữ liệu, APNs cho notifications và Keychain Services trong các chức năng cần lưu trữ thông tin an toàn.
+- Sử dụng Instruments để phân tích hoạt động ứng dụng, Swift Package Manager để quản lý package và tham gia kiểm thử trước khi phát hành.
+
+DỰ ÁN
+
+Healthcare Mobile Application
+
+Vai trò: Senior iOS Developer / Technical Owner.
+
+Tech stack: Swift, SwiftUI, Combine, Swift Concurrency, MVVM-C, Core Data, XCTest, XCUITest, Fastlane.
+
+Phụ trách phần kỹ thuật iOS của ứng dụng, tham gia code migration, duy trì chất lượng source code, mentoring junior developers và điều phối các công việc liên quan đến app release.
+
+\=== CV: MOB_SEN_01 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Phạm Quốc Huy\
+Email: [phamquochuy@example.com](mailto:phamquochuy@example.com)\
+Địa chỉ: Hà Nội
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có hơn 7 năm kinh nghiệm phát triển ứng dụng Android native, tập trung vào các sản phẩm ngân hàng số, fintech và dịch vụ tiêu dùng. Trong quá trình làm việc, tôi phát triển từ lập trình viên triển khai tính năng đến vị trí phụ trách kỹ thuật một nhóm gồm 5 thành viên.
+
+Thế mạnh của tôi là Kotlin, Jetpack Compose, thiết kế kiến trúc Android theo hướng Multi-module và cải thiện chất lượng ứng dụng thông qua kiểm thử, tối ưu quy trình build và theo dõi lỗi. Tôi mong muốn tiếp tục phát triển theo hướng chuyên sâu về kiến trúc Android, đồng thời tham gia định hướng kỹ thuật và hỗ trợ các thành viên trong nhóm.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học – Ngành Kỹ thuật phần mềm\
+Hệ đào tạo: Chính quy, trường đại học công lập.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ lập trình: Kotlin nâng cao.
+- Android Framework: Jetpack Compose, Android Jetpack.
+- Architecture: Clean Architecture, Multi-module Architecture.
+- Asynchronous Programming: Coroutines, Flow.
+- Dependency Injection: Hilt.
+- Build System: Gradle Build Optimization.
+- Testing: Espresso Testing.
+- CI/CD: GitHub Actions.
+- Monitoring và Performance: Firebase Crashlytics, Performance Profiling.
+- API: RESTful API Design.
+- Release: Android App Bundle.
+- Engineering Practices: Technical Mentoring, Code Review.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm phụ trách kỹ thuật nhóm 5 lập trình viên.
+- Hướng dẫn thành viên trong nhóm thông qua Technical Mentoring và Code Review.
+- Giao tiếp công việc bằng tiếng Anh tốt, đọc viết tài liệu kỹ thuật thành thạo.
+- Tiếng Nhật trình độ sơ cấp N5.
+
+KINH NGHIỆM LÀM VIỆC
+
+Senior Android Developer / Technical Lead\
+Công ty Công nghệ Tài chính Hưng Thịnh\
+08/2022 – 10/2026 (4 năm 2 tháng)
+
+- Phụ trách kỹ thuật nhóm 5 người phát triển ứng dụng Android trong lĩnh vực tài chính, tham gia định hướng triển khai tính năng và review code.
+- Tham gia thiết kế Multi-module Architecture kết hợp Clean Architecture, tổ chức các thành phần ứng dụng để hỗ trợ bảo trì và mở rộng chức năng.
+- Phát triển các tính năng bằng Kotlin, Jetpack Compose, Coroutines và Flow; sử dụng Hilt để quản lý dependency giữa các thành phần.
+- Tham gia cải thiện độ ổn định ứng dụng thông qua Firebase Crashlytics, Performance Profiling, Espresso Testing và tối ưu quá trình build bằng Gradle.
+
+Android Developer\
+Công ty Giải pháp Di động Thành Công\
+08/2019 – 08/2022 (3 năm)
+
+- Phát triển và bảo trì các chức năng Android cho ứng dụng dịch vụ tiêu dùng, sử dụng Kotlin và Android Jetpack.
+- Tham gia xây dựng các luồng xử lý dữ liệu, kết nối dịch vụ theo thiết kế RESTful API và triển khai các chức năng bất đồng bộ.
+- Sử dụng GitHub Actions trong quy trình CI/CD, tham gia kiểm thử bằng Espresso và đóng gói phiên bản Android App Bundle.
+
+DỰ ÁN
+
+Ứng dụng ngân hàng số
+
+Vai trò: Senior Android Developer / Technical Lead.
+
+Công nghệ: Kotlin, Jetpack Compose, Clean Architecture, Multi-module Architecture, Coroutines, Flow, Hilt, Firebase Crashlytics, GitHub Actions.
+
+Tham gia thiết kế cấu trúc module, phát triển tính năng và cải thiện độ ổn định của ứng dụng tài chính. Đồng thời phụ trách Code Review, Technical Mentoring và hỗ trợ nhóm duy trì chất lượng mã nguồn trong quá trình phát triển.

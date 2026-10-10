@@ -1,0 +1,39 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có khoảng 3,4 năm kinh nghiệm làm việc trong lĩnh vực quản trị hệ thống Windows Server, chủ yếu tại môi trường doanh nghiệp sản xuất. Trong quá trình làm việc, tôi tập trung vào việc duy trì hoạt động ổn định của hệ thống máy chủ, quản lý tài khoản người dùng, phân quyền tài nguyên và xử lý các yêu cầu kỹ thuật phát sinh hằng ngày. Tôi mong muốn tiếp tục phát triển chuyên môn về quản trị hạ tầng Microsoft, nâng cao khả năng tự động hóa công việc và tham gia nhiều hơn vào các hoạt động nâng cấp hệ thống.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học ngành Công nghệ thông tin tại một trường đại học dân lập.
+
+Kiến thức chuyên ngành tập trung vào nền tảng hệ thống máy tính, phục vụ công việc quản trị và vận hành hạ tầng CNTT doanh nghiệp.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Windows Server 2019/2022: Cài đặt, cấu hình và quản trị hệ thống máy chủ Windows.
+- Active Directory Domain Services: Quản lý tài khoản, nhóm người dùng và các thành phần domain.
+- Group Policy Management: Thiết lập và quản lý chính sách cho máy tính, người dùng.
+- Windows DNS, DHCP Server: Quản lý dịch vụ phân giải tên và cấp phát địa chỉ IP.
+- Hyper-V Virtualization: Quản lý máy ảo và tài nguyên ảo hóa.
+- File Server, NTFS Permissions: Tổ chức dữ liệu và phân quyền truy cập.
+- Windows Server Backup, Veeam Backup cơ bản: Thực hiện các tác vụ sao lưu dữ liệu.
+- PowerShell Automation, WSUS và Remote Desktop Services.
+- Microsoft 365 Administration cơ bản và quản lý tài sản CNTT.
+
+KỸ NĂNG MỀM
+
+- Tiếp nhận, phân tích và xử lý yêu cầu hỗ trợ từ người dùng nội bộ.
+- Phối hợp với các bộ phận trong quá trình bảo trì hệ thống.
+- Có khả năng sắp xếp công việc vận hành và xử lý sự cố theo mức độ ưu tiên.
+- Tiếng Anh B1, đọc hiểu tài liệu Microsoft và trao đổi kỹ thuật cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Sản xuất Minh Phát
+Windows System Administrator
+05/2023 - 10/2026 (3 năm 5 tháng)
+
+- Quản trị hệ thống Windows Server 2019/2022, duy trì hoạt động của Active Directory, DNS và DHCP, xử lý các sự cố liên quan đến tài khoản domain và kết nối dịch vụ nội bộ.
+- Quản lý Group Policy, File Server và NTFS Permissions; điều chỉnh quyền truy cập theo yêu cầu của từng bộ phận, giúp tài nguyên dùng chung được quản lý rõ ràng hơn.
+- Vận hành máy ảo Hyper-V, thực hiện sao lưu bằng Windows Server Backup và hỗ trợ các tác vụ Veeam Backup; kiểm tra tình trạng hệ thống trong quá trình bảo trì.
+- Sử dụng PowerShell cho các tác vụ quản trị lặp lại, hỗ trợ Windows Server Update Services, Remote Desktop Services, Microsoft 365 và cập nhật thông tin tài sản CNTT.

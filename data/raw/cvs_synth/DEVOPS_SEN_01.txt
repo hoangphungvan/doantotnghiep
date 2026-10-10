@@ -1,0 +1,49 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 7 năm 6 tháng kinh nghiệm trong lĩnh vực DevOps và Site Reliability Engineering, chủ yếu làm việc với các hệ thống giao dịch và nền tảng dịch vụ trực tuyến có yêu cầu cao về tính sẵn sàng. Tôi định hướng phát triển chuyên sâu về reliability engineering, tự động hóa hạ tầng và quản lý chất lượng vận hành hệ thống. Mong muốn tiếp tục tham gia thiết kế các nền tảng có khả năng mở rộng và xây dựng quy trình ứng phó sự cố hiệu quả.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học chuyên ngành Khoa học máy tính tại một trường đại học kỹ thuật công lập ở Hà Nội.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Cloud & Container Orchestration: Amazon EKS, Kubernetes.
+- Infrastructure as Code: Terraform, Terragrunt.
+- GitOps & Configuration: FluxCD, Kustomize.
+- Service Mesh: Istio Service Mesh.
+- Observability: Prometheus, Grafana Loki, OpenTelemetry.
+- Automation & Operating System: Go, Linux.
+- AWS Services: AWS Route 53, AWS IAM.
+- Reliability Engineering: SLO, Error Budget, Incident Response.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm dẫn dắt nhóm kỹ thuật nhỏ và phân chia công việc cải thiện độ tin cậy hệ thống.
+- Khả năng phân tích sự cố, phối hợp xử lý vấn đề trong môi trường vận hành có yêu cầu sẵn sàng cao.
+- Chủ động trao đổi và thống nhất phương án kỹ thuật với các thành viên liên quan.
+- Tiếng Anh C1, có thể chủ trì họp kỹ thuật và viết tài liệu thiết kế bằng tiếng Anh.
+
+KINH NGHIỆM LÀM VIỆC
+
+Senior Site Reliability Engineer – Công ty Công nghệ Thanh toán Đông Dương
+04/2022 – 10/2026 (4 năm 6 tháng)
+
+- Tham gia vận hành hệ thống giao dịch trên Amazon EKS và Kubernetes, tập trung duy trì độ tin cậy và khả năng phục hồi dịch vụ.
+- Dẫn dắt nhóm kỹ thuật nhỏ trong việc cải tiến quy trình triển khai tự động bằng Terraform, Terragrunt và FluxCD.
+- Thiết lập các chỉ số SLO, theo dõi Error Budget và phối hợp thực hiện Incident Response khi xảy ra sự cố.
+- Sử dụng Prometheus, Grafana Loki và OpenTelemetry để tăng khả năng quan sát, hỗ trợ phân tích nguyên nhân sự cố.
+
+DevOps Engineer – Công ty Nền tảng Số Minh Long
+04/2019 – 04/2022 (3 năm)
+
+- Triển khai và quản lý các ứng dụng trên Kubernetes, sử dụng Linux làm môi trường vận hành chính.
+- Xây dựng cấu hình hạ tầng với Terraform và quản lý cấu hình ứng dụng bằng Kustomize.
+- Tham gia cấu hình AWS IAM, AWS Route 53 và sử dụng Go để phát triển các tiện ích phục vụ tự động hóa vận hành.
+- Hỗ trợ triển khai Istio Service Mesh nhằm quản lý giao tiếp giữa các dịch vụ trong hệ thống.
+
+DỰ ÁN
+
+Nâng cao độ tin cậy nền tảng giao dịch điện tử
+
+Tham gia cải tiến kiến trúc vận hành cho hệ thống giao dịch có yêu cầu sẵn sàng cao trên Amazon EKS. Áp dụng GitOps với FluxCD, sử dụng Terraform và Terragrunt để quản lý hạ tầng. Đồng thời xây dựng cách theo dõi SLO, Error Budget và quy trình Incident Response để nhóm kỹ thuật có cơ sở đánh giá chất lượng dịch vụ và xử lý sự cố nhất quán hơn.

@@ -1,0 +1,180 @@
+Dựa trên các hồ sơ JSON bên dưới, hãy viết CV dạng văn bản thuần như một ứng viên Việt Nam thật sự tự viết. Mỗi hồ sơ viết thành một CV.
+
+Quy tắc:
+- Cấu trúc: THÔNG TIN LIÊN HỆ (tên hư cấu, email dạng ten@example.com, thành phố), MỤC TIÊU NGHỀ NGHIỆP, HỌC VẤN, KỸ NĂNG CHUYÊN MÔN, KỸ NĂNG MỀM, KINH NGHIỆM LÀM VIỆC (công ty hư cấu hoặc phổ biến, thời gian, 2-4 gạch đầu dòng mô tả việc làm có kết quả cụ thể), DỰ ÁN (nếu có), CHỨNG CHỈ (nếu có).
+- Độ dài 250-450 từ. Văn phong theo trường cv_style. Giữ thuật ngữ kỹ thuật bằng tiếng Anh như CV Việt Nam thật.
+- CHỈ dùng thông tin trong hồ sơ. Không bịa thêm kỹ năng ngoài core_skills và secondary_skills.
+- known_gaps: KHÔNG nhắc tới các kỹ năng này, cũng không viết "chưa biết".
+- Tổng thời gian các công việc phải khớp years_experience.
+- KHÔNG ghi CV phù hợp vị trí nào, không nhắc tới tin tuyển dụng, không thêm nhận xét của AI.
+
+Mỗi CV bắt đầu bằng đúng một dòng:
+=== CV: <profile_id> ===
+rồi tới nội dung CV. Không có lời dẫn hay kết luận.
+
+HỒ SƠ:
+[
+  {
+    "profile_id": "QA_MID_02",
+    "role_family": "QA/Tester",
+    "target_title": "Middle Manual QA Engineer",
+    "seniority": "Middle",
+    "years_experience": 3.4,
+    "education": "Đại học, ngành Hệ thống thông tin quản lý, trường đại học tư thục",
+    "core_skills": [
+      "Manual Testing",
+      "Regression Testing",
+      "Functional Testing",
+      "Integration Testing cơ bản",
+      "Test Case Execution",
+      "Jira",
+      "Zephyr",
+      "SQL Query cơ bản",
+      "Defect Lifecycle Management"
+    ],
+    "secondary_skills": [
+      "Confluence",
+      "Microsoft Excel",
+      "UAT Support",
+      "Requirement Review cơ bản",
+      "Kiểm tra dữ liệu giao dịch"
+    ],
+    "known_gaps": [
+      "Chưa biết xây dựng script Automation Testing",
+      "Chưa có kinh nghiệm kiểm thử bảo mật hoặc hiệu năng",
+      "Kỹ năng thiết kế Test Strategy còn yếu"
+    ],
+    "languages": [
+      "Tiếng Anh B1, chủ yếu đọc tài liệu và viết báo cáo lỗi"
+    ],
+    "industries": [
+      "Ngân hàng số",
+      "Thanh toán điện tử"
+    ],
+    "career_note": "Có hơn 3 năm làm kiểm thử thủ công cho các màn hình giao dịch trong dự án tài chính nhưng phần lớn thời gian thực thi bộ regression test có sẵn, ít tham gia thiết kế kiểm thử và ra quyết định kỹ thuật.",
+    "cv_style": "có lỗi chính tả nhẹ"
+  },
+  {
+    "profile_id": "QA_MID_01",
+    "role_family": "QA/Tester",
+    "target_title": "Middle Automation Tester",
+    "seniority": "Middle",
+    "years_experience": 3.6,
+    "education": "Đại học, ngành Kỹ thuật phần mềm, trường đại học công lập",
+    "core_skills": [
+      "Automation Testing",
+      "Playwright",
+      "TypeScript",
+      "JavaScript",
+      "Page Object Model",
+      "End-to-End Testing",
+      "Cross-browser Testing",
+      "Jenkins CI",
+      "Git"
+    ],
+    "secondary_skills": [
+      "PostgreSQL",
+      "Allure Report",
+      "Docker cơ bản",
+      "Agile/Scrum",
+      "Test Data Management"
+    ],
+    "known_gaps": [
+      "Chưa có nhiều kinh nghiệm Performance Testing",
+      "Chưa trực tiếp thiết kế chiến lược kiểm thử cho hệ thống phân tán lớn",
+      "Kinh nghiệm quản lý và hướng dẫn tester khác còn ít"
+    ],
+    "languages": [
+      "Tiếng Anh B2, đọc tài liệu kỹ thuật và trao đổi công việc với nhóm quốc tế"
+    ],
+    "industries": [
+      "SaaS",
+      "Quản lý nhân sự",
+      "Phần mềm doanh nghiệp"
+    ],
+    "career_note": "Phát triển từ Manual Tester lên Automation Tester, có kinh nghiệm xây dựng và duy trì bộ kiểm thử giao diện tự động cho sản phẩm SaaS nhưng chủ yếu phụ trách phạm vi một nhóm chức năng.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "QA_SEN_01",
+    "role_family": "QA/Tester",
+    "target_title": "Senior Manual QA Engineer",
+    "seniority": "Senior",
+    "years_experience": 5.7,
+    "education": "Đại học, ngành Công nghệ thông tin, trường đại học công lập",
+    "core_skills": [
+      "Manual Testing nâng cao",
+      "Test Planning",
+      "Test Case Review",
+      "Risk-based Testing",
+      "System Integration Testing",
+      "UAT Coordination",
+      "Defect Triage",
+      "HP ALM/Quality Center",
+      "Oracle SQL"
+    ],
+    "secondary_skills": [
+      "Requirement Traceability Matrix",
+      "TestRail",
+      "Release Verification",
+      "Root Cause Analysis cơ bản",
+      "Hướng dẫn Fresher Tester"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm Automation Testing thực tế",
+      "Chưa quen với các nền tảng CI/CD hiện đại",
+      "Kinh nghiệm xây dựng quy trình QA cấp tổ chức còn hạn chế"
+    ],
+    "languages": [
+      "Tiếng Anh B1-B2, đọc tài liệu nghiệp vụ và trao đổi với khách hàng qua email"
+    ],
+    "industries": [
+      "Bảo hiểm",
+      "Hệ thống quản lý doanh nghiệp"
+    ],
+    "career_note": "Có 5,7 năm kinh nghiệm kiểm thử hệ thống bảo hiểm trong môi trường outsourcing, từng hướng dẫn tester mới và phối hợp UAT nhưng chủ yếu làm việc với quy trình kiểm thử truyền thống và một hệ thống nghiệp vụ cố định.",
+    "cv_style": "dài dòng"
+  },
+  {
+    "profile_id": "QA_SEN_02",
+    "role_family": "QA/Tester",
+    "target_title": "Senior QA Automation Engineer",
+    "seniority": "Senior",
+    "years_experience": 6.8,
+    "education": "Đại học, ngành Khoa học máy tính, trường đại học kỹ thuật",
+    "core_skills": [
+      "QA Automation Framework Design",
+      "Cypress",
+      "TypeScript",
+      "API Automation Testing",
+      "Contract Testing với Pact",
+      "GitHub Actions",
+      "CI/CD Test Integration",
+      "Test Architecture",
+      "Quality Engineering"
+    ],
+    "secondary_skills": [
+      "Node.js",
+      "OWASP ZAP cơ bản",
+      "MongoDB",
+      "Mentoring QA Engineers",
+      "Code Review",
+      "Shift-left Testing"
+    ],
+    "known_gaps": [
+      "Chưa có nhiều kinh nghiệm kiểm thử ứng dụng mobile native",
+      "Chưa trực tiếp triển khai hệ thống kiểm thử hiệu năng quy mô lớn",
+      "Chưa có chứng chỉ chuyên sâu về kiểm thử bảo mật"
+    ],
+    "languages": [
+      "Tiếng Anh B2-C1, giao tiếp kỹ thuật tốt và tham gia họp với khách hàng quốc tế"
+    ],
+    "industries": [
+      "Thương mại điện tử",
+      "Nền tảng đặt dịch vụ trực tuyến",
+      "SaaS"
+    ],
+    "career_note": "Chuyển từ lập trình Frontend sang QA Automation, sau đó tích lũy 6,8 năm kinh nghiệm chuyên sâu về kiểm thử, từng thiết kế framework tự động hóa và hướng dẫn nhóm QA nhỏ trong môi trường phát triển Agile.",
+    "cv_style": "chuẩn"
+  }
+]

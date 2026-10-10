@@ -1,0 +1,29 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 5,8 năm kinh nghiệm frontend, phát triển từ React Developer lên Senior Developer. Tôi tập trung vào thiết kế kiến trúc giao diện, xây dựng ứng dụng Next.js và cải thiện trải nghiệm người dùng thông qua tối ưu hiệu năng. Định hướng của tôi là tiếp tục phát triển hệ thống frontend có cấu trúc rõ ràng, hỗ trợ đội ngũ duy trì chất lượng kỹ thuật và chia sẻ kinh nghiệm cho các lập trình viên khác.
+
+HỌC VẤN
+
+Tốt nghiệp đại học ngành Kỹ thuật phần mềm tại một trường đại học kỹ thuật công lập. Tôi áp dụng nền tảng này vào việc phân tách chức năng, tổ chức mã nguồn và đánh giá những quyết định thiết kế trên frontend.
+
+KỸ NĂNG CHUYÊN MÔN
+
+JavaScript nâng cao, TypeScript, ReactJS, Next.js, Redux Toolkit, TanStack Query, Server-Side Rendering, Frontend Performance Optimization, Frontend Architecture và Jest. Công cụ và kỹ năng bổ trợ gồm Tailwind CSS, Storybook, Cypress, Docker, GitHub Actions và Technical Mentoring.
+
+KỸ NĂNG MỀM
+
+Có kinh nghiệm review code, hướng dẫn nhóm 4 lập trình viên và trao đổi về phương án triển khai. Tiếng Anh B2, có thể giao tiếp với khách hàng quốc tế và xem xét tài liệu kỹ thuật bằng tiếng Anh.
+
+KINH NGHIỆM LÀM VIỆC
+
+React Developer → Senior Frontend Developer – Công ty Cổ phần Nền tảng Số Hải Đăng
+12/2020 – 10/2026 (5 năm 10 tháng)
+
+- Phát triển các giao diện ReactJS cho sản phẩm thương mại điện tử, SaaS và nền tảng nội dung số; về sau đảm nhận phần kiến trúc frontend trên Next.js.
+- Thiết kế cấu trúc ứng dụng, tổ chức quản lý trạng thái bằng Redux Toolkit và dữ liệu bằng TanStack Query để các module có cách triển khai thống nhất.
+- Triển khai Server-Side Rendering và tối ưu Core Web Vitals, tập trung cải thiện hiệu năng tải trang và trải nghiệm sử dụng.
+- Review code và hướng dẫn nhóm 4 lập trình viên; sử dụng Jest, Storybook, Cypress và GitHub Actions để hỗ trợ quy trình phát triển, kiểm tra giao diện.
+
+DỰ ÁN
+
+Nền tảng giao diện Next.js: Phụ trách định hướng kiến trúc frontend, các hạng mục tối ưu hiệu năng và phối hợp kiểm tra chất lượng giao diện. Dùng Docker trong hoạt động phát triển và đóng gói ứng dụng.

@@ -1,0 +1,43 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Có 1,5 năm kinh nghiệm vận hành mạng tại nhà cung cấp dịch vụ Internet. Công việc chính là giám sát hệ thống, tiếp nhận cảnh báo và phối hợp xử lý sự cố kết nối theo ca. Mong muốn tiếp tục phát triển trong lĩnh vực Network Operations, tập trung vào khả năng phân tích cảnh báo, theo dõi chất lượng kết nối và cải thiện hiệu quả xử lý sự cố trong hệ thống mạng.
+
+HỌC VẤN
+
+Đại học kỹ thuật
+Ngành: Điện tử Viễn thông
+Trình độ: Đại học
+
+Có nền tảng kiến thức về mạng viễn thông và hoạt động của thiết bị mạng, được áp dụng trong công việc giám sát hệ thống tại trung tâm NOC.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Zabbix: Theo dõi trạng thái và cảnh báo của các thiết bị mạng.
+- SNMP monitoring: Giám sát các thông số vận hành mạng.
+- Network troubleshooting: Kiểm tra trạng thái router, switch và xử lý bước đầu các cảnh báo mất kết nối.
+- Log analysis: Đọc và phân tích log thiết bị mạng ở mức cơ bản.
+- Network performance: Kiểm tra độ trễ và packet loss.
+- Incident Management: Quản lý ticket sự cố theo quy trình NOC và ITIL Incident Management.
+- Grafana: Theo dõi thông tin vận hành qua dashboard.
+- MikroTik RouterOS: Có kiến thức thao tác cơ bản.
+- Excel: Tổng hợp dữ liệu và lập báo cáo vận hành.
+
+KỸ NĂNG MỀM
+
+- Quen làm việc theo ca và phối hợp chuyển tiếp sự cố giữa các ca trực.
+- Có khả năng ghi nhận thông tin sự cố rõ ràng trong ticket.
+- Tiếng Anh B1, đọc hiểu log và tài liệu thiết bị mạng.
+- Biết tổng hợp tình trạng vận hành và báo cáo các vấn đề phát sinh.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty Cổ phần Dịch vụ Internet An Việt
+Vị trí: Network Operations Engineer – NOC
+Thời gian: 04/2025 – 09/2026 (1 năm 6 tháng)
+
+- Giám sát trạng thái hệ thống mạng bằng Zabbix và SNMP, kiểm tra các cảnh báo liên quan đến router, switch và kết nối mạng trong ca trực.
+- Tiếp nhận các cảnh báo mất kết nối, kiểm tra độ trễ và packet loss, ghi nhận thông tin để xác định tình trạng sự cố ban đầu.
+- Tạo, cập nhật và chuyển tiếp ticket tới bộ phận phụ trách theo quy trình NOC, duy trì thông tin cần thiết để theo dõi tiến độ xử lý.
+- Theo dõi Grafana dashboard, kiểm tra log thiết bị khi cần và tổng hợp báo cáo vận hành bằng Excel phục vụ công tác bàn giao ca.
+
+Kinh nghiệm tập trung vào giám sát, phân loại sự cố và phối hợp vận hành hệ thống mạng của nhà cung cấp dịch vụ Internet.

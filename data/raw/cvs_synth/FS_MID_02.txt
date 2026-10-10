@@ -1,0 +1,51 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi đã có gần 4 năm làm việc trong lĩnh vực phát triển phần mềm doanh nghiệp, chủ yếu tham gia xây dựng các hệ thống quản lý bán hàng, kho hàng và đơn hàng. Công nghệ tôi sử dụng thường xuyên là Java, Spring Boot, Vue.js 2 và MySQL. Trong quá trình làm việc, tôi đã có cơ hội tham gia phát triển nhiều module nghiệp vụ, từ việc xử lý dữ liệu phía Backend đến xây dựng giao diện phục vụ người sử dụng.
+
+Tôi mong muốn tiếp tục phát triển chuyên môn Fullstack, đặc biệt là xây dựng ứng dụng quản lý doanh nghiệp có quy trình nghiệp vụ rõ ràng, ổn định và thuận tiện cho việc bảo trì lâu dài.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học chuyên ngành Công nghệ thông tin tại một trường đại học tư thục.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Backend: Java, Spring Boot, Spring Data JPA, Spring Security cơ bản.
+- Frontend: Vue.js 2, JavaScript, Element UI.
+- Database: MySQL.
+- API: RESTful API, Postman.
+- Công cụ phát triển: Maven, Git, Jenkins cơ bản.
+- Testing: JUnit cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có khả năng chủ động triển khai và hoàn thiện các tính năng nghiệp vụ được giao.
+- Có kinh nghiệm trao đổi yêu cầu và phối hợp trong quá trình phát triển phần mềm doanh nghiệp.
+- Đọc hiểu tốt tài liệu kỹ thuật tiếng Anh, trình độ B1.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Enterprise Solutions Việt Nam
+Fullstack Developer | 05/2024 - 10/2026
+
+- Tham gia phát triển và bảo trì hệ thống quản lý đơn hàng, kho hàng và báo cáo phục vụ hoạt động của doanh nghiệp.
+- Sử dụng Java, Spring Boot, Spring Data JPA và MySQL để xây dựng chức năng xử lý nghiệp vụ, truy vấn và cập nhật dữ liệu.
+- Xây dựng giao diện quản lý bằng Vue.js 2 kết hợp Element UI, tích hợp RESTful API giữa Frontend và Backend.
+- Đảm nhận độc lập nhiều module quản lý đơn hàng và báo cáo, hoàn thiện các chức năng theo yêu cầu sử dụng thực tế.
+
+Công ty CP Mekong Software
+Java Developer | 11/2022 - 05/2024
+
+- Tham gia phát triển các chức năng Backend cho phần mềm quản lý bán hàng và logistics bằng Java, Spring Boot.
+- Xây dựng RESTful API phục vụ thao tác dữ liệu đơn hàng và quản lý thông tin kho.
+- Sử dụng Maven để quản lý dự án, Postman để kiểm tra API và Git để quản lý mã nguồn.
+
+DỰ ÁN
+
+Hệ thống quản lý kho và đơn hàng doanh nghiệp
+
+Dự án tập trung vào việc quản lý thông tin hàng hóa, đơn hàng và báo cáo nghiệp vụ. Tôi tham gia cả phần Backend bằng Spring Boot, MySQL và phần giao diện Vue.js 2. Công việc chính là xây dựng chức năng, tích hợp API và xử lý các yêu cầu thay đổi trong quá trình sử dụng.
+
+NGOẠI NGỮ
+
+Tiếng Anh B1, đọc tài liệu kỹ thuật tốt, giao tiếp ở mức cơ bản.

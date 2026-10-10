@@ -1,0 +1,186 @@
+Dựa trên các hồ sơ JSON bên dưới, hãy viết CV dạng văn bản thuần như một ứng viên Việt Nam thật sự tự viết. Mỗi hồ sơ viết thành một CV.
+
+Quy tắc:
+- Cấu trúc: THÔNG TIN LIÊN HỆ (tên hư cấu, email dạng ten@example.com, thành phố), MỤC TIÊU NGHỀ NGHIỆP, HỌC VẤN, KỸ NĂNG CHUYÊN MÔN, KỸ NĂNG MỀM, KINH NGHIỆM LÀM VIỆC (công ty hư cấu hoặc phổ biến, thời gian, 2-4 gạch đầu dòng mô tả việc làm có kết quả cụ thể), DỰ ÁN (nếu có), CHỨNG CHỈ (nếu có).
+- Độ dài 250-450 từ. Văn phong theo trường cv_style. Giữ thuật ngữ kỹ thuật bằng tiếng Anh như CV Việt Nam thật.
+- CHỈ dùng thông tin trong hồ sơ. Không bịa thêm kỹ năng ngoài core_skills và secondary_skills.
+- known_gaps: KHÔNG nhắc tới các kỹ năng này, cũng không viết "chưa biết".
+- Tổng thời gian các công việc phải khớp years_experience.
+- KHÔNG ghi CV phù hợp vị trí nào, không nhắc tới tin tuyển dụng, không thêm nhận xét của AI.
+
+Mỗi CV bắt đầu bằng đúng một dòng:
+=== CV: <profile_id> ===
+rồi tới nội dung CV. Không có lời dẫn hay kết luận.
+
+HỒ SƠ:
+[
+  {
+    "profile_id": "DE_MID_01",
+    "role_family": "Data Engineer/ML-AI",
+    "target_title": "Middle Data Engineer",
+    "seniority": "Middle",
+    "years_experience": 3.7,
+    "education": "Đại học, ngành Hệ thống thông tin quản lý, trường đại học công lập khối kinh tế",
+    "core_skills": [
+      "SQL Server",
+      "T-SQL",
+      "SSIS",
+      "Azure Data Factory",
+      "Azure SQL Database",
+      "Databricks",
+      "PySpark",
+      "Data Warehouse",
+      "Dimensional Modeling",
+      "ETL Optimization"
+    ],
+    "secondary_skills": [
+      "Power BI",
+      "DAX",
+      "Python",
+      "Azure DevOps",
+      "Git"
+    ],
+    "known_gaps": [
+      "Chưa có nhiều kinh nghiệm xử lý dữ liệu streaming",
+      "Chưa thành thạo Infrastructure as Code bằng Terraform",
+      "Chưa có kinh nghiệm vận hành hạ tầng dữ liệu multi-cloud"
+    ],
+    "languages": [
+      "Tiếng Anh B2, có thể họp kỹ thuật và viết tài liệu bằng tiếng Anh"
+    ],
+    "industries": [
+      "Logistics",
+      "Tài chính doanh nghiệp"
+    ],
+    "career_note": "Khởi đầu với 1 năm 6 tháng làm BI Analyst chuyên báo cáo và mô hình hóa dữ liệu, sau đó chuyển sang Data Engineering trong 2 năm 2 tháng để xây dựng Data Warehouse và pipeline ETL trên Azure.",
+    "cv_style": "dài dòng"
+  },
+  {
+    "profile_id": "DE_MID_02",
+    "role_family": "Data Engineer/ML-AI",
+    "target_title": "Middle Machine Learning Engineer",
+    "seniority": "Middle",
+    "years_experience": 3.8,
+    "education": "Thạc sĩ, ngành Khoa học dữ liệu, trường đại học công lập có chương trình sau đại học về CNTT",
+    "core_skills": [
+      "Python",
+      "PyTorch",
+      "Hugging Face Transformers",
+      "Sentence Transformers",
+      "BERT",
+      "FAISS",
+      "Retrieval-Augmented Generation",
+      "Vector Search",
+      "MLflow",
+      "Model Experimentation"
+    ],
+    "secondary_skills": [
+      "FastAPI",
+      "Google Colab",
+      "Git",
+      "Docker cơ bản",
+      "Gradio"
+    ],
+    "known_gaps": [
+      "Chưa từng chịu trách nhiệm chính cho hệ thống AI production phục vụ số lượng lớn người dùng",
+      "Chưa có kinh nghiệm đáng kể với Kubernetes và autoscaling cho model serving",
+      "Chưa xây dựng hệ thống giám sát model drift và chất lượng dự đoán liên tục"
+    ],
+    "languages": [
+      "Tiếng Anh C1, đọc viết tài liệu nghiên cứu tốt và có thể trình bày kết quả kỹ thuật"
+    ],
+    "industries": [
+      "Giáo dục công nghệ",
+      "Nghiên cứu và phát triển AI",
+      "Xử lý tài liệu tiếng Việt"
+    ],
+    "career_note": "Có gần 4 năm làm Machine Learning Engineer trong nhóm R&D, tập trung vào thử nghiệm mô hình ngôn ngữ, tìm kiếm ngữ nghĩa và prototype RAG cho tài liệu tiếng Việt nhưng ít trải nghiệm vận hành sản phẩm thương mại quy mô lớn.",
+    "cv_style": "lẫn Anh-Việt"
+  },
+  {
+    "profile_id": "DE_SEN_01",
+    "role_family": "Data Engineer/ML-AI",
+    "target_title": "Senior Big Data Engineer",
+    "seniority": "Senior",
+    "years_experience": 6.5,
+    "education": "Đại học, ngành Kỹ thuật phần mềm, trường đại học kỹ thuật công lập",
+    "core_skills": [
+      "Scala",
+      "Apache Spark",
+      "Apache Kafka",
+      "Hadoop HDFS",
+      "Apache Hive",
+      "Apache Airflow",
+      "Apache Iceberg",
+      "Trino",
+      "Data Lake Architecture",
+      "Distributed Data Processing"
+    ],
+    "secondary_skills": [
+      "Kubernetes",
+      "Prometheus",
+      "GitLab CI/CD",
+      "Great Expectations",
+      "S3-compatible Object Storage",
+      "Linux"
+    ],
+    "known_gaps": [
+      "Chưa có nhiều kinh nghiệm vận hành các nền tảng cloud data warehouse được quản lý hoàn toàn như Snowflake",
+      "Chưa trực tiếp thiết kế hạ tầng huấn luyện mô hình deep learning phân tán"
+    ],
+    "languages": [
+      "Tiếng Anh B2, giao tiếp kỹ thuật tốt với đối tác quốc tế"
+    ],
+    "industries": [
+      "Ngân hàng",
+      "Viễn thông",
+      "Phân tích dữ liệu giao dịch"
+    ],
+    "career_note": "Có 6 năm 6 tháng phát triển hệ thống dữ liệu doanh nghiệp, tiến từ Data Engineer lên Senior Big Data Engineer, từng dẫn dắt kỹ thuật nhóm nhỏ và chịu trách nhiệm thiết kế pipeline batch và streaming phục vụ phân tích hàng chục triệu bản ghi mỗi ngày.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "DE_SEN_02",
+    "role_family": "Data Engineer/ML-AI",
+    "target_title": "Senior MLOps Engineer",
+    "seniority": "Senior",
+    "years_experience": 7.2,
+    "education": "Đại học, ngành Công nghệ thông tin, trường đại học công lập đào tạo kỹ sư CNTT",
+    "core_skills": [
+      "Python",
+      "Docker",
+      "Kubernetes",
+      "KServe",
+      "MLflow",
+      "Argo Workflows",
+      "Terraform",
+      "AWS SageMaker",
+      "Model Serving",
+      "MLOps CI/CD"
+    ],
+    "secondary_skills": [
+      "GitHub Actions",
+      "Prometheus",
+      "Grafana",
+      "Boto3",
+      "Linux",
+      "Helm"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm chuyên sâu với TPU và huấn luyện mô hình trên phần cứng chuyên dụng",
+      "Chưa từng triển khai Feature Store trực tuyến ở quy mô rất lớn",
+      "Kiến thức về tối ưu kiến trúc mô hình NLP chuyên sâu còn hạn chế"
+    ],
+    "languages": [
+      "Tiếng Anh C1, giao tiếp và trình bày giải pháp kỹ thuật tốt",
+      "Tiếng Hàn TOPIK 2, giao tiếp cơ bản trong môi trường công việc"
+    ],
+    "industries": [
+      "Fintech",
+      "Logistics công nghệ",
+      "Nền tảng AI doanh nghiệp"
+    ],
+    "career_note": "Bắt đầu với 3 năm làm Backend Engineer chuyên phát triển API và vận hành dịch vụ, sau đó chuyển sang MLOps trong 4 năm 2 tháng, phụ trách chuẩn hóa quy trình triển khai mô hình, xây dựng CI/CD và vận hành hạ tầng AI trên AWS.",
+    "cv_style": "có lỗi chính tả nhẹ"
+  }
+]

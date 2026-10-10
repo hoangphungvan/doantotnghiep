@@ -1,0 +1,51 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 2 năm kinh nghiệm trong lĩnh vực IT, bắt đầu từ IT Helpdesk và sau đó chuyển sang SOC Analyst. Quá trình làm Helpdesk giúp tôi quen với việc hỗ trợ người dùng và kiểm tra các vấn đề trên Windows. Khi chuyển sang SOC, tôi tập trung vào security event monitoring, phân tích alert và xử lý các cảnh báo Level 1. Tôi muốn phát triển chuyên môn về Security Operations, đặc biệt là khả năng phân tích IOC và nhận diện những hoạt động đáng ngờ trên endpoint.
+
+HỌC VẤN
+
+Đại học tư thục
+Chuyên ngành: Hệ thống thông tin
+Trình độ: Đại học
+
+Được trang bị kiến thức nền tảng về hệ thống thông tin, sau đó tiếp tục tìm hiểu các công cụ phục vụ công việc giám sát và phân tích sự kiện bảo mật.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- SIEM/Security Monitoring: Sử dụng Wazuh để theo dõi và phân tích security events.
+- Endpoint Security: Microsoft Defender for Endpoint ở mức cơ bản.
+- Windows Logs: Phân tích Windows Event Logs và sử dụng Sysmon để kiểm tra sự kiện trên endpoint.
+- SOC Operations: Tiếp nhận, phân loại và xử lý security alerts ở Level 1.
+- Threat Analysis: Kiểm tra IOC, IP và domain đáng ngờ.
+- Phishing Analysis: Nhận diện các dấu hiệu phishing email.
+- Security Framework: Có kiến thức về MITRE ATT&CK.
+- Tools: VirusTotal và PowerShell cơ bản.
+- Reporting: Viết incident report và tổng hợp thông tin cảnh báo bảo mật.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm giao tiếp và hỗ trợ người dùng từ thời gian làm IT Helpdesk.
+- Biết ghi nhận, phân loại vấn đề và chuyển tiếp thông tin cho bộ phận liên quan.
+- Có khả năng viết báo cáo sự cố ngắn gọn, rõ nội dung.
+- English B1-B2, đọc hiểu security documentation và viết short reports.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Công nghệ Dịch vụ Đông Á
+Vị trí: IT Helpdesk
+Thời gian: 10/2024 – 11/2025 (1 năm 2 tháng)
+
+- Tiếp nhận các yêu cầu IT support từ người dùng và hỗ trợ kiểm tra những vấn đề phát sinh trong quá trình sử dụng máy tính.
+- Sử dụng kiến thức Windows và PowerShell cơ bản để hỗ trợ kiểm tra thông tin hệ thống trong phạm vi công việc.
+- Ghi nhận nội dung yêu cầu, theo dõi tình trạng xử lý và phản hồi thông tin tới người dùng.
+
+Công ty Cổ phần Thương mại Số Minh Long
+Vị trí: SOC Analyst Level 1
+Thời gian: 12/2025 – 09/2026 (10 tháng)
+
+- Monitor security alerts trên Wazuh, thực hiện initial triage và phân loại sự kiện theo quy trình SOC Level 1.
+- Phân tích Windows Event Logs, kiểm tra Sysmon events và thông tin từ Microsoft Defender for Endpoint để tìm hiểu các cảnh báo endpoint.
+- Sử dụng VirusTotal để kiểm tra suspicious IP, domain và IOC; tham khảo MITRE ATT&CK khi phân tích dấu hiệu bất thường.
+- Kiểm tra các phishing email được ghi nhận, tổng hợp kết quả phân tích và viết incident report để chuyển tiếp các trường hợp cần xử lý thêm.
+
+Quá trình chuyển từ Helpdesk sang SOC giúp tôi có thêm kinh nghiệm làm việc với cả người dùng cuối và các công cụ giám sát bảo mật trong môi trường doanh nghiệp.

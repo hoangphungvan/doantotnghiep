@@ -1,0 +1,334 @@
+
+[
+  {
+    "profile_id": "DA_FRE_01",
+    "role_family": "Data Analyst",
+    "target_title": "Fresher Data Analyst",
+    "seniority": "Fresher",
+    "years_experience": 0.5,
+    "education": "Cử nhân Hệ thống thông tin quản lý, đại học công lập",
+    "core_skills": [
+      "Microsoft Excel (PivotTable, VLOOKUP, XLOOKUP)",
+      "SQL cơ bản (SELECT, JOIN, GROUP BY)",
+      "Power BI cơ bản",
+      "Power Query",
+      "Data Cleaning",
+      "Data Visualization",
+      "Descriptive Statistics"
+    ],
+    "secondary_skills": [
+      "Google Sheets",
+      "Python cơ bản",
+      "Microsoft PowerPoint",
+      "Viết báo cáo phân tích",
+      "Git cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm xây dựng pipeline dữ liệu thực tế",
+      "Chưa sử dụng các nền tảng cloud data warehouse",
+      "Chưa thành thạo DAX nâng cao"
+    ],
+    "languages": [
+      "Tiếng Việt - Bản ngữ",
+      "Tiếng Anh - B1, đọc tài liệu kỹ thuật cơ bản"
+    ],
+    "industries": [
+      "Thương mại điện tử",
+      "Bán lẻ"
+    ],
+    "career_note": "Nguyễn Minh Khôi vừa hoàn thành chương trình đại học, có 6 tháng thực tập tại bộ phận phân tích kinh doanh của một doanh nghiệp bán lẻ, chủ yếu làm sạch dữ liệu Excel và hỗ trợ xây dựng dashboard doanh thu.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "DA_FRE_02",
+    "role_family": "Data Analyst",
+    "target_title": "Junior Marketing Data Analyst",
+    "seniority": "Fresher",
+    "years_experience": 0.7,
+    "education": "Cử nhân Thống kê kinh tế, đại học công lập khối kinh tế",
+    "core_skills": [
+      "Google Sheets",
+      "Google BigQuery cơ bản",
+      "Looker Studio",
+      "SQL cơ bản",
+      "Google Analytics 4 cơ bản",
+      "Data Cleaning",
+      "Marketing Funnel Analysis",
+      "Data Visualization"
+    ],
+    "secondary_skills": [
+      "Microsoft Excel",
+      "Google Tag Manager cơ bản",
+      "Python pandas cơ bản",
+      "Canva",
+      "A/B Testing lý thuyết"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm thiết kế và triển khai A/B Testing thực tế",
+      "Chưa thành thạo Python để tự động hóa phân tích",
+      "Chưa có kinh nghiệm xử lý dữ liệu quy mô lớn"
+    ],
+    "languages": [
+      "Tiếng Việt - Bản ngữ",
+      "Tiếng Anh - B2, đọc hiểu tài liệu và giao tiếp công việc"
+    ],
+    "industries": [
+      "Digital Marketing",
+      "Quảng cáo trực tuyến"
+    ],
+    "career_note": "Trần Ngọc Hân có 8 tháng thực tập phân tích hiệu quả chiến dịch quảng cáo tại một agency ở Việt Nam, thường xuyên tổng hợp dữ liệu từ các nền tảng marketing nhưng chưa trực tiếp phụ trách một dự án phân tích độc lập.",
+    "cv_style": "ngắn gọn"
+  },
+  {
+    "profile_id": "DA_JUN_01",
+    "role_family": "Data Analyst",
+    "target_title": "Junior Data Analyst",
+    "seniority": "Junior",
+    "years_experience": 1.6,
+    "education": "Cử nhân Công nghệ thông tin, đại học tư thục",
+    "core_skills": [
+      "PostgreSQL",
+      "SQL (CTE, Window Functions)",
+      "Python pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Metabase",
+      "Exploratory Data Analysis",
+      "Data Quality Validation"
+    ],
+    "secondary_skills": [
+      "Jupyter Notebook",
+      "Microsoft Excel",
+      "Git",
+      "REST API cơ bản",
+      "Basic Statistical Testing"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm triển khai mô hình Machine Learning vào production",
+      "Chưa sử dụng Apache Spark",
+      "Kinh nghiệm thiết kế data warehouse còn hạn chế"
+    ],
+    "languages": [
+      "Tiếng Việt - Bản ngữ",
+      "Tiếng Anh - B1, đọc tài liệu kỹ thuật tốt hơn giao tiếp"
+    ],
+    "industries": [
+      "Logistics",
+      "Giao hàng"
+    ],
+    "career_note": "Lê Hoàng Phúc có hơn 1 năm làm phân tích dữ liệu vận hành giao hàng, đã tự xây dựng các báo cáo về tỷ lệ giao thành công và thời gian giao nhận, đồng thời bắt đầu sử dụng Python thay cho một phần công việc xử lý thủ công.",
+    "cv_style": "lẫn Anh-Việt"
+  },
+  {
+    "profile_id": "DA_JUN_02",
+    "role_family": "Data Analyst",
+    "target_title": "Junior Business Data Analyst",
+    "seniority": "Junior",
+    "years_experience": 1.9,
+    "education": "Cử nhân Quản trị kinh doanh, đại học công lập khối kinh tế",
+    "core_skills": [
+      "Microsoft Excel nâng cao",
+      "Power BI",
+      "SQL Server cơ bản",
+      "Power Query",
+      "Sales Performance Analysis",
+      "KPI Tracking",
+      "DAX cơ bản",
+      "Data Reconciliation"
+    ],
+    "secondary_skills": [
+      "Microsoft PowerPoint",
+      "Google Sheets",
+      "CRM Reporting",
+      "Data Storytelling cơ bản",
+      "Làm việc với phòng kinh doanh"
+    ],
+    "known_gaps": [
+      "SQL chưa đủ vững để tối ưu truy vấn phức tạp",
+      "Chưa sử dụng Python hoặc R trong công việc",
+      "Chưa có kinh nghiệm tự thiết kế mô hình dữ liệu hoàn chỉnh"
+    ],
+    "languages": [
+      "Tiếng Việt - Bản ngữ",
+      "Tiếng Anh - A2-B1, giao tiếp công việc đơn giản"
+    ],
+    "industries": [
+      "Phân phối hàng tiêu dùng",
+      "Bán hàng B2B"
+    ],
+    "career_note": "Phạm Gia Bảo chuyển từ Sales Operations sang phân tích dữ liệu và có 1,9 năm đảm nhiệm công việc báo cáo doanh số, tuy nhiên phần lớn kinh nghiệm vẫn tập trung vào dashboard có sẵn và tổng hợp số liệu theo yêu cầu hơn là phân tích chuyên sâu.",
+    "cv_style": "dài dòng"
+  },
+  {
+    "profile_id": "DA_MID_01",
+    "role_family": "Data Analyst",
+    "target_title": "Middle Data Analyst",
+    "seniority": "Middle",
+    "years_experience": 3.8,
+    "education": "Cử nhân Khoa học dữ liệu, đại học công lập kỹ thuật",
+    "core_skills": [
+      "SQL nâng cao",
+      "Snowflake",
+      "Python pandas",
+      "Tableau",
+      "dbt",
+      "Data Modeling",
+      "Cohort Analysis",
+      "Customer Segmentation",
+      "Statistical Hypothesis Testing",
+      "ETL Data Validation"
+    ],
+    "secondary_skills": [
+      "Git",
+      "Jupyter Notebook",
+      "Scikit-learn cơ bản",
+      "Excel nâng cao",
+      "Agile/Scrum",
+      "Stakeholder Communication"
+    ],
+    "known_gaps": [
+      "Chưa trực tiếp quản trị hạ tầng cloud",
+      "Chưa có kinh nghiệm sâu về real-time analytics"
+    ],
+    "languages": [
+      "Tiếng Việt - Bản ngữ",
+      "Tiếng Anh - B2, có thể trao đổi với nhóm kỹ thuật quốc tế"
+    ],
+    "industries": [
+      "Fintech",
+      "Thanh toán điện tử"
+    ],
+    "career_note": "Vũ Thanh Mai phát triển từ vị trí Junior Data Analyst lên Middle sau gần 4 năm phân tích hành vi giao dịch, từng chịu trách nhiệm xây dựng bộ chỉ số khách hàng và phối hợp với Data Engineer chuẩn hóa dữ liệu phục vụ báo cáo định kỳ.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "DA_MID_02",
+    "role_family": "Data Analyst",
+    "target_title": "Middle Operations Data Analyst",
+    "seniority": "Middle",
+    "years_experience": 3.4,
+    "education": "Cử nhân Kỹ thuật công nghiệp, đại học công lập kỹ thuật",
+    "core_skills": [
+      "MySQL",
+      "Power BI",
+      "DAX",
+      "Power Query M",
+      "Manufacturing KPI Analysis",
+      "Root Cause Analysis",
+      "Process Data Analysis",
+      "Data Cleaning",
+      "Statistical Process Control"
+    ],
+    "secondary_skills": [
+      "Microsoft Excel nâng cao",
+      "Minitab",
+      "ERP Reporting",
+      "Lean Six Sigma cơ bản",
+      "Python cơ bản",
+      "Process Mapping"
+    ],
+    "known_gaps": [
+      "Chưa có nhiều kinh nghiệm xử lý dữ liệu phi cấu trúc",
+      "Chưa sử dụng cloud data warehouse",
+      "Kỹ năng lập trình Python mới ở mức cơ bản"
+    ],
+    "languages": [
+      "Tiếng Việt - Bản ngữ",
+      "Tiếng Anh - B1, đọc báo cáo và trao đổi kỹ thuật cơ bản",
+      "Tiếng Nhật - N4"
+    ],
+    "industries": [
+      "Sản xuất công nghiệp",
+      "Điện tử"
+    ],
+    "career_note": "Đỗ Quang Huy từng làm kỹ sư kiểm soát chất lượng trước khi chuyển sang phân tích dữ liệu sản xuất, đã có 3,4 năm làm Data Analyst chuyên theo dõi tỷ lệ lỗi và hiệu suất dây chuyền nhưng ít tiếp xúc với dữ liệu ngoài lĩnh vực sản xuất.",
+    "cv_style": "có lỗi chính tả nhẹ"
+  },
+  {
+    "profile_id": "DA_SEN_01",
+    "role_family": "Data Analyst",
+    "target_title": "Senior Reporting Data Analyst",
+    "seniority": "Senior",
+    "years_experience": 5.6,
+    "education": "Cử nhân Hệ thống thông tin, đại học công lập",
+    "core_skills": [
+      "Microsoft SQL Server",
+      "T-SQL",
+      "SQL Server Reporting Services (SSRS)",
+      "Microsoft Excel VBA",
+      "Power BI",
+      "DAX",
+      "Enterprise Reporting",
+      "KPI Dashboard Development",
+      "Data Reconciliation",
+      "Reporting Automation"
+    ],
+    "secondary_skills": [
+      "Stored Procedures",
+      "SQL Server Agent",
+      "Microsoft PowerPoint",
+      "Data Governance cơ bản",
+      "Business Requirement Gathering",
+      "Hướng dẫn nhân viên phân tích mới"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm thực tế với các nền tảng cloud analytics hiện đại",
+      "Chưa sử dụng Python cho phân tích dữ liệu",
+      "Ít kinh nghiệm thực hiện phân tích thống kê suy luận hoặc thử nghiệm sản phẩm"
+    ],
+    "languages": [
+      "Tiếng Việt - Bản ngữ",
+      "Tiếng Anh - B1, đọc tài liệu kỹ thuật và viết email công việc"
+    ],
+    "industries": [
+      "Bảo hiểm",
+      "Dịch vụ tài chính"
+    ],
+    "career_note": "Bùi Đức Thành có hơn 5 năm chuyên xây dựng và bảo trì hệ thống báo cáo nội bộ trong doanh nghiệp bảo hiểm, rất vững về SQL Server và nghiệp vụ báo cáo nhưng kinh nghiệm phân tích khám phá, thiết kế thử nghiệm và dẫn dắt dự án dữ liệu vẫn còn hạn chế so với thâm niên.",
+    "cv_style": "dài dòng"
+  },
+  {
+    "profile_id": "DA_SEN_02",
+    "role_family": "Data Analyst",
+    "target_title": "Senior Product Data Analyst",
+    "seniority": "Senior",
+    "years_experience": 7.2,
+    "education": "Thạc sĩ Thống kê ứng dụng, sau khi tốt nghiệp cử nhân Toán ứng dụng tại đại học công lập",
+    "core_skills": [
+      "Google BigQuery",
+      "Advanced SQL",
+      "Python pandas",
+      "Python SciPy",
+      "Looker",
+      "Google Analytics 4",
+      "Product Analytics",
+      "A/B Testing",
+      "Retention and Cohort Analysis",
+      "Experiment Design"
+    ],
+    "secondary_skills": [
+      "Mixpanel",
+      "Git",
+      "Data Storytelling",
+      "Stakeholder Management",
+      "Mentoring Junior Analysts",
+      "Product KPI Framework Design"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm quản trị hạ tầng Kubernetes",
+      "Chưa có kinh nghiệm chuyên sâu về xây dựng hệ thống streaming analytics"
+    ],
+    "languages": [
+      "Tiếng Việt - Bản ngữ",
+      "Tiếng Anh - C1, có thể trình bày kết quả phân tích và làm việc với đối tác quốc tế"
+    ],
+    "industries": [
+      "Thương mại điện tử",
+      "Sản phẩm công nghệ",
+      "Nền tảng dịch vụ trực tuyến"
+    ],
+    "career_note": "Hoàng Thùy Linh có hơn 7 năm phát triển từ Data Analyst lên Senior Product Data Analyst, từng chủ trì các nghiên cứu về hành vi người dùng, thiết kế thử nghiệm sản phẩm và hướng dẫn nhóm phân tích 3 người, nhưng không trực tiếp đảm nhiệm công việc vận hành hạ tầng dữ liệu.",
+    "cv_style": "ngắn gọn"
+  }
+]

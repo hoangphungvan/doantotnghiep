@@ -1,0 +1,45 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi là UI/UX Designer với khoảng 1,6 năm kinh nghiệm tại công ty phát triển phần mềm. Đã tham gia thiết kế giao diện cho hai sản phẩm thuộc lĩnh vực thương mại điện tử và quản lý bán hàng. Mong muốn tiếp tục phát triển kỹ năng thiết kế trải nghiệm người dùng, cải thiện cách tổ chức thông tin và xây dựng giao diện có tính nhất quán, dễ thao tác. Ưu tiên môi trường làm việc có quy trình review và trao đổi thiết kế rõ ràng.
+
+HỌC VẤN
+
+Cử nhân Công nghệ đa phương tiện – Trường đại học công lập
+Đã tốt nghiệp.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Figma: UI/UX Design, Component Design và Interactive Prototyping.
+- User Flow, Wireframing và Information Architecture.
+- Responsive Web Design cho giao diện web.
+- Usability Testing cơ bản bằng Maze.
+- Phân tích phản hồi người dùng để điều chỉnh thiết kế.
+- Design Handoff, HTML/CSS cơ bản.
+- Sử dụng Notion và có kiến thức Agile/Scrum cơ bản.
+
+KỸ NĂNG MỀM
+
+- Giao tiếp và trao đổi phản hồi thiết kế trong nhóm.
+- Tiếp nhận góp ý từ senior để hoàn thiện màn hình.
+- Tiếng Anh B1, giao tiếp công việc cơ bản.
+- Sử dụng tiếng Việt thành thạo.
+
+KINH NGHIỆM LÀM VIỆC
+
+UI/UX Designer – Công ty Phần mềm Nam Việt
+03/2025 – 10/2026 (1 năm 7 tháng, bao gồm giai đoạn thực tập)
+
+- Bắt đầu với công việc thực tập thiết kế giao diện, sau đó tiếp tục đảm nhận các nhiệm vụ UI/UX Designer trong nhóm sản phẩm.
+- Thực hiện wireframe, user flow và thiết kế các màn hình trên Figma cho hai sản phẩm phần mềm.
+- Xây dựng prototype tương tác để trình bày luồng thao tác và hỗ trợ review giao diện.
+- Chỉnh sửa bố cục, thành phần UI và cách tổ chức thông tin theo phản hồi từ senior và người dùng.
+
+DỰ ÁN
+
+Giao diện sản phẩm thương mại điện tử
+
+Tham gia thiết kế các màn hình giao diện và bố cục responsive. Sử dụng Figma để tạo component và prototype, điều chỉnh phương án sau các vòng review.
+
+Phần mềm quản lý bán hàng
+
+Tham gia xây dựng user flow, wireframe và giao diện phục vụ thao tác quản lý. Hỗ trợ chuẩn bị thiết kế cho quá trình Design Handoff.

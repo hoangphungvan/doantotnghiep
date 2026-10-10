@@ -1,0 +1,46 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi là kỹ sư Công nghệ phần mềm với gần 4 năm kinh nghiệm quản lý và điều phối dự án tại doanh nghiệp outsourcing. Có kinh nghiệm lập kế hoạch triển khai, quản lý phạm vi, tiến độ, nguồn lực và phối hợp nghiệm thu các dự án web quy mô vừa. Mong muốn tiếp tục phát triển chuyên môn quản lý dự án CNTT, nâng cao hiệu quả phối hợp giữa nhóm phát triển và khách hàng, đồng thời đảm bảo sản phẩm được bàn giao theo phạm vi và tiến độ đã thống nhất.
+
+HỌC VẤN
+
+Kỹ sư Công nghệ phần mềm
+Trường đại học công lập
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Lập kế hoạch, xây dựng Work Breakdown Structure (WBS) và quản lý tiến độ dự án phần mềm.
+- Quản lý phạm vi, nguồn lực, chi phí và yêu cầu thay đổi trong quá trình triển khai.
+- Áp dụng Scrum và Kanban phù hợp với đặc thù từng dự án.
+- Sử dụng Microsoft Project để lập kế hoạch, phân bổ công việc và theo dõi tiến độ.
+- Xây dựng Gantt Chart, quản lý Risk Register và Issue Log.
+- Sử dụng GitLab Issues, Microsoft Teams và Power BI cơ bản.
+- Phối hợp nghiệm thu, bàn giao sản phẩm và tổng hợp báo cáo dự án.
+
+KỸ NĂNG MỀM
+
+- Điều phối nhóm phát triển từ 8-12 thành viên.
+- Đàm phán và trao đổi yêu cầu với khách hàng.
+- Giải quyết xung đột và phối hợp giữa các thành viên.
+- Quản lý cuộc trao đổi liên quan đến tiến độ và thay đổi phạm vi dự án.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty Cổ phần Giải pháp Phần mềm Đại Nam
+IT Project Manager | 12/2022 - 09/2026 (3 năm 10 tháng)
+
+- Lập kế hoạch triển khai các dự án web và hệ thống quản trị doanh nghiệp, xây dựng WBS, xác định đầu việc, phân bổ nguồn lực và theo dõi tiến độ bằng Microsoft Project.
+- Điều phối nhóm phát triển 8-12 thành viên, kết hợp Scrum và Kanban theo đặc thù dự án nhằm quản lý công việc và xử lý các vấn đề ảnh hưởng đến kế hoạch.
+- Theo dõi Risk Register, Issue Log và Change Request; làm việc với khách hàng để thống nhất các yêu cầu điều chỉnh, đồng thời báo cáo những thay đổi có ảnh hưởng đến phạm vi và tiến độ.
+- Tổng hợp chi phí và tình trạng dự án để báo cáo cấp quản lý; phối hợp cùng đội phát triển và khách hàng hoàn thành các bước nghiệm thu, bàn giao phần mềm.
+
+DỰ ÁN
+
+Triển khai hệ thống quản trị doanh nghiệp trên nền tảng web
+
+Phụ trách lập kế hoạch và điều phối nhóm phát triển cho dự án quy mô vừa. Quản lý các mốc công việc, theo dõi yêu cầu thay đổi và tổ chức phối hợp giữa nhóm kỹ thuật với khách hàng trong giai đoạn nghiệm thu. Các báo cáo tiến độ và chi phí được tổng hợp để hỗ trợ cấp quản lý theo dõi dự án.
+
+NGOẠI NGỮ
+
+- Tiếng Anh B2: Giao tiếp trong cuộc họp dự án và viết báo cáo.
+- Tiếng Nhật N4: Giao tiếp cơ bản.

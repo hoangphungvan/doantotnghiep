@@ -1,0 +1,51 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có hơn 7 năm kinh nghiệm trong lĩnh vực phần mềm và hạ tầng AI, bắt đầu với 3 năm làm Backend Engineer trước khi chuyển sang MLOps trong 4 năm 2 tháng. Kinh nghiệm trước đây về phát triển API và vận hành dịch vụ giúp tôi tiếp cận việc triển khai mô hình Machine Learning từ góc độ hệ thống. Hiện tại tôi tập trung vào xây dựng quy trình CI/CD cho mô hình, model serving và quản lý hạ tầng AI trên AWS. Mục tiêu lâu dài là phát triển những nền tảng triển khai mô hình ổn định, dễ bảo trì và có quy trình vận hành nhất quán.
+
+HỌC VẤN
+
+Đại học – Ngành Công nghệ thông tin
+Trường đại học công lập đào tạo kỹ sư CNTT.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Programming: Python.
+- Containerization: Docker, Kubernetes, Helm.
+- Model Serving: KServe, AWS SageMaker.
+- MLOps: MLflow, MLOps CI/CD, Argo Workflows.
+- Infrastructure as Code: Terraform.
+- Automation: GitHub Actions.
+- Monitoring: Prometheus, Grafana.
+- AWS Integration: Boto3.
+- Operating System: Linux.
+
+KỸ NĂNG MỀM
+
+- Có khả năng phân tích yêu cầu kỹ thuật và trao đổi giải pháp giữa các nhóm phát triển, vận hành.
+- Phối hợp xử lý vấn đề trong quá trình triển khai dịch vụ và mô hình AI.
+- Tiếng Anh C1, có thể trình bày giải pháp kỹ thuật với đối tác.
+- Tiếng Hàn TOPIK 2, giao tiếp cơ bản trong công việc.
+
+KINH NGHIỆM LÀM VIỆC
+
+Senior MLOps Engineer – Công ty CP Nền tảng AI Đông Á
+08/2022 – 09/2026 (4 năm 2 tháng)
+
+- Phụ trách chuẩn hóa quy trình triển khai mô hình Machine Learning cho các ứng dụng AI doanh nghiệp và fintech.
+- Xây dựng MLOps CI/CD với GitHub Actions, MLflow và Argo Workflows, giúp thống nhất các bước từ quản lý phiên bản đến triễn khai mô hình.
+- Triển khai hệ thống model serving sử dụng Docker, Kubernetes và KServe, kết hợp AWS SageMaker trong các công việc liên quan đến hạ tầng Machine Learning.
+- Sử dụng Terraform để quản lý cấu hình hạ tầng, tích hợp Prometheus và Grafana nhằm theo dõi hoạt động của các dịch vụ AI.
+
+Backend Engineer – Công ty TNHH Công nghệ Logistics Sao Việt
+08/2019 – 07/2022 (3 năm)
+
+- Phát triển API bằng Python phục vụ các chức năng của hệ thống logistics công nghệ.
+- Tham gia vận hành dịch vụ Backend trên môi trường Linux, xử lý các vấn đề phát sinh trong quá trình hoạt động.
+- Sử dụng Docker để đóng gói các thành phần ứng dụng, hỗ trợ việc triển khai giữa các môi trường.
+- Phối hợp cập nhật dịch vụ và kiểm tra hoạt động của hệ thống sau các đợt triển khai.
+
+DỰ ÁN
+
+Chuẩn hóa nền tảng MLOps trên AWS
+
+Tham gia xây dựng quy trình triển khai mô hình sử dụng MLflow, Argo Workflows và GitHub Actions. Hạ tầng được quản lý thông qua Terraform; các thành phần model serving được đóng gói bằng Docker và vận hành trên Kubernetes với KServe. Kết quả là quy trình triển khai mô hình được tổ chức thống nhất, thuận tiện hơn cho việc cập nhật và vận hành các ứng dụng AI.

@@ -1,0 +1,322 @@
+
+[
+  {
+    "profile_id": "SUP_FRE_01",
+    "role_family": "IT Support",
+    "target_title": "IT Helpdesk Fresher",
+    "seniority": "Fresher",
+    "years_experience": 0.4,
+    "education": "Cao đẳng, ngành Công nghệ thông tin, trường cao đẳng kỹ thuật",
+    "core_skills": [
+      "Cài đặt và cấu hình Windows 10/11",
+      "Xử lý lỗi phần mềm Microsoft Office",
+      "Chẩn đoán lỗi phần cứng máy tính cơ bản",
+      "Cài đặt driver và thiết bị ngoại vi",
+      "Cấu hình máy in USB và máy in chia sẻ qua mạng",
+      "Kiểm tra kết nối LAN, IP và DNS cơ bản",
+      "Hỗ trợ người dùng từ xa bằng AnyDesk",
+      "Tiếp nhận và ghi nhận sự cố qua Google Forms"
+    ],
+    "secondary_skills": [
+      "Sử dụng Microsoft Excel để quản lý thiết bị",
+      "Lắp ráp và vệ sinh máy tính",
+      "Sao lưu dữ liệu người dùng",
+      "PowerShell cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm quản trị Active Directory",
+      "Chưa từng quản lý hệ thống cloud",
+      "Chưa có chứng chỉ CNTT chuyên môn"
+    ],
+    "languages": [
+      "Tiếng Anh: đọc hiểu tài liệu kỹ thuật cơ bản"
+    ],
+    "industries": [
+      "Dịch vụ CNTT nội bộ",
+      "Thương mại điện tử"
+    ],
+    "career_note": "Đã thực tập 5 tháng tại bộ phận IT của doanh nghiệp thương mại điện tử, chủ yếu xử lý lỗi máy tính và hỗ trợ nhân viên văn phòng dưới sự hướng dẫn của kỹ thuật viên chính.",
+    "cv_style": "ngắn gọn"
+  },
+  {
+    "profile_id": "SUP_FRE_02",
+    "role_family": "IT Support",
+    "target_title": "Desktop Support Technician Fresher",
+    "seniority": "Fresher",
+    "years_experience": 0.7,
+    "education": "Đại học, ngành Kỹ thuật máy tính, trường đại học tư thục",
+    "core_skills": [
+      "Cài đặt Windows và Ubuntu Desktop",
+      "Triển khai hệ điều hành bằng Clonezilla",
+      "Kiểm tra lỗi RAM, SSD và nguồn máy tính",
+      "Cấu hình BIOS/UEFI và thứ tự khởi động",
+      "Hỗ trợ người dùng bằng TeamViewer",
+      "Cấu hình thiết bị NAS Synology cho chia sẻ tệp cơ bản",
+      "Kiểm tra kết nối Wi-Fi và thiết bị mạng văn phòng",
+      "Xử lý lỗi trình duyệt và ứng dụng văn phòng"
+    ],
+    "secondary_skills": [
+      "Sử dụng Hiren's BootCD PE",
+      "Tạo USB cài đặt hệ điều hành",
+      "Quản lý danh sách thiết bị bằng Google Sheets",
+      "Viết hướng dẫn xử lý sự cố đơn giản"
+    ],
+    "known_gaps": [
+      "Chưa vận hành hệ thống Windows Server thực tế",
+      "Chưa có kinh nghiệm quản lý ticket bằng công cụ chuyên dụng"
+    ],
+    "languages": [
+      "Tiếng Anh: đọc hiểu khá, giao tiếp cơ bản"
+    ],
+    "industries": [
+      "Giáo dục",
+      "Dịch vụ sửa chữa và bảo trì máy tính"
+    ],
+    "career_note": "Có 8 tháng kinh nghiệm thực tập và làm kỹ thuật viên bán thời gian tại trung tâm đào tạo, chủ yếu cài đặt phòng máy và bảo trì thiết bị đầu cuối.",
+    "cv_style": "có lỗi chính tả nhẹ"
+  },
+  {
+    "profile_id": "SUP_JUN_01",
+    "role_family": "IT Support",
+    "target_title": "IT Support Engineer",
+    "seniority": "Junior",
+    "years_experience": 1.5,
+    "education": "Đại học, ngành Mạng máy tính và Truyền thông dữ liệu, trường đại học công lập",
+    "core_skills": [
+      "Quản lý tài khoản người dùng trong Active Directory",
+      "Cấu hình Group Policy cơ bản",
+      "Hỗ trợ môi trường Windows Server 2019",
+      "Quản lý tài khoản Microsoft 365",
+      "Xử lý sự cố đăng nhập Outlook và Microsoft Teams",
+      "Cấu hình VPN WireGuard cho người dùng từ xa",
+      "Quản lý ticket bằng GLPI",
+      "Xử lý lỗi Remote Desktop Protocol",
+      "Kiểm tra sự cố DNS và DHCP"
+    ],
+    "secondary_skills": [
+      "Viết PowerShell script đơn giản",
+      "Quản lý tài sản CNTT",
+      "Cấu hình quyền truy cập thư mục dùng chung",
+      "Hướng dẫn nhân viên mới sử dụng hệ thống nội bộ"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm triển khai Microsoft Intune",
+      "Chưa xử lý các sự cố an ninh mạng phức tạp",
+      "Chưa có chứng chỉ Microsoft"
+    ],
+    "languages": [
+      "Tiếng Anh: đọc hiểu tốt, giao tiếp công việc cơ bản"
+    ],
+    "industries": [
+      "Dịch vụ phần mềm",
+      "Doanh nghiệp thương mại"
+    ],
+    "career_note": "Bắt đầu từ vị trí Helpdesk và sau 18 tháng được giao thêm nhiệm vụ quản lý tài khoản người dùng, phân quyền thư mục và hỗ trợ hệ thống Windows Server dưới sự giám sát của quản trị viên.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "SUP_JUN_02",
+    "role_family": "IT Support",
+    "target_title": "IT Support Specialist",
+    "seniority": "Junior",
+    "years_experience": 1.8,
+    "education": "Cao đẳng, ngành Quản trị kinh doanh, trường cao đẳng kinh tế; hoàn thành khóa đào tạo nghề IT Support",
+    "core_skills": [
+      "Hỗ trợ phần mềm bán hàng KiotViet",
+      "Cấu hình máy POS tại cửa hàng",
+      "Xử lý sự cố máy quét mã vạch",
+      "Cài đặt máy in hóa đơn nhiệt",
+      "Khắc phục lỗi kết nối Wi-Fi cửa hàng",
+      "Cài đặt và cập nhật Windows trên máy bán hàng",
+      "Hỗ trợ từ xa bằng RustDesk",
+      "Tiếp nhận yêu cầu hỗ trợ qua Freshdesk",
+      "Quản lý tài khoản Google Workspace cơ bản"
+    ],
+    "secondary_skills": [
+      "Kiểm kê thiết bị CNTT tại chi nhánh",
+      "Đào tạo nhân viên sử dụng phần mềm bán hàng",
+      "Kiểm tra kết nối router và switch cơ bản",
+      "Viết tài liệu hướng dẫn thao tác",
+      "Phối hợp với nhà cung cấp thiết bị"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm quản trị Windows Server",
+      "Chưa làm việc với hệ thống cloud infrastructure",
+      "Kiến thức scripting còn hạn chế"
+    ],
+    "languages": [
+      "Tiếng Anh: đọc hiểu tài liệu đơn giản, giao tiếp hạn chế"
+    ],
+    "industries": [
+      "Bán lẻ",
+      "Chuỗi cửa hàng tiện lợi"
+    ],
+    "career_note": "Chuyển từ công việc vận hành cửa hàng bán lẻ sang IT Support sau khóa đào tạo nghề, có 1,8 năm hỗ trợ thiết bị POS và phần mềm bán hàng cho các chi nhánh.",
+    "cv_style": "lẫn Anh-Việt"
+  },
+  {
+    "profile_id": "SUP_MID_01",
+    "role_family": "IT Support",
+    "target_title": "IT Support and Infrastructure Specialist",
+    "seniority": "Middle",
+    "years_experience": 3.6,
+    "education": "Cao đẳng, ngành Điện tử - Viễn thông, trường cao đẳng kỹ thuật",
+    "core_skills": [
+      "Bảo trì máy in mạng và máy photocopy đa chức năng",
+      "Cấu hình Windows Print Server",
+      "Quản lý switch Cisco Small Business",
+      "Cấu hình VLAN cơ bản",
+      "Cấu hình DHCP và firewall cơ bản trên MikroTik RouterOS",
+      "Giám sát thiết bị bằng Zabbix",
+      "Thực hiện sao lưu bằng Veeam Backup",
+      "Quản lý lưu trữ NAS trong mạng nội bộ",
+      "Quản lý ticket bằng ManageEngine ServiceDesk Plus"
+    ],
+    "secondary_skills": [
+      "Kiểm tra cáp mạng và cổng kết nối",
+      "Lập kế hoạch bảo trì thiết bị định kỳ",
+      "Quản lý linh kiện và thiết bị thay thế",
+      "Viết báo cáo sự cố kỹ thuật",
+      "Phối hợp với nhà cung cấp dịch vụ mạng"
+    ],
+    "known_gaps": [
+      "Chưa triển khai hạ tầng AWS hoặc Azure",
+      "Chưa có kinh nghiệm thiết kế kiến trúc mạng doanh nghiệp lớn"
+    ],
+    "languages": [
+      "Tiếng Anh: đọc hiểu tài liệu kỹ thuật khá"
+    ],
+    "industries": [
+      "Sản xuất",
+      "Dịch vụ bảo trì thiết bị văn phòng",
+      "Logistics"
+    ],
+    "career_note": "Xuất phát từ công việc sửa chữa máy in và thiết bị văn phòng, sau đó chuyển sang IT Support doanh nghiệp và tích lũy 3,6 năm hỗ trợ mạng nội bộ, lưu trữ và sao lưu dữ liệu.",
+    "cv_style": "dài dòng"
+  },
+  {
+    "profile_id": "SUP_MID_02",
+    "role_family": "IT Support",
+    "target_title": "IT Helpdesk Specialist",
+    "seniority": "Middle",
+    "years_experience": 3.2,
+    "education": "Đại học, ngành Hệ thống thông tin, trường đại học dân lập",
+    "core_skills": [
+      "Hỗ trợ người dùng Windows và macOS",
+      "Quản lý tài khoản Google Workspace qua Admin Console",
+      "Xử lý sự cố ứng dụng Zoom và Google Meet",
+      "Hỗ trợ hệ thống máy chiếu và thiết bị trình chiếu",
+      "Kiểm tra kết nối Wi-Fi Ubiquiti UniFi",
+      "Hỗ trợ từ xa bằng Chrome Remote Desktop",
+      "Cài đặt phần mềm phục vụ giảng dạy và đào tạo",
+      "Quản lý danh sách thiết bị bằng Google Sheets"
+    ],
+    "secondary_skills": [
+      "Hướng dẫn người dùng bảo mật tài khoản",
+      "Xử lý lỗi đồng bộ Google Drive",
+      "Kiểm tra micro và camera hội nghị",
+      "Ghi nhận và phân loại yêu cầu hỗ trợ",
+      "Soạn tài liệu hướng dẫn cho người dùng"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm quản trị hệ thống máy chủ",
+      "Chưa thành thạo scripting để tự động hóa",
+      "Chưa trực tiếp xử lý sự cố bảo mật nghiêm trọng"
+    ],
+    "languages": [
+      "Tiếng Anh: giao tiếp khá, đọc hiểu tài liệu tốt"
+    ],
+    "industries": [
+      "Giáo dục",
+      "Đào tạo trực tuyến"
+    ],
+    "career_note": "Có 3,2 năm làm Helpdesk tại một tổ chức giáo dục nhưng công việc chủ yếu là hỗ trợ người dùng và thiết bị lớp học, ít được tham gia vận hành máy chủ hay xử lý sự cố hạ tầng phức tạp.",
+    "cv_style": "ngắn gọn"
+  },
+  {
+    "profile_id": "SUP_SEN_01",
+    "role_family": "IT Support",
+    "target_title": "Senior IT Support Engineer",
+    "seniority": "Senior",
+    "years_experience": 6.8,
+    "education": "Đại học, ngành Công nghệ thông tin, trường đại học công lập",
+    "core_skills": [
+      "Quản trị Windows Server và Active Directory Domain Services",
+      "Quản lý môi trường định danh hybrid với Microsoft Entra ID",
+      "Quản trị người dùng và chính sách Microsoft 365",
+      "Triển khai và quản lý thiết bị bằng Microsoft Intune",
+      "Giám sát bảo mật endpoint bằng Microsoft Defender for Endpoint",
+      "Tự động hóa tác vụ hỗ trợ bằng PowerShell",
+      "Quản lý ticket và SLA bằng Jira Service Management",
+      "Hỗ trợ kết nối VPN qua FortiClient",
+      "Triển khai phần mềm bằng Microsoft Configuration Manager",
+      "Phân tích và xử lý sự cố Windows Event Viewer"
+    ],
+    "secondary_skills": [
+      "Hướng dẫn và phân công công việc cho nhân viên Helpdesk",
+      "Xây dựng quy trình xử lý sự cố",
+      "Quản lý vòng đời thiết bị đầu cuối",
+      "Lập báo cáo SLA và chất lượng dịch vụ",
+      "Phối hợp kiểm toán quyền truy cập",
+      "Quản lý nhà cung cấp dịch vụ CNTT"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm chuyên sâu với AWS",
+      "Chưa thành thạo quản trị Linux Server",
+      "Chưa trực tiếp thiết kế kiến trúc mạng diện rộng"
+    ],
+    "languages": [
+      "Tiếng Anh: giao tiếp công việc tốt, đọc viết tài liệu kỹ thuật tốt"
+    ],
+    "industries": [
+      "Tài chính",
+      "Dịch vụ doanh nghiệp",
+      "Công nghệ thông tin"
+    ],
+    "career_note": "Bắt đầu từ Helpdesk, phát triển lên IT Support Engineer rồi Senior IT Support, hiện phụ trách hỗ trợ kỹ thuật cấp cao, quản lý thiết bị đầu cuối và hướng dẫn nhóm Helpdesk 4 người.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "SUP_SEN_02",
+    "role_family": "IT Support",
+    "target_title": "Senior IT Support Specialist - Factory Operations",
+    "seniority": "Senior",
+    "years_experience": 5.4,
+    "education": "Cao đẳng, ngành Công nghệ kỹ thuật điện tử, trường cao đẳng nghề",
+    "core_skills": [
+      "Bảo trì máy tính tại nhà máy và xưởng sản xuất",
+      "Xử lý lỗi Windows 10/11 trên máy trạm vận hành",
+      "Hỗ trợ máy quét mã vạch Zebra",
+      "Cấu hình máy in tem nhãn Zebra ZDesigner",
+      "Hỗ trợ người dùng SAP Business One ở mức ứng dụng",
+      "Kiểm tra kết nối mạng LAN tại dây chuyền sản xuất",
+      "Cấu hình switch TP-Link Easy Smart cơ bản",
+      "Hỗ trợ máy trạm từ xa bằng UltraVNC",
+      "Thực hiện sao lưu dữ liệu cục bộ theo lịch",
+      "Quản lý yêu cầu hỗ trợ qua hệ thống ticket nội bộ"
+    ],
+    "secondary_skills": [
+      "Kiểm kê thiết bị tại nhà máy",
+      "Phối hợp xử lý lỗi với nhà cung cấp ERP",
+      "Đào tạo công nhân sử dụng thiết bị CNTT",
+      "Theo dõi lịch bảo trì thiết bị",
+      "Ghi nhận nhật ký sự cố",
+      "Điều phối hỗ trợ kỹ thuật giữa các ca sản xuất"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm quản trị Active Directory ở quy mô lớn",
+      "Chưa trực tiếp vận hành hạ tầng cloud hoặc máy chủ ảo hóa",
+      "Khả năng tự động hóa bằng script còn yếu"
+    ],
+    "languages": [
+      "Tiếng Anh: đọc hiểu tài liệu kỹ thuật cơ bản",
+      "Tiếng Trung: giao tiếp cơ bản trong môi trường sản xuất"
+    ],
+    "industries": [
+      "Sản xuất điện tử",
+      "Công nghiệp chế tạo"
+    ],
+    "career_note": "Có 5,4 năm làm IT Support tại các nhà máy, được giao vai trò nhân sự hỗ trợ chính theo thâm niên nhưng kinh nghiệm chủ yếu tập trung vào thiết bị đầu cuối, máy quét và phần mềm vận hành, ít tiếp xúc với quản trị hạ tầng chuyên sâu.",
+    "cv_style": "lẫn Anh-Việt"
+  }
+]

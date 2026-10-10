@@ -1,0 +1,50 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 1 năm 10 tháng tham gia nhóm phát triển các ứng dụng NLP, tập trung vào xử lý dữ liệu văn bản, phân loại phản hồi khách hàng và đánh giá mô hình Machine Learning. Tôi mong muốn tiếp tục làm việc chuyên sâu về Natural Language Processing, đặc biệt là Text Classification và Named Entity Recognition. Trong thời gian tới, tôi muốn nâng cao khả năng thử nghiệm mô hình, cải thiện chất lượng xử lý dữ liệu và ứng dụng các phương pháp NLP vào bài toán doanh nghiệp.
+
+HỌC VẤN
+
+Trình độ: Đại học
+Chuyên ngành: Trí tuệ nhân tạo
+Trường: Đại học công lập có chương trình đào tạo AI
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ lập trình: Python.
+- Machine Learning: Scikit-learn.
+- NLP Libraries: NLTK, spaCy, Hugging Face Transformers.
+- NLP Tasks: Text Classification, Named Entity Recognition.
+- Feature Extraction: TF-IDF.
+- Model Evaluation: Precision, Recall, F1.
+- Xử lý dữ liệu: Pandas.
+- Công cụ: Jupyter Notebook, Git, Label Studio, Streamlit.
+- Ngoại ngữ: Tiếng Anh B1, đọc hiểu tài liệu chuyên ngành khá; tiếng Nhật N5, giao tiếp rất cơ bản.
+
+KỸ NĂNG MỀM
+
+- Phối hợp với nhóm NLP trong quá trình chuẩn bị dữ liệu và đánh giá mô hình.
+- Tổng hợp kết quả thử nghiệm để trao đổi với các thành viên trong nhóm.
+- Đọc hiểu tài liệu chuyên ngành tiếng Anh phục vụ nghiên cứu và thử nghiệm.
+
+KINH NGHIỆM LÀM VIỆC
+
+NLP Engineer
+Công ty TNHH Giải pháp Phần mềm An Phúc
+Thời gian: 1 năm 10 tháng
+
+- Chuẩn bị và làm sạch dữ liệu văn bản phản hồi khách hàng bằng Python, Pandas và các công cụ NLP.
+- Sử dụng Label Studio để gán nhãn dữ liệu, phục vụ quá trình huấn luyện và đánh giá mô hình Text Classification.
+- Thử nghiệm các phương pháp TF-IDF, Scikit-learn và Hugging Face Transformers trong bài toán phân loại phản hồi.
+- Đánh giá kết quả mô hình bằng Precision, Recall và F1; tổng hợp kết quả thử nghiệm trên Jupyter Notebook để nhóm so sánh các phương pháp xử lý.
+
+DỰ ÁN
+
+Customer Feedback Classification
+
+Tham gia xử lý và phân loại dữ liệu phản hồi khách hàng cho ứng dụng phần mềm doanh nghiệp.
+
+Công nghệ: Python, Scikit-learn, NLTK, spaCy, Hugging Face Transformers, Pandas.
+
+Nhiệm vụ chính gồm chuẩn bị dữ liệu, gán nhãn, thử nghiệm mô hình và đánh giá kết quả phân loại.
+
+Kết quả: Hoàn thành các tập dữ liệu phục vụ huấn luyện và tổng hợp kết quả đánh giá mô hình, hỗ trợ nhóm lựa chọn phương pháp phân loại phản hồi khách hàng.

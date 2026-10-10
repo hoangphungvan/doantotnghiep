@@ -1,0 +1,48 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 1,5 năm kinh nghiệm Business Analyst trong lĩnh vực E-commerce. Mong muốn tiếp tục phát triển năng lực phân tích yêu cầu, viết tài liệu nghiệp vụ và phối hợp với nhóm phát triển sản phẩm. Định hướng chuyên sâu vào các hệ thống thương mại điện tử và bán lẻ trực tuyến.
+
+HỌC VẤN
+
+Cử nhân Công nghệ thông tin
+Đại học công lập khối kỹ thuật
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Requirement Elicitation, BRD, SRS.
+- User Story, Acceptance Criteria.
+- Jira, Confluence, Agile Scrum.
+- SQL với MySQL.
+- Figma Wireframe, Miro.
+- REST API cơ bản, Postman, Swagger UI.
+- UAT Support, Git cơ bản.
+
+KỸ NĂNG MỀM
+
+- Phối hợp với nhóm phát triển trong quá trình làm rõ yêu cầu.
+- Tổng hợp và trình bày yêu cầu theo từng chức năng.
+- Trao đổi công việc trong môi trường Agile Scrum.
+- Tiếng Anh B2, đọc viết tài liệu và trao đổi công việc.
+
+KINH NGHIỆM LÀM VIỆC
+
+Business Analyst
+Công ty Cổ phần Công nghệ Thương mại Sao Việt
+Thời gian: 1,5 năm
+
+- Thu thập và phân tích yêu cầu cho các chức năng giỏ hàng, quản lý đơn hàng và chương trình khuyến mãi.
+- Viết BRD, SRS, User Story và Acceptance Criteria, giúp nhóm phát triển có tài liệu mô tả nghiệp vụ rõ ràng.
+- Thiết kế Wireframe bằng Figma, trao đổi yêu cầu qua Jira và Confluence.
+- Sử dụng MySQL để kiểm tra dữ liệu, Postman và Swagger UI để tìm hiểu REST API; hỗ trợ UAT cho các chức năng được phân công.
+
+DỰ ÁN
+
+Nền tảng thương mại điện tử
+
+Tham gia nhóm phát triển các chức năng phục vụ hoạt động bán lẻ trực tuyến.
+
+Các phần việc chính gồm phân tích luồng giỏ hàng, xử lý đơn hàng và áp dụng chương trình khuyến mãi.
+
+Sử dụng Jira để theo dõi yêu cầu, Confluence để lưu tài liệu, Figma để mô tả giao diện và Postman để kiểm tra thông tin API cơ bản.
+
+Kết quả là các chức năng được mô tả thành bộ tài liệu nghiệp vụ, User Story và Acceptance Criteria phục vụ quá trình phát triển và kiểm thử.

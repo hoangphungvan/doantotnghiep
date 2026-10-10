@@ -1,0 +1,49 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có khoảng 5,7 năm kinh nghiệm làm việc trong lĩnh vực kiểm thử phần mềm, chủ yếu tham gia các dự án outsourcing liên quan đến hệ thống bảo hiểm và phần mềm quản lý doanh nghiệp. Trong quá trình làm việc, tôi đã phụ trách lập kế hoạch kiểm thử, rà soát test case, tổ chức các hoạt động kiểm thử tích hợp hệ thống và phối hợp với khách hàng trong giai đoạn UAT.
+
+Tôi mong muốn tiếp tục phát triển chuyên môn Manual QA, đặc biệt là nâng cao hiệu quả kiểm thử các hệ thống nghiệp vụ phức tạp, quản lý rủi ro và hỗ trợ các thành viên mới trong nhóm.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học, chuyên ngành Công nghệ thông tin tại một trường đại học công lập.
+
+Có kiến thức nền tảng về hệ thống phần mềm, xử lý dữ liệu và các quy trình kiểm thử trong phát triển ứng dụng doanh nghiệp.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Manual Testing nâng cao và Test Planning.
+- Test Case Review, Risk-based Testing.
+- System Integration Testing.
+- UAT Coordination và Defect Triage.
+- HP ALM/Quality Center, TestRail.
+- Oracle SQL để kiểm tra và đối chiếu dữ liệu nghiệp vụ.
+- Requirement Traceability Matrix.
+- Release Verification và Root Cause Analysis cơ bản.
+
+KỸ NĂNG MỀM
+
+- Hướng dẫn Fresher Tester trong quá trình thực hiện công việc.
+- Phối hợp tổ chức UAT và trao đổi với các bên tham gia dự án.
+- Tiếng Anh B1-B2, đọc hiểu tài liệu nghiệp vụ và trao đổi với khách hàng qua email.
+
+KINH NGHIỆM LÀM VIỆC
+
+Senior Manual QA Engineer
+Công ty Cổ phần Giải pháp Phần mềm Đông Á
+01/2021 – 09/2026
+
+- Tham gia kiểm thử hệ thống nghiệp vụ bảo hiểm cho khách hàng trong môi trường outsourcing, phụ trách lập Test Planning và rà soát các test case để đảm bảo phạm vi kiểm tra bám sát yêu cầu.
+- Thực hiện System Integration Testing, áp dụng Risk-based Testing để xác định những luồng nghiệp vụ cần ưu tiên kiểm tra trong từng giai đoạn.
+- Quản lý defect bằng HP ALM/Quality Center, phối hợp Defect Triage để làm rõ mức độ ảnh hưởng và theo dõi quá trình xử lý trước khi Release Verification.
+- Điều phối hoạt động UAT, tổng hợp các vấn đề phát sinh và hướng dẫn Fresher Tester cách thực hiện test case, ghi nhận lỗi cũng như cập nhật tiến độ kiểm thử.
+
+DỰ ÁN
+
+Hệ thống quản lý nghiệp vụ bảo hiểm
+
+Tham gia kiểm thử một hệ thống bảo hiểm phục vụ các hoạt động quản lý nghiệp vụ doanh nghiệp.
+
+Trong dự án, tôi sử dụng Requirement Traceability Matrix để đối chiếu yêu cầu với phạm vi kiểm thử, đồng thời thực hiện Test Case Review nhằm hạn chế việc bỏ sót các luồng quan trọng.
+
+Tôi cũng tham gia kiểm thử tích hợp, phối hợp Defect Triage và hỗ trợ khách hàng trong quá trình UAT. Sau các đợt xử lý lỗi, tôi thực hiện Release Verification để xác nhận những chức năng liên quan đã được kiểm tra lại trước khi chuyển sang giai đoạn tiếp theo.

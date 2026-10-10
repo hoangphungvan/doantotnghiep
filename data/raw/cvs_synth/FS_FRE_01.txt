@@ -1,0 +1,42 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi là sinh viên mới tốt nghiệp ngành Công nghệ thông tin, có 5 tháng thực tập phát triển ứng dụng web. Trong thời gian thực tập, tôi được tham gia xây dựng giao diện và API cho hệ thống quản lý khóa học. Mong muốn tiếp tục phát triển chuyên môn về React.js, Node.js và Express.js, đồng thời tích lũy kinh nghiệm thực tế trong quá trình phát triển sản phẩm phần mềm.
+
+HỌC VẤN
+
+Đại học công lập – Ngành Công nghệ thông tin
+Trình độ: Đại học, đã tốt nghiệp.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Frontend: JavaScript ES6+, React.js cơ bản, HTML5, CSS3, Bootstrap.
+- Backend: Node.js, Express.js, xây dựng RESTful API.
+- Database: MongoDB cơ bản, thao tác dữ liệu phục vụ chức năng CRUD.
+- Công cụ: Git/GitHub, Postman, Figma cơ bản.
+- Ngoại ngữ: Tiếng Anh B1, có khả năng đọc hiểu tài liệu kỹ thuật tương đối tốt.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm phối hợp với các thành viên trong nhóm phát triển phần mềm thông qua công việc thực tập.
+- Tiếp nhận yêu cầu và thực hiện các phần việc được giao trong quá trình phát triển ứng dụng.
+- Chủ động tìm hiểu tài liệu kỹ thuật khi thực hiện các chức năng mới.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Phần mềm Minh Phát
+Thực tập sinh Web Developer
+04/2026 – 08/2026 (5 tháng)
+
+- Tham gia phát triển giao diện hệ thống quản lý khóa học nội bộ bằng React.js, HTML5 và CSS3.
+- Sử dụng Node.js và Express.js để xây dựng các RESTful API phục vụ thao tác thêm, xem, sửa và xóa thông tin khóa học.
+- Làm việc với MongoDB ở mức cơ bản để lưu trữ và truy xuất dữ liệu cho các chức năng được phân công.
+- Sử dụng Postman kiểm tra các API và Git/GitHub để quản lý mã nguồn trong thời gian thực tập.
+
+DỰ ÁN
+
+Hệ thống quản lý khóa học nội bộ
+
+Vai trò: Thực tập sinh phát triển Web
+Công nghệ: React.js, Node.js, Express.js, MongoDB, RESTful API.
+
+Tham gia xây dựng giao diện và các chức năng CRUD phục vụ quản lý thông tin khóa học. Phần công việc tập trung vào kết nối giao diện với API và xử lý các thao tác dữ liệu cơ bản. Dự án giúp tôi hiểu rõ hơn cách phối hợp giữa frontend, backend và database trong một ứng dụng web thực tế.

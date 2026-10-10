@@ -1,0 +1,38 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có hơn 3 năm kinh nghiệm làm IT Helpdesk trong môi trường giáo dục và đào tạo trực tuyến. Công việc chính là hỗ trợ người dùng, xử lý sự cố máy tính, phần mềm và thiết bị phục vụ lớp học. Tôi mong muốn tiếp tục phát triển chuyên môn về IT Support, nâng cao chất lượng hỗ trợ và góp phần duy trì hoạt động ổn định của hệ thống CNTT tại đơn vị.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học, chuyên ngành Hệ thống thông tin, tại một trường đại học dân lập.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Hỗ trợ người dùng trên hệ điều hành Windows và macOS.
+- Quản lý tài khoản Google Workspace thông qua Admin Console.
+- Xử lý sự cố Zoom, Google Meet và đồng bộ dữ liệu Google Drive.
+- Kiểm tra, hỗ trợ vận hành máy chiếu, micro, camera và thiết bị trình chiếu.
+- Kiểm tra kết nối Wi-Fi sử dụng Ubiquiti UniFi.
+- Hỗ trợ người dùng từ xa bằng Chrome Remote Desktop.
+- Cài đặt phần mềm phục vụ giảng dạy và đào tạo.
+- Quản lý danh sách thiết bị bằng Google Sheets.
+
+KỸ NĂNG MỀM
+
+- Giao tiếp và hướng dẫn người dùng xử lý các vấn đề kỹ thuật.
+- Tiếp nhận, ghi nhận và phân loại yêu cầu hỗ trợ.
+- Soạn tài liệu hướng dẫn sử dụng phần mềm và thiết bị.
+- Tiếng Anh giao tiếp khá, đọc hiểu tài liệu kỹ thuật tốt.
+
+KINH NGHIỆM LÀM VIỆC
+
+Trung tâm Giáo dục và Đào tạo Minh Triết
+IT Helpdesk
+08/2023 - 10/2026 (3 năm 2 tháng)
+
+- Hỗ trợ giảng viên và nhân viên sử dụng máy tính Windows, macOS; tiếp nhận các yêu cầu liên quan đến phần mềm, tài khoản và thiết bị lớp học.
+- Quản lý tài khoản Google Workspace, xử lý lỗi đăng nhập và đồng bộ Google Drive; hướng dẫn người dùng bảo mật tài khoản.
+- Kiểm tra máy chiếu, micro, camera trước các buổi giảng dạy; khắc phục sự cố Zoom, Google Meet để lớp học có thể tiếp tục hoạt động.
+- Theo dõi thiết bị bằng Google Sheets, kiểm tra Wi-Fi UniFi và hỗ trợ từ xa qua Chrome Remote Desktop; đồng thời xây dựng tài liệu hướng dẫn cho những lỗi thường gặp.
+
+Tôi ưu tiên xử lý các yêu cầu ảnh hưởng trực tiếp đến giờ học, đồng thời ghi nhận lại những sự cố đã giải quyết để thuận tiện cho việc hỗ trợ về sau.

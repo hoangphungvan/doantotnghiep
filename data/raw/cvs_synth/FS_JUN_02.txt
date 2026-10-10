@@ -1,0 +1,54 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có khoảng 1,8 năm kinh nghiệm trong lĩnh vực phần mềm, bắt đầu từ kiểm thử thủ công trước khi chuyển sang phát triển ứng dụng Fullstack. Trong khoảng một năm gần đây, tôi tham gia phát triển hệ thống quản lý kho với Django, Django REST Framework và React.js. I want to further improve my backend development skills, đồng thời nâng cao khả năng kết hợp frontend và backend để xây dựng các ứng dụng phục vụ nghiệp vụ doanh nghiệp.
+
+HỌC VẤN
+
+Đại học công lập – Ngành Hệ thống thông tin
+Trình độ: Đại học.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Backend Development: Python, Django, Django REST Framework, RESTful API.
+- Frontend Development: React.js, JavaScript, HTML5/CSS3.
+- Database: PostgreSQL, thực hiện các thao tác dữ liệu cho ứng dụng.
+- Tools: GitLab, Postman, Docker cơ bản.
+- Testing: Manual Testing, Selenium cơ bản, Pytest cơ bản.
+- Languages: Tiếng Anh B2, có thể đọc viết tài liệu và trao đổi các vấn đề kỹ thuật tương đối tốt.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm phối hợp trong nhóm phát triển và kiểm thử phần mềm.
+- Khả năng tiếp cận vấn đề từ góc nhìn kiểm thử khi tham gia lập trình chức năng.
+- Có tinh thần học hỏi và thích nghi với công việc mới qua quá trình chuyển từ testing sang development.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Công nghệ Nam Việt
+
+Fullstack Developer
+10/2025 – 09/2026 (12 tháng)
+
+- Tham gia phát triển hệ thống quản lý kho sử dụng Django, Django REST Framework và React.js.
+- Xây dựng các RESTful API bằng Python và Django REST Framework phục vụ thao tác dữ liệu quản lý kho.
+- Phát triển và chỉnh sửa giao diện React.js, kết nối với backend để hiển thị và cập nhật dữ liệu từ PostgreSQL.
+- Sử dụng GitLab quản lý source code, Postman kiểm tra API và áp dụng Pytest ở mức cơ bản trong quá trình phát triển.
+
+Manual Software Tester
+12/2024 – 09/2025 (10 tháng)
+
+- Tham gia kiểm thử thủ công các chức năng của phần mềm doanh nghiệp.
+- Thực hiện các bước kiểm tra chức năng và ghi nhận những vấn đề phát hiện được trong quá trình testing.
+- Phối hợp với nhóm phát triển để trao đổi về lỗi chức năng và kết quả kiểm tra.
+- Tìm hiểu Selenium ở mức cơ bản để hỗ trợ việc kiểm tra phần mềm.
+
+DỰ ÁN
+
+Warehouse Management System
+
+Role: Fullstack Developer
+Tech Stack: Python, Django, Django REST Framework, React.js, PostgreSQL, RESTful API.
+
+Tham gia phát triển ứng dụng quản lý kho, tập trung vào xây dựng API và giao diện cho các chức năng thao tác dữ liệu. Phần backend sử dụng Django REST Framework để xử lý request và làm việc với PostgreSQL; frontend sử dụng React.js để tương tác với các API.
+
+Dự án giúp tôi kết hợp kinh nghiệm testing trước đây với công việc development, hiểu rõ hơn quá trình kiểm tra và hoàn thiện chức năng phần mềm.

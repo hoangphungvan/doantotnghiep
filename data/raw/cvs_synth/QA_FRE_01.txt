@@ -1,0 +1,42 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Công nghệ thông tin và đã có thời gian thực tập kiểm thử phần mềm tại một công ty phát triển website thương mại điện tử. Mong muốn tiếp tục làm việc trong lĩnh vực Manual Testing, tập trung nâng cao khả năng viết Test Case, thực thi kiểm thử và ghi nhận lỗi phần mềm. Mục tiêu trước mắt là vận dụng tốt những kiến thức đã học vào công việc thực tế, từng bước tích lũy kinh nghiệm và nâng cao chất lượng công việc kiểm thử.
+
+HỌC VẤN
+
+Trình độ: Đại học
+Chuyên ngành: Công nghệ thông tin
+Trường: Đại học công lập
+
+Trong quá trình học tập, tôi được tiếp cận các kiến thức nền tảng về phần mềm và sử dụng SQL cơ bản để làm việc với dữ liệu.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Manual Testing: Nắm được quy trình kiểm thử thủ công cơ bản.
+- Test Case: Có khả năng viết và thực thi Test Case theo hướng dẫn.
+- Functional Testing, Smoke Testing: Thực hiện kiểm tra chức năng và kiểm tra nhanh các chức năng chính.
+- Bug Reporting: Ghi nhận lỗi, mô tả kết quả thực tế và kết quả mong đợi.
+- Công cụ: Jira, Chrome DevTools, Microsoft Excel.
+- SQL: Sử dụng câu truy vấn cơ bản để kiểm tra dữ liệu.
+- Postman: Biết thao tác kiểm tra API ở mức cơ bản.
+- Có hiểu biết cơ bản về Agile/Scrum.
+
+KỸ NĂNG MỀM
+
+- Có khả năng tiếp nhận hướng dẫn và phối hợp với tester phụ trách trong quá trình kiểm thử.
+- Chủ động ghi nhận các vấn đề phát sinh khi thực thi Test Case.
+- Tiếng Anh B1, có thể đọc hiểu tài liệu kỹ thuật cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Thực tập sinh Manual Tester
+Công ty TNHH Công nghệ Minh Phát
+Thời gian: 4 tháng
+Lĩnh vực: Thương mại điện tử
+
+- Tham gia kiểm thử thủ công website bán hàng, chủ yếu thực thi các Test Case được tester chính phân công.
+- Thực hiện Functional Testing và Smoke Testing, ghi nhận kết quả kiểm thử để người phụ trách theo dõi.
+- Sử dụng Jira để báo cáo các lỗi phát hiện trong quá trình kiểm tra chức năng website, mô tả hiện tượng và các bước tái hiện.
+- Hỗ trợ kiểm tra lại các chức năng theo hướng dẫn sau khi nhóm phát triển cập nhật phần mềm.
+
+Qua thời gian thực tập, tôi đã hiểu rõ hơn cách tổ chức công việc kiểm thử trong một nhóm phát triển phần mềm và cách ghi nhận kết quả kiểm thử có hệ thống.

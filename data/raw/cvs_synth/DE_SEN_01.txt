@@ -1,0 +1,50 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 6 năm 6 tháng kinh nghiệm phát triển hệ thống dữ liệu doanh nghiệp, chủ yếu trong lĩnh vực ngân hàng, viễn thông và phân tích dữ liệu giao dịch. Chuyên môn tập trung vào kiến trúc Data Lake, xử lý dữ liệu phân tán và xây dựng pipeline batch, streaming. Tôi mong muốn tiếp tục tham gia thiết kế các nền tảng dữ liệu có khả năng mở rộng, đồng thời đóng góp vào việc chuẩn hóa quy trình kỹ thuật và nâng cao chất lượng xử lý dữ liệu.
+
+HỌC VẤN
+
+Đại học – Ngành Kỹ thuật phần mềm
+Trường đại học kỹ thuật công lập.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ lập trình: Scala.
+- Big Data Processing: Apache Spark, Distributed Data Processing.
+- Streaming: Apache Kafka.
+- Data Storage: Hadoop HDFS, Apache Hive, Apache Iceberg, S3-compatible Object Storage.
+- Data Orchestration: Apache Airflow.
+- Data Query: Trino.
+- Kiến trúc dữ liệu: Data Lake Architecture.
+- Hạ tầng và vận hành: Kubernetes, Linux, Prometheus.
+- CI/CD và chất lượng dữ liệu: GitLab CI/CD, Great Expectations.
+
+KỸ NĂNG MỀM
+
+- Dẫn dắt kỹ thuật nhóm nhỏ, phân chia và phối hợp công việc trong quá trình phát triển hệ thống.
+- Phân tích vấn đề kỹ thuật, trao đổi phương án thiết kế và xử lý sự cố.
+- Tiếng Anh B2, có thể giao tiếp kỹ thuật với đối tác quốc tế.
+
+KINH NGHIỆM LÀM VIỆC
+
+Senior Big Data Engineer – Công ty CP Nền tảng Dữ liệu Thăng Long
+04/2023 – 09/2026 (3 năm 6 tháng)
+
+- Chịu trách nhiệm thiết kế pipeline batch và streaming cho hệ thống phân tích dữ liệu giao dịch trong lĩnh vực ngân hàng.
+- Xây dựng luồng xử lý bằng Apache Spark, Scala và Apache Kafka, phục vụ khối lượng dữ liệu hàng chục triệu bản ghi mỗi ngày.
+- Tham gia thiết kế Data Lake sử dụng Apache Iceberg, kết hợp Trino để hỗ trợ truy vấn và khai thác dữ liệu.
+- Dẫn dắt kỹ thuật nhóm nhỏ, phối hợp xây dựng lịch xử lý với Apache Airflow và kiểm tra chất lượng dữ liệu bằng Great Expectations.
+
+Data Engineer – Công ty TNHH Công nghệ Viễn thông Bắc Việt
+04/2020 – 03/2023 (3 năm)
+
+- Phát triển pipeline xử lý dữ liệu viễn thông bằng Apache Spark và Scala.
+- Làm việc với Hadoop HDFS và Apache Hive để lưu trữ, tổ chức dữ liệu phục vụ phân tích.
+- Xây dựng các tác vụ xử lý dữ liệu theo lô, hỗ trợ tổng hợp dữ liệu từ nhiều nguồn trong hệ thống doanh nghiệp.
+- Sử dụng Linux và GitLab CI/CD trong quá trình phát triển, cập nhật và triển khai các thành phần xử lý dữ liệu.
+
+DỰ ÁN
+
+Nền tảng phân tích dữ liệu giao dịch quy mô lớn
+
+Tham gia thiết kế kiến trúc Data Lake và hệ thống xử lý dữ liệu phân tán. Sử dụng Apache Kafka, Apache Spark và Apache Airflow để tổ chức các pipeline xử lý batch và streaming. Hệ thống phục vụ phân tích hàng chục triệu bản ghi giao dịch mỗi ngày.

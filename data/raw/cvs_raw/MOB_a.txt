@@ -1,0 +1,223 @@
+\=== CV: MOB_FRE_01 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Nguyễn Minh Quân\
+Email: [nguyenminhquan@example.com](mailto:nguyenminhquan@example.com)\
+Địa chỉ: Hà Nội
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi là sinh viên năm cuối ngành Công nghệ thông tin, định hướng phát triển ứng dụng Android bằng Kotlin. Sau thời gian thực tập tại công ty phần mềm, tôi muốn tiếp tục nâng cao khả năng xây dựng giao diện, tích hợp RESTful API và tổ chức mã nguồn theo mô hình MVVM. Mục tiêu trước mắt là tích lũy thêm kinh nghiệm thực tế, làm việc tốt hơn với Android SDK và phát triển các ứng dụng có giao diện dễ sử dụng.
+
+HỌC VẤN
+
+Sinh viên năm cuối ngành Công nghệ thông tin\
+Trường đại học công lập tại Hà Nội
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ lập trình: Kotlin cơ bản.
+- Android Development: Android SDK, Jetpack Compose cơ bản, Android Activity Lifecycle.
+- Kiến trúc ứng dụng: MVVM cơ bản.
+- Cơ sở dữ liệu: Room Database.
+- Kết nối dữ liệu: Retrofit, RESTful API, Coroutines cơ bản.
+- Công cụ: Android Studio, Git, Postman, Figma.
+- Kiểm thử: JUnit cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm phối hợp với lập trình viên chính trong quá trình thực tập.
+- Tiếp nhận hướng dẫn và phản hồi để điều chỉnh phần việc được giao.
+- Tiếng Anh: Đọc hiểu tài liệu kỹ thuật mức khá, giao tiếp cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Android Developer Intern\
+Công ty TNHH Phần mềm Minh Phát\
+04/2026 – 09/2026 (khoảng 0,5 năm, trong đó 5 tháng tham gia phát triển ứng dụng học tập)
+
+- Tham gia xây dựng giao diện cho ứng dụng học tập Android dưới sự hướng dẫn của lập trình viên chính.
+- Sử dụng Kotlin, Android SDK và Jetpack Compose để triển khai các thành phần giao diện được phân công.
+- Tích hợp RESTful API bằng Retrofit để ứng dụng có thể nhận và hiển thị dữ liệu học tập.
+- Làm việc với cấu trúc MVVM cơ bản, chỉnh sửa các màn hình theo phản hồi trong quá trình phát triển.
+
+DỰ ÁN
+
+Ứng dụng học tập trên Android
+
+Dự án thuộc lĩnh vực giáo dục trực tuyến, được thực hiện trong thời gian thực tập. Tôi chủ yếu phụ trách giao diện và kết nối dữ liệu từ API. Quá trình tham gia giúp tôi hiểu rõ hơn cách tổ chức một ứng dụng Android, sử dụng Android Studio và Git trong công việc thực tế.
+
+\=== CV: MOB_FRE_02 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Trần Hoàng Nam\
+Email: [tranhoangnam@example.com](mailto:tranhoangnam@example.com)\
+Địa chỉ: TP. Hồ Chí Minh
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp cao đẳng ngành Lập trình máy tính và đã có thời gian làm việc với Flutter trong lĩnh vực bán lẻ. Tôi muốn tiếp tục phát triển theo hướng lập trình ứng dụng di động đa nền tảng, đặc biệt là xây dựng giao diện bằng Flutter và xử lý dữ liệu với Firebase. Mong muốn được tham gia các dự án thực tế để cải thiện khả năng viết code, quản lý trạng thái và hoàn thiện giao diện ứng dụng.
+
+HỌC VẤN
+
+Cao đẳng ngành Lập trình máy tính\
+Trường cao đẳng nghề\
+Đã tốt nghiệp
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ: Dart.
+- Mobile Framework: Flutter, Flutter Widget, Responsive UI.
+- State Management: Provider.
+- Firebase: Firebase Authentication, Cloud Firestore, Firebase Storage.
+- API: REST API Integration, Postman.
+- Database: SQLite cơ bản.
+- Công cụ phát triển: Android Studio, Git, Figma.
+
+KỸ NĂNG MỀM
+
+- Có khả năng theo dõi và xử lý các đầu việc liên quan đến giao diện ứng dụng.
+- Trao đổi trong quá trình chỉnh sữa giao diện và kết nối dữ liệu.
+- Tiếng Anh: Đọc tài liệu kỹ thuật cơ bản, giao tiếp còn hạn chế.
+
+KINH NGHIỆM LÀM VIỆC
+
+Flutter Developer\
+Công ty TNHH Công nghệ Bán lẻ An Phúc\
+03/2026 – 10/2026 (khoảng 0,7 năm, với 7 tháng tham gia phát triển ứng dụng bán lẻ)
+
+- Tham gia phát triển ứng dụng Flutter phục vụ hoạt động của cửa hàng bán lẻ, tập trung vào phần giao diện người dùng.
+- Sử dụng Flutter Widget để xây dựng các màn hình và điều chỉnh bố cục theo những kích thước màn hình khác nhau.
+- Áp dụng Provider để quản lý trạng thái, giúp dữ liệu trên giao diên được cập nhật theo các thao tác của người dùng.
+- Làm việc với Firebase Authentication, Cloud Firestore và dữ liệu từ REST API trong quá trình phát triển chức năng ứng dụng.
+
+DỰ ÁN
+
+Ứng dụng di động cho cửa hàng bán lẻ
+
+Công nghệ sử dụng: Dart, Flutter, Provider, Firebase, REST API.
+
+Dự án hỗ trợ hoạt động của cửa hàng bán lẻ và có các phần giao diện kết nối dữ liệu. Tôi tham gia xây dựng màn hình bằng Flutter, xử lý trạng thái bằng Provider và làm việc với dữ liệu trên Cloud Firestore. Qua dự án, tôi có thêm kinh nghiệm về cách xây dựng ứng dụng bán lẻ trên nền tảng Flutter.
+
+Tôi cũng sử dụng Figma để tham khảo thiết kế, Postman để làm việc với API và Git để quản lý các thay đổi trong mã nguồn.
+
+\=== CV: MOB_JUN_01 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Lê Quốc Bảo\
+Email: [lequocbao@example.com](mailto:lequocbao@example.com)\
+Địa chỉ: Đà Nẵng
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Kỹ thuật phần mềm, có khoảng 1,4 năm kinh nghiệm phát triển và bảo trì ứng dụng iOS bằng Swift. Công việc trước đây chủ yếu liên quan đến ứng dụng quản lý nhân sự nội bộ, bao gồm chỉnh sửa giao diện, xử lý lỗi và tích hợp API. Tôi mong muốn tiếp tục phát triển chuyên môn iOS, nâng cao chất lượng mã nguồn và tham gia sâu hơn vào quá trình phát triển ứng dụng.
+
+HỌC VẤN
+
+Cử nhân Kỹ thuật phần mềm\
+Trường đại học tư thục\
+Đã tốt nghiệp
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ lập trình: Swift.
+- Phát triển giao diện iOS: UIKit, Auto Layout, Storyboard.
+- Kiến trúc: MVC.
+- Xử lý dữ liệu: URLSession, Codable, REST API.
+- Lưu trữ dữ liệu: Core Data.
+- Công cụ: Xcode, CocoaPods, Git, TestFlight.
+- Kiểm thử: XCTest cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm tiếp nhận và xử lý những công việc bảo trì trên ứng dụng đang sử dụng.
+- Phối hợp trong quá trình sửa lỗi giao diện và cập nhật các chức năng được giao.
+- Tiếng Anh: Đọc hiểu tài liệu kỹ thuật tốt, giao tiếp công việc cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+iOS Developer\
+Công ty TNHH Giải pháp Phần mềm Nam Việt\
+05/2025 – 09/2026 (khoảng 1,4 năm)
+
+- Bảo trì ứng dụng quản lý nhân sự nội bộ được phát triển bằng Swift và UIKit.
+- Sửa lỗi bố cục màn hình bằng Auto Layout và Storyboard, xử lý các vấn đề giao diện trong quá trình sử dụng.
+- Tích hợp những REST API quy mô nhỏ bằng URLSession, sử dụng Codable để xử lý dữ liệu trả về.
+- Làm việc với cấu trúc MVC, Core Data và Git trong quá trình chỉnh sửa, cập nhật ứng dụng.
+
+DỰ ÁN
+
+Ứng dụng quản lý nhân sự nội bộ trên iOS
+
+Công nghệ: Swift, UIKit, Storyboard, Core Data, REST API.
+
+Tôi tham gia bảo trì và cập nhật ứng dụng phục vụ công việc quản lý nhân sự của doanh nghiệp. Phần việc chính là xử lý lỗi giao diện và bổ sung kết nối API cho các chức năng nhỏ.
+
+Qua dự án, tôi tích lũy được kinh nghiệm đọc hiểu mã nguồn có sẵn, xác định phần cần sửa và thực hiện thay đổi trong phạm vi được phân công. Tôi cũng có kinh nghiệm sử dụng Xcode, CocoaPods và làm việc với các bản ứng dụng thông qua TestFlight.
+
+\=== CV: MOB_JUN_02 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Phạm Đức Huy\
+Email: [phamduchuy@example.com](mailto:phamduchuy@example.com)\
+Địa chỉ: Hà Nội
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 2 năm kinh nghiệm làm frontend development, trong đó 8 tháng đầu làm web với React.js và 16 tháng tiếp theo chuyển sang React Native. Tôi muốn tiếp tục phát triển mobile applications bằng JavaScript và TypeScript, tập trung vào UI development, state management và API integration. Mục tiêu là nâng cao khả năng xây dựng ứng dụng có cấu trúc rõ ràng, dễ bảo trì và đáp ứng nhu cầu sử dụng thực tế.
+
+HỌC VẤN
+
+Cử nhân Hệ thống thông tin\
+Trường đại học công lập\
+Đã tốt nghiệp
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Programming Languages: JavaScript ES6+, TypeScript.
+- Mobile Development: React Native, Expo.
+- React Ecosystem: React Hooks, React.js.
+- State Management: Redux Toolkit.
+- Navigation: React Navigation, Deep Linking cơ bản.
+- API Integration: Axios, RESTful API.
+- Testing: Jest cơ bản.
+- Tools: Git, Figma, Firebase Analytics.
+
+KỸ NĂNG MỀM
+
+- Có khả năng chuyển đổi từ web development sang mobile development.
+- Phối hợp với nhóm kỹ thuật trong quá trình xây dựng và cập nhật chức năng.
+- English: Đọc hiểu tài liệu khá, có thể giao tiếp trong technical team.
+
+KINH NGHIỆM LÀM VIỆC
+
+React Native Developer\
+Công ty TNHH Công nghệ Đặt lịch Việt\
+06/2025 – 09/2026 (16 tháng)
+
+- Phát triển giao diện mobile application cho dịch vụ đặt lịch bằng React Native và TypeScript.
+- Sử dụng React Hooks và Redux Toolkit để quản lý trạng thái trong các chức năng của ứng dụng.
+- Tích hợp RESTful API thông qua Axios để kết nối dữ liệu giữa ứng dụng và hệ thống.
+- Làm việc với React Navigation để xây dựng luồng chuyển màn hình, sử dụng Expo trong quá trình development.
+
+Frontend Developer\
+Công ty TNHH Giải pháp Web Đông Á\
+10/2024 – 05/2025 (8 tháng)
+
+- Tham gia phát triển giao diện web bằng React.js và JavaScript ES6+.
+- Sử dụng React Hooks để xử lý trạng thái và cập nhật nội dung trên giao diện.
+- Làm việc với RESTful API trong các chức năng cần lấy và hiển thị dữ liệu từ hệ thống.
+
+DỰ ÁN
+
+Ứng dụng đặt lịch dịch vụ trên di động
+
+Tech stack: React Native, TypeScript, Expo, Redux Toolkit, React Navigation, Axios.
+
+Tham gia mobile development cho ứng dụng thuộc lĩnh vực dịch vụ đặt lịch. Tôi phụ trách những phần giao diện được phân công, quản lý trạng thái và tích hợp API.
+
+Dự án giúp tôi chuyển những kinh nghiệm từ React.js sang React Native, đồng thời làm quen sâu hơn với cách tổ chức navigation và data flow trên ứng dụng di động.

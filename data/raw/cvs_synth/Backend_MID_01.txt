@@ -1,0 +1,44 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 3,5 năm kinh nghiệm chuyên trách phát triển Backend với C# và ASP.NET Core, tập trung xây dựng RESTful API, tích hợp hệ thống và xử lý nghiệp vụ doanh nghiệp. Trước đây tôi bắt đầu từ Frontend Developer rồi chuyển hướng sang Backend. Tôi muốn tiếp tục phát triển chuyên môn về thiết kế API, tối ưu xử lý dữ liệu và xây dựng các dịch vụ Backend ổn định, dễ bảo trì cho doanh nghiệp.
+
+HỌC VẤN
+
+Cử nhân Kỹ thuật phần mềm
+Trường đại học công lập
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ lập trình: C#, LINQ.
+- Backend: ASP.NET Core, Entity Framework Core, RESTful API.
+- Cơ sở dữ liệu: SQL Server.
+- Tích hợp hệ thống: RabbitMQ, OAuth 2.0.
+- Công cụ phát triển: Git, Docker, Azure DevOps.
+- API Documentation: Swagger/OpenAPI.
+- Testing: xUnit.
+- CI/CD: Có kinh nghiệm sử dụng trong quy trình phát triển.
+- Frontend: React ở mức cơ bản.
+
+KỸ NĂNG MỀM
+
+- Tiếng Anh B2, đọc tài liệu kỹ thuật và trao đổi chuyên môn tốt.
+- Có khả năng tiếp cận vấn đề từ góc nhìn Frontend và Backend nhờ kinh nghiệm chuyển đổi vai trò.
+- Chủ động tìm hiểu các yêu cầu nghiệp vụ để xây dựng chức năng phù hợp.
+- Có kinh nghiệm phối hợp trong các công việc tích hợp hệ thống.
+
+KINH NGHIỆM LÀM VIỆC
+
+.NET Backend Developer
+Công ty TNHH Giải pháp Phần mềm An Phát
+04/2023 – 10/2026 (3 năm 6 tháng)
+
+- Phát triển và bảo trì RESTful API bằng ASP.NET Core cho các hệ thống quản trị doanh nghiệp và bảo hiểm, đáp ứng các yêu cầu xử lý nghiệp vụ.
+- Sử dụng Entity Framework Core, LINQ và SQL Server để xây dựng chức năng truy xuất, cập nhật và quản lý dữ liệu.
+- Tham gia tích hợp các thành phần hệ thống sử dụng RabbitMQ và OAuth 2.0, phục vụ trao đổi thông tin và xác thực.
+- Sử dụng Swagger/OpenAPI để mô tả API, xUnit để kiểm thử và Git, Docker, Azure DevOps trong quá trình phát triển, bàn giao phần mềm.
+
+DỰ ÁN
+
+Hệ thống quản lý nghiệp vụ bảo hiểm và doanh nghiệp
+
+Tham gia xây dựng các API phục vụ xử lý dữ liệu nghiệp vụ, tích hợp giữa các thành phần ứng dụng và hỗ trợ bảo trì chức năng. Công nghệ sử dụng gồm C#, ASP.NET Core, SQL Server, Entity Framework Core và RabbitMQ.

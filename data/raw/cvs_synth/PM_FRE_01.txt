@@ -1,0 +1,39 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Hệ thống thông tin quản lý và có 6 tháng thực tập Product tại doanh nghiệp thương mại điện tử. Mong muốn phát triển theo hướng Product Owner, tập trung vào phân tích nhu cầu người dùng và cải thiện trải nghiệm sản phẩm. Tôi muốn vận dụng những kiến thức đã học về Agile, Scrum và quản lý Product Backlog để tham gia xây dựng các tính năng đáp ứng nhu cầu thực tế.
+
+HỌC VẤN
+
+Cử nhân Hệ thống thông tin quản lý
+Trường đại học công lập
+
+Trong quá trình học, tôi quan tâm đến việc ứng dụng công nghệ vào giải quyết các vấn đề quản lý và vận hành doanh nghiệp.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Thu thập, tổng hợp yêu cầu người dùng và viết tài liệu yêu cầu nghiệp vụ cơ bản.
+- Viết User Story, Acceptance Criteria cho các tính năng đơn giản.
+- Hỗ trợ quản lý Product Backlog bằng Jira.
+- Nắm kiến thức cơ bản về Scrum, Agile và quy trình Sprint.
+- Vẽ User Flow bằng Figma, sử dụng Miro để trao đổi ý tưởng.
+- Hỗ trợ UAT và sử dụng Confluence để quản lý tài liệu.
+- Microsoft Excel và SQL SELECT cơ bản.
+
+KỸ NĂNG MỀM
+
+- Giao tiếp và trao đổi công việc với nhóm phát triển.
+- Tổng hợp thông tin và trình bày yêu cầu rõ ràng.
+- Tiếng Anh B1, có thể đọc tài liệu kỹ thuật và giao tiếp công việc cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Product Intern
+Công ty TNHH Thương mại điện tử Minh Phát
+04/2026 - 09/2026 (6 tháng)
+
+- Hỗ trợ Product Owner thu thập yêu cầu từ người dùng, tổng hợp thành các User Story và Acceptance Criteria đơn giản.
+- Cập nhật Product Backlog trên Jira, theo dõi trạng thái công việc và hỗ trợ nhóm trong các buổi Sprint Planning, Sprint Review.
+- Viết tài liệu nghiệp vụ trên Confluence, vẽ User Flow bằng Figma để làm rõ luồng thao tác của người dùng.
+- Tham gia UAT cơ bản, ghi nhận các vấn đề phát sinh và chuyển thông tin cho nhóm phát triển xử lý trước khi hoàn thiện tính năng.
+
+Tôi mong muốn tiếp tục tích lũy kinh nghiệm thực tế trong môi trường phát triển sản phẩm có quy trình rõ ràng.

@@ -1,0 +1,45 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 8 năm kinh nghiệm làm việc trong mảng IT Infrastructure, đi lên từ IT Support đến quản trị hạ tầng CNTT tại các doanh nghiệp vừa. Thế mạnh chính của tôi là quản lý hệ thống on-premise, server hardware, virtualization và các thiết bị hạ tầng phục vụ vận hành doanh nghiệp. Tôi muốn tiếp tục phát triển theo hướng Infrastructure Administration, tập trung vào việc duy trì độ ổn định của hệ thống, quản lý tài sản thiết bị và xây dựng kế hoạch bảo trì, thay thế hạ tầng phù hợp với nhu cầu sử dụng thực tế.
+
+HỌC VẤN
+
+Tốt nghiệp Cao đẳng ngành Quản trị mạng máy tính tại một trường cao đẳng nghề kỹ thuật.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Virtualization: Quản trị VMware vSphere và VMware ESXi.
+- Server Hardware: Quản trị Dell PowerEdge, troubleshooting phần cứng máy chủ.
+- Networking: Cấu hình và vận hành HPE Aruba Switch.
+- Storage: Quản trị NAS/SAN, triển khai Synology NAS.
+- Backup: Quản lý backup dữ liệu bằng Nakivo.
+- Infrastructure Operations: Quản lý UPS, server room và hệ thống camera IP.
+- Windows Server Administration và quản lý hạ tầng CNTT tại nhiều địa điểm.
+- IT Asset Management: GLPI, quản lý hợp đồng bảo trì và lập kế hoạch thay thế thiết bị.
+
+KỸ NĂNG MỀM
+
+- Phối hợp với các bộ phận để xử lý vấn đề hạ tầng IT.
+- Sắp xếp công việc bảo trì, kiểm tra thiết bị theo mức độ ưu tiên.
+- Hướng dẫn và đào tạo nhân viên hỗ trợ kỹ thuật.
+- Làm việc với nhà cung cấp trong quá trình bảo trì thiết bị.
+- Tiếng Anh B1, đọc tài liệu thiết bị và trao đổi email kỹ thuật.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Phân phối Hưng Nam
+IT Support
+10/2018 - 10/2021 (3 năm)
+
+- Thực hiện hỗ trợ kỹ thuật nội bộ, xử lý các vấn đề về thiết bị CNTT và hệ thống Windows Server trong quá trình vận hành.
+- Kiểm tra, hỗ trợ troubleshooting phần cứng máy chủ và các thiết bị mạng, phối hợp bảo trì khi phát sinh sự cố.
+- Theo dõi thiết bị IT, hỗ trợ cập nhật thông tin tài sản và quản lý hoạt động của hệ thống camera IP tại doanh nghiệp.
+
+Công ty Cổ phần Công nghiệp Hải Phát
+IT Infrastructure Administrator
+10/2021 - 10/2026 (5 năm)
+
+- Quản trị hệ thống VMware vSphere/ESXi và Dell PowerEdge, thực hiện các công việc vận hành, kiểm tra tình trạng server và xử lý sự cố phần cứng phát sinh.
+- Quản lý hệ thống storage NAS/SAN, Synology NAS và backup bằng Nakivo; theo dõi các tác vụ sao lưu phục vụ công tác quản lý dữ liệu doanh nghiệp.
+- Vận hành HPE Aruba Switch, camera IP, UPS và phòng máy chủ; phối hợp xử lý các vấn đề hạ tầng tại nhiều địa điểm.
+- Quản lý tài sản CNTT bằng GLPI, theo dõi hợp đồng bảo trì, xây dựng kế hoạch thay thế thiết bị và hướng dẫn nhân viên hỗ trợ kỹ thuật trong các công việc vận hành thường ngày.

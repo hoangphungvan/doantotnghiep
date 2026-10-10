@@ -1,0 +1,45 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có hơn 3 năm kinh nghiệm làm Manual Testing trong lĩnh vực ngân hàng số và thanh toán điện tử. Công việc chủ yếu là kiểm tra các chức năng giao dịch, thực thi test case và theo dõi lỗi phát sinh trong quá trình phát triển sản phẩm. Mong muốn tiếp tục làm việc trong môi trường có quy trình QA rõ ràng, phát huy kinh nghiệm kiểm thử nghiệp vụ tài chính và cải thiện khả năng phân tích yêu cầu.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học, chuyên ngành Hệ thống thông tin quản lý tại một trường đại học tư thục.
+
+Được học các kiến thức nền tảng về hệ thống thông tin và quy trình xử lý dữ liệu trong doanh nghiệp.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Manual Testing, Functional Testing, Regression Testing.
+- Integration Testing ở mức cơ bản.
+- Test Case Execution theo bộ test case đã chuẩn bị.
+- Quản lý lỗi và theo dõi Defect Lifecycle trên Jira.
+- Sử dụng Zephyr để thực thi và cập nhật kết quả kiểm thử.
+- SQL Query cơ bản để đối chiếu dữ liệu giao dịch.
+- Microsoft Excel, Confluence.
+- Requirement Review ở mức cơ bản.
+
+KỸ NĂNG MỀM
+
+- Phối hợp hỗ trợ người dùng trong quá trình UAT.
+- Trao đổi với nhóm phát triển để làm rõ thông tin lỗi.
+- Tiếng Anh B1, có thể đọc tài liệu và viết báo cáo lỗi bằng tiếng Anh.
+
+KINH NGHIỆM LÀM VIỆC
+
+Manual QA Engineer
+Công ty TNHH Giải pháp Tài chính Minh Việt
+04/2023 – 09/2026
+
+- Thực hiện kiễm thử thủ công các màn hình giao dịch trên hệ thống ngân hàng số và thanh toán điện tử, tập trung kiểm tra luồng xử lý nghiệp vụ.
+- Chạy bộ Regression Testing có sẵn sau các đợt cập nhật, ghi nhận kết quả trên Zephyr và báo cáo các trường hợp không đạt.
+- Sử dụng Jira để tạo và theo dõi defect, kiểm tra lại lỗi sau khi được sửa nhằm xác nhận chức năng hoạt động đúng theo yêu cầu.
+- Hỗ trợ UAT, kiểm tra dữ liệu giao dịch bằng SQL cơ bản và Excel, tổng hợp những lỗi còn tồn đọng để nhóm dự án xử lý trước khi bàn giao.
+
+DỰ ÁN
+
+Kiểm thử hệ thống giao dịch ngân hàng số
+
+Tham gia kiểm thử các chức năng giao dịch trong dự án tài chính. Công việc tập trung vào thực thi test case, chạy regression theo từng đợt cập nhật và kiểm tra dữ liệu sau giao dịch.
+
+Tôi phụ trách cập nhật kết quả test trên Zephyr, theo dõi lỗi trên Jira và phối hợp hỗ trợ UAT. Qua dự án, tôi tích lũy thêm kinh nghiệm về quy trình xử lý defect cũng như cách kiểm tra tính chính xác của dữ liệu giao dịch.

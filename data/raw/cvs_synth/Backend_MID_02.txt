@@ -1,0 +1,45 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 4 năm kinh nghiệm phát triển Backend bằng Go, chủ yếu trong lĩnh vực Fintech, thanh toán điện tử và thương mại điện tử. Công việc tập trung vào xây dựng dịch vụ xử lý giao dịch, tối ưu API và hỗ trợ xử lý sự cố production. Mong muốn tiếp tục phát triển chuyên môn Backend, đặc biệt với Microservices, gRPC và các hệ thống có yêu cầu cao về hiệu năng, độ ổn định.
+
+HỌC VẤN
+
+Kỹ sư Công nghệ thông tin
+Trường đại học kỹ thuật công lập
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ: Go.
+- Backend Framework: Gin Framework.
+- Database: PostgreSQL, Redis.
+- Kiến trúc và giao tiếp dịch vụ: Microservices, gRPC, Apache Kafka.
+- Container: Docker, Kubernetes cơ bản.
+- Monitoring: Prometheus, Grafana.
+- Công cụ: Git, GitLab CI, Linux, Nginx.
+- Testing: Unit Testing.
+
+KỸ NĂNG MỀM
+
+- Tiếng Anh B2, đọc hiểu tài liệu chuyên sâu và trao đổi kỹ thuật tốt.
+- Phối hợp với các thành viên trong nhóm để phân tích và xử lý sự cố production.
+- Có khả năng tập trung tìm nguyên nhân lỗi và cải thiện chất lượng API.
+- Chủ động theo dõi trạng thái dịch vụ trong quá trình vận hành.
+
+KINH NGHIỆM LÀM VIỆC
+
+Backend Developer
+Công ty Công nghệ Thanh toán Minh Việt
+10/2022 – 10/2026 (4 năm)
+
+- Phát triển Backend bằng Go và Gin Framework cho các dịch vụ thanh toán, xử lý giao dịch và các chức năng liên quan.
+- Sử dụng PostgreSQL, Redis và gRPC trong quá trình xây dựng dịch vụ, hỗ trợ truy xuất dữ liệu và giao tiếp giữa các thành phần hệ thống.
+- Tham gia phát triển dịch vụ theo kiến trúc Microservices, sử dụng Apache Kafka và Docker trong quá trình triển khai.
+- Phối hợp cùng nhóm tối ưu API, theo dõi hoạt động bằng Prometheus, Grafana và xử lý các sự cố phát sinh trên production.
+
+DỰ ÁN
+
+Dịch vụ xử lý giao dịch thanh toán điện tử
+
+Phát triển và bảo trì các thành phần Backend phục vụ luồng giao dịch. Tham gia tối ưu API và hỗ trợ xử lý lỗi trong quá trình vận hành thực tế.
+
+Công nghệ: Go, Gin, PostgreSQL, Redis, gRPC, Apache Kafka, Docker.

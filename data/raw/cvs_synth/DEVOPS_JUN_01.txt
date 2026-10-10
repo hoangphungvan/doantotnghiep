@@ -1,0 +1,47 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Có khoảng 1,6 năm kinh nghiệm DevOps tại công ty phát triển sản phẩm SaaS. Đã tham gia duy trì GitLab CI/CD pipeline, triển khai dịch vụ bằng Docker và Amazon ECS. Mong muốn tiếp tục phát triển chuyên môn về tự động hóa triển khai, quản lý hạ tầng AWS và tối ưu quy trình vận hành ứng dụng.
+
+HỌC VẤN
+
+Đại học tư thục tại TP. Hồ Chí Minh
+Chuyên ngành: Kỹ thuật phần mềm
+Trình độ: Đại học
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Hệ thống: Linux Administration.
+- CI/CD: GitLab CI/CD, Git.
+- Container: Docker, Amazon ECS, AWS ECR.
+- Infrastructure: Terraform.
+- AWS: IAM, CloudWatch, Application Load Balancer, Secrets Manager.
+- Scripting: Python Scripting, Shell Scripting.
+- Database: MySQL.
+- Ngoại ngữ: Tiếng Anh B2, đọc viết tài liệu kỹ thuật tốt, giao tiếp công việc cơ bản.
+
+KỸ NĂNG MỀM
+
+- Phối hợp với kỹ sư cấp cao trong việc thay đổi hạ tầng.
+- Làm việc theo kế hoạch và tài liệu thiết kế có sẵn.
+- Chủ động kiểm tra kết quả sau khi triển khai.
+- Trao đổi các vấn đề kỹ thuật với thành viên trong nhóm.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Công nghệ CloudVista
+Vị trí: DevOps Engineer
+Thời gian: 03/2025 - 10/2026 (1 năm 7 tháng, xấp xỉ 1,6 năm)
+
+- Duy trì GitLab CI/CD pipeline cho các dịch vụ SaaS, hỗ trợ tự động hóa quá trình build và triển khai ứng dụng.
+- Đóng gói ứng dụng bằng Docker, quản lý image trên AWS ECR và hỗ trợ triển khai các service lên Amazon ECS.
+- Sử dụng Terraform để thực hiện thay đổi tài nguyên AWS theo thiết kế được kỹ sư cấp cao phê duyệt.
+- Theo dõi log và thông tin vận hành bằng Amazon CloudWatch, kiểm tra trạng thái dịch vụ sau mỗi lần cập nhật.
+
+DỰ ÁN
+
+Duy trì hạ tầng AWS cho ứng dụng SaaS
+
+- Tham gia vận hành các service container trên Amazon ECS.
+- Hỗ trợ cấu hình AWS IAM, Application Load Balancer và quản lý thông tin ứng dụng qua AWS Secrets Manager.
+- Sử dụng Python và Shell Scripting để hỗ trợ các thao tác vận hành lặp lại.
+- Kết quả: Duy trì quy trình triển khai cho các dịch vụ được phân công, thực hiện các thay đổi hạ tầng theo thiết kế và kiểm tra kết quả sau triển khai.

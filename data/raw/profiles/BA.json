@@ -1,0 +1,322 @@
+
+[
+  {
+    "profile_id": "BA_FRE_01",
+    "role_family": "Business Analyst",
+    "target_title": "Fresher IT Business Analyst",
+    "seniority": "Fresher",
+    "years_experience": 0.4,
+    "education": "Cử nhân Hệ thống thông tin quản lý, đại học công lập khối kinh tế",
+    "core_skills": [
+      "Requirement Gathering cơ bản",
+      "Viết User Story theo mẫu",
+      "Vẽ Use Case Diagram bằng Draw.io",
+      "Phân tích quy trình nghiệp vụ đơn giản",
+      "Microsoft Excel",
+      "BPMN cơ bản",
+      "Viết Acceptance Criteria cho chức năng đơn giản"
+    ],
+    "secondary_skills": [
+      "Microsoft Word",
+      "PowerPoint",
+      "Trello",
+      "SQL SELECT cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa tự chủ trì buổi thu thập yêu cầu với khách hàng",
+      "Chưa có kinh nghiệm phân tích hệ thống tích hợp API",
+      "Chưa thực hiện UAT độc lập"
+    ],
+    "languages": [
+      "Tiếng Anh B1, đọc hiểu tài liệu kỹ thuật cơ bản"
+    ],
+    "industries": [
+      "EdTech",
+      "Phần mềm quản lý đào tạo"
+    ],
+    "career_note": "Sinh viên mới tốt nghiệp, có 5 tháng thực tập BA tại công ty phát triển phần mềm quản lý đào tạo, chủ yếu hỗ trợ ghi nhận yêu cầu, mô hình hóa quy trình và viết tài liệu dưới sự hướng dẫn của BA chính.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "BA_FRE_02",
+    "role_family": "Business Analyst",
+    "target_title": "Fresher Business Analyst - Banking Operations",
+    "seniority": "Fresher",
+    "years_experience": 0.7,
+    "education": "Cử nhân Quản trị kinh doanh, đại học tư thục khối kinh tế",
+    "core_skills": [
+      "Phân tích quy trình chăm sóc khách hàng",
+      "Thu thập yêu cầu từ người dùng nội bộ",
+      "Vẽ Flowchart bằng Lucidchart",
+      "Google Sheets",
+      "Viết Business Requirement cơ bản",
+      "Phân tích vấn đề nghiệp vụ",
+      "Mô tả As-Is và To-Be Process"
+    ],
+    "secondary_skills": [
+      "Notion",
+      "Google Docs",
+      "Figma cơ bản",
+      "CRM Operations"
+    ],
+    "known_gaps": [
+      "Chưa thành thạo UML và mô hình hóa hệ thống phần mềm",
+      "Chưa có kinh nghiệm truy vấn SQL",
+      "Chưa hiểu sâu kiến trúc hệ thống ngân hàng lõi"
+    ],
+    "languages": [
+      "Tiếng Anh B1, giao tiếp công việc ở mức cơ bản"
+    ],
+    "industries": [
+      "Ngân hàng bán lẻ",
+      "Chăm sóc khách hàng"
+    ],
+    "career_note": "Chuyển từ nhân viên chăm sóc khách hàng ngân hàng sang BA, có 7 tháng tham gia cải tiến quy trình tiếp nhận yêu cầu và xử lý khiếu nại trên hệ thống nội bộ, nhưng nền tảng kỹ thuật còn hạn chế.",
+    "cv_style": "lẫn Anh-Việt"
+  },
+  {
+    "profile_id": "BA_JUN_01",
+    "role_family": "Business Analyst",
+    "target_title": "Junior Business Analyst - E-commerce",
+    "seniority": "Junior",
+    "years_experience": 1.5,
+    "education": "Cử nhân Công nghệ thông tin, đại học công lập khối kỹ thuật",
+    "core_skills": [
+      "Requirement Elicitation",
+      "Viết BRD và SRS cho các chức năng thương mại điện tử",
+      "User Story và Acceptance Criteria",
+      "Jira",
+      "Confluence",
+      "SQL với MySQL",
+      "Wireframe bằng Figma",
+      "REST API cơ bản với Postman",
+      "Agile Scrum"
+    ],
+    "secondary_skills": [
+      "Miro",
+      "Git cơ bản",
+      "Swagger UI",
+      "UAT Support"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm thiết kế giải pháp cho hệ thống quy mô lớn",
+      "Chưa từng phụ trách một dự án từ đầu đến cuối",
+      "Chưa thành thạo phân tích dữ liệu nâng cao"
+    ],
+    "languages": [
+      "Tiếng Anh B2, đọc viết tài liệu và trao đổi công việc"
+    ],
+    "industries": [
+      "E-commerce",
+      "Bán lẻ trực tuyến"
+    ],
+    "career_note": "Có 1,5 năm làm BA trong nhóm phát triển nền tảng thương mại điện tử, đã trực tiếp phân tích các chức năng giỏ hàng, quản lý đơn hàng và khuyến mãi nhưng vẫn cần hỗ trợ khi xử lý yêu cầu phức tạp.",
+    "cv_style": "ngắn gọn"
+  },
+  {
+    "profile_id": "BA_JUN_02",
+    "role_family": "Business Analyst",
+    "target_title": "Junior Business Analyst - Internal Systems",
+    "seniority": "Junior",
+    "years_experience": 1.8,
+    "education": "Cử nhân Hệ thống thông tin, đại học địa phương",
+    "core_skills": [
+      "Ghi nhận và làm rõ yêu cầu nghiệp vụ",
+      "Viết Functional Specification theo mẫu",
+      "Vẽ Activity Diagram bằng Visual Paradigm",
+      "Microsoft Visio",
+      "Quản lý tài liệu yêu cầu",
+      "Microsoft Excel nâng cao",
+      "Kiểm tra tính nhất quán của yêu cầu"
+    ],
+    "secondary_skills": [
+      "Microsoft Teams",
+      "SharePoint",
+      "Azure DevOps Boards cơ bản",
+      "Manual Testing",
+      "UAT Checklist"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm tổ chức workshop trực tiếp với khách hàng bên ngoài",
+      "Chưa thành thạo SQL và kiểm thử API",
+      "Chưa từng tự quản lý phạm vi yêu cầu của dự án"
+    ],
+    "languages": [
+      "Tiếng Anh A2-B1, đọc tài liệu đơn giản và viết email ngắn"
+    ],
+    "industries": [
+      "Phần mềm quản trị nội bộ",
+      "Hành chính nhân sự"
+    ],
+    "career_note": "Có 1,8 năm mang chức danh BA nhưng chủ yếu cập nhật tài liệu và hỗ trợ kiểm thử cho một hệ thống quản lý nhân sự nội bộ, ít tiếp xúc trực tiếp với khách hàng và chưa tự chịu trách nhiệm phân tích một phân hệ hoàn chỉnh.",
+    "cv_style": "có lỗi chính tả nhẹ"
+  },
+  {
+    "profile_id": "BA_MID_01",
+    "role_family": "Business Analyst",
+    "target_title": "Middle IT Business Analyst - Insurance",
+    "seniority": "Middle",
+    "years_experience": 3.4,
+    "education": "Cử nhân Kỹ thuật phần mềm, đại học công lập khối công nghệ",
+    "core_skills": [
+      "Phân tích nghiệp vụ bảo hiểm",
+      "Business Process Modeling bằng Bizagi Modeler",
+      "BPMN 2.0",
+      "Viết BRD, FRD và SRS",
+      "SQL Server và T-SQL",
+      "API Requirement Analysis",
+      "Swagger OpenAPI",
+      "Requirement Traceability",
+      "UAT Planning"
+    ],
+    "secondary_skills": [
+      "Postman",
+      "Test Case Review",
+      "PlantUML",
+      "Quản lý Change Request",
+      "Giao tiếp với Development và QA Team"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm với các hệ thống cloud-native",
+      "Chưa phụ trách quản lý ngân sách dự án",
+      "Chưa có chứng chỉ nghiệp vụ bảo hiểm chuyên sâu"
+    ],
+    "languages": [
+      "Tiếng Anh B2, làm việc được với tài liệu và nhóm kỹ thuật quốc tế"
+    ],
+    "industries": [
+      "InsurTech",
+      "Bảo hiểm phi nhân thọ"
+    ],
+    "career_note": "Đi lên từ vị trí Manual QA sang Business Analyst, có 3,4 năm kinh nghiệm BA chuyên về hệ thống quản lý hợp đồng và bồi thường bảo hiểm, tận dụng nền tảng kiểm thử để làm rõ quy tắc nghiệp vụ và tiêu chí nghiệm thu.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "BA_MID_02",
+    "role_family": "Business Analyst",
+    "target_title": "Middle Business Analyst - ERP",
+    "seniority": "Middle",
+    "years_experience": 3.7,
+    "education": "Cử nhân Kế toán - Hệ thống thông tin, đại học công lập khối kinh tế",
+    "core_skills": [
+      "Phân tích quy trình mua hàng và kho vận",
+      "Odoo ERP Functional Analysis",
+      "Gap Analysis giữa quy trình thực tế và ERP",
+      "Microsoft Excel PivotTable",
+      "Viết Functional Requirement",
+      "Quản lý Master Data",
+      "Vẽ quy trình bằng Microsoft Visio",
+      "Hỗ trợ triển khai ERP"
+    ],
+    "secondary_skills": [
+      "Microsoft Power BI cơ bản",
+      "Odoo Studio cơ bản",
+      "Data Mapping",
+      "User Training",
+      "Google Workspace"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm tích hợp ERP với nhiều hệ thống bên ngoài",
+      "Chưa thành thạo API và thiết kế cơ sở dữ liệu",
+      "Chưa có kinh nghiệm phân tích nghiệp vụ ở phạm vi đa chi nhánh"
+    ],
+    "languages": [
+      "Tiếng Anh B1, đọc hiểu tài liệu ERP và giao tiếp nội bộ"
+    ],
+    "industries": [
+      "Phân phối",
+      "Quản lý kho",
+      "ERP"
+    ],
+    "career_note": "Có 3,7 năm kinh nghiệm BA nhưng chủ yếu duy trì và tùy chỉnh một hệ thống Odoo cho doanh nghiệp phân phối quy mô nhỏ, phạm vi công việc tập trung vào mua hàng và tồn kho nên mức độ trải nghiệm dự án còn khá hẹp so với thâm niên.",
+    "cv_style": "dài dòng"
+  },
+  {
+    "profile_id": "BA_SEN_01",
+    "role_family": "Business Analyst",
+    "target_title": "Senior Business Analyst - Digital Banking",
+    "seniority": "Senior",
+    "years_experience": 6.5,
+    "education": "Thạc sĩ Hệ thống thông tin quản lý, đại học công lập khối kinh tế; trước đó tốt nghiệp cử nhân Công nghệ thông tin",
+    "core_skills": [
+      "Enterprise Requirement Analysis",
+      "Stakeholder Management",
+      "Business Process Reengineering",
+      "Phân tích nghiệp vụ ngân hàng số",
+      "Phân tích tích hợp hệ thống qua API",
+      "SQL với PostgreSQL",
+      "BPMN và UML nâng cao",
+      "Backlog Prioritization",
+      "Jira và Confluence",
+      "Mentoring Junior Business Analysts"
+    ],
+    "secondary_skills": [
+      "Camunda Modeler",
+      "Event Storming",
+      "Power BI",
+      "Risk Assessment",
+      "Agile Scrum và Scrum of Scrums",
+      "Solution Review"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm chuyên sâu về hệ thống xử lý giao dịch blockchain",
+      "Chưa từng đảm nhiệm vai trò Enterprise Architect",
+      "Chưa có chứng chỉ CBAP"
+    ],
+    "languages": [
+      "Tiếng Anh C1, điều phối workshop và viết tài liệu nghiệp vụ chuyên sâu"
+    ],
+    "industries": [
+      "Digital Banking",
+      "FinTech",
+      "Thanh toán điện tử"
+    ],
+    "career_note": "Có 6,5 năm phát triển liên tục trong vai trò BA từ phân tích chức năng thanh toán đến phụ trách nghiệp vụ cho các dự án ngân hàng số, hiện có kinh nghiệm điều phối nhóm BA nhỏ và làm việc trực tiếp với các bên liên quan cấp quản lý.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "BA_SEN_02",
+    "role_family": "Business Analyst",
+    "target_title": "Senior Business Analyst - Enterprise Digital Transformation",
+    "seniority": "Senior",
+    "years_experience": 8.0,
+    "education": "Cử nhân Hệ thống thông tin quản lý, đại học công lập khối kỹ thuật và kinh tế",
+    "core_skills": [
+      "Enterprise Business Analysis",
+      "Phân tích quy trình sản xuất và chuỗi cung ứng",
+      "SAP S/4HANA Functional Analysis",
+      "Business Capability Mapping",
+      "Business Architecture Modeling với Archi",
+      "Requirements Governance",
+      "Stakeholder Negotiation",
+      "Change Impact Analysis",
+      "Data Migration Requirement Analysis",
+      "Đào tạo và phát triển đội ngũ BA"
+    ],
+    "secondary_skills": [
+      "SAP Signavio Process Manager",
+      "SAP Fiori",
+      "Tableau",
+      "Workshop Facilitation",
+      "RACI Matrix",
+      "Microsoft Project"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm triển khai các sản phẩm AI hoặc Machine Learning",
+      "Chưa thành thạo kiến trúc Microservices ở mức thiết kế kỹ thuật",
+      "Chưa có chứng chỉ TOGAF"
+    ],
+    "languages": [
+      "Tiếng Anh C1, làm việc trực tiếp với đối tác và chuyên gia nước ngoài",
+      "Tiếng Nhật N3, giao tiếp công việc cơ bản"
+    ],
+    "industries": [
+      "Manufacturing",
+      "Supply Chain",
+      "Enterprise ERP",
+      "Chuyển đổi số doanh nghiệp"
+    ],
+    "career_note": "Có 8 năm kinh nghiệm Business Analyst trong các dự án chuyển đổi số doanh nghiệp, phát triển từ BA phụ trách từng phân hệ đến Lead BA cho chương trình triển khai ERP nhiều phòng ban, mạnh về quản trị yêu cầu và phối hợp nghiệp vụ nhưng không chuyên về lập trình hệ thống.",
+    "cv_style": "lẫn Anh-Việt"
+  }
+]

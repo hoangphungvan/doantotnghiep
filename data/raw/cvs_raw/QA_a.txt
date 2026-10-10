@@ -1,0 +1,211 @@
+\=== CV: QA_FRE_01 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Nguyễn Minh Anh\
+Email: [nguyenminhanh@example.com](mailto:nguyenminhanh@example.com)\
+Địa chỉ: Hà Nội
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Công nghệ thông tin và đã có thời gian thực tập kiểm thử phần mềm tại một công ty phát triển website thương mại điện tử. Mong muốn tiếp tục làm việc trong lĩnh vực Manual Testing, tập trung nâng cao khả năng viết Test Case, thực thi kiểm thử và ghi nhận lỗi phần mềm. Mục tiêu trước mắt là vận dụng tốt những kiến thức đã học vào công việc thực tế, từng bước tích lũy kinh nghiệm và nâng cao chất lượng công việc kiểm thử.
+
+HỌC VẤN
+
+Trình độ: Đại học\
+Chuyên ngành: Công nghệ thông tin\
+Trường: Đại học công lập
+
+Trong quá trình học tập, tôi được tiếp cận các kiến thức nền tảng về phần mềm và sử dụng SQL cơ bản để làm việc với dữ liệu.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Manual Testing: Nắm được quy trình kiểm thử thủ công cơ bản.
+- Test Case: Có khả năng viết và thực thi Test Case theo hướng dẫn.
+- Functional Testing, Smoke Testing: Thực hiện kiểm tra chức năng và kiểm tra nhanh các chức năng chính.
+- Bug Reporting: Ghi nhận lỗi, mô tả kết quả thực tế và kết quả mong đợi.
+- Công cụ: Jira, Chrome DevTools, Microsoft Excel.
+- SQL: Sử dụng câu truy vấn cơ bản để kiểm tra dữ liệu.
+- Postman: Biết thao tác kiểm tra API ở mức cơ bản.
+- Có hiểu biết cơ bản về Agile/Scrum.
+
+KỸ NĂNG MỀM
+
+- Có khả năng tiếp nhận hướng dẫn và phối hợp với tester phụ trách trong quá trình kiểm thử.
+- Chủ động ghi nhận các vấn đề phát sinh khi thực thi Test Case.
+- Tiếng Anh B1, có thể đọc hiểu tài liệu kỹ thuật cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Thực tập sinh Manual Tester\
+Công ty TNHH Công nghệ Minh Phát\
+Thời gian: 4 tháng\
+Lĩnh vực: Thương mại điện tử
+
+- Tham gia kiểm thử thủ công website bán hàng, chủ yếu thực thi các Test Case được tester chính phân công.
+- Thực hiện Functional Testing và Smoke Testing, ghi nhận kết quả kiểm thử để người phụ trách theo dõi.
+- Sử dụng Jira để báo cáo các lỗi phát hiện trong quá trình kiểm tra chức năng website, mô tả hiện tượng và các bước tái hiện.
+- Hỗ trợ kiểm tra lại các chức năng theo hướng dẫn sau khi nhóm phát triển cập nhật phần mềm.
+
+Qua thời gian thực tập, tôi đã hiểu rõ hơn cách tổ chức công việc kiểm thử trong một nhóm phát triển phần mềm và cách ghi nhận kết quả kiểm thử có hệ thống.
+
+\=== CV: QA_FRE_02 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Trần Quốc Bảo\
+Email: [tranquocbao@example.com](mailto:tranquocbao@example.com)\
+Địa chỉ: TP. Hồ Chí Minh
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Công nghệ phần mềm, có kinh nghiệm cộng tác kiểm thử ứng dụng di động trong 7 tháng. Định hướng phát triển trong lĩnh vực Mobile Application Testing, đặc biệt là kiểm tra giao diện và các luồng sử dụng ứng dụng. Mong muốn tiếp tục nâng cao khả năng thiết kế Test Scenario, tái hiện lỗi và kiểm thử trên các thiết bị có kích thước màn hình khác nhau.
+
+HỌC VẤN
+
+Trình độ: Cao đẳng\
+Chuyên ngành: Công nghệ phần mềm\
+Trường: Cao đẳng kỹ thuật
+
+Được trang bị kiến thức cơ bản về phát triển phần mềm và có cơ hội vận dụng kiến thức vào quá trình kiểm thử ứng dụng di động thực tế.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Mobile Application Testing: Kiểm thử ứng dụng trên thiết bị di động.
+- Android Testing: Có kinh nghiệm kiểm thử ứng dụng Android.
+- iOS Testing: Thực hiện kiểm tra ứng dụng iOS ở mức cơ bản.
+- Exploratory Testing: Khám phá các luồng thao tác để phát hiện lỗi.
+- Regression Testing: Kiểm tra lại chức năng ở mức cơ bản sau khi ứng dụng được cập nhật.
+- Test Scenario Design: Xây dựng các tình huống kiểm thử dựa trên luồng sử dụng.
+- Bug Reproduction: Tái hiện lỗi để hỗ trợ quá trình xác minh.
+- Công cụ: ADB cơ bản, Firebase Crashlytics cơ bản, TestFlight và Trello.
+- Kiểm tra giao diện trên nhiều kích thước màn hình.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm phối hợp với nhóm phát triển sản phẩm nhỏ.
+- Có thói quen quan sát giao diện và ghi nhận các vấn đề gặp phải trong quá trình sử dụng ứng dụng.
+- Tiếng Anh A2-B1, đọc hiểu hướng dẫn sử dụng công cụ kiểm thử.
+
+KINH NGHIỆM LÀM VIỆC
+
+Cộng tác viên Mobile Application Tester\
+Nhóm phát triển sản phẩm TechNova\
+Thời gian: 7 tháng\
+Lĩnh vực: Ứng dụng giáo dục và tiện ích di động
+
+- Kiểm thử ứng dụng Android, tập trung vào giao diện và các luồng thao tác chính của người dùng.
+- Hỗ trợ kiểm tra các bản thử nghiệm iOS thông qua TestFlight, ghi nhận những vấn đề phát sinh trong quá trình sử dụng.
+- Thực hiện Exploratory Testing và tái hiện lỗi để nhóm phát triển có thông tin kiểm tra.
+- Kiểm tra giao diện trên các kích thước màn hình khác nhau và ghi nhận kết quả công việc bằng Trello.
+
+Thời gian cộng tác giúp tôi làm quen với quy trình kiểm thử ứng dụng di động và nâng cao khả năng phát hiện, mô tả lỗi trong sản phẩm thực tế.
+
+\=== CV: QA_JUN_01 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Lê Hoàng Nam\
+Email: [lehoangnam@example.com](mailto:lehoangnam@example.com)\
+Địa chỉ: Đà Nẵng
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 1,5 năm kinh nghiệm trong lĩnh vực Software Testing, bắt đầu từ vị trí thực tập sinh và phát triển lên Junior Tester. Công việc hiện tại tập trung vào API Testing cho các hệ thống logistics và quản lý kho vận. Tôi mong muốn tiếp tục phát triển chuyên môn về REST API Testing, xây dựng các bộ kiểm thử API có khả năng tái sử dụng và nâng cao hiệu quả kiểm tra chức năng backend.
+
+HỌC VẤN
+
+Trình độ: Đại học\
+Chuyên ngành: Hệ thống thông tin\
+Trường: Đại học tư thục
+
+Kiến thức được học là nền tảng giúp tôi tiếp cận việc kiểm tra dữ liệu, làm việc với API và hiểu các chức năng của hệ thống thông tin.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- API Testing: Thiết kế và thực thi API test cho các chức năng CRUD.
+- Postman: Tạo request, kiểm tra response và tổ chức các bài kiểm thử API.
+- REST API: Hiểu cách sử dụng HTTP methods và HTTP Status Codes.
+- JSON Validation: Kiểm tra cấu trúc và nội dung dữ liệu trả về.
+- MySQL: Sử dụng để truy vấn, đối chiếu dữ liệu trong quá trình testing.
+- Swagger/OpenAPI: Đọc API documentation phục vụ thiết kế test.
+- Newman: Thực thi bộ kiểm thử được xây dựng bằng Postman.
+- GitLab: Sử dụng trong quá trình làm việc với nhóm.
+- Có kiến thức về Manual Web Testing, Boundary Value Analysis và Equivalence Partitioning.
+- Sử dụng Git và GitLab CI ở mức cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có thể tự tổ chức việc thiết kế và thực thi test cho các API CRUD thông thường.
+- Phối hợp với thành viên có kinh nghiệm khi xử lý các luồng tích hợp phức tạp.
+- Tiếng Anh B1, đọc hiểu API documentation và trao đổi kỹ thuật đơn giản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Software Tester (Intern → Junior)\
+Công ty TNHH Giải pháp Logistics Đông Nam\
+Thời gian: 1 năm 6 tháng\
+Lĩnh vực: Logistics, quản lý kho vận
+
+- Bắt đầu với công việc hỗ trợ Manual Testing, sau đó đảm nhận thiết kế và thực thi API test cho các chức năng CRUD.
+- Sử dụng Postman kết hợp Swagger/OpenAPI để kiểm tra request, response, HTTP Status Codes và dữ liệu JSON.
+- Kiểm tra dữ liệu bằng MySQL, áp dụng Boundary Value Analysis và Equivalence Partitioning trong quá trình thiết kế trường hợp kiểm thử.
+- Sử dụng Newman để chạy lại bộ kiểm thử API, hỗ trợ theo dõi kết quả sau các thay đổi chức năng.
+
+Trong quá trình làm việc, tôi đã từng bước chuyển từ thực thi test theo hướng dẫn sang chủ động kiểm thử các chức năng API thông thường.
+
+\=== CV: QA_JUN_02 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Phạm Thị Thu Hà\
+Email: [phamthithuha@example.com](mailto:phamthithuha@example.com)\
+Địa chỉ: Hà Nội
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Quản trị kinh doanh và từng làm việc trong lĩnh vực chăm sóc khách hàng trước khi chuyển sang kiểm thử phần mềm. Sau khi hoàn thành khóa đào tạo kiểm thử ngắn hạn, tôi đã có khoảng 1,8 năm kinh nghiệm QA, chủ yếu tham gia kiểm thử các hệ thống CRM phục vụ dịch vụ khách hàng và bán lẻ.
+
+Nhờ có nền tảng làm việc trực tiếp với nghiệp vụ khách hàng, tôi có khả năng tiếp cận các chức năng phần mềm từ góc nhìn người sử dụng. Tôi mong muốn tiếp tục phát triển trong lĩnh vực Functional Testing và User Acceptance Testing, tập trung vào việc kiểm tra tính chính xác của các quy trình nghiệp vụ và trải nghiệm sử dụng hệ thống.
+
+HỌC VẤN
+
+Trình độ: Đại học\
+Chuyên ngành: Quản trị kinh doanh\
+Trường: Đại học công lập
+
+Đào tạo bổ sung: Hoàn thành khóa đào tạo kiểm thử phần mềm ngắn hạn trước khi chuyển sang làm việc trong lĩnh vực QA.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Functional Testing: Kiểm tra các chức năng phần mềm theo yêu cầu nghiệp vụ.
+- User Acceptance Testing (UAT): Tham gia kiểm thử theo góc nhìn người dùng nghiệp vụ.
+- Business Requirement Analysis: Có khả năng phân tích yêu cầu ở mức cơ bản.
+- Test Case Design: Thiết kế trường hợp kiểm thử dựa trên chức năng cần kiểm tra.
+- Defect Tracking: Theo dõi lỗi phát sinh trong quá trình kiểm thử.
+- CRM Workflow Testing: Kiểm tra các luồng nghiệp vụ trên hệ thống CRM.
+- Azure DevOps Boards: Sử dụng để quản lý và theo dõi công việc kiểm thử.
+- Azure Test Plans: Sử dụng trong quá trình tổ chức kiểm thử.
+- Microsoft SQL Server: Có kiến thức và khả năng thao tác cơ bản.
+- Microsoft Excel nâng cao: Sử dụng để chuẩn bị, tổng hợp thông tin kiểm thử.
+- Test Data Preparation và Customer Journey Analysis.
+
+KỸ NĂNG MỀM
+
+- Giao tiếp với người dùng nghiệp vụ để làm rõ các vấn đề liên quan đến quá trình sử dụng hệ thống.
+- Có khả năng nhìn nhận quy trình CRM từ kinh nghiệm thực tế trong lĩnh vực chăm sóc khách hàng.
+- Tiếng Anh B1, có thể giao tiếp nghiệp vụ cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Functional Tester\
+Công ty TNHH Giải pháp Khách hàng Việt Tín\
+Thời gian: Khoảng 1 năm 10 tháng\
+Lĩnh vực: CRM, dịch vụ khách hàng và bán lẻ
+
+- Thực hiện Functional Testing cho các chức năng của hệ thống CRM, tập trung kiểm tra luồng xử lý nghiệp vụ và đối chiếu với yêu cầu sử dụng thực tế.
+- Thiết kế Test Case, chuẩn bị Test Data và ghi nhận kết quả kiểm thử; sử dụng Azure DevOps Boards để theo dõi các lỗi phát hiện trong quá trình làm việc.
+- Tham gia UAT, trao đổi với người dùng nghiệp vụ để xác định những vấn đề ảnh hưởng đến quá trình sử dụng hệ thống.
+- Vận dụng kiến thức Customer Journey Analysis và kinh nghiệm chăm sóc khách hàng để kiểm tra tính phù hợp của các luồng CRM, ghi nhận những điểm cần được xem xét điều chỉnh.
+
+Trong thời gian làm QA, tôi đã có cơ hội kết hợp kiến thức kiểm thử phần mềm với hiểu biết về hoạt động chăm sóc khách hàng. Đây là nền tảng giúp tôi tiếp cận các bài toán Functional Testing gắn với quy trình nghiệp vụ thực tế.

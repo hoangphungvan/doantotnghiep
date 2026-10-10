@@ -1,0 +1,51 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 1 năm 7 tháng kinh nghiệm xây dựng và bảo trì các pipeline xử lý dữ liệu theo lịch tại công ty sản phẩm thương mại điện tử. Tôi muốn tiếp tục phát triển chuyên môn Data Engineering, đặc biệt trong thiết kế ETL Pipeline, Batch Data Processing và quản lý dữ liệu phục vụ phân tích kinh doanh. Mục tiêu là nâng cao khả năng vận hành pipeline ổn định và xử lý các luồng dữ liệu có độ phức tạp lớn hơn.
+
+HỌC VẤN
+
+Trình độ: Đại học
+Chuyên ngành: Khoa học máy tính
+Trường: Đại học tư thục đào tạo Công nghệ thông tin
+
+Được trang bị kiến thức nền tảng về lập trình, cơ sở dữ liệu và xử lý dữ liệu trong hệ thống phần mềm.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Programming: Python, SQL, Bash Scripting.
+- Database: MySQL.
+- Data Engineering: ETL Pipeline, Batch Data Processing, Apache Airflow.
+- Data Processing: Apache Spark cơ bản.
+- Data Storage: MinIO, Parquet.
+- Development Tools: Docker, GitLab.
+- Monitoring: Grafana cơ bản.
+- Integration: REST API.
+- Tiếng Anh B2, đọc viết tài liệu kỹ thuật tốt, giao tiếp công việc khá.
+
+KỸ NĂNG MỀM
+
+- Phối hợp với nhóm phát triển sản phẩm trong công việc xử lý dữ liệu.
+- Trao đổi các vấn đề kỹ thuật và tiến độ công việc bằng tiếng Anh.
+- Theo dõi, xử lý các vấn đề phát sinh trong quá trình bảo trì pipeline.
+- Tổng hợp và trình bày kết quả xử lý dữ liệu phục vụ nhu cầu báo cáo.
+
+KINH NGHIỆM LÀM VIỆC
+
+Data Engineer
+Công ty Cổ phần Nền tảng Số Nam Việt – TP. Hồ Chí Minh
+Thời gian: 1 năm 7 tháng
+
+- Xây dựng và bảo trì các ETL Pipeline bằng Python, SQL và Apache Airflow để xử lý dữ liệu theo lịch.
+- Thực hiện Batch Data Processing, chuẩn bị dữ liệu doanh thu và hành vi người dùng phục vụ nhu cầu phân tích của doanh nghiệp.
+- Làm việc với MySQL, MinIO và định dạng Parquet trong quá trình lưu trữ, truy xuất và xử lý dữ liệu.
+- Theo dõi quá trình thực thi pipeline, kiểm tra kết quả xử lý và khắc phục lỗi phát sinh nhằm duy trì dữ liệu phục vụ báo cáo định kỳ.
+
+DỰ ÁN
+
+ETL Pipeline phục vụ báo cáo doanh thu và phân tích hành vi khách hàng
+
+Tham gia phát triển hệ thống pipeline dữ liệu theo lịch cho sản phẩm thương mại điện tử.
+
+Công nghệ sử dụng: Python, SQL, Apache Airflow, MySQL, MinIO, Parquet.
+
+Công việc bao gồm thu thập, biến đổi và chuẩn bị dữ liệu phục vụ báo cáo doanh thu, đồng thời bảo trì các pipeline hiện có. Kết quả là các luồng xử lý dữ liệu được duy trì để cung cấp dữ liệu định kỳ cho hoạt động phân tích kinh doanh.

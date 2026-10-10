@@ -1,0 +1,44 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 3 năm 10 tháng làm Machine Learning Engineer trong môi trường AI Research & Development, chủ yếu làm các bài toán NLP, semantic search và xử lý tài liệu tiếng Việt. Trong quá trình làm việc, tôi dành nhiều thời gian cho model experimentation, đánh giá các hướng tiếp cận khác nhau và xây dựng prototype trước khi chuyển giao kết quả nghiên cứu. Tôi quan tâm đặc biệt đến Retrieval-Augmented Generation (RAG), embedding models và việc ứng dụng language models để khai thác tri thức từ tài liệu. Định hướng tiếp theo là phát triển các giải pháp AI có khả năng ứng dụng thực tế dựa trên những kinh nghiệm nghiên cứu đã tích lũy.
+
+HỌC VẤN
+
+Thạc sĩ – Ngành Khoa học dữ liệu
+Trường đại học công lập có chương trình sau đại học về Công nghệ thông tin.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Programming: Python.
+- Deep Learning: PyTorch, Hugging Face Transformers.
+- NLP Models: BERT, Sentence Transformers.
+- Information Retrieval: FAISS, Vector Search, Retrieval-Augmented Generation.
+- Model Experimentation: MLflow, Google Colab.
+- API và demo: FastAPI, Gradio.
+- Development tools: Git, Docker cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có khả năng đọc, phân tích và tổng hợp tài liệu nghiên cứu AI bằng tiếng Anh.
+- Trình bày kết quả technical experiments và trao đổi các lựa chọn mô hình với nhóm R&D.
+- Tiếng Anh C1, sử dụng tốt trong viết tài liệu và thuyết trình kỹ thuật.
+
+KINH NGHIỆM LÀM VIỆC
+
+Machine Learning Engineer – Công ty CP Nghiên cứu AI Ngôn ngữ Việt
+01/2023 – 10/2026 (3 năm 10 tháng)
+
+- Tham gia R&D các giải pháp NLP cho lĩnh vực giáo dục công nghệ và xử lý tài liệu tiếng Việt, tập trung vào thử nghiệm language models và đánh giá kết quả.
+- Sử dụng PyTorch, BERT và Hugging Face Transformers để thực hiện các thử nghiệm mô hình ngôn ngữ trên dữ liệu văn bản.
+- Xây dựng semantic search prototype bằng Sentence Transformers và FAISS, thực hiện embedding và vector similarity search để truy xuất các đoạn tài liệu liên quan.
+- Phát triển thử nghiệm RAG pipeline, sử dụng MLflow để theo dõi các lần experimentation, đồng thời xây dựng API thử nghiệm với FastAPI và giao diện demo bằng Gradio.
+
+DỰ ÁN
+
+Vietnamese Document Semantic Search
+
+Phát triển prototype tìm kiếm ngữ nghĩa cho tài liệu tiếng Việt. Sử dụng Sentence Transformers để tạo vector embeddings và FAISS làm thành phần truy xuất. Kết quả là một prototype có thể tiếp nhận truy vấn và trả về các đoạn tài liệu liên quan theo độ tương đồng ngữ nghĩa.
+
+RAG Prototype for Vietnamese Documents
+
+Thử nghiệm Retrieval-Augmented Generation kết hợp Vector Search với mô hình ngôn ngữ. Tập trung đánh giá khả năng truy xuất ngữ cảnh phù hợp từ tài liệu và xây dựng bản demo phục vụ hoạt động nghiên cứu nội bộ.

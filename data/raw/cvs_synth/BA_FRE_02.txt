@@ -1,0 +1,45 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Quản trị kinh doanh, có background về Customer Service trong lĩnh vực ngân hàng bán lẻ và đã tham gia các hoạt động Business Analysis liên quan đến quy trình nội bộ. Tôi muốn phát triển theo hướng Business Analyst, tận dụng hiểu biết về banking operations và trải nghiệm làm việc với người dùng nội bộ để cải thiện quy trình vận hành, đặc biệt trong mảng chăm sóc khách hàng.
+
+HỌC VẤN
+
+Cử nhân Quản trị kinh doanh
+Đại học tư thục khối kinh tế
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Business Process Analysis: Phân tích quy trình chăm sóc khách hàng và các vấn đề phát sinh trong vận hành.
+- Requirement Gathering: Thu thập yêu cầu từ Internal Users.
+- Business Requirement: Viết và tổng hợp yêu cầu nghiệp vụ cơ bản.
+- Process Mapping: Mô tả As-Is và To-Be Process.
+- Lucidchart: Vẽ Flowchart để trình bày các bước xử lý nghiệp vụ.
+- Google Sheets để tổng hợp thông tin và theo dõi vấn đề.
+- CRM Operations, Notion và Google Docs phục vụ công việc.
+- Figma cơ bản để thể hiện ý tưởng giao diện.
+
+KỸ NĂNG MỀM
+
+- Giao tiếp với người dùng nội bộ để ghi nhận các khó khăn trong quá trình làm việc.
+- Có khả năng quan sát và phân tích vấn đề từ góc nhìn vận hành thực tế.
+- Tổng hợp phản hồi và trình bày lại thông tin theo từng bước xử lý.
+- Tiếng Anh B1, giao tiếp công việc ở mức cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Customer Service / Business Operations Support
+Ngân hàng TMCP Phát triển An Việt
+Thời gian: 0,7 năm (khoảng 8 tháng)
+
+- Thực hiện công việc liên quan đến Customer Service, tiếp nhận thông tin và các vấn đề từ khách hàng.
+- Trong 7 tháng tham gia cải tiến quy trình nội bộ, hỗ trợ thu thập feedback từ người dùng hệ thống tiếp nhận yêu cầu và xử lý khiếu nại.
+- Phân tích các bước xử lý hiện tại, xây dựng As-Is Flow và đề xuất To-Be Flow bằng Lucidchart.
+- Tổng hợp Business Requirements trên Google Docs, quản lý các vấn đề nghiệp vụ bằng Google Sheets và Notion.
+
+DỰ ÁN
+
+Internal Customer Complaint Process Improvement
+
+Tham gia hoạt động cải tiến quy trình tiếp nhận yêu cầu và xử lý khiếu nại trong ngân hàng bán lẻ.
+
+Tôi phụ trách hỗ trợ mô tả business flow, ghi nhận các điểm gây khó khăn cho bộ phận vận hành và tổng hợp yêu cầu điều chỉnh. Kết quả công việc là bộ mô tả As-Is, To-Be Process cùng danh sách yêu cầu nghiệp vụ để nhóm phụ trách hệ thống nội bộ tham khảo.

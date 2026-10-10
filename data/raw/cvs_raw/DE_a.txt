@@ -1,0 +1,227 @@
+\=== CV: DE_FRE_01 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Nguyễn Minh Khôi\
+Email: [nguyenminhkhoi@example.com](mailto:nguyenminhkhoi@example.com)\
+Địa chỉ: Hà Nội
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi mong muốn phát triển sự nghiệp trong lĩnh vực Data Engineering, tập trung vào xử lý và quản lý dữ liệu phục vụ hoạt động kinh doanh. Sau 6 tháng thực tập tại doanh nghiệp thương mại điện tử, tôi đã có kinh nghiệm thực tế với SQL, Python và quy trình làm sạch dữ liệu bán hàng. Mục tiêu trước mắt là nâng cao khả năng xây dựng ETL Pipeline và xử lý dữ liệu hiệu quả, từng bước đảm nhận các công việc kỹ thuật có độ phức tạp cao hơn.
+
+HỌC VẤN
+
+Trình độ: Đại học\
+Chuyên ngành: Hệ thống thông tin\
+Trường: Đại học công lập chuyên ngành Công nghệ thông tin
+
+Được đào tạo kiến thức nền tảng về hệ thống thông tin, cơ sở dữ liệu và xử lý dữ liệu.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ: Python, SQL.
+- Cơ sở dữ liệu: PostgreSQL, viết truy vấn SQL phục vụ khai thác dữ liệu.
+- Xử lý dữ liệu: Pandas, Data Cleaning, Data Transformation, ETL cơ bản.
+- Phân tích và báo cáo: Excel, Power BI, Metabase.
+- Công cụ hỗ trợ: Git, Jupyter Notebook, Linux cơ bản.
+- Ngoại ngữ: Tiếng Anh B1, đọc hiểu tài liệu kỹ thuật khá, giao tiếp cơ bản.
+
+KỸ NĂNG MỀM
+
+- Phối hợp với các thành viên trong nhóm để xử lý dữ liệu phục vụ báo cáo.
+- Trao đổi yêu cầu liên quan đến dữ liệu và kết quả xử lý trong công việc.
+- Chủ động tìm hiểu tài liệu kỹ thuật tiếng Anh khi thực hiện nhiệm vụ.
+
+KINH NGHIỆM LÀM VIỆC
+
+Data Intern\
+Công ty TNHH Thương mại Điện tử Minh Phát – Hà Nội\
+Thời gian: 6 tháng
+
+- Sử dụng Python và Pandas để làm sạch dữ liệu bán hàng, xử lý các giá trị thiếu và chuẩn hóa dữ liệu trước khi phân tích.
+- Viết truy vấn SQL trên PostgreSQL để truy xuất thông tin đơn hàng, sản phẩm và dữ liệu phục vụ tổng hợp doanh thu.
+- Tham gia các bước ETL cơ bản, thực hiện Data Transformation để chuẩn bị dữ liệu cho hoạt động phân tích.
+- Hỗ trợ xây dựng báo cáo bằng Excel và Power BI, giúp nhóm kinh doanh theo dõi thông tin bán hàng từ dữ liệu đã được xử lý.
+
+DỰ ÁN
+
+Xử lý dữ liệu và hỗ trợ báo cáo bán hàng
+
+Tham gia chuẩn bị dữ liệu bán hàng tại doanh nghiệp thương mại điện tử. Công việc tập trung vào Data Cleaning, truy vấn SQL và tổng hợp dữ liệu phục vụ báo cáo. Kết quả là các tập dữ liệu được chuẩn hóa để sử dụng trong quá trình phân tích doanh thu.
+
+\=== CV: DE_FRE_02 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Trần Đức Huy\
+Email: [tranduchuy@example.com](mailto:tranduchuy@example.com)\
+Địa chỉ: Hà Nội
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi định hướng phát triển trong lĩnh vực Computer Vision, đặc biệt là các ứng dụng AI hỗ trợ kiểm tra chất lượng sản phẩm trong sản xuất công nghiệp. Qua gần 10 tháng thực tập tại nhóm nghiên cứu AI, tôi đã được tham gia quá trình chuẩn bị image dataset, training Object Detection model và đánh giá kết quả nhận diện. Tôi mong muốn tiếp tục nâng cao năng lực phát triển mô hình bằng PyTorch, OpenCV và YOLOv8, đồng thời tích lũy thêm kinh nghiệm xây dựng ứng dụng Computer Vision thực tế.
+
+HỌC VẤN
+
+Trình độ: Đại học\
+Chuyên ngành: Kỹ thuật máy tính\
+Trường: Đại học kỹ thuật công lập
+
+Có nền tảng đào tạo kỹ thuật máy tính và kiến thức liên quan đến ứng dụng AI trong xử lý hình ảnh.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Programming Language: Python.
+- Deep Learning Framework: PyTorch.
+- Computer Vision: OpenCV, YOLOv8, Object Detection.
+- Image Processing: Image Preprocessing, chuẩn bị dữ liệu ảnh cho quá trình training.
+- Machine Learning Techniques: Transfer Learning, Model Evaluation.
+- Data Annotation: CVAT.
+- Development Tools: Google Colab, Git.
+- Backend & Deployment cơ bản: FastAPI, Docker.
+- English: B1, đọc hiểu tài liệu AI và trao đổi kỹ thuật đơn giản.
+
+KỸ NĂNG MỀM
+
+- Phối hợp với các thành viên trong research team khi chuẩn bị dữ liệu và đánh giá mô hình.
+- Trao đổi kết quả thử nghiệm dựa trên các chỉ số đánh giá.
+- Đọc tài liệu tiếng Anh để tìm hiểu phương pháp huấn luyện và xử lý hình ảnh.
+
+KINH NGHIỆM LÀM VIỆC
+
+Computer Vision Intern\
+Công ty TNHH Nghiên cứu Công nghệ VisionTech\
+Thời gian: Gần 10 tháng
+
+- Thực hiện image annotation bằng CVAT cho bộ dữ liệu hình ảnh sản phẩm, tạo dữ liệu đầu vào phục vụ model training.
+- Sử dụng Python và OpenCV để thực hiện Image Preprocessing, chuẩn bị dữ liệu cho bài toán phát hiện lỗi sản phẩm.
+- Tham gia training và fine-tuning YOLOv8 bằng PyTorch và các kỹ thuật Transfer Learning trên dữ liệu nội bộ.
+- Thực hiện Model Evaluation, tổng hợp kết quả nhận diện để nhóm nghiên cứu so sánh và điều chỉnh các lần thử nghiệm.
+
+DỰ ÁN
+
+Product Defect Detection – Nhận diện lỗi sản phẩm
+
+Tham gia nghiên cứu ứng dụng Object Detection trong kiểm tra chất lượng sản phẩm công nghiệp. Công việc chính gồm annotation, preprocessing, model training và evaluation. Sử dụng YOLOv8, OpenCV, PyTorch và Google Colab.
+
+Kết quả: Hoàn thành các bước chuẩn bị dữ liệu và thử nghiệm mô hình nhận diện trên bộ dữ liệu nội bộ, cung cấp kết quả đánh giá phục vụ quá trình nghiên cứu tiếp theo.
+
+\=== CV: DE_JUN_01 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Lê Hoàng Nam\
+Email: [lehoangnam@example.com](mailto:lehoangnam@example.com)\
+Địa chỉ: TP. Hồ Chí Minh
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 1 năm 7 tháng kinh nghiệm xây dựng và bảo trì các pipeline xử lý dữ liệu theo lịch tại công ty sản phẩm thương mại điện tử. Tôi muốn tiếp tục phát triển chuyên môn Data Engineering, đặc biệt trong thiết kế ETL Pipeline, Batch Data Processing và quản lý dữ liệu phục vụ phân tích kinh doanh. Mục tiêu là nâng cao khả năng vận hành pipeline ổn định và xử lý các luồng dữ liệu có độ phức tạp lớn hơn.
+
+HỌC VẤN
+
+Trình độ: Đại học\
+Chuyên ngành: Khoa học máy tính\
+Trường: Đại học tư thục đào tạo Công nghệ thông tin
+
+Được trang bị kiến thức nền tảng về lập trình, cơ sở dữ liệu và xử lý dữ liệu trong hệ thống phần mềm.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Programming: Python, SQL, Bash Scripting.
+- Database: MySQL.
+- Data Engineering: ETL Pipeline, Batch Data Processing, Apache Airflow.
+- Data Processing: Apache Spark cơ bản.
+- Data Storage: MinIO, Parquet.
+- Development Tools: Docker, GitLab.
+- Monitoring: Grafana cơ bản.
+- Integration: REST API.
+- Tiếng Anh B2, đọc viết tài liệu kỹ thuật tốt, giao tiếp công việc khá.
+
+KỸ NĂNG MỀM
+
+- Phối hợp với nhóm phát triển sản phẩm trong công việc xử lý dữ liệu.
+- Trao đổi các vấn đề kỹ thuật và tiến độ công việc bằng tiếng Anh.
+- Theo dõi, xử lý các vấn đề phát sinh trong quá trình bảo trì pipeline.
+- Tổng hợp và trình bày kết quả xử lý dữ liệu phục vụ nhu cầu báo cáo.
+
+KINH NGHIỆM LÀM VIỆC
+
+Data Engineer\
+Công ty Cổ phần Nền tảng Số Nam Việt – TP. Hồ Chí Minh\
+Thời gian: 1 năm 7 tháng
+
+- Xây dựng và bảo trì các ETL Pipeline bằng Python, SQL và Apache Airflow để xử lý dữ liệu theo lịch.
+- Thực hiện Batch Data Processing, chuẩn bị dữ liệu doanh thu và hành vi người dùng phục vụ nhu cầu phân tích của doanh nghiệp.
+- Làm việc với MySQL, MinIO và định dạng Parquet trong quá trình lưu trữ, truy xuất và xử lý dữ liệu.
+- Theo dõi quá trình thực thi pipeline, kiểm tra kết quả xử lý và khắc phục lỗi phát sinh nhằm duy trì dữ liệu phục vụ báo cáo định kỳ.
+
+DỰ ÁN
+
+ETL Pipeline phục vụ báo cáo doanh thu và phân tích hành vi khách hàng
+
+Tham gia phát triển hệ thống pipeline dữ liệu theo lịch cho sản phẩm thương mại điện tử.
+
+Công nghệ sử dụng: Python, SQL, Apache Airflow, MySQL, MinIO, Parquet.
+
+Công việc bao gồm thu thập, biến đổi và chuẩn bị dữ liệu phục vụ báo cáo doanh thu, đồng thời bảo trì các pipeline hiện có. Kết quả là các luồng xử lý dữ liệu được duy trì để cung cấp dữ liệu định kỳ cho hoạt động phân tích kinh doanh.
+
+\=== CV: DE_JUN_02 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Phạm Ngọc Anh\
+Email: [phamngocanh@example.com](mailto:phamngocanh@example.com)\
+Địa chỉ: Hà Nội
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 1 năm 10 tháng tham gia nhóm phát triển các ứng dụng NLP, tập trung vào xử lý dữ liệu văn bản, phân loại phản hồi khách hàng và đánh giá mô hình Machine Learning. Tôi mong muốn tiếp tục làm việc chuyên sâu về Natural Language Processing, đặc biệt là Text Classification và Named Entity Recognition. Trong thời gian tới, tôi muốn nâng cao khả năng thử nghiệm mô hình, cải thiện chất lượng xử lý dữ liệu và ứng dụng các phương pháp NLP vào bài toán doanh nghiệp.
+
+HỌC VẤN
+
+Trình độ: Đại học\
+Chuyên ngành: Trí tuệ nhân tạo\
+Trường: Đại học công lập có chương trình đào tạo AI
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ lập trình: Python.
+- Machine Learning: Scikit-learn.
+- NLP Libraries: NLTK, spaCy, Hugging Face Transformers.
+- NLP Tasks: Text Classification, Named Entity Recognition.
+- Feature Extraction: TF-IDF.
+- Model Evaluation: Precision, Recall, F1.
+- Xử lý dữ liệu: Pandas.
+- Công cụ: Jupyter Notebook, Git, Label Studio, Streamlit.
+- Ngoại ngữ: Tiếng Anh B1, đọc hiểu tài liệu chuyên ngành khá; tiếng Nhật N5, giao tiếp rất cơ bản.
+
+KỸ NĂNG MỀM
+
+- Phối hợp với nhóm NLP trong quá trình chuẩn bị dữ liệu và đánh giá mô hình.
+- Tổng hợp kết quả thử nghiệm để trao đổi với các thành viên trong nhóm.
+- Đọc hiểu tài liệu chuyên ngành tiếng Anh phục vụ nghiên cứu và thử nghiệm.
+
+KINH NGHIỆM LÀM VIỆC
+
+NLP Engineer\
+Công ty TNHH Giải pháp Phần mềm An Phúc\
+Thời gian: 1 năm 10 tháng
+
+- Chuẩn bị và làm sạch dữ liệu văn bản phản hồi khách hàng bằng Python, Pandas và các công cụ NLP.
+- Sử dụng Label Studio để gán nhãn dữ liệu, phục vụ quá trình huấn luyện và đánh giá mô hình Text Classification.
+- Thử nghiệm các phương pháp TF-IDF, Scikit-learn và Hugging Face Transformers trong bài toán phân loại phản hồi.
+- Đánh giá kết quả mô hình bằng Precision, Recall và F1; tổng hợp kết quả thử nghiệm trên Jupyter Notebook để nhóm so sánh các phương pháp xử lý.
+
+DỰ ÁN
+
+Customer Feedback Classification
+
+Tham gia xử lý và phân loại dữ liệu phản hồi khách hàng cho ứng dụng phần mềm doanh nghiệp.
+
+Công nghệ: Python, Scikit-learn, NLTK, spaCy, Hugging Face Transformers, Pandas.
+
+Nhiệm vụ chính gồm chuẩn bị dữ liệu, gán nhãn, thử nghiệm mô hình và đánh giá kết quả phân loại.
+
+Kết quả: Hoàn thành các tập dữ liệu phục vụ huấn luyện và tổng hợp kết quả đánh giá mô hình, hỗ trợ nhóm lựa chọn phương pháp phân loại phản hồi khách hàng.

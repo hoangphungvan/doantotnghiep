@@ -1,0 +1,46 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 1,5 năm kinh nghiệm làm Product Owner cho sản phẩm Mobile App trong lĩnh vực đặt lịch dịch vụ. Công việc chính của tôi là quản lý Product Backlog, phân tích yêu cầu và phối hợp với Development Team để triển khai các cải tiến trên ứng dụng Android, iOS. Tôi mong muốn tiếp tục phát triển kỹ năng Product Management, tận dụng user feedback và dữ liệu sử dụng sản phẩm để đề xuất những thay đổi mang lại giá trị thực tế cho người dùng.
+
+HỌC VẤN
+
+Cử nhân Công nghệ thông tin
+Trường đại học công lập
+
+Nền tảng CNTT giúp tôi tiếp cận các yêu cầu sản phẩm và trao đổi với nhóm kỹ thuật trong quá trình phát triển Mobile App.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Product Backlog Management, viết User Story và Acceptance Criteria.
+- Phân tích yêu cầu sản phẩm Mobile App và ưu tiên tính năng theo MoSCoW.
+- Sprint Tracking bằng Azure DevOps Boards.
+- Phối hợp với UI/UX Team xây dựng Wireframe, sử dụng Balsamiq.
+- Phân tích user behavior cơ bản bằng Firebase Analytics.
+- Quản lý user feedback, đề xuất các hướng cải tiến tính năng.
+- Thực hiện User Acceptance Testing (UAT) trước khi release.
+- Có kiến thức cơ bản về REST API, sử dụng Postman ở mức cơ bản và Microsoft Excel.
+
+KỸ NĂNG MỀM
+
+- Product Presentation, trình bày yêu cầu và phương án cải tiến.
+- Phối hợp với Development Team và UI/UX Team.
+- Tiếng Anh B2, đọc hiểu tài liệu sản phẩm và trao đổi trong nhóm kỹ thuật.
+
+KINH NGHIỆM LÀM VIỆC
+
+Product Owner
+Công ty TNHH Giải pháp Di động An Việt
+04/2025 - 09/2026 (1 năm 6 tháng)
+
+- Phụ trách Product Backlog cho ứng dụng đặt lịch dịch vụ trên Android và iOS, làm rõ User Story, Acceptance Criteria trước khi chuyển sang Development Team.
+- Sử dụng phương pháp MoSCoW để sắp xếp mức độ ưu tiên của các yêu cầu cải tiến dưới sự định hướng của Product Manager.
+- Theo dõi Sprint trên Azure DevOps Boards, phối hợp với UI/UX Team để thống nhất Wireframe cho các thay đổi trên ứng dụng.
+- Tổng hợp user feedback, xem xét dữ liệu Firebase Analytics và tham gia UAT nhằm kiểm tra tính năng trước khi release.
+
+DỰ ÁN
+
+Ứng dụng đặt lịch dịch vụ trực tuyến
+
+Vai trò: Product Owner
+
+Tham gia phát triển và cải tiến các tính năng của ứng dụng đặt lịch. Tôi chịu trách nhiệm làm rõ yêu cầu, cập nhật Backlog và phối hợp kiểm tra tính năng. Các phản hồi từ người dùng được tổng hợp để đề xuất điều chỉnh cho những Sprint tiếp theo.

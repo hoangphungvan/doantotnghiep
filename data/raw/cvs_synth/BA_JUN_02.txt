@@ -1,0 +1,50 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Hệ thống thông tin và có 1,8 năm kinh nghiệm làm Business Analyst cho hệ thống quản lý nhân sự nội bộ. Công việc của tôi chủ yếu là ghi nhận yêu cầu, cập nhập tài liệu và hỗ trợ kiểm thử các chức năng của hệ thống.
+
+Tôi muốn tiếp tục phát triển trong lĩnh vực phân tích nghiệp vụ, nâng cao kỹ năng làm rõ yêu cầu và xây dựng tài liệu Functional Specification để hỗ trợ tốt hơn cho quá trình phát triển phần mềm.
+
+HỌC VẤN
+
+Cử nhân Hệ thống thông tin
+Đại học địa phương
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ghi nhận và làm rõ yêu cầu nghiệp vụ từ người dùng nội bộ.
+- Viết Functional Specification theo mẫu có sẵn.
+- Vẽ Activity Diagram bằng Visual Paradigm.
+- Sử dụng Microsoft Visio để thể hiện quy trình nghiệp vụ.
+- Quản lý và cập nhật tài liệu yêu cầu.
+- Microsoft Excel nâng cao để tổng hợp và kiểm tra thông tin.
+- Kiểm tra tính nhất quán giữa các nội dung yêu cầu.
+- Manual Testing và xây dựng UAT Checklist.
+- Microsoft Teams, SharePoint và Azure DevOps Boards cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có khả năng làm việc với tài liệu chi tiết và sắp xếp thông tin.
+- Phối hợp với các bộ phận nội bộ để làm rõ nội dung nghiệp vụ.
+- Theo dõi và ghi nhận các thay đổi yêu cầu trong quá trình làm việc.
+- Tiếng Anh A2-B1, đọc tài liệu đơn giản và viết email ngắn.
+
+KINH NGHIỆM LÀM VIỆC
+
+Business Analyst
+Công ty TNHH Giải pháp Quản trị Hòa Phát Việt
+Thời gian: 1,8 năm
+
+- Tiếp nhận yêu cầu từ người dùng nội bộ cho hệ thống quản lý hành chính nhân sự, hỗ trợ làm rõ các thông tin còn thiếu.
+- Cập nhập Functional Specification theo mẫu, kiểm tra nội dung và lưu trữ tài liệu trên SharePoint.
+- Sử dụng Visual Paradigm và Microsoft Visio để mô tả các bước xử lý nghiệp vụ bằng Activity Diagram.
+- Hỗ trợ Manual Testing, chuẩn bị UAT Checklist và ghi nhận các vấn đề trong quá trình kiểm thử để nhóm phát triển xử lý.
+
+DỰ ÁN
+
+Hệ thống quản lý nhân sự nội bộ
+
+Tham gia với vai trò BA, tập trung vào công việc quản lý tài liệu và hỗ trợ kiểm thử hệ thống.
+
+Tôi sử dụng Excel để tổng hợp yêu cầu, SharePoint để lưu tài liệu, Microsoft Teams để trao đổi công việc và Azure DevOps Boards để theo dõi các đầu việc cơ bản.
+
+Kết quả công việc là các bản Functional Specification được cập nhật, sơ đồ nghiệp vụ và UAT Checklist phục vụ cho việc kiểm tra chức năng của hệ thống.

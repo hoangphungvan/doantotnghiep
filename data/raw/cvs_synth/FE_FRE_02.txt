@@ -1,0 +1,48 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Ứng dụng phần mềm và có kinh nghiệm thực tập Frontend với Vue 3. Mong muốn tiếp tục phát triển kỹ năng xây dựng giao diện web, làm việc với Vue Router, Pinia và các công cụ hỗ trợ phát triển Frontend. Định hướng trở thành lập trình viên có khả năng thực hiện các tính năng giao diện một cách độc lập và đáp ứng yêu cầu thực tế của sản phẩm.
+
+HỌC VẤN
+
+Tốt nghiệp Cao đẳng ngành Ứng dụng phần mềm
+
+Trường cao đẳng kỹ thuật
+
+Có kiến thức về lập trình web, HTML5, CSS3, JavaScript và phát triển ứng dụng giao diện người dùng.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- HTML5, CSS3, JavaScript.
+- Vue 3, Vue Router, Pinia cơ bản.
+- Tailwind CSS, Figma.
+- Axios, Vite, Git.
+- Firebase Hosting, Chrome DevTools.
+
+KỸ NĂNG MỀM
+
+- Có khả năng phối hợp trong nhóm phát triển phần mềm.
+- Tiếp nhận yêu cầu chỉnh sửa giao diện trong quá trình thực tập.
+- Tiếng Anh A2, đọc hiểu tài liệu kỹ thuật đơn giản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Frontend Developer Intern
+
+Công ty Công nghệ An Việt
+
+Thời gian: 0,7 năm
+
+Lĩnh vực: Gia công phần mềm, bán lẻ và dịch vụ đặt lịch
+
+- Tham gia phát triển giao diện quản lý sản phẩm bằng Vue 3, HTML5 và CSS3, hoàn thiện các phần giao diện được phân công.
+- Xây dựng giao diện hệ thống đặt lịch dịch vụ, sử dụng Vue Router để tổ chức điều hướng giữa các trang.
+- Sử dụng Tailwind CSS để chỉnh sửa bố cục và các thành phần giao diện theo thiết kế Figma.
+- Sử dụng Git để quản lý mã nguồn và Chrome DevTools để kiểm tra, xử lý các vấn đề hiển thị.
+
+DỰ ÁN
+
+Hệ thống quản lý sản phẩm và đặt lịch dịch vụ
+
+Công nghệ: Vue 3, JavaScript, Vue Router, Tailwind CSS, Axios, Vite.
+
+Tham gia xây dựng các màn hình quản lý sản phẩm và giao diện đặt lịch trong thời gian thực tập. Công việc chủ yếu là phát triển các phần giao diện theo yêu cầu và chỉnh sửa để đảm bảo hiển thị phù hợp với thiết kế.

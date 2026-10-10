@@ -1,0 +1,245 @@
+\=== CV: FE_FRE_01 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Nguyễn Minh Quân
+
+Email: [minhquan@example.com](mailto:minhquan@example.com)
+
+Địa chỉ: Hà Nội
+
+Vị trí hiện tại: Sinh viên năm cuối ngành Công nghệ thông tin
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi là sinh viên năm cuối ngành Công nghệ thông tin, định hướng phát triển trong lĩnh vực Frontend với ReactJS. Đã có thời gian thực tập tại công ty phần mềm, tham gia xây dựng giao diện trang khóa học và chỉnh sửa các React component theo hướng dẫn của mentor. Mong muốn được làm việc trong môi trường chuyên nghiệp để nâng cao khả năng lập trình JavaScript, ReactJS và tích lũy thêm kinh nghiệm phát triển sản phẩm thực tế.
+
+HỌC VẤN
+
+Sinh viên năm cuối ngành Công nghệ thông tin
+
+Trường đại học công lập
+
+Được học và thực hành các kiến thức lập trình web, tập trung tìm hiểu HTML5, CSS3, JavaScript ES6+ và ReactJS.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ và giao diện: HTML5, CSS3, JavaScript ES6+.
+- Framework/Library: ReactJS, React Hooks cơ bản, Bootstrap 5.
+- Thiết kế giao diện: Responsive Web Design, Figma cơ bản.
+- Công cụ phát triển: Git, Vite, npm, Postman.
+- API: REST API integration, kết nối dữ liệu từ API vào giao diện React.
+
+KỸ NĂNG MỀM
+
+- Có khả năng tiếp nhận hướng dẫn và phản hồi từ mentor trong quá trình làm việc.
+- Phối hợp với các thành viên trong nhóm khi chỉnh sửa giao diện.
+- Tiếng Anh B1, có thể đọc tài liệu kỹ thuật và giao tiếp cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Frontend Developer Intern
+
+Công ty Phần mềm Minh Phát
+
+Thời gian: 0,4 năm
+
+Lĩnh vực: Giáo dục trực tuyến
+
+- Tham gia xây dựng giao diện trang khóa học trực tuyến bằng ReactJS, HTML5 và CSS3.
+- Chỉnh sửa các React component theo yêu cầu và hướng dẫn từ mentor, hoàn thiện phần giao diện được giao.
+- Sử dụng React Hooks cơ bản để xử lý dữ liệu trong component, kết hợp Responsive Web Design để điều chỉnh hiển thị trên các kích thước màn hình.
+- Sử dụng Git để quản lý thay đổi mã nguồn và phối hợp cập nhật giao diện trong quá trình thực tập.
+
+DỰ ÁN
+
+Giao diện nền tảng khóa học trực tuyến
+
+Công nghệ: ReactJS, JavaScript ES6+, HTML5, CSS3, Bootstrap 5.
+
+Tham gia phát triển và điều chỉnh giao diện trang khóa học trong thời gian thực tập. Công việc tập trung vào xây dựng component, chỉnh sửa bố cục và hỗ trợ tích hợp dữ liệu từ REST API vào các phần giao diện được phân công.
+
+\=== CV: FE_FRE_02 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Trần Quốc Huy
+
+Email: [quochuy@example.com](mailto:quochuy@example.com)
+
+Địa chỉ: Đà Nẵng
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Ứng dụng phần mềm và có kinh nghiệm thực tập Frontend với Vue 3. Mong muốn tiếp tục phát triển kỹ năng xây dựng giao diện web, làm việc với Vue Router, Pinia và các công cụ hỗ trợ phát triển Frontend. Định hướng trở thành lập trình viên có khả năng thực hiện các tính năng giao diện một cách độc lập và đáp ứng yêu cầu thực tế của sản phẩm.
+
+HỌC VẤN
+
+Tốt nghiệp Cao đẳng ngành Ứng dụng phần mềm
+
+Trường cao đẳng kỹ thuật
+
+Có kiến thức về lập trình web, HTML5, CSS3, JavaScript và phát triển ứng dụng giao diện người dùng.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- HTML5, CSS3, JavaScript.
+- Vue 3, Vue Router, Pinia cơ bản.
+- Tailwind CSS, Figma.
+- Axios, Vite, Git.
+- Firebase Hosting, Chrome DevTools.
+
+KỸ NĂNG MỀM
+
+- Có khả năng phối hợp trong nhóm phát triển phần mềm.
+- Tiếp nhận yêu cầu chỉnh sửa giao diện trong quá trình thực tập.
+- Tiếng Anh A2, đọc hiểu tài liệu kỹ thuật đơn giản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Frontend Developer Intern
+
+Công ty Công nghệ An Việt
+
+Thời gian: 0,7 năm
+
+Lĩnh vực: Gia công phần mềm, bán lẻ và dịch vụ đặt lịch
+
+- Tham gia phát triển giao diện quản lý sản phẩm bằng Vue 3, HTML5 và CSS3, hoàn thiện các phần giao diện được phân công.
+- Xây dựng giao diện hệ thống đặt lịch dịch vụ, sử dụng Vue Router để tổ chức điều hướng giữa các trang.
+- Sử dụng Tailwind CSS để chỉnh sửa bố cục và các thành phần giao diện theo thiết kế Figma.
+- Sử dụng Git để quản lý mã nguồn và Chrome DevTools để kiểm tra, xử lý các vấn đề hiển thị.
+
+DỰ ÁN
+
+Hệ thống quản lý sản phẩm và đặt lịch dịch vụ
+
+Công nghệ: Vue 3, JavaScript, Vue Router, Tailwind CSS, Axios, Vite.
+
+Tham gia xây dựng các màn hình quản lý sản phẩm và giao diện đặt lịch trong thời gian thực tập. Công việc chủ yếu là phát triển các phần giao diện theo yêu cầu và chỉnh sửa để đảm bảo hiển thị phù hợp với thiết kế.
+
+\=== CV: FE_JUN_01 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Lê Hoàng Nam
+
+Email: [hoangnam@example.com](mailto:hoangnam@example.com)
+
+Địa chỉ: Hà Nội
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi đã có 1,2 năm kinh nghiệm làm việc với Angular và TypeScript, chủ yếu trong các dự án phần mềm quản lý nội bộ. Công việc trước đây tập trung vào bảo trì giao diện, xử lý lỗi và cập nhật các chức năng nhỏ trên hệ thống quản lý nhân sự. Tôi muốn tiếp tục phát triển chuyên môn Angular, nâng cao khả năng xử lý các tính năng phức tạp hơn và tham gia sâu hơn vào quá trình phát triển sản phẩm.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học ngành Hệ thống thông tin
+
+Trường đại học tư thục
+
+Có kiến thức về hệ thống thông tin và phát triển phần mềm, tập trung vào lập trình giao diện web với TypeScript và Angular.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ: HTML5, SCSS, TypeScript.
+- Framework: Angular, Angular Components, Angular Reactive Forms.
+- Thư viện: RxJS cơ bản, Angular Material.
+- API: REST API integration.
+- Công cụ: Git, Postman, Jira, npm, Figma.
+
+KỸ NĂNG MỀM
+
+- Có khả năng xử lý các công việc bảo trì và chỉnh sửa giao diện theo yêu cầu.
+- Phối hợp với thành viên trong nhóm khi kiểm tra và xử lý lỗi.
+- Tiếng Anh B1, đọc tài liệu kỹ thuật tốt, giao tiếp công việc cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Angular Developer
+
+Công ty Giải pháp Phần mềm Đại Phúc
+
+Thời gian: 1,2 năm
+
+Lĩnh vực: Phần mềm quản lý nội bộ, quản lý nhân sự
+
+- Tham gia bảo trì hệ thống quản lý nhân sự được phát triển bằng Angular và TypeScript.
+- Tiếp nhận và sữa các lỗi nhỏ liên quan đến giao diện, Angular Components và cách hiển thị dữ liệu trên hệ thống.
+- Chỉnh sửa các biểu mẫu sử dụng Angular Reactive Forms, đảm bảo những thay đổi phù hợp với yêu cầu được giao.
+- Sử dụng Git để quản lý mã nguồn, Jira để theo dõi công việc và Postman để kiểm tra REST API khi cần xử lý lỗi dữ liệu.
+
+DỰ ÁN
+
+Hệ thống quản lý nhân sự nội bộ
+
+Công nghệ: Angular, TypeScript, SCSS, Angular Material, RxJS, REST API.
+
+Tham gia duy trì và cập nhật các phần giao diện của hệ thống quản lý nhân sự. Công việc chính là kiểm tra lỗi, chỉnh sửa component, cập nhật biểu mẫu và điều chỉnh cách hiển thị dữ liệu. Phần lớn nhiệm vụ liên quan đến các tính năng đã có sẵn, giúp tôi hiểu rõ hơn về cách tổ chức và vận hành một ứng dụng Angular trong môi trường doanh nghiệp.
+
+\=== CV: FE_JUN_02 ===
+
+THÔNG TIN LIÊN HỆ
+
+Họ và tên: Phạm Thùy Linh
+
+Email: [thuylinh@example.com](mailto:thuylinh@example.com)
+
+Địa chỉ: TP. Hồ Chí Minh
+
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi xuất phát từ background Graphic Design và chuyển sang Frontend Development sau khi hoàn thành khóa đào tạo lập trình web. Với 1,8 năm kinh nghiệm làm React Developer trong lĩnh vực thương mại điện tử, tôi muốn tiếp tục phát triển theo hướng xây dựng các sản phẩm web có giao diện tốt và trải nghiệm người dùng nhất quán. Thế mạnh của tôi là kết hợp tư duy thiết kế với khả năng implement UI bằng ReactJS, giúp chuyển thiết kế thành giao diện thực tế.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học ngành Thiết kế đồ họa
+
+Trường đại học tư thục
+
+Đã hoàn thành khóa đào tạo lập trình Frontend, tập trung vào HTML5, CSS3, JavaScript ES6+ và ReactJS.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Frontend: HTML5, CSS3, JavaScript ES6+, ReactJS, React Hooks.
+- Styling: Tailwind CSS, Responsive Web Design.
+- UI Implementation: Chuyển thiết kế Figma thành giao diện web.
+- Design tools: Figma nâng cao, Adobe Photoshop.
+- Animation: Framer Motion cơ bản.
+- Tools: Git, Axios, Vercel.
+- Kiến thức bổ trợ: SEO cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có khả năng phối hợp với team UI/UX trong quá trình phát triển giao diện.
+- Trao đổi yêu cầu thiết kế và chuyển đổi thành các công việc implementation.
+- Tiếng Anh B1, có thể đọc documentation và trao đổi các yêu cầu liên quan đến UI.
+
+KINH NGHIỆM LÀM VIỆC
+
+React Developer
+
+Công ty Giải pháp Website Hưng Thịnh
+
+Thời gian: 1,8 năm
+
+Lĩnh vực: E-commerce, Digital Marketing, website doanh nghiệp
+
+- Develop và maintain giao diện các website thương mại điện tử bằng ReactJS, JavaScript ES6+ và Tailwind CSS.
+- Implement UI từ Figma design, sử dụng kiến thức Graphic Design để đảm bảo bố cục, khoảng cách và các thành phần giao diện bám sát thiết kế.
+- Phối hợp cùng team UI/UX để điều chỉnh giao diện website, cải thiện cách hiển thị trên desktop và mobile thông qua Responsive Web Design.
+- Sử dụng React Hooks và Axios trong quá trình phát triển giao diện, kết hợp Git để quản lý source code.
+
+DỰ ÁN
+
+Website thương mại điện tử
+
+Tech stack: ReactJS, JavaScript ES6+, Tailwind CSS, Axios, Vercel.
+
+Tham gia phát triển các phần giao diện cho website thương mại điện tử. Responsible for UI implementation, chỉnh sửa React components và đảm bảo giao diện hiển thị phù hợp với bản thiết kế.
+
+Website giới thiệu doanh nghiệp
+
+Tech stack: ReactJS, HTML5, CSS3, Figma, Framer Motion.
+
+Tham gia xây dựng giao diện website doanh nghiệp, tập trung vào responsive layout, tính thẩm mỹ và việc thể hiện nội dung theo thiết kế. Vận dụng kiến thức SEO cơ bản khi triển khai nội dung giao diện.

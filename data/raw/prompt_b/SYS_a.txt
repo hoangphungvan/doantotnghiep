@@ -1,0 +1,169 @@
+Dựa trên các hồ sơ JSON bên dưới, hãy viết CV dạng văn bản thuần như một ứng viên Việt Nam thật sự tự viết. Mỗi hồ sơ viết thành một CV.
+
+Quy tắc:
+- Cấu trúc: THÔNG TIN LIÊN HỆ (tên hư cấu, email dạng ten@example.com, thành phố), MỤC TIÊU NGHỀ NGHIỆP, HỌC VẤN, KỸ NĂNG CHUYÊN MÔN, KỸ NĂNG MỀM, KINH NGHIỆM LÀM VIỆC (công ty hư cấu hoặc phổ biến, thời gian, 2-4 gạch đầu dòng mô tả việc làm có kết quả cụ thể), DỰ ÁN (nếu có), CHỨNG CHỈ (nếu có).
+- Độ dài 250-450 từ. Văn phong theo trường cv_style. Giữ thuật ngữ kỹ thuật bằng tiếng Anh như CV Việt Nam thật.
+- CHỈ dùng thông tin trong hồ sơ. Không bịa thêm kỹ năng ngoài core_skills và secondary_skills.
+- known_gaps: KHÔNG nhắc tới các kỹ năng này, cũng không viết "chưa biết".
+- Tổng thời gian các công việc phải khớp years_experience.
+- KHÔNG ghi CV phù hợp vị trí nào, không nhắc tới tin tuyển dụng, không thêm nhận xét của AI.
+
+Mỗi CV bắt đầu bằng đúng một dòng:
+=== CV: <profile_id> ===
+rồi tới nội dung CV. Không có lời dẫn hay kết luận.
+
+HỒ SƠ:
+[
+  {
+    "profile_id": "SYS_FRE_01",
+    "role_family": "Sysadmin/Network/Security",
+    "target_title": "Fresher Linux System Administrator",
+    "seniority": "Fresher",
+    "years_experience": 0.5,
+    "education": "Đại học, ngành Công nghệ thông tin, trường đại học công lập",
+    "core_skills": [
+      "Linux Ubuntu Server cơ bản",
+      "Quản trị tài khoản và phân quyền Linux",
+      "Bash scripting cơ bản",
+      "SSH và quản lý kết nối từ xa",
+      "Cấu hình Nginx cơ bản",
+      "TCP/IP và DNS cơ bản",
+      "Giám sát tài nguyên bằng top, htop và journalctl",
+      "Git cơ bản"
+    ],
+    "secondary_skills": [
+      "VirtualBox",
+      "Sao lưu dữ liệu bằng rsync",
+      "Viết tài liệu vận hành",
+      "Python scripting cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa quản trị hệ thống production độc lập",
+      "Chưa triển khai hạ tầng cloud thực tế",
+      "Chưa có kinh nghiệm thiết kế hệ thống High Availability"
+    ],
+    "languages": [
+      "Tiếng Anh: B1, đọc hiểu tài liệu kỹ thuật khá"
+    ],
+    "industries": [
+      "Dịch vụ CNTT nội bộ",
+      "Phần mềm"
+    ],
+    "career_note": "Sinh viên mới tốt nghiệp có 6 tháng thực tập vận hành máy chủ Linux tại doanh nghiệp phần mềm, chủ yếu xử lý tác vụ cơ bản dưới sự hướng dẫn của quản trị viên chính.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "SYS_FRE_02",
+    "role_family": "Sysadmin/Network/Security",
+    "target_title": "Fresher Network Engineer",
+    "seniority": "Fresher",
+    "years_experience": 0.7,
+    "education": "Cao đẳng, ngành Mạng máy tính và Truyền thông dữ liệu, trường cao đẳng kỹ thuật",
+    "core_skills": [
+      "Mô hình OSI và TCP/IP",
+      "Cấu hình Cisco IOS cơ bản",
+      "VLAN và Inter-VLAN Routing cơ bản",
+      "Static Routing",
+      "DHCP và NAT",
+      "Cấu hình switch Layer 2",
+      "Kiểm tra kết nối bằng ping và traceroute",
+      "Đọc sơ đồ mạng LAN"
+    ],
+    "secondary_skills": [
+      "Cisco Packet Tracer",
+      "Wireshark cơ bản",
+      "Bấm cáp và kiểm tra cáp mạng",
+      "Hỗ trợ cấu hình Access Point"
+    ],
+    "known_gaps": [
+      "Chưa triển khai OSPF hoặc BGP trên mạng doanh nghiệp thực tế",
+      "Chưa có chứng chỉ CCNA",
+      "Chưa có kinh nghiệm cấu hình firewall chuyên dụng"
+    ],
+    "languages": [
+      "Tiếng Anh: A2-B1, đọc được tài liệu cấu hình mạng đơn giản"
+    ],
+    "industries": [
+      "Dịch vụ tích hợp hệ thống",
+      "Hạ tầng mạng văn phòng"
+    ],
+    "career_note": "Có khoảng 8 tháng thực tập và hỗ trợ triển khai mạng LAN cho văn phòng nhỏ, chủ yếu lắp đặt thiết bị và cấu hình theo tài liệu có sẵn.",
+    "cv_style": "có lỗi chính tả nhẹ"
+  },
+  {
+    "profile_id": "SYS_JUN_01",
+    "role_family": "Sysadmin/Network/Security",
+    "target_title": "Junior Network Operations Engineer",
+    "seniority": "Junior",
+    "years_experience": 1.5,
+    "education": "Đại học, ngành Điện tử Viễn thông, trường đại học kỹ thuật",
+    "core_skills": [
+      "Giám sát mạng bằng Zabbix",
+      "SNMP monitoring",
+      "Kiểm tra trạng thái router và switch",
+      "Xử lý cảnh báo mất kết nối mạng",
+      "Phân tích log thiết bị mạng cơ bản",
+      "Quản lý ticket sự cố",
+      "Kiểm tra độ trễ và packet loss",
+      "Quy trình xử lý sự cố NOC"
+    ],
+    "secondary_skills": [
+      "Grafana dashboard",
+      "MikroTik RouterOS cơ bản",
+      "Excel báo cáo vận hành",
+      "Quy trình ITIL Incident Management"
+    ],
+    "known_gaps": [
+      "Ít kinh nghiệm cấu hình routing và switching từ đầu",
+      "Chưa trực tiếp thiết kế kiến trúc mạng doanh nghiệp",
+      "Chưa có kinh nghiệm triển khai hệ thống mạng đa chi nhánh"
+    ],
+    "languages": [
+      "Tiếng Anh: B1, đọc hiểu log và tài liệu thiết bị mạng"
+    ],
+    "industries": [
+      "Viễn thông",
+      "Dịch vụ Internet"
+    ],
+    "career_note": "Có 1,5 năm làm NOC theo ca tại nhà cung cấp dịch vụ Internet, quen giám sát và chuyển tiếp sự cố nhưng kinh nghiệm cấu hình trực tiếp còn mỏng so với thời gian làm việc.",
+    "cv_style": "ngắn gọn"
+  },
+  {
+    "profile_id": "SYS_JUN_02",
+    "role_family": "Sysadmin/Network/Security",
+    "target_title": "Junior SOC Analyst",
+    "seniority": "Junior",
+    "years_experience": 2.0,
+    "education": "Đại học, ngành Hệ thống thông tin, trường đại học tư thục",
+    "core_skills": [
+      "Phân tích sự kiện bảo mật bằng Wazuh",
+      "Microsoft Defender for Endpoint cơ bản",
+      "Phân tích Windows Event Logs",
+      "Nhận diện phishing email",
+      "Phân loại và xử lý cảnh báo SOC Level 1",
+      "Phân tích IOC cơ bản",
+      "Kiến thức MITRE ATT&CK",
+      "Kiểm tra IP và domain đáng ngờ"
+    ],
+    "secondary_skills": [
+      "VirusTotal",
+      "Sysmon",
+      "PowerShell cơ bản",
+      "Viết báo cáo sự cố bảo mật"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm Threat Hunting chuyên sâu",
+      "Chưa thực hiện Digital Forensics độc lập",
+      "Chưa có chứng chỉ bảo mật chuyên nghiệp"
+    ],
+    "languages": [
+      "Tiếng Anh: B1-B2, đọc hiểu tài liệu bảo mật và viết báo cáo ngắn"
+    ],
+    "industries": [
+      "Dịch vụ CNTT",
+      "Thương mại điện tử"
+    ],
+    "career_note": "Chuyển từ vị trí IT Helpdesk sang SOC Analyst sau 1,2 năm hỗ trợ người dùng và 0,8 năm giám sát cảnh báo bảo mật, với tổng cộng 2 năm kinh nghiệm CNTT.",
+    "cv_style": "lẫn Anh-Việt"
+  }
+]

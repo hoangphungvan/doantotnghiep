@@ -1,0 +1,48 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có khoảng 1,6 năm kinh nghiệm làm Data Analysis trong lĩnh vực logistics và giao hàng. Công việc chính của tôi là xử lý dữ liệu vận hành, theo dõi delivery success rate, delivery time và xây dựng các báo cáo hỗ trợ đánh giá hoạt động giao nhận. Tôi muốn tiếp tục phát triển theo hướng Data Analytics, tập trung vào SQL, Python và Exploratory Data Analysis để khai thác dữ liệu hiệu quả hơn, đồng thời cải thiện chất lượng của các báo cáo vận hành.
+
+HỌC VẤN
+
+Cử nhân Công nghệ thông tin – Đại học tư thục.
+
+Có kiến thức nền tảng về lập trình, cơ sở dữ liệu và xử lý thông tin.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Database: PostgreSQL.
+- SQL: Sử dụng CTE, Window Functions để truy vấn, tổng hợp và phân tích dữ liệu.
+- Python: pandas, NumPy để xử lý dữ liệu và thực hiện các bước phân tích.
+- Data Visualization: Matplotlib, Seaborn, Metabase.
+- Exploratory Data Analysis (EDA): Khám phá dữ liệu, tìm kiếm xu hướng và các điểm bất thường.
+- Data Quality Validation: Kiểm tra tính hợp lệ và nhất quán của dữ liệu.
+- Công cụ khác: Jupyter Notebook, Microsoft Excel, Git.
+- REST API cơ bản, Basic Statistical Testing.
+
+KỸ NĂNG MỀM
+
+- Trình bày kết quả phân tích thông qua dashboard và biểu đồ.
+- Chủ động xây dựng báo cáo vận hành theo các chỉ số được giao.
+- Tiếng Việt: Bản ngữ.
+- Tiếng Anh: B1, có khả năng đọc hiểu tài liệu kỹ thuật tốt hơn giao tiếp.
+
+KINH NGHIỆM LÀM VIỆC
+
+Data Analyst
+Công ty TNHH Logistics Đông Nam
+03/2025 – 10/2026 (1 năm 7 tháng)
+
+- Phân tích dữ liệu giao nhận từ PostgreSQL, xây dựng SQL queries để tổng hợp delivery success rate và delivery time.
+- Tự xây dựng báo cáo theo dõi tỷ lệ giao hàng thành công và thời gian giao nhận, cung cấp thông tin cho việc đánh giá hoạt động vận hành.
+- Sử dụng Metabase để trình bày các chỉ số dưới dạng dashboard, giúp việc theo dõi dữ liệu thuận tiện hơn.
+- Áp dụng Python pandas và NumPy cho một phần công việc Data Cleaning và tổng hợp dữ liệu, thay thế các thao tác xử lý thủ công trước đây.
+
+DỰ ÁN
+
+Delivery Performance Analytics
+
+Thực hiện phân tích dữ liệu hiệu suất giao hàng, tập trung vào hai nhóm chỉ số: delivery success rate và delivery time.
+
+Tôi sử dụng PostgreSQL và SQL để truy vấn dữ liệu, Python pandas để xử lý và Metabase để xây dựng dashboard. Bên cạnh đó, tôi thực hiện EDA bằng Matplotlib, Seaborn nhằm trực quan hóa kết quả phân tích.
+
+Đầu ra là các báo cáo vận hành giúp theo dõi tỷ lệ giao thành công và thời gian giao nhận theo dữ liệu thực tế.

@@ -1,0 +1,43 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Công nghệ phần mềm, có kinh nghiệm cộng tác kiểm thử ứng dụng di động trong 7 tháng. Định hướng phát triển trong lĩnh vực Mobile Application Testing, đặc biệt là kiểm tra giao diện và các luồng sử dụng ứng dụng. Mong muốn tiếp tục nâng cao khả năng thiết kế Test Scenario, tái hiện lỗi và kiểm thử trên các thiết bị có kích thước màn hình khác nhau.
+
+HỌC VẤN
+
+Trình độ: Cao đẳng
+Chuyên ngành: Công nghệ phần mềm
+Trường: Cao đẳng kỹ thuật
+
+Được trang bị kiến thức cơ bản về phát triển phần mềm và có cơ hội vận dụng kiến thức vào quá trình kiểm thử ứng dụng di động thực tế.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Mobile Application Testing: Kiểm thử ứng dụng trên thiết bị di động.
+- Android Testing: Có kinh nghiệm kiểm thử ứng dụng Android.
+- iOS Testing: Thực hiện kiểm tra ứng dụng iOS ở mức cơ bản.
+- Exploratory Testing: Khám phá các luồng thao tác để phát hiện lỗi.
+- Regression Testing: Kiểm tra lại chức năng ở mức cơ bản sau khi ứng dụng được cập nhật.
+- Test Scenario Design: Xây dựng các tình huống kiểm thử dựa trên luồng sử dụng.
+- Bug Reproduction: Tái hiện lỗi để hỗ trợ quá trình xác minh.
+- Công cụ: ADB cơ bản, Firebase Crashlytics cơ bản, TestFlight và Trello.
+- Kiểm tra giao diện trên nhiều kích thước màn hình.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm phối hợp với nhóm phát triển sản phẩm nhỏ.
+- Có thói quen quan sát giao diện và ghi nhận các vấn đề gặp phải trong quá trình sử dụng ứng dụng.
+- Tiếng Anh A2-B1, đọc hiểu hướng dẫn sử dụng công cụ kiểm thử.
+
+KINH NGHIỆM LÀM VIỆC
+
+Cộng tác viên Mobile Application Tester
+Nhóm phát triển sản phẩm TechNova
+Thời gian: 7 tháng
+Lĩnh vực: Ứng dụng giáo dục và tiện ích di động
+
+- Kiểm thử ứng dụng Android, tập trung vào giao diện và các luồng thao tác chính của người dùng.
+- Hỗ trợ kiểm tra các bản thử nghiệm iOS thông qua TestFlight, ghi nhận những vấn đề phát sinh trong quá trình sử dụng.
+- Thực hiện Exploratory Testing và tái hiện lỗi để nhóm phát triển có thông tin kiểm tra.
+- Kiểm tra giao diện trên các kích thước màn hình khác nhau và ghi nhận kết quả công việc bằng Trello.
+
+Thời gian cộng tác giúp tôi làm quen với quy trình kiểm thử ứng dụng di động và nâng cao khả năng phát hiện, mô tả lỗi trong sản phẩm thực tế.

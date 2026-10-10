@@ -1,0 +1,44 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi vừa tốt nghiệp ngành Hệ thống thông tin quản lý và có khoảng 5 tháng thực tập trong lĩnh vực Business Analyst. Tôi mong muốn tiếp tục phát triển kỹ năng phân tích nghiệp vụ, thu thập yêu cầu và xây dựng tài liệu cho các hệ thống phần mềm. Mục tiêu trước mắt là tích lũy kinh nghiệm thực tế và hiểu rõ hơn quy trình phát triển sản phẩm, đặc biệt trong lĩnh vực EdTech.
+
+HỌC VẤN
+
+Cử nhân Hệ thống thông tin quản lý
+Đại học công lập khối kinh tế
+
+Trong quá trình học, tôi được tiếp cận kiến thức về hệ thống thông tin và phân tích quy trình nghiệp vụ.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Requirement Gathering: Ghi nhận và tổng hợp yêu cầu nghiệp vụ cơ bản.
+- Viết User Story theo mẫu và xây dựng Acceptance Criteria cho các chức năng đơn giản.
+- Sử dụng Draw.io để vẽ Use Case Diagram.
+- Phân tích quy trình nghiệp vụ và mô hình hóa bằng BPMN cơ bản.
+- Microsoft Excel, Word, PowerPoint để xử lý thông tin và soạn tài liệu.
+- Trello để theo dõi các đầu việc.
+- SQL SELECT cơ bản để truy vấn thông tin.
+
+KỸ NĂNG MỀM
+
+- Có khả năng ghi chép, tổng hợp và trình bày thông tin theo cấu trúc.
+- Phối hợp với BA chính trong quá trình phân tích và làm rõ yêu cầu.
+- Tiếp nhận hướng dẫn và điều chỉnh tài liệu theo phản hồi.
+- Tiếng Anh B1, đọc hiểu tài liệu kỹ thuật cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Thực tập sinh Business Analyst
+Công ty TNHH Phần mềm Giáo dục Minh Việt
+Thời gian: 0,4 năm (khoảng 5 tháng)
+
+- Hỗ trợ BA chính ghi nhận yêu cầu đối với các chức năng của phần mềm quản lý đào tạo.
+- Phân tích các quy trình nghiệp vụ đơn giản và thể hiện lại bằng Use Case Diagram, BPMN.
+- Viết User Story và Acceptance Criteria theo mẫu, tạo tài liệu đầu vào cho nhóm phát triển.
+- Tổng hợp thông tin bằng Excel, Word và cập nhật tiến độ công việc trên Trello.
+
+DỰ ÁN
+
+Hệ thống quản lý đào tạo
+
+Tham gia với vai trò thực tập sinh BA, hỗ trợ mô tả các luồng nghiệp vụ trong phần mềm quản lý đào tạo. Công việc tập trung vào ghi nhận yêu cầu, mô hình hóa quy trình và hoàn thiện tài liệu dưới sự hướng dẫn của BA chính. Kết quả là các nội dung nghiệp vụ được hệ thống hóa thành sơ đồ và tài liệu để nhóm phát triển tham khảo.

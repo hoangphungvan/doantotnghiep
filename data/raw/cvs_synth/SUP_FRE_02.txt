@@ -1,0 +1,45 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi học ngành Kỹ thuật máy tính, đã có 8 tháng thực tập và làm kỹ thuật viên bán thời gian tại trung tâm đào tạo. Công việc chủ yếu là cài đặt hệ điều hành, kiểm tra phần cứng và bảo trì máy tính trong phòng học. Tôi muốn tiếp tục làm Desktop Support Technician, nâng cao kỹ năng xử lý sự cố thiết bị và hỗ trợ người dùng tốt hơn trong môi trường làm việc thực tế.
+
+HỌC VẤN
+
+Trường đại học tư thục
+Ngành: Kỹ thuật máy tính
+Trình độ: Đại học
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Cài đặt Windows và Ubuntu Desktop cho máy tính cá nhân, máy tính phòng học.
+- Sử dụng Clonezilla để triển khai hệ điều hành trên thiết bị đầu cuối.
+- Kiểm tra các lỗi phần cứng liên quan đến RAM, SSD và nguồn máy tính.
+- Cấu hình BIOS/UEFI, thay đổi thứ tự khởi động khi cài đặt hệ điều hành.
+- Sử dụng Hiren's BootCD PE và tạo USB cài đặt hệ điều hành.
+- Hỗ trợ người dùng từ xa qua TeamViewer.
+- Cấu hình chia sẻ tệp cơ bản trên NAS Synology.
+- Kiểm tra Wi-Fi, thiết bị mạng văn phòng và xử lý lỗi trình duyệt, ứng dụng văn phòng.
+- Quản lý danh sách thiết bị bằng Google Sheets.
+- Tiếng Anh: Đọc hiểu khá, giao tiếp cơ bản.
+
+KỸ NĂNG MỀM
+
+- Trao đổi với người dùng để xác định tình trạng lỗi.
+- Viết hướng dẫn xử lý sự cố đơn giản, dễ làm theo.
+- Sắp xếp công việc cài đặt và bảo trì thiết bị theo yêu cầu.
+
+KINH NGHIỆM LÀM VIỆC
+
+Trung tâm Đào tạo Kỹ thuật An Bình
+Vị trí: IT Technician Intern / Part-time
+Thời gian: 02/2026 - 09/2026 (8 tháng)
+
+- Cài đặt Windows, Ubuntu Desktop và phần mềm văn phòng cho máy tính phòng học, đảm bảo thiết bị sẵn sàng cho các buổi đào tạo.
+- Dùng Clonezilla để triển khai hệ điều hành, kiểm tra BIOS/UEFI khi máy gặp lỗi khởi động.
+- Kiểm tra RAM, SSD, nguồn máy tính và hổ trợ xử lý các sự cố phần cứng thông thường.
+- Bảo trì máy tính phòng học, kiểm tra kết nối Wi-Fi và cập nhật danh sách thiết bị trên Google Sheets.
+
+DỰ ÁN
+
+Cài đặt và bảo trì phòng máy đào tạo
+
+Tham gia chuẩn bị máy tính cho phòng học, tạo USB cài đặt hệ điều hành và sử dụng Clonezilla trong quá trình thiết lập thiết bị. Viết hướng dẫn xử lý một số lỗi thông thường để thuận tiện cho việc sử dụng và bảo trì.

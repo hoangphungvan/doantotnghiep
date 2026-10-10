@@ -1,0 +1,52 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Hệ thống thông tin và có khoảng 1,8 năm kinh nghiệm làm việc liên quan đến Google Cloud. Trong thời gian làm việc, tôi chủ yếu phụ trách duy trì và hỗ trợ triển khai hai ứng dụng nội bộ của doanh nghiệp. Công việc thường ngày bao gồm kiểm tra trạng thái dịch vụ, thực hiện các bước cập nhật ứng dụng theo quy trình, quản lý container và kiểm tra log khi cần thiết.
+
+Tôi mong muốn tiếp tục phát triển theo hướng Cloud Engineer, tập trung vào việc vận hành ứng dụng trên Google Cloud và cải thiện quy trình triển khai. Tôi cũng muốn nâng cao khả năng sử dụng Google Cloud Build, Cloud Run và các công cụ quản lý container trong công việc thực tế.
+
+HỌC VẤN
+
+Đại học địa phương tại miền Trung
+Chuyên ngành: Hệ thống thông tin
+Trình độ: Đại học
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Google Cloud Platform: Compute Engine, Cloud Run, Cloud Build, Artifact Registry.
+- Cloud Storage: Google Cloud Storage.
+- Container: Docker.
+- Hệ điều hành: Linux.
+- Quản lý mã nguồn: Git.
+- Web Server: Nginx.
+- Logging: Cloud Logging.
+- Scripting: Bash.
+- Lập trình và cơ sở dữ liệu: Node.js cơ bản, PostgreSQL cơ bản.
+- Ngoại ngữ: Tiếng Anh B1, chủ yếu đọc tài liệu kỹ thuật và trao đổi công việc qua tin nhắn.
+
+KỸ NĂNG MỀM
+
+- Có khả năng thực hiện các công việc vận hành theo checklist và quy trình được hướng dẫn.
+- Phối hợp với các thành viên trong nhóm khi cập nhật ứng dụng hoặc kiểm tra lỗi.
+- Ghi nhận kết quả triển khai, thông tin log và phản hồi những vấn đề phát sinh.
+- Duy trì thói quen đọc tài liệu kỹ thuật để hỗ trợ giải quyết các công việc thường ngày.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Giải pháp Giáo dục Hải Đăng
+Vị trí: Cloud Engineer
+Thời gian: 12/2024 - 10/2026 (1 năm 10 tháng, xấp xỉ 1,8 năm)
+
+- Phụ trách các công việc vận hành định kỳ cho hai ứng dụng nội bộ được triển khai trên Google Cloud, bao gồm kiểm tra trạng thái dịch vụ và thực hiện các bước cập nhật theo quy trình có sẵn.
+- Sử dụng Docker và Artifact Registry trong quá trình chuẩn bị container image, hỗ trợ triển khai ứng dụng qua Google Cloud Run.
+- Thực hiện các bước build và deploy thông qua Google Cloud Build, kiểm tra kết quả triển khai để xác nhận ứng dụng hoạt động theo yêu cầu.
+- Sử dụng Cloud Logging để xem log ứng dụng, ghi nhận thông tin khi xuất hiện lỗi và trao đổi với thành viên phụ trách.
+
+DỰ ÁN
+
+Duy trì hai ứng dụng quản lý nội bộ trên Google Cloud
+
+Hai ứng dụng phục vụ nhu cầu quản lý nội bộ, sử dụng các dịch vụ Google Cloud làm môi trường triển khai và vận hành.
+
+- Tham gia duy trì môi trường chạy ứng dụng bằng Compute Engine và Cloud Run.
+- Hỗ trợ cập nhật container image, kiểm tra Nginx và trạng thái dịch vụ sau mỗi lần triển khai.
+- Kết quả: Thực hiện các đợt cập nhật ứng dụng được phân công theo quy trình, duy trì việc kiểm tra trạng thái và ghi nhận lỗi vận hành cho cả hai ứng dụng.

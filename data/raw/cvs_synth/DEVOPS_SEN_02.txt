@@ -1,0 +1,51 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có gần 6 năm kinh nghiệm trong lĩnh vực Cloud Infrastructure, tập trung vào Microsoft Azure và các giải pháp chuyển đổi số cho doanh nghiệp. Tôi mong muốn tiếp tục phát triển theo hướng thiết kế cloud infrastructure an toàn, có khả năng mở rộng và dễ quản lý. Ưu tiên áp dụng Infrastructure as Code, automation và các chính sách quản trị tài nguyên để tăng tính nhất quán trong quá trình triển khai và vận hành.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học chuyên ngành Kỹ thuật máy tính tại một trường đại học công lập ở TP. Hồ Chí Minh.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Cloud Platform: Microsoft Azure, Azure Kubernetes Service (AKS), Azure Container Registry.
+- Infrastructure as Code: Azure Bicep.
+- CI/CD & Automation: Azure DevOps, PowerShell, Python, Docker.
+- Network: Azure Virtual Network, Azure Application Gateway.
+- Security & Identity: Azure Key Vault, Azure Policy, Microsoft Entra ID.
+- Monitoring & Operations: Azure Monitor, Azure Backup, Azure Cost Management.
+
+KỸ NĂNG MỀM
+
+- Technical communication tốt, có kinh nghiệm trao đổi yêu cầu hạ tầng trực tiếp với khách hàng doanh nghiệp.
+- Có khả năng phối hợp với khách hàng nước ngoài trong quá trình triển khai dự án.
+- Tiếng Anh B2-C1, sử dụng trong technical discussion và trao đổi công việc.
+- Tiếng Nhật N3, giao tiếp công việc cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Senior Azure Cloud Infrastructure Engineer – Công ty Chuyển đổi số Hikari Việt Nam
+12/2023 – 10/2026 (2 năm 10 tháng)
+
+- Phụ trách thiết kế cloud infrastructure trên Microsoft Azure cho các dự án chuyển đổi số thuộc lĩnh vực logistics và bảo hiểm.
+- Xây dựng Azure Virtual Network và cấu hình Azure Application Gateway để tổ chức kết nối, phân phối truy cập cho ứng dụng.
+- Sử dụng Azure Bicep để chuẩn hóa việc provisioning tài nguyên, kết hợp Azure DevOps nhằm tự động hóa quy trình deployment.
+- Triển khai Azure Policy, Microsoft Entra ID và Azure Key Vault để quản lý quyền truy cập, chính sách và thông tin bảo mật.
+
+Cloud Infrastructure Engineer – Công ty Công nghệ Nam Việt
+12/2020 – 12/2023 (3 năm)
+
+- Triển khai Azure Kubernetes Service và Azure Container Registry phục vụ các ứng dụng containerized.
+- Thiết lập Azure Monitor để theo dõi hạ tầng và hỗ trợ phân tích các vấn đề vận hành.
+- Sử dụng PowerShell và Python để automation các tác vụ quản trị Azure.
+- Tham gia cấu hình Azure Backup và theo dõi chi phí tài nguyên thông qua Azure Cost Management.
+
+DỰ ÁN
+
+Azure Infrastructure Modernization – Khách hàng Logistics Nhật Bản
+
+Tham gia thiết kế Azure network architecture, quản lý identity và triển khai hạ tầng bằng Azure Bicep. Kết hợp Azure DevOps, Azure Policy và Azure Monitor để chuẩn hóa deployment, quản trị tài nguyên và theo dõi hệ thống trong quá trình vận hành.
+
+CHỨNG CHỈ
+
+Microsoft Certified: Azure Administrator Associate.

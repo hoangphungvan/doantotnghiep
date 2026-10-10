@@ -1,0 +1,48 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi là Java Backend Engineer với 7,5 năm kinh nghiệm phát triển phần mềm, chủ yếu trong lĩnh vực ngân hàng số, Fintech, thương mại điện tử và phần mềm doanh nghiệp. Trong quá trình làm việc, tôi đã tham gia phát triển các dịch vụ Backend bằng Java, Spring Boot, đồng thời trực tiếp tham gia thiết kế hệ thống theo kiến trúc Microservices.
+
+Bên cạnh công việc lập trình, tôi có kinh nghiệm dẫn dắt nhóm 5 developer, hỗ trợ thành viên về mặt kỹ thuật và phối hợp xử lý các vấn đề hiệu năng, độ ổn định trên môi trường production. Định hướng tiếp theo của tôi là chuyên sâu hơn về System Design, xây dựng hệ thống có khả năng mở rộng tốt và phát triển năng lực Technical Mentoring.
+
+HỌC VẤN
+
+Kỹ sư Khoa học máy tính
+Trường đại học kỹ thuật công lập
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ và Framework: Java, Spring Boot, Spring Security.
+- Database & Caching: PostgreSQL, Redis.
+- Kiến trúc hệ thống: Microservices Architecture, System Design.
+- Message Streaming: Apache Kafka.
+- Container & Cloud: Docker, Kubernetes, AWS.
+- CI/CD: Jenkins.
+- Monitoring: Prometheus, Grafana.
+- Testing: JUnit.
+- Team Development: Technical Mentoring.
+
+KỸ NĂNG MỀM
+
+- Tiếng Anh C1, có thể trao đổi chuyên môn và tham gia họp kỹ thuật với khách hàng quốc tế.
+- Có kinh nghiệm dẫn dắt nhóm 5 lập trình viên, hỗ trợ giải quyết các vấn đề kỹ thuật.
+- Phối hợp cùng nhóm xử lý sự cố và cải thiện độ ổn định của dịch vụ.
+- Có khả năng phân tích vấn đề ở góc độ kiến trúc và vận hành.
+
+KINH NGHIỆM LÀM VIỆC
+
+Java Backend Engineer / Technical Lead
+Công ty Cổ phần Công nghệ Tài chính Đông Á
+04/2019 – 10/2026 (7 năm 6 tháng)
+
+- Phát triển Backend bằng Java và Spring Boot cho các hệ thống ngân hàng số, Fintech và phần mềm doanh nghiệp, tham gia xây dựng các chức năng xử lý nghiệp vụ.
+- Thiết kế và phát triển các dịch vụ theo Microservices Architecture, sử dụng PostgreSQL, Redis và Apache Kafka để phục vụ xử lý, trao đổi dữ liệu.
+- Tham gia triển khai và theo dõi dịch vụ với Docker, Kubernetes, AWS, Jenkins, Prometheus và Grafana; phối hợp xử lý các vấn đề liên quan đến hiệu năng và độ ổn định production.
+- Dẫn dắt nhóm 5 developer, tham gia System Design và Technical Mentoring, hỗ trợ nhóm trong quá trình phát triển và giải quyết vấn đề kỹ thuật.
+
+DỰ ÁN
+
+Nền tảng Backend ngân hàng số và Fintech
+
+Tham gia thiết kế, phát triển và vận hành các dịch vụ Backend theo kiến trúc Microservices. Tập trung vào xử lý nghiệp vụ, tích hợp các thành phần dịch vụ và duy trì hoạt động ổn định trên production.
+
+Công nghệ: Java, Spring Boot, Spring Security, PostgreSQL, Redis, Apache Kafka, Docker, Kubernetes, AWS.

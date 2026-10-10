@@ -1,0 +1,333 @@
+
+[
+  {
+    "profile_id": "MOB_FRE_01",
+    "role_family": "Mobile",
+    "target_title": "Fresher Android Developer",
+    "seniority": "Fresher",
+    "years_experience": 0.5,
+    "education": "Sinh viên năm cuối ngành Công nghệ thông tin, đại học công lập",
+    "core_skills": [
+      "Kotlin cơ bản",
+      "Android SDK",
+      "Jetpack Compose cơ bản",
+      "Android Activity Lifecycle",
+      "MVVM cơ bản",
+      "Room Database",
+      "Retrofit",
+      "RESTful API",
+      "Git"
+    ],
+    "secondary_skills": [
+      "Android Studio",
+      "Coroutines cơ bản",
+      "Figma",
+      "Postman",
+      "JUnit cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm phát hành ứng dụng lên Google Play",
+      "Chưa thiết lập CI/CD cho ứng dụng Android",
+      "Chưa có kinh nghiệm tối ưu hiệu năng ứng dụng thực tế"
+    ],
+    "languages": [
+      "Tiếng Anh: đọc hiểu tài liệu kỹ thuật mức khá, giao tiếp cơ bản"
+    ],
+    "industries": [
+      "Giáo dục trực tuyến"
+    ],
+    "career_note": "Có 5 tháng thực tập Android tại một công ty phần mềm nhỏ, chủ yếu xây dựng giao diện và tích hợp API cho ứng dụng học tập dưới sự hướng dẫn của lập trình viên chính.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "MOB_FRE_02",
+    "role_family": "Mobile",
+    "target_title": "Fresher Flutter Developer",
+    "seniority": "Fresher",
+    "years_experience": 0.7,
+    "education": "Tốt nghiệp cao đẳng ngành Lập trình máy tính, trường cao đẳng nghề",
+    "core_skills": [
+      "Dart",
+      "Flutter",
+      "Flutter Widget",
+      "Provider",
+      "Firebase Authentication",
+      "Cloud Firestore",
+      "REST API Integration",
+      "Responsive UI",
+      "Git"
+    ],
+    "secondary_skills": [
+      "Firebase Storage",
+      "Postman",
+      "Figma",
+      "SQLite cơ bản",
+      "Android Studio"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm phát triển native module bằng Kotlin hoặc Swift",
+      "Chưa làm việc với hệ thống thanh toán trong ứng dụng",
+      "Chưa có kinh nghiệm kiểm thử tự động chuyên sâu"
+    ],
+    "languages": [
+      "Tiếng Anh: đọc tài liệu kỹ thuật cơ bản, giao tiếp hạn chế"
+    ],
+    "industries": [
+      "Bán lẻ",
+      "Thương mại điện tử"
+    ],
+    "career_note": "Sau khi tốt nghiệp cao đẳng, có 7 tháng tham gia phát triển ứng dụng Flutter cho cửa hàng bán lẻ, tập trung xây dựng giao diện, quản lý trạng thái và xử lý dữ liệu Firebase.",
+    "cv_style": "có lỗi chính tả nhẹ"
+  },
+  {
+    "profile_id": "MOB_JUN_01",
+    "role_family": "Mobile",
+    "target_title": "Junior iOS Developer",
+    "seniority": "Junior",
+    "years_experience": 1.4,
+    "education": "Tốt nghiệp đại học ngành Kỹ thuật phần mềm, đại học tư thục",
+    "core_skills": [
+      "Swift",
+      "UIKit",
+      "Auto Layout",
+      "Storyboard",
+      "URLSession",
+      "Codable",
+      "MVC",
+      "Core Data",
+      "Git"
+    ],
+    "secondary_skills": [
+      "Xcode",
+      "CocoaPods",
+      "TestFlight",
+      "REST API",
+      "XCTest cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm thực tế với SwiftUI",
+      "Chưa từng chịu trách nhiệm toàn bộ quy trình phát hành ứng dụng lên App Store",
+      "Chưa có nhiều kinh nghiệm thiết kế kiến trúc ứng dụng từ đầu"
+    ],
+    "languages": [
+      "Tiếng Anh: đọc hiểu tài liệu tốt, giao tiếp công việc cơ bản"
+    ],
+    "industries": [
+      "Quản lý doanh nghiệp",
+      "Phần mềm nội bộ"
+    ],
+    "career_note": "Có 1,4 năm làm iOS Developer nhưng chủ yếu bảo trì một ứng dụng quản lý nhân sự nội bộ, sửa lỗi giao diện và tích hợp API nhỏ, nên kinh nghiệm xây dựng sản phẩm mới còn hạn chế.",
+    "cv_style": "ngắn gọn"
+  },
+  {
+    "profile_id": "MOB_JUN_02",
+    "role_family": "Mobile",
+    "target_title": "Junior React Native Developer",
+    "seniority": "Junior",
+    "years_experience": 2.0,
+    "education": "Tốt nghiệp đại học ngành Hệ thống thông tin, đại học công lập",
+    "core_skills": [
+      "JavaScript ES6+",
+      "TypeScript",
+      "React Native",
+      "React Hooks",
+      "Expo",
+      "Redux Toolkit",
+      "React Navigation",
+      "Axios",
+      "RESTful API"
+    ],
+    "secondary_skills": [
+      "React.js",
+      "Firebase Analytics",
+      "Jest cơ bản",
+      "Git",
+      "Figma",
+      "Deep Linking cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa thành thạo phát triển native module cho React Native",
+      "Chưa có kinh nghiệm tối ưu hiệu năng ứng dụng quy mô lớn",
+      "Chưa trực tiếp thiết lập pipeline phát hành ứng dụng tự động"
+    ],
+    "languages": [
+      "Tiếng Anh: đọc hiểu tài liệu khá, giao tiếp trong nhóm kỹ thuật"
+    ],
+    "industries": [
+      "Thương mại điện tử",
+      "Dịch vụ đặt lịch"
+    ],
+    "career_note": "Bắt đầu với 8 tháng phát triển giao diện web bằng React.js, sau đó chuyển sang React Native và có thêm 16 tháng phát triển ứng dụng di động cho dịch vụ đặt lịch.",
+    "cv_style": "lẫn Anh-Việt"
+  },
+  {
+    "profile_id": "MOB_MID_01",
+    "role_family": "Mobile",
+    "target_title": "Middle Flutter Developer",
+    "seniority": "Middle",
+    "years_experience": 3.3,
+    "education": "Tốt nghiệp đại học ngành Công nghệ thông tin, đại học công lập",
+    "core_skills": [
+      "Dart",
+      "Flutter",
+      "BLoC",
+      "Clean Architecture cơ bản",
+      "Dio",
+      "GoRouter",
+      "SQLite",
+      "Firebase Crashlytics",
+      "Flutter Widget Testing",
+      "Git"
+    ],
+    "secondary_skills": [
+      "Hive",
+      "Firebase Cloud Messaging",
+      "Google Maps SDK",
+      "Postman",
+      "GitLab CI cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm thiết kế kiến trúc cho hệ thống gồm nhiều ứng dụng",
+      "Chưa thành thạo tích hợp SDK native phức tạp",
+      "Ít kinh nghiệm phân tích và xử lý vấn đề hiệu năng ở quy mô người dùng lớn"
+    ],
+    "languages": [
+      "Tiếng Anh: đọc viết kỹ thuật khá, giao tiếp trung bình"
+    ],
+    "industries": [
+      "Logistics",
+      "Quản lý bán hàng"
+    ],
+    "career_note": "Có 3,3 năm làm Flutter Developer nhưng phần lớn thời gian duy trì và mở rộng một ứng dụng quản lý đội ngũ bán hàng, ít cơ hội tham gia quyết định kiến trúc hoặc phát triển sản phẩm mới từ đầu.",
+    "cv_style": "dài dòng"
+  },
+  {
+    "profile_id": "MOB_MID_02",
+    "role_family": "Mobile",
+    "target_title": "Middle Android Developer",
+    "seniority": "Middle",
+    "years_experience": 4.0,
+    "education": "Tốt nghiệp đại học ngành Khoa học máy tính, đại học công lập",
+    "core_skills": [
+      "Java",
+      "Kotlin",
+      "Android SDK",
+      "XML Layout",
+      "Jetpack Navigation",
+      "Room Database",
+      "WorkManager",
+      "Hilt Dependency Injection",
+      "Retrofit",
+      "JUnit"
+    ],
+    "secondary_skills": [
+      "Spring Boot cơ bản",
+      "MySQL",
+      "Firebase Cloud Messaging",
+      "Gradle",
+      "Git",
+      "Jira"
+    ],
+    "known_gaps": [
+      "Chưa có nhiều kinh nghiệm sản xuất với Jetpack Compose",
+      "Chưa thành thạo profiling và tối ưu mức sử dụng bộ nhớ Android",
+      "Chưa có kinh nghiệm phát triển ứng dụng đa nền tảng"
+    ],
+    "languages": [
+      "Tiếng Anh: đọc tài liệu tốt, giao tiếp kỹ thuật khá"
+    ],
+    "industries": [
+      "Thương mại điện tử",
+      "Vận tải và giao nhận"
+    ],
+    "career_note": "Có 1,2 năm làm Java Backend Developer trước khi chuyển sang Android native, sau đó tích lũy 2,8 năm phát triển ứng dụng giao nhận và theo dõi đơn hàng với Kotlin.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "MOB_SEN_01",
+    "role_family": "Mobile",
+    "target_title": "Senior Android Developer",
+    "seniority": "Senior",
+    "years_experience": 7.2,
+    "education": "Tốt nghiệp đại học ngành Kỹ thuật phần mềm, đại học công lập",
+    "core_skills": [
+      "Kotlin nâng cao",
+      "Jetpack Compose",
+      "Android Jetpack",
+      "Clean Architecture",
+      "Multi-module Architecture",
+      "Coroutines và Flow",
+      "Hilt",
+      "Gradle Build Optimization",
+      "Espresso Testing",
+      "GitHub Actions CI/CD"
+    ],
+    "secondary_skills": [
+      "Firebase Crashlytics",
+      "Android App Bundle",
+      "Performance Profiling",
+      "RESTful API Design",
+      "Technical Mentoring",
+      "Code Review"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm chuyên sâu về Android NDK và C++",
+      "Chưa từng triển khai Kotlin Multiplatform trong sản phẩm thương mại",
+      "Kinh nghiệm kiểm thử accessibility ở quy mô lớn còn hạn chế"
+    ],
+    "languages": [
+      "Tiếng Anh: giao tiếp công việc tốt, đọc viết tài liệu kỹ thuật thành thạo",
+      "Tiếng Nhật: trình độ sơ cấp N5"
+    ],
+    "industries": [
+      "Ngân hàng số",
+      "Fintech",
+      "Dịch vụ tiêu dùng"
+    ],
+    "career_note": "Có 7,2 năm phát triển Android native, đi từ lập trình viên triển khai tính năng đến phụ trách kỹ thuật một nhóm 5 người, tham gia thiết kế kiến trúc module và cải thiện độ ổn định ứng dụng tài chính.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "MOB_SEN_02",
+    "role_family": "Mobile",
+    "target_title": "Senior iOS Developer",
+    "seniority": "Senior",
+    "years_experience": 6.4,
+    "education": "Tốt nghiệp đại học ngành Công nghệ thông tin, đại học tư thục",
+    "core_skills": [
+      "Swift nâng cao",
+      "Objective-C",
+      "SwiftUI",
+      "Combine",
+      "Swift Concurrency",
+      "MVVM-C",
+      "Core Data",
+      "Swift Package Manager",
+      "XCTest và XCUITest",
+      "Fastlane"
+    ],
+    "secondary_skills": [
+      "App Store Connect",
+      "APNs",
+      "Instruments",
+      "Keychain Services",
+      "Technical Documentation",
+      "Code Review"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm triển khai ứng dụng đa nền tảng bằng Flutter hoặc React Native",
+      "Chưa làm việc chuyên sâu với Metal và xử lý đồ họa GPU",
+      "Kinh nghiệm xây dựng hệ thống giám sát ứng dụng end-to-end còn hạn chế"
+    ],
+    "languages": [
+      "Tiếng Anh: giao tiếp tốt trong nhóm quốc tế, đọc viết tài liệu chuyên môn thành thạo"
+    ],
+    "industries": [
+      "Chăm sóc sức khỏe",
+      "Bảo hiểm",
+      "Ứng dụng tiện ích"
+    ],
+    "career_note": "Có 6,4 năm phát triển iOS, từng đảm nhiệm vai trò kỹ thuật chính cho ứng dụng chăm sóc sức khỏe, thực hiện chuyển đổi một phần mã Objective-C sang Swift, hướng dẫn lập trình viên junior và quản lý quy trình phát hành ứng dụng.",
+    "cv_style": "lẫn Anh-Việt"
+  }
+]

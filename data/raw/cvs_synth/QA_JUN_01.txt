@@ -1,0 +1,44 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 1,5 năm kinh nghiệm trong lĩnh vực Software Testing, bắt đầu từ vị trí thực tập sinh và phát triển lên Junior Tester. Công việc hiện tại tập trung vào API Testing cho các hệ thống logistics và quản lý kho vận. Tôi mong muốn tiếp tục phát triển chuyên môn về REST API Testing, xây dựng các bộ kiểm thử API có khả năng tái sử dụng và nâng cao hiệu quả kiểm tra chức năng backend.
+
+HỌC VẤN
+
+Trình độ: Đại học
+Chuyên ngành: Hệ thống thông tin
+Trường: Đại học tư thục
+
+Kiến thức được học là nền tảng giúp tôi tiếp cận việc kiểm tra dữ liệu, làm việc với API và hiểu các chức năng của hệ thống thông tin.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- API Testing: Thiết kế và thực thi API test cho các chức năng CRUD.
+- Postman: Tạo request, kiểm tra response và tổ chức các bài kiểm thử API.
+- REST API: Hiểu cách sử dụng HTTP methods và HTTP Status Codes.
+- JSON Validation: Kiểm tra cấu trúc và nội dung dữ liệu trả về.
+- MySQL: Sử dụng để truy vấn, đối chiếu dữ liệu trong quá trình testing.
+- Swagger/OpenAPI: Đọc API documentation phục vụ thiết kế test.
+- Newman: Thực thi bộ kiểm thử được xây dựng bằng Postman.
+- GitLab: Sử dụng trong quá trình làm việc với nhóm.
+- Có kiến thức về Manual Web Testing, Boundary Value Analysis và Equivalence Partitioning.
+- Sử dụng Git và GitLab CI ở mức cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có thể tự tổ chức việc thiết kế và thực thi test cho các API CRUD thông thường.
+- Phối hợp với thành viên có kinh nghiệm khi xử lý các luồng tích hợp phức tạp.
+- Tiếng Anh B1, đọc hiểu API documentation và trao đổi kỹ thuật đơn giản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Software Tester (Intern → Junior)
+Công ty TNHH Giải pháp Logistics Đông Nam
+Thời gian: 1 năm 6 tháng
+Lĩnh vực: Logistics, quản lý kho vận
+
+- Bắt đầu với công việc hỗ trợ Manual Testing, sau đó đảm nhận thiết kế và thực thi API test cho các chức năng CRUD.
+- Sử dụng Postman kết hợp Swagger/OpenAPI để kiểm tra request, response, HTTP Status Codes và dữ liệu JSON.
+- Kiểm tra dữ liệu bằng MySQL, áp dụng Boundary Value Analysis và Equivalence Partitioning trong quá trình thiết kế trường hợp kiểm thử.
+- Sử dụng Newman để chạy lại bộ kiểm thử API, hỗ trợ theo dõi kết quả sau các thay đổi chức năng.
+
+Trong quá trình làm việc, tôi đã từng bước chuyển từ thực thi test theo hướng dẫn sang chủ động kiểm thử các chức năng API thông thường.

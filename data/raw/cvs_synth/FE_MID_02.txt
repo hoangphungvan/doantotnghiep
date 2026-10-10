@@ -1,0 +1,29 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 4 năm kinh nghiệm phát triển frontend bằng ReactJS và TypeScript cho các sản phẩm tài chính. Xuất phát điểm công việc của tôi là Manual Tester, vì vậy khi chuyển sang lập trình, tôi chú trọng tính chính xác của luồng giao dịch và khả năng kiểm thử giao diện. Tôi mong muốn tiếp tục phát triển các module có nghiệp vụ rõ ràng, đồng thời nâng cao chất lượng và khả năng bảo trì của mã nguồn.
+
+HỌC VẤN
+
+Tốt nghiệp đại học ngành Hệ thống thông tin quản lý tại một trường đại học công lập. Nền tảng học tập giúp tôi hiểu mối liên hệ giữa quy trình nghiệp vụ và các chức năng trong phần mềm quản lý.
+
+KỸ NĂNG CHUYÊN MÔN
+
+ReactJS, TypeScript, Redux Toolkit, TanStack Query, Ant Design, React Hook Form, REST API integration, Playwright, Vite và Git. Tôi cũng sử dụng Jest, React Testing Library, Figma, Jira; có kiến thức Docker cơ bản và kinh nghiệm làm việc theo Agile Scrum.
+
+KỸ NĂNG MỀM
+
+Có khả năng xem xét yêu cầu từ góc độ người dùng và kiểm thử, phối hợp với các thành viên trong quy trình Agile Scrum. Tiếng Anh B2, có thể trao đổi trong cuộc họp kỹ thuật và viết tài liệu phục vụ công việc.
+
+KINH NGHIỆM LÀM VIỆC
+
+Frontend Developer – Công ty Cổ phần Công nghệ Tài chính Minh Tín
+10/2022 – 10/2026 (4 năm)
+
+- Phát triển các module giao dịch và màn hình quản lý tài chính bằng ReactJS, TypeScript và Ant Design, đáp ứng các luồng thao tác nghiệp vụ.
+- Kết nối REST API, quản lý dữ liệu phía giao diện bằng TanStack Query và trạng thái ứng dụng bằng Redux Toolkit.
+- Xây dựng và cập nhật bộ kiểm thử giao diện với Playwright; kết hợp Jest và React Testing Library để kiểm tra hành vi của các thành phần.
+- Sử dụng React Hook Form cho biểu mẫu, Git để quản lý mã nguồn và Jira để theo dõi công việc theo các vòng Agile Scrum.
+
+DỰ ÁN
+
+Giao diện hệ thống giao dịch tài chính: Phụ trách phát triển các chức năng giao dịch và các kịch bản kiểm thử UI, qua đó hỗ trợ nhóm phát hiện lỗi trong quá trình cập nhật chức năng.

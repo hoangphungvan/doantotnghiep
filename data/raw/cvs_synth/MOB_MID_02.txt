@@ -1,0 +1,56 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 4 năm kinh nghiệm phát triển phần mềm, trong đó khoảng 1,2 năm làm Java Backend Developer và 2,8 năm phát triển ứng dụng Android native. Quá trình chuyển từ Backend sang Mobile giúp tôi có góc nhìn về cả xử lý dữ liệu phía máy chủ và cách ứng dụng di động tương tác với hệ thống.
+
+Tôi muốn tiếp tục phát triển chuyên môn Android với Kotlin, tập trung vào việc xây dựng các chức năng ổn định, tổ chức mã nguồn rõ ràng và nâng cao chất lượng kiểm thử. Tôi quan tâm đến các sản phẩm trong lĩnh vực thương mại điện tử, vận tải và giao nhận.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học – Ngành Khoa học máy tính
+Hệ đào tạo: Chính quy, trường đại học công lập.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ lập trình: Java, Kotlin.
+- Android Development: Android SDK, XML Layout, Jetpack Navigation.
+- Database: Room Database, MySQL.
+- Background Processing: WorkManager.
+- Dependency Injection: Hilt.
+- Networking: Retrofit.
+- Testing: JUnit.
+- Backend: Spring Boot cơ bản.
+- Công cụ: Gradle, Git, Jira.
+- Push Notification: Firebase Cloud Messaging.
+
+KỸ NĂNG MỀM
+
+- Có khả năng tiếp cận công việc từ cả góc độ Backend và Android.
+- Đọc hiểu tài liệu kỹ thuật tiếng Anh tốt, giao tiếp kỹ thuật khá.
+- Có kinh nghiệm phối hợp công việc phát triển phần mềm thông qua Jira.
+
+KINH NGHIỆM LÀM VIỆC
+
+Android Developer
+Công ty Công nghệ Vận tải Nam Việt
+12/2023 – 10/2026 (2 năm 10 tháng)
+
+- Phát triển và bảo trì ứng dụng Android phục vụ hoạt động giao nhận, theo dõi trạng thái đơn hàng bằng Kotlin và Android SDK.
+- Xây dựng giao diện với XML Layout, sử dụng Jetpack Navigation để tổ chức luồng màn hình và Retrofit để kết nối ứng dụng với dịch vụ Backend.
+- Sử dụng Room Database để quản lý dữ liệu cục bộ, WorkManager để thực hiện các tác vụ nền và Firebase Cloud Messaging cho chức năng thông báo.
+- Áp dụng Hilt Dependency Injection trong tổ chức mã nguồn, viết kiểm thử với JUnit và quản lý thay đổi bằng Git.
+
+Java Backend Developer
+Công ty TNHH Phần mềm Đại Tín
+10/2022 – 12/2023 (1 năm 2 tháng)
+
+- Tham gia phát triển các chức năng Backend bằng Java và Spring Boot cho hệ thống phục vụ hoạt động thương mại điện tử.
+- Làm việc với MySQL trong quá trình xây dựng và điều chỉnh chức năng xử lý dữ liệu.
+- Sử dụng Git để quản lý mã nguồn và Jira để theo dõi công việc phát triển.
+
+DỰ ÁN
+
+Ứng dụng giao nhận và theo dõi đơn hàng
+
+Công nghệ: Kotlin, Android SDK, XML Layout, Retrofit, Room Database, WorkManager, Firebase Cloud Messaging.
+
+Tham gia phát triển các chức năng hiển thị thông tin đơn hàng, theo dõi trạng thái giao nhận và thông báo cập nhật. Tập trung vào phần Android, xử lý luồng dữ liệu và duy trì hoạt động của ứng dụng.

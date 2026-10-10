@@ -1,0 +1,168 @@
+Dựa trên các hồ sơ JSON bên dưới, hãy viết CV dạng văn bản thuần như một ứng viên Việt Nam thật sự tự viết. Mỗi hồ sơ viết thành một CV.
+
+Quy tắc:
+- Cấu trúc: THÔNG TIN LIÊN HỆ (tên hư cấu, email dạng ten@example.com, thành phố), MỤC TIÊU NGHỀ NGHIỆP, HỌC VẤN, KỸ NĂNG CHUYÊN MÔN, KỸ NĂNG MỀM, KINH NGHIỆM LÀM VIỆC (công ty hư cấu hoặc phổ biến, thời gian, 2-4 gạch đầu dòng mô tả việc làm có kết quả cụ thể), DỰ ÁN (nếu có), CHỨNG CHỈ (nếu có).
+- Độ dài 250-450 từ. Văn phong theo trường cv_style. Giữ thuật ngữ kỹ thuật bằng tiếng Anh như CV Việt Nam thật.
+- CHỈ dùng thông tin trong hồ sơ. Không bịa thêm kỹ năng ngoài core_skills và secondary_skills.
+- known_gaps: KHÔNG nhắc tới các kỹ năng này, cũng không viết "chưa biết".
+- Tổng thời gian các công việc phải khớp years_experience.
+- KHÔNG ghi CV phù hợp vị trí nào, không nhắc tới tin tuyển dụng, không thêm nhận xét của AI.
+
+Mỗi CV bắt đầu bằng đúng một dòng:
+=== CV: <profile_id> ===
+rồi tới nội dung CV. Không có lời dẫn hay kết luận.
+
+HỒ SƠ:
+[
+  {
+    "profile_id": "BA_FRE_01",
+    "role_family": "Business Analyst",
+    "target_title": "Fresher IT Business Analyst",
+    "seniority": "Fresher",
+    "years_experience": 0.4,
+    "education": "Cử nhân Hệ thống thông tin quản lý, đại học công lập khối kinh tế",
+    "core_skills": [
+      "Requirement Gathering cơ bản",
+      "Viết User Story theo mẫu",
+      "Vẽ Use Case Diagram bằng Draw.io",
+      "Phân tích quy trình nghiệp vụ đơn giản",
+      "Microsoft Excel",
+      "BPMN cơ bản",
+      "Viết Acceptance Criteria cho chức năng đơn giản"
+    ],
+    "secondary_skills": [
+      "Microsoft Word",
+      "PowerPoint",
+      "Trello",
+      "SQL SELECT cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa tự chủ trì buổi thu thập yêu cầu với khách hàng",
+      "Chưa có kinh nghiệm phân tích hệ thống tích hợp API",
+      "Chưa thực hiện UAT độc lập"
+    ],
+    "languages": [
+      "Tiếng Anh B1, đọc hiểu tài liệu kỹ thuật cơ bản"
+    ],
+    "industries": [
+      "EdTech",
+      "Phần mềm quản lý đào tạo"
+    ],
+    "career_note": "Sinh viên mới tốt nghiệp, có 5 tháng thực tập BA tại công ty phát triển phần mềm quản lý đào tạo, chủ yếu hỗ trợ ghi nhận yêu cầu, mô hình hóa quy trình và viết tài liệu dưới sự hướng dẫn của BA chính.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "BA_FRE_02",
+    "role_family": "Business Analyst",
+    "target_title": "Fresher Business Analyst - Banking Operations",
+    "seniority": "Fresher",
+    "years_experience": 0.7,
+    "education": "Cử nhân Quản trị kinh doanh, đại học tư thục khối kinh tế",
+    "core_skills": [
+      "Phân tích quy trình chăm sóc khách hàng",
+      "Thu thập yêu cầu từ người dùng nội bộ",
+      "Vẽ Flowchart bằng Lucidchart",
+      "Google Sheets",
+      "Viết Business Requirement cơ bản",
+      "Phân tích vấn đề nghiệp vụ",
+      "Mô tả As-Is và To-Be Process"
+    ],
+    "secondary_skills": [
+      "Notion",
+      "Google Docs",
+      "Figma cơ bản",
+      "CRM Operations"
+    ],
+    "known_gaps": [
+      "Chưa thành thạo UML và mô hình hóa hệ thống phần mềm",
+      "Chưa có kinh nghiệm truy vấn SQL",
+      "Chưa hiểu sâu kiến trúc hệ thống ngân hàng lõi"
+    ],
+    "languages": [
+      "Tiếng Anh B1, giao tiếp công việc ở mức cơ bản"
+    ],
+    "industries": [
+      "Ngân hàng bán lẻ",
+      "Chăm sóc khách hàng"
+    ],
+    "career_note": "Chuyển từ nhân viên chăm sóc khách hàng ngân hàng sang BA, có 7 tháng tham gia cải tiến quy trình tiếp nhận yêu cầu và xử lý khiếu nại trên hệ thống nội bộ, nhưng nền tảng kỹ thuật còn hạn chế.",
+    "cv_style": "lẫn Anh-Việt"
+  },
+  {
+    "profile_id": "BA_JUN_01",
+    "role_family": "Business Analyst",
+    "target_title": "Junior Business Analyst - E-commerce",
+    "seniority": "Junior",
+    "years_experience": 1.5,
+    "education": "Cử nhân Công nghệ thông tin, đại học công lập khối kỹ thuật",
+    "core_skills": [
+      "Requirement Elicitation",
+      "Viết BRD và SRS cho các chức năng thương mại điện tử",
+      "User Story và Acceptance Criteria",
+      "Jira",
+      "Confluence",
+      "SQL với MySQL",
+      "Wireframe bằng Figma",
+      "REST API cơ bản với Postman",
+      "Agile Scrum"
+    ],
+    "secondary_skills": [
+      "Miro",
+      "Git cơ bản",
+      "Swagger UI",
+      "UAT Support"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm thiết kế giải pháp cho hệ thống quy mô lớn",
+      "Chưa từng phụ trách một dự án từ đầu đến cuối",
+      "Chưa thành thạo phân tích dữ liệu nâng cao"
+    ],
+    "languages": [
+      "Tiếng Anh B2, đọc viết tài liệu và trao đổi công việc"
+    ],
+    "industries": [
+      "E-commerce",
+      "Bán lẻ trực tuyến"
+    ],
+    "career_note": "Có 1,5 năm làm BA trong nhóm phát triển nền tảng thương mại điện tử, đã trực tiếp phân tích các chức năng giỏ hàng, quản lý đơn hàng và khuyến mãi nhưng vẫn cần hỗ trợ khi xử lý yêu cầu phức tạp.",
+    "cv_style": "ngắn gọn"
+  },
+  {
+    "profile_id": "BA_JUN_02",
+    "role_family": "Business Analyst",
+    "target_title": "Junior Business Analyst - Internal Systems",
+    "seniority": "Junior",
+    "years_experience": 1.8,
+    "education": "Cử nhân Hệ thống thông tin, đại học địa phương",
+    "core_skills": [
+      "Ghi nhận và làm rõ yêu cầu nghiệp vụ",
+      "Viết Functional Specification theo mẫu",
+      "Vẽ Activity Diagram bằng Visual Paradigm",
+      "Microsoft Visio",
+      "Quản lý tài liệu yêu cầu",
+      "Microsoft Excel nâng cao",
+      "Kiểm tra tính nhất quán của yêu cầu"
+    ],
+    "secondary_skills": [
+      "Microsoft Teams",
+      "SharePoint",
+      "Azure DevOps Boards cơ bản",
+      "Manual Testing",
+      "UAT Checklist"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm tổ chức workshop trực tiếp với khách hàng bên ngoài",
+      "Chưa thành thạo SQL và kiểm thử API",
+      "Chưa từng tự quản lý phạm vi yêu cầu của dự án"
+    ],
+    "languages": [
+      "Tiếng Anh A2-B1, đọc tài liệu đơn giản và viết email ngắn"
+    ],
+    "industries": [
+      "Phần mềm quản trị nội bộ",
+      "Hành chính nhân sự"
+    ],
+    "career_note": "Có 1,8 năm mang chức danh BA nhưng chủ yếu cập nhật tài liệu và hỗ trợ kiểm thử cho một hệ thống quản lý nhân sự nội bộ, ít tiếp xúc trực tiếp với khách hàng và chưa tự chịu trách nhiệm phân tích một phân hệ hoàn chỉnh.",
+    "cv_style": "có lỗi chính tả nhẹ"
+  }
+]

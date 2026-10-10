@@ -1,0 +1,32 @@
+MỤC TIÊU NGHỀ NGHIỆP
+Tôi có hơn 7 năm phát triển trong lĩnh vực UI/UX, bắt đầu từ thiết kế giao diện và dần đảm nhiệm UX Strategy, nghiên cứu người dùng và tổ chức hệ thống thiết kế cho sản phẩm số. Kinh nghiệm tập trung vào fintech, ngân hàng số, bảo hiểm công nghệ và phần mềm doanh nghiệp. Tôi muốn phát triển luồng sử dụng nhất quán, chú trọng Accessibility Design và mentoring designer.
+
+HỌC VẤN
+Cử nhân Thiết kế truyền thông đa phương tiện, tốt nghiệp tại một trường đại học công lập. Đã hoàn thành các khóa đào tạo chuyên sâu về UX Research.
+
+KỸ NĂNG CHUYÊN MÔN
+- Figma, Axure RP, UXPin; Advanced Prototyping.
+- UX Strategy, User Research, Information Architecture và Accessibility Design.
+- Design System Architecture, Design Leadership.
+- Google Analytics 4, A/B Testing, Miro.
+
+KỸ NĂNG MỀM
+- Design Workshop Facilitation, Stakeholder Communication và trình bày giải pháp thiết kế.
+- Mentoring Junior Designers, hỗ trợ nhóm 3–4 designer thống nhất cách làm việc với thư viện component.
+- Tiếng Việt bản ngữ; tiếng Anh C1, giao tiếp chuyên môn và trình bày phương án thiết kế.
+
+KINH NGHIỆM LÀM VIỆC
+
+UI Designer – Công ty Giải pháp Số Minh Tâm (08/2019 – 07/2022)
+- Thiết kế giao diện cho các ứng dụng phần mềm doanh nghiệp và sản phẩm tài chính số.
+- Sắp xếp Information Architecture và dựng prototype để làm rõ màn hình, trạng thái và luồng tương tác.
+- Phối hợp hoàn thiện các thành phần giao diện tái sử dụng, giúp duy trì sự nhất quán giữa các màn hình.
+
+Senior UI/UX Designer – Công ty Công nghệ Tài chính Hướng Việt (08/2022 – 09/2026)
+- Phụ trách thiết kế luồng giao dịch tài chính, từ User Research đến prototype và phương án tương tác.
+- Xây dựng, tổ chức thư viện component theo Design System Architecture, phục vụ việc thiết kế đồng bộ các màn hình.
+- Kết hợp Google Analytics 4 và A/B Testing để xem xét hành vi sử dụng, hỗ trợ điều chỉnh thiết kế.
+- Hướng dẫn nhóm 3–4 designer, tổ chức workshop và trao đổi giải pháp với các stakeholder liên quan.
+
+DỰ ÁN
+Chuẩn hóa trải nghiệm giao dịch ngân hàng số: thiết kế lại cấu trúc thông tin và các bước tương tác, xây dựng prototype trên Figma, Axure RP và UXPin. Phát triển thư viện component chung, chú trọng Accessibility Design.

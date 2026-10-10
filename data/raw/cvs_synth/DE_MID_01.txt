@@ -1,0 +1,47 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có khoảng 3 năm 8 tháng kinh nghiệm làm việc với dữ liệu, trong đó 1 năm 6 tháng đầu tập trung vào Business Intelligence và 2 năm 2 tháng gần đây chuyển sang Data Engineering. Quá trình làm BI Analyst giúp tôi hiểu khá rõ cách các bộ phận nghiệp vụ sử dụng dữ liệu để theo dõi hoạt động kinh doanh. Sau đó, tôi muốn tham gia sâu hơn vào việc xây dựng hệ thống xử lý dữ liệu, thay vì chỉ làm việc ở lớp báo cáo. Mục tiêu hiện tại của tôi là tiếp tục phát triển chuyên môn về Data Warehouse, ETL Optimization và các dịch vụ dữ liệu trên Azure.
+
+HỌC VẤN
+
+Đại học – Ngành Hệ thống thông tin quản lý
+Trường đại học công lập khối kinh tế.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Cơ sở dữ liệu: SQL Server, T-SQL, Azure SQL Database.
+- Xử lý và tích hợp dữ liệu: SSIS, Azure Data Factory, Databricks, PySpark.
+- Thiết kế dữ liệu: Data Warehouse, Dimensional Modeling.
+- Tối ưu quy trình: ETL Optimization.
+- Phân tích và báo cáo: Power BI, DAX.
+- Công cụ hỗ trợ: Python, Azure DevOps, Git.
+
+KỸ NĂNG MỀM
+
+- Trao đổi với bộ phận nghiệp vụ để làm rõ nhu cầu sử dụng dữ liệu.
+- Phối hợp với thành viên trong nhóm khi phát triển và điều chỉnh pipeline.
+- Có thể tham gia họp kỹ thuật và viết tài liệu bằng tiếng Anh ở mức B2.
+
+KINH NGHIỆM LÀM VIỆC
+
+Data Engineer – Công ty TNHH Giải pháp Dữ liệu Đông Việt
+08/2024 – 09/2026 (2 năm 2 tháng)
+
+- Tham gia xây dựng Data Warehouse trên Azure phục vụ tổng hợp và phân tích dữ liệu tài chính doanh nghiệp.
+- Phát triển pipeline ETL bằng Azure Data Factory, kết hợp Azure SQL Database để lưu trữ dữ liệu sau xử lý.
+- Sử dụng Databricks và PySpark trong các công việc biến đổi dữ liệu, chuẩn bị dữ liệu đầu vào cho hệ thống phân tích.
+- Rà soát các bước xử lý ETL, điều chỉnh truy vấn và luồng dữ liệu nhằm giảm thao tác xử lý không cần thiết.
+
+BI Analyst – Công ty CP Công nghệ Vận tải Minh Phát
+02/2023 – 07/2024 (1 năm 6 tháng)
+
+- Xây dựng báo cáo Power BI theo dõi hoạt động logistics và các chỉ số vận hành.
+- Sử dụng T-SQL để truy xuất, tổng hợp dữ liệu từ SQL Server phục vụ báo cáo.
+- Thiết kế mô hình dữ liệu theo hướng Dimensional Modeling để hỗ trợ phân tích.
+- Phát triển các chỉ số DAX và sử dụng SSIS để chuẩn bị dữ liệu cho báo cáo định kỳ.
+
+DỰ ÁN
+
+Xây dựng Data Warehouse cho dữ liệu tài chính doanh nghiệp
+
+Tham gia thiết kế mô hình dữ liệu, phát triển pipeline ETL trên Azure Data Factory và xử lý dữ liệu bằng Databricks, PySpark. Dữ liệu sau xử lý được tổ chức trên Azure SQL Database nhằm hỗ trợ nhu cầu phân tích và khai thác báo cáo nội bộ.

@@ -1,0 +1,48 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi xuất phát từ ngành Quản trị kinh doanh, từng làm trong môi trường vận hành bán lẻ trước khi chuyển sang IT Support qua khóa đào tạo nghề. Hiện có khoảng 1 năm 10 tháng kinh nghiệm support thiết bị POS, phần mềm KiotViet và hệ thống máy bán hàng cho các chi nhánh. Tôi muốn tiếp tục phát triển kỹ năng technical support, xử lý sự cố nhanh và hỗ trợ cửa hàng duy trì hoạt động bán hàng ổn định.
+
+HỌC VẤN
+
+Trường cao đẳng kinh tế
+Ngành: Quản trị kinh doanh
+Trình độ: Cao đẳng
+
+Đào tạo bổ sung: Hoàn thành khóa đào tạo nghề IT Support.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Support phần mềm bán hàng KiotViet và cấu hình máy POS tại cửa hàng.
+- Troubleshooting máy quét mã vạch, máy in hóa đơn nhiệt.
+- Cài đặt, update Windows trên máy bán hàng.
+- Kiểm tra và xử lý lỗi Wi-Fi, kết nối router và switch cơ bản.
+- Remote support qua RustDesk.
+- Tiếp nhận và quản lý yêu cầu hỗ trợ bằng Freshdesk.
+- Quản lý tài khoản Google Workspace cơ bản.
+- Kiểm kê thiết bị IT tại các chi nhánh.
+- Viết tài liệu hướng dẫn sử dụng phần mềm bán hàng.
+- Tiếng Anh: Đọc hiểu tài liệu đơn giản, giao tiếp hạn chế.
+
+KỸ NĂNG MỀM
+
+- Giao tiếp với nhân viên cửa hàng để xác định vấn đề cần support.
+- Training nhân viên thao tác trên phần mềm bán hàng.
+- Phối hợp với nhà cung cấp thiết bị khi phát sinh lỗi.
+- Hiểu quy trình vận hành cửa hàng từ kinh nghiệm làm việc trước đây.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Chuỗi Cửa hàng Tiện ích Đại Phúc
+Vị trí: IT Support Specialist
+Thời gian: 12/2024 - 09/2026 (22 tháng)
+
+- Support hệ thống KiotViet, máy POS và thiết bị bán hàng tại các chi nhánh, giúp nhân viên tiếp tục thao tác bán hàng sau khi xử lý sự cố.
+- Cài đặt máy in hóa đơn nhiệt, xử lý lỗi máy quét mã vạch và khắc phục kết nối Wi-Fi tại cửa hàng.
+- Nhận request qua Freshdesk, remote support bằng RustDesk và phối hợp nhà cung cấp khi cần xử lý lỗi thiết bị.
+- Kiểm kê thiết bị IT, hướng dẫn nhân viên sử dụng phần mềm bán hàng và cập nhật tài liệu thao tác cho cửa hàng.
+
+DỰ ÁN
+
+Hỗ trợ vận hành thiết bị POS tại chuỗi cửa hàng
+
+Tham gia cấu hình máy POS, máy in hóa đơn và phần mềm KiotViet cho các điểm bán. Thực hiện kiểm tra kết nối thiết bị, hỗ trợ từ xa và training nhân viên để sử dụng hệ thống bán hàng đúng quy trình.

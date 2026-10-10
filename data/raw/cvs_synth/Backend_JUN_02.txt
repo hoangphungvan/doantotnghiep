@@ -1,0 +1,52 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi là Backend Developer với khoảng 1,8 năm kinh nghiệm phát triển ứng dụng bằng Python và Django. Trước khi chuyển sang Backend, tôi từng làm QA Automation nên có thói quen chú trọng testing và kiểm tra các trường hợp lỗi khi phát triển chức năng. Tôi muốn tiếp tục phát triển theo hướng Python Backend, tập trung vào API development, business logic và cải thiện chất lượng code thông qua automated testing.
+
+HỌC VẤN
+
+Cử nhân Công nghệ thông tin
+Đại học công lập
+
+Có nền tảng về lập trình, cơ sở dữ liệu và phát triển phần mềm.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Programming: Python.
+- Backend Framework: Django, Django REST Framework.
+- Database: PostgreSQL, Django ORM.
+- API Development: RESTful API.
+- Testing: Pytest, Selenium.
+- Background Tasks: Celery cơ bản.
+- Tools: Docker, Git, Postman.
+- Caching: Redis cơ bản.
+- English: B1, có thể đọc technical documentation và giao tiếp công việc cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm phối hợp giữa development và testing trong quá trình hoàn thiện chức năng.
+- Chú ý đến các trường hợp lỗi và tính chính xác của kết quả xử lý.
+- Có khả năng chuyển đổi cách tiếp cận công việc từ QA Automation sang Backend Development.
+- Chủ động trao đổi khi business requirements chưa rõ ràng.
+
+KINH NGHIỆM LÀM VIỆC
+
+Python Backend Developer
+Công ty TNHH Giải pháp EduSoft Việt Nam
+12/2024 – 09/2026 (22 tháng)
+
+- Developed và maintained RESTful API cho các ứng dụng công nghệ giáo dục và phần mềm SaaS sử dụng Python, Django REST Framework.
+- Implement business logic, xử lý dữ liệu thông qua Django ORM và PostgreSQL, đảm bảo API trả về dữ liệu đúng theo yêu cầu chức năng.
+- Viết automated tests bằng Pytest để kiểm tra các phần xử lý Backend, kết hợp Postman trong quá trình verify API.
+- Sử dụng Git để quản lý source code, Docker để làm việc với môi trường ứng dụng và tìm hiểu Celery, Redis cho các tác vụ liên quan.
+
+DỰ ÁN
+
+Backend API cho nền tảng giáo dục trực tuyến
+
+Tech stack: Python, Django, Django REST Framework, PostgreSQL, Django ORM, Pytest.
+
+Tham gia xây dựng các API phục vụ xử lý nghiệp vụ của nền tảng. Tôi phụ trách các phần được phân công từ implementation đến testing, kiểm tra response và sửa lỗi trước khi hoàn tất chức năng.
+
+KINH NGHIỆM LIÊN QUAN
+
+Trước khi làm Backend, tôi từng tiếp cận quy trình phát triển phần mềm từ vai trò QA Automation. Kinh nghiệm này giúp tôi quan tâm nhiều hơn đến việc xây dựng test cases, kiểm tra kết quả xử lý và hạn chế lỗi khi chỉnh sửa code.

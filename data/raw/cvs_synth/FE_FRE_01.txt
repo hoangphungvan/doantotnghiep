@@ -1,0 +1,48 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi là sinh viên năm cuối ngành Công nghệ thông tin, định hướng phát triển trong lĩnh vực Frontend với ReactJS. Đã có thời gian thực tập tại công ty phần mềm, tham gia xây dựng giao diện trang khóa học và chỉnh sửa các React component theo hướng dẫn của mentor. Mong muốn được làm việc trong môi trường chuyên nghiệp để nâng cao khả năng lập trình JavaScript, ReactJS và tích lũy thêm kinh nghiệm phát triển sản phẩm thực tế.
+
+HỌC VẤN
+
+Sinh viên năm cuối ngành Công nghệ thông tin
+
+Trường đại học công lập
+
+Được học và thực hành các kiến thức lập trình web, tập trung tìm hiểu HTML5, CSS3, JavaScript ES6+ và ReactJS.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ và giao diện: HTML5, CSS3, JavaScript ES6+.
+- Framework/Library: ReactJS, React Hooks cơ bản, Bootstrap 5.
+- Thiết kế giao diện: Responsive Web Design, Figma cơ bản.
+- Công cụ phát triển: Git, Vite, npm, Postman.
+- API: REST API integration, kết nối dữ liệu từ API vào giao diện React.
+
+KỸ NĂNG MỀM
+
+- Có khả năng tiếp nhận hướng dẫn và phản hồi từ mentor trong quá trình làm việc.
+- Phối hợp với các thành viên trong nhóm khi chỉnh sửa giao diện.
+- Tiếng Anh B1, có thể đọc tài liệu kỹ thuật và giao tiếp cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Frontend Developer Intern
+
+Công ty Phần mềm Minh Phát
+
+Thời gian: 0,4 năm
+
+Lĩnh vực: Giáo dục trực tuyến
+
+- Tham gia xây dựng giao diện trang khóa học trực tuyến bằng ReactJS, HTML5 và CSS3.
+- Chỉnh sửa các React component theo yêu cầu và hướng dẫn từ mentor, hoàn thiện phần giao diện được giao.
+- Sử dụng React Hooks cơ bản để xử lý dữ liệu trong component, kết hợp Responsive Web Design để điều chỉnh hiển thị trên các kích thước màn hình.
+- Sử dụng Git để quản lý thay đổi mã nguồn và phối hợp cập nhật giao diện trong quá trình thực tập.
+
+DỰ ÁN
+
+Giao diện nền tảng khóa học trực tuyến
+
+Công nghệ: ReactJS, JavaScript ES6+, HTML5, CSS3, Bootstrap 5.
+
+Tham gia phát triển và điều chỉnh giao diện trang khóa học trong thời gian thực tập. Công việc tập trung vào xây dựng component, chỉnh sửa bố cục và hỗ trợ tích hợp dữ liệu từ REST API vào các phần giao diện được phân công.

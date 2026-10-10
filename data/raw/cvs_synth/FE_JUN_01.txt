@@ -1,0 +1,48 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi đã có 1,2 năm kinh nghiệm làm việc với Angular và TypeScript, chủ yếu trong các dự án phần mềm quản lý nội bộ. Công việc trước đây tập trung vào bảo trì giao diện, xử lý lỗi và cập nhật các chức năng nhỏ trên hệ thống quản lý nhân sự. Tôi muốn tiếp tục phát triển chuyên môn Angular, nâng cao khả năng xử lý các tính năng phức tạp hơn và tham gia sâu hơn vào quá trình phát triển sản phẩm.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học ngành Hệ thống thông tin
+
+Trường đại học tư thục
+
+Có kiến thức về hệ thống thông tin và phát triển phần mềm, tập trung vào lập trình giao diện web với TypeScript và Angular.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ: HTML5, SCSS, TypeScript.
+- Framework: Angular, Angular Components, Angular Reactive Forms.
+- Thư viện: RxJS cơ bản, Angular Material.
+- API: REST API integration.
+- Công cụ: Git, Postman, Jira, npm, Figma.
+
+KỸ NĂNG MỀM
+
+- Có khả năng xử lý các công việc bảo trì và chỉnh sửa giao diện theo yêu cầu.
+- Phối hợp với thành viên trong nhóm khi kiểm tra và xử lý lỗi.
+- Tiếng Anh B1, đọc tài liệu kỹ thuật tốt, giao tiếp công việc cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Angular Developer
+
+Công ty Giải pháp Phần mềm Đại Phúc
+
+Thời gian: 1,2 năm
+
+Lĩnh vực: Phần mềm quản lý nội bộ, quản lý nhân sự
+
+- Tham gia bảo trì hệ thống quản lý nhân sự được phát triển bằng Angular và TypeScript.
+- Tiếp nhận và sữa các lỗi nhỏ liên quan đến giao diện, Angular Components và cách hiển thị dữ liệu trên hệ thống.
+- Chỉnh sửa các biểu mẫu sử dụng Angular Reactive Forms, đảm bảo những thay đổi phù hợp với yêu cầu được giao.
+- Sử dụng Git để quản lý mã nguồn, Jira để theo dõi công việc và Postman để kiểm tra REST API khi cần xử lý lỗi dữ liệu.
+
+DỰ ÁN
+
+Hệ thống quản lý nhân sự nội bộ
+
+Công nghệ: Angular, TypeScript, SCSS, Angular Material, RxJS, REST API.
+
+Tham gia duy trì và cập nhật các phần giao diện của hệ thống quản lý nhân sự. Công việc chính là kiểm tra lỗi, chỉnh sửa component, cập nhật biểu mẫu và điều chỉnh cách hiển thị dữ liệu. Phần lớn nhiệm vụ liên quan đến các tính năng đã có sẵn, giúp tôi hiểu rõ hơn về cách tổ chức và vận hành một ứng dụng Angular trong môi trường doanh nghiệp.

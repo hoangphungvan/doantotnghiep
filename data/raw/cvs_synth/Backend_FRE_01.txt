@@ -1,0 +1,44 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi là sinh viên ngành Công nghệ thông tin đã tốt nghiệp, có 6 tháng thực tập phát triển Backend Java. Trong thời gian thực tập, tôi được tham gia xây dựng RESTful API, xử lý các chức năng CRUD và sửa lỗi ứng dụng bằng Spring Boot. Tôi mong muốn tiếp tục phát triển kỹ năng lập trình Backend, nâng cao khả năng thiết kế API, làm việc với cơ sở dữ liệu và viết kiểm thử để có thể đảm nhận công việc độc lập hơn trong tương lai.
+
+HỌC VẤN
+
+Cử nhân Công nghệ thông tin
+Đại học công lập
+
+Trong quá trình học, tôi tập trung vào lập trình Java, SQL, cơ sở dữ liệu và phát triển ứng dụng Backend.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ lập trình: Java Core, SQL.
+- Framework: Spring Boot, Spring Data JPA.
+- Database: MySQL.
+- API Development: RESTful API.
+- Testing: JUnit, Postman.
+- Công cụ: Git, Maven.
+- Kiến thức bổ trợ: HTML/CSS, Docker cơ bản.
+- Tiếng Anh: B1, đọc hiểu tài liệu kỹ thuật khá, giao tiếp cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có thể phối hợp với lập trình viên hướng dẫn trong quá trình phát triển chức năng.
+- Tiếp nhận góp ý khi sửa lỗi và điều chỉnh code.
+- Chủ động tìm hiểu tài liệu kỹ thuật để hoàn thành công việc được giao.
+
+KINH NGHIỆM LÀM VIỆC
+
+Java Backend Intern
+Công ty TNHH Phần mềm Minh Việt
+04/2026 – 09/2026 (6 tháng)
+
+- Tham gia phát triển các RESTful API phục vụ chức năng quản lý dữ liệu của ứng dụng, chủ yếu là thêm, sửa, xóa và truy vấn thông tin.
+- Sử dụng Spring Boot, Spring Data JPA và MySQL để xử lý dữ liệu, kết nối API với cơ sở dữ liệu theo yêu cầu.
+- Hỗ trợ kiểm tra API bằng Postman, sửa các lỗi liên quan đến xử lý request và dữ liệu dưới sự hướng dẫn của lập trình viên chính.
+- Sử dụng Git trong quá trình cập nhật mã nguồn, tìm hiểu cách viết unit test với JUnit cho các chức năng Backend.
+
+DỰ ÁN
+
+Phát triển API cho ứng dụng thương mại điện tử
+
+Tham gia phần Backend, tập trung vào các API CRUD và thao tác dữ liệu bằng Spring Boot, Spring Data JPA, MySQL. Công việc chủ yếu là phát triển chức năng được phân công, kiểm tra kết quả và sửa lỗi theo phản hồi của người hướng dẫn.

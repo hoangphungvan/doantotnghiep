@@ -1,0 +1,44 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có khoảng 1,4 năm kinh nghiệm phát triển và bảo trì ứng dụng web sử dụng ASP.NET Core Web API và Angular. Công việc trước đây chủ yếu liên quan đến hệ thống quản lý nhân sự, bao gồm chỉnh sửa biểu mẫu, giao diện và các API phục vụ nghiệp vụ nội bộ. Tôi muốn tiếp tục nâng cao khả năng làm việc với C#, Angular và SQL Server, đồng thời tích lũy thêm kinh nghiệm trong quá trình xây dựng và phát triển các chức năng phần mềm hoàn chỉnh.
+
+HỌC VẤN
+
+Đại học tư thục – Ngành Kỹ thuật phần mềm
+Trình độ: Đại học.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Backend: C#, ASP.NET Core Web API, RESTful API.
+- Frontend: Angular, TypeScript, HTML5, CSS3, Bootstrap.
+- Database: SQL Server, Entity Framework Core, LINQ.
+- Công cụ: Git, Swagger/OpenAPI, Postman.
+- Ngoại ngữ: Tiếng Anh B1, giao tiếp công việc cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm phối hợp với nhóm phát triển trong quá trình bảo trì phần mềm.
+- Tiếp nhận và xử lý các yêu cầu chỉnh sửa chức năng theo công việc được phân công.
+- Cẩn thận khi làm việc với biểu mẫu và dữ liệu trên hệ thống quản lý nội bộ.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Giải pháp Phần mềm Đại Việt
+Junior Software Developer
+05/2025 – 09/2026 (1 năm 5 tháng)
+
+- Tham gia bảo trì hệ thống quản lý nhân sự sử dụng ASP.NET Core Web API, Angular và SQL Server.
+- Chỉnh sửa các màn hình nhập liệu, biểu mẫu quản lý thông tin nhân sự bằng Angular, TypeScript và HTML5/CSS3.
+- Cập nhật các RESTful API đơn giản bằng C#, sử dụng Entity Framework Core và LINQ để thực hiện thao tác dữ liệu.
+- Sử dụng Swagger/OpenAPI và Postman để kiểm tra API sau khi chỉnh sửa, giúp xác nhận các chức năng đáp ứng yêu cầu được giao.
+
+DỰ ÁN
+
+Hệ thống quản lý nhân sự nội bộ
+
+Vai trò: Software Developer
+Công nghệ: C#, ASP.NET Core Web API, Angular, TypeScript, SQL Server, Entity Framework Core.
+
+Tham gia duy trì và cập nhật các chức năng của hệ thống quản lý nhân sự. Công việc tập trung vào xử lý biểu mẫu, điều chỉnh giao diện và sửa đổi các API đơn giản nhằm đáp ứng thay đổi trong quá trình sử dụng.
+
+Thông qua dự án, tôi tích lũy kinh nghiệm làm việc với ứng dụng có sẵn, tìm hiểu luồng xử lý giữa frontend và backend, cũng như kiểm tra chức năng sau khi cập nhật mã nguồn.

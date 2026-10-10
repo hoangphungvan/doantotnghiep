@@ -1,0 +1,44 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có gần 4 năm kinh nghiệm trong lĩnh vực phát triển phần mềm và DevOps, bắt đầu từ Java Backend trước khi chuyển sang Platform Engineering. Mong muốn tiếp tục phát triển chuyên môn về Kubernetes, GitOps và tự động hóa quy trình triển khai, đồng thời xây dựng nền tảng vận hành ổn định cho các nhóm phát triển sản phẩm.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học chuyên ngành Công nghệ thông tin tại một trường đại học kỹ thuật công lập ở Hà Nội.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Container & Orchestration: Docker, Kubernetes, Helm, Kustomize.
+- CI/CD & GitOps: GitLab CI/CD, Argo CD.
+- Monitoring: Prometheus, Grafana, OpenTelemetry cơ bản.
+- Hệ điều hành và Automation: Linux, Shell Scripting.
+- Backend & Database: Java Spring Boot, PostgreSQL, Redis, RESTful API.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm phối hợp với nhóm phát triển sản phẩm trong quá trình triển khai và vận hành hệ thống.
+- Chủ động phân tích vấn đề kỹ thuật và cải tiến quy trình làm việc.
+- Tiếng Anh B2, có thể trao đổi các vấn đề kỹ thuật và đọc hiểu tài liệu chuyên ngành.
+
+KINH NGHIỆM LÀM VIỆC
+
+Platform Engineer – Công ty Công nghệ Tài chính Minh Phát
+02/2024 – 10/2026 (2 năm 8 tháng)
+
+- Triển khai và quản lý các ứng dụng container trên Kubernetes, sử dụng Helm và Kustomize để quản lý cấu hình.
+- Xây dựng quy trình GitOps với Argo CD kết hợp GitLab CI/CD, giúp nhóm phát triển quản lý việc cập nhật và triển khai dịch vụ thống nhất hơn.
+- Thiết lập Prometheus và Grafana để theo dõi tình trạng hoạt động của các dịch vụ, hỗ trợ phát hiện và phân tích sự cố.
+- Sử dụng Shell Scripting để tự động hóa những tác vụ vận hành lặp lại trên Linux.
+
+Java Backend Developer – Công ty Phần mềm Đông Á
+02/2023 – 02/2024 (1 năm)
+
+- Phát triển các chức năng Backend bằng Java Spring Boot và xây dựng RESTful API.
+- Làm việc với PostgreSQL và Redis để phục vụ các chức năng xử lý và truy xuất dữ liệu.
+- Tham gia container hóa dịch vụ bằng Docker, tạo tiền đề cho việc chuyển sang công việc DevOps.
+
+DỰ ÁN
+
+Xây dựng quy trình GitOps cho nền tảng Fintech
+
+Tham gia chuẩn hóa cấu hình triển khai dịch vụ trên Kubernetes bằng Helm và Kustomize. Kết hợp Argo CD với GitLab CI/CD để đồng bộ quá trình phát hành ứng dụng, đồng thời sử dụng Prometheus, Grafana và OpenTelemetry ở mức cơ bản để hỗ trợ quan sát hệ thống.

@@ -1,0 +1,50 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi đã có hơn 1 năm làm việc với PHP và Laravel, chủ yếu phát triển và bảo trì các hệ thống quản trị nội bộ, phần mềm quản lý bán hàng. Công việc thường xuyên là xử lý chức năng CRUD, chỉnh sửa nghiệp vụ và sửa lỗi theo yêu cầu người dùng. Tôi muốn tiếp tục nâng cao khả năng làm Backend bằng Laravel, viết code dễ bảo trì hơn và cải thiện kỹ năng xử lý dữ liệu với MySQL.
+
+HỌC VẤN
+
+Cử nhân Hệ thống thông tin
+Đại học tư thục
+
+Có kiến thức nền tảng về hệ thống thông tin, cơ sở dữ liệu và phát triển ứng dụng web.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ: PHP, SQL.
+- Framework: Laravel.
+- Database: MySQL, Eloquent ORM.
+- API: RESTful API.
+- Testing: PHPUnit cơ bản, Postman.
+- Công cụ: Git, Composer.
+- Frontend hỗ trợ: Blade Template, jQuery.
+- Hệ điều hành: Linux cơ bản.
+- Tiếng Anh: A2, có thể đọc tài liệu kỹ thuật với sự hỗ trợ của công cụ dịch.
+
+KỸ NĂNG MỀM
+
+- Có thể tiếp nhận và xử lý các yêu cầu chỉnh sửa chức năng.
+- Phối hợp với đồng nghiệp trong quá trình bảo trì hệ thống.
+- Kiên nhẫn kiểm tra lỗi và cập nhật lại code theo phản hồi.
+- Chủ động trao đổi khi gặp vấn đề chưa rõ về nghiệp vụ.
+
+KINH NGHIỆM LÀM VIỆC
+
+PHP Laravel Developer
+Công ty TNHH Giải pháp Phần mềm An Phát
+08/2025 – 09/2026 (14 tháng)
+
+- Phát triển và bảo trì các chức năng CRUD cho hệ thống quản lý bán hàng và phần mềm quản trị nội bộ của doanh nghiệp.
+- Sử dụng Laravel, Eloquent ORM và MySQL để truy vấn, thêm, sửa, xóa dữ liệu theo yêu cầu nghiệp vụ.
+- Chỉnh sửa các trang quản trị bằng Blade Template và jQuery, cập nhât giao diện khi có thay đổi chức năng.
+- Hỗ trợ kiểm tra RESTful API bằng Postman, sửa lỗi phát sinh trong quá trình sử dụng và quản lý mã nguồn bằng Git.
+
+DỰ ÁN
+
+Hệ thống quản lý bán hàng nội bộ
+
+Công nghệ: PHP, Laravel, MySQL, Blade Template, jQuery.
+
+Tham gia bảo trì chức năng quản lý dữ liệu bán hàng và các màn hình quản trị. Chủ yếu xử lý yêu cầu chỉnh sửa, kiểm tra dữ liệu và khắc phục lỗi để các chức năng hoạt động đúng theo nghiệp vụ.
+
+Tôi cũng có tìm hiểu PHPUnit để viết các bài test đơn giản cho một số phần xử lý Backend.

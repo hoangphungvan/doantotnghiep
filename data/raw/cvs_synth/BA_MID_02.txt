@@ -1,0 +1,41 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp chuyên ngành Kế toán – Hệ thống thông tin và có khoảng 3,7 năm kinh nghiệm làm Business Analyst trong lĩnh vực ERP, chủ yếu với hệ thống Odoo tại doanh nghiệp phân phối. Công việc của tôi tập trung vào phân tích quy trình mua hàng, quản lý kho, kiểm soát dữ liệu và hỗ trợ người dùng vận hành hệ thống. Tôi mong muốn tiếp tục phát triển theo hướng BA nghiệp vụ doanh nghiệp, đặc biệt trong việc cải thiện quy trình quản lý mua hàng và tồn kho thông qua các giải pháp ERP phù hợp với hoạt động thực tế.
+
+HỌC VẤN
+
+Cử nhân Kế toán – Hệ thống thông tin
+Trường đại học công lập khối kinh tế.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Phân tích quy trình mua hàng, nhập kho, xuất kho và quản lý tồn kho.
+- Odoo ERP Functional Analysis, thực hiện Gap Analysis giữa quy trình thực tế và chức năng hệ thống.
+- Xây dựng Functional Requirement cho các yêu cầu điều chỉnh trên Odoo.
+- Microsoft Excel PivotTable phục vụ tổng hợp, đối chiếu dữ liệu mua hàng và kho.
+- Quản lý Master Data, thực hiện Data Mapping trong quá trình chuẩn hóa dữ liệu.
+- Microsoft Visio để vẽ quy trình nghiệp vụ.
+- Microsoft Power BI và Odoo Studio ở mức cơ bản.
+- Google Workspace phục vụ quản lý và trao đổi tài liệu.
+
+KỸ NĂNG MỀM
+
+- Trao đổi với người dùng để ghi nhận các vấn đề phát sinh trong quá trình vận hành.
+- User Training, hướng dẫn nhân viên sử dụng các chức năng ERP theo quy trình.
+- Tiếng Anh B1, đọc hiểu tài liệu Odoo ERP và giao tiếp nội bộ.
+
+KINH NGHIỆM LÀM VIỆC
+
+Business Analyst – Công ty TNHH Phân phối Hưng Phát
+02/2023 – 10/2026 (3 năm 8 tháng)
+
+- Phụ trách phân tích yêu cầu và hỗ trợ duy trì hệ thống Odoo ERP đang được sử dụng trong doanh nghiệp phân phối quy mô nhỏ, tập trung vào các hoạt động mua hàng và quản lý tồn kho.
+- Làm việc với bộ phận mua hàng và kho để tìm hiểu cách xử lý nghiệp vụ thực tế, sau đó thực hiện Gap Analysis nhằm xác định những điểm cần điều chỉnh trên hệ thống Odoo.
+- Viết Functional Requirement, sử dụng Microsoft Visio mô tả quy trình và phối hợp thực hiện các tùy chỉnh cơ bản bằng Odoo Studio, giúp yêu cầu nghiệp vụ được thể hiện rõ trước khi áp dụng.
+- Sử dụng Excel PivotTable để đối chiếu dữ liệu, hỗ trợ quản lý Master Data, thực hiện Data Mapping và hướng dẫn nhân viên thao tác trên ERP, góp phần hạn chế sự không thống nhất trong dữ liệu vận hành.
+
+DỰ ÁN
+
+Duy trì và tùy chỉnh hệ thống Odoo ERP cho doanh nghiệp phân phối
+
+Tôi tham gia hỗ trợ triển khai và duy trì các chức năng liên quan đến mua hàng, quản lý kho và dữ liệu hàng hóa. Công việc bao gồm tiếp nhận yêu cầu, phân tích sự khác biệt giữa quy trình thực tế với hệ thống, chuẩn bị tài liệu chức năng và hỗ trợ người dùng sau khi điều chỉnh. Phần lớn kinh nghiệm của tôi được tích lũy trong quá trình làm việc lâu dài với cùng một hệ thống ERP.

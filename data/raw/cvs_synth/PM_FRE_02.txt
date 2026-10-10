@@ -1,0 +1,44 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Quản trị kinh doanh, có khoảng 9 tháng thực tập điều phối dự án tại công ty EdTech. Mong muốn phát triển trong lĩnh vực điều phối dự án phần mềm, đặc biệt là các sản phẩm quản lý đào tạo. Tôi muốn nâng cao khả năng theo dõi tiến độ, tổ chức công việc và phối hợp giữa các thành viên để hỗ trợ dự án vận hành hiệu quả.
+
+HỌC VẤN
+
+Cử nhân Quản trị kinh doanh
+Trường đại học tư thục
+
+Có nền tảng về tổ chức công việc và quan tâm đến hoạt động quản lý dự án trong doanh nghiệp công nghệ.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Theo dõi tiến độ dự án phần mềm quy mô nhỏ.
+- Lập Task List, Checklist và quản lý công việc bằng Trello.
+- Tổng hợp trạng thái dự án bằng Google Sheets.
+- Ghi biên bản họp, theo dõi Action Items.
+- Phối hợp lịch làm việc giữa Developer và Tester.
+- Hiểu cơ bản về Software Development Life Cycle (SDLC).
+- Sử dụng Notion, Google Workspace để lưu trữ và tổng hợp tài liệu.
+- Thiết kế nội dung trình bày bằng Canva, Microsoft PowerPoint.
+
+KỸ NĂNG MỀM
+
+- Tổ chức cuộc họp và theo dõi các công việc sau cuộc họp.
+- Giao tiếp, phối hợp với các thành viên trong nhóm.
+- Tiếng Anh B1, đọc hiểu email và tài liệu công việc cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Project Coordinator Intern
+Công ty Công nghệ Giáo dục Học Việt
+01/2026 - 09/2026 (9 tháng)
+
+- Cập nhật Task List trên Trello, theo dõi tiến độ các đầu việc của nhóm phát triển phần mềm quản lý đào tạo.
+- Sử dụng Google Sheets để tổng hợp trạng thái công việc, chuẩn bị báo cáo tiến độ định kỳ cho người phụ trách dự án.
+- Ghi biên bản họp, tổng hợp Action Items và theo dõi các công việc cần hoàn thành sau mỗi buổi trao đổi.
+- Hỗ trợ sắp xếp lịch giữa Developer và Tester, cập nhật các thay đổi về tiến độ để nhóm nắm được tình hình chung.
+
+DỰ ÁN
+
+Hỗ trợ điều phối phát triển phần mềm quản lý đào tạo
+
+Tham gia hỗ trợ một nhóm phát triển nhỏ trong quá trình triển khai công việc. Sử dụng Trello và Google Sheets để theo dõi các nhiệm vụ, đồng thời tổng hợp tài liệu họp trên Google Workspace. Qua dự án, tôi hiểu rõ hơn cách các bộ phận phối hợp trong quá trình phát triển phần mềm.

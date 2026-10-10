@@ -1,0 +1,52 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 6,8 năm kinh nghiệm chuyên sâu về QA Automation, từng chuyển hướng từ phát triển Frontend sang lĩnh vực kiểm thử phần mềm. Có kinh nghiệm thiết kế automation framework, xây dựng kiểm thử API và tích hợp hoạt động kiểm thử vào CI/CD cho các sản phẩm thương mại điện tử, nền tảng đặt dịch vụ trực tuyến và SaaS.
+
+Mục tiêu của tôi là phát triển theo hướng Quality Engineering, tập trung xây dựng kiến trúc kiểm thử có khả năng bảo trì tốt, thúc đẩy Shift-left Testing và nâng cao hiệu quả hoạt động của nhóm QA.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học, chuyên ngành Khoa học máy tính tại một trường đại học kỹ thuật.
+
+Có nền tảng về lập trình và phát triển hệ thống phần mềm.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- QA Automation Framework Design và Test Architecture.
+- Cypress, TypeScript, Node.js.
+- API Automation Testing.
+- Contract Testing với Pact.
+- GitHub Actions và CI/CD Test Integration.
+- Quality Engineering, Shift-left Testing.
+- MongoDB.
+- OWASP ZAP ở mức cơ bản.
+- Code Review cho mã nguồn kiểm thử.
+
+KỸ NĂNG MỀM
+
+- Mentoring QA Engineers trong nhóm QA quy mô nhỏ.
+- Trao đổi kỹ thuật và phối hợp công việc trong môi trường Agile.
+- Tiếng Anh B2-C1, có khả năng tham gia họp và trao đổi kỹ thuật với khách hàng quốc tế.
+
+KINH NGHIỆM LÀM VIỆC
+
+Senior QA Automation Engineer
+Công ty TNHH Công nghệ BrightCommerce
+11/2019 – 09/2026
+
+- Thiết kế và phát triển automation framework sử dụng Cypress và TypeScript cho các sản phẩm thương mại điện tử và nền tảng cung cấp dịch vụ trực tuyến.
+- Xây dựng bộ API Automation Testing, triển khai Contract Testing bằng Pact nhằm hỗ trợ kiểm tra tính nhất quán giữa các thành phần hệ thống.
+- Tích hợp các bài kiểm thử vào GitHub Actions, giúp nhóm thực hiện kiểm tra tự động trong quy trình CI/CD và phát hiện sớm những thay đổi ảnh hưởng đến chức năng.
+- Thực hiện Code Review, hướng dẫn các QA Engineer trong nhóm về cách tổ chức mã nguồn kiểm thử và duy trì chất lượng test script.
+
+DỰ ÁN
+
+Xây dựng kiến trúc kiểm thử tự động cho nền tảng đặt dịch vụ trực tuyến
+
+Phụ trách thiết kế automation framework phục vụ kiểm thử các chức năng của nền tảng.
+
+Sử dụng Cypress, TypeScript và Node.js để tổ chức mã nguồn kiểm thử, đồng thời phát triển các kịch bản API Automation Testing và Contract Testing với Pact.
+
+Tích hợp bộ kiểm thử vào GitHub Actions để hỗ trợ quy trình CI/CD. Hoạt động kiểm thử được đưa vào sớm hơn trong chu kỳ phát triển theo hướng Shift-left Testing.
+
+Ngoài công việc kỹ thuật, tôi thực hiện Code Review và mentoring cho các thành viên QA, giúp duy trì cách tổ chức test script thống nhất trong phạm vi nhóm.

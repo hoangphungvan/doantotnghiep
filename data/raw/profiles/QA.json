@@ -1,0 +1,320 @@
+
+[
+  {
+    "profile_id": "QA_FRE_01",
+    "role_family": "QA/Tester",
+    "target_title": "Fresher Manual Tester",
+    "seniority": "Fresher",
+    "years_experience": 0.4,
+    "education": "Đại học, ngành Công nghệ thông tin, trường đại học công lập",
+    "core_skills": [
+      "Manual Testing cơ bản",
+      "Viết Test Case",
+      "Thực thi Test Case",
+      "Functional Testing",
+      "Smoke Testing",
+      "Bug Reporting",
+      "Jira",
+      "SQL cơ bản"
+    ],
+    "secondary_skills": [
+      "Postman cơ bản",
+      "Chrome DevTools",
+      "Agile/Scrum cơ bản",
+      "Microsoft Excel"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm Automation Testing",
+      "Chưa từng kiểm thử hệ thống production có lượng người dùng lớn",
+      "Kỹ năng phân tích yêu cầu còn hạn chế"
+    ],
+    "languages": [
+      "Tiếng Anh B1, đọc hiểu tài liệu kỹ thuật cơ bản"
+    ],
+    "industries": [
+      "Thương mại điện tử"
+    ],
+    "career_note": "Có 4 tháng thực tập kiểm thử thủ công cho website bán hàng, chủ yếu thực thi test case được giao và ghi nhận lỗi dưới sự hướng dẫn của tester chính.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "QA_FRE_02",
+    "role_family": "QA/Tester",
+    "target_title": "Fresher Mobile Application Tester",
+    "seniority": "Fresher",
+    "years_experience": 0.7,
+    "education": "Cao đẳng, ngành Công nghệ phần mềm, trường cao đẳng kỹ thuật",
+    "core_skills": [
+      "Mobile Application Testing",
+      "Android Testing",
+      "iOS Testing cơ bản",
+      "Exploratory Testing",
+      "Regression Testing cơ bản",
+      "Test Scenario Design",
+      "Bug Reproduction",
+      "Android Debug Bridge (ADB) cơ bản"
+    ],
+    "secondary_skills": [
+      "Firebase Crashlytics cơ bản",
+      "TestFlight",
+      "Trello",
+      "Kiểm thử giao diện trên nhiều kích thước màn hình"
+    ],
+    "known_gaps": [
+      "Chưa sử dụng Appium hoặc framework tự động hóa mobile",
+      "Chưa có kinh nghiệm kiểm thử hiệu năng ứng dụng",
+      "Chưa quen với quy trình phát hành ứng dụng quy mô lớn"
+    ],
+    "languages": [
+      "Tiếng Anh A2-B1, đọc hiểu hướng dẫn sử dụng công cụ"
+    ],
+    "industries": [
+      "Ứng dụng giáo dục",
+      "Ứng dụng tiện ích di động"
+    ],
+    "career_note": "Có 7 tháng làm cộng tác viên kiểm thử ứng dụng Android và hỗ trợ kiểm tra bản thử nghiệm iOS cho một nhóm phát triển sản phẩm nhỏ, chủ yếu tập trung vào giao diện và luồng người dùng.",
+    "cv_style": "ngắn gọn"
+  },
+  {
+    "profile_id": "QA_JUN_01",
+    "role_family": "QA/Tester",
+    "target_title": "Junior API Tester",
+    "seniority": "Junior",
+    "years_experience": 1.5,
+    "education": "Đại học, ngành Hệ thống thông tin, trường đại học tư thục",
+    "core_skills": [
+      "API Testing",
+      "Postman",
+      "REST API",
+      "HTTP Status Codes",
+      "JSON Validation",
+      "MySQL",
+      "Swagger/OpenAPI",
+      "Newman",
+      "GitLab"
+    ],
+    "secondary_skills": [
+      "Manual Web Testing",
+      "Boundary Value Analysis",
+      "Equivalence Partitioning",
+      "Git cơ bản",
+      "GitLab CI cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm xây dựng framework automation hoàn chỉnh",
+      "Chưa kiểm thử hệ thống Microservices phức tạp"
+    ],
+    "languages": [
+      "Tiếng Anh B1, đọc hiểu API documentation và trao đổi kỹ thuật đơn giản"
+    ],
+    "industries": [
+      "Logistics",
+      "Quản lý kho vận"
+    ],
+    "career_note": "Bắt đầu từ vị trí thực tập kiểm thử phần mềm và phát triển lên Junior Tester, hiện có thể tự thiết kế và thực thi bộ kiểm thử API cho các chức năng CRUD nhưng vẫn cần hỗ trợ khi xử lý luồng tích hợp phức tạp.",
+    "cv_style": "lẫn Anh-Việt"
+  },
+  {
+    "profile_id": "QA_JUN_02",
+    "role_family": "QA/Tester",
+    "target_title": "Junior Functional Tester",
+    "seniority": "Junior",
+    "years_experience": 1.8,
+    "education": "Đại học, ngành Quản trị kinh doanh, trường đại học công lập; hoàn thành khóa đào tạo kiểm thử phần mềm ngắn hạn",
+    "core_skills": [
+      "Functional Testing",
+      "User Acceptance Testing (UAT)",
+      "Business Requirement Analysis cơ bản",
+      "Test Case Design",
+      "Defect Tracking",
+      "Azure DevOps Boards",
+      "Microsoft SQL Server cơ bản",
+      "CRM Workflow Testing"
+    ],
+    "secondary_skills": [
+      "Microsoft Excel nâng cao",
+      "Test Data Preparation",
+      "Customer Journey Analysis",
+      "Azure Test Plans",
+      "Giao tiếp với người dùng nghiệp vụ"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm lập trình Automation Testing",
+      "Kiến thức về kiến trúc phần mềm và cơ sở dữ liệu còn hạn chế",
+      "Chưa từng kiểm thử tải hoặc hiệu năng hệ thống"
+    ],
+    "languages": [
+      "Tiếng Anh B1, giao tiếp nghiệp vụ cơ bản"
+    ],
+    "industries": [
+      "CRM",
+      "Dịch vụ khách hàng",
+      "Bán lẻ"
+    ],
+    "career_note": "Chuyển ngành từ nhân viên chăm sóc khách hàng sang kiểm thử phần mềm sau một khóa đào tạo ngắn hạn, có 1,8 năm kinh nghiệm QA và tận dụng hiểu biết nghiệp vụ để kiểm tra các luồng CRM.",
+    "cv_style": "dài dòng"
+  },
+  {
+    "profile_id": "QA_MID_01",
+    "role_family": "QA/Tester",
+    "target_title": "Middle Automation Tester",
+    "seniority": "Middle",
+    "years_experience": 3.6,
+    "education": "Đại học, ngành Kỹ thuật phần mềm, trường đại học công lập",
+    "core_skills": [
+      "Automation Testing",
+      "Playwright",
+      "TypeScript",
+      "JavaScript",
+      "Page Object Model",
+      "End-to-End Testing",
+      "Cross-browser Testing",
+      "Jenkins CI",
+      "Git"
+    ],
+    "secondary_skills": [
+      "PostgreSQL",
+      "Allure Report",
+      "Docker cơ bản",
+      "Agile/Scrum",
+      "Test Data Management"
+    ],
+    "known_gaps": [
+      "Chưa có nhiều kinh nghiệm Performance Testing",
+      "Chưa trực tiếp thiết kế chiến lược kiểm thử cho hệ thống phân tán lớn",
+      "Kinh nghiệm quản lý và hướng dẫn tester khác còn ít"
+    ],
+    "languages": [
+      "Tiếng Anh B2, đọc tài liệu kỹ thuật và trao đổi công việc với nhóm quốc tế"
+    ],
+    "industries": [
+      "SaaS",
+      "Quản lý nhân sự",
+      "Phần mềm doanh nghiệp"
+    ],
+    "career_note": "Phát triển từ Manual Tester lên Automation Tester, có kinh nghiệm xây dựng và duy trì bộ kiểm thử giao diện tự động cho sản phẩm SaaS nhưng chủ yếu phụ trách phạm vi một nhóm chức năng.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "QA_MID_02",
+    "role_family": "QA/Tester",
+    "target_title": "Middle Manual QA Engineer",
+    "seniority": "Middle",
+    "years_experience": 3.4,
+    "education": "Đại học, ngành Hệ thống thông tin quản lý, trường đại học tư thục",
+    "core_skills": [
+      "Manual Testing",
+      "Regression Testing",
+      "Functional Testing",
+      "Integration Testing cơ bản",
+      "Test Case Execution",
+      "Jira",
+      "Zephyr",
+      "SQL Query cơ bản",
+      "Defect Lifecycle Management"
+    ],
+    "secondary_skills": [
+      "Confluence",
+      "Microsoft Excel",
+      "UAT Support",
+      "Requirement Review cơ bản",
+      "Kiểm tra dữ liệu giao dịch"
+    ],
+    "known_gaps": [
+      "Chưa biết xây dựng script Automation Testing",
+      "Chưa có kinh nghiệm kiểm thử bảo mật hoặc hiệu năng",
+      "Kỹ năng thiết kế Test Strategy còn yếu"
+    ],
+    "languages": [
+      "Tiếng Anh B1, chủ yếu đọc tài liệu và viết báo cáo lỗi"
+    ],
+    "industries": [
+      "Ngân hàng số",
+      "Thanh toán điện tử"
+    ],
+    "career_note": "Có hơn 3 năm làm kiểm thử thủ công cho các màn hình giao dịch trong dự án tài chính nhưng phần lớn thời gian thực thi bộ regression test có sẵn, ít tham gia thiết kế kiểm thử và ra quyết định kỹ thuật.",
+    "cv_style": "có lỗi chính tả nhẹ"
+  },
+  {
+    "profile_id": "QA_SEN_01",
+    "role_family": "QA/Tester",
+    "target_title": "Senior Manual QA Engineer",
+    "seniority": "Senior",
+    "years_experience": 5.7,
+    "education": "Đại học, ngành Công nghệ thông tin, trường đại học công lập",
+    "core_skills": [
+      "Manual Testing nâng cao",
+      "Test Planning",
+      "Test Case Review",
+      "Risk-based Testing",
+      "System Integration Testing",
+      "UAT Coordination",
+      "Defect Triage",
+      "HP ALM/Quality Center",
+      "Oracle SQL"
+    ],
+    "secondary_skills": [
+      "Requirement Traceability Matrix",
+      "TestRail",
+      "Release Verification",
+      "Root Cause Analysis cơ bản",
+      "Hướng dẫn Fresher Tester"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm Automation Testing thực tế",
+      "Chưa quen với các nền tảng CI/CD hiện đại",
+      "Kinh nghiệm xây dựng quy trình QA cấp tổ chức còn hạn chế"
+    ],
+    "languages": [
+      "Tiếng Anh B1-B2, đọc tài liệu nghiệp vụ và trao đổi với khách hàng qua email"
+    ],
+    "industries": [
+      "Bảo hiểm",
+      "Hệ thống quản lý doanh nghiệp"
+    ],
+    "career_note": "Có 5,7 năm kinh nghiệm kiểm thử hệ thống bảo hiểm trong môi trường outsourcing, từng hướng dẫn tester mới và phối hợp UAT nhưng chủ yếu làm việc với quy trình kiểm thử truyền thống và một hệ thống nghiệp vụ cố định.",
+    "cv_style": "dài dòng"
+  },
+  {
+    "profile_id": "QA_SEN_02",
+    "role_family": "QA/Tester",
+    "target_title": "Senior QA Automation Engineer",
+    "seniority": "Senior",
+    "years_experience": 6.8,
+    "education": "Đại học, ngành Khoa học máy tính, trường đại học kỹ thuật",
+    "core_skills": [
+      "QA Automation Framework Design",
+      "Cypress",
+      "TypeScript",
+      "API Automation Testing",
+      "Contract Testing với Pact",
+      "GitHub Actions",
+      "CI/CD Test Integration",
+      "Test Architecture",
+      "Quality Engineering"
+    ],
+    "secondary_skills": [
+      "Node.js",
+      "OWASP ZAP cơ bản",
+      "MongoDB",
+      "Mentoring QA Engineers",
+      "Code Review",
+      "Shift-left Testing"
+    ],
+    "known_gaps": [
+      "Chưa có nhiều kinh nghiệm kiểm thử ứng dụng mobile native",
+      "Chưa trực tiếp triển khai hệ thống kiểm thử hiệu năng quy mô lớn",
+      "Chưa có chứng chỉ chuyên sâu về kiểm thử bảo mật"
+    ],
+    "languages": [
+      "Tiếng Anh B2-C1, giao tiếp kỹ thuật tốt và tham gia họp với khách hàng quốc tế"
+    ],
+    "industries": [
+      "Thương mại điện tử",
+      "Nền tảng đặt dịch vụ trực tuyến",
+      "SaaS"
+    ],
+    "career_note": "Chuyển từ lập trình Frontend sang QA Automation, sau đó tích lũy 6,8 năm kinh nghiệm chuyên sâu về kiểm thử, từng thiết kế framework tự động hóa và hướng dẫn nhóm QA nhỏ trong môi trường phát triển Agile.",
+    "cv_style": "chuẩn"
+  }
+]

@@ -1,0 +1,45 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có hơn 5 năm kinh nghiệm trong IT Project Management, tập trung vào Enterprise Software Implementation và ERP Deployment cho doanh nghiệp bán lẻ tại Việt Nam. Thế mạnh của tôi là quản lý tiến độ triển khai, điều phối Implementation Team, làm việc với Software Vendor và xử lý các Operational Issues trong quá trình đưa hệ thống vào sử dụng. Tôi mong muốn tiếp tục phát triển trong môi trường có nhiều dự án triển khai phần mềm doanh nghiệp, nơi yêu cầu sự phối hợp chặt chẽ giữa đội kỹ thuật, nhà cung cấp và Business Users để đảm bảo việc bàn giao, vận hành hệ thống diễn ra ổn định.
+
+HỌC VẤN
+
+Kỹ sư Hệ thống thông tin
+Trường đại học công lập
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Implementation Planning: Xây dựng kế hoạch triển khai và phân chia các giai đoạn của dự án phần mềm doanh nghiệp.
+- Project Scheduling: Quản lý timeline, theo dõi workload và resource allocation.
+- Task Management: Sử dụng Monday.com và Smartsheet để quản lý công việc.
+- Risk & Issue Management: Theo dõi rủi ro vận hành và các vấn đề phát sinh.
+- Change Management: Quản lý yêu cầu thay đổi trong giai đoạn bảo trì hệ thống.
+- Reporting: Microsoft Excel nâng cao, SharePoint và báo cáo trạng thái triển khai.
+- Service Management: Nắm kiến thức ITIL cơ bản và phối hợp xử lý sự cố.
+
+KỸ NĂNG MỀM
+
+- Team Coordination: Điều phối nhóm triển khai từ 6-10 thành viên.
+- Meeting Management: Tổ chức và quản lý các cuộc họp dự án.
+- Stakeholder Communication: Phối hợp với nhà cung cấp và khách hàng doanh nghiệp.
+- Incident Coordination: Điều phối hỗ trợ và xử lý các vấn đề phát sinh.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Giải pháp Công nghệ Minh Phát
+IT Project Manager - ERP Implementation | 03/2021 - 09/2026 (5 năm 7 tháng)
+
+- Lập Implementation Plan cho các đợt triển khai và nâng cấp hệ thống ERP trong lĩnh vực Retail, phân chia project phases và theo dõi các mốc nghiệm thu.
+- Điều phối Implementation Team gồm 6-10 thành viên, quản lý task assignment và workload bằng Monday.com, đồng thời phối hợp với Software Vendor để giải quyết các vấn đề trong triển khai.
+- Theo dõi Operational Risks, cập nhật Issue List và phối hợp xử lý các sự cố phát sinh, hỗ trợ khách hàng ổn định hoạt động hệ thống sau nâng cấp.
+- Quản lý quy trình Acceptance & Handover, tổng hợp Progress Report cho các bên liên quan và theo dõi Change Request trong giai đoạn Maintenance.
+
+DỰ ÁN
+
+ERP Upgrade & Rollout cho doanh nghiệp bán lẻ
+
+Phụ trách Project Coordination trong các đợt triển khai ERP theo mô hình có sẵn. Công việc bao gồm lập Deployment Schedule, quản lý nguồn lực, phối hợp với Vendor, theo dõi các vấn đề vận hành và tổ chức nghiệm thu, bàn giao hệ thống.
+
+NGOẠI NGỮ
+
+Tiếng Anh B2: Trao đổi với Software Vendor và đọc hiểu tài liệu triển khai.

@@ -1,0 +1,39 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có khoảng 3,4 năm kinh nghiệm làm Business Analyst trong lĩnh vực InsurTech và bảo hiểm phi nhân thọ, tập trung vào hệ thống quản lý hợp đồng và giải quyết bồi thường. Với nền tảng từng làm Manual QA, tôi chú trọng tính rõ ràng của yêu cầu, quy tắc nghiệp vụ và tiêu chí nghiệm thu. Mong muốn tiếp tục phát triển chuyên môn phân tích nghiệp vụ bảo hiểm, nâng cao chất lượng tài liệu và khả năng phối hợp giữa các bộ phận trong dự án.
+
+HỌC VẤN
+
+Cử nhân Kỹ thuật phần mềm – Trường đại học công lập khối công nghệ.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Phân tích nghiệp vụ bảo hiểm, đặc biệt là quản lý hợp đồng và xử lý bồi thường.
+- Business Process Modeling với Bizagi Modeler, sử dụng BPMN 2.0 để mô hình hóa quy trình.
+- Xây dựng tài liệu BRD, FRD, SRS và quản lý Requirement Traceability.
+- SQL Server, T-SQL phục vụ truy vấn và đối chiếu dữ liệu nghiệp vụ.
+- API Requirement Analysis, Swagger OpenAPI và Postman.
+- UAT Planning, Test Case Review và quản lý Change Request.
+- PlantUML phục vụ mô tả luồng xử lý hệ thống.
+
+KỸ NĂNG MỀM
+
+- Giao tiếp và phối hợp với Development Team, QA Team trong quá trình làm rõ yêu cầu.
+- Trao đổi với các bên nghiệp vụ để thống nhất phạm vi và cách xử lý thay đổi.
+- Tiếng Anh B2, có khả năng đọc tài liệu chuyên môn và làm việc với nhóm kỹ thuật quốc tế.
+
+KINH NGHIỆM LÀM VIỆC
+
+Business Analyst – Công ty TNHH Công nghệ Bảo hiểm An Tín
+05/2023 – 10/2026 (3 năm 5 tháng)
+
+- Phân tích và làm rõ yêu cầu cho hệ thống quản lý hợp đồng bảo hiểm phi nhân thọ, xây dựng BRD và FRD để Development Team triển khai chức năng.
+- Sử dụng Bizagi Modeler và BPMN 2.0 mô hình hóa quy trình tiếp nhận, kiểm tra và xử lý yêu cầu bồi thường, giúp các bên thống nhất luồng nghiệp vụ.
+- Phân tích yêu cầu API qua Swagger OpenAPI, sử dụng Postman và T-SQL để kiểm tra dữ liệu, hỗ trợ xác định các trường hợp xử lý chưa nhất quán.
+- Lập kế hoạch UAT, review test case cùng QA Team, theo dõi Requirement Traceability và Change Request để bảo đảm yêu cầu được kiểm tra trước nghiệm thu.
+
+DỰ ÁN
+
+Hệ thống quản lý hợp đồng và bồi thường bảo hiểm
+
+Tham gia phân tích quy trình nghiệp vụ từ quản lý thông tin hợp đồng đến xử lý hồ sơ bồi thường. Phụ trách tài liệu yêu cầu, mô hình hóa quy trình và phối hợp kiểm thử nghiệm thu. Kinh nghiệm Manual QA giúp tôi tập trung vào những quy tắc nghiệp vụ dễ gây nhầm lẫn và các tình huống cần xác nhận với người dùng.

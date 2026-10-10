@@ -1,0 +1,57 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 6 năm 10 tháng kinh nghiệm trong lĩnh vực IT Support, phát triển từ Helpdesk lên IT Support Engineer và Senior IT Support. Tôi có kinh nghiệm quản trị môi trường Windows, Microsoft 365, quản lý thiết bị đầu cuối và xử lý sự cố kỹ thuật cấp cao. Mục tiêu của tôi là tiếp tục nâng cao năng lực vận hành hệ thống CNTT doanh nghiệp, tối ưu quy trình hỗ trợ, đảm bảo chất lượng dịch vụ và phát triển đội ngũ Helpdesk.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học chuyên ngành Công nghệ thông tin tại trường đại học công lập.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Quản trị Windows Server và Active Directory Domain Services.
+- Quản lý định danh hybrid bằng Microsoft Entra ID.
+- Quản trị người dùng và chính sách Microsoft 365.
+- Triển khai, quản lý thiết bị đầu cuối bằng Microsoft Intune.
+- Giám sát bảo mật endpoint với Microsoft Defender for Endpoint.
+- Sử dụng PowerShell để tự động hóa tác vụ hỗ trợ.
+- Quản lý ticket và SLA trên Jira Service Management.
+- Hỗ trợ VPN qua FortiClient.
+- Triển khai phần mềm bằng Microsoft Configuration Manager.
+- Phân tích sự cố thông qua Windows Event Viewer.
+
+KỸ NĂNG MỀM
+
+- Hướng dẫn và phân công công việc cho nhóm Helpdesk.
+- Xây dựng quy trình xử lý sự cố và quản lý chất lượng dịch vụ.
+- Phối hợp với các bộ phận trong công tác kiểm toán quyền truy cập.
+- Làm việc với nhà cung cấp dịch vụ CNTT.
+- Tiếng Anh giao tiếp công việc tốt, đọc viết tài liệu kỹ thuật tốt.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Dịch vụ Công nghệ Nam Việt
+IT Helpdesk
+12/2019 - 12/2021 (2 năm)
+
+- Tiếp nhận, xử lý ticket hỗ trợ người dùng và theo dõi tiến độ giải quyết các vấn đề kỹ thuật.
+- Hỗ trợ kết nối VPN qua FortiClient, phân tích lỗi Windows bằng Event Viewer.
+- Tham gia quản lý vòng đời thiết bị đầu cuối và ghi nhận các yêu cầu hỗ trợ.
+
+Công ty Cổ phần Giải pháp Doanh nghiệp Thành Đạt
+IT Support Engineer
+12/2021 - 06/2024 (2 năm 6 tháng)
+
+- Quản trị Windows Server, Active Directory và tài khoản người dùng Microsoft 365.
+- Triển khai phần mềm qua Microsoft Configuration Manager, hỗ trợ quản lý thiết bị bằng Microsoft Intune.
+- Sử dụng PowerShell để tự động hóa một số tác vụ hỗ trợ, góp phần giảm thao tác lặp lại trong quá trình vận hành.
+
+Công ty Cổ phần Dịch vụ Tài chính Phú An
+Senior IT Support Engineer
+06/2024 - 10/2026 (2 năm 4 tháng)
+
+- Quản lý môi trường định danh hybrid với Microsoft Entra ID, Active Directory và chính sách Microsoft 365.
+- Triển khai, quản lý endpoint bằng Intune, theo dõi Microsoft Defender for Endpoint và phối hợp kiểm toán quyền truy cập.
+- Hướng dẫn, phân công công việc cho nhóm Helpdesk 4 người; xây dựng quy trình xử lý sự cố và theo dõi ticket, SLA qua Jira Service Management.
+- Tổng hợp báo cáo chất lượng dịch vụ, quản lý nhà cung cấp CNTT và phối hợp xử lý những yêu cầu kỹ thuật phức tạp.
+
+Trong vai trò hiện tại, tôi chú trọng tính nhất quán của quy trình hỗ trợ, khả năng kiểm soát thiết bị đầu cuối và chất lượng xử lý yêu cầu của toàn nhóm.

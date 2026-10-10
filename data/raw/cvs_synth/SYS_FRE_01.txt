@@ -1,0 +1,40 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi mới tốt nghiệp ngành Công nghệ thông tin và đã có 6 tháng thực tập vận hành máy chủ Linux tại doanh nghiệp phần mềm. Trong thời gian thực tập, tôi được tiếp xúc với các công việc quản trị Ubuntu Server, xử lý tác vụ hệ thống và theo dõi tài nguyên máy chủ. Tôi mong muốn tiếp tục phát triển kiến thức về Linux System Administration, nâng cao khả năng xử lý sự cố và tích lũy kinh nghiệm vận hành hệ thống trong môi trường doanh nghiệp.
+
+HỌC VẤN
+
+Đại học công lập – Ngành Công nghệ thông tin
+Trình độ: Đại học
+
+Trong quá trình học tập, tôi tập trung tìm hiểu hệ điều hành Linux, kiến thức mạng máy tính và thực hành các thao tác quản trị máy chủ cơ bản.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Linux: Sử dụng Ubuntu Server, quản lý tài khoản người dùng, nhóm và phân quyền truy cập.
+- Bash scripting: Viết các script đơn giản phục vụ thao tác quản trị và xử lý tác vụ lặp lại.
+- SSH: Thiết lập và quản lý kết nối từ xa tới máy chủ Linux.
+- Nginx: Thực hiện các cấu hình web server cơ bản.
+- Networking: Nắm kiến thức nền tảng về TCP/IP và DNS.
+- Monitoring: Sử dụng top, htop và journalctl để theo dõi tài nguyên và kiểm tra log hệ thống.
+- Công cụ khác: Git, VirtualBox, rsync và Python scripting cơ bản.
+- Documentation: Viết tài liệu hướng dẫn các thao tác vận hành hệ thống.
+
+KỸ NĂNG MỀM
+
+- Có khả năng đọc hiểu tài liệu kỹ thuật tiếng Anh ở mức B1.
+- Biết ghi chép các bước xử lý và tổng hợp thành tài liệu vận hành.
+- Có kinh nghiệm phối hợp với quản trị viên chính, thực hiện công việc theo hướng dẫn và trao đổi khi gặp vấn đề.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Phần mềm Minh Phát
+Vị trí: Thực tập sinh Linux System Administrator
+Thời gian: 04/2026 – 09/2026 (6 tháng)
+
+- Hỗ trợ quản trị các máy chủ Ubuntu Server, thực hiện thao tác quản lý tài khoản và phân quyền theo yêu cầu của quản trị viên chính.
+- Sử dụng SSH để kết nối máy chủ, kiểm tra tài nguyên bằng top, htop và xem log với journalctl, ghi nhận thông tin phục vụ công tác vận hành.
+- Hỗ trợ cấu hình Nginx cơ bản và thực hiện sao lưu dữ liệu bằng rsync theo hướng dẫn, kiểm tra kết quả sau khi thực hiện.
+- Viết Bash script đơn giản cho các tác vụ lặp lại và cập nhật tài liệu hướng dẫn vận hành để thuận tiện cho việc tra cứu.
+
+Trong quá trình thực tập, tôi được làm quen với quy trình vận hành máy chủ tại doanh nghiệp phần mềm và hiểu rõ hơn cách sử dụng các công cụ quản trị Linux trong công việc thực tế.

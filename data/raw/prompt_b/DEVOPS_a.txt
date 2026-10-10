@@ -1,0 +1,174 @@
+Dựa trên các hồ sơ JSON bên dưới, hãy viết CV dạng văn bản thuần như một ứng viên Việt Nam thật sự tự viết. Mỗi hồ sơ viết thành một CV.
+
+Quy tắc:
+- Cấu trúc: THÔNG TIN LIÊN HỆ (tên hư cấu, email dạng ten@example.com, thành phố), MỤC TIÊU NGHỀ NGHIỆP, HỌC VẤN, KỸ NĂNG CHUYÊN MÔN, KỸ NĂNG MỀM, KINH NGHIỆM LÀM VIỆC (công ty hư cấu hoặc phổ biến, thời gian, 2-4 gạch đầu dòng mô tả việc làm có kết quả cụ thể), DỰ ÁN (nếu có), CHỨNG CHỈ (nếu có).
+- Độ dài 250-450 từ. Văn phong theo trường cv_style. Giữ thuật ngữ kỹ thuật bằng tiếng Anh như CV Việt Nam thật.
+- CHỈ dùng thông tin trong hồ sơ. Không bịa thêm kỹ năng ngoài core_skills và secondary_skills.
+- known_gaps: KHÔNG nhắc tới các kỹ năng này, cũng không viết "chưa biết".
+- Tổng thời gian các công việc phải khớp years_experience.
+- KHÔNG ghi CV phù hợp vị trí nào, không nhắc tới tin tuyển dụng, không thêm nhận xét của AI.
+
+Mỗi CV bắt đầu bằng đúng một dòng:
+=== CV: <profile_id> ===
+rồi tới nội dung CV. Không có lời dẫn hay kết luận.
+
+HỒ SƠ:
+[
+  {
+    "profile_id": "DEVOPS_FRE_01",
+    "role_family": "DevOps/Cloud",
+    "target_title": "Fresher DevOps Engineer",
+    "seniority": "Fresher",
+    "years_experience": 0.5,
+    "education": "Đại học, Công nghệ thông tin, trường đại học công lập tại Hà Nội",
+    "core_skills": [
+      "Linux Ubuntu",
+      "Docker",
+      "Git",
+      "GitHub Actions",
+      "Bash Scripting",
+      "Nginx",
+      "AWS EC2",
+      "AWS S3"
+    ],
+    "secondary_skills": [
+      "Python cơ bản",
+      "Docker Compose",
+      "TCP/IP cơ bản",
+      "YAML",
+      "Markdown"
+    ],
+    "known_gaps": [
+      "Chưa triển khai Kubernetes trên môi trường production",
+      "Chưa có kinh nghiệm thực tế với Terraform hoặc Infrastructure as Code",
+      "Chưa xây dựng hệ thống monitoring và alerting hoàn chỉnh"
+    ],
+    "languages": [
+      "Tiếng Anh B1, đọc tài liệu kỹ thuật khá tốt, giao tiếp còn hạn chế"
+    ],
+    "industries": [
+      "Gia công phần mềm",
+      "Phát triển ứng dụng web"
+    ],
+    "career_note": "Có 6 tháng thực tập DevOps tại công ty outsourcing, chủ yếu hỗ trợ xây dựng pipeline CI/CD cho ứng dụng web và triển khai Docker trên máy chủ Linux dưới sự hướng dẫn của kỹ sư chính.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "DEVOPS_FRE_02",
+    "role_family": "DevOps/Cloud",
+    "target_title": "Fresher Cloud Operations Engineer",
+    "seniority": "Fresher",
+    "years_experience": 0.7,
+    "education": "Cao đẳng, Quản trị mạng máy tính, trường cao đẳng nghề tại TP. Hồ Chí Minh",
+    "core_skills": [
+      "Windows Server",
+      "PowerShell",
+      "Microsoft Azure Virtual Machines",
+      "Azure DevOps Pipelines",
+      "Azure Monitor",
+      "IIS Web Server",
+      "Docker Compose",
+      "TCP/IP Networking"
+    ],
+    "secondary_skills": [
+      "Active Directory cơ bản",
+      "Git",
+      "Azure Storage",
+      "Windows Firewall",
+      "Microsoft 365 Administration"
+    ],
+    "known_gaps": [
+      "Chưa thành thạo Linux và Bash Scripting",
+      "Chưa sử dụng Kubernetes hoặc Azure Kubernetes Service",
+      "Chưa có chứng chỉ Microsoft Azure"
+    ],
+    "languages": [
+      "Tiếng Anh A2-B1, đọc tài liệu hướng dẫn kỹ thuật cơ bản"
+    ],
+    "industries": [
+      "Dịch vụ CNTT nội bộ",
+      "Thương mại điện tử"
+    ],
+    "career_note": "Chuyển hướng từ thực tập IT Support sang Cloud Operations, có tổng cộng 8 tháng trải nghiệm gồm hỗ trợ quản trị Windows Server, xử lý tài khoản nội bộ và tham gia triển khai thử nghiệm ứng dụng trên Azure.",
+    "cv_style": "lẫn Anh-Việt"
+  },
+  {
+    "profile_id": "DEVOPS_JUN_01",
+    "role_family": "DevOps/Cloud",
+    "target_title": "Junior DevOps Engineer",
+    "seniority": "Junior",
+    "years_experience": 1.6,
+    "education": "Đại học, Kỹ thuật phần mềm, trường đại học tư thục tại TP. Hồ Chí Minh",
+    "core_skills": [
+      "Linux Administration",
+      "GitLab CI/CD",
+      "Terraform",
+      "Docker",
+      "Amazon ECS",
+      "AWS IAM",
+      "Amazon CloudWatch",
+      "Python Scripting",
+      "AWS Application Load Balancer"
+    ],
+    "secondary_skills": [
+      "AWS ECR",
+      "MySQL",
+      "Shell Scripting",
+      "Git",
+      "AWS Secrets Manager"
+    ],
+    "known_gaps": [
+      "Chưa vận hành Kubernetes cluster trong production",
+      "Chưa có nhiều kinh nghiệm thiết kế hệ thống High Availability đa vùng",
+      "Chưa áp dụng Policy as Code trong quy trình triển khai"
+    ],
+    "languages": [
+      "Tiếng Anh B2, đọc viết tài liệu kỹ thuật tốt, giao tiếp công việc cơ bản"
+    ],
+    "industries": [
+      "SaaS",
+      "Thương mại điện tử"
+    ],
+    "career_note": "Có hơn 1 năm rưỡi làm DevOps tại công ty sản phẩm quy mô nhỏ, phụ trách pipeline GitLab và hạ tầng AWS ECS cho một số dịch vụ, thường thực hiện thay đổi hạ tầng theo thiết kế có sẵn của kỹ sư cấp cao.",
+    "cv_style": "ngắn gọn"
+  },
+  {
+    "profile_id": "DEVOPS_JUN_02",
+    "role_family": "DevOps/Cloud",
+    "target_title": "Junior Google Cloud Engineer",
+    "seniority": "Junior",
+    "years_experience": 1.8,
+    "education": "Đại học, Hệ thống thông tin, trường đại học địa phương tại miền Trung",
+    "core_skills": [
+      "Google Cloud Compute Engine",
+      "Google Cloud Run",
+      "Google Cloud Build",
+      "Artifact Registry",
+      "Docker",
+      "Linux",
+      "Git",
+      "Nginx"
+    ],
+    "secondary_skills": [
+      "Google Cloud Storage",
+      "Cloud Logging",
+      "Node.js cơ bản",
+      "Bash",
+      "PostgreSQL cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa tự thiết kế hạ tầng cloud bằng Terraform",
+      "Ít kinh nghiệm xử lý sự cố production nghiêm trọng",
+      "Chưa vận hành hệ thống có lưu lượng truy cập lớn hoặc kiến trúc multi-region"
+    ],
+    "languages": [
+      "Tiếng Anh B1, chủ yếu đọc tài liệu và trao đổi qua tin nhắn"
+    ],
+    "industries": [
+      "EdTech",
+      "Phần mềm quản lý doanh nghiệp"
+    ],
+    "career_note": "Có 1.8 năm kinh nghiệm nhưng chủ yếu duy trì hai ứng dụng nội bộ trên Google Cloud, công việc lặp lại theo quy trình có sẵn và ít được tham gia thiết kế kiến trúc hoặc xử lý các sự cố phức tạp.",
+    "cv_style": "dài dòng"
+  }
+]

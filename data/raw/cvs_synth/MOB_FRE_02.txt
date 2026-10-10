@@ -1,0 +1,46 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp cao đẳng ngành Lập trình máy tính và đã có thời gian làm việc với Flutter trong lĩnh vực bán lẻ. Tôi muốn tiếp tục phát triển theo hướng lập trình ứng dụng di động đa nền tảng, đặc biệt là xây dựng giao diện bằng Flutter và xử lý dữ liệu với Firebase. Mong muốn được tham gia các dự án thực tế để cải thiện khả năng viết code, quản lý trạng thái và hoàn thiện giao diện ứng dụng.
+
+HỌC VẤN
+
+Cao đẳng ngành Lập trình máy tính
+Trường cao đẳng nghề
+Đã tốt nghiệp
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ: Dart.
+- Mobile Framework: Flutter, Flutter Widget, Responsive UI.
+- State Management: Provider.
+- Firebase: Firebase Authentication, Cloud Firestore, Firebase Storage.
+- API: REST API Integration, Postman.
+- Database: SQLite cơ bản.
+- Công cụ phát triển: Android Studio, Git, Figma.
+
+KỸ NĂNG MỀM
+
+- Có khả năng theo dõi và xử lý các đầu việc liên quan đến giao diện ứng dụng.
+- Trao đổi trong quá trình chỉnh sữa giao diện và kết nối dữ liệu.
+- Tiếng Anh: Đọc tài liệu kỹ thuật cơ bản, giao tiếp còn hạn chế.
+
+KINH NGHIỆM LÀM VIỆC
+
+Flutter Developer
+Công ty TNHH Công nghệ Bán lẻ An Phúc
+03/2026 – 10/2026 (khoảng 0,7 năm, với 7 tháng tham gia phát triển ứng dụng bán lẻ)
+
+- Tham gia phát triển ứng dụng Flutter phục vụ hoạt động của cửa hàng bán lẻ, tập trung vào phần giao diện người dùng.
+- Sử dụng Flutter Widget để xây dựng các màn hình và điều chỉnh bố cục theo những kích thước màn hình khác nhau.
+- Áp dụng Provider để quản lý trạng thái, giúp dữ liệu trên giao diên được cập nhật theo các thao tác của người dùng.
+- Làm việc với Firebase Authentication, Cloud Firestore và dữ liệu từ REST API trong quá trình phát triển chức năng ứng dụng.
+
+DỰ ÁN
+
+Ứng dụng di động cho cửa hàng bán lẻ
+
+Công nghệ sử dụng: Dart, Flutter, Provider, Firebase, REST API.
+
+Dự án hỗ trợ hoạt động của cửa hàng bán lẻ và có các phần giao diện kết nối dữ liệu. Tôi tham gia xây dựng màn hình bằng Flutter, xử lý trạng thái bằng Provider và làm việc với dữ liệu trên Cloud Firestore. Qua dự án, tôi có thêm kinh nghiệm về cách xây dựng ứng dụng bán lẻ trên nền tảng Flutter.
+
+Tôi cũng sử dụng Figma để tham khảo thiết kế, Postman để làm việc với API và Git để quản lý các thay đổi trong mã nguồn.

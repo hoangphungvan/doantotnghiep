@@ -1,0 +1,42 @@
+MỤC TIÊU NGHỀ NGHIỆP
+Tôi có 3,4 năm kinh nghiệm phân tích dữ liệu trong lĩnh vực sản xuất công nghiệp và điện tử. Trước khi chuyển sang Data Analyst, tôi từng làm công việc kiểm soát chất lượng nên khá quen với quy trình sản xuất, cách theo dõi lỗi và đánh giá hiệu suất dây chuyền. Mong muốn tiếp tục phát triển chuyên môn phân tích dữ liệu vận hành, ứng dụng dữ liệu để hỗ trợ cải tiến quy trình và nâng cao chất lượng sản xuất.
+
+HỌC VẤN
+Cử nhân Kỹ thuật công nghiệp
+Đại học công lập khối kỹ thuật
+Kiến thức nền tảng về quy trình sản xuất, quản lý chất lượng và hoạt động công nghiệp.
+
+KỸ NĂNG CHUYÊN MÔN
+- MySQL: Truy vấn và tổng hợp dữ liệu sản xuất.
+- Power BI: Thiết kế dashboard theo dõi KPI vận hành.
+- DAX, Power Query M: Xử lý dữ liệu và xây dựng chỉ số báo cáo.
+- Manufacturing KPI Analysis: Theo dõi tỷ lệ lỗi, hiệu suất và các chỉ số chất lượng.
+- Root Cause Analysis: Phân tích nguyên nhân phát sinh lỗi trong sản xuất.
+- Process Data Analysis, Statistical Process Control.
+- Data Cleaning, Microsoft Excel nâng cao.
+- Minitab, ERP Reporting.
+- Lean Six Sigma cơ bản, Process Mapping.
+
+KỸ NĂNG MỀM
+- Tư duy phân tích vấn đề dựa trên dữ liệu thực tế.
+- Chú trọng tính chính xác khi kiểm tra dữ liệu sản xuất.
+- Có khả năng phân tích nguyên nhân và trình bày kết quả theo từng công đoạn.
+- Tiếng Anh B1, đọc báo cáo và trao đổi kỹ thuật cơ bản.
+- Tiếng Nhật N4.
+
+KINH NGHIỆM LÀM VIỆC
+Công ty TNHH Điện tử Bắc Hà
+Operations Data Analyst
+05/2023 - 10/2026 (3 năm 5 tháng)
+
+- Thu thập, làm sạch dữ liệu từ hệ thống ERP và tổng hợp bằng MySQL, Excel để phục vụ báo cáo sản xuất định kỳ.
+- Xây dựng dashboard Power BI theo dõi tỷ lệ lỗi, sản lượng và hiêu suất dây chuyền, giúp bộ phận sản xuất quan sát tình hình theo từng giai đoạn.
+- Sử dụng Minitab và Statistical Process Control để phân tích biến động chất lượng, xác định các công đoạn có tỷ lệ lỗi cần chú ý.
+- Thực hiện Root Cause Analysis kết hợp Process Mapping, cung cấp kết quả phân tích cho hoạt động cải tiến quy trình sản xuất.
+
+DỰ ÁN
+Dashboard theo dõi chất lượng sản xuất
+
+- Tổng hợp dữ liệu KPI từ báo cáo ERP và các bảng dữ liệu vận hành.
+- Sử dụng Power Query M để chuẩn hóa dữ liệu, DAX để xây dựng các chỉ số theo dõi.
+- Hoàn thiện báo cáo trực quan thể hiện tỷ lệ lỗi và hiệu suất theo công đoạn, hỗ trợ việc đánh giá chất lượng sản xuất.

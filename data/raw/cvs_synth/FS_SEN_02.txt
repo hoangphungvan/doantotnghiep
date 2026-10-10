@@ -1,0 +1,64 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có hơn 8 năm kinh nghiệm phát triển phần mềm Fullstack, từng đảm nhiệm các vai trò Developer, Senior Engineer và Technical Lead trong lĩnh vực Fintech, bảo hiểm và phần mềm doanh nghiệp. Tôi có kinh nghiệm xây dựng ứng dụng với ASP.NET Core, Angular, SQL Server và triển khai trên nền tảng Azure.
+
+Định hướng của tôi là tiếp tục phát triển các hệ thống doanh nghiệp có kiến trúc rõ ràng, dễ mở rộng và vận hành ổn định. Đồng thời, tôi mong muốn phát huy kinh nghiệm dẫn dắt nhóm kỹ thuật, phối hợp với khách hàng quốc tế và hỗ trợ đội ngũ hoàn thành các mục tiêu phát triển sản phẩm.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học chuyên ngành Khoa học máy tính tại một trường đại học công lập.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ: TypeScript, C#.
+- Frontend: Angular.
+- Backend: ASP.NET Core, Entity Framework Core, RESTful API.
+- Database: SQL Server, Redis.
+- Kiến trúc: Microservices, RabbitMQ, OAuth 2.0.
+- Cloud và DevOps: Azure App Service, Azure DevOps Pipelines, Docker.
+- Testing: xUnit.
+- Quy trình phát triển: Scrum.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm dẫn dắt nhóm gồm 5 lập trình viên.
+- Khả năng phối hợp và trao đổi yêu cầu kỹ thuật với khách hàng quốc tế.
+- Giao tiếp tiếng Anh tốt, trình độ C1; tiếng Nhật N4.
+- Có kinh nghiệm tổ chức và phối hợp công việc theo Scrum.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty CP Global Enterprise Technology
+Technical Lead | 06/2024 - 10/2026
+
+- Dẫn dắt nhóm 5 lập trình viên phát triển hệ thống nghiệp vụ bảo hiểm sử dụng ASP.NET Core, Angular và SQL Server.
+- Tham gia thiết kế kiến trúc Microservices, xây dựng RESTful API và xử lý giao tiếp giữa các thành phần bằng RabbitMQ.
+- Phối hợp triển khai ứng dụng trên Azure App Service, sử dụng Azure DevOps Pipelines và Docker.
+- Trao đổi trực tiếp với khách hàng quốc tế, tổ chức công việc theo Scrum và hỗ trợ nhóm hoàn thiện các chức năng nghiệp vụ.
+
+Công ty TNHH Fintech Digital Systems
+Senior Fullstack Engineer | 01/2021 - 06/2024
+
+- Phát triển hệ thống phần mềm Fintech và doanh nghiệp bằng C#, ASP.NET Core, Angular và TypeScript.
+- Xây dựng các chức năng xử lý dữ liệu với Entity Framework Core, SQL Server và Redis.
+- Tích hợp OAuth 2.0 phục vụ xác thực và sử dụng xUnit để kiểm thử các chức năng Backend.
+
+Công ty CP NextGen Software
+Fullstack Developer | 08/2018 - 01/2021
+
+- Tham gia phát triển ứng dụng quản lý doanh nghiệp sử dụng ASP.NET Core và Angular.
+- Xây dựng RESTful API, xử lý dữ liệu trên SQL Server và hoàn thiện các chức năng theo yêu cầu dự án.
+- Phối hợp với nhóm phát triển để tích hợp giao diện và Backend.
+
+DỰ ÁN
+
+Hệ thống quản lý nghiệp vụ bảo hiểm
+
+Vai trò: Technical Lead.
+
+Tham gia xây dựng hệ thống sử dụng ASP.NET Core, Angular, Microservices và Azure. Phụ trách phối hợp thiết kế các thành phần kỹ thuật, hướng dẫn nhóm 5 lập trình viên và triển khai các chức năng nghiệp vụ phục vụ hoạt động bảo hiểm.
+
+NGOẠI NGỮ
+
+Tiếng Anh C1, giao tiếp kỹ thuật và làm việc với khách hàng quốc tế tốt.
+Tiếng Nhật N4, giao tiếp cơ bản.

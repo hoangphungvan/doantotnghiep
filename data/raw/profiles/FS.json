@@ -1,0 +1,324 @@
+[
+  {
+    "profile_id": "FS_FRE_01",
+    "role_family": "Fullstack",
+    "target_title": "Fresher Fullstack Developer (React/Node.js)",
+    "seniority": "Fresher",
+    "years_experience": 0.5,
+    "education": "Đại học, ngành Công nghệ thông tin, trường đại học công lập",
+    "core_skills": [
+      "JavaScript ES6+",
+      "React.js cơ bản",
+      "Node.js",
+      "Express.js",
+      "HTML5",
+      "CSS3",
+      "MongoDB cơ bản",
+      "RESTful API"
+    ],
+    "secondary_skills": [
+      "Git/GitHub",
+      "Bootstrap",
+      "Postman",
+      "Figma cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm triển khai ứng dụng trên cloud",
+      "Chưa viết automated test cho backend",
+      "Chưa có kinh nghiệm tối ưu hiệu năng ứng dụng"
+    ],
+    "languages": [
+      "Tiếng Anh B1, đọc tài liệu kỹ thuật tương đối tốt"
+    ],
+    "industries": [
+      "Giáo dục trực tuyến",
+      "Thương mại điện tử"
+    ],
+    "career_note": "Sinh viên mới tốt nghiệp, từng thực tập 5 tháng tại một công ty phần mềm và tham gia xây dựng giao diện, API CRUD cho hệ thống quản lý khóa học nội bộ.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "FS_FRE_02",
+    "role_family": "Fullstack",
+    "target_title": "Fresher PHP Fullstack Developer",
+    "seniority": "Fresher",
+    "years_experience": 0.7,
+    "education": "Cao đẳng, ngành Lập trình máy tính, trường cao đẳng nghề",
+    "core_skills": [
+      "PHP",
+      "Laravel cơ bản",
+      "Vue.js 3 cơ bản",
+      "MySQL",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Laravel Blade"
+    ],
+    "secondary_skills": [
+      "Git",
+      "jQuery",
+      "Tailwind CSS cơ bản",
+      "XAMPP",
+      "Postman"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm với Docker",
+      "Chưa xây dựng hệ thống xác thực phân quyền phức tạp",
+      "Chưa có kinh nghiệm viết unit test"
+    ],
+    "languages": [
+      "Tiếng Anh A2, đọc hiểu tài liệu kỹ thuật đơn giản"
+    ],
+    "industries": [
+      "Bán lẻ",
+      "Dịch vụ website doanh nghiệp"
+    ],
+    "career_note": "Có 8 tháng thực tập và làm bán thời gian tại một đơn vị thiết kế website, chủ yếu phát triển trang quản trị sản phẩm, biểu mẫu và các chức năng CRUD bằng Laravel.",
+    "cv_style": "có lỗi chính tả nhẹ"
+  },
+  {
+    "profile_id": "FS_JUN_01",
+    "role_family": "Fullstack",
+    "target_title": "Junior Fullstack Developer (.NET/Angular)",
+    "seniority": "Junior",
+    "years_experience": 1.4,
+    "education": "Đại học, ngành Kỹ thuật phần mềm, trường đại học tư thục",
+    "core_skills": [
+      "C#",
+      "ASP.NET Core Web API",
+      "Angular",
+      "TypeScript",
+      "SQL Server",
+      "Entity Framework Core",
+      "HTML5/CSS3",
+      "RESTful API"
+    ],
+    "secondary_skills": [
+      "Git",
+      "Swagger/OpenAPI",
+      "Bootstrap",
+      "Postman",
+      "LINQ"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm xây dựng hệ thống Microservices",
+      "Chưa sử dụng Kubernetes",
+      "Ít kinh nghiệm thiết kế cơ sở dữ liệu từ đầu"
+    ],
+    "languages": [
+      "Tiếng Anh B1, giao tiếp công việc cơ bản"
+    ],
+    "industries": [
+      "Quản lý nhân sự",
+      "Phần mềm quản trị nội bộ"
+    ],
+    "career_note": "Có 1,4 năm làm việc nhưng phần lớn thời gian bảo trì biểu mẫu, chỉnh sửa giao diện và API đơn giản trong một hệ thống quản lý nhân sự, ít được tham gia thiết kế tính năng độc lập.",
+    "cv_style": "ngắn gọn"
+  },
+  {
+    "profile_id": "FS_JUN_02",
+    "role_family": "Fullstack",
+    "target_title": "Junior Fullstack Developer (Python/React)",
+    "seniority": "Junior",
+    "years_experience": 1.8,
+    "education": "Đại học, ngành Hệ thống thông tin, trường đại học công lập",
+    "core_skills": [
+      "Python",
+      "Django",
+      "Django REST Framework",
+      "React.js",
+      "JavaScript",
+      "PostgreSQL",
+      "HTML5/CSS3",
+      "RESTful API"
+    ],
+    "secondary_skills": [
+      "GitLab",
+      "Postman",
+      "Selenium cơ bản",
+      "Docker cơ bản",
+      "Pytest cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm vận hành hệ thống trên cloud",
+      "Chưa thành thạo tối ưu truy vấn PostgreSQL",
+      "Ít kinh nghiệm thiết kế kiến trúc ứng dụng lớn"
+    ],
+    "languages": [
+      "Tiếng Anh B2, đọc viết tài liệu và giao tiếp kỹ thuật khá"
+    ],
+    "industries": [
+      "Phần mềm doanh nghiệp",
+      "Quản lý kho"
+    ],
+    "career_note": "Có 1,8 năm kinh nghiệm CNTT, bắt đầu với kiểm thử phần mềm thủ công trước khi chuyển sang lập trình Fullstack và tham gia phát triển hệ thống quản lý kho bằng Django và React trong khoảng 1 năm gần đây.",
+    "cv_style": "lẫn Anh-Việt"
+  },
+  {
+    "profile_id": "FS_MID_01",
+    "role_family": "Fullstack",
+    "target_title": "Middle Fullstack Engineer (Next.js/NestJS)",
+    "seniority": "Middle",
+    "years_experience": 3.6,
+    "education": "Đại học, ngành Khoa học máy tính, trường đại học công lập",
+    "core_skills": [
+      "TypeScript",
+      "Next.js",
+      "React.js",
+      "NestJS",
+      "PostgreSQL",
+      "Prisma ORM",
+      "RESTful API",
+      "Docker",
+      "Redis"
+    ],
+    "secondary_skills": [
+      "GitHub Actions",
+      "JWT Authentication",
+      "Tailwind CSS",
+      "Jest",
+      "AWS S3 cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm triển khai Kubernetes trong production",
+      "Chưa thành thạo thiết kế hệ thống phân tán quy mô lớn"
+    ],
+    "languages": [
+      "Tiếng Anh B2, giao tiếp tốt trong nhóm phát triển phần mềm"
+    ],
+    "industries": [
+      "Thương mại điện tử",
+      "SaaS"
+    ],
+    "career_note": "Khởi đầu với vai trò Frontend Developer trong hơn 1 năm, sau đó mở rộng sang Backend bằng NestJS và PostgreSQL, hiện có khả năng phát triển tính năng Fullstack tương đối độc lập.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "FS_MID_02",
+    "role_family": "Fullstack",
+    "target_title": "Middle Fullstack Developer (Vue.js/Spring Boot)",
+    "seniority": "Middle",
+    "years_experience": 3.9,
+    "education": "Đại học, ngành Công nghệ thông tin, trường đại học tư thục",
+    "core_skills": [
+      "Java",
+      "Spring Boot",
+      "Spring Data JPA",
+      "Vue.js 2",
+      "JavaScript",
+      "MySQL",
+      "RESTful API",
+      "Spring Security cơ bản",
+      "Maven"
+    ],
+    "secondary_skills": [
+      "Git",
+      "Jenkins cơ bản",
+      "Postman",
+      "Element UI",
+      "JUnit cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa có nhiều kinh nghiệm với kiến trúc Microservices",
+      "Chưa triển khai ứng dụng trực tiếp trên AWS hoặc Azure",
+      "Chưa thành thạo frontend testing"
+    ],
+    "languages": [
+      "Tiếng Anh B1, đọc tài liệu kỹ thuật tốt nhưng giao tiếp còn hạn chế"
+    ],
+    "industries": [
+      "Logistics",
+      "Quản lý bán hàng",
+      "Phần mềm doanh nghiệp"
+    ],
+    "career_note": "Có gần 4 năm phát triển phần mềm doanh nghiệp, chủ yếu xây dựng module quản lý đơn hàng, kho và báo cáo bằng Spring Boot và Vue.js, đã đảm nhiệm độc lập nhiều tính năng nghiệp vụ.",
+    "cv_style": "dài dòng"
+  },
+  {
+    "profile_id": "FS_SEN_01",
+    "role_family": "Fullstack",
+    "target_title": "Senior Fullstack Developer (PHP/React)",
+    "seniority": "Senior",
+    "years_experience": 5.7,
+    "education": "Đại học, ngành Công nghệ phần mềm, trường đại học dân lập",
+    "core_skills": [
+      "PHP 8",
+      "Laravel",
+      "React.js",
+      "JavaScript",
+      "MySQL",
+      "RESTful API",
+      "Redis cơ bản",
+      "Linux",
+      "Nginx"
+    ],
+    "secondary_skills": [
+      "Git",
+      "Docker Compose",
+      "jQuery",
+      "PHPUnit cơ bản",
+      "Trello",
+      "DigitalOcean"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm thiết kế hệ thống chịu tải hàng triệu người dùng",
+      "Chưa triển khai kiến trúc Microservices trong production",
+      "Ít kinh nghiệm xây dựng CI/CD tự động hoàn chỉnh"
+    ],
+    "languages": [
+      "Tiếng Anh B1, đọc hiểu tài liệu và trao đổi kỹ thuật ở mức cơ bản"
+    ],
+    "industries": [
+      "Dịch vụ website",
+      "Bán lẻ",
+      "Bất động sản"
+    ],
+    "career_note": "Có 5,7 năm làm Fullstack tại các công ty gia công website quy mô nhỏ, từng hướng dẫn lập trình viên mới và phụ trách nhiều dự án nhưng kinh nghiệm chủ yếu tập trung vào ứng dụng monolithic với lưu lượng truy cập thấp.",
+    "cv_style": "dài dòng"
+  },
+  {
+    "profile_id": "FS_SEN_02",
+    "role_family": "Fullstack",
+    "target_title": "Senior Fullstack Engineer / Technical Lead",
+    "seniority": "Senior",
+    "years_experience": 8.2,
+    "education": "Đại học, ngành Khoa học máy tính, trường đại học công lập",
+    "core_skills": [
+      "TypeScript",
+      "Angular",
+      "C#",
+      "ASP.NET Core",
+      "SQL Server",
+      "Entity Framework Core",
+      "Microservices",
+      "Docker",
+      "Azure App Service",
+      "RESTful API"
+    ],
+    "secondary_skills": [
+      "Azure DevOps Pipelines",
+      "RabbitMQ",
+      "Redis",
+      "OAuth 2.0",
+      "xUnit",
+      "Scrum"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm chuyên sâu với Kubernetes",
+      "Chưa có nhiều kinh nghiệm sử dụng công nghệ NoSQL",
+      "Chưa tham gia phát triển hệ thống Machine Learning"
+    ],
+    "languages": [
+      "Tiếng Anh C1, giao tiếp kỹ thuật và làm việc với khách hàng quốc tế tốt",
+      "Tiếng Nhật N4, giao tiếp cơ bản"
+    ],
+    "industries": [
+      "Fintech",
+      "Bảo hiểm",
+      "Phần mềm doanh nghiệp",
+      "Outsourcing"
+    ],
+    "career_note": "Có hơn 8 năm phát triển ứng dụng Fullstack, đã trải qua các vị trí Developer, Senior Engineer và Technical Lead, từng dẫn dắt nhóm 5 lập trình viên xây dựng hệ thống nghiệp vụ bảo hiểm trên nền tảng .NET, Angular và Azure.",
+    "cv_style": "chuẩn"
+  }
+]

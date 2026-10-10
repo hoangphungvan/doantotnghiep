@@ -1,0 +1,53 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp Cao đẳng Công nghệ thông tin, có khoảng 8 tháng kinh nghiệm làm Backend tại startup, gồm 4 tháng thực tập và 4 tháng cộng tác bán thời gian. Tôi đã tham gia xây dựng API cho ứng dụng đặt lịch bằng Node.js và Express.js. Mong muốn tiếp tục làm việc với Backend JavaScript, TypeScript, MongoDB và nâng cao khả năng phát triển API, xử lý nghiệp vụ thực tế.
+
+HỌC VẤN
+
+Cao đẳng Công nghệ thông tin
+Trường cao đẳng kỹ thuật
+
+Tập trung học JavaScript, lập trình Backend và làm việc với cơ sở dữ liệu.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- JavaScript, TypeScript cơ bản.
+- Node.js, Express.js.
+- MongoDB, Mongoose.
+- RESTful API, JWT Authentication.
+- Git, NPM, Postman.
+- Linux cơ bản.
+- Tiếng Anh A2-B1, đọc hiểu tài liệu kỹ thuật cơ bản.
+
+KỸ NĂNG MỀM
+
+- Phối hợp với các thành viên trong nhóm khi phát triển API.
+- Tiếp nhận yêu cầu và chỉnh sửa chức năng theo phản hồi.
+- Có khả năng tự tìm hiểu tài liệu để giải quyết các lỗi thường gặp.
+- Làm việc theo phạm vi nhiệm vụ được phân công.
+
+KINH NGHIỆM LÀM VIỆC
+
+Backend Intern
+Công ty TNHH Công nghệ Lịch Việt
+01/2026 – 04/2026 (4 tháng)
+
+- Tham gia phát triển RESTful API cho ứng dụng đặt lịch trực tuyến sử dụng Node.js và Express.js.
+- Hỗ trợ xử lý các thao tác tạo, cập nhật và truy vấn dữ liệu lịch hẹn với MongoDB, Mongoose.
+- Sử dụng Postman để kiểm tra API và Git để quản lý mã nguồn trong quá trình thực tập.
+
+Part-time Backend Developer
+Công ty TNHH Công nghệ Lịch Việt
+05/2026 – 08/2026 (4 tháng)
+
+- Tiếp tục hỗ trợ phát triển và chỉnh sửa API theo yêu cầu của ứng dụng đặt lịch.
+- Tham gia xử lý lỗi liên quan đến request, response và dữ liệu trả về từ Backend.
+- Phối hợp với nhóm kỹ thuật kiểm tra chức năng trước khi chuyển sang các bước tiếp theo.
+
+DỰ ÁN
+
+Ứng dụng đặt lịch dịch vụ trực tuyến
+
+Công nghệ: Node.js, Express.js, MongoDB, Mongoose, JavaScript.
+
+Tham gia phần Backend của hệ thống, thực hiện các API phục vụ quản lý lịch hẹn và dữ liệu liên quan. Công việc được thực hiện theo phân công của nhóm, có sự hỗ trợ và kiểm tra từ các thành viên có kinh nghiệm.

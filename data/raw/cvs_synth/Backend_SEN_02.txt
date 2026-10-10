@@ -1,0 +1,46 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi là Backend Developer với hơn 5 năm experience làm việc cùng Node.js và TypeScript. Phần lớn dự án tôi tham gia thuộc mảng CRM, HRM và phần mềm quản trị nội bộ cho doanh nghiệp nhỏ. Tôi có kinh nghiệm phát triển API, maintain hệ thống đang hoạt động và hỗ trợ developer mới. Mục tiêu của tôi là tiếp tục nâng cao kỹ năng Backend development, cải thiện code quality và tham gia sâu hơn vào thiết kế các hệ thống doanh nghiệp.
+
+HỌC VẤN
+
+Cử nhân Công nghệ thông tin
+Trường đại học tư thục
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Programming Language: TypeScript.
+- Backend: Node.js, NestJS, RESTful API.
+- Database: MongoDB, MySQL.
+- ORM: TypeORM.
+- Authentication: JWT Authentication.
+- Testing: Jest.
+- API Documentation: Swagger/OpenAPI.
+- Deployment & Tools: Docker, PM2, Nginx.
+- Version Control & Automation: Git, GitHub Actions.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm hướng dẫn developer mới tiếp cận codebase và công việc Backend.
+- Phối hợp với team để maintain và xử lý các vấn đề trong hệ thống.
+- Tiếng Anh B1, đọc tài liệu kỹ thuật khá, giao tiếp công việc cơ bản.
+- Có tinh thần trách nhiệm đối với các chức năng được giao.
+
+KINH NGHIỆM LÀM VIỆC
+
+Node.js Backend Developer
+Công ty TNHH Phần mềm Nam Việt
+08/2021 – 10/2026 (5 năm 2 tháng)
+
+- Develop và maintain Backend services cho các sản phẩm CRM, HRM và phần mềm quản trị nội bộ, sử dụng Node.js, TypeScript và NestJS.
+- Xây dựng RESTful API, xử lý dữ liệu với MongoDB, MySQL và TypeORM để phục vụ các chức năng quản lý của doanh nghiệp.
+- Implement JWT Authentication, viết test bằng Jest và sử dụng Swagger/OpenAPI để document API cho quá trình phát triển.
+- Tham gia bảo trì hệ thống đang vận hành, sử dụng Docker, PM2, Nginx và hỗ trợ onboarding, hướng dẫn các developer mới trong team.
+
+DỰ ÁN
+
+CRM và HRM Management System
+
+Tham gia phát triển Backend cho hệ thống quản lý khách hàng và nhân sự dành cho doanh nghiệp nhỏ. Công việc bao gồm API development, database operations, authentication và maintenance.
+
+Tech stack: TypeScript, Node.js, NestJS, MySQL, MongoDB, TypeORM, JWT Authentication.

@@ -1,0 +1,60 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Senior iOS Developer với 6,4 năm kinh nghiệm trong native iOS development, từng tham gia các sản phẩm thuộc healthcare, insurance và utility applications.
+
+Tôi có kinh nghiệm làm việc với cả Objective-C và Swift, tham gia chuyển đổi legacy code sang Swift và đảm nhiệm vai trò technical owner cho ứng dụng chăm sóc sức khỏe. Định hướng tiếp theo là tiếp tục phát triển các ứng dụng iOS có cấu trúc dễ bảo trì, quy trình release ổn định và chú trọng chất lượng code. Tôi cũng mong muốn đóng góp nhiều hơn vào technical mentoring và code review trong nhóm phát triển.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học – Ngành Công nghệ thông tin
+Hệ đào tạo: Chính quy, trường đại học tư thục.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Programming Languages: Swift nâng cao, Objective-C.
+- UI Development: SwiftUI.
+- Reactive Programming: Combine.
+- Concurrency: Swift Concurrency.
+- Architecture: MVVM-C.
+- Local Persistence: Core Data.
+- Dependency Management: Swift Package Manager.
+- Testing: XCTest, XCUITest.
+- Build và Release: Fastlane, App Store Connect.
+- Notification và Security: APNs, Keychain Services.
+- Performance Analysis: Instruments.
+- Engineering Practices: Technical Documentation, Code Review.
+
+KỸ NĂNG MỀM
+
+- Technical mentoring cho junior developers.
+- Có kinh nghiệm hướng dẫn, review code và trao đổi giải pháp kỹ thuật trong nhóm.
+- Giao tiếp tiếng Anh tốt trong môi trường nhóm quốc tế, đọc viết technical documentation thành thạo.
+
+KINH NGHIỆM LÀM VIỆC
+
+Senior iOS Developer
+Công ty Giải pháp Y tế An Tâm
+05/2023 – 10/2026 (3 năm 5 tháng)
+
+- Đảm nhiệm vai trò kỹ thuật chính trong quá trình phát triển và duy trì healthcare application, tham gia xử lý các quyết định kỹ thuật liên quan đến phần iOS.
+- Phát triển tính năng bằng Swift, SwiftUI, Combine và Swift Concurrency; sử dụng MVVM-C để tổ chức các thành phần và luồng điều hướng ứng dụng.
+- Tham gia migration một phần codebase từ Objective-C sang Swift, đồng thời thực hiện Code Review và hỗ trợ junior developers trong quá trình triển khai.
+- Quản lý release workflow với Fastlane, App Store Connect và thực hiện kiểm thử bằng XCTest, XCUITest trước các đợt phát hành.
+
+iOS Developer
+Công ty Công nghệ Bảo hiểm Đông Phương
+05/2020 – 05/2023 (3 năm)
+
+- Tham gia phát triển các chức năng iOS cho sản phẩm bảo hiểm và ứng dụng tiện ích sử dụng Swift, Objective-C.
+- Làm việc với Core Data để lưu trữ dữ liệu, APNs cho notifications và Keychain Services trong các chức năng cần lưu trữ thông tin an toàn.
+- Sử dụng Instruments để phân tích hoạt động ứng dụng, Swift Package Manager để quản lý package và tham gia kiểm thử trước khi phát hành.
+
+DỰ ÁN
+
+Healthcare Mobile Application
+
+Vai trò: Senior iOS Developer / Technical Owner.
+
+Tech stack: Swift, SwiftUI, Combine, Swift Concurrency, MVVM-C, Core Data, XCTest, XCUITest, Fastlane.
+
+Phụ trách phần kỹ thuật iOS của ứng dụng, tham gia code migration, duy trì chất lượng source code, mentoring junior developers và điều phối các công việc liên quan đến app release.

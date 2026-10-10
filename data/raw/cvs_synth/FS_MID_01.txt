@@ -1,0 +1,49 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có khoảng 3,6 năm kinh nghiệm phát triển phần mềm, bắt đầu với Frontend và sau đó chuyển sang phát triển Fullstack. Tôi mong muốn tiếp tục làm việc với TypeScript, Next.js và NestJS, tham gia xây dựng các sản phẩm thương mại điện tử và SaaS có tính ổn định, dễ bảo trì. Mục tiêu của tôi là nâng cao năng lực thiết kế Backend, tối ưu hiệu năng ứng dụng và chủ động đảm nhận các tính năng từ giao diện đến API và cơ sở dữ liệu.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học chuyên ngành Khoa học máy tính tại một trường đại học công lập.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ lập trình: TypeScript.
+- Frontend: React.js, Next.js, Tailwind CSS.
+- Backend: NestJS, RESTful API, JWT Authentication.
+- Database: PostgreSQL, Prisma ORM, Redis.
+- DevOps: Docker, GitHub Actions, AWS S3 cơ bản.
+- Testing: Jest.
+
+KỸ NĂNG MỀM
+
+- Có khả năng tự triển khai các tính năng Fullstack tương đối độc lập.
+- Giao tiếp và phối hợp tốt với các thành viên trong nhóm phát triển.
+- Tiếng Anh B2, có thể trao đổi công việc và thảo luận kỹ thuật bằng tiếng Anh.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Nova Digital
+Fullstack Developer | 07/2024 - 10/2026
+
+- Phát triển các tính năng cho sản phẩm thương mại điện tử và SaaS sử dụng Next.js, NestJS và TypeScript.
+- Thiết kế RESTful API, xử lý xác thực người dùng bằng JWT Authentication và quản lý dữ liệu với PostgreSQL, Prisma ORM.
+- Sử dụng Redis để hỗ trợ xử lý dữ liệu và Docker để đóng gói ứng dụng.
+- Tham gia kiểm thử bằng Jest và xây dựng quy trình thực thi tự động với GitHub Actions, hoàn thiện các tính năng từ giao diện đến Backend.
+
+Công ty CP Bright Commerce
+Frontend Developer | 03/2023 - 07/2024
+
+- Phát triển giao diện website thương mại điện tử bằng React.js, TypeScript và Tailwind CSS.
+- Tích hợp RESTful API để hiển thị dữ liệu sản phẩm và thông tin người dùng.
+- Hoàn thiện các màn hình chức năng, phối hợp với nhóm Backend để xử lý vấn đề trong quá trình phát triển.
+
+DỰ ÁN
+
+Hệ thống quản lý bán hàng trực tuyến
+
+Tham gia phát triển các chức năng quản lý dữ liệu và giao diện người dùng trên nền tảng Next.js, NestJS, PostgreSQL. Phụ trách triển khai API, kết nối dữ liệu và hoàn thiện những tính năng được giao.
+
+NGOẠI NGỮ
+
+Tiếng Anh: B2.

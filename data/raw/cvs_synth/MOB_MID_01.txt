@@ -1,0 +1,48 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi là Flutter Developer với khoảng 3,3 năm kinh nghiệm phát triển và duy trì ứng dụng di động, chủ yếu trong lĩnh vực quản lý bán hàng và logistics. Trong quá trình làm việc, tôi tập trung vào việc hoàn thiện các chức năng hiện có, bổ sung tính năng theo yêu cầu và xử lý các vấn đề phát sinh trong quá trình vận hành sản phẩm.
+
+Tôi mong muốn tiếp tục phát triển chuyên môn về Flutter, đặc biệt là tổ chức mã nguồn theo Clean Architecture, quản lý trạng thái ứng dụng và nâng cao chất lượng sản phẩm thông qua kiểm thử. Mục tiêu của tôi là tham gia sâu hơn vào quá trình phát triển sản phẩm, đồng thời vận dụng kinh nghiệm bảo trì và mở rộng ứng dụng đã tích lũy.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học – Ngành Công nghệ thông tin
+Hệ đào tạo: Chính quy, trường đại học công lập.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ lập trình: Dart.
+- Framework: Flutter, phát triển giao diện bằng hệ thống Widget.
+- State Management: BLoC.
+- Kiến trúc: Clean Architecture ở mức cơ bản.
+- Networking và Navigation: Dio, GoRouter.
+- Lưu trữ dữ liệu: SQLite, Hive.
+- Firebase: Firebase Crashlytics, Firebase Cloud Messaging.
+- Tích hợp bản đồ: Google Maps SDK.
+- Testing: Flutter Widget Testing, Postman.
+- Version Control và CI: Git, GitLab CI cơ bản.
+
+KỸ NĂNG MỀM
+
+- Có kinh nghiệm theo dõi và duy trì một sản phẩm trong thời gian dài, xử lý các yêu cầu thay đổi liên tục.
+- Đọc và viết tài liệu kỹ thuật tiếng Anh khá.
+- Giao tiếp tiếng Anh trong công việc ở mức trung bình.
+
+KINH NGHIỆM LÀM VIỆC
+
+Flutter Developer
+Công ty TNHH Giải pháp Công nghệ Minh Phát
+06/2023 – 10/2026 (3 năm 4 tháng)
+
+- Tham gia duy trì và mở rộng ứng dụng Flutter phục vụ quản lý đội ngũ bán hàng, thực hiện các thay đổi về giao diện và luồng thao tác theo nhu cầu vận hành.
+- Sử dụng BLoC để quản lý trạng thái, Dio để xử lý giao tiếp dữ liệu và GoRouter để tổ chức luồng chuyển màn hình, giúp các chức năng được triển khai nhất quán với cấu trúc ứng dụng hiện có.
+- Làm việc với SQLite, Hive và các dịch vụ Firebase trong quá trình phát triển, hỗ trợ lưu trữ dữ liệu, thông báo và theo dõi lỗi ứng dụng.
+- Thực hiện Flutter Widget Testing cho các thành phần giao diện, sử dụng Git để quản lý thay đổi mã nguồn và tham gia các công việc CI cơ bản trên GitLab.
+
+DỰ ÁN
+
+Ứng dụng quản lý đội ngũ bán hàng
+
+Công nghệ: Flutter, Dart, BLoC, Dio, GoRouter, SQLite, Firebase Crashlytics.
+
+Ứng dụng hỗ trợ hoạt động quản lý bán hàng trên thiết bị di động. Công việc của tôi tập trung vào bảo trì chức năng, điều chỉnh giao diện và mở rộng các luồng nghiệp vụ trong quá trình sử dụng thực tế.

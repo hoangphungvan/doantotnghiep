@@ -1,0 +1,29 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 8 năm kinh nghiệm trong frontend engineering, từ Angular Developer đến Senior Frontend Engineer. Tôi muốn tiếp tục tập trung vào frontend system design cho các enterprise applications, đặc biệt là những hệ thống cần nhiều team phát triển song song. Điểm tôi quan tâm là maintainability, component reuse và hiệu năng thực tế, thay vì chỉ hoàn thành từng màn hình riêng lẻ.
+
+HỌC VẤN
+
+Tốt nghiệp đại học ngành Khoa học máy tính tại một trường đại học công lập. Kiến thức nền được tôi vận dụng trong việc đánh giá giải pháp kiến trúc và tổ chức các ứng dụng doanh nghiệp có nhiều phân hệ.
+
+KỸ NĂNG CHUYÊN MÔN
+
+Core stack: TypeScript, Angular, RxJS, NgRx, Angular Signals, SCSS. Có kinh nghiệm với Micro Frontends, Module Federation, Frontend System Design và Web Performance Optimization. Supporting tools: Nx Monorepo, Jasmine, Karma, Docker và Azure DevOps. Technical Leadership là một phần công việc thường xuyên của tôi.
+
+KỸ NĂNG MỀM
+
+Từng dẫn dắt team 6 developers, review định hướng kỹ thuật và phối hợp chuẩn hóa cách triển khai giữa các module. Tiếng Anh C1; có thể trình bày technical solutions, trao đổi trực tiếp với khách hàng quốc tế và giải thích các trade-off về kiến trúc.
+
+KINH NGHIỆM LÀM VIỆC
+
+Angular Developer → Senior Frontend Engineer – Công ty Cổ phần Giải pháp Số Nam Việt
+10/2018 – 10/2026 (8 năm)
+
+- Phát triển các frontend modules cho hệ thống ngân hàng, bảo hiểm và enterprise software bằng Angular, TypeScript, RxJS và NgRx.
+- Lead team 6 developers, định hướng frontend system design và chuẩn hóa cách phối hợp khi nhiều nhóm cùng phát triển sản phẩm.
+- Thiết kế kiến trúc Micro Frontends với Module Federation; tổ chức mã nguồn theo Nx Monorepo để các phân hệ có thể dùng chung những thành phần cần thiết.
+- Xây dựng shared component library, ứng dụng Angular Signals và SCSS; thực hiện web performance optimization, kiểm thử với Jasmine, Karma và hỗ trợ quy trình bằng Azure DevOps.
+
+DỰ ÁN
+
+Enterprise frontend platform: Tham gia chuẩn hóa Micro Frontends và xây dựng thư viện UI components dùng chung cho các hệ thống phục vụ chuyển đổi số. Tôi phụ trách technical direction, trao đổi với các bên liên quan và hỗ trợ nhóm duy trì kiến trúc đã thống nhất.

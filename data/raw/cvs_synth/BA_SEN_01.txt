@@ -1,0 +1,48 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Business Analyst với 6,5 năm kinh nghiệm trong lĩnh vực Digital Banking, FinTech và thanh toán điện tử. Tôi có kinh nghiệm phân tích yêu cầu ở phạm vi doanh nghiệp, tái thiết kế quy trình và phối hợp với các bên liên quan cấp quản lý. Định hướng phát triển chuyên sâu về Enterprise Business Analysis, nâng cao hiệu quả quản trị yêu cầu và hỗ trợ phát triển đội ngũ Business Analyst trong các dự án ngân hàng số.
+
+HỌC VẤN
+
+- Thạc sĩ Hệ thống thông tin quản lý – Trường đại học công lập khối kinh tế.
+- Cử nhân Công nghệ thông tin.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Enterprise Requirement Analysis, Stakeholder Management và Business Process Reengineering.
+- Phân tích nghiệp vụ Digital Banking và thanh toán điện tử.
+- Phân tích yêu cầu tích hợp hệ thống thông qua API.
+- SQL với PostgreSQL phục vụ phân tích dữ liệu nghiệp vụ.
+- BPMN, UML nâng cao và Camunda Modeler.
+- Backlog Prioritization, Jira và Confluence.
+- Event Storming, Solution Review và Risk Assessment.
+- Power BI phục vụ phân tích và trình bày dữ liệu.
+- Agile Scrum, Scrum of Scrums và Mentoring Junior Business Analysts.
+
+KỸ NĂNG MỀM
+
+- Làm việc trực tiếp với các bên liên quan cấp quản lý để thống nhất yêu cầu và ưu tiên nghiệp vụ.
+- Điều phối nhóm BA nhỏ, hướng dẫn Junior BA thực hiện phân tích và chuẩn hóa tài liệu.
+- Tiếng Anh C1, có khả năng điều phối workshop và viết tài liệu nghiệp vụ chuyên sâu.
+
+KINH NGHIỆM LÀM VIỆC
+
+Senior Business Analyst – Công ty Cổ phần Công nghệ Tài chính Nam Việt
+10/2022 – 10/2026 (4 năm)
+
+- Phụ trách Enterprise Requirement Analysis cho các dự án ngân hàng số, làm việc với stakeholder cấp quản lý để xác định phạm vi và thứ tự ưu tiên nghiệp vụ.
+- Phân tích các luồng tích hợp hệ thống qua API, thực hiện Solution Review và Risk Assessment nhằm làm rõ tác động của yêu cầu tới các hệ thống liên quan.
+- Sử dụng BPMN, UML và Camunda Modeler để mô hình hóa, tái thiết kế quy trình; quản lý backlog và tài liệu trên Jira, Confluence.
+- Hướng dẫn Junior BA, điều phối công việc phân tích của nhóm nhỏ và phối hợp trong mô hình Agile Scrum, Scrum of Scrums.
+
+Business Analyst – Công ty TNHH Giải pháp Thanh toán Minh Tâm
+04/2020 – 10/2022 (2 năm 6 tháng)
+
+- Phân tích yêu cầu chức năng cho hệ thống thanh toán điện tử, xây dựng mô hình nghiệp vụ để thống nhất cách xử lý với các bên liên quan.
+- Sử dụng PostgreSQL và Power BI hỗ trợ phân tích dữ liệu, đồng thời tham gia Event Storming để làm rõ các luồng nghiệp vụ.
+
+DỰ ÁN
+
+Phân tích và tái thiết kế quy trình ngân hàng số
+
+Tham gia phân tích yêu cầu, đánh giá quy trình hiện tại và đề xuất điều chỉnh luồng nghiệp vụ cho các chức năng ngân hàng số. Phối hợp với các bên liên quan trong quá trình ưu tiên backlog, rà soát giải pháp và kiểm soát những thay đổi có ảnh hưởng đến các hệ thống tích hợp.

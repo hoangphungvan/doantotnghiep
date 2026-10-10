@@ -1,0 +1,47 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 4 năm kinh nghiệm làm DevOps và quản trị hệ thống hạ tầng CNTT, tập trung vào môi trường máy chủ on-premise. Công việc chủ yếu liên quan đến vận hành hệ thống nội bộ, triển khai ứng dụng và tự động hóa các tác vụ quản trị. Tôi muốn tiếp tục phát triển theo hướng Infrastructure DevOps, nâng cao chất lượng vận hành và khả năng đáp ứng của hệ thống doanh nghiệp.
+
+HỌC VẤN
+
+Tốt nghiệp Đại học chuyên ngành Mạng máy tính và Truyền thông dữ liệu tại một trường đại học công lập ở miền Nam.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Virtualization: VMware vSphere, Proxmox VE.
+- CI/CD và Automation: Jenkins, Ansible, Shell Scripting, Git.
+- Container: Docker Swarm.
+- Hệ điều hành: CentOS Stream.
+- Network và Load Balancing: HAProxy, SSH, NFS, Network Troubleshooting.
+- Monitoring: Zabbix.
+- Database: MariaDB.
+
+KỸ NĂNG MỀM
+
+- Có khả năng phối hợp với các bộ phận sử dụng hệ thống nội bộ để xác định và xử lý vấn đề phát sinh.
+- Chủ động kiểm tra, theo dõi tình trạng máy chủ trong quá trình vận hành.
+- Tiếng Anh B1, đọc hiểu tài liệu quản trị hệ thống và hướng dẫn kỹ thuật.
+
+KINH NGHIỆM LÀM VIỆC
+
+DevOps Engineer – Công ty Giải pháp Hạ tầng Thành Nam
+10/2024 – 10/2026 (2 năm)
+
+- Quản lý các máy chủ ảo hóa trên VMware vSphere và hỗ trợ vận hành Proxmox VE cho hệ thống nội bộ của khách hàng.
+- Duy trì Jenkins pipeline để tự động hóa quá trình build và triển khai các ứng dụng doanh nghiệp.
+- Sử dụng Ansible và Shell Scripting để thực hiện cấu hình máy chủ, giảm thao tác thủ công trong quá trình quản trị.
+- Thiết lập Zabbix theo dõi tài nguyên máy chủ, hỗ trợ phát hiện sớm những vấn đề trong quá trình vận hành.
+
+System & DevOps Engineer – Công ty Sản xuất Phú Hưng
+10/2022 – 10/2024 (2 năm)
+
+- Vận hành máy chủ CentOS Stream, quản lý kết nối SSH và chia sẻ dữ liệu qua NFS.
+- Cấu hình HAProxy cho các ứng dụng quản trị nội bộ, hỗ trợ phân phối lưu lượng giữa các dịch vụ.
+- Tham gia triễn khai ứng dụng bằng Docker Swarm và quản lý source code với Git.
+- Kiểm tra kết nối mạng, xử lý lỗi truy cập dịch vụ và hỗ trợ vận hành MariaDB.
+
+DỰ ÁN
+
+Hệ thống triển khai ứng dụng nội bộ cho doanh nghiệp sản xuất
+
+Tham gia xây dựng quy trình triển khai ứng dụng bằng Jenkins kết hợp Ansible và Docker Swarm. Hệ thống được vận hành trên hạ tầng on-premise, sử dụng Zabbix để giám sát máy chủ và HAProxy để hỗ trợ phân phối truy cập. Công việc tập trung vào duy trì hoạt động ổn định và đơn giản hóa thao tác triển khai định kì.

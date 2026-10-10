@@ -1,0 +1,55 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 2 năm kinh nghiệm làm frontend development, trong đó 8 tháng đầu làm web với React.js và 16 tháng tiếp theo chuyển sang React Native. Tôi muốn tiếp tục phát triển mobile applications bằng JavaScript và TypeScript, tập trung vào UI development, state management và API integration. Mục tiêu là nâng cao khả năng xây dựng ứng dụng có cấu trúc rõ ràng, dễ bảo trì và đáp ứng nhu cầu sử dụng thực tế.
+
+HỌC VẤN
+
+Cử nhân Hệ thống thông tin
+Trường đại học công lập
+Đã tốt nghiệp
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Programming Languages: JavaScript ES6+, TypeScript.
+- Mobile Development: React Native, Expo.
+- React Ecosystem: React Hooks, React.js.
+- State Management: Redux Toolkit.
+- Navigation: React Navigation, Deep Linking cơ bản.
+- API Integration: Axios, RESTful API.
+- Testing: Jest cơ bản.
+- Tools: Git, Figma, Firebase Analytics.
+
+KỸ NĂNG MỀM
+
+- Có khả năng chuyển đổi từ web development sang mobile development.
+- Phối hợp với nhóm kỹ thuật trong quá trình xây dựng và cập nhật chức năng.
+- English: Đọc hiểu tài liệu khá, có thể giao tiếp trong technical team.
+
+KINH NGHIỆM LÀM VIỆC
+
+React Native Developer
+Công ty TNHH Công nghệ Đặt lịch Việt
+06/2025 – 09/2026 (16 tháng)
+
+- Phát triển giao diện mobile application cho dịch vụ đặt lịch bằng React Native và TypeScript.
+- Sử dụng React Hooks và Redux Toolkit để quản lý trạng thái trong các chức năng của ứng dụng.
+- Tích hợp RESTful API thông qua Axios để kết nối dữ liệu giữa ứng dụng và hệ thống.
+- Làm việc với React Navigation để xây dựng luồng chuyển màn hình, sử dụng Expo trong quá trình development.
+
+Frontend Developer
+Công ty TNHH Giải pháp Web Đông Á
+10/2024 – 05/2025 (8 tháng)
+
+- Tham gia phát triển giao diện web bằng React.js và JavaScript ES6+.
+- Sử dụng React Hooks để xử lý trạng thái và cập nhật nội dung trên giao diện.
+- Làm việc với RESTful API trong các chức năng cần lấy và hiển thị dữ liệu từ hệ thống.
+
+DỰ ÁN
+
+Ứng dụng đặt lịch dịch vụ trên di động
+
+Tech stack: React Native, TypeScript, Expo, Redux Toolkit, React Navigation, Axios.
+
+Tham gia mobile development cho ứng dụng thuộc lĩnh vực dịch vụ đặt lịch. Tôi phụ trách những phần giao diện được phân công, quản lý trạng thái và tích hợp API.
+
+Dự án giúp tôi chuyển những kinh nghiệm từ React.js sang React Native, đồng thời làm quen sâu hơn với cách tổ chức navigation và data flow trên ứng dụng di động.

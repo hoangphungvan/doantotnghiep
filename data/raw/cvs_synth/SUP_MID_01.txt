@@ -1,0 +1,47 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có 3 năm 7 tháng kinh nghiệm làm việc trong lĩnh vực hỗ trợ kỹ thuật, bắt đầu từ bảo trì máy in và thiết bị văn phòng, sau đó chuyển sang IT Support tại doanh nghiệp. Trong quá trình làm việc, tôi đã tích lũy kinh nghiệm xử lý sự cố thiết bị, hỗ trợ mạng nội bộ, quản lý lưu trữ và sao lưu dữ liệu. Tôi muốn tiếp tục phát triển theo hướng IT Support kết hợp vận hành hạ tầng CNTT, đặc biệt trong môi trường sản xuất và logistics.
+
+HỌC VẤN
+
+Tốt nghiệp Cao đẳng ngành Điện tử - Viễn thông tại trường cao đẳng kỹ thuật.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Bảo trì máy in mạng, máy photocopy đa chức năng và xử lý các lỗi thiết bị văn phòng thường gặp.
+- Cấu hình Windows Print Server phục vụ việc sử dụng máy in trong mạng nội bộ.
+- Quản lý switch Cisco Small Business và cấu hình VLAN cơ bản.
+- Cấu hình DHCP, firewall cơ bản trên MikroTik RouterOS.
+- Giám sát trạng thái thiết bị thông qua Zabbix.
+- Thực hiện sao lưu dữ liệu bằng Veeam Backup và quản lý lưu trữ NAS.
+- Quản lý yêu cầu hỗ trợ bằng ManageEngine ServiceDesk Plus.
+- Kiểm tra cáp mạng, cổng kết nối và tình trạng thiết bị.
+
+KỸ NĂNG MỀM
+
+- Chủ động lập kế hoạch và theo dõi hoạt động bảo trì định kỳ.
+- Ghi chép, tổng hợp và báo cáo sự cố kỹ thuật.
+- Phối hợp với nhà cung cấp dịch vụ mạng khi xử lý sự cố.
+- Quản lý linh kiện và thiết bị thay thế.
+- Đọc hiểu tài liệu kỹ thuật tiếng Anh khá.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Dịch vụ Thiết bị Văn phòng Tân Phúc
+Kỹ thuật viên bảo trì thiết bị
+03/2023 - 10/2024 (1 năm 7 tháng)
+
+- Thực hiện kiểm tra, sửa chữa và bảo trì máy in mạng, máy photocopy đa chức năng cho khách hàng doanh nghiệp.
+- Xử lý các lỗi in ấn, kiểm tra cáp và cổng kết nối nhằm khôi phục hoạt động của thiết bị.
+- Theo dõi lịch bảo trì và quản lý linh kiện thay thế, giúp việc chuẩn bị vật tư và xử lý yêu cầu kỹ thuật thuận tiện hơn.
+
+Công ty TNHH Logistics và Sản xuất Đông Hải
+IT Support
+10/2024 - 10/2026 (2 năm)
+
+- Phụ trách hỗ trợ thiết bị CNTT và mạng nội bộ, quản lý switch Cisco Small Business, cấu hình VLAN và thực hiện một số cấu hình DHCP, firewall trên MikroTik.
+- Quản lý Windows Print Server, hệ thống lưu trữ NAS và thực hiện sao lưu bằng Veeam Backup theo nhu cầu vận hành.
+- Theo dõi trạng thái thiết bị bằng Zabbix, ghi nhận và xử lý yêu cầu qua ManageEngine ServiceDesk Plus.
+- Phối hợp với nhà cung cấp mạng để kiểm tra sự cố kết nối, lập báo cáo kỹ thuật và lên kế hoạch bảo trì thiết bị định kỳ.
+
+Qua hai môi trường làm việc, tôi đã chuyển dần từ xử lý thiết bị đơn lẻ sang hỗ trợ nhiều thành phần trong hệ thống CNTT doanh nghiệp, với trọng tâm là duy trì hoạt động ổn định và giảm gián đoạn cho người sử dụng.

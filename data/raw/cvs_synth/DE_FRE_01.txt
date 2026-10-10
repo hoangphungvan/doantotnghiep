@@ -1,0 +1,43 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi mong muốn phát triển sự nghiệp trong lĩnh vực Data Engineering, tập trung vào xử lý và quản lý dữ liệu phục vụ hoạt động kinh doanh. Sau 6 tháng thực tập tại doanh nghiệp thương mại điện tử, tôi đã có kinh nghiệm thực tế với SQL, Python và quy trình làm sạch dữ liệu bán hàng. Mục tiêu trước mắt là nâng cao khả năng xây dựng ETL Pipeline và xử lý dữ liệu hiệu quả, từng bước đảm nhận các công việc kỹ thuật có độ phức tạp cao hơn.
+
+HỌC VẤN
+
+Trình độ: Đại học
+Chuyên ngành: Hệ thống thông tin
+Trường: Đại học công lập chuyên ngành Công nghệ thông tin
+
+Được đào tạo kiến thức nền tảng về hệ thống thông tin, cơ sở dữ liệu và xử lý dữ liệu.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Ngôn ngữ: Python, SQL.
+- Cơ sở dữ liệu: PostgreSQL, viết truy vấn SQL phục vụ khai thác dữ liệu.
+- Xử lý dữ liệu: Pandas, Data Cleaning, Data Transformation, ETL cơ bản.
+- Phân tích và báo cáo: Excel, Power BI, Metabase.
+- Công cụ hỗ trợ: Git, Jupyter Notebook, Linux cơ bản.
+- Ngoại ngữ: Tiếng Anh B1, đọc hiểu tài liệu kỹ thuật khá, giao tiếp cơ bản.
+
+KỸ NĂNG MỀM
+
+- Phối hợp với các thành viên trong nhóm để xử lý dữ liệu phục vụ báo cáo.
+- Trao đổi yêu cầu liên quan đến dữ liệu và kết quả xử lý trong công việc.
+- Chủ động tìm hiểu tài liệu kỹ thuật tiếng Anh khi thực hiện nhiệm vụ.
+
+KINH NGHIỆM LÀM VIỆC
+
+Data Intern
+Công ty TNHH Thương mại Điện tử Minh Phát – Hà Nội
+Thời gian: 6 tháng
+
+- Sử dụng Python và Pandas để làm sạch dữ liệu bán hàng, xử lý các giá trị thiếu và chuẩn hóa dữ liệu trước khi phân tích.
+- Viết truy vấn SQL trên PostgreSQL để truy xuất thông tin đơn hàng, sản phẩm và dữ liệu phục vụ tổng hợp doanh thu.
+- Tham gia các bước ETL cơ bản, thực hiện Data Transformation để chuẩn bị dữ liệu cho hoạt động phân tích.
+- Hỗ trợ xây dựng báo cáo bằng Excel và Power BI, giúp nhóm kinh doanh theo dõi thông tin bán hàng từ dữ liệu đã được xử lý.
+
+DỰ ÁN
+
+Xử lý dữ liệu và hỗ trợ báo cáo bán hàng
+
+Tham gia chuẩn bị dữ liệu bán hàng tại doanh nghiệp thương mại điện tử. Công việc tập trung vào Data Cleaning, truy vấn SQL và tổng hợp dữ liệu phục vụ báo cáo. Kết quả là các tập dữ liệu được chuẩn hóa để sử dụng trong quá trình phân tích doanh thu.

@@ -1,0 +1,47 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp ngành Quản trị kinh doanh và từng làm việc trong lĩnh vực chăm sóc khách hàng trước khi chuyển sang kiểm thử phần mềm. Sau khi hoàn thành khóa đào tạo kiểm thử ngắn hạn, tôi đã có khoảng 1,8 năm kinh nghiệm QA, chủ yếu tham gia kiểm thử các hệ thống CRM phục vụ dịch vụ khách hàng và bán lẻ.
+
+Nhờ có nền tảng làm việc trực tiếp với nghiệp vụ khách hàng, tôi có khả năng tiếp cận các chức năng phần mềm từ góc nhìn người sử dụng. Tôi mong muốn tiếp tục phát triển trong lĩnh vực Functional Testing và User Acceptance Testing, tập trung vào việc kiểm tra tính chính xác của các quy trình nghiệp vụ và trải nghiệm sử dụng hệ thống.
+
+HỌC VẤN
+
+Trình độ: Đại học
+Chuyên ngành: Quản trị kinh doanh
+Trường: Đại học công lập
+
+Đào tạo bổ sung: Hoàn thành khóa đào tạo kiểm thử phần mềm ngắn hạn trước khi chuyển sang làm việc trong lĩnh vực QA.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Functional Testing: Kiểm tra các chức năng phần mềm theo yêu cầu nghiệp vụ.
+- User Acceptance Testing (UAT): Tham gia kiểm thử theo góc nhìn người dùng nghiệp vụ.
+- Business Requirement Analysis: Có khả năng phân tích yêu cầu ở mức cơ bản.
+- Test Case Design: Thiết kế trường hợp kiểm thử dựa trên chức năng cần kiểm tra.
+- Defect Tracking: Theo dõi lỗi phát sinh trong quá trình kiểm thử.
+- CRM Workflow Testing: Kiểm tra các luồng nghiệp vụ trên hệ thống CRM.
+- Azure DevOps Boards: Sử dụng để quản lý và theo dõi công việc kiểm thử.
+- Azure Test Plans: Sử dụng trong quá trình tổ chức kiểm thử.
+- Microsoft SQL Server: Có kiến thức và khả năng thao tác cơ bản.
+- Microsoft Excel nâng cao: Sử dụng để chuẩn bị, tổng hợp thông tin kiểm thử.
+- Test Data Preparation và Customer Journey Analysis.
+
+KỸ NĂNG MỀM
+
+- Giao tiếp với người dùng nghiệp vụ để làm rõ các vấn đề liên quan đến quá trình sử dụng hệ thống.
+- Có khả năng nhìn nhận quy trình CRM từ kinh nghiệm thực tế trong lĩnh vực chăm sóc khách hàng.
+- Tiếng Anh B1, có thể giao tiếp nghiệp vụ cơ bản.
+
+KINH NGHIỆM LÀM VIỆC
+
+Functional Tester
+Công ty TNHH Giải pháp Khách hàng Việt Tín
+Thời gian: Khoảng 1 năm 10 tháng
+Lĩnh vực: CRM, dịch vụ khách hàng và bán lẻ
+
+- Thực hiện Functional Testing cho các chức năng của hệ thống CRM, tập trung kiểm tra luồng xử lý nghiệp vụ và đối chiếu với yêu cầu sử dụng thực tế.
+- Thiết kế Test Case, chuẩn bị Test Data và ghi nhận kết quả kiểm thử; sử dụng Azure DevOps Boards để theo dõi các lỗi phát hiện trong quá trình làm việc.
+- Tham gia UAT, trao đổi với người dùng nghiệp vụ để xác định những vấn đề ảnh hưởng đến quá trình sử dụng hệ thống.
+- Vận dụng kiến thức Customer Journey Analysis và kinh nghiệm chăm sóc khách hàng để kiểm tra tính phù hợp của các luồng CRM, ghi nhận những điểm cần được xem xét điều chỉnh.
+
+Trong thời gian làm QA, tôi đã có cơ hội kết hợp kiến thức kiểm thử phần mềm với hiểu biết về hoạt động chăm sóc khách hàng. Đây là nền tảng giúp tôi tiếp cận các bài toán Functional Testing gắn với quy trình nghiệp vụ thực tế.

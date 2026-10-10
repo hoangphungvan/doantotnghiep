@@ -1,0 +1,47 @@
+MỤC TIÊU NGHỀ NGHIỆP
+Tôi có hơn 7 năm kinh nghiệm phân tích dữ liệu sản phẩm, tập trung vào hành vi người dùng, retention và hiệu quả các thay đổi sản phẩm. Mong muốn tiếp tục phát triển chuyên môn Product Analytics, Experiment Design và xây dựng hệ thống KPI hỗ trợ quyết định phát triển sản phẩm dựa trên dữ liệu.
+
+HỌC VẤN
+Thạc sĩ Thống kê ứng dụng
+Cử nhân Toán ứng dụng - Đại học công lập
+
+KỸ NĂNG CHUYÊN MÔN
+- Google BigQuery, Advanced SQL.
+- Python pandas, Python SciPy.
+- Looker, Google Analytics 4, Mixpanel.
+- Product Analytics.
+- A/B Testing, Experiment Design.
+- Retention and Cohort Analysis.
+- Product KPI Framework Design.
+- Git.
+
+KỸ NĂNG MỀM
+- Data Storytelling: Trình bày kết quả phân tích theo mục tiêu sản phẩm.
+- Stakeholder Management: Làm việc với các bên liên quan trong quá trình nghiên cứu dữ liệu.
+- Mentoring Junior Analysts: Hướng dẫn và hỗ trợ nhóm phân tích 3 người.
+- Tiếng Anh C1, có thể trình bày kết quả phân tích và làm việc với đối tác quốc tế.
+
+KINH NGHIỆM LÀM VIỆC
+Công ty Công nghệ Nền tảng Minh Phát
+Senior Product Data Analyst
+01/2023 - 10/2026 (3 năm 9 tháng)
+
+- Chủ trì phân tích hành vi người dùng và thiết kế các nghiên cứu đánh giá hiệu quả sản phẩm trên nền tảng dịch vụ trực tuyến.
+- Thiết kế và phân tích A/B Testing bằng Advanced SQL, Python pandas và SciPy, cung cấp kết quả thử nghiệm phục vụ quyết định cải tiến sản phẩm.
+- Xây dựng Product KPI Framework và dashboard Looker để theo dõi retention, cohort và các chỉ số sử dụng sản phẩm.
+- Hướng dẫn nhóm 3 Data Analyst, phối hợp với các bên liên quan và trình bày kết quả nghiên cứu bằng Data Storytelling.
+
+Công ty Thương mại Điện tử Hưng Thịnh
+Data Analyst
+08/2019 - 01/2023 (3 năm 5 tháng)
+
+- Phân tích hành vi người dùng và dữ liệu thương mại điện tử bằng SQL và Python pandas.
+- Sử dụng Google Analytics 4, Mixpanel và BigQuery để nghiên cứu các chỉ số hoạt động sản phẩm.
+- Thực hiện Retention and Cohort Analysis, tổng hợp kết quả thành báo cáo phục vụ đánh giá hành vi khách hàng.
+
+DỰ ÁN
+Phân tích retention và thử nghiệm cải tiến sản phẩm
+
+- Xây dựng bộ chỉ số đánh giá hoạt động người dùng và phân tích retention theo cohort.
+- Thiết kế các thử nghiệm A/B Testing, phân tích kết quả bằng phương pháp thống kê.
+- Trực quan hóa dữ liệu bằng Looker, cung cấp cơ sở đánh giá hiệu quả các thay đổi sản phẩm cho các bên liên quan.

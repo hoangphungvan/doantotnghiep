@@ -1,0 +1,39 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi tốt nghiệp Cao đẳng ngành Công nghệ thông tin và có 5 tháng thực tập tại bộ phận IT của doanh nghiệp thương mại điện tử. Mong muốn tiếp tục phát triển trong lĩnh vực IT Helpdesk, tập trung vào xử lý sự cố máy tính, hỗ trợ người dùng và bảo trì thiết bị văn phòng. Mục tiêu trước mắt là nâng cao khả năng chẩn đoán lỗi và xử lý yêu cầu hỗ trợ độc lập.
+
+HỌC VẤN
+
+Cao đẳng kỹ thuật
+Ngành: Công nghệ thông tin
+Trình độ: Cao đẳng
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Cài đặt, cấu hình Windows 10/11 và xử lý lỗi Microsoft Office.
+- Chẩn đoán lỗi phần cứng máy tính cơ bản, cài đặt driver và thiết bị ngoại vi.
+- Cấu hình máy in USB và máy in chia sẻ qua mạng.
+- Kiểm tra kết nối LAN, địa chỉ IP và DNS cơ bản.
+- Hỗ trợ người dùng từ xa bằng AnyDesk.
+- Tiếp nhận, ghi nhận sự cố qua Google Forms.
+- Sử dụng Microsoft Excel để quản lý danh sách thiết bị.
+- Lắp ráp, vệ sinh máy tính và sao lưu dữ liệu người dùng.
+- Sử dụng PowerShell ở mức cơ bản.
+- Tiếng Anh: Đọc hiểu tài liệu kỹ thuật cơ bản.
+
+KỸ NĂNG MỀM
+
+- Giao tiếp và tiếp nhận yêu cầu hỗ trợ từ nhân viên văn phòng.
+- Phối hợp với kỹ thuật viên chính khi xử lý sự cố.
+- Ghi chép thông tin lỗi rõ ràng để thuận tiện theo dõi.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty TNHH Thương mại điện tử Minh Phát
+Vị trí: IT Support Intern
+Thời gian: 05/2026 - 09/2026 (5 tháng)
+
+- Hỗ trợ cài đặt Windows, driver, Microsoft Office và thiết bị ngoại vi cho máy tính nhân viên, giúp thiết bị hoạt động phục vụ công việc văn phòng.
+- Tiếp nhận các lỗi phần mềm, máy in và kết nối mạng; kiểm tra nguyên nhân ban đầu và phối hợp kỹ thuật viên chính để khắc phục.
+- Hỗ trợ nhân viên từ xa qua AnyDesk, ghi nhận yêu cầu bằng Google Forms để theo dõi quá trình xử lý.
+- Tham gia vệ sinh máy tính, sao lưu dữ liệu và cập nhật danh sách thiết bị bằng Excel.

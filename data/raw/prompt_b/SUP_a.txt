@@ -1,0 +1,171 @@
+Dựa trên các hồ sơ JSON bên dưới, hãy viết CV dạng văn bản thuần như một ứng viên Việt Nam thật sự tự viết. Mỗi hồ sơ viết thành một CV.
+
+Quy tắc:
+- Cấu trúc: THÔNG TIN LIÊN HỆ (tên hư cấu, email dạng ten@example.com, thành phố), MỤC TIÊU NGHỀ NGHIỆP, HỌC VẤN, KỸ NĂNG CHUYÊN MÔN, KỸ NĂNG MỀM, KINH NGHIỆM LÀM VIỆC (công ty hư cấu hoặc phổ biến, thời gian, 2-4 gạch đầu dòng mô tả việc làm có kết quả cụ thể), DỰ ÁN (nếu có), CHỨNG CHỈ (nếu có).
+- Độ dài 250-450 từ. Văn phong theo trường cv_style. Giữ thuật ngữ kỹ thuật bằng tiếng Anh như CV Việt Nam thật.
+- CHỈ dùng thông tin trong hồ sơ. Không bịa thêm kỹ năng ngoài core_skills và secondary_skills.
+- known_gaps: KHÔNG nhắc tới các kỹ năng này, cũng không viết "chưa biết".
+- Tổng thời gian các công việc phải khớp years_experience.
+- KHÔNG ghi CV phù hợp vị trí nào, không nhắc tới tin tuyển dụng, không thêm nhận xét của AI.
+
+Mỗi CV bắt đầu bằng đúng một dòng:
+=== CV: <profile_id> ===
+rồi tới nội dung CV. Không có lời dẫn hay kết luận.
+
+HỒ SƠ:
+[
+  {
+    "profile_id": "SUP_FRE_01",
+    "role_family": "IT Support",
+    "target_title": "IT Helpdesk Fresher",
+    "seniority": "Fresher",
+    "years_experience": 0.4,
+    "education": "Cao đẳng, ngành Công nghệ thông tin, trường cao đẳng kỹ thuật",
+    "core_skills": [
+      "Cài đặt và cấu hình Windows 10/11",
+      "Xử lý lỗi phần mềm Microsoft Office",
+      "Chẩn đoán lỗi phần cứng máy tính cơ bản",
+      "Cài đặt driver và thiết bị ngoại vi",
+      "Cấu hình máy in USB và máy in chia sẻ qua mạng",
+      "Kiểm tra kết nối LAN, IP và DNS cơ bản",
+      "Hỗ trợ người dùng từ xa bằng AnyDesk",
+      "Tiếp nhận và ghi nhận sự cố qua Google Forms"
+    ],
+    "secondary_skills": [
+      "Sử dụng Microsoft Excel để quản lý thiết bị",
+      "Lắp ráp và vệ sinh máy tính",
+      "Sao lưu dữ liệu người dùng",
+      "PowerShell cơ bản"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm quản trị Active Directory",
+      "Chưa từng quản lý hệ thống cloud",
+      "Chưa có chứng chỉ CNTT chuyên môn"
+    ],
+    "languages": [
+      "Tiếng Anh: đọc hiểu tài liệu kỹ thuật cơ bản"
+    ],
+    "industries": [
+      "Dịch vụ CNTT nội bộ",
+      "Thương mại điện tử"
+    ],
+    "career_note": "Đã thực tập 5 tháng tại bộ phận IT của doanh nghiệp thương mại điện tử, chủ yếu xử lý lỗi máy tính và hỗ trợ nhân viên văn phòng dưới sự hướng dẫn của kỹ thuật viên chính.",
+    "cv_style": "ngắn gọn"
+  },
+  {
+    "profile_id": "SUP_FRE_02",
+    "role_family": "IT Support",
+    "target_title": "Desktop Support Technician Fresher",
+    "seniority": "Fresher",
+    "years_experience": 0.7,
+    "education": "Đại học, ngành Kỹ thuật máy tính, trường đại học tư thục",
+    "core_skills": [
+      "Cài đặt Windows và Ubuntu Desktop",
+      "Triển khai hệ điều hành bằng Clonezilla",
+      "Kiểm tra lỗi RAM, SSD và nguồn máy tính",
+      "Cấu hình BIOS/UEFI và thứ tự khởi động",
+      "Hỗ trợ người dùng bằng TeamViewer",
+      "Cấu hình thiết bị NAS Synology cho chia sẻ tệp cơ bản",
+      "Kiểm tra kết nối Wi-Fi và thiết bị mạng văn phòng",
+      "Xử lý lỗi trình duyệt và ứng dụng văn phòng"
+    ],
+    "secondary_skills": [
+      "Sử dụng Hiren's BootCD PE",
+      "Tạo USB cài đặt hệ điều hành",
+      "Quản lý danh sách thiết bị bằng Google Sheets",
+      "Viết hướng dẫn xử lý sự cố đơn giản"
+    ],
+    "known_gaps": [
+      "Chưa vận hành hệ thống Windows Server thực tế",
+      "Chưa có kinh nghiệm quản lý ticket bằng công cụ chuyên dụng"
+    ],
+    "languages": [
+      "Tiếng Anh: đọc hiểu khá, giao tiếp cơ bản"
+    ],
+    "industries": [
+      "Giáo dục",
+      "Dịch vụ sửa chữa và bảo trì máy tính"
+    ],
+    "career_note": "Có 8 tháng kinh nghiệm thực tập và làm kỹ thuật viên bán thời gian tại trung tâm đào tạo, chủ yếu cài đặt phòng máy và bảo trì thiết bị đầu cuối.",
+    "cv_style": "có lỗi chính tả nhẹ"
+  },
+  {
+    "profile_id": "SUP_JUN_01",
+    "role_family": "IT Support",
+    "target_title": "IT Support Engineer",
+    "seniority": "Junior",
+    "years_experience": 1.5,
+    "education": "Đại học, ngành Mạng máy tính và Truyền thông dữ liệu, trường đại học công lập",
+    "core_skills": [
+      "Quản lý tài khoản người dùng trong Active Directory",
+      "Cấu hình Group Policy cơ bản",
+      "Hỗ trợ môi trường Windows Server 2019",
+      "Quản lý tài khoản Microsoft 365",
+      "Xử lý sự cố đăng nhập Outlook và Microsoft Teams",
+      "Cấu hình VPN WireGuard cho người dùng từ xa",
+      "Quản lý ticket bằng GLPI",
+      "Xử lý lỗi Remote Desktop Protocol",
+      "Kiểm tra sự cố DNS và DHCP"
+    ],
+    "secondary_skills": [
+      "Viết PowerShell script đơn giản",
+      "Quản lý tài sản CNTT",
+      "Cấu hình quyền truy cập thư mục dùng chung",
+      "Hướng dẫn nhân viên mới sử dụng hệ thống nội bộ"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm triển khai Microsoft Intune",
+      "Chưa xử lý các sự cố an ninh mạng phức tạp",
+      "Chưa có chứng chỉ Microsoft"
+    ],
+    "languages": [
+      "Tiếng Anh: đọc hiểu tốt, giao tiếp công việc cơ bản"
+    ],
+    "industries": [
+      "Dịch vụ phần mềm",
+      "Doanh nghiệp thương mại"
+    ],
+    "career_note": "Bắt đầu từ vị trí Helpdesk và sau 18 tháng được giao thêm nhiệm vụ quản lý tài khoản người dùng, phân quyền thư mục và hỗ trợ hệ thống Windows Server dưới sự giám sát của quản trị viên.",
+    "cv_style": "chuẩn"
+  },
+  {
+    "profile_id": "SUP_JUN_02",
+    "role_family": "IT Support",
+    "target_title": "IT Support Specialist",
+    "seniority": "Junior",
+    "years_experience": 1.8,
+    "education": "Cao đẳng, ngành Quản trị kinh doanh, trường cao đẳng kinh tế; hoàn thành khóa đào tạo nghề IT Support",
+    "core_skills": [
+      "Hỗ trợ phần mềm bán hàng KiotViet",
+      "Cấu hình máy POS tại cửa hàng",
+      "Xử lý sự cố máy quét mã vạch",
+      "Cài đặt máy in hóa đơn nhiệt",
+      "Khắc phục lỗi kết nối Wi-Fi cửa hàng",
+      "Cài đặt và cập nhật Windows trên máy bán hàng",
+      "Hỗ trợ từ xa bằng RustDesk",
+      "Tiếp nhận yêu cầu hỗ trợ qua Freshdesk",
+      "Quản lý tài khoản Google Workspace cơ bản"
+    ],
+    "secondary_skills": [
+      "Kiểm kê thiết bị CNTT tại chi nhánh",
+      "Đào tạo nhân viên sử dụng phần mềm bán hàng",
+      "Kiểm tra kết nối router và switch cơ bản",
+      "Viết tài liệu hướng dẫn thao tác",
+      "Phối hợp với nhà cung cấp thiết bị"
+    ],
+    "known_gaps": [
+      "Chưa có kinh nghiệm quản trị Windows Server",
+      "Chưa làm việc với hệ thống cloud infrastructure",
+      "Kiến thức scripting còn hạn chế"
+    ],
+    "languages": [
+      "Tiếng Anh: đọc hiểu tài liệu đơn giản, giao tiếp hạn chế"
+    ],
+    "industries": [
+      "Bán lẻ",
+      "Chuỗi cửa hàng tiện lợi"
+    ],
+    "career_note": "Chuyển từ công việc vận hành cửa hàng bán lẻ sang IT Support sau khóa đào tạo nghề, có 1,8 năm hỗ trợ thiết bị POS và phần mềm bán hàng cho các chi nhánh.",
+    "cv_style": "lẫn Anh-Việt"
+  }
+]

@@ -1,0 +1,60 @@
+MỤC TIÊU NGHỀ NGHIỆP
+
+Tôi có hơn 7 năm kinh nghiệm trong lĩnh vực Fintech, thanh toán điện tử và ngân hàng số, bắt đầu từ Business Analyst, sau đó phát triển lên Product Owner và Product Manager. Trong đó, hơn 4 năm trực tiếp tham gia quản lý sản phẩm thanh toán số, xây dựng định hướng phát triển và dẫn dắt nhóm Product. Mong muốn tiếp tục phát triển các sản phẩm tài chính số dựa trên dữ liệu người dùng, kết hợp mục tiêu kinh doanh với trải nghiệm sản phẩm, đồng thời xây dựng đội ngũ Product có khả năng thực thi hiệu quả.
+
+HỌC VẤN
+
+- Thạc sĩ Quản trị kinh doanh (MBA) - Trường đại học công lập.
+- Cử nhân Hệ thống thông tin quản lý - Trường đại học công lập.
+
+KỸ NĂNG CHUYÊN MÔN
+
+- Xây dựng Product Vision, Product Strategy và Product Roadmap theo mục tiêu kinh doanh.
+- Quản lý Product Lifecycle từ Discovery đến Delivery.
+- Xây dựng OKR, Product KPI và ưu tiên tính năng bằng RICE Framework.
+- Phân tích hành vi người dùng bằng Amplitude, theo dõi Product Funnel và Retention.
+- Thiết kế, triển khai đánh giá A/B Testing.
+- Sử dụng Productboard, Tableau, Miro và SQL trung cấp.
+- Phân tích Unit Economics ở mức cơ bản.
+- Quản lý Stakeholder và định hướng công việc cho nhóm Product Owner, Business Analyst.
+
+KỸ NĂNG MỀM
+
+- Lãnh đạo, huấn luyện và phát triển nhân sự Product.
+- Giao tiếp, trình bày và đàm phán với Stakeholder cấp quản lý.
+- Phối hợp giữa các phòng ban để thống nhất ưu tiên sản phẩm.
+- Phân tích và ra quyết định dựa trên dữ liệu sản phẩm.
+
+KINH NGHIỆM LÀM VIỆC
+
+Công ty Cổ phần Công nghệ Tài chính Đông Á
+Senior Product Manager | 06/2024 - 09/2026 (2 năm 4 tháng)
+
+- Xây dựng Product Vision, Product Strategy và Roadmap cho sản phẩm thanh toán số, liên kết các ưu tiên phát triển với mục tiêu kinh doanh.
+- Thiết lập OKR và Product KPI, sử dụng Amplitude để phân tích Funnel, Retention và đánh giá hiệu quả tính năng.
+- Áp dụng RICE Framework để ưu tiên phát triển sản phẩm, đồng thời thiết kế và đánh giá A/B Testing.
+- Dẫn dắt nhóm Product Owner và Business Analyst, phối hợp với các phòng ban và Stakeholder cấp quản lý trong quá trình triển khai chiến lược sản phẩm.
+
+Công ty Cổ phần Công nghệ Tài chính Đông Á
+Product Owner | 08/2022 - 05/2024 (1 năm 10 tháng)
+
+- Quản lý Product Lifecycle của các chức năng thanh toán điện tử, từ phân tích nhu cầu trong giai đoạn Discovery đến phối hợp Delivery.
+- Xây dựng và cập nhật Product Roadmap, quản lý các ưu tiên chức năng thông qua Productboard.
+- Phân tích Product Funnel, Retention và kết quả A/B Testing để hỗ trợ quyết định cải tiến sản phẩm.
+
+Công ty Cổ phần Giải pháp Ngân hàng Nam Việt
+Business Analyst | 08/2019 - 07/2022 (3 năm)
+
+- Tham gia phân tích nghiệp vụ cho các sản phẩm thuộc lĩnh vực ngân hàng số.
+- Phối hợp với các phòng ban trong việc làm rõ yêu cầu và mục tiêu phát triển sản phẩm tài chính.
+- Tham gia phân tích thông tin nghiệp vụ, làm nền tảng cho quá trình chuyển sang vai trò Product Owner.
+
+DỰ ÁN
+
+Phát triển sản phẩm thanh toán điện tử
+
+Tham gia quản lý và định hướng phát triển sản phẩm thanh toán số qua các giai đoạn Product Discovery và Delivery. Tập trung xây dựng Roadmap, theo dõi KPI, phân tích hành vi người dùng và phối hợp đội ngũ Product để triển khai các ưu tiên kinh doanh.
+
+NGOẠI NGỮ
+
+Tiếng Anh C1: Giao tiếp, thuyết trình và đàm phán trong môi trường quốc tế.
