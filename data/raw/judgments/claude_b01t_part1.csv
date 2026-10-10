@@ -1,0 +1,105 @@
+cv_id,jd_id,role_match,must_have_coverage_pct,cv_level,jd_level,seniority_gap,hard_requirement_missing,core_tech_missing,grade,reason
+Backend_MID_01,jd_0173,same,46,2,1,-1,0,1,1,Python backend/FastAPI/AI; CV có REST/SQL/Docker/Git/CI-CD; thiếu Python và ML
+Backend_MID_01,jd_0215,adjacent,57,2,2,0,0,0,1,Mobile Kotlin/Swift 4 năm; CV có REST/Git nhưng không có mobile
+Backend_MID_01,jd_0258,same,100,2,1,-1,0,0,3,Khớp .NET 2 năm/tiếng Anh/đọc nghiệp vụ bảo hiểm
+Backend_MID_01,jd_0278,same,65,2,1,-1,0,1,1,Python/Golang microservice; CV có REST/SQL/test/queue; thiếu Python-Golang/K8s/NoSQL
+Backend_MID_01,jd_0336,adjacent,25,2,2,0,0,1,1,Angular 4 năm; CV chỉ có Git/OOP
+Backend_MID_01,jd_0411,adjacent,25,2,2,0,0,1,1,Android Kotlin Compose; CV không có
+Backend_MID_01,jd_0564,adjacent,30,2,3,1,0,1,1,Salesforce 4 năm; CV có bằng CNTT nhưng không có Salesforce
+Backend_MID_01,jd_1526,same,88,2,1,-1,0,0,3,JD chấp nhận .NET: khớp ngôn ngữ/framework/2 năm; CSDL SQL Server gần Oracle-MySQL
+FE_FRE_01,jd_0008,same,29,0,1,1,0,0,1,Front End 2 năm; CV có HTML/CSS/JS/Bootstrap; thiếu kinh nghiệm/Vue/uni-app
+FE_FRE_01,jd_0150,adjacent,25,0,1,1,0,1,1,iOS Swift/ObjC; CV frontend React; có Git
+FE_FRE_01,jd_0173,adjacent,10,0,1,1,0,1,1,Python AI backend; CV chỉ có Git/REST
+FE_FRE_01,jd_0225,same,45,0,1,1,0,0,2,Khớp JS/React/Git/Figma cơ bản; thiếu TypeScript/Redux/Docker và 2 năm kinh nghiệm
+FE_FRE_01,jd_0250,same,100,0,0,0,0,0,3,Thực tập front-end: khớp sinh viên năm cuối/đam mê/học nhanh
+FE_FRE_01,jd_0336,same,5,0,2,2,0,1,1,Angular 4 năm RxJS/NgRx; CV React 0.4 năm
+FE_FRE_01,jd_0509,adjacent,60,0,1,1,0,1,1,Web PHP+Figma; CV có Figma/HTML/CSS/JS; thiếu PHP-MySQL
+FE_FRE_01,jd_1465,adjacent,43,0,0,0,0,0,1,Fullstack fresher; CV có frontend/OOP; thiếu ngôn ngữ backend/CSDL
+FS_JUN_01,jd_0008,adjacent,63,1,1,0,0,0,1,Front End 2 năm; CV có TS/HTML/CSS/Bootstrap; thiếu Vue/uni-app
+FS_JUN_01,jd_0150,adjacent,5,1,1,0,0,1,1,iOS Swift; CV web fullstack
+FS_JUN_01,jd_0225,adjacent,61,1,1,0,0,0,1,Frontend React/Redux; CV Angular/TS/Swagger; thiếu React và state management
+FS_JUN_01,jd_1228,same,43,1,2,1,0,1,1,Fullstack PHP/React 3 năm; CV C#/Angular; thiếu PHP/AWS/Linux
+FS_JUN_01,jd_1267,same,90,1,0,-1,0,0,3,Thực tập web: khớp web cơ bản/OOP/Git/dự án thật/tiếng Anh
+FS_JUN_01,jd_1323,same,25,1,1,0,0,1,1,Fullstack Java/Spring Boot/AWS; CV C#+Angular+SQL Server
+FS_JUN_01,jd_1465,same,85,1,0,-1,0,0,3,Fullstack fresher: khớp C#/TS/Angular/SQL/OOP/tiếng Anh
+FS_JUN_01,jd_1715,same,10,1,3,2,0,0,1,Fullstack Senior Node/React/blockchain; CV C#+Angular 1.4 năm
+MOB_SEN_01,jd_0034,same,85,3,3,0,0,0,3,Khớp Android Jetpack/MVVM/Clean/modularization/hiệu năng; thiếu JNI C++
+MOB_SEN_01,jd_0150,same,60,3,1,-2,0,1,1,iOS Swift/ObjC; CV Android native; có OOP/Git
+MOB_SEN_01,jd_0215,same,100,3,2,-1,0,0,3,Khớp mobile 4 năm/Kotlin/REST/UI/Git
+MOB_SEN_01,jd_0411,same,100,3,2,-1,0,0,3,Khớp Android Kotlin 3-5 năm/Compose/Coroutines/Flow
+MOB_SEN_01,jd_1551,adjacent,20,3,3,0,0,1,1,Front-end Angular 7 năm + team leader; CV Android
+MOB_SEN_01,jd_1715,adjacent,10,3,3,0,0,0,1,Fullstack Node/React/blockchain; CV Android
+MOB_SEN_01,jd_1770,same,100,3,2,-1,0,0,3,Khớp Android Kotlin 4 năm/MVVM/Clean/Compose/pattern
+MOB_SEN_01,jd_1876,adjacent,10,3,3,0,0,0,1,Fullstack Node/React/GCP/Kafka; CV Android
+DEVOPS_MID_02,jd_0018,same,65,2,1,-1,0,0,2,SRE junior: khớp Docker/Ansible/CI-CD/mạng; thiếu Kubernetes/Terraform (sát ngưỡng)
+DEVOPS_MID_02,jd_0149,same,65,2,1,-1,0,0,2,Vận hành DevOps: khớp Linux/Docker/Jenkins/Ansible; thiếu lập trình Java-Go và Terraform (sát ngưỡng)
+DEVOPS_MID_02,jd_0557,same,79,2,1,-1,0,0,3,Khớp DevOps 2 năm/multi-tier/Bash/Ansible/monitoring; thiếu cloud
+DEVOPS_MID_02,jd_0739,adjacent,5,2,3,1,0,1,1,Pentest 5 năm; CV là DevOps hạ tầng
+DEVOPS_MID_02,jd_0773,adjacent,10,2,3,1,0,0,1,Quản lý dịch vụ CNTT 7 năm ITSM/ServiceNow
+DEVOPS_MID_02,jd_0905,adjacent,29,2,1,-1,0,0,1,IT hỗ trợ Windows/phần cứng/camera; CV có LAN/WAN
+DEVOPS_MID_02,jd_1579,same,65,2,2,0,0,0,2,Khớp Docker Swarm/CI-CD/hệ thống; thiếu cloud/Kubernetes/vai trò senior (sát ngưỡng)
+DEVOPS_MID_02,jd_1741,same,90,2,0,-2,0,0,3,Fresher DevOps: khớp Docker/Jenkins/Ansible/CI-CD; CV vượt cấp
+SYS_JUN_01,jd_0018,adjacent,43,1,1,0,0,0,1,SRE: CV có Grafana/mạng/trực ca; thiếu Docker/K8s/Terraform/CI-CD
+SYS_JUN_01,jd_0106,same,15,1,2,1,0,0,1,Giải pháp/presales 3 năm; CV là NOC giám sát
+SYS_JUN_01,jd_0112,same,30,1,0,-1,0,1,1,VoIP/SIP/IP PBX; CV có mạng nhưng không có VoIP
+SYS_JUN_01,jd_0149,adjacent,15,1,1,0,0,1,1,Vận hành DevOps Linux/Docker/CI-CD; CV NOC
+SYS_JUN_01,jd_0557,adjacent,28,1,1,0,0,1,1,DevOps script/cloud/Ansible; CV chỉ có monitoring và mạng
+SYS_JUN_01,jd_0577,same,38,1,0,-1,0,0,1,Presales hạ tầng; CV có switch/router; thiếu server/Windows-Linux/ảo hóa
+SYS_JUN_01,jd_0647,same,31,1,3,2,0,0,1,Lãnh đạo vận hành hạ tầng 3 năm; CV NOC 1.5 năm chưa quản lý
+SYS_JUN_01,jd_1554,same,38,1,2,1,1,0,1,Giám sát hệ thống 3 năm; thiếu Microsoft System và tiếng Pháp bắt buộc
+SUP_FRE_02,jd_0018,adjacent,5,0,1,1,0,0,1,SRE junior Docker/K8s/Terraform; CV hỗ trợ kỹ thuật
+SUP_FRE_02,jd_0149,adjacent,10,0,1,1,0,1,1,Vận hành DevOps; CV hỗ trợ kỹ thuật
+SUP_FRE_02,jd_0612,same,95,0,1,1,0,0,3,Khớp phần cứng/phần mềm/mạng/công cụ điều khiển từ xa
+SUP_FRE_02,jd_0773,adjacent,5,0,3,3,0,0,1,Quản lý dịch vụ CNTT 7 năm ITSM/ServiceNow
+SUP_FRE_02,jd_0905,same,64,0,1,1,0,0,2,Khớp Windows/phần cứng/mạng văn phòng; thiếu 1 năm helpdesk/camera (sát ngưỡng)
+SUP_FRE_02,jd_1139,same,35,0,1,1,0,0,1,Vận hành phần mềm 24/7; CV thiếu CSDL/quản trị Windows Server
+SUP_FRE_02,jd_1390,same,30,0,1,1,1,0,1,Vận hành hệ thống CNTT; JD yêu cầu trường công lập/top 100 và 1 năm kinh nghiệm
+SUP_FRE_02,jd_1741,adjacent,37,0,0,0,0,1,1,Fresher DevOps Docker/K8s/Jenkins; CV chỉ có hỗ trợ kỹ thuật
+QA_MID_01,jd_0215,adjacent,10,2,2,0,0,0,1,Mobile 4 năm Kotlin/Swift; CV là automation tester
+QA_MID_01,jd_0336,adjacent,10,2,2,0,0,1,1,Angular 4 năm; CV chỉ có TS/JS để viết test
+QA_MID_01,jd_0411,adjacent,5,2,2,0,0,1,1,Android Kotlin Compose; CV không có
+QA_MID_01,jd_1126,same,44,2,3,1,0,0,2,QA Manager 5 năm: khớp PDLC/CI/công cụ; thiếu 3 năm quản lý/ISO-CMMI
+QA_MID_01,jd_1181,same,88,2,1,-1,0,0,3,Khớp tester 1 năm/test case/CNTT; API test chưa rõ
+QA_MID_01,jd_1194,same,61,2,1,-1,0,0,2,Khớp quy trình test/SQL/test case; thiếu API-SIT/Jira-TestRail/BPM
+QA_MID_01,jd_1505,same,65,2,1,-1,0,0,2,Manual test ngân hàng: khớp quy trình/test case/công cụ; thiếu nghiệp vụ ngân hàng và mô hình BPM-use case
+QA_MID_01,jd_1861,same,94,2,1,-1,0,0,3,Khớp tester 1 năm/SDLC/phân tích yêu cầu/báo cáo
+DA_JUN_02,jd_0151,same,45,1,2,1,0,0,2,Có Power BI/tư duy chi tiết; thiếu Python/SQL mạnh/thống kê/3 năm
+DA_JUN_02,jd_1159,same,47,1,1,0,0,0,2,Có Power BI/Power Query/SQL cơ bản; thiếu data modeling/DW/Python
+DA_JUN_02,jd_1220,same,95,1,0,-1,0,0,3,Khớp Sheets/Excel nâng cao/báo cáo/tỉ mỉ
+DA_JUN_02,jd_1301,adjacent,10,1,1,0,0,0,1,Big Data Hadoop/Spark/Scala; CV báo cáo BI
+DA_JUN_02,jd_1368,same,50,1,3,2,0,0,1,Phân tích dữ liệu lãnh đạo 5 năm Azure/Databricks; CV 1.9 năm Power BI/SQL cơ bản
+DA_JUN_02,jd_1516,adjacent,5,1,1,0,0,0,1,Data Engineer Hadoop/ETL/ngân hàng; CV báo cáo BI
+DA_JUN_02,jd_1708,same,65,1,2,1,0,0,2,Phân tích nghiệp vụ tài chính: khớp công cụ/tư duy/trực quan; thiếu 3-5 năm và quản trị dữ liệu (sát ngưỡng)
+DA_JUN_02,jd_1785,adjacent,12,1,0,-1,1,0,1,AI intern: yêu cầu sinh viên CNTT/Python/ML; CV không có
+DE_SEN_01,jd_0151,adjacent,36,3,2,-1,0,0,1,Data analyst game: CV có SQL qua Trino; thiếu Python/viz/thống kê
+DE_SEN_01,jd_0836,same,65,3,3,0,0,0,2,Khớp lakehouse/Kafka/Spark/Airflow/ngân hàng/CI-CD; thiếu API-RDBMS-NoSQL và nhiều công cụ ETL (sát ngưỡng)
+DE_SEN_01,jd_1301,same,95,3,1,-2,0,0,3,Khớp Spark/Hadoop/Scala/batch-stream/CSDL
+DE_SEN_01,jd_1368,adjacent,38,3,3,0,0,0,1,Phân tích dữ liệu lãnh đạo Power BI/Azure; CV là data engineer
+DE_SEN_01,jd_1514,same,80,3,0,-3,1,0,2,Intern AI: yêu cầu chung khớp; CV senior không còn là sinh viên năm 4
+DE_SEN_01,jd_1516,same,76,3,1,-2,0,0,3,Khớp Hadoop/Spark/data lake/ngân hàng; thiếu Oracle-Netezza và công cụ ETL
+DE_SEN_01,jd_1708,adjacent,35,3,2,-1,0,0,1,Phân tích nghiệp vụ tài chính 3-5 năm; CV là data engineer
+DE_SEN_01,jd_1785,same,25,3,0,-3,1,1,1,AI Engineer intern: yêu cầu sinh viên/Python/LLM/ML; CV data engineer
+BA_FRE_01,jd_0214,same,63,0,1,1,0,0,2,Khớp bằng HTTT/BPMN/Draw.io/viết tài liệu; thiếu 1-3 năm và nghiệp vụ ngân hàng
+BA_FRE_01,jd_0267,same,90,0,0,0,0,0,3,BA intern: khớp giao tiếp/tư duy logic/định hướng BA
+BA_FRE_01,jd_0713,adjacent,5,0,3,3,0,0,1,Agile Coach 5 năm
+BA_FRE_01,jd_1064,adjacent,25,0,2,2,0,0,1,Product growth 3-5 năm SQL/Looker/GA4; CV BA intern
+BA_FRE_01,jd_1247,same,36,0,2,2,0,0,1,BA 3 năm mô hình hóa/URD/SRS; CV 5 tháng thực tập
+BA_FRE_01,jd_1496,adjacent,10,0,2,2,0,0,1,PM 3-5 năm; CV BA intern
+BA_FRE_01,jd_1544,same,45,0,2,2,0,0,1,BA 4 năm khu vực công/ERP; CV có bằng HTTT và BPMN cơ bản
+BA_FRE_01,jd_1637,same,5,0,3,3,0,0,1,BA ngân hàng Card 5 năm
+PM_MID_01,jd_0214,adjacent,42,2,1,-1,0,0,1,BA 1-3 năm; CV có tài liệu/giao tiếp; thiếu BA/ngân hàng/Visio-Jira
+PM_MID_01,jd_1064,adjacent,38,2,2,0,0,0,1,Product growth 3-5 năm; CV là project manager
+PM_MID_01,jd_1247,adjacent,15,2,2,0,0,0,1,BA 3 năm mô hình hóa/URD/SRS; CV là PM
+PM_MID_01,jd_1496,same,95,2,2,0,0,0,3,Khớp PM IT 3-5 năm/Agile-Waterfall/giao tiếp/quản lý người
+PM_MID_01,jd_1544,adjacent,20,2,2,0,0,0,1,BA 4 năm khu vực công; CV là PM
+PM_MID_01,jd_1619,same,25,2,3,1,0,0,1,Giám đốc dự án startup mobile; CV PM outsourcing quy mô vừa
+PM_MID_01,jd_1644,different,80,2,1,-1,0,0,1,Chuyển đổi số: CV khớp triển khai/hệ thống/giao tiếp nhưng khác vai trò
+PM_MID_01,jd_1693,adjacent,42,2,1,-1,0,1,1,BA SAP HR; CV chưa có SAP/nhân sự
+DES_JUN_01,jd_0115,adjacent,15,1,2,1,0,1,1,2D Anim/VFX 3 năm Unity; CV không có
+DES_JUN_01,jd_0809,same,54,1,1,0,0,0,2,Khớp bằng/thiết kế 1.6 năm/sáng tạo; thiếu Illustrator-Photoshop-AE
+DES_JUN_01,jd_0821,same,63,1,1,0,0,0,2,Khớp thiết kế digital/thẩm mỹ/teamwork; thiếu in ấn và Adobe
+DES_JUN_01,jd_0852,same,10,1,3,2,0,0,1,Thiết kế đồ họa 5-8 năm Adobe+3D; CV 1.6 năm UI/UX
+DES_JUN_01,jd_0914,adjacent,5,1,1,0,0,1,1,Trực quan hóa 3D kiến trúc 3Ds Max/V-ray
+DES_JUN_01,jd_0967,same,62,1,1,0,0,0,2,Khớp bằng/kinh nghiệm/bố cục; thiếu in ấn và Adobe
+DES_JUN_01,jd_1007,same,50,1,1,0,0,0,2,Khớp bằng/kinh nghiệm/sáng tạo; thiếu Adobe suite
+DES_JUN_01,jd_1235,adjacent,33,1,1,0,0,0,1,Game designer 1 năm; CV có tư duy logic nhưng chưa có dự án game
