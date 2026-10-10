@@ -4,7 +4,7 @@
 
 1. **Vai trò**: *cùng nhóm* (vd Backend với Backend) / *liền kề* (cùng khối nghề: Backend-Frontend-Fullstack-Mobile-QA; DevOps-Sysadmin-IT Support; Data Analyst-Data Engineer; BA-PM; UI/UX-đồ họa) / *khác khối*.
 2. **Độ phủ yêu cầu bắt buộc** của JD (bỏ qua ý "ưu tiên/là lợi thế"): *cao* ≥ 70% · *vừa* 40–69% · *thấp* < 40%. Sát ngưỡng thì chọn phía thấp. Chỉ tính kỹ năng CV có bằng chứng.
-3. **Lệch cấp độ**: Fresher (<1 năm) · Junior (1–2) · Middle (3–4) · Senior (≥5). Lệch nếu JD cao hơn CV từ 2 cấp, hoặc CV cao hơn JD từ 3 cấp.
+3. **Lệch cấp độ**: Fresher (<1 năm) · Junior (1–2) · Middle (3–4) · Senior (≥5). **Chỉ tính là lệch khi JD cao hơn CV từ 2 cấp** (CV thiếu kinh nghiệm). CV cao hơn JD (thừa kinh nghiệm) **không bị hạ điểm**: nhãn đo năng lực làm được việc, không đoán khả năng ứng viên bỏ đi.
 4. **Điều kiện cứng** JD ghi bắt buộc mà CV không có (bằng cấp, chứng chỉ, ngoại ngữ, ...), và **công nghệ trong tiêu đề JD** mà CV hoàn toàn không có.
 
 | Vai trò | Độ phủ | Điểm |
@@ -81,7 +81,7 @@ Kỹ năng chuyên môn: Figma, Miro, Balsamiq
 Yêu cầu: Tối thiểu 2-3 năm kinh nghiệm làm BA, ưu tiên trong các dự án liên quan đến e-commerce. Có kinh nghiệm thực tế về UX/UI, đã từng thiết kế flow, wireframe, mockup, prototype (ưu tiên có sản phẩm thực tế đã triển khai). Thành thạo các công cụ hỗ trợ: Figma, Miro, Balsamiq, hoặc tương đương. Kỹ năng giao tiếp, phân tích và trình bày tốt. Hiểu biết về quy trình phát triển phần mềm (Agile/Scrum). Có khả năng làm việc độc lập và phối hợp nhóm tốt.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___0
 
 ### `SUP_FRE_02` ↔ `jd_0112`
 
@@ -93,7 +93,7 @@ Kỹ năng chuyên môn: Triển khai và vận hành hệ thống VOIP (Asteris
 Yêu cầu: Tốt nghiệp Cao đẳng/Đại học chuyên ngành CNTT, Viễn thông, Điện tử hoặc các lĩnh vực liên quan. Có kinh nghiệm triển khai và vận hành hệ thống VOIP (Asterisk, FreePbx, FreeSWITCH, Kamailio, OpenSIPS, 3CX). Am hiểu giao thức SIP, RTP, WebRTC, STUN/TURN/ICE, NAT Traversal. Hiểu về hệ thống tổng đài IP PBX, SIP Trunking, DID, Call Routing, IVR. Kinh nghiệm làm việc với Linux (Ubuntu, CentOS) và networking (firewall, NAT, VPN, VLAN). Có khả năng lập trình/scripting bằng Bash, Python, hoặc Lua để tự động hóa các tác vụ VOIP là lợi thế. Kinh nghiệm làm việc với các giải pháp cloud-based VOIP như Twilio, Plivo, Amazon, Connect là một điểm cộng.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___1
 
 ### `SUP_FRE_02` ↔ `jd_0066`
 
@@ -105,7 +105,7 @@ Kỹ năng chuyên môn: Khắc phục sự cố phần cứng, Khắc phục s�
 Yêu cầu: Tuổi từ 25t. Tốt nghiệp trung cấp trở lên. Có thể di chuyển nhiều địa điểm. Trung thực, nhiệt tình, có trách nhiệm, chịu được áp lực trong công việc.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
 
 ### `SUP_FRE_02` ↔ `jd_0084`
 
@@ -117,7 +117,7 @@ Kỹ năng chuyên môn: Khắc Phục Sự Cố Phần Cứng, Phần Mềm, Ki
 Yêu cầu: Tuổi từ 25t. Tốt nghiệp trung cấp trở lên. Có thể di chuyển nhiều địa điểm. Trung thực, nhiệt tình, có trách nhiệm, chịu được áp lực trong công việc.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
 
 ## CV `BA_FRE_01`
 
@@ -178,7 +178,7 @@ Kỹ năng chuyên môn: PHP, Laravel, MySQL, PostgreSQL, MongoDB, HTML, CSS, Ja
 Yêu cầu: Tối thiểu 2 năm kinh nghiệm làm việc với PHP, đặc biệt là Laravel Framework. Hiểu biết sâu về các kiến trúc RESTful API và cách triển khai chúng. Kinh nghiệm làm việc với hệ quản trị cơ sở dữ liệu (MySQL, PostgreSQL, hoặc MongoDB). Thành thạo HTML, CSS, JavaScript (ưu tiên có kinh nghiệm làm việc với các framework như Vue.js, ReactJS, React Native là điểm cộng). Hiểu biết về các công cụ quản lý mã nguồn như Git. Có khả năng phân tích, xử lý vấn đề và làm việc độc lập hoặc theo nhóm. Kỹ năng giao tiếp tốt, sẵn sàng học hỏi và tiếp thu công nghệ mới.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___1
 
 ### `BA_FRE_01` ↔ `jd_1309`
 
@@ -190,7 +190,7 @@ Kỹ năng chuyên môn: Quản trị dự án, Agile, Scrum, Công cụ quản 
 Yêu cầu: Tốt nghiệp Đại học loại Khá trở lên, ưu tiên chuyên ngành CNTT, Kỹ thuật phần mềm, An toàn thông tin và ngành có liên quan. Tiếng Anh tương đương 550+ TOEIC. Có kinh nghiệm ít nhất 02 năm ở vị trí quản lý dự án công nghệ thông tin hoặc các dự án tương tự (PM). Ưu tiên các ứng viên có chứng chỉ PMP hoặc Scrum Master. Có kinh nghiệm quản trị các dự án theo nhiều mô hình khác nhau như Agile, Waterfall. Có kinh nghiệm Scrum Master tốt, định hướng tìm hiểu sâu về Scrum. Thành thạo các công cụ quản trị dự án và kiểm soát rủi ro. Có trách nhiệm cao và thái độ tốt trong công việc. Có khả năng làm việc độc lập hoặc làm việc theo nhóm tốt. Kỹ năng giao tiếp và trình bày tốt. Làm việc dưới áp lực cao, nhạy bén và tiếp thu nhanh. Ưu tiên ứng viên có thể đi làm ngay hoặc có thể xem xét nhận việc sau tế
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___2
 
 ### `BA_FRE_01` ↔ `jd_0595`
 
@@ -202,7 +202,7 @@ Kỹ năng chuyên môn: PHP, Java, Kotlin, Swift
 Yêu cầu: Kinh nghiệm: Từ 3 năm kinh nghiệm quản lý dự án, có khả năng quản lý team 5-10 người. Năng lực chuyên môn, chứng chỉ: Tốt nghiệp Đại học, Cao đẳng chuyên ngành Công nghệ thông tin hoặc các chuyên ngành có liên quan. Có kinh nghiệm lập trình ít nhất một trong các ngôn ngữ: PHP (ưu tiên), Java, Kotlin, Swift. Nắm vững quy trình phát triển sản phẩm phần mềm. Có kinh nghiệm thiết kế hệ thống phần mềm. Có khả năng giao tiếp/ kinh nghiệm làm việc và đề xuất giải pháp cho khách hàng. Ưu tiên ứng viên sở hữu các chứng chỉ quản lý dự án như: PMP, PMI-ACP, PSM... Có hiểu biết và kinh nghiệm thực tế trong việc quản lý dự án theo phương pháp Agile/Scrum. Có khả năng phân tích và đánh giá rủi ro trong dự án. Yêu cầu khác: Có kỹ năng lãnh đạo và giải quyết vấn đề. Có tư duy phát triển, tư duy sản phẩm. 
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___2
 
 ## CV `Backend_MID_01`
 
@@ -263,7 +263,7 @@ Kỹ năng chuyên môn: Excel: Thành thạo power query, power pivot, hiểu b
 Yêu cầu: 1. Tốt nghiệp Đại học trở lên các chuyên ngành Tài chính/ Kế toán và các chuyên ngành liên quan dữ liệu. 2. Có ít nhất 4 năm kinh nghiệm làm Data Analyst các công ty, tập đoàn có kho dữ liệu lớn. (Ưu tiên kinh nghiệm quản lý dữ liệu đa nguồn (dữ liệu sản xuất, kinh doanh, tài chính) 3. Kiến thức tư duy và nền tảng về Tài chính và Kế toán.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___1
 
 ### `Backend_MID_01` ↔ `jd_0442`
 
@@ -275,7 +275,7 @@ Kỹ năng chuyên môn: Sitecore CMS, C#, ASP.NET MVC/Web API, SQL Server, HTML
 Yêu cầu: Từ 3–5 năm kinh nghiệm phát triển .NET, trong đó tối thiểu 2–3 năm làm việc thực tế với Sitecore. Thành thạo: Sitecore CMS: templates, components, layouts, personalization, item architecture. Ngôn ngữ & công nghệ: C#, ASP.NET MVC/Web API, SQL Server, HTML/CSS/JS. Có hiểu biết về: Tích hợp hệ thống: RESTful APIs, JSON/XML. CI/CD pipelines (Git, Azure DevOps, Jenkins). Cơ bản về DevOps / hosting / cloud environments (Azure/AWS là lợi thế).
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___2
 
 ## CV `FS_JUN_01`
 
@@ -336,7 +336,7 @@ Kỹ năng chuyên môn: Alphacam, AutoCAD 2D, AutoCAD 3D, Inventor
 Yêu cầu: Ưu tiên có 1–2 năm lập trình CNC trong sản xuất gỗ; Sử dụng thành thạo phần mềm Alphacam; AutoCAD 2D, 3D hoặc Inventor; Am hiểu tốt kĩ thuật vận hành các máy CNC (ưu tiên ngành gỗ); Tốt nghiệp Trung cấp trở lên các chuyên ngành liên quan: Kĩ nghệ gỗ, Công nghệ chế biến lâm sản, Điều khiển - tự động hóa, Cơ khí chế tạo,…
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___0
 
 ### `FS_JUN_01` ↔ `jd_0153`
 
@@ -348,7 +348,7 @@ Kỹ năng chuyên môn: Java, Spring Boot, Hibernate, RESTful APIs, Microservic
 Yêu cầu: Tối thiểu 2 năm kinh nghiệm phát triển ứng dụng Java Spring Boot. Thành thạo lập trình Java, có kinh nghiệm với Spring Boot, Hibernate. Hiểu biết về RESTful APIs và kinh nghiệm phát triển microservice. Hiểu biết về CSDL như Oracle, MySQL... Có kinh nghiệm với hệ thống version control (Git) và quy trình phát triển Agile. Sử dụng thành thạo với ít nhất 1 công cụ test API, vd: Postman.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___2
 
 ### `FS_JUN_01` ↔ `jd_0562`
 
@@ -360,7 +360,7 @@ Kỹ năng chuyên môn: 3ds Max, Blender, Keyshot
 Yêu cầu: Độ tuổi: sinh năm 1997 – 2002. Tối thiểu 2 năm trong lĩnh vực thiết kế 3D sản phẩm. Ưu tiên đã từng tham gia các dự án làm mockup, prototype sản phẩm thật. Sử dụng thành thạo 3ds Max, Blender, Keyshot và các công cụ hỗ trợ khác. Khả năng mỹ thuật tốt, tính năng động, có tư duy sáng tạo logic, tư duy làm việc độc lập và đội nhóm. Thành thạo tiếng anh (Tối thiểu toiec 550).
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___0
 
 ### `FS_JUN_01` ↔ `jd_0294`
 
@@ -372,7 +372,7 @@ Kỹ năng chuyên môn: PHP, Laravel, HTML, CSS, Javascript, jQuery, Bootstrap,
 Yêu cầu: Yêu cầu trên 1 năm kinh nghiệm trở lên ở vị trí tương đương. Thành thạo ngôn ngữ lập trình PHP, có kinh nghiệm sâu một trong các framework như Laravel. Thành thạo HTML/CSS/Javascript/jQuery. Thành thạo ít nhất 1 library/framework để phát triển front-end: Bootstrap, Angular, VueJS, ReactJS,v.v... Thành thạo việc xây dựng và sử dụng web service (XML, JSON). Có kinh nghiệm về API Restful. Có kinh nghiệm sử dụng ít nhất 1 hệ quản trị cơ sở dữ liệu MySQL, Postgresql, Oracle, Microsoft SQL Server, MongoDB. Có kinh nghiệm quản lý dự án, có khả năng làm việc độc lập, làm việc theo đội/nhóm. có khả năng lập kế hoạch trong công việc. Nắm vững các kiến thức về Github. Có kinh nghiệm triển khai phần mềm theo kiến trúc micro-services. Giao tiếp tốt, nhiệt huyết, có trách nhiệm với công việc.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
 
 ### `FS_JUN_01` ↔ `jd_1163`
 
@@ -384,7 +384,7 @@ Kỹ năng chuyên môn: SQL, noSQL, Jira, Git, Java core, SpringBoot, Microserv
 Yêu cầu: Tốt nghiệp đại học trở lên chuyên ngành CNTT hoặc các ngành tương đương. Trường hợp không đáp ứng, yêu cầu cung cấp Chứng chỉ về CNTT được cấp bởi các tổ chức uy tín. Kinh nghiệm làm việc thực tế tại các công ty, dự án về vị trí phát triển phần mềm. Có kiến thức về quy trình phát triển phần mềm. Có kinh nghiệm làm việc về cơ sở dữ liệu: SQL. Có kinh nghiệm làm việc về cơ sở dữ liệu: noSQL. Có hiểu biết cơ bản về việc sử dụng các công cụ quản trị trong phát triển phần mềm: Jira, Git… Có hiểu biết về về Java core và SpringBoot. Có kinh nghiệm triển khai ứng dụng theo dạng Cloud Native: Microservice, CICD, Containerization... Có kinh nghiệm về framework và thư viện: Angula JS,React JS… Ưu tiên nhân sự có kinh nghiệm về các hệ thống Message Queue. Ưu tiên nhân sự có hiểu biết về xử lý cache, j
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___2
 
 ## CV `DA_JUN_02`
 
@@ -455,7 +455,7 @@ Kỹ năng chuyên môn: Python, Java, C++
 Yêu cầu: Học chuyên ngành Công nghệ thông tin hoặc các chuyên ngành liên quan. Sinh viên năm thứ 4 và có thể đi làm fulltime. Yêu thích ngành CNTT và chịu được áp lực trong công việc.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___0
 
 ### `DA_JUN_02` ↔ `jd_1626`
 
@@ -467,7 +467,7 @@ Kỹ năng chuyên môn: Figma, Miro, Balsamiq
 Yêu cầu: Tối thiểu 2-3 năm kinh nghiệm làm BA, ưu tiên trong các dự án liên quan đến e-commerce. Có kinh nghiệm thực tế về UX/UI, đã từng thiết kế flow, wireframe, mockup, prototype (ưu tiên có sản phẩm thực tế đã triển khai). Thành thạo các công cụ hỗ trợ: Figma, Miro, Balsamiq, hoặc tương đương. Kỹ năng giao tiếp, phân tích và trình bày tốt. Hiểu biết về quy trình phát triển phần mềm (Agile/Scrum). Có khả năng làm việc độc lập và phối hợp nhóm tốt.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___1
 
 ### `DA_JUN_02` ↔ `jd_0274`
 
@@ -479,7 +479,7 @@ Kỹ năng chuyên môn: SQL, BigQuery, Metabase, Google Sheets, Python, R
 Yêu cầu: Tốt nghiệp Đại học chuyên ngành Phân tích dữ liệu, Hệ thống thông tin, Toán thống kê, Kinh tế, hoặc các ngành liên quan. Tối thiểu 2 năm kinh nghiệm trong phân tích dữ liệu, xây dựng hệ thống báo cáo. Thành thạo SQL và các công cụ phân tích như BigQuery, Metabase, Google Sheets, Python hoặc R là lợi thế. Có kinh nghiệm làm việc với Data Warehouse, Data-mart và luồng ETL. Hiểu biết tốt về thử nghiệm A/B, causal inference, mô hình đánh giá hiệu quả. Có khả năng trình bày, trực quan hóa dữ liệu rõ ràng, dễ hiểu. Kỹ năng quản lý tài liệu, chia sẻ tri thức và truyền đạt quy trình một cách logic, dễ tiếp cận. Có tư duy hệ thống, chú ý chi tiết và tinh thần cải tiến liên tục. Chủ động, có khả năng phối hợp đa phòng ban và quản lý nhiều dự án cùng lúc. Thành thạo tiếng Anh là một lợi thế.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___2
 
 ## CV `QA_MID_01`
 
@@ -552,7 +552,7 @@ Yêu cầu: • Có các kiến thức cơ bản về Kiểm thử phần mềm
 • Có khả năng làm việc sâu, chi tiết, cẩn thận, tỷ mỉ.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
 
 ### `QA_MID_01` ↔ `jd_1836`
 
@@ -564,7 +564,7 @@ Kỹ năng chuyên môn: Kiến thức tổng quan về hệ thống CNTT, Dịc
 Yêu cầu: Tốt nghiệp chuyên ngành CNTT hoặc có chứng chỉ tương đương. Có 3 năm kinh nghiệm trong lĩnh vực kiểm thử phần mềm website và mobile app. ĐÃ LÀM trong các dự án liên quan đến tài chính, banking, ví điện tử, cổng thanh toán, … Có kiến thức tổng quan về hệ thống CNTT, dịch vụ CNTT, hiểu biết về CSDL – SQL. Có hiểu biết về các giai đoạn phát triển của sản phẩm. Có khả năng làm việc với cường độ cao, khả năng nghiên cứu tốt, có khả năng làm độc lập và làm việc theo nhóm. Yêu thích công việc, ham học hỏi, có tinh thần trách nhiệm cao, tỉ mỉ, cẩn thận. Ưu tiên ứng viên có kinh nghiệm làm Automation Test (API, Web, Mobile, Performance, Security …). Ưu tiên có kinh nghiệm lập kế hoạch kiểm thử, tổng hợp vấn đề chất lượng dự án và đưa ra đề xuất cải tiến. Có kinh nghiệm với Agile, Scrum là lợi thế.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
 
 ### `QA_MID_01` ↔ `jd_1162`
 
@@ -576,7 +576,7 @@ Kỹ năng chuyên môn: Python, Fast API, SlqAlchemy, JPA, Alembic, Flyway, Kub
 Yêu cầu: 3+ years of experience in Python development. Bachelor's degree. Proficiency in Python frameworks such as Fast API. Experience in working with ORM such as SlqAlchemy, JPA. Experience working with DB Configuration Management such as Alembic, Flyway. Experience in debugging in Kubernetes, Docker/Container, Cloud (AWS) environment. Experience in AWS Cognito/AWS S3/AWS SES/AWS Lambda. Strong problem-solving and analytical skills. Good communication skills and the ability to work in a team environment.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___0
 
 ### `QA_MID_01` ↔ `jd_1163`
 
@@ -588,7 +588,7 @@ Kỹ năng chuyên môn: SQL, noSQL, Jira, Git, Java core, SpringBoot, Microserv
 Yêu cầu: Tốt nghiệp đại học trở lên chuyên ngành CNTT hoặc các ngành tương đương. Trường hợp không đáp ứng, yêu cầu cung cấp Chứng chỉ về CNTT được cấp bởi các tổ chức uy tín. Kinh nghiệm làm việc thực tế tại các công ty, dự án về vị trí phát triển phần mềm. Có kiến thức về quy trình phát triển phần mềm. Có kinh nghiệm làm việc về cơ sở dữ liệu: SQL. Có kinh nghiệm làm việc về cơ sở dữ liệu: noSQL. Có hiểu biết cơ bản về việc sử dụng các công cụ quản trị trong phát triển phần mềm: Jira, Git… Có hiểu biết về về Java core và SpringBoot. Có kinh nghiệm triển khai ứng dụng theo dạng Cloud Native: Microservice, CICD, Containerization... Có kinh nghiệm về framework và thư viện: Angula JS,React JS… Ưu tiên nhân sự có kinh nghiệm về các hệ thống Message Queue. Ưu tiên nhân sự có hiểu biết về xử lý cache, j
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___1
 
 ### `QA_MID_01` ↔ `jd_0246`
 
@@ -603,7 +603,7 @@ Yêu cầu: • Tốt nghiệp đại học, cao đẳng hoặc tương đương
 • Có thái độ hòa nhã, thân thiện, chân thành.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
 
 ## CV `PM_MID_01`
 
@@ -666,7 +666,7 @@ Kỹ năng chuyên môn: docker, k8s, gitlab cicd, jenkins, argocd, Agile
 Yêu cầu: ● Các ứng viên có nền tảng technical tốt muốn đi lên quản lý. ● Có kinh nghiệm trong việc thiết kế kiến trúc hệ thống, mô hình HA, microservice, docker, k8s, gitlab cicd, jenkins, argocd. ● Tiếng anh ở mức khá, có thể đọc hiểu tài liệu. ● Đã làm quen với Agile, chứng chỉ PMP/PSC1 là 1 điểm cộng. ● Có kinh nghiệm sử dụng các tool quản lý dự án: Jira, MS Project, Google Sheet, v.v. ● Nhanh nhẹn, hoạt bát.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
 
 ### `PM_MID_01` ↔ `jd_0490`
 
@@ -678,7 +678,7 @@ Kỹ năng chuyên môn: Lập trình CNC, Phần mềm CAM (Mastercam), Gia cô
 Yêu cầu: Tốt nghiệp Cao đẳng/ Đại học chuyên ngành Cơ khí, chế tạo máy hoặc các ngành nghề liên quan. Có từ 3 năm kinh nghiệm lập trình CNC, vận hành máy CNC. Nắm vững các phần mềm CAM (Mastercam) và các kỹ thuật lập trình gia công CNC. Có kiến thức về gia công cơ khí, vật liệu, công nghệ gia công. Nắm vững các quy trình an toàn lao động trong vận hành máy CNC. Có khả năng đọc hiểu bản vẽ kỹ thuật, phân tích yêu cầu kỹ thuật. Có khả năng làm việc độc lập và làm việc nhóm, chịu được áp lực công việc. Có tinh thần trách nhiệm cao, cẩn thận, tỉ mỉ, ham học hỏi.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___0
 
 ### `PM_MID_01` ↔ `jd_0595`
 
@@ -690,7 +690,7 @@ Kỹ năng chuyên môn: PHP, Java, Kotlin, Swift
 Yêu cầu: Kinh nghiệm: Từ 3 năm kinh nghiệm quản lý dự án, có khả năng quản lý team 5-10 người. Năng lực chuyên môn, chứng chỉ: Tốt nghiệp Đại học, Cao đẳng chuyên ngành Công nghệ thông tin hoặc các chuyên ngành có liên quan. Có kinh nghiệm lập trình ít nhất một trong các ngôn ngữ: PHP (ưu tiên), Java, Kotlin, Swift. Nắm vững quy trình phát triển sản phẩm phần mềm. Có kinh nghiệm thiết kế hệ thống phần mềm. Có khả năng giao tiếp/ kinh nghiệm làm việc và đề xuất giải pháp cho khách hàng. Ưu tiên ứng viên sở hữu các chứng chỉ quản lý dự án như: PMP, PMI-ACP, PSM... Có hiểu biết và kinh nghiệm thực tế trong việc quản lý dự án theo phương pháp Agile/Scrum. Có khả năng phân tích và đánh giá rủi ro trong dự án. Yêu cầu khác: Có kỹ năng lãnh đạo và giải quyết vấn đề. Có tư duy phát triển, tư duy sản phẩm. 
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
 
 ### `PM_MID_01` ↔ `jd_1309`
 
@@ -702,7 +702,7 @@ Kỹ năng chuyên môn: Quản trị dự án, Agile, Scrum, Công cụ quản 
 Yêu cầu: Tốt nghiệp Đại học loại Khá trở lên, ưu tiên chuyên ngành CNTT, Kỹ thuật phần mềm, An toàn thông tin và ngành có liên quan. Tiếng Anh tương đương 550+ TOEIC. Có kinh nghiệm ít nhất 02 năm ở vị trí quản lý dự án công nghệ thông tin hoặc các dự án tương tự (PM). Ưu tiên các ứng viên có chứng chỉ PMP hoặc Scrum Master. Có kinh nghiệm quản trị các dự án theo nhiều mô hình khác nhau như Agile, Waterfall. Có kinh nghiệm Scrum Master tốt, định hướng tìm hiểu sâu về Scrum. Thành thạo các công cụ quản trị dự án và kiểm soát rủi ro. Có trách nhiệm cao và thái độ tốt trong công việc. Có khả năng làm việc độc lập hoặc làm việc theo nhóm tốt. Kỹ năng giao tiếp và trình bày tốt. Làm việc dưới áp lực cao, nhạy bén và tiếp thu nhanh. Ưu tiên ứng viên có thể đi làm ngay hoặc có thể xem xét nhận việc sau tế
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
 
 ### `PM_MID_01` ↔ `jd_0317`
 
@@ -714,7 +714,7 @@ Kỹ năng chuyên môn: Quản lý dự án theo phương pháp Agile, Kiến t
 Yêu cầu: Giao tiếp tiếng Anh tốt, tương đương IELTS 6.0 trở lên. Ưu tiên có kinh nghiệm quản lý dự án theo phương pháp Agile hoặc Scrum. Ưu tiên có kiến thức cơ bản về lập trình, phân tích & thiết kế hệ thống, cấu trúc dữ liệu và giải thuật. Ưu tiên có hiểu biết về một trong các ngôn ngữ lập trình phổ biến như Java, PHP, .NET, và các hệ quản trị cơ sở dữ liệu như Oracle, SQL Server, MySQL, MariaDB. Có kỹ năng lập kế hoạch, giải quyết vấn đề và quản lý công việc tốt; linh hoạt xử lý tình huống. Kỹ năng giao tiếp, làm việc nhóm tốt; chịu được áp lực công việc; có tinh thần trách nhiệm cao; chủ động và sáng tạo. Có kinh nghiệm làm việc trong các dự án thương mại điện tử là một lợi thế.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
 
 ## CV `SYS_JUN_01`
 
@@ -774,7 +774,7 @@ Kỹ năng chuyên môn: Alphacam, AutoCAD 2D, AutoCAD 3D, Inventor
 Yêu cầu: Ưu tiên có 1–2 năm lập trình CNC trong sản xuất gỗ; Sử dụng thành thạo phần mềm Alphacam; AutoCAD 2D, 3D hoặc Inventor; Am hiểu tốt kĩ thuật vận hành các máy CNC (ưu tiên ngành gỗ); Tốt nghiệp Trung cấp trở lên các chuyên ngành liên quan: Kĩ nghệ gỗ, Công nghệ chế biến lâm sản, Điều khiển - tự động hóa, Cơ khí chế tạo,…
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___0
 
 ### `SYS_JUN_01` ↔ `jd_0612`
 
@@ -786,7 +786,7 @@ Kỹ năng chuyên môn: Kiến thức cơ bản về phần cứng, Phần mề
 Yêu cầu: Tốt nghiệp Trung cấp/Cao đẳng/Đại học chuyên ngành Công nghệ thông tin, Kỹ thuật máy tính hoặc liên quan. Có kiến thức cơ bản về phần cứng, phần mềm, mạng máy tính. Biết sử dụng các công cụ điều khiển từ xa và phần mềm hỗ trợ IT. Trung thực, cẩn thận, có tinh thần trách nhiệm. Ưu tiên có kinh nghiệm ở vị trí tương đương.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___2
 
 ### `SYS_JUN_01` ↔ `jd_1720`
 
@@ -798,7 +798,7 @@ Kỹ năng chuyên môn: Linux, Windows, Routing, Switching, Network Security
 Yêu cầu: Tốt nghiệp đại học ngành Công nghệ Thông tin hoặc Điện tử Viễn thông hoặc chuyên ngành khác có liên quan. Có kiến thức tốt về Linux, Windows, Routing, Switching, và Network Security. Có kinh nghiệm 1-2 năm về thiết kế, triển khai mạng doanh nghiệp, hoặc có kinh nghiệm vận hành hệ thống mạng, hệ thống hạ tầng CNTT. Hiểu biết các giao thức và công cụ để quản lý, giám sát và phân tích mạng. Ưu tiên có các chứng chỉ CCNA, CCNP, CompTIA Security+, CEH, hoặc tương đương. Ưu tiên có kinh nghiệm triển khai các sản phẩm Security: Firewall, WAF, DBFW, PAM, DLP, SIEM. Có khả năng nghiên cứu công nghệ, sản phẩm và giải pháp mới ứng dụng cho công việc. Có kỹ năng giao tiếp, thuyết trình và viết các tài liệu kỹ thuật.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
 
 ## CV `DE_SEN_01`
 
@@ -865,7 +865,7 @@ Kỹ năng chuyên môn: Core Banking, Card service systems, OLTP software syste
 Yêu cầu: Educational Qualifications: A bachelor's in computer science or related field. Relevant Knowledge/ Expertise: Minimum of +5 years hands on experience with at least one of the following Banking system (Core Banking, Card,...). Have experience and expert knowledge in Card service systems or relating. Have strong experience in design solution for Card Products and/or Card services. Have strong experience in solution design for OLTP software system in microservices architecture and/or strong experience in Relational database (MS SQL, MySQL, Postgre, Oracle,..). Understand Banking knowledge (priority for Card businesses). Have experience with ISO messages and International Card Policies (Visa. MasterCard,...). Have experience data flow as well as processes of ATM, CDM, POS,... An understanding 
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
 
 ### `DE_SEN_01` ↔ `jd_0296`
 
@@ -877,7 +877,7 @@ Kỹ năng chuyên môn: Python, Java, Scala, Go, Javascript, Typescript, R, SQL
 Yêu cầu: Tốt nghiệp đại học chuyên ngành Khoa học Máy tính, Kỹ thuật Phần mềm hoặc Hệ thống Thông tin. Có chuyên môn về khoa học dữ liệu hoặc bằng cấp cao hơn là một lợi thế lớn. Tối thiểu 4 năm kinh nghiệm trong vai trò kỹ sư dữ liệu, xây dựng nền tảng và pipeline phục vụ phân tích. Thành thạo Python và ít nhất một ngôn ngữ lập trình khác như Java, Scala, Go, Javascript, Typescript, R là một điểm cộng lớn. Thành thạo SQL trên các hệ quản trị cơ sở dữ liệu (DBMS). Có kinh nghiệm với các dịch vụ đám mây như GCP, AWS. Có kinh nghiệm làm việc với nhiều hệ cơ sở dữ liệu OLTP và OLAP như MongoDB, PostgreSQL, BigQuery, ClickHouse,... Có kinh nghiệm với các nền tảng và khái niệm xử lý dữ liệu streaming như Redpanda, Kafka, RabbitMQ, CDC hoặc mã nguồn mở khác. Có kinh nghiệm với các công cụ quản lý pipelin
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
 
 ### `DE_SEN_01` ↔ `jd_1896`
 
@@ -889,7 +889,7 @@ Kỹ năng chuyên môn: Spark, Python, AWS, Databricks, ETL, Big Data
 Yêu cầu: Tối thiểu 2 năm kinh nghiệm làm việc ở vị trí Data Engineer mạnh về spark. Có kinh nghiệm với Python (trên 1 năm), viết mã sạch, dễ bảo trì. Tư duy logic tốt, giải quyết vấn đề hiệu quả. Có kinh nghiệm sử dụng Spark để xử lý dữ liệu lớn (trên 1 năm). Am hiểu cấu trúc dữ liệu, thuật toán lập trình. Có kinh nghiệm xây dựng ETL trên nền tảng Cloud. Ưu tiên ứng viên từng làm việc với AWS hoặc Databricks.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
 
 ## CV `FE_FRE_01`
 
@@ -960,7 +960,7 @@ Yêu cầu: - Ưu tiên cho người có kinh nghiệm giảng dạy, COACHING
 - Rèn luyện các kỹ năng mềm: kỹ năng giao tiếp, thuyết trình, làm việc nhóm tốt.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___0
 
 ## CV `DEVOPS_MID_02`
 
@@ -1024,7 +1024,7 @@ Kỹ năng chuyên môn: Hệ thống mạng (LAN, WAN, VPN), Giao thức mạng
 Yêu cầu: Tốt nghiệp chuyên ngành Công nghệ thông tin, Mạng máy tính, Khoa học máy tính hoặc các ngành có chứng chỉ liên quan. Kinh nghiệm làm việc từ 2 năm trong việc helpdesk và quản lý hệ thống mạng. Am hiểu về hệ thống mạng (LAN, WAN, VPN) và các giao thức mạng như TCP/IP, DNS, DHCP. Kỹ năng quản trị hệ thống và máy chủ (Windows Server, Linux). Có hiểu biết và kinh nghiệm triển khai các hệ thống quản lý IT (Helpdesk, quản lý tài sản, theo dõi hệ thống,…). Kiến thức về bảo mật hệ thống (Firewall, Antivirus, IDS/IPS). Thành thạo việc giám sát, bảo trì và tối ưu hiệu suất hệ thống. Có kinh nghiệm về quản lý các dịch vụ của Microsoft 365. Ưu tiên ứng viên có kinh nghiệm xây dựng ứng dụng trong Power Apps của Microsoft. Không ngừng học hỏi, nâng cao kiến thức để có những chiến lược nâng cấp hệ thống 
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___1
 
 ## CV `MOB_SEN_01`
 
@@ -1102,7 +1102,7 @@ Kỹ năng chuyên môn: ReactJS, NextJS, NodeJS, React Native, Flutter, AWS (EC
 Yêu cầu: Tối thiểu 5 năm kinh nghiệm phát triển phần mềm, đặc biệt với ReactJS, NextJS, NodeJS. Tối thiểu 5 năm kinh nghiệm phát triển phần mềm, trong đó có kinh nghiệm vững với React Native và/hoặc Flutter. Thành thạo trong việc thiết kế và phát triển ứng dụng di động đa nền tảng (iOS & Android) sử dụng React Native hoặc Flutter. Có kinh nghiệm triển khai và vận hành hệ thống trên AWS (EC2, S3, Lambda, RDS, API Gateway). Có kinh nghiệm triển khai ứng dụng lên App Store và Google Play. Hiểu rõ về kiến trúc ứng dụng di động, quản lý trạng thái, hiệu năng và các nguyên tắc bảo mật trong ứng dụng fintech. Ưu tiên ứng viên có kinh nghiệm tích hợp API tài chính, dữ liệu đầu tư hoặc danh mục người dùng. Hiểu biết về API tài chính/đầu tư và các nguyên tắc bảo mật trong lĩnh vực fintech là một lợi thế.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___2
 
 ### `MOB_SEN_01` ↔ `jd_1257`
 
@@ -1114,7 +1114,7 @@ Kỹ năng chuyên môn: Dart, Flutter Framework, Git, REST APIs, State Manageme
 Yêu cầu: A degree in computer science, software engineering, information technology or related fields. At least 4 years of experience in app development. Having knowledge of Agile and Scrum project management and why it is necessary. Understanding of commonly used design patterns, like MVC, Repository, DI… UX/UI design exposure and experience in making apps work intuitively and with pixel perfect interfaces. Experience in CI/CD frameworks for mobile applications. Familiarity with RESTful APIs to connect applications to back-end services. Knowledge of UI/UX standards, especially Material Design. Be able to write concise, well-documented (or self-documenting) code. You are highly accountable and take ownership. You also have a collaborative attitude. Good at speaking English.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
 
 ### `MOB_SEN_01` ↔ `jd_0282`
 
@@ -1126,7 +1126,7 @@ Kỹ năng chuyên môn: Flutter, React Native
 Yêu cầu: Tốt nghiệp đại học chuyên ngành Công nghệ thông tin hoặc các chuyên ngành khác am hiểu lập trình; Có kỹ năng lập trình Mobile bằng Flutter; React Native hoặc tương đương; Có khả năng phân tích, sáng tạo, chịu áp lực công việc, có tinh thần học hỏi, tận tâm trong công việc; Đã có kinh nghiệm chủ trì hoặc tham gia phát triển ứng dụng Mobibe tối thiểu 1 năm; Làm việc ổn định tại Hà Nội.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
 
 ## CV `DES_JUN_01`
 
@@ -1188,4 +1188,4 @@ Kỹ năng chuyên môn: Thiết kế đồ họa (Photoshop, Illustrator), Quay
 Yêu cầu: Tốt nghiệp từ Cao đẳng. Tối thiểu 01 năm kinh nghiệm ở vị trí tương đương. Có trách nhiệm trong công việc. Năng động, nhiệt tình, sáng tạo.
 ```
 
-Điểm của bạn: ___
+Điểm của bạn: ___3
