@@ -1,4 +1,4 @@
-# Hướng dẫn tạo và gán nhãn dữ liệu CV–JD (rubric v1.1)
+# Hướng dẫn tạo và gán nhãn dữ liệu CV–JD (rubric v1.2)
 
 Mục tiêu: có bộ cặp CV–JD với nhãn 0–3 tái lập được, đủ bằng chứng để bảo vệ trước hội đồng.
 
@@ -6,7 +6,14 @@ Mục tiêu: có bộ cặp CV–JD với nhãn 0–3 tái lập được, đủ
 1. Thêm đặc trưng `core_tech_missing` và quy tắc hạ một mức (mục 1.1 và 1.3).
 2. Khi ước lượng độ phủ rơi vào 65–74%, ghi 65 (mục 1.1), để không "đẩy" cặp lên mức cao khi đang phân vân.
 3. Bắt buộc đọc đầy đủ phần "Yêu cầu" của JD trước khi chấm (không chấm theo tiêu đề).
-Nhãn của đợt thí điểm đã được chấm theo đúng các quy tắc này, nên hợp lệ với v1.1.
+
+**Thay đổi v1.2** (các quyết định đã chốt với người phụ trách đề tài, áp dụng cho toàn bộ bộ nhãn do Claude chấm):
+1. **Nhãn đo năng lực, không đo xu hướng ở lại.** Ứng viên dư cấp (CV cao hơn JD) **không bị trừ điểm**. `level_mismatch` chỉ còn `seniority_gap ≥ 2`; bỏ vế `seniority_gap ≤ −3`. Lý do: công ty có bằng chứng ứng viên đủ năng lực, chưa có bằng chứng họ sẽ bỏ việc; mô hình GCN cũng không có đặc trưng số năm kinh nghiệm nên nhãn phụ thuộc cấp dư sẽ không học được.
+2. **Ngưỡng độ phủ giữ nguyên:** high ≥ 70, medium 40–69, low < 40 (đã chốt, không hạ ngưỡng mức 3).
+3. **Quy tắc `core_tech_missing` giữ nguyên** (hạ một mức).
+4. Độ phủ là **ước lượng của người chấm (sai số khoảng ±10)**, lấy theo số liệu thực tế của từng JD, **không còn quy tắc "ghi 65" khi nằm trong 65–74** của v1.1. Khi phân vân giữa hai phía của một ngưỡng thì chọn phía thấp (mục 1.3).
+5. `hard_requirement_missing` mở rộng: tính cả điều kiện **tình trạng sinh viên** (ví dụ "sinh viên năm cuối trường X" mà CV đã tốt nghiệp), bằng cấp bắt buộc không khớp (đòi đại học mà CV là cao đẳng), ngoại ngữ có mức cụ thể bắt buộc (IELTS/TOEIC/N3...) và yêu cầu "gửi CV tiếng Anh". Không tính điều kiện tuổi, giới tính.
+6. Cấp JD: dưới 1 năm = 0, 1–2 năm = 1, 3–4 năm = 2, từ 5 năm = 3; cộng 1 nếu tiêu đề có Senior/Lead/Trưởng/Giám đốc/Cao cấp (không cộng cho "Project Manager" thông thường). Cấp CV lấy từ hồ sơ sinh CV.
 
 **Nguyên tắc bắt buộc**
 1. Rubric này chốt trước khi chấm. Nếu sửa rubric, phải chấm lại toàn bộ và ghi số phiên bản (v1, v2...).
@@ -38,12 +45,12 @@ Giữ nguyên tên 4 mức để khớp `config.GRADE_LABELS` trong code. Phần
   - Must-have = kỹ năng, công nghệ, chứng chỉ, ngoại ngữ trong "Yêu cầu" và "Kỹ năng chuyên môn". **Bỏ qua** các ý ghi "ưu tiên", "là một lợi thế", "nice to have".
   - CV có bằng chứng = kỹ năng được nêu hoặc được dùng trong phần kinh nghiệm. Công nghệ tương đương rõ ràng được tính (MSSQL ≈ SQL Server). Không suy diễn kỹ năng CV không nhắc tới.
   - Ngưỡng: **high** ≥ 70, **medium** 40–69, **low** < 40.
-  - Nếu ước lượng nằm trong 65–74 thì **ghi 65** (chọn phía thấp khi sát ngưỡng).
+  - Độ phủ là ước lượng (±10). Khi thật sự phân vân giữa hai phía của một ngưỡng, chọn phía thấp (v1.2 bỏ quy tắc "ghi 65" của v1.1).
 - **seniority_gap** = cấp JD − cấp CV (số nguyên).
   - Cấp: Fresher = 0 (dưới 1 năm, kể cả thực tập), Junior = 1 (1–2 năm), Middle = 2 (3–4 năm), Senior = 3 (từ 5 năm).
   - Cấp JD lấy từ "Kinh nghiệm" và nội dung (có "Senior", "Lead", "Trưởng nhóm" thì tăng một cấp).
-  - **level_mismatch** = `seniority_gap ≥ 2` (JD cao hơn CV từ 2 cấp) **hoặc** `seniority_gap ≤ −3` (CV cao hơn JD từ 3 cấp).
-- **hard_requirement_missing** (true/false): JD ghi **bắt buộc** một điều kiện cứng (bằng cấp, chứng chỉ, ngoại ngữ như tiếng Nhật N2, quyền làm việc) mà CV không có.
+  - **level_mismatch** = `seniority_gap ≥ 2` (JD cao hơn CV từ 2 cấp). CV cao hơn JD **không** bị coi là lệch cấp (v1.2).
+- **hard_requirement_missing** (true/false): JD ghi **bắt buộc** một điều kiện cứng (bằng cấp, chứng chỉ, ngoại ngữ có mức cụ thể, tình trạng sinh viên, "CV tiếng Anh") mà CV không có. Không tính tuổi, giới tính.
 - **core_tech_missing** (true/false): công nghệ hoặc nền tảng được nêu **ngay trong tiêu đề JD** (ví dụ Sitecore, Flutter, PHP-Laravel, Swift, Java, Salesforce) hoàn toàn không có trong CV. Tiêu đề chung chung ("Fullstack Developer", "Mobile Developer") thì để false.
 
 ### 1.2. Nhóm vai trò
@@ -87,6 +94,7 @@ Ký hiệu: `M` = level_mismatch, `H` = hard_requirement_missing.
 - CV Frontend React Junior với JD Java Backend: role `adjacent`, coverage khoảng 10% → **1**.
 - CV Data Analyst Junior với JD Nhân viên kinh doanh yêu cầu tiếng Nhật N2: role `different`, coverage thấp → **0**.
 - CV Backend Java Fresher với JD Java Senior 5 năm: role `same`, coverage cao nhưng gap = 3 (có M) → **2**.
+- CV Backend Java Senior (5 năm) với JD Java Junior 1 năm, coverage cao: gap = −2, không M (v1.2) → **3**.
 
 ---
 
