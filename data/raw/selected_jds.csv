@@ -1080,3 +1080,240 @@ Yêu cầu: - Tốt nghiệp Đại học các ngành Kinh tế, Tài chính, Ng
 - Hiểu biết sâu về các quy trình nghiệp vụ trong quản lý nhân sự trên SAP.
 - Có kinh nghiệm phân tích yêu cầu, thiết kế giao diện người dùng và có kỹ năng lập kế hoạch kiểm thử, thực hiện test phần mềm.
 - Ưu tiên ứng viên có chứng chỉ SAP ERP hoặc đã từng tham gia các dự án triển khai SAP."
+jd_0018,2,"Engineer / Developer (Python, Docker, Kubernetes)",Kỹ sư độ tin cậy trang web của Junior (SRE),1 năm,1.0,"Vị trí: Kỹ sư độ tin cậy trang web của Junior (SRE)
+Kinh nghiệm: 1 năm
+Học vấn: Đại Học trở lên
+Kỹ năng chuyên môn: Kubernetes, Docker, Terraform, Ansible, PostgreSQL, MongoDB, AWS, GitLab CI/CD, GitHub Actions
+Yêu cầu: At least 1 year of experience in SRE/DevOps roles, preferably with international software projects. Hands-on experience with Docker and Kubernetes. Experience with Terraform, Ansible. Experience with api gateway such as APISIX and Nginx is a strong advantage. Experience with CI/CD tools such as Jenkins, GitLab CI/CD, or GitHub Actions. Familiarity with Grafana for monitor log and log analysis. Basic understanding of networking concepts (TCP/IP, DNS, firewalls, load balancers). Willingness to be on-call during weekends for production issue resolution. Knowledge of AWS architecture and services. Good verbal and written English communication skills."
+jd_1741,2,"Engineer / Developer (Python, Docker, Kubernetes)",Fresher Devops,6 tháng,0.5,"Vị trí: Fresher Devops
+Kinh nghiệm: 6 tháng
+Học vấn: Đại Học trở lên
+Kỹ năng chuyên môn: Docker, Kubernetes, Jenkins, Ansible, Terraform
+Yêu cầu: 1.Kinh nghiệm từ 6 tháng trong vai trò DevOps hoặc hỗ trợ kỹ thuật hạ tầng IT. 2. Có kinh nghiệm trong việc sử dụng các công cụ và nền tảng như Docker, Kubernetes, Jenkins, Ansible, Terraform. 3. Có kinh nghiệm trong việc thiết lập và quản lý các pipeline CI/CD với các công cụ như Jenkins, GitLab CI/CD, hoặc CircleCI. 4. Kinh nghiệm làm việc với các dịch vụ đám mây như AWS, Azure, Google Cloud là một lợi thế. 5. Hiểu biết về ngôn ngữ lập trình, mạng máy tính, hệ thống lưu trữ và bảo mật là lợi thế. 7. Tư duy logic và giải quyết vấn đề: Khả năng phân tích và giải quyết các vấn đề phức tạp liên quan đến hạ tầng và triển khai. 8. Tỉ mỉ và chi tiết: Có khả năng chú ý đến các chi tiết nhỏ để đảm bảo chất lượng và hiệu suất hệ thống."
+jd_0149,2,"Engineer / Developer (Python, Docker, Kubernetes)",Nhân Viên Vận Hành Ứng Dụng (Devops Engineer),2 năm,2.0,"Vị trí: Nhân Viên Vận Hành Ứng Dụng (Devops Engineer)
+Kinh nghiệm: 2 năm
+Học vấn: Đại học trở lên ngành Công nghệ thông tin, Phần mềm, Kỹ thuật máy tính, Điện tử viễn thông
+Kỹ năng chuyên môn: Quản trị hệ điều hành Linux, Lập trình ứng dụng Java, .NET, C#, Golang, JS, Docker, CI/CD, Ansible, Terraform, Jenkins, ArgoCD
+Yêu cầu: Tốt nghiệp Đại học trở lên ngành Công nghệ thông tin, Phần mềm, Kỹ thuật máy tính, Điện tử viễn thông. Có từ 2 năm kinh nghiệm trở lên tại vị trí tương đương. Đọc hiểu tiếng Anh cơ bản, có thể nghiên cứu tài liệu bằng ngoại ngữ là một lợi thế. Hiểu biết tốt về các quy trình phát triển phần mềm. Hiểu biết tốt về mô hình ứng dụng Microservices và Monolithic Services. Hiểu biết và có kinh nghiệm quản trị hệ điều hành Linux. Có kinh nghiệm lập trình ứng dụng các ngôn ngữ Java, .NET, C#, Golang, JS. Có kinh nghiệm quản trị ứng dụng trên nền tảng Docker, Container là một lợi thế. Có kinh nghiệm làm phân tích nghiệp vụ là một lợi thế. Có kinh nghiệm trong triển khai và quản lý hệ thống CI/CD (Continuous Integration/Continuous Deployment), bao gồm việc sử dụng các công cụ như Jenkins, GitLab CI/CD"
+jd_0557,11,"IT / Quản (VMware, Triển khai và vận hành hệ thống VOIP (Asterisk, FreePbx, FreeSWITCH, Kamailio, OpenSIPS, 3CX), Giao thức SIP, RTP, WebRTC, STUN/TURN/ICE, NAT Traversal)",DevOps Engineer,2 năm,2.0,"Vị trí: DevOps Engineer
+Kinh nghiệm: 2 năm
+Học vấn: Đại Học trở lên
+Kỹ năng chuyên môn: 2+ years of experience as a DevOps Engineer or similar role, Experience with multi-tier architectures, Proficiency in scripting languages like Python, Bash, or PowerShell, Working knowledge of cloud platforms (AWS, Azure, or GCP), Experience with configuration management tools (Ansible, Chef, Puppet), Experience with infrastructure monitoring tools (Prometheus, Grafana)
+Yêu cầu: Technical skills: 2+ years of experience as a DevOps Engineer or similar role. Experience with multi-tier architectures: load balancers, caching, web servers, application servers, databases, and networking. Proficiency in scripting languages like Python, Bash, or PowerShell. Working knowledge of cloud platforms (AWS, Azure, or GCP). Experience with configuration management tools (Ansible, Chef, Puppet). Experience with infrastructure monitoring tools (Prometheus, Grafana). Strong communication and collaboration skills. Personal skills: Honest and confident to directly work with colleague. Be proactive in work, good teamwork ability. Loves to work on an innovative product and ready to learn new things."
+jd_0939,2,"Engineer / Developer (Python, Docker, Kubernetes)",Cloud Engineer (Azure),2 năm,2.0,"Vị trí: Cloud Engineer (Azure)
+Kinh nghiệm: 2 năm
+Học vấn: Đại Học trở lên
+Kỹ năng chuyên môn: AWS, Azure, Cloud Solution Associate, DevOps Associate, EKS, EC2, S3, Route53, Lambda, Cloudwatch, AKS, Azure SQL, Ansible, Artifactory, Docker, GitHub, Jenkins, Kubernetes, Maven, Sonar Qube, Azure Monitor, CloudWatch, ELK Stack, Prometheus, Zabbix, Grafana, CloudFormation, Terraform, ARM Azure, Python, Bash Shell, Power Shell
+Yêu cầu: 2+ năm kinh nghiệm sử dụng AWS/Azure. Các chứng chỉ Cloud liên quan: Cloud Solution Associate/ DevOps Associate. Kinh nghiệm thiết kế và xây dựng môi trường web trên AWS (EKS, EC2, S3, Route53, Lambda, Cloudwatch,...) hoặc Azure (Máy ảo, AKS, Azure SQL,...). Kinh nghiệm xây dựng và duy trì ứng dụng cloud-native. Kinh nghiệm sản xuất để xây dựng các hệ thống có khả năng mở rộng (cân bằng tải, memcached, kiến trúc master/slave). Một nền tảng vững chắc về quản trị hệ thống máy chủ Linux/Unix và Windows. Kinh nghiệm sử dụng các công cụ DevOps trong môi trường đám mây, như Ansible, Artifactory, Docker, GitHub, Jenkins, Kubernetes, Maven và Sonar Qube. Kinh nghiệm cài đặt và cấu hình các máy chủ ứng dụng khác nhau như JBoss, Tomcat và WebLogic. Kinh nghiệm sử dụng các giải pháp giám sát như Azur"
+jd_1260,2,"Engineer / Developer (Python, Docker, Kubernetes)","Kỹ sư DevOps (trên cơ sở, K8S, CI/CD)",2 năm,2.0,"Vị trí: Kỹ sư DevOps (trên cơ sở, K8S, CI/CD)
+Kinh nghiệm: 2 năm
+Học vấn: Tốt nghiệp ĐH chuyên ngành có liên quan đến máy tính và khoa học máy tính
+Kỹ năng chuyên môn: CI/CD pipelines, Jenkins, Gitlab CI, K8s, Windows Desktop C++/C#, GitOps
+Yêu cầu: Tốt nghiệp ĐH chuyên ngành có liên quan đến máy tính và khoa học máy tính; Có ít nhất 2 năm kinh nghiệm ở vị trí DevOps; Có kinh nghiệm xây dựng và giám sát hệ thống on premises. Mạnh về CI/CD (Jenkins, Gitlab CI); Ưu tiên ứng viên có kinh nghiệm trong việc set up CI build các ứng dụng Windows Desktop C++/C#; Có kinh nghiệm GitOps với K8s là một lợi thế; Có kiến thức các vấn đề security (quét lỗ hổng mã nguồn, mã hóa mã nguồn, container security, network security); Khả năng đọc, hiểu và dịch tài liệu tiếng Anh."
+jd_1373,2,"Engineer / Developer (Python, Docker, Kubernetes)","DevOps Engineer - Vận Hành ERP Odoo, FastApi",2 năm,2.0,"Vị trí: DevOps Engineer - Vận Hành ERP Odoo, FastApi
+Kinh nghiệm: 2 năm
+Học vấn: Tốt nghiệp các chuyên ngành Công nghệ thông tin, Khoa học máy tính hoặc các ngành liên quan
+Kỹ năng chuyên môn: ERP Odoo, Python, FastApi, PostgreSQL, CI/CD, GitOps, Kubernetes, Linux, Docker
+Yêu cầu: Tốt nghiệp các chuyên ngành Công nghệ thông tin, Khoa học máy tính hoặc các ngành liên quan. Sinh năm 1996 - 2002. Ứng viên vui lòng gửi CV bằng Tiếng Anh. Kinh nghiệm vận hành ERP Odoo, hiểu biết về Odoo backend (Python, XML, PostgreSQL), FastApi. Hiểu biết PostgreSQL, các mệnh lệnh SQL nâng cao, tuning performance. Kinh nghiệm thiết lập và vận hành giải pháp CDC như Debezium, Apache Kafka, hoặc logical replication. Quen thuộc CI/CD pipelines (GitLab CI, Jenkins, etc.) và GitOps. Kinh nghiệm làm việc với Kubernetes, ưu tiên đã dùng RKE2, FPT Kubernetes Engine. Kinh nghiệm vận hành cụm PostgreSQL sử dụng Patroni, hiểu biết về các mô hình High Availability. Kinh nghiệm sử dụng pgBackRest và pg_dump cho backup và restore PostgreSQL. Kinh nghiệm vận hành hoặc hỗ trợ các hệ thống ClickHouse, S"
+jd_1579,2,"Engineer / Developer (Python, Docker, Kubernetes)",Kỹ Sư Vận Hành (Devops Engineer),3 năm,3.0,"Vị trí: Kỹ Sư Vận Hành (Devops Engineer)
+Kinh nghiệm: 3 năm
+Học vấn: Tốt nghiệp đại học chuyên ngành CNTT, Khoa học máy tính hoặc tương đương
+Kỹ năng chuyên môn: Jenkins, GitLab CI, Helm, Terraform, Ansible, Linux, Docker, Kubernetes, AWS, Azure, GCP, Prometheus, Grafana, ELK, Datadog, Sentry, Solarwinds
+Yêu cầu: Kiến thức và Kinh nghiệm: Tốt nghiệp đại học chuyên ngành CNTT, Khoa học máy tính hoặc tương đương. Tiếng Anh B1 trở lên hoặc tương đương. Tối thiểu 3 năm kinh nghiệm trong lĩnh vực hệ thống/DevOps, trong đó có 2 năm ở vai trò senior. Có kinh nghiệm thực tế với ít nhất một nền tảng cloud (AWS, Azure, GCP). Thành thạo với containerization (Docker), orchestration (Kubernetes). Có kinh nghiệm viết và duy trì pipeline CI/CD phức tạp."
+jd_1835,6,"Developer / Java (Java, MySQL, Oracle)",Kỹ sư hoạt động/ DevOps cao cấp,4 năm,4.0,"Vị trí: Kỹ sư hoạt động/ DevOps cao cấp
+Kinh nghiệm: 4 năm
+Học vấn: Bachelor of IT
+Kỹ năng chuyên môn: MS SQL Server, Oracle, Java, PL/SQL, T-SQL, AIX, JBOSS
+Yêu cầu: Trình độ Học vấn: Specialized in IT, Computer Science. Các Kinh nghiệm liên quan: Graduated as a Bachelor of IT, 7+ years’ experience IT Support Experience, IT Developer Experience, 5+ years’ experience with database software/web applications, 3+ years’ experience with MS SQL Server, Oracle, Java, PL/SQL, T-SQL, High Availability Experience, Understanding of the operation, the nature and scale of the VPBank's business."
+jd_1465,8,"Developer / Nhà (CSS, HTML, JavaScript)",Phần mềm fullstack tươi hơn,Không yêu cầu,0.0,"Vị trí: Phần mềm fullstack tươi hơn
+Kinh nghiệm: Không yêu cầu
+Học vấn: Sinh viên đã/sắp tốt nghiệp chuyên ngành Công nghệ thông tin, Toán tin, Khoa học máy tính, Kỹ thuật phần mềm
+Kỹ năng chuyên môn: Java, C#, Python, TypeScript, HTML, CSS, JavaScript, React, VueJS, Angular, SQL, NoSQL
+Yêu cầu: Yêu cầu chung: Sinh viên đã/sắp tốt nghiệp chuyên ngành Công nghệ thông tin, Toán tin, Khoa học máy tính, Kỹ thuật phần mềm... Điểm trung bình GPA: 2.5/4.0, Tiếng Anh: Ielts 5.0 hoặc Toiec 550. Có thể tham gia đào tạo/làm việc Full-time từ thứ 2 - thứ 6. Yêu cầu khác: Hiểu biết về một trong các ngôn ngữ lập trình cơ bản (Java, C#, Python hoặc TypeScript, có kiến thức về FrontEnd : HTML, CSS, JS, React/VueJS/Angular), database (kiến thức về SQL và NoSQL). Có tư duy lập trình tốt, hiểu biết về Lập trình hướng đối tượng (OOP), cấu trúc dữ liệu giải thuật và một số thuật toán cơ bản. Có sản phẩm cá nhân hoặc ứng dụng demo là điểm cộng. Có thái độ tích cực học tập, chăm chỉ, nghiêm túc."
+jd_1323,6,"Developer / Java (Java, MySQL, Oracle)","Fullstack Developer (Java, Angular)",2 năm,2.0,"Vị trí: Fullstack Developer (Java, Angular)
+Kinh nghiệm: 2 năm
+Học vấn: Cao Đẳng trở lên
+Kỹ năng chuyên môn: Java, Spring Boot, Angular, RESTful APIs, SQLSERVER, MYSQL, AWS, Kubernetes
+Yêu cầu: Từ 2 năm kinh nghiệm làm việc với Java trong dự án thực tế. Thành thạo Spring Boot, kiến ​​thức về phân luồng, đồng thời và dịch vụ web (RESTful). Có kinh nghiệm với cơ sở hạ tầng đám mây như AWS, Kubernetes; Ưu tiên ứng viên có kinh nghiệm làm việc với các công nghệ front-end như Angular/ ReactJS.... Có kinh nghiệm với RDBMS (SQLSERVER, MYSQL). Từng làm việc với máy chủ web/ứng dụng sử dụng mô hình Load Balancing. Có kinh nghiệm trong mảng tài chính ngân hàng là một lợi thế."
+jd_1715,8,"Developer / Nhà (CSS, HTML, JavaScript)",Fullstack Developer (Senior),3 năm,3.0,"Vị trí: Fullstack Developer (Senior)
+Kinh nghiệm: 3 năm
+Học vấn: Đại Học trở lên
+Kỹ năng chuyên môn: Node.js, React.js, Blockchain, Web3, Smart contract development
+Yêu cầu: Knowledge of responsive design techniques and front-end optimization methods. At least 3 years of experience as a Full-Stack Developer (Node.js & React.js). Having experience in Blockchain field. Strong proficiency in front-end technologies, particularly React. Expertise in back-end development using Node.js. Hands-on experience with Web3 integration. Solid understanding of smart contract development and deployment. Good command of English (both verbal and written). Knowledge of cryptography and blockchain is a plus."
+jd_1876,2,"Engineer / Developer (Python, Docker, Kubernetes)",Fullstack Web Developer,5 năm,5.0,"Vị trí: Fullstack Web Developer
+Kinh nghiệm: 5 năm
+Học vấn: Đại Học trở lên
+Kỹ năng chuyên môn: NodeJS, ReactJS, Google Cloud, Amazon Web Services, Kafka, Snowflake, RabbitMQ, ZeroMQ, threejs, Unity, ROS, Docker, Linux
+Yêu cầu: At least 5 years of experience in both front-end and back-end platforms (NodeJS & ReactJS preferred). Familiar with development and deployment in Google Cloud and Amazon Web Services. Experience in database development using Kafka and Snowflake. Experience in messaging systems such as RabbitMQ and/or ZeroMQ. (Plus) Hand-on experience with 3D web (threejs) or other 3D simulation engine (Unity, Omniverse). (Plus) Hand-on experience with ROS, Docker & Linux environment. Maintain a good coding standard, familiar with Test Driven development. Experience with writing unit tests for NodeJS, ReactJS application. Exposure to agile development practices and CI/CD pipelines, experience with project management and collaboration tools like JIRA, Confluence. Good teamwork, communication, time management"
+jd_0150,15,"Developer / Tiếng (Java, Swift, Kotlin)","Lập Trình Viên IOS (Swift, Obj-C)",1 năm,1.0,"Vị trí: Lập Trình Viên IOS (Swift, Obj-C)
+Kinh nghiệm: 1 năm
+Học vấn: Tốt nghiệp Đại học chuyên ngành Công nghệ thông tin, Công nghệ phần mềm hoặc Trường đào tạo lập trình viên Quốc Tế (NIIT, Aptech)
+Kỹ năng chuyên môn: Objective-C, Swift, lập trình IOS, lập trình hướng đối tượng, SVN, GIT
+Yêu cầu: + Tốt nghiệp Đại học chuyên ngành Công nghệ thông tin, Công nghệ phần mềm hoặc Trường đào tạo lập trình viên Quốc Tế (NIIT, Aptech).
++ Có hiểu biết về kiến trúc công nghệ, ứng dụng và mô hình phát triển cho nền tảng hệ điều hành IOS
++ Kiến thức cơ bản và tư duy về Objective-C, Swift, lập trình IOS, lập trình hướng đối tượng.
++ Ưu tiên ứng viên có hiểu biết công nghệ liên quan đến nền tảng thiết bị di động khác.
++ Ưu tiên ứng viên có ứng dụng demo trên Appstore
++ Có kinh nghiệm làm việc với SVN/GIT
++ Chịu khó tìm tòi và nghiêm túc trong công việc.
++ Chủ động trong công việc cũng như tìm hiểu công nghệ mới.
++ Có trách nhiệm cao với công việc, gắn bó lâu dài với công ty."
+jd_0034,15,"Developer / Tiếng (Java, Swift, Kotlin)",Nhà phát triển Android cao cấp (Ứng dụng di động),3 năm,3.0,"Vị trí: Nhà phát triển Android cao cấp (Ứng dụng di động)
+Kinh nghiệm: 3 năm
+Học vấn: Đại Học trở lên
+Kỹ năng chuyên môn: Android SDK, Android Studio, Java, Kotlin, MVVM, Clean Architecture, JNI, C/C++
+Yêu cầu: Kĩ năng chuyên môn: Nắm vững kiến thức nền tảng về Android (Activity/Fragment Lifecycle, ViewModel, LiveData, Coroutines, Jetpack Components). Có kiến thức và khả năng áp dụng hiệu quả các pattern kiến trúc như MVVM. Hiểu biết cơ bản về Clean Architecture, thể hiện được trong các dự án thực tế. Tư duy tốt modular hóa và tổ chức code rõ ràng, maintainable. Có kiến thức về JNI và có khả năng tích hợp native code (C/C++). Có kinh nghiệm trong việc cải thiện hiệu năng ứng dụng. Có khả năng tạo Custom View. Có kinh nghiệm trong việc tích hợp SDK/dịch vụ bên thứ ba. Kinh nghiệm: Middle- Senior: Tối thiểu 3+ năm kinh nghiệm. Kĩ năng mềm: Khả năng phối hợp tốt với các thành viên khác trong nhóm, hỗ trợ các thành viên Junior/Intern. Có niềm đam mê mãnh liệt và nghiên cứu sâu với công nghệ, các sản "
+jd_0411,15,"Developer / Tiếng (Java, Swift, Kotlin)",Android Developer (Kotlin),3 năm,3.0,"Vị trí: Android Developer (Kotlin)
+Kinh nghiệm: 3 năm
+Học vấn: Tốt nghiệp đại học chuyên ngành CNTT loại khá trở lên
+Kỹ năng chuyên môn: Kotlin, Swift, Objective-C, Jetpack Compose, Coroutines, Flow
+Yêu cầu: ✓ Tốt nghiệp đại học chuyên ngành CNTT loại khá trở lên. ✓ Tối thiểu 3 - 5 năm kinh nghiệm phát triển Android với Kotlin và có kinh nghiệm với Swift/Objective-C trong phát triển IOS là một lợi thế. ✓ Thành thạo Jetpack Compose, Coroutines và Flow. ✓ Kỹ năng làm việc nhóm và giải quyết vấn đề tốt."
+jd_1187,2,"Engineer / Developer (Python, Docker, Kubernetes)",Mobile Developer (Flutter),2 năm,2.0,"Vị trí: Mobile Developer (Flutter)
+Kinh nghiệm: 2 năm
+Học vấn: Tốt nghiệp đại học trở lên ngành CNTT
+Kỹ năng chuyên môn: Flutter, Kotlin, Dart, UI/UX, Firebase, AWS
+Yêu cầu: Tốt nghiệp đại học trở lên ngành CNTT. Có kinh nghiệm Flutter từ 2 năm trở lên; Có khả năng nghiên cứu và ứng dụng các công nghệ mới. Có kinh nghiệm về Kotlin (Android)/ Dart (Flutter). Am hiểu về UI/UX, bảo mật ứng dụng và kiểm thử tự động; ưu tiên có kinh nghiệm phát triển native (Swift, Kotlin, Java) hoặc backend (Firebase, AWS,...). Phân tích yêu cầu khách hàng và đề xuất giải pháp kỹ thuật phù hợp. Bạn có kiến thức về MVP, MVVM, hiểu biết về Clean Architecture là một lợi thế; Có thể làm fullstack hoặc có kinh nghiệm làm backend là 1 lợi thế. Kỹ năng giao tiếp và giải quyết vấn đề tốt. Có tinh thần học hỏi, chủ động trong công việc và có kỹ năng quản lý sắp xếp công việc và thời gian tốt."
+jd_0215,15,"Developer / Tiếng (Java, Swift, Kotlin)",Mobile Developer (Android Or IOS),4 năm,4.0,"Vị trí: Mobile Developer (Android Or IOS)
+Kinh nghiệm: 4 năm
+Học vấn: Bachelor's degree in computer science, Software Engineering, or a related field
+Kỹ năng chuyên môn: Kotlin, Swift, RESTful APIs, Git
+Yêu cầu: [Required] Education: Bachelor's degree in computer science, Software Engineering, or a related field. Experience: At least 4 years of experience in mobile development. Technical Skills: Strong proficiency in Kotlin (for Android) or Swift (for iOS). Experience with developing and integrating RESTful APIs. Familiarity with mobile UI/UX design principles and best practices. Experience with Git version control. Strong problem-solving skills and ability to work in a fast-paced environment. [Nice to have] Knowledge of MS-SQL/IIS Server. Experience with Firebase Cloud Messaging (FCM) / Apple Push Notification Service (APNS). Familiarity with CI/CD tools (Jenkins) for automated deployment. Experience with Android Management API for enterprise applications. Knowledge of Microsoft 365 Graph API for"
+jd_1770,15,"Developer / Tiếng (Java, Swift, Kotlin)",Android Developer,4 năm,4.0,"Vị trí: Android Developer
+Kinh nghiệm: 4 năm
+Học vấn: Tốt nghiệp Đại học chính quy chuyên ngành CNTT, kinh tế, tài chính ngân hàng
+Kỹ năng chuyên môn: Kotlin, Android SDK, Android Studio, Git
+Yêu cầu: Tốt nghiệp Đại học chính quy chuyên ngành CNTT, kinh tế, tài chính ngân hàng,... Có từ 4 năm kinh nghiệm phát triển Android bằng Koltin. Hiểu biết vững chắc về sự phát triển toàn diện của thiết bị di động. Cấu trúc dữ liệu và nền tảng thuật toán tốt. Hiểu ít nhất một trong các kiến ​​trúc sau: MVP, MVVM, Clean Architecture. Biết một số mẫu thiết kế (singleton, Factory, kho lưu trữ dữ liệu...). Làm quen với công nghệ mới như Jetpack Compose, Android Material 3, AndroidX, Thành phần kiến ​​trúc Android (LiveData, ViewModel), v.v. Thân thuộc với các ứng dụng di động và phát triển, bao gồm việc sử dụng phần cứng như Accelerometers, Cameras, and Gyroscopes. Thoải mái làm việc như một phần của nhóm đa chức năng và với mã do người khác viết, bao gồm sửa lỗi và tái cấu trúc mã kế thừa. Hiểu biết t"
+jd_0250,8,"Developer / Nhà (CSS, HTML, JavaScript)",Thực Tập Sinh Front-End,Không yêu cầu,0.0,"Vị trí: Thực Tập Sinh Front-End
+Kinh nghiệm: Không yêu cầu
+Học vấn: Sinh viên năm cuối các trường ĐH Bách Khoa, HV Bưu Chính, Viễn Thông, ĐH Công Nghệ, ĐH Khoa học tự nhiên.
+Kỹ năng chuyên môn: CSS
+Yêu cầu: • Sinh viên năm cuối các trường ĐH Bách Khoa, HV Bưu Chính, Viễn Thông, ĐH Công Nghệ, ĐH Khoa học tự nhiên.
+• Có định hướng và yêu thích, đam mê lập trình
+• Khả năng tư duy, tìm tòi, học hỏi nhanh, làm việc độc lập, chủ động trong công việc"
+jd_0509,8,"Developer / Nhà (CSS, HTML, JavaScript)",Nhân Viên Lập Trình Web (Figma+PHP) - Đi Làm Ngay,1 năm,1.0,"Vị trí: Nhân Viên Lập Trình Web (Figma+PHP) - Đi Làm Ngay
+Kinh nghiệm: 1 năm
+Học vấn: Cao Đẳng trở lên
+Kỹ năng chuyên môn: PHP, MySQL, HTML, CSS, JavaScript, Figma, Laravel, CodeIgniter, WordPress
+Yêu cầu: Thành thạo Figma, có tư duy thiết kế UI/UX tốt. Có kinh nghiệm làm việc với HTML, CSS, JavaScript (jQuery, Vue.js là lợi thế). Thành thạo lập trình PHP & MySQL, ưu tiên biết sử dụng Laravel, CodeIgniter. Am hiểu về WordPress là một lợi thế lớn. Có tư duy logic, khả năng giải quyết vấn đề kỹ thuật nhanh chóng. Có kinh nghiệm tối ưu website (SEO, bảo mật, tốc độ tải trang) là điểm cộng."
+jd_0008,8,"Developer / Nhà (CSS, HTML, JavaScript)",Lập Trình Viên Front End (WEB),2 năm,2.0,"Vị trí: Lập Trình Viên Front End (WEB)
+Kinh nghiệm: 2 năm
+Học vấn: Đại học trở lên chuyên ngành máy tính, phát triển phần mềm và các chuyên ngành liên quan
+Kỹ năng chuyên môn: HTML5, CSS3, JavaScript, Ajax, JSON, Fetch, jQuery, Bootstrap, Echart, uni-app, Vue, Python, Node, Java, PHP, MySQL
+Yêu cầu: Có hơn 2 năm kinh nghiệm phát triển front-end WEB, tốt nghiệp đại học trở lên chuyên ngành máy tính, phát triển phần mềm và các chuyên ngành liên quan khác, ưu tiên ứng viên đã từng sử dụng WeChat Pay và Alipay; Thành thạo các công nghệ cốt lõi của ngôn ngữ JavaScript như Ajax.JSON.Fetch, thành thạo sử dụng các thư viện/khung giao diện người dùng JavaScript phổ biến như jQuery.Boottrap.echart; Thành thạo viết mã HTML cho bố cục HTML/DIV+CSS/JavaScript, có phong cách và thói quen lập trình tốt; Thành thạo uni-app, vue và có thể tự mình hoàn thành việc phát triển H5 với sự hợp tác của backend; Thành thạo nhiều ngôn ngữ phát triển backend (như Python.Node/Java.PHP), nhiều cơ sở dữ liệu (như MySql) và có kinh nghiệm dự án liên quan; Có tinh thần cầu tiến mạnh mẽ, tinh thần trách nhiệm cao, tin"
+jd_0225,2,"Engineer / Developer (Python, Docker, Kubernetes)",Frontend Developer,2 năm,2.0,"Vị trí: Frontend Developer
+Kinh nghiệm: 2 năm
+Học vấn: Tốt nghiệp ĐH/CĐ chuyên ngành CNTT hoặc tương đương
+Kỹ năng chuyên môn: Javascript, TypeScript, ReactJS, Redux, Recoil, OpenAPI, Figma, Linux, Docker, Git Flow
+Yêu cầu: - Tốt nghiệp ĐH/CĐ chuyên ngành CNTT hoặc tương đương
+- Thành thạo Javascript, TypeScript, ReactJS
+- Có kinh nghiệm làm việc với Redux, Recoil, OpenAPI, Figma
+- Có kiến thức về React Native là lợi thế
+- Biết sử dụng Linux, Docker, Git Flow…
+- Khả năng đọc hiểu tài liệu và làm việc độc lập.
+- Có trách nhiệm, chịu được áp lực công việc."
+jd_1175,8,"Developer / Nhà (CSS, HTML, JavaScript)",Frontend Developer,3 năm,3.0,"Vị trí: Frontend Developer
+Kinh nghiệm: 3 năm
+Học vấn: Minimum 3+ years of professional frontend development experience
+Kỹ năng chuyên môn: JavaScript, TypeScript, Vue.js, HTML5, CSS3, Git, Test-Driven Development, SEO optimization techniques
+Yêu cầu: - Minimum 3+ years of professional frontend development experience
+- Strong command of JavaScript and TypeScript
+- English communication skills (TOEIC 700 or equivalent)
+- Advanced experience with: Vue.js ecosystem and state management, Modern frontend architecture patterns, Component-based development, HTML5/CSS3 best practices, Git version control, Test-Driven Development, SEO optimization techniques, Modern UI component libraries
+- Experience in building and maintaining large-scale applications
+- Personal Qualities: Strong technical leadership and decision-making abilities, Passionate about creating maintainable, scalable code, Self-motivated problem solver, Team player with excellent collaboration skills"
+jd_1535,8,"Developer / Nhà (CSS, HTML, JavaScript)",ReactJS Frontend Developer,2 năm,2.0,"Vị trí: ReactJS Frontend Developer
+Kinh nghiệm: 2 năm
+Học vấn: Đại Học trở lên
+Kỹ năng chuyên môn: ReactJS, TypeScript, Next.js, REST API, WebSocket, i18n, SEO
+Yêu cầu: Bắt buộc: Trên 2 năm kinh nghiệm làm việc với React, Thành thạo TypeScript, Kinh nghiệm thiết kế kiến trúc frontend dựa trên WebSocket và REST API, Đã triển khai i18n và có kinh nghiệm phát triển tối ưu SEO, Hiểu biết hoặc đã thực hiện tối ưu web theo tiêu chí Lighthouse, Có kỹ năng làm việc nhóm và code review qua Git. Ưu tiên: Có kinh nghiệm dự án SSR với Next.js (bao gồm SEO), Đã xây dựng dịch vụ đa ngôn ngữ cho thị trường toàn cầu, Sử dụng thành thạo React Query, Zustand, Recoil…"
+jd_0336,18,"Nhà / kinh (Jira, Figma, Confluence)",Angular (TCB),4 năm,4.0,"Vị trí: Angular (TCB)
+Kinh nghiệm: 4 năm
+Học vấn: Trung cấp trở lên
+Kỹ năng chuyên môn: Angular 10+, Typescript 3, RxJS, Angular Material, PrimeNG, GIT, Object Oriented Programming (OOP), Redux pattern, state management (NgRx, Akita, Ngxs)
+Yêu cầu: Có 4 năm kinh nghiệm ở vị trí tuyển dụng. Có kinh nghiệm làm việc với Angular 10+, Typescript 3, RxJS, Angular Material, PrimeNG. Sử dụng tốt Angular core techniques như component, directive, dependency injection. Xây dựng layouts, patterns để tạo reusable components. Có kinh nghiệm xây dựng các ứng dụng responsive web. Có kinh nghiệm làm việc với Redux pattern, state management (NgRx, Akita, Ngxs,…). Ưu tiên các ứng viên sử dụng thành thạo GIT. Có kiến thức về lập trình hướng đối tượng (Object Oriented Programming – OOP). Ưu tiên ứng viên có kinh nghiệm làm việc theo mô hình Agile/Scrum. ƯU TIÊN CÓ KINH NGHIỆM BANK, TÀI CHÍNH, THANH TOÁN."
+jd_1551,8,"Developer / Nhà (CSS, HTML, JavaScript)",Front-end Teamleader (Angular8+),5 năm,5.0,"Vị trí: Front-end Teamleader (Angular8+)
+Kinh nghiệm: 5 năm
+Học vấn: Cao Đẳng trở lên
+Kỹ năng chuyên môn: Javascript, HTML5, HTML, CSS, CSS3, Bootstrap, SASS, Angular
+Yêu cầu: - Thành thạo Javascript, HTML5/HTML/CSS/CSS3, Bootstrap, SASS
+- Có 7+ năm làm các dự án trên nền tảng Angular... ; có 2+ năm làm việc ở vị trí team leader.
+- Ưu tiên ứng viên có khả năng lập trình Fullstack (BE: Java Spring boot)
+- Kĩ năng leading team tốt, có kinh nghiệm review code cho team
+- Hiểu rõ core của Javascript và biết cách vận dụng OOP practice vào Javascript.
+- Có kiến thức về MVVM (model-view-view-model) trong JavaScript là 1 lợi thế.
+- Có kinh nghiệm làm việc với Responsive Web Design, RESTful API
+- Có kỹ năng xây dựng kiến trúc hệ thống, nắm vững các kiến thức java pattern, Angular, mô hình MVC, kiến trúc Micro service.
+- Sử dụng thành thạo Git, IDE Intelij, Vsual studio code..
+- Có hiểu biết nhiều về các công nghệ mới, có tư duy mở, tư duy hệ thống, ứng biến trong các công"
+jd_1220,14,"tích / Phân (SQL, Excel, Python)",Nhà phân tích dữ liệu & hiểu biết,Không yêu cầu,0.0,"Vị trí: Nhà phân tích dữ liệu & hiểu biết
+Kinh nghiệm: Không yêu cầu
+Học vấn: Trung học cơ sở (Cấp 2) trở lên
+Kỹ năng chuyên môn: Google Sheets, Google Drive, Microsoft Excel (advanced), Data Analysis & Reporting
+Yêu cầu: Comfortable using Google Sheets (sorting, filters, VLOOKUP, and data templates). Familiar with cloud tools like Google Drive and version control. Detail-focused to prevent errors before they cause big problems. Logical thinker who enjoys solving problems and learning new tools. Clear communicator who shares updates and meets deadlines. Team player who supports others and keeps things moving."
+jd_0151,14,"tích / Phân (SQL, Excel, Python)",(Mid/sen) Nhà phân tích dữ liệu - trò chơi/ứng dụng di động,3 năm,3.0,"Vị trí: (Mid/sen) Nhà phân tích dữ liệu - trò chơi/ứng dụng di động
+Kinh nghiệm: 3 năm
+Học vấn: Bachelor's degree in Data Science, Statistics, Computer Science, or a related field
+Kỹ năng chuyên môn: SQL, Python, Tableau, Power BI, Google Data Studio
+Yêu cầu: Bachelor's degree in Data Science, Statistics, Computer Science, or a related field. Strong proficiency in SQL and Python is required, and experience working with large datasets is a bonus. Experience with data visualization tools such as Tableau, Power BI, or Google Data Studio. Knowledge of data mining techniques and algorithms. Attention to detail, a commitment to quality work, and the ability to multitask. Have mathematical background: knowledge of probability theory and applied statistics at a college-degree level. 3+ years of experience in data analysis, preferably in a product or marketing analytics role. Strong analytical and problem-solving skills with the ability to communicate complex data insights to non-technical stakeholders. Experience with cross-functional interaction and t"
+jd_1159,2,"Engineer / Developer (Python, Docker, Kubernetes)",Data Analyst,2 năm,2.0,"Vị trí: Data Analyst
+Kinh nghiệm: 2 năm
+Học vấn: Đại Học trở lên
+Kỹ năng chuyên môn: SQL, Python, ETL, Looker, Power BI
+Yêu cầu: Strong proficiency in SQL, data modeling, and data warehousing techniques. Familiarity with analytics tools such as Looker or Power BI for data visualization is highly regarded. Ability to work collaboratively with cross-functional teams and engage stakeholders in the data analysis process. Willingness to learn and adapt to new technologies, methodologies, and best practices in the field of business intelligence. Familiarity with programming languages like Python, database management, ETL processes."
+jd_1708,19,"Nhà / kinh (Quản lý dự án, Phân tích nghiệp vụ, Phân tích yêu cầu)",Chuyên Viên Phân Tích Dữ Liệu,3 năm,3.0,"Vị trí: Chuyên Viên Phân Tích Dữ Liệu
+Kinh nghiệm: 3 năm
+Học vấn: Tốt nghiệp đại học chuyên ngành quản trị kinh tế, công nghệ thông tin, tài chính ngân hàng, Có các chứng chỉ quốc tế như CFA, CAAC là 1 lợi thế
+Kỹ năng chuyên môn: Kỹ năng phân tích, Kỹ năng giao tiếp và thuyết trình, Sử dụng thành thạo các công cụ phân tích dữ liệu, Kỹ năng viết tài liệu phân tích, Kỹ năng thu thập, xử lý dữ liệu, Kỹ năng sử dụng các công cụ thiết kế và mô hình hóa tài liệu, Kỹ năng về phân tích các bài toán nghiệp vụ ngành tài chính, Kỹ năng sử dụng các tool visualize dữ liệu, Kỹ năng hiểu biết về data governance, Kỹ năng quản trị dự án và quản lý sự thay đổi, Kỹ năng sử dụng AI và big data
+Yêu cầu: 1. Trình độ học vấn/Chứng chỉ: Tốt nghiệp đại học chuyên ngành quản trị kinh tế, công nghệ thông tin, tài chính ngân hàng, có các chứng chỉ quốc tế như CFA, CAAC là 1 lợi thế. 2. Kinh nghiệm làm việc: Ít nhất 3-5 năm kinh nghiệm trong lĩnh vực phân tích nghiệp vụ, ưu tiên ứng viên có kinh nghiệm trong ngành tài chính, chứng khoán, bảo hiểm. 3. Kiến thức/Năng lực chuyên môn/Kỹ năng: Kỹ năng phân tích, tư duy phản biện và giải quyết vấn đề xuất sắc. Kỹ năng giao tiếp và thuyết trình tốt. Sử dụng thành thạo các công cụ phân tích dữ liệu và phần mềm quản lý dự án. Kỹ năng viết tài liệu phân tích rõ ràng, logic, đảm bảo đủ tính năng phát triển. Kỹ năng thu thập, xử lý dữ và sử dụng dữ liệu cho mục tiêu phân tích (Áp dụng mô hình DIKW). Kỹ năng sử dụng các công cụ thiết kế và mô hình hóa tài liệ"
+jd_1368,14,"tích / Phân (SQL, Excel, Python)",Phân tích dữ liệu lãnh đạo dự án,5 năm,5.0,"Vị trí: Phân tích dữ liệu lãnh đạo dự án
+Kinh nghiệm: 5 năm
+Học vấn: Bachelor’s degree in Computer Science, Data Analytics, Business Administration, or a related field
+Kỹ năng chuyên môn: Power BI, SQL, Azure (Microsoft Fabric, Azure Synapse, Databricks, Azure Data Factory)
+Yêu cầu: Must Have: Bachelor’s degree in Computer Science, Data Analytics, Business Administration, or a related field. 5+ years of experience in Data Analytics, BI, or related projects, with at least 2 years in a leadership role. Proficiency in Power BI, SQL, and cloud platforms like Azure (Microsoft Fabric, Azure Synapse, Databricks, Azure Data Factory). Proven track record of managing data analytics projects from concept to completion. Strong communication and interpersonal skills to interact with technical teams and nontechnical stakeholders. Experience with Agile/Scrum project management methodologies. Nice to Have: Certifications in Microsoft Azure, Power BI, or PMP. Experience in industries like manufacturing, finance, consumer goods, or retail. Familiarity with advanced analytics and AI too"
+jd_1785,2,"Engineer / Developer (Python, Docker, Kubernetes)",AI Engineer,Không yêu cầu,0.0,"Vị trí: AI Engineer
+Kinh nghiệm: Không yêu cầu
+Học vấn: Currently pursuing a Bachelor's or Master's degree in Computer Science, AI, or related technical field
+Kỹ năng chuyên môn: Python, API integration, REST principles, commercial LLM APIs (OpenAI, Anthropic, etc.), machine learning concepts and algorithms, TensorFlow, PyTorch, scikit-learn
+Yêu cầu: Required Qualifications
+- Currently pursuing a Bachelor's or Master's degree in Computer Science, AI, or related technical field
+- Strong programming skills in Python
+- Basic understanding of API integration and REST principles
+- Familiarity with commercial LLM APIs (OpenAI, Anthropic, etc.)
+- Basic understanding of machine learning concepts and algorithms
+- Experience with common ML libraries (e.g., TensorFlow, PyTorch, scikit-learn)
+- Solid foundation in mathematics and statistics
+- Good problem-solving and analytical skills"
+jd_1301,2,"Engineer / Developer (Python, Docker, Kubernetes)",Kỹ Sư Dữ Liệu Lớn (Big Data Engineer),2 năm,2.0,"Vị trí: Kỹ Sư Dữ Liệu Lớn (Big Data Engineer)
+Kinh nghiệm: 2 năm
+Học vấn: Đại Học trở lên
+Kỹ năng chuyên môn: Hadoop, Spark, Elastic Search, Java, Scala, SQL
+Yêu cầu: Trình độ tiếng anh: TOEIC tối thiểu 550. Kiến thức về lập trình, cấu trúc dữ liệu & giải thuật. Kiến thức về lập trình lưu trữ, xử lý dữ liệu phân tán, xử lý dữ liệu lớn (Hadoop, Spark, Elastic Search...). Kiến thức về xây dựng luồng xử lý dữ liệu (batch processing, stream procesing, ...). Kiến thức về các loại CSDL (RDBMS, Graph Databases, NoSQL Products, ...). Kỹ năng sử dụng ngôn ngữ lập trình (Java, Scala, ...), SQL. Kỹ năng thành thạo một trong các framework, thư viện lưu trữ, xử lý dữ liệu lớn (Hadoop, Spark, Kafka, Zookeeper, ...). Kỹ năng sử dụng một trong các loại CSDL (Oracle, Neo4j, HBase, Cassandra, MongoDB, ...)."
+jd_1516,2,"Engineer / Developer (Python, Docker, Kubernetes)",Data Engineer,2 năm,2.0,"Vị trí: Data Engineer
+Kinh nghiệm: 2 năm
+Học vấn: Đại Học trở lên
+Kỹ năng chuyên môn: Hadoop, Spark, Oracle, Netezza, Data Stage, Pentaho, ODI, Cloud
+Yêu cầu: Tối thiểu 2 năm kinh nghiệm tại vị trí tuyển dụng. Có kinh nghiệm làm việc tại các ngân hàng; hiểu biết về sản phẩm dịch vụ ngân hàng. Có hiểu biết về các hệ thống Bigdata, Data Lake, Data warehouse. Có hiểu biết về Hadoop eco-system: Hadoop, Spark… Có kinh nghiệm làm việc với các hệ thống cơ sở dữ liệu Oracle, Netezza. Có kinh nghiệm làm việc với các hệ thống ETL: Data Stage, Pentaho, ODI. Có kinh nghiệm làm việc với các nền tảng Cloud. Ưu tiên đã từng làm việc với các hệ thống học máy (Machine Learning), khai phá dữ liệu (Data Mining). Ưu tiên Nhân sự có kinh nghiệm làm phân tích xử lý dữ liệu."
+jd_0836,11,"IT / Quản (VMware, Triển khai và vận hành hệ thống VOIP (Asterisk, FreePbx, FreeSWITCH, Kamailio, OpenSIPS, 3CX), Giao thức SIP, RTP, WebRTC, STUN/TURN/ICE, NAT Traversal)",Kỹ sư dữ liệu cao cấp,4 năm,4.0,"Vị trí: Kỹ sư dữ liệu cao cấp
+Kinh nghiệm: 4 năm
+Học vấn: Đại học hoặc cao hơn liên quan đến 1 trong các ngành kinh tế, tài chính, ngân hàng, hoặc công nghệ thông tin, khoa học máy tính, toán tin ứng dụng
+Kỹ năng chuyên môn: Truy vấn, tổ chức, phân tích dữ liệu, Cơ sở dữ liệu quan hệ RDBMS, NoSQL, Thiết kế lập trình cho các hệ thống như hệ thống Data warehouse, Data lake, lakehouse, API, CI/CD, SSIS, Datastage, ODI, Kafka, Spark, Nifi, Airflow, DBT, Databrick, Redshift
+Yêu cầu: Đại học hoặc cao hơn liên quan đến 1 trong các ngành kinh tế, tài chính, ngân hàng, hoặc công nghệ thông tin, khoa học máy tính, toán tin ứng dụng. Tối thiểu 4 năm trong lĩnh vực quản lý dữ liệu/báo cáo/phân tích/học máy. Truy vấn, tổ chức, phân tích dữ liệu. Sử dụng các công nghệ cập nhật để xử lý dữ liệu để phát triển và vận hành ngân hàng, tài chính ngân hàng. Triển khai cùng và quản lý đối tác công nghệ thông tin. Cơ sở dữ liệu quan hệ quan hệ RDBMS, NoSQL. Thiết kế lập trình cho các hệ thống như hệ thống Data warehouse, Data lake, lakehouse, API, CI/CD, các dịch vụ xử lý dữ liệu và luồng dữ liệu dạng batch/stream, quản lý luồng vận hành ETL, ELT: SSIS, Datastage, ODI, Kafka, Spark, Nifi, Airflow, DBT, Databrick, Redshift v.v..."
+jd_0267,0,"Kinh / Doanh (Tiếng Anh cơ bản, Sử dụng Execl và word thành thạo, Proficient in English or Chinese, equivalent to 6.5 IELTS or HSK 5)",Business Analyst (Intern),Không yêu cầu,0.0,"Vị trí: Business Analyst (Intern)
+Kinh nghiệm: Không yêu cầu
+Học vấn: Sinh viên năm cuối các trường ĐH Ngoại Thương, ĐH Khoa học tự nhiên, Bách Khoa
+Yêu cầu: – Có thể thực tập fulltime từ Thứ 2–Thứ 6 (9h–18h).  – Sinh viên năm cuối các trường ĐH Ngoại Thương, ĐH Khoa học tự nhiên, Bách Khoa  – Kỹ năng giao tiếp tốt, tư duy logic, thích tìm hiểu nghiệp vụ.  – Ưu tiên ứng viên có định hướng theo nghề BA hoặc Product."
+jd_0214,18,"Nhà / kinh (Jira, Figma, Confluence)",Chuyên Viên Phân Tích Nghiệp Vụ,2 năm,2.0,"Vị trí: Chuyên Viên Phân Tích Nghiệp Vụ
+Kinh nghiệm: 2 năm
+Học vấn: Đại học các ngành: Công nghệ thông tin, Hệ thống thông tin quản lý
+Kỹ năng chuyên môn: Visio, Figma, Draw.io, Jira, Confluence, BPMN tools
+Yêu cầu: Tốt nghiệp Đại học các ngành: Công nghệ thông tin, Hệ thống thông tin quản lý. Có ít nhất 1–3 năm kinh nghiệm làm BA/Test trong lĩnh vực phần mềm, ưu tiên ứng viên từng làm với khách hàng là ngân hàng hoặc tổ chức tài chính. Hiểu biết tốt về các nghiệp vụ ngân hàng: tín dụng, tài sản đảm bảo, định giá, thanh toán, huy động vốn, v.v. Có khả năng viết tài liệu rõ ràng, logic, và kỹ năng giao tiếp tốt với cả kỹ thuật lẫn nghiệp vụ. Thành thạo các công cụ phân tích nghiệp vụ: Visio, Figma, Draw.io, Jira, Confluence, BPMN tools,... Kỹ năng làm việc nhóm và làm việc độc lập tốt. Ưu tiên có chứng chỉ liên quan như: CBAP, CCBA, PMI-PBA hoặc từng học qua các khóa đào tạo BA chuyên sâu. Có kinh nghiệm Agile/Scrum là một lợi thế."
+jd_1247,18,"Nhà / kinh (Jira, Figma, Confluence)",Chuyên Viên Phân Tích Nghiệp Vụ,3 năm,3.0,"Vị trí: Chuyên Viên Phân Tích Nghiệp Vụ
+Kinh nghiệm: 3 năm
+Học vấn: Đại Học trở lên
+Kỹ năng chuyên môn: Activity diagram, Data flow diagram, State Machine Diagram, Use case diagram, Visio, Enterprise Architect, Axure, Balsamiq, Microsoft Office
+Yêu cầu: Tối thiểu 03 năm kinh nghiệm làm BA. Có kinh nghiệm mô hình hóa hệ thống thông qua: Activity diagram, Data flow diagram, State Machine Diagram, Use case diagram. Thành thạo các công cụ phục vụ cho việc design, documentation như: Visio, Enterprise Architect, Axure, Balsamiq, Microsoft Office. Có kinh nghiệm viết các tài liệu đặc tả yêu cầu của khách hàng như: Use stories, URD (user requirement document), SRS (software requirement specification) documents. Có kinh nghiệm làm BA cho các dự án CNTT. Ưu tiên ứng viên có kinh nghiệm tổ chức, phân tích nghiệp vụ cho các dự án lớn (khối chính phủ)."
+jd_1544,5,"IT / Thuật (Hệ điều hành Windows, Phần mềm văn phòng, Mạng máy tính)",Chuyên Viên Phân Tích Nghiệp Vụ,4 năm,4.0,"Vị trí: Chuyên Viên Phân Tích Nghiệp Vụ
+Kinh nghiệm: 4 năm
+Học vấn: Tốt nghiệp đại học các ngành liên quan đến khoa học máy tính, công nghệ thông tin, kinh tế tài chính hoặc tương đương
+Kỹ năng chuyên môn: Kiến thức về công nghệ thông tin, Phát triển phần mềm, UI/UX
+Yêu cầu: Tốt nghiệp đại học các ngành liên quan đến khoa học máy tính, công nghệ thông tin, kinh tế tài chính hoặc tương đương. Ưu tiên ứng viên từng tham gia triển khai các hệ thống phần mềm cho Bộ, ngành, UBND, sở ban ngành, hoặc các hệ thống ERP, CRM, quản lý hành chính công. Am hiểu các mô hình phân tích nghiệp vụ, quy trình nghiệp vụ, đặc biệt trong lĩnh vực công/nhà nước là lợi thế. Ưu tiên nắm vững kiến thức về công nghệ thông tin và phát triển phần mềm. Hiểu biết sâu về những quy trình, nghiệp vụ thông dụng liên quan đến kinh tế, tài chính, quản lý doanh nghiệp. Có kiến thức về UI/UX là một lợi thế. Khả năng nắm bắt, học hỏi kỹ thuật mới nhanh. Tư duy logic tốt + khả năng tự học, chủ động, cầu tiến trong công việc. Có khả năng làm việc độc lập, làm việc nhóm, giải quyết vấn đề và chịu được "

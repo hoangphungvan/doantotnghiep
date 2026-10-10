@@ -1,6 +1,12 @@
-# Hướng dẫn tạo và gán nhãn dữ liệu CV–JD (rubric v1)
+# Hướng dẫn tạo và gán nhãn dữ liệu CV–JD (rubric v1.1)
 
 Mục tiêu: có bộ cặp CV–JD với nhãn 0–3 tái lập được, đủ bằng chứng để bảo vệ trước hội đồng.
+
+**Thay đổi so với v1** (rút ra từ đợt thí điểm 195 cặp):
+1. Thêm đặc trưng `core_tech_missing` và quy tắc hạ một mức (mục 1.1 và 1.3).
+2. Khi ước lượng độ phủ rơi vào 65–74%, ghi 65 (mục 1.1), để không "đẩy" cặp lên mức cao khi đang phân vân.
+3. Bắt buộc đọc đầy đủ phần "Yêu cầu" của JD trước khi chấm (không chấm theo tiêu đề).
+Nhãn của đợt thí điểm đã được chấm theo đúng các quy tắc này, nên hợp lệ với v1.1.
 
 **Nguyên tắc bắt buộc**
 1. Rubric này chốt trước khi chấm. Nếu sửa rubric, phải chấm lại toàn bộ và ghi số phiên bản (v1, v2...).
@@ -32,11 +38,13 @@ Giữ nguyên tên 4 mức để khớp `config.GRADE_LABELS` trong code. Phần
   - Must-have = kỹ năng, công nghệ, chứng chỉ, ngoại ngữ trong "Yêu cầu" và "Kỹ năng chuyên môn". **Bỏ qua** các ý ghi "ưu tiên", "là một lợi thế", "nice to have".
   - CV có bằng chứng = kỹ năng được nêu hoặc được dùng trong phần kinh nghiệm. Công nghệ tương đương rõ ràng được tính (MSSQL ≈ SQL Server). Không suy diễn kỹ năng CV không nhắc tới.
   - Ngưỡng: **high** ≥ 70, **medium** 40–69, **low** < 40.
+  - Nếu ước lượng nằm trong 65–74 thì **ghi 65** (chọn phía thấp khi sát ngưỡng).
 - **seniority_gap** = cấp JD − cấp CV (số nguyên).
   - Cấp: Fresher = 0 (dưới 1 năm, kể cả thực tập), Junior = 1 (1–2 năm), Middle = 2 (3–4 năm), Senior = 3 (từ 5 năm).
   - Cấp JD lấy từ "Kinh nghiệm" và nội dung (có "Senior", "Lead", "Trưởng nhóm" thì tăng một cấp).
   - **level_mismatch** = `seniority_gap ≥ 2` (JD cao hơn CV từ 2 cấp) **hoặc** `seniority_gap ≤ −3` (CV cao hơn JD từ 3 cấp).
 - **hard_requirement_missing** (true/false): JD ghi **bắt buộc** một điều kiện cứng (bằng cấp, chứng chỉ, ngoại ngữ như tiếng Nhật N2, quyền làm việc) mà CV không có.
+- **core_tech_missing** (true/false): công nghệ hoặc nền tảng được nêu **ngay trong tiêu đề JD** (ví dụ Sitecore, Flutter, PHP-Laravel, Swift, Java, Salesforce) hoàn toàn không có trong CV. Tiêu đề chung chung ("Fullstack Developer", "Mobile Developer") thì để false.
 
 ### 1.2. Nhóm vai trò
 
@@ -68,6 +76,8 @@ Ký hiệu: `M` = level_mismatch, `H` = hard_requirement_missing.
 | same | low | | 1 |
 | adjacent | high | không M, không H | 2 |
 | adjacent | còn lại | | 1 |
+
+**Quy tắc hạ mức (v1.1):** sau khi tra bảng, nếu `core_tech_missing = true` thì hạ **1 mức**, nhưng không thấp hơn 1 với `same`/`adjacent` và không thấp hơn 0 với `different`. Lý do: độ phủ đếm đều từng mục có thể lên 70–80% dù CV thiếu đúng công nghệ chính của JD.
 
 **Khi phân vân giữa hai mức, chọn mức thấp hơn** (để chống xu hướng chấm dễ dãi của mô hình).
 
@@ -174,8 +184,9 @@ Mở chat mới cho **mỗi CV**. Dán 10-12 JD mỗi lần (cột `jd_brief` tr
 ````text
 Bạn là chuyên viên tuyển dụng CNTT tại Việt Nam. Hãy đánh giá mức độ phù hợp của MỘT CV với TỪNG JD trong danh sách, theo rubric v1 dưới đây. Đánh giá từng JD độc lập; không so sánh các JD với nhau.
 
-RUBRIC v1
+RUBRIC v1.1
 Mức: 3 = Phù hợp tốt | 2 = Phù hợp một phần | 1 = Liên quan ngành | 0 = Không phù hợp.
+Hãy đọc đầy đủ phần "Yêu cầu" của từng JD; không chấm theo tiêu đề.
 
 Với MỖI JD, làm đúng theo thứ tự:
 1. Xác định must-have: kỹ năng, công nghệ, chứng chỉ, ngoại ngữ trong "Yêu cầu" và "Kỹ năng chuyên môn". BỎ QUA các ý ghi "ưu tiên", "là một lợi thế", "nice to have".
@@ -183,10 +194,11 @@ Với MỖI JD, làm đúng theo thứ tự:
    - same: cùng nhóm vai trò. Nhóm: Backend; Frontend; Fullstack; Mobile; DevOps/Cloud; Sysadmin/Network/Security; IT Support; QA/Tester; Data Analyst; Data Engineer/ML-AI; Business Analyst; PM/Product Owner; UI/UX-Graphic Designer.
    - adjacent: khác nhóm nhưng cùng khối nghề (Phát triển phần mềm; Hạ tầng và vận hành; Dữ liệu; Phân tích và quản lý; Thiết kế), hoặc cặp hay chuyển đổi: QA <-> lập trình, BA <-> PM, Data Analyst <-> Data Engineer.
    - different: còn lại.
-3. must_have_coverage_pct (0-100): tỉ lệ must-have mà CV CÓ BẰNG CHỨNG (nêu trong kỹ năng hoặc dùng trong kinh nghiệm). Công nghệ tương đương rõ ràng được tính (MSSQL ~ SQL Server). Không suy diễn kỹ năng CV không nhắc tới. high >= 70, medium 40-69, low < 40.
+3. must_have_coverage_pct (0-100): tỉ lệ must-have mà CV CÓ BẰNG CHỨNG (nêu trong kỹ năng hoặc dùng trong kinh nghiệm). Công nghệ tương đương rõ ràng được tính (MSSQL ~ SQL Server). Không suy diễn kỹ năng CV không nhắc tới. high >= 70, medium 40-69, low < 40. Nếu ước lượng nằm trong 65-74 thì ghi 65.
 4. cv_level và jd_level: Fresher (dưới 1 năm), Junior (1-2 năm), Middle (3-4 năm), Senior (từ 5 năm). Cấp JD lấy từ "Kinh nghiệm" và nội dung (có Senior/Lead/Trưởng nhóm thì tăng một cấp). seniority_gap = số cấp của JD trừ số cấp của CV (Fresher=0, Junior=1, Middle=2, Senior=3).
    level_mismatch = (seniority_gap >= 2) HOẶC (seniority_gap <= -3).
 5. hard_requirement_missing: true nếu JD ghi BẮT BUỘC một điều kiện cứng (bằng cấp, chứng chỉ, ngoại ngữ như tiếng Nhật N2...) mà CV không có.
+5b. core_tech_missing: true nếu công nghệ/nền tảng nêu NGAY TRONG TIÊU ĐỀ JD (ví dụ Sitecore, Flutter, PHP-Laravel, Swift, Java) hoàn toàn không có trong CV; tiêu đề chung chung thì false.
 6. grade theo bảng, áp dụng theo thứ tự:
    - different + coverage low -> 0
    - different + coverage medium/high -> 1
@@ -197,6 +209,7 @@ Với MỖI JD, làm đúng theo thứ tự:
    - same + low -> 1
    - adjacent + high + không mismatch + không hard_missing -> 2
    - adjacent + các trường hợp còn lại -> 1
+   Sau đó, nếu core_tech_missing = true: hạ 1 mức (không thấp hơn 1 với same/adjacent; không thấp hơn 0 với different).
    Khi phân vân giữa hai mức, chọn mức THẤP hơn.
 7. reason: tối đa 25 từ, nêu cụ thể kỹ năng đã khớp hoặc còn thiếu.
 
@@ -212,6 +225,7 @@ BỎ QUA: tên, giới tính, tuổi, độ dài hay văn phong của CV, tên t
     "jd_level": "Fresher|Junior|Middle|Senior",
     "seniority_gap": 0,
     "hard_requirement_missing": false,
+    "core_tech_missing": false,
     "grade": 0,
     "reason": "..."
   }
@@ -236,7 +250,7 @@ Lưu mỗi kết quả thành `data/raw/judgments/<profile_id>_run1.json` (và `
 ## 6. Quy trình và kiểm chứng
 
 1. Sinh 104 hồ sơ (Prompt A) → 104 CV (Prompt B). Đọc lướt vài CV để chắc không lộ tên vị trí hoặc "nhận xét AI".
-2. JD: `python src/data_collection/select_jds.py` (180 JD thật, 9 JD mỗi cụm).
+2. JD: `python src/data_collection/select_jds.py --extra` (220 JD thật: 180 JD chọn đều theo 20 cụm, cộng 40 JD bổ sung cho các nhóm nghề thiếu JD là DevOps, Frontend, Mobile, Data, BA, Fullstack). Nhóm nghề của từng JD nằm trong `data/raw/jd_families.csv`.
 3. Ghép mỗi CV với khoảng 15 JD gồm: vài JD cùng nhóm, vài JD khác cấp độ, vài JD nhóm liền kề, vài JD khác khối nghề. Kế hoạch ghép sẽ được làm thành script ở bước tiếp theo.
 4. Chấm bằng Prompt C. Chạy lần hai (đảo thứ tự JD) trên khoảng 25% số CV để đo độ nhất quán của chính ChatGPT.
 5. **Kiểm chứng bằng người** (bắt buộc): chấm mù 60-100 cặp phân tầng theo mức, chưa xem nhãn AI. Tính kappa có trọng số giữa bạn và ChatGPT; từ khoảng 0,6 trở lên là chấp nhận được.

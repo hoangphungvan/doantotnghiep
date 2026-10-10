@@ -60,6 +60,25 @@ def test_filters_dedupes_and_is_deterministic():
     assert "Vị trí: " in a["jd_brief"].iloc[0]
 
 
+def test_select_extra_by_title_keywords():
+    from src.data_collection.select_jds import select_extra
+    rows = [_jd(1, title="DevOps Engineer"), _jd(2, title="Senior DevOps"), _jd(3, title="Sales DevOps tools"),
+            _jd(4, title="Frontend Developer"), _jd(5, title="Kế toán"), _jd(6, title="DevOps Engineer", skills="Go")]
+    jds = pd.DataFrame(rows)
+    cl = _clusters(jds["jd_id"].tolist())
+    rules = {"DEVOPS": (r"devops", 2), "FE": (r"frontend", 5)}
+    out = select_extra(jds, cl, already_ids=["jd_0001"], rules=rules)
+    got = dict(zip(out.jd_id, out.family))
+    assert "jd_0001" not in got                                  # đã chọn từ trước
+    assert "jd_0003" not in got and "jd_0005" not in got         # loại bởi từ khóa loại trừ / không khớp
+    assert sorted(f for f in got.values() if f == "DEVOPS") == ["DEVOPS", "DEVOPS"]   # đủ hạn mức 2
+    assert got["jd_0004"] == "FE"
+    both = pd.DataFrame([_jd(1, title="Fullstack (React)"), _jd(2, title="Fullstack Java", skills="Go"), _jd(3, title="React Dev", skills="C")])
+    two = select_extra(both, _clusters(both.jd_id.tolist()), [], {"FS": (r"fullstack", 1), "FE": (r"react", 5)})
+    assert dict(zip(two.jd_id, two.family)) == {"jd_0001": "FS", "jd_0003": "FE"}   # JD khớp luật FS không rơi sang FE
+    assert select_extra(jds, cl, ["jd_0001"], rules).jd_id.tolist() == out.jd_id.tolist()  # xác định
+
+
 def test_each_cluster_gets_its_quota():
     jds = pd.DataFrame([_jd(i) for i in range(1, 13)])
     cl = pd.concat([_clusters(jds["jd_id"][:6].tolist(), 0), _clusters(jds["jd_id"][6:].tolist(), 1)])
