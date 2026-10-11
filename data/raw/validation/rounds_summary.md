@@ -14,3 +14,11 @@
 - Chiều lệch: người cao hơn Claude ở 16 cặp, thấp hơn ở 2 cặp. Người cho mức 3 ở 17 cặp (vòng 1: 2 cặp).
 
 **Không dùng vòng 2 làm bằng chứng kiểm chứng trong báo cáo.** Người chấm cho biết đã đọc lướt CV và JD, chủ yếu dựa vào số năm kinh nghiệm và lĩnh vực, và tiếng Anh hạn chế (một cặp đã xác nhận có thể chấm sai). Cùng 39 cặp này cũng đã bị thảo luận nên không còn "mù". Lần kiểm chứng chính thức sẽ dùng mẫu mới, chấm nghiêm túc, sau khi gán nhãn xong.
+
+## Vòng 3 — kiểm chứng chính thức (mẫu mới, rubric v1.2, chấm nghiêm túc)
+Mẫu 40 cặp: 36 cặp khác nhau (9 cặp mỗi mức điểm của Claude, mỗi CV một lần) và 4 cặp lặp ẩn. Các cặp lặp **không** dùng để tính chỉ số nào (4 cặp quá ít để kết luận về độ nhất quán). Phân tích trên 36 cặp, một người chấm.
+- Khớp chính xác: 86,1% (31/36), khoảng tin cậy 95% 75-97%; trong ±1 mức: 100%; không có cặp nào lệch từ 2 mức trở lên.
+- Kappa có trọng số bình phương 0,94 [0,87-0,99]; tuyến tính 0,88; không trọng số 0,81.
+- Nhị phân (từ mức 2 trở lên hay không): khớp 97,2%, kappa 0,94. Spearman 0,95.
+- 5 cặp lệch, tất cả lệch 1 mức: người cao hơn Claude ở 3 cặp, thấp hơn ở 2 cặp (lệch trung bình +0,03).
+- Chưa có người chấm thứ hai nên chưa có độ đồng thuận giữa người với người. Mẫu cân bằng theo mức điểm nên kappa cao hơn so với mẫu tự nhiên (nhãn 1 chiếm khoảng 49%).
