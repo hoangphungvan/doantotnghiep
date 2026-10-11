@@ -210,6 +210,7 @@ def read_text_file(file_path: str) -> str:
 
 def _parse_entities(raw: str) -> dict:
     """Parse JSON từ response LLM, luôn trả về dict đúng cấu trúc."""
+    raw = re.sub(r"<think>[\s\S]*?</think>", "", raw)  # mô hình suy luận (qwen3.x) có thể kèm khối <think>
     match = re.search(r'\{[\s\S]*\}', raw)
     if match:
         raw = match.group()

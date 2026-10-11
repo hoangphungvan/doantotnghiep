@@ -39,8 +39,7 @@ def get_query_id(data) -> Optional[str]:
     """
     Trả về id nhóm (một CV) mà graph này thuộc về, None nếu không có.
 
-    Ưu tiên cv_source (đặt bởi prepare_training_data/dataset),
-    sau đó cv_path (đặt bởi CJMDataset khi xử lý từ CSV).
+    Dùng cv_source (đặt bởi prepare_training_data); cv_path chỉ còn để tương thích đồ thị cũ.
     """
     for attr in ("cv_source", "cv_path"):
         value = getattr(data, attr, None)

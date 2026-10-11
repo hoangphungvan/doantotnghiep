@@ -98,7 +98,7 @@ Yêu cầu Python 3.10+ (đã chạy trên Python 3.13, Windows).
 pip install -r requirements.txt
 ```
 
-Tạo `.env` ở thư mục gốc (API tương thích OpenAI; mặc định trong `config.py` là Groq, dự án đã chạy với Gemini qua endpoint tương thích):
+Tạo `.env` ở thư mục gốc. Mặc định trong `config.py` là **Groq** (`qwen/qwen3.8-27b`); `.env` ghi đè được để dùng nhà cung cấp khác có API tương thích OpenAI. Bộ dữ liệu hiện tại được trích xuất thực thể bằng `gemini-3.1-flash-lite` (xem lưu ý bên dưới):
 
 ```env
 LLM_API_KEY=<khóa API>
@@ -106,6 +106,8 @@ OPENAI_BASE_URL=<endpoint tương thích OpenAI>
 LLM_MODEL=<tên model>
 EMBEDDING_MODEL=paraphrase-multilingual-MiniLM-L12-v2
 ```
+
+> **Lưu ý khi đổi LLM**: cache thực thể khóa theo nội dung văn bản, không theo model. CV/JD đã có trong `entity_cache.json` luôn dùng kết quả cũ (Gemini); văn bản mới mới gọi LLM đang cấu hình. Đổi nhà cung cấp rồi suy luận trên CV/JD mới có thể cho thực thể hơi khác phân phối lúc huấn luyện; muốn đồng nhất hoàn toàn thì xóa cache và chạy lại `--mode prepare` rồi huấn luyện lại.
 
 > Trên Windows nên chạy `python -X utf8 ...` để tránh lỗi hiển thị tiếng Việt.
 
@@ -137,10 +139,6 @@ Tạo lại dữ liệu JD từ đầu (chỉ khi cần; cần file VietJobs g�
 
 `src/inference/explain.py` giải thích mức khớp giữa CV và JD (khớp thực thể, khớp ngữ nghĩa SBERT, đóng góp của từng nút theo occlusion), xuất song ngữ Việt/Anh.
 
-### Phần chưa cập nhật theo dữ liệu mới
-
-`src/evaluation/ranking_eval.py` (bảng 4 phương pháp và `--explain` trên dữ liệu cũ), `src/data_collection/generate_training_data.py` và `main.py --mode demo/hybrid/pipeline` vẫn gắn với bộ dữ liệu 60 cặp cũ đã bị xóa (`pairs_it.csv`, `data/raw/cvs/`) nên chưa chạy được trên bộ dữ liệu hiện tại.
-
 ---
 
 ## Cấu trúc thư mục
@@ -156,8 +154,8 @@ Tạo lại dữ liệu JD từ đầu (chỉ khi cần; cần file VietJobs g�
 │   │   └── extract_vietjobs_it.py, cache_jd_embeddings.py, cluster_jds.py
 │   ├── extraction/entity_extractor.py   # LLM extractor + cache
 │   ├── representation/           # Embedding + DeepSets, xây đồ thị 14 nút
-│   ├── modeling/                 # model.py, train.py (có --cv), dataset.py
-│   ├── evaluation/               # metrics, baselines, hybrid, ranking_eval
+│   ├── modeling/                 # model.py, train.py (có --cv)
+│   ├── evaluation/               # metrics, baselines, hybrid
 │   └── inference/                # predict.py, explain.py
 ├── data/
 │   ├── raw/                      # cvs_synth, profiles, judgments, selected_jds.csv, pairs_design.csv, validation/
