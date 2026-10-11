@@ -1,3 +1,7 @@
 .env
 __pycache__/
 *.pyc
+# Sinh ra bằng `main.py --mode prepare` / `train.py --cv`, dựng lại được
+data/processed/graphs/
+models/cv_folds/
+data/cache/entity_cache.json.tmp

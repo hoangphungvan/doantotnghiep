@@ -199,7 +199,9 @@ def train(data_list: list,
           device: Optional[torch.device] = None,
           save_path: str = None,
           patience: int = 15,
-          pos_weight: float = None) -> tuple:
+          pos_weight: float = None,
+          train_data: list = None,
+          val_data: list = None) -> tuple:
     """
     Pipeline huấn luyện đầy đủ với nhãn thang 0..NUM_GRADES.
 
@@ -215,6 +217,7 @@ def train(data_list: list,
         save_path: Đường dẫn lưu model tốt nhất
         patience: Số epoch chờ trước khi early stop
         pos_weight: Chỉ dùng khi train nhãn nhị phân thuần (mặc định: không)
+        train_data, val_data: truyền cả hai để tự chia tập (vd cross-validation); bỏ qua val_ratio
 
     Returns:
         (model, history)
@@ -229,7 +232,8 @@ def train(data_list: list,
 
     print_grade_distribution(data_list, "Toàn bộ dataset")
 
-    train_data, val_data = split_by_query(data_list, val_ratio=val_ratio)
+    if train_data is None or val_data is None:
+        train_data, val_data = split_by_query(data_list, val_ratio=val_ratio)
     print_grade_distribution(train_data, "Train")
     print_grade_distribution(val_data, "Val")
 
@@ -309,6 +313,87 @@ def train(data_list: list,
     return model, history
 
 
+def cross_validate(graphs: list, k: int = 5, seed: int = 42, epochs: int = None,
+                   batch_size: int = None, lr: float = None, patience: int = 20,
+                   n_boot: int = 500) -> dict:
+    """
+    K-fold cross-validation theo nhóm CV: mỗi CV nằm ở tập test đúng một lần.
+
+    Mỗi fold: 15% CV còn lại làm val (early stopping + chọn α của Hybrid), phần dư để train.
+    So GCN với Random / TF-IDF / SBERT / Hybrid trên cùng điểm dự đoán out-of-fold; chỉ số
+    gộp trên toàn bộ CV, khoảng tin cậy 95% bootstrap theo CV. Lưu data/processed/cv_results.{csv,md}.
+    """
+    from src.evaluation.baselines import tfidf_cosine_scores
+    from src.evaluation.hybrid import (build_query_groups, compute_graph_scores,
+                                       compute_semantic_scores, tune_alpha, _minmax_fit)
+
+    qids = np.array(sorted({get_query_id(g) for g in graphs}))
+    np.random.default_rng(seed).shuffle(qids)
+    rng = np.random.default_rng(seed)
+    methods = ["Random", "TF-IDF + cosine", "SBERT + cosine", "GCN", "Hybrid (GCN + SBERT)"]
+    oof = {m: [] for m in methods}   # (graph, score) out-of-fold
+    alphas, fold_ndcg = [], []
+    input_dim = graphs[0].x.shape[1]
+
+    for i, test_q in enumerate(np.array_split(qids, k)):
+        test_q = set(test_q)
+        test = [g for g in graphs if get_query_id(g) in test_q]
+        rest = [g for g in graphs if get_query_id(g) not in test_q]
+        print(f"\n{'#'*70}\n# FOLD {i + 1}/{k}: {len(test_q)} CV test, {len(rest)} cặp train+val\n{'#'*70}")
+        tr, va = split_by_query(rest, val_ratio=0.15)
+        model, _ = train(rest, input_dim, num_epochs=epochs, batch_size=batch_size, lr=lr, patience=patience,
+                         train_data=tr, val_data=va,
+                         save_path=os.path.join(config.MODEL_DIR, "cv_folds", f"fold{i + 1}.pt"))
+
+        gs_va, ss_va = compute_graph_scores(model, va), compute_semantic_scores(va)
+        alpha, _ = tune_alpha(va, gs_va, ss_va)
+        alphas.append(alpha)
+        gs, ss = compute_graph_scores(model, test), compute_semantic_scores(test)
+        scores = {"Random": rng.random(len(test)), "TF-IDF + cosine": tfidf_cosine_scores(test),
+                  "SBERT + cosine": ss, "GCN": gs,
+                  "Hybrid (GCN + SBERT)": alpha * gs + (1 - alpha) * _minmax_fit(ss_va)(ss)}
+        for m in methods:
+            oof[m] += list(zip(test, scores[m]))
+        fold_ndcg.append(evaluate_ranking(build_query_groups(test, gs), ks=config.RANKING_KS).get("ndcg@5"))
+
+    results, rows = {}, []
+    for m in methods:
+        groups = build_query_groups([g for g, _ in oof[m]], np.array([s for _, s in oof[m]]))
+        res = evaluate_ranking(groups, ks=config.RANKING_KS)
+        keys = [x for x in res if x != "num_queries"]
+        boots = {x: [] for x in keys}
+        for _ in range(n_boot):
+            pick = rng.integers(0, len(groups), len(groups))
+            ids = list(groups)
+            b = evaluate_ranking({j: groups[ids[p]] for j, p in enumerate(pick)}, ks=config.RANKING_KS)
+            for x in keys:
+                if b[x] is not None:
+                    boots[x].append(b[x])
+        res["ci"] = {x: tuple(np.percentile(boots[x], [2.5, 97.5])) if boots[x] else None for x in keys}
+        results[m] = res
+        rows.append({"method": m, **{x: res[x] for x in keys},
+                     **{f"{x}_lo": res["ci"][x][0] for x in keys if res["ci"][x]},
+                     **{f"{x}_hi": res["ci"][x][1] for x in keys if res["ci"][x]}})
+
+    import pandas as pd
+    pd.DataFrame(rows).to_csv(os.path.join(config.DATA_PROCESSED_DIR, "cv_results.csv"), index=False)
+    cols = [x for x in results["GCN"] if x not in ("num_queries", "ci")]
+    md = [f"Cross-validation {k}-fold theo CV, {results['GCN']['num_queries']} CV, seed {seed}. "
+          "Ô: trung bình [CI 95% bootstrap theo CV].", "",
+          "| Phương pháp | " + " | ".join(cols) + " |", "|---|" + "---|" * len(cols)]
+    for m in methods:
+        r = results[m]
+        md.append(f"| {m} | " + " | ".join(
+            f"{r[x]:.3f} [{r['ci'][x][0]:.3f}-{r['ci'][x][1]:.3f}]" if r[x] is not None and r["ci"][x] else "—"
+            for x in cols) + " |")
+    md += ["", f"α Hybrid theo fold: {[round(a, 2) for a in alphas]}; "
+               f"NDCG@5 của GCN theo fold: {[round(v, 3) for v in fold_ndcg if v is not None]}"]
+    with open(os.path.join(config.DATA_PROCESSED_DIR, "cv_results.md"), "w", encoding="utf-8") as f:
+        f.write("\n".join(md) + "\n")
+    print("\n" + "\n".join(md))
+    return results
+
+
 if __name__ == "__main__":
     import argparse
     from src.data_collection.prepare_training_data import load_all_graphs
@@ -318,6 +403,8 @@ if __name__ == "__main__":
     parser.add_argument("--batch",     type=int,   default=config.BATCH_SIZE)
     parser.add_argument("--lr",        type=float, default=config.LEARNING_RATE)
     parser.add_argument("--patience",  type=int,   default=20)
+    parser.add_argument("--cv",        type=int,   default=0,
+                        help="K>1: chạy K-fold cross-validation theo CV và so sánh baseline (không lưu model chính)")
     parser.add_argument("--save",      type=str,   default=None,
                         help="Đường dẫn lưu model (mặc định: models/best_model.pt)")
     args = parser.parse_args()
@@ -327,7 +414,6 @@ if __name__ == "__main__":
     if len(graphs) == 0:
         print("[ERROR] Chưa có dữ liệu training.")
         print("  Chạy trước: python main.py --mode prepare")
-        print("           hoặc: python src/data_collection/prepare_training_data.py --mode file")
         raise SystemExit(1)
 
     print(f"\n[Train] Dataset: {len(graphs)} graphs")
@@ -338,6 +424,11 @@ if __name__ == "__main__":
         print(f"[ERROR] Dataset cần có ít nhất 2 mức grade khác nhau (0..{config.NUM_GRADES}), "
               f"hiện chỉ có: {sorted(grades)}")
         raise SystemExit(1)
+
+    if args.cv > 1:
+        cross_validate(graphs, k=args.cv, epochs=args.epochs, batch_size=args.batch, lr=args.lr,
+                       patience=args.patience)
+        raise SystemExit(0)
 
     input_dim = graphs[0].x.shape[1]
     model, history = train(

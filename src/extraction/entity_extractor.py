@@ -57,9 +57,18 @@ def _save_cache():
     global _entity_cache
     if _entity_cache is not None:
         os.makedirs(config.DATA_CACHE_DIR, exist_ok=True)
+        # Ghi ra file tạm rồi thay thế: lỗi ghi (Windows hay khóa file tạm thời) không làm hỏng cache cũ.
         # newline="\n": giữ LF như file đã commit, tránh diff toàn file khi chạy trên Windows
-        with open(config.ENTITY_CACHE_FILE, "w", encoding="utf-8", newline="\n") as f:
+        tmp = config.ENTITY_CACHE_FILE + ".tmp"
+        with open(tmp, "w", encoding="utf-8", newline="\n") as f:
             json.dump(_entity_cache, f, ensure_ascii=False, indent=2)
+        for attempt in range(5):
+            try:
+                os.replace(tmp, config.ENTITY_CACHE_FILE)
+                return
+            except OSError:
+                time.sleep(0.5 * (attempt + 1))
+        _print("[WARN] Không ghi được entity_cache.json, giữ bản cũ trên đĩa.")
 
 
 def get_cache_key(text: str) -> str:

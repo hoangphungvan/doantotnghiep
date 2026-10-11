@@ -1,35 +1,29 @@
 """
-Tool thu thập và chuẩn bị dữ liệu training cho CJM model.
+Dựng bộ dữ liệu đồ thị cho GCN từ dữ liệu đã gán nhãn.
 
-Nhãn là mức độ phù hợp (grade) theo thang 0-3:
-  0 = Không phù hợp, 1 = Liên quan ngành,
-  2 = Phù hợp một phần, 3 = Phù hợp tốt
+Nguồn:
+  data/raw/judgments/claude_b*.csv — nhãn (cv_id, jd_id, grade 0-3)
+  data/raw/cvs_synth/<cv_id>.txt   — CV tổng hợp
+  data/raw/selected_jds.csv        — JD thật; dùng cột jd_brief (đúng văn bản người chấm đã đọc)
 
-Hỗ trợ 2 chế độ nhập liệu:
-  --mode text  : Nhập trực tiếp văn bản CV và JD qua terminal
-  --mode file  : Chỉ định đường dẫn file PDF/TXT
-
-Để đánh giá xếp hạng (NDCG@K/MRR/Recall@K), nên ghép MỘT CV với NHIỀU JD —
-các cặp dùng chung CV (cùng file hoặc cùng Nhóm CV ID) sẽ được group lại.
-
-Dữ liệu đã thu thập được lưu vào:
-  data/processed/training_pairs.csv — bảng cv_path/cv_text, jd_path/jd_text, label
-  data/processed/graphs/            — file .pt đồ thị đã build sẵn (tăng tốc training)
+Mỗi CV và mỗi JD chỉ gọi LLM trích xuất thực thể một lần (có cache), sau đó ghép
+từng cặp thành một đồ thị 14 nút. Kết quả:
+  data/processed/graphs/graph_*.pt     — mỗi cặp một đồ thị (y = grade, cv_source = cv_id)
+  data/processed/dataset_manifest.csv  — idx, cv_id, jd_id, grade, graph_path
 
 Chạy:
   python main.py --mode prepare
-  python src/data_collection/prepare_training_data.py --mode text
-  python src/data_collection/prepare_training_data.py --mode file
-  python src/data_collection/prepare_training_data.py --mode file --csv data/my_pairs.csv
+  python src/data_collection/prepare_training_data.py --limit-cvs 3   # chạy thử
 """
 
 import argparse
-import csv
+import glob
 import json
 import os
 import sys
 from pathlib import Path
 
+import pandas as pd
 import torch
 from tqdm import tqdm
 
@@ -38,352 +32,91 @@ if __package__ in (None, ""):
     sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 import config
-from src.extraction.entity_extractor import extract_entities, extract_from_file, normalize_path, get_jd_text_by_id
+from src.extraction.entity_extractor import extract_entities
 from src.representation.embedding_generator import EmbeddingGenerator
 from src.representation.graph_builder import build_graph
 
+GRAPH_DIR = config.GRAPH_DIR
+MANIFEST_CSV = os.path.join(config.DATA_PROCESSED_DIR, "dataset_manifest.csv")
+JUDGMENTS_GLOB = os.path.join(config.DATA_RAW_DIR, "judgments", "claude_b*.csv")
+CV_DIR = os.path.join(config.DATA_RAW_DIR, "cvs_synth")
+JD_CSV = os.path.join(config.DATA_RAW_DIR, "selected_jds.csv")
 
-TRAINING_CSV = os.path.join(config.DATA_PROCESSED_DIR, "training_pairs.csv")
-GRAPH_DIR    = config.GRAPH_DIR
+
+def load_pairs() -> pd.DataFrame:
+    """Gộp các file nhãn thành bảng (cv_id, jd_id, grade); báo lỗi nếu trùng cặp hoặc nhãn ngoài thang."""
+    files = sorted(glob.glob(JUDGMENTS_GLOB))
+    if not files:
+        raise FileNotFoundError(f"Không có file nhãn: {JUDGMENTS_GLOB}")
+    df = pd.concat([pd.read_csv(f, usecols=["cv_id", "jd_id", "grade"]) for f in files], ignore_index=True)
+    if df.duplicated(["cv_id", "jd_id"]).any():
+        raise ValueError("Có cặp (cv_id, jd_id) bị gán nhãn nhiều lần")
+    if not df.grade.between(0, config.NUM_GRADES).all():
+        raise ValueError(f"Có nhãn ngoài thang 0..{config.NUM_GRADES}")
+    return df.sort_values(["cv_id", "jd_id"]).reset_index(drop=True)
 
 
-# ---------------------------------------------------------------------------
-# Helpers
-# ---------------------------------------------------------------------------
+def _read_cv(cv_id: str) -> str:
+    return Path(glob.glob(os.path.join(CV_DIR, f"{cv_id}.*"))[0]).read_text(encoding="utf-8")
 
-def _ensure_dirs():
+
+def _extract(texts: dict, label: str) -> dict:
+    """Trích xuất thực thể cho từng id; id nào LLM trả rỗng thì bị loại (không đưa đồ thị rác vào dữ liệu)."""
+    out, failed = {}, []
+    for key, text in tqdm(texts.items(), desc=f"Trích xuất {label}"):
+        ents = extract_entities(text)
+        if any(ents.get(t) for t in config.ENTITY_TYPES):
+            out[key] = ents
+        else:
+            failed.append(key)
+    if failed:
+        print(f"[WARN] {len(failed)} {label} không trích xuất được, bỏ qua: {failed}")
+    return out
+
+
+def build_dataset(limit_cvs: int = None) -> pd.DataFrame:
+    pairs = load_pairs()
+    if limit_cvs:
+        pairs = pairs[pairs.cv_id.isin(sorted(pairs.cv_id.unique())[:limit_cvs])]
+    jds = pd.read_csv(JD_CSV).set_index("jd_id").jd_brief
+
+    cv_ents = _extract({c: _read_cv(c) for c in pairs.cv_id.unique()}, "CV")
+    jd_ents = _extract({j: jds[j] for j in pairs.jd_id.unique()}, "JD")
+    pairs = pairs[pairs.cv_id.isin(cv_ents) & pairs.jd_id.isin(jd_ents)].reset_index(drop=True)
+
+    gen = EmbeddingGenerator()
+    cv_feats = {c: gen.build_node_features(e) for c, e in cv_ents.items()}
+    jd_feats = {j: gen.build_node_features(e) for j, e in jd_ents.items()}
+
     os.makedirs(GRAPH_DIR, exist_ok=True)
-    os.makedirs(config.DATA_PROCESSED_DIR, exist_ok=True)
-    os.makedirs(os.path.join(config.DATA_RAW_DIR, "cvs"), exist_ok=True)
-    os.makedirs(os.path.join(config.DATA_RAW_DIR, "jds"), exist_ok=True)
+    for old in Path(GRAPH_DIR).glob("graph_*.pt"):
+        old.unlink()  # tránh lẫn đồ thị của lần dựng trước
 
+    paths = []
+    for i, r in tqdm(pairs.iterrows(), total=len(pairs), desc="Dựng đồ thị"):
+        data = build_graph(*cv_feats[r.cv_id], *jd_feats[r.jd_id], label=float(r.grade))
+        data.cv_source, data.jd_source = r.cv_id, r.jd_id
+        data.cv_entities = json.dumps(cv_ents[r.cv_id], ensure_ascii=False)
+        data.jd_entities = json.dumps(jd_ents[r.jd_id], ensure_ascii=False)
+        path = os.path.join(GRAPH_DIR, f"graph_{i:06d}.pt")
+        torch.save(data, path)
+        paths.append(path)
 
-def _load_existing_csv() -> list[dict]:
-    """Load danh sách cặp đã thu thập trước đó."""
-    if not os.path.exists(TRAINING_CSV):
-        return []
-    with open(TRAINING_CSV, newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
+    pairs["graph_path"] = paths
+    pairs.rename_axis("idx").to_csv(MANIFEST_CSV, encoding="utf-8")
+    print(f"[OK] {len(pairs)} đồ thị, {pairs.cv_id.nunique()} CV, {pairs.jd_id.nunique()} JD → {MANIFEST_CSV}")
+    print(f"     Phân bố nhãn: {pairs.grade.value_counts().sort_index().to_dict()}")
+    return pairs
 
-
-def _save_csv(rows: list[dict]):
-    """Ghi toàn bộ danh sách cặp vào CSV."""
-    if not rows:
-        return
-    fieldnames = list(rows[0].keys())
-    with open(TRAINING_CSV, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(rows)
-    print(f"\n[OK] Đã lưu {len(rows)} cặp vào {TRAINING_CSV}")
-
-
-def _get_label() -> float:
-    """
-    Hỏi mức độ phù hợp (grade) từ người dùng theo thang 0..NUM_GRADES:
-        0 = Không phù hợp, 1 = Liên quan ngành,
-        2 = Phù hợp một phần, 3 = Phù hợp tốt
-    """
-    while True:
-        print("  Thang mức phù hợp:")
-        for g, desc in config.GRADE_LABELS.items():
-            print(f"    {g} = {desc}")
-        ans = input(f"  Mức phù hợp (0-{config.NUM_GRADES}): ").strip()
-        if ans.isdigit() and 0 <= int(ans) <= config.NUM_GRADES:
-            return float(ans)
-        print(f"  Chỉ nhập số nguyên từ 0 đến {config.NUM_GRADES}.")
-
-
-def _get_cv_group(default: str) -> str:
-    """
-    Hỏi id nhóm CV (dùng để gom các JD của cùng một CV khi tính ranking
-    metrics). Enter = dùng default. Nên dùng cùng một ID cho các JD
-    khác nhau của cùng một CV.
-    """
-    ans = input(f"  Nhóm CV ID (Enter = {default}): ").strip()
-    return ans or default
-
-
-def _read_multiline(prompt: str) -> str:
-    """Đọc text nhiều dòng, kết thúc khi gặp dòng trống '---'."""
-    print(prompt)
-    lines = []
-    while True:
-        line = input()
-        if line.strip() == "---":
-            break
-        lines.append(line)
-    return "\n".join(lines)
-
-
-def _build_and_save_graph(idx: int, cv_entities: dict, jd_entities: dict,
-                           label: float, gen: EmbeddingGenerator,
-                           cv_source: str = None, jd_source: str = None) -> str:
-    """Build graph, lưu .pt, trả về đường dẫn. cv_source dùng để group theo CV."""
-    cv_main, cv_feats = gen.build_node_features(cv_entities)
-    jd_main, jd_feats = gen.build_node_features(jd_entities)
-    data = build_graph(cv_main, cv_feats, jd_main, jd_feats, label=label)
-
-    data.cv_entities = json.dumps(cv_entities, ensure_ascii=False)
-    data.jd_entities = json.dumps(jd_entities, ensure_ascii=False)
-    if cv_source:
-        data.cv_source = cv_source
-    if jd_source:
-        data.jd_source = jd_source
-
-    graph_path = os.path.join(GRAPH_DIR, f"graph_{idx:06d}.pt")
-    torch.save(data, graph_path)
-    return graph_path
-
-
-def _show_entities(label: str, entities: dict):
-    print(f"\n  [{label} Entities]")
-    for k, v in entities.items():
-        if v:
-            print(f"    {k}: {v}")
-
-
-# ---------------------------------------------------------------------------
-# Mode: text
-# ---------------------------------------------------------------------------
-
-def collect_text_mode():
-    """Thu thập dữ liệu bằng cách nhập văn bản trực tiếp."""
-    _ensure_dirs()
-    gen = EmbeddingGenerator()
-    rows = _load_existing_csv()
-    start_idx = len(rows)
-
-    print("\n" + "=" * 60)
-    print("  CHẾ ĐỘ NHẬP TEXT — Thu thập Training Data")
-    print("=" * 60)
-    print("Nhập văn bản CV và JD, kết thúc mỗi phần bằng dòng '---'")
-    print("Nhập 'q' tại bất kỳ bước nào để lưu và thoát.\n")
-
-    session_rows = []
-    while True:
-        pair_no = start_idx + len(session_rows) + 1
-        print(f"\n--- Cặp #{pair_no} ---")
-
-        cv_text = _read_multiline(
-            "Nhập nội dung CV (gõ '---' trên dòng riêng để kết thúc):"
-        )
-        if cv_text.strip().lower() == "q":
-            break
-
-        jd_text = _read_multiline(
-            "Nhập nội dung JD (gõ '---' trên dòng riêng để kết thúc):"
-        )
-        if jd_text.strip().lower() == "q":
-            break
-
-        label = _get_label()
-        cv_group = _get_cv_group(f"pair_{pair_no}_cv")
-
-        print("\n  [INFO] Đang trích xuất thực thể bằng LLM...")
-        cv_entities = extract_entities(cv_text)
-        jd_entities = extract_entities(jd_text)
-
-        _show_entities("CV", cv_entities)
-        _show_entities("JD", jd_entities)
-
-        print("\n  [INFO] Đang build đồ thị...")
-        global_idx = start_idx + len(session_rows)
-        graph_path = _build_and_save_graph(
-            global_idx, cv_entities, jd_entities, label, gen,
-            cv_source=cv_group, jd_source=f"pair_{pair_no}_jd",
-        )
-
-        row = {
-            "mode":       "text",
-            "cv_source":  f"pair_{pair_no}_cv",
-            "jd_source":  f"pair_{pair_no}_jd",
-            "label":      int(label),
-            "graph_path": graph_path,
-        }
-        session_rows.append(row)
-        print(f"  [OK] Đã lưu đồ thị: {graph_path}")
-
-        cont = input("\nThêm cặp nữa? (y/n): ").strip().lower()
-        if cont != "y":
-            break
-
-    rows.extend(session_rows)
-    _save_csv(rows)
-    print(f"\nTổng cộng: {len(rows)} cặp (thêm {len(session_rows)} cặp mới)")
-    return rows
-
-
-# ---------------------------------------------------------------------------
-# Mode: file
-# ---------------------------------------------------------------------------
-
-def collect_file_mode(csv_path: str = None):
-    """
-    Thu thập dữ liệu từ file PDF/TXT.
-
-    Nếu csv_path được cung cấp: batch-process toàn bộ CSV có sẵn.
-    Nếu không: nhập interactive từng cặp file.
-    """
-    _ensure_dirs()
-    gen = EmbeddingGenerator()
-
-    if csv_path:
-        _batch_from_csv(csv_path, gen)
-        return
-
-    rows = _load_existing_csv()
-    start_idx = len(rows)
-
-    print("\n" + "=" * 60)
-    print("  CHẾ ĐỘ FILE — Thu thập Training Data")
-    print("=" * 60)
-    print("Hỗ trợ: PDF (text layer & scan), TXT")
-    print("Kéo thả file vào terminal hoặc nhập đường dẫn đầy đủ.\n")
-
-    session_rows = []
-    while True:
-        pair_no = start_idx + len(session_rows) + 1
-        print(f"\n--- Cặp #{pair_no} ---")
-
-        cv_path = normalize_path(input("  Đường dẫn file CV (PDF/TXT): "))
-        if cv_path.lower() == "q":
-            break
-        if not os.path.exists(cv_path):
-            print(f"  [ERROR] File không tồn tại: {cv_path}")
-            continue
-
-        jd_path = normalize_path(input("  Đường dẫn file JD (PDF/TXT): "))
-        if jd_path.lower() == "q":
-            break
-        if not os.path.exists(jd_path):
-            print(f"  [ERROR] File không tồn tại: {jd_path}")
-            continue
-
-        label = _get_label()
-
-        print("\n  [INFO] Đang trích xuất thực thể bằng LLM...")
-        cv_entities = extract_from_file(cv_path)
-        jd_entities = extract_from_file(jd_path)
-
-        _show_entities("CV", cv_entities)
-        _show_entities("JD", jd_entities)
-
-        print("\n  [INFO] Đang build đồ thị...")
-        global_idx = start_idx + len(session_rows)
-        graph_path = _build_and_save_graph(
-            global_idx, cv_entities, jd_entities, label, gen,
-            cv_source=cv_path, jd_source=jd_path,
-        )
-
-        row = {
-            "mode":       "file",
-            "cv_source":  cv_path,
-            "jd_source":  jd_path,
-            "label":      int(label),
-            "graph_path": graph_path,
-        }
-        session_rows.append(row)
-        print(f"  [OK] Đã lưu đồ thị: {graph_path}")
-
-        cont = input("\nThêm cặp nữa? (y/n): ").strip().lower()
-        if cont != "y":
-            break
-
-    rows.extend(session_rows)
-    _save_csv(rows)
-    print(f"\nTổng cộng: {len(rows)} cặp (thêm {len(session_rows)} cặp mới)")
-    return rows
-
-
-def _batch_from_csv(csv_path: str, gen: EmbeddingGenerator):
-    """
-    Batch process: đọc CSV có cột cv_path, jd_path, label
-    → trích xuất entities → build graph → lưu vào GRAPH_DIR.
-    """
-    import pandas as pd
-
-    df = pd.read_csv(csv_path)
-    required = {"cv_path", "jd_path", "label"}
-    if not required.issubset(df.columns):
-        print(f"[ERROR] CSV cần có cột: {required}. Hiện có: {set(df.columns)}")
-        return
-
-    rows = _load_existing_csv()
-    start_idx = len(rows)
-    new_rows = []
-
-    print(f"\n[INFO] Batch processing {len(df)} cặp từ {csv_path}...\n")
-
-    for idx, row_data in tqdm(df.iterrows(), total=len(df), desc="Processing"):
-        cv_path = normalize_path(str(row_data["cv_path"]))
-        jd_path = normalize_path(str(row_data["jd_path"]))
-        label   = float(row_data["label"])
-
-        if not os.path.exists(cv_path):
-            print(f"[SKIP] CV không tồn tại: {cv_path}")
-            continue
-        if not os.path.exists(jd_path) and get_jd_text_by_id(jd_path) is None:
-            print(f"[SKIP] JD không tồn tại (cả file lẫn trong VietJobs_cntt.csv): {jd_path}")
-            continue
-
-        try:
-            cv_entities = extract_from_file(cv_path)
-            jd_entities = extract_from_file(jd_path)
-            global_idx  = start_idx + len(new_rows)
-            graph_path  = _build_and_save_graph(
-                global_idx, cv_entities, jd_entities, label, gen,
-                cv_source=cv_path, jd_source=jd_path,
-            )
-            new_rows.append({
-                "mode":       "file",
-                "cv_source":  cv_path,
-                "jd_source":  jd_path,
-                "label":      int(label),
-                "graph_path": graph_path,
-            })
-        except Exception as e:
-            print(f"[ERROR] Cặp {idx}: {e}")
-
-    rows.extend(new_rows)
-    _save_csv(rows)
-    print(f"\n[OK] Đã xử lý {len(new_rows)}/{len(df)} cặp thành công.")
-
-
-# ---------------------------------------------------------------------------
-# Load prepared graphs for training
-# ---------------------------------------------------------------------------
 
 def load_all_graphs() -> list:
     """Load toàn bộ đồ thị đã build từ GRAPH_DIR."""
-    files = sorted(Path(GRAPH_DIR).glob("graph_*.pt"))
-    graphs = []
-    for f in files:
-        try:
-            graphs.append(torch.load(str(f), weights_only=False))
-        except Exception as e:
-            print(f"[WARN] Không load được {f}: {e}")
+    graphs = [torch.load(str(f), weights_only=False) for f in sorted(Path(GRAPH_DIR).glob("graph_*.pt"))]
     print(f"[INFO] Loaded {len(graphs)} graphs từ {GRAPH_DIR}")
     return graphs
 
 
-# ---------------------------------------------------------------------------
-# Entrypoint
-# ---------------------------------------------------------------------------
-
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Thu thập Training Data cho CJM")
-    parser.add_argument(
-        "--mode", choices=["text", "file"], default="file",
-        help="text: nhập trực tiếp  |  file: chỉ định đường dẫn PDF/TXT",
-    )
-    parser.add_argument(
-        "--csv", type=str, default=None,
-        help="(Chỉ mode=file) CSV có cột cv_path,jd_path,label để batch process",
-    )
-    args = parser.parse_args()
-
-    if args.mode == "text":
-        collect_text_mode()
-    else:
-        collect_file_mode(csv_path=args.csv)
+    parser = argparse.ArgumentParser(description="Dựng đồ thị huấn luyện từ dữ liệu đã gán nhãn")
+    parser.add_argument("--limit-cvs", type=int, default=None, help="Chỉ dùng N CV đầu (chạy thử)")
+    build_dataset(parser.parse_args().limit_cvs)

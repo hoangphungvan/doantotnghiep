@@ -264,14 +264,6 @@ def main():
             "ranking-eval : Bảng ranking 4 phương pháp trên pairs_it.csv\n"
         ),
     )
-    parser.add_argument(
-        "--input", type=str, choices=["text", "file"], default="file",
-        help="(mode=prepare) Kiểu nhập: text hoặc file",
-    )
-    parser.add_argument(
-        "--csv", type=str, default=None,
-        help="(mode=prepare --input file) CSV có sẵn để batch process",
-    )
     args = parser.parse_args()
 
     if args.mode == "demo":
@@ -281,11 +273,8 @@ def main():
     elif args.mode == "pipeline":
         run_pipeline()
     elif args.mode == "prepare":
-        from src.data_collection.prepare_training_data import collect_text_mode, collect_file_mode
-        if args.input == "text":
-            collect_text_mode()
-        else:
-            collect_file_mode(csv_path=args.csv)
+        from src.data_collection.prepare_training_data import build_dataset
+        build_dataset()
     elif args.mode == "train":
         # Reset sys.argv để argparse của train.py nhận đúng tham số của nó
         sys.argv = ["train.py"]
