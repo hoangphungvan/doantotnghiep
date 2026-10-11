@@ -1,0 +1,12 @@
+{
+  "thresholds": [
+    0.1285779925527978,
+    0.4957901528667047,
+    0.6144844149307264
+  ],
+  "fitted_on": "out-of-fold GCN scores, 5-fold CV theo CV",
+  "objective": "macro_f1",
+  "n_pairs": 1664,
+  "macro_f1_in_sample": 0.5804,
+  "macro_f1_cross_fit": 0.5703
+}

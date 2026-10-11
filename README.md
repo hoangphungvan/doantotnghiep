@@ -75,10 +75,22 @@ Chi tiết các vòng kiểm chứng: [data/raw/validation/rounds_summary.md](da
 | Random | 0.39 | 0.45 | 0.56 | 0.32 | 0.52 |
 | TF-IDF + cosine | 0.65 | 0.72 | 0.78 | 0.62 | 0.79 |
 | SBERT + cosine | 0.60 | 0.70 | 0.79 | 0.59 | 0.74 |
-| GCN | 0.65 | 0.77 | 0.86 | 0.67 | 0.78 |
-| Hybrid (GCN + SBERT) | **0.68** | **0.79** | **0.87** | **0.70** | **0.82** |
+| GCN | 0.69 | 0.78 | 0.87 | 0.68 | 0.80 |
+| Hybrid (GCN + SBERT) | **0.70** | **0.80** | **0.88** | **0.70** | **0.81** |
 
-GCN vượt rõ hai baseline ở NDCG@10; ở NDCG@1 và MRR chưa hơn TF-IDF. Hybrid cao nhất ở mọi chỉ số nhưng chênh lệch với GCN nằm trong khoảng tin cậy. Mô hình cuối (`models/best_model.pt`) huấn luyện trên toàn bộ 104 CV (84 train / 20 val để dừng sớm); các chỉ số trên tập val của nó bị lạc quan nên không dùng để báo cáo.
+GCN vượt rõ hai baseline ở NDCG@10; ở NDCG@1, NDCG@5 và MRR khoảng tin cậy chồng nhau với TF-IDF. Hybrid cao nhất ở hầu hết chỉ số nhưng chênh lệch với GCN nằm trong khoảng tin cậy. Huấn luyện có tính ngẫu nhiên: hai lần chạy cross-validation liền nhau lệch tới ~0,04 ở NDCG@1, nên đừng diễn giải chênh lệch nhỏ hơn mức đó. Mô hình cuối (`models/best_model.pt`) huấn luyện trên toàn bộ 104 CV (84 train / 20 val để dừng sớm); các chỉ số trên tập val của nó bị lạc quan nên không dùng để báo cáo.
+
+### Chuyển điểm sang mức 0–3
+
+Cách cũ `round(score×3)` khiến dự đoán dồn về mức 1–2 (chỉ dự đoán 64 cặp mức 3, trong khi nhãn thật có 167). Ngưỡng nay được hiệu chỉnh trên điểm out-of-fold (`python src/evaluation/calibrate_thresholds.py`, lưu ở `models/grade_thresholds.json`), tối đa hóa macro-F1. Đánh giá cross-fit (ngưỡng mỗi fold tìm trên 4 fold còn lại):
+
+| | Khớp chính xác | ±1 mức | Macro-F1 | F1 theo mức (0/1/2/3) | Số dự đoán (0/1/2/3) |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| Cách cũ | 70,0% | 94,8% | 0,556 | 0,93 / 0,77 / 0,30 / 0,23 | 444 / 907 / 249 / 64 |
+| Ngưỡng hiệu chỉnh | 67,8% | 93,0% | 0,570 | 0,92 / 0,74 / 0,25 / 0,37 | 431 / 838 / 221 / 174 |
+| Nhãn thật | | | | | 429 / 812 / 256 / 167 |
+
+Hiệu chỉnh làm phân bố dự đoán khớp phân bố thật và tăng nhận diện mức 3, nhưng cải thiện chỉ nhỏ và độ chính xác tổng giảm nhẹ: điểm GCN phân tách yếu giữa mức 2 và 3, ngưỡng chỉ dịch chuyển lỗi chứ không loại bỏ được. Với xếp hạng nên dùng điểm liên tục; mức 0–3 chỉ để đọc nhanh.
 
 ### Hạn chế cần nêu khi báo cáo
 
@@ -122,7 +134,10 @@ python -X utf8 main.py --mode prepare
 # 2. Cross-validation 5 fold theo CV, so sánh với baseline (ghi data/processed/cv_results.*)
 python -X utf8 src/modeling/train.py --cv 5
 
-# 3. Huấn luyện mô hình cuối (lưu models/best_model.pt)
+# 3. Hiệu chỉnh ngưỡng điểm → mức 0-3 (dùng điểm out-of-fold của bước 2)
+python -X utf8 src/evaluation/calibrate_thresholds.py
+
+# 3b. Huấn luyện mô hình cuối (lưu models/best_model.pt)
 python -X utf8 src/modeling/train.py --patience 20
 
 # 4. Dự đoán cho một cặp CV–JD
@@ -155,7 +170,7 @@ Tạo lại dữ liệu JD từ đầu (chỉ khi cần; cần file VietJobs g�
 │   ├── extraction/entity_extractor.py   # LLM extractor + cache
 │   ├── representation/           # Embedding + DeepSets, xây đồ thị 14 nút
 │   ├── modeling/                 # model.py, train.py (có --cv)
-│   ├── evaluation/               # metrics, baselines, hybrid
+│   ├── evaluation/               # metrics, baselines, hybrid, calibrate_thresholds
 │   └── inference/                # predict.py, explain.py
 ├── data/
 │   ├── raw/                      # cvs_synth, profiles, judgments, selected_jds.csv, pairs_design.csv, validation/

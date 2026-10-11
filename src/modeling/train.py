@@ -355,6 +355,12 @@ def cross_validate(graphs: list, k: int = 5, seed: int = 42, epochs: int = None,
             oof[m] += list(zip(test, scores[m]))
         fold_ndcg.append(evaluate_ranking(build_query_groups(test, gs), ks=config.RANKING_KS).get("ndcg@5"))
 
+    import pandas as pd
+    # Điểm GCN out-of-fold của từng cặp: dùng để hiệu chỉnh ngưỡng điểm → mức 0..3 (calibrate_thresholds.py)
+    pd.DataFrame([{"cv_id": g.cv_source, "jd_id": g.jd_source, "grade": int(g.y.item()), "gcn_score": float(s)}
+                  for g, s in oof["GCN"]]).to_csv(
+        os.path.join(config.DATA_PROCESSED_DIR, "cv_oof_predictions.csv"), index=False)
+
     results, rows = {}, []
     for m in methods:
         groups = build_query_groups([g for g, _ in oof[m]], np.array([s for _, s in oof[m]]))
@@ -374,7 +380,6 @@ def cross_validate(graphs: list, k: int = 5, seed: int = 42, epochs: int = None,
                      **{f"{x}_lo": res["ci"][x][0] for x in keys if res["ci"][x]},
                      **{f"{x}_hi": res["ci"][x][1] for x in keys if res["ci"][x]}})
 
-    import pandas as pd
     pd.DataFrame(rows).to_csv(os.path.join(config.DATA_PROCESSED_DIR, "cv_results.csv"), index=False)
     cols = [x for x in results["GCN"] if x not in ("num_queries", "ci")]
     md = [f"Cross-validation {k}-fold theo CV, {results['GCN']['num_queries']} CV, seed {seed}. "

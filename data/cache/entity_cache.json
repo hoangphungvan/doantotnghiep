@@ -403779,5 +403779,564 @@
     "role": [
       "Nhân Viên Network Security"
     ]
+  },
+  "a2d49b73edf4d456999886dfe83a5907595005b2b96d4f551a314b2e47beb591": {
+    "soft_skills": [
+      "làm việc nhóm",
+      "giao tiếp tốt"
+    ],
+    "hard_skills": [
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "Redis",
+      "Docker",
+      "REST API",
+      "Git",
+      "Kafka",
+      "Tiếng Anh B1"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Công nghệ thông tin"
+    ],
+    "industry_sector": [
+      "Thương mại điện tử"
+    ],
+    "role": [
+      "Backend Developer"
+    ]
+  },
+  "b42bcab61247ad2cb1298618fcddd30de300342084969b9f7b8703e37b96093d": {
+    "soft_skills": [
+      "Làm việc nhóm"
+    ],
+    "hard_skills": [
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "RESTful API",
+      "Git",
+      "Docker",
+      "Redis"
+    ],
+    "education": [
+      "Đại học"
+    ],
+    "field_of_education": [
+      "CNTT"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin"
+    ],
+    "role": [
+      "Java Backend Developer"
+    ]
+  },
+  "7f2949418dc8c2eadcd781a2693c70dfe11384a52d9899d9b0ca3108359d851e": {
+    "soft_skills": [],
+    "hard_skills": [
+      "ReactJS",
+      "TypeScript",
+      "HTML/CSS",
+      "Redux",
+      "Figma"
+    ],
+    "education": [
+      "ĐH"
+    ],
+    "field_of_education": [
+      "CNTT"
+    ],
+    "industry_sector": [
+      "CNTT"
+    ],
+    "role": [
+      "Frontend Developer"
+    ]
+  },
+  "d89d135606f5e1dbf4e3aa1e010dc451410f6788f19e6fdfd4d54589ca607479": {
+    "soft_skills": [
+      "giao tiếp",
+      "đàm phán",
+      "chịu áp lực doanh số"
+    ],
+    "hard_skills": [
+      "có xe máy"
+    ],
+    "education": [
+      "cao đẳng"
+    ],
+    "field_of_education": [],
+    "industry_sector": [
+      "bất động sản"
+    ],
+    "role": [
+      "Nhân viên kinh doanh bất động sản"
+    ]
+  },
+  "1f4c0ea4679ac58b8205c55d82d7ba2f87fd15191fb1a00db60fc8fd6803e8ce": {
+    "soft_skills": [
+      "Communication",
+      "Teamwork",
+      "Problem Solving",
+      "Time Management"
+    ],
+    "hard_skills": [
+      "Java 17",
+      "Spring Boot 3",
+      "Spring Security",
+      "Spring Data JPA",
+      "Apache Kafka",
+      "RabbitMQ",
+      "Redis",
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "Docker",
+      "Git",
+      "IntelliJ IDEA",
+      "Sendgrid",
+      "MinIO",
+      "PayOS",
+      "Redmine",
+      "JUnit",
+      "Mockito",
+      "Nginx",
+      "Elasticsearch",
+      "React",
+      "JSP",
+      "Bootstrap",
+      "SQL",
+      "Microservices",
+      "JWT",
+      "Role-Based Access Control",
+      "Optimistic Locking",
+      "Unit Testing",
+      "Refactoring",
+      "Bug Fixing",
+      "Performance Improvement"
+    ],
+    "education": [
+      "Bachelor"
+    ],
+    "field_of_education": [
+      "Information Technology"
+    ],
+    "industry_sector": [
+      "Information Technology",
+      "E-commerce"
+    ],
+    "role": [
+      "Junior Java Developer",
+      "Java Backend Developer",
+      "Fresher Java"
+    ]
+  },
+  "C:\\Users\\Admin\\Downloads\\NguyenDuyDangBang_JavaDeveloper_CV1.pdf": {
+    "soft_skills": [
+      "Communication",
+      "Teamwork",
+      "Problem Solving",
+      "Time Management"
+    ],
+    "hard_skills": [
+      "Java 17",
+      "Spring Boot 3",
+      "Spring Security",
+      "Spring Data JPA",
+      "Apache Kafka",
+      "RabbitMQ",
+      "Redis",
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "Docker",
+      "Git",
+      "IntelliJ IDEA",
+      "Sendgrid",
+      "MinIO",
+      "PayOS",
+      "Redmine",
+      "JUnit",
+      "Mockito",
+      "Nginx",
+      "Elasticsearch",
+      "React",
+      "JSP",
+      "Bootstrap",
+      "SQL",
+      "Microservices",
+      "JWT",
+      "Role-Based Access Control",
+      "Optimistic Locking",
+      "Unit Testing",
+      "Refactoring",
+      "Bug Fixing",
+      "Performance Improvement"
+    ],
+    "education": [
+      "Bachelor"
+    ],
+    "field_of_education": [
+      "Information Technology"
+    ],
+    "industry_sector": [
+      "Information Technology",
+      "E-commerce"
+    ],
+    "role": [
+      "Junior Java Developer",
+      "Java Backend Developer",
+      "Fresher Java"
+    ]
+  },
+  "eb5fbdd14706a2e96b8f52217711371ca410ec84d139bc21bf672e2da000ff98": {
+    "soft_skills": [
+      "hợp tác",
+      "phát triển không ngừng"
+    ],
+    "hard_skills": [
+      "Java",
+      "Core Java",
+      "Generics",
+      "Reflection",
+      "Collections Framework",
+      "JSF",
+      "JPA",
+      "JSP",
+      "Servlet",
+      "Java EE",
+      "Tiếng Anh"
+    ],
+    "education": [
+      "Tốt nghiệp"
+    ],
+    "field_of_education": [
+      "CNTT"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "ERP"
+    ],
+    "role": [
+      "Fresher Java"
+    ]
+  },
+  "C:\\Users\\Admin\\Downloads\\JD Fresher Java.pdf": {
+    "soft_skills": [
+      "hợp tác",
+      "phát triển không ngừng"
+    ],
+    "hard_skills": [
+      "Java",
+      "Core Java",
+      "Generics",
+      "Reflection",
+      "Collections Framework",
+      "JSF",
+      "JPA",
+      "JSP",
+      "Servlet",
+      "Java EE",
+      "Tiếng Anh"
+    ],
+    "education": [
+      "Tốt nghiệp"
+    ],
+    "field_of_education": [
+      "CNTT"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "ERP"
+    ],
+    "role": [
+      "Fresher Java"
+    ]
+  },
+  "460a18553c51a6e4112f40d8651b75d492a55a40a7a1e475cd4cdae76d0cb3df": {
+    "soft_skills": [
+      "bug investigation",
+      "root cause analysis",
+      "teamwork",
+      "communication"
+    ],
+    "hard_skills": [
+      "Java",
+      "Spring Boot",
+      "Kafka",
+      "Redis",
+      "Elasticsearch",
+      "CI/CD",
+      "Microservices",
+      "RabbitMQ",
+      "Nginx",
+      "MongoDB",
+      "Git",
+      "JUnit",
+      "Mockito",
+      "Java 17",
+      "Spring Security",
+      "PostgreSQL",
+      "React",
+      "MinIO",
+      "JWT",
+      "Role-Based Access Control",
+      "SQL",
+      "Spring Data JPA",
+      "MySQL",
+      "PayOS",
+      "JSP",
+      "Bootstrap",
+      "Docker",
+      "IntelliJ IDEA",
+      "Sendgrid",
+      "Redmine"
+    ],
+    "education": [
+      "Bachelor"
+    ],
+    "field_of_education": [
+      "Information Technology"
+    ],
+    "industry_sector": [
+      "Information Technology"
+    ],
+    "role": [
+      "Java Backend Developer",
+      "Java Intern",
+      "Java Fresher Developer"
+    ]
+  },
+  "C:\\Users\\Admin\\Downloads\\NguyenDuyDangBang_JavaFresher_CV.pdf": {
+    "soft_skills": [
+      "bug investigation",
+      "root cause analysis",
+      "teamwork",
+      "communication"
+    ],
+    "hard_skills": [
+      "Java",
+      "Spring Boot",
+      "Kafka",
+      "Redis",
+      "Elasticsearch",
+      "CI/CD",
+      "Microservices",
+      "RabbitMQ",
+      "Nginx",
+      "MongoDB",
+      "Git",
+      "JUnit",
+      "Mockito",
+      "Java 17",
+      "Spring Security",
+      "PostgreSQL",
+      "React",
+      "MinIO",
+      "JWT",
+      "Role-Based Access Control",
+      "SQL",
+      "Spring Data JPA",
+      "MySQL",
+      "PayOS",
+      "JSP",
+      "Bootstrap",
+      "Docker",
+      "IntelliJ IDEA",
+      "Sendgrid",
+      "Redmine"
+    ],
+    "education": [
+      "Bachelor"
+    ],
+    "field_of_education": [
+      "Information Technology"
+    ],
+    "industry_sector": [
+      "Information Technology"
+    ],
+    "role": [
+      "Java Backend Developer",
+      "Java Intern",
+      "Java Fresher Developer"
+    ]
+  },
+  "052c32c4e4e9379652513065f4e8271b0057c91677ceb462867dfc2821ccd175": {
+    "soft_skills": [],
+    "hard_skills": [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "Hibernate",
+      "PostgreSQL",
+      "MySQL",
+      "Redis",
+      "SQL",
+      "Docker",
+      "RESTful API",
+      "Git",
+      "Jenkins",
+      "Linux",
+      "Microservices",
+      "Database Optimization"
+    ],
+    "education": [],
+    "field_of_education": [],
+    "industry_sector": [
+      "Tài chính",
+      "E-commerce"
+    ],
+    "role": [
+      "Senior Java / Backend Engineer",
+      "Java Developer"
+    ]
+  },
+  "63e2a807df19861ee73fc42e80547bb5a88f7a1a5379b54cc03b20539608e523": {
+    "soft_skills": [
+      "Phối hợp",
+      "Tư duy phân tích"
+    ],
+    "hard_skills": [
+      "Java",
+      "Spring Boot",
+      "Microservices",
+      "RESTful API",
+      "Docker",
+      "CI/CD",
+      "PostgreSQL",
+      "MySQL",
+      "Git",
+      "Clean Code",
+      "Unit Test"
+    ],
+    "education": [],
+    "field_of_education": [],
+    "industry_sector": [
+      "Công nghệ thông tin"
+    ],
+    "role": [
+      "Senior Java Backend Developer"
+    ]
+  },
+  "4bd0cdade65321142795e14931a08503712218b25d58aceccc50556f4fa6e715": {
+    "soft_skills": [
+      "hỗ trợ kỹ thuật",
+      "hỗ trợ người dùng cuối"
+    ],
+    "hard_skills": [
+      "quản trị hệ thống mạng",
+      "bảo trì hạ tầng CNTT",
+      "phần cứng máy tính",
+      "Windows Server",
+      "mạng nội bộ",
+      "Active Directory",
+      "LAN/WAN",
+      "Cisco CCNA",
+      "Router/Switch",
+      "Bắt bệnh phần cứng/phần mềm",
+      "cài đặt hệ thống",
+      "Shell Scripting",
+      "Bash",
+      "Git",
+      "CCNA",
+      "MCSA"
+    ],
+    "education": [],
+    "field_of_education": [],
+    "industry_sector": [
+      "Công nghệ thông tin"
+    ],
+    "role": [
+      "IT Support",
+      "System Administrator",
+      "Chuyên viên IT Support"
+    ]
+  },
+  "36a15935a9a819db92b4b35abaf345e9fe18cd3a765a402497cf97f44cb539b8": {
+    "soft_skills": [
+      "tư duy thuật toán"
+    ],
+    "hard_skills": [
+      "Python",
+      "Pandas",
+      "PySpark",
+      "Airflow",
+      "SQL",
+      "PostgreSQL",
+      "Docker",
+      "ETL",
+      "ELT",
+      "Data Pipeline",
+      "Data Warehouse",
+      "Cloud",
+      "thiết kế cấu trúc dữ liệu"
+    ],
+    "education": [],
+    "field_of_education": [],
+    "industry_sector": [
+      "Công nghệ thông tin"
+    ],
+    "role": [
+      "Python Data Engineer"
+    ]
+  },
+  "a117f7123bfd7d019e2170af8d8aeb92914d6068f8fe2a1e70c5ade75e57769a": {
+    "soft_skills": [],
+    "hard_skills": [
+      "Python",
+      "SQL",
+      "Airflow",
+      "Spark",
+      "ETL"
+    ],
+    "education": [
+      "ĐH"
+    ],
+    "field_of_education": [
+      "CNTT"
+    ],
+    "industry_sector": [],
+    "role": [
+      "Data Engineer"
+    ]
+  },
+  "0f1a2d0125d0d9c5211d60b0a1637051b20a9b32edf74308bd253ecc09dd2fa2": {
+    "soft_skills": [
+      "dẫn dắt nhóm",
+      "tiếng Anh tốt"
+    ],
+    "hard_skills": [
+      "thiết kế hệ thống phân tán",
+      "Java",
+      "Spring Cloud",
+      "Kafka",
+      "Kubernetes"
+    ],
+    "education": [],
+    "field_of_education": [],
+    "industry_sector": [],
+    "role": [
+      "Senior Java Architect"
+    ]
+  },
+  "e677eed6d587fd8499c0d8b4625170774f32ffb98c4c207067db7c0cfa1e14da": {
+    "soft_skills": [
+      "giao tiếp",
+      "đàm phán",
+      "chịu áp lực doanh số"
+    ],
+    "hard_skills": [],
+    "education": [],
+    "field_of_education": [],
+    "industry_sector": [
+      "bất động sản"
+    ],
+    "role": [
+      "Nhân viên kinh doanh"
+    ]
   }
 }

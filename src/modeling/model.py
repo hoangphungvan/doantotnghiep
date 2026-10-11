@@ -11,6 +11,9 @@ Sử dụng BCEWithLogitsLoss trên soft target = grade/NUM_GRADES
 (thang mức phù hợp 0..3), sigmoid output là điểm liên tục để xếp hạng JD.
 """
 
+import json
+import os
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -134,9 +137,23 @@ def grade_to_target(grades: torch.Tensor) -> torch.Tensor:
     return grades.float() / config.NUM_GRADES
 
 
+_THRESHOLDS_FILE = os.path.join(config.MODEL_DIR, "grade_thresholds.json")
+
+
+def _load_thresholds():
+    """Ngưỡng đã hiệu chỉnh (calibrate_thresholds.py); không có file thì dùng cách cũ round(score*NUM_GRADES)."""
+    if os.path.exists(_THRESHOLDS_FILE):
+        with open(_THRESHOLDS_FILE, encoding="utf-8") as f:
+            return json.load(f)["thresholds"]
+    return [(g + 0.5) / config.NUM_GRADES for g in range(config.NUM_GRADES)]
+
+
+GRADE_THRESHOLDS = _load_thresholds()
+
+
 def target_to_grade(score) -> int:
-    """Chuyển sigmoid score [0,1] thành grade nguyên 0..NUM_GRADES."""
-    return int(round(float(score) * config.NUM_GRADES))
+    """Chuyển sigmoid score [0,1] thành grade nguyên 0..NUM_GRADES theo ngưỡng GRADE_THRESHOLDS."""
+    return int(sum(float(score) >= t for t in GRADE_THRESHOLDS))
 
 
 def get_loss_fn(pos_weight: float = None) -> nn.BCEWithLogitsLoss:
