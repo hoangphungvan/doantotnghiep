@@ -14,7 +14,7 @@ Backend_MID_02,jd_0442,same,15,2,2,0,0,1,1,Sitecore .NET; CV Go chỉ có REST v
 Backend_MID_02,jd_0490,different,0,2,2,0,0,0,0,CNC
 Backend_MID_02,jd_0588,different,0,2,2,0,0,0,0,Kinh doanh phần mềm
 Backend_MID_02,jd_1162,same,35,2,2,0,0,1,1,Python backend 3 năm; CV Go: có Docker/K8s cơ bản; thiếu Python-FastAPI-AWS
-FE_SEN_01,jd_0008,same,72,3,1,-2,0,0,3,Khớp JS/HTML-CSS/2 năm/đại học; thiếu Vue-uni-app
+FE_SEN_01,jd_0008,same,50,3,1,-2,0,0,2,Khớp JS/HTML-CSS/2 năm/đại học; thiếu Vue-uni-app [điều chỉnh sau khi đối chiếu phần cuối mô tả JD]
 FE_SEN_01,jd_0034,adjacent,5,3,3,0,0,1,1,Android senior
 FE_SEN_01,jd_0107,adjacent,15,3,3,0,1,1,1,PHP + N3
 FE_SEN_01,jd_0225,same,81,3,1,-2,0,0,3,Khớp JS/TS/React/Redux/Docker/Git; thiếu OpenAPI-Figma
@@ -40,7 +40,7 @@ FS_MID_01,jd_0439,different,10,2,2,0,0,0,0,BA chứng khoán
 FS_MID_01,jd_0442,adjacent,10,2,2,0,0,1,1,Sitecore .NET
 FS_MID_01,jd_0490,different,0,2,2,0,0,0,0,CNC
 FS_MID_01,jd_0588,different,0,2,2,0,0,0,0,Kinh doanh
-FS_MID_01,jd_1163,same,61,2,2,0,0,0,2,Khớp bằng/SQL/React/Docker/kinh nghiệm; thiếu Java-Spring
+FS_MID_01,jd_1163,same,61,2,2,0,0,1,1,Khớp bằng/SQL/React/Docker/kinh nghiệm; thiếu Java-Spring [điều chỉnh sau khi đối chiếu phần cuối mô tả JD]
 FS_MID_01,jd_1228,same,66,2,2,0,0,1,1,Fullstack PHP/React: khớp React/DB/OOP; thiếu PHP và AWS
 FS_MID_01,jd_1267,same,95,2,0,-2,1,0,2,Intern web: khớp mọi yêu cầu kỹ thuật; JD yêu cầu sinh viên
 FS_MID_01,jd_1323,same,30,2,1,-1,0,1,1,Fullstack Java Angular: CV TypeScript; thiếu Java-Spring-AWS

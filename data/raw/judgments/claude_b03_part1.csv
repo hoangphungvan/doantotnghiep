@@ -36,7 +36,7 @@ FS_FRE_01,jd_0250,adjacent,80,0,0,0,1,0,1,Intern FE: yêu cầu sinh viên năm 
 FS_FRE_01,jd_0267,different,40,0,0,0,1,0,1,BA intern: yêu cầu sinh viên trường chỉ định
 FS_FRE_01,jd_0294,same,60,0,1,1,0,0,2,Khớp React/web service/REST/DB/Github; thiếu PHP và 1 năm
 FS_FRE_01,jd_0619,different,0,0,0,0,0,0,0,CNC
-FS_FRE_01,jd_1163,same,48,0,2,2,0,0,1,Fullstack 3 năm: khớp Git/noSQL/React; thiếu Java-Spring và kinh nghiệm
+FS_FRE_01,jd_1163,same,48,0,2,2,0,1,1,Fullstack 3 năm: khớp Git/noSQL/React; thiếu Java-Spring và kinh nghiệm [điều chỉnh sau khi đối chiếu phần cuối mô tả JD]
 FS_FRE_01,jd_1190,adjacent,50,0,0,0,1,0,1,Intern RN/Flutter: yêu cầu sinh viên; CV có React
 FS_FRE_01,jd_1208,different,25,0,0,0,1,0,0,Coaching DA; cần IELTS 6.0
 FS_FRE_01,jd_1267,same,92,0,0,0,0,0,3,Intern web: khớp web cơ bản/OOP/dự án thật/Git/tiếng Anh

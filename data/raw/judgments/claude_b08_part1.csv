@@ -29,10 +29,10 @@ Backend_JUN_02,jd_0214,different,30,1,1,0,0,0,0,BA ngân hàng
 Backend_JUN_02,jd_0274,different,45,1,1,0,0,0,1,Phân tích hoạt động: khớp SQL/Python; thiếu BigQuery-Metabase-báo cáo
 Backend_JUN_02,jd_0154,different,0,1,1,0,0,0,0,Kinh doanh phần mềm
 Backend_JUN_02,jd_0331,different,0,1,1,0,0,0,0,CNC
-DA_MID_02,jd_0032,same,80,2,2,0,0,0,3,Phân tích tài chính 4 năm: khớp Excel/Power Query/SQL/Power BI DAX; thiếu Python
+DA_MID_02,jd_0032,same,55,2,2,0,0,0,2,Phân tích tài chính 4 năm: khớp Excel/Power Query/SQL/Power BI DAX; thiếu Python [điều chỉnh sau khi đối chiếu phần cuối mô tả JD]
 DA_MID_02,jd_0151,same,55,2,2,0,0,0,2,DA game: khớp SQL/Power BI; thiếu Python-ngành Data Science
 DA_MID_02,jd_1708,same,50,2,2,0,0,0,2,DA tài chính: khớp công cụ/viz; thiếu nghiệp vụ tài chính-data governance
-DA_MID_02,jd_0274,same,75,2,1,-1,0,0,3,Khớp SQL/Excel/báo cáo/2 năm; thay Power BI cho Metabase
+DA_MID_02,jd_0274,same,65,2,1,-1,0,0,2,Khớp SQL/Excel/báo cáo/2 năm; thay Power BI cho Metabase [điều chỉnh sau khi đối chiếu phần cuối mô tả JD]
 DA_MID_02,jd_1037,same,35,2,3,1,0,0,1,BI Leader 5 năm
 DA_MID_02,jd_1100,same,55,2,1,-1,1,0,1,Phân tích dữ liệu tiếng Trung; CV không có
 DA_MID_02,jd_1208,same,65,2,0,-2,1,0,1,Coaching DA: khớp SQL/Excel/thống kê/Power BI; JD yêu cầu IELTS 6.0 (CV B1)
@@ -65,7 +65,7 @@ DEVOPS_SEN_02,jd_1648,same,30,3,2,-1,1,0,1,Linux System Engineer: JD chỉ nhậ
 DEVOPS_SEN_02,jd_0018,same,70,3,1,-2,0,0,3,SRE junior: khớp AKS/Docker/CI-CD/monitor; thiếu Terraform-Ansible-AWS
 DEVOPS_SEN_02,jd_0149,same,65,3,1,-2,0,0,2,Vận hành DevOps: khớp Docker/CI-CD/IaC; thiếu Linux-Ansible-Jenkins
 DEVOPS_SEN_02,jd_0557,same,80,3,1,-2,0,0,3,DevOps 2 năm: khớp script/cloud/monitoring; thiếu config management
-DEVOPS_SEN_02,jd_0939,same,85,3,1,-2,0,0,3,Cloud Azure 2 năm: khớp Azure/AKS/Docker/chứng chỉ; thiếu Ansible-Azure SQL
+DEVOPS_SEN_02,jd_0939,same,65,3,1,-2,0,0,2,Cloud Azure 2 năm: khớp Azure/AKS/Docker/chứng chỉ; thiếu Ansible-Azure SQL [điều chỉnh sau khi đối chiếu phần cuối mô tả JD]
 DEVOPS_SEN_02,jd_0739,adjacent,10,3,3,0,0,1,1,Pentest 5 năm
 DEVOPS_SEN_02,jd_0773,adjacent,10,3,3,0,0,0,1,ITSM manager 7 năm
 DEVOPS_SEN_02,jd_0106,adjacent,35,3,2,-1,0,0,1,Presales: khớp cloud Azure; thiếu presales-ảo hóa
@@ -93,7 +93,7 @@ FE_SEN_02,jd_1551,same,95,3,3,0,0,0,3,Khớp Angular 7+ năm/TL 2 năm/review/OO
 FE_SEN_02,jd_0336,same,90,3,2,-1,0,0,3,Khớp Angular/TS/RxJS/NgRx/component; thiếu Material-PrimeNG
 FE_SEN_02,jd_1175,same,80,3,2,-1,0,0,3,FE 3 năm: khớp JS-TS/component/TDD/tiếng Anh; thay Vue bằng Angular
 FE_SEN_02,jd_1771,same,72,3,2,-1,0,0,3,Angular 3 năm: khớp Angular/debug/unit test; thiếu bảo mật-UI design
-FE_SEN_02,jd_0008,same,70,3,1,-2,0,0,3,FE 2 năm: khớp JS/HTML-CSS/bằng; thiếu Vue-uni-app
+FE_SEN_02,jd_0008,same,45,3,1,-2,0,0,2,FE 2 năm: khớp JS/HTML-CSS/bằng; thiếu Vue-uni-app [điều chỉnh sau khi đối chiếu phần cuối mô tả JD]
 FE_SEN_02,jd_0225,same,60,3,1,-2,0,0,2,FE React: khớp TS/Docker/Git; thiếu React-Redux-Figma
 FE_SEN_02,jd_0509,same,40,3,1,-2,0,1,1,Web PHP+Figma: khớp JS/HTML-CSS; thiếu PHP-MySQL-Figma
 FE_SEN_02,jd_0034,adjacent,5,3,3,0,0,1,1,Android senior
@@ -185,7 +185,7 @@ SYS_SEN_02,jd_0647,same,75,3,3,0,1,0,2,Lãnh đạo vận hành: khớp hạ t�
 SYS_SEN_02,jd_1554,same,55,3,2,-1,1,0,1,Giám sát hệ thống: khớp mạng/Microsoft; bắt buộc tiếng Pháp
 SYS_SEN_02,jd_1600,adjacent,10,3,2,-1,0,0,1,Giảng viên an ninh mạng
 SYS_SEN_02,jd_0407,same,30,3,1,-2,0,1,1,Exchange hybrid: khớp Windows Server; thiếu Exchange-Azure AD
-SYS_SEN_02,jd_1191,same,45,3,1,-2,0,0,2,An ninh mạng 2 năm: khớp quản trị mạng doanh nghiệp; thiếu bảo mật ứng dụng-SIEM
+SYS_SEN_02,jd_1191,same,35,3,1,-2,0,0,1,An ninh mạng 2 năm: khớp quản trị mạng doanh nghiệp; thiếu bảo mật ứng dụng-SIEM [điều chỉnh sau khi đối chiếu phần cuối mô tả JD]
 SYS_SEN_02,jd_0773,adjacent,30,3,3,0,0,0,1,ITSM manager 7 năm
 SYS_SEN_02,jd_1835,adjacent,15,3,3,0,0,0,1,DevOps cao cấp thực chất DBA
 SYS_SEN_02,jd_1550,adjacent,55,3,2,-1,1,0,1,IT support 4 năm: JD yêu cầu cử nhân; khớp hạ tầng; thiếu M365-CCNA

@@ -40,7 +40,7 @@ FS_JUN_01,jd_0274,different,15,1,1,0,0,0,0,Phân tích dữ liệu (BigQuery/ETL
 FS_JUN_01,jd_0294,same,60,1,1,0,0,0,2,Khớp frontend Angular/HTML/CSS + REST/SQL/Git; thiếu PHP-Laravel
 FS_JUN_01,jd_0331,different,0,1,1,0,0,0,0,Lập trình CNC
 FS_JUN_01,jd_0562,different,0,1,1,0,0,0,0,3D Artist
-FS_JUN_01,jd_1163,same,55,1,2,1,0,0,2,Khớp bằng CNTT/SQL/Git/Angular; thiếu Java-Spring/noSQL/microservice
+FS_JUN_01,jd_1163,same,55,1,2,1,0,1,1,Khớp bằng CNTT/SQL/Git/Angular; thiếu Java-Spring/noSQL/microservice [điều chỉnh sau khi đối chiếu phần cuối mô tả JD]
 FS_JUN_01,jd_1542,different,5,1,1,0,0,0,0,Kỹ sư AI/LLM; khác chuyên môn
 FS_JUN_01,jd_1562,same,10,1,3,2,0,0,1,Fullstack 5 năm React/Next/Node/AWS; CV Angular+C# 1.4 năm
 FS_JUN_01,jd_1626,different,15,1,1,0,0,0,0,BA sản phẩm; CV chưa làm BA

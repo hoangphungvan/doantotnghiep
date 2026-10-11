@@ -7,7 +7,7 @@
 - Chiều lệch: Claude cao hơn người ở 17 cặp, thấp hơn ở 6 cặp. Chỉ một người chấm.
 
 ## Vòng 2 (cùng 39 cặp, chấm lại sau khi chốt "nhãn đo năng lực")
-Nhãn người: `b01_human_labels_round2.csv`.
+(Các tệp phiếu và nhãn người của hai vòng này đã bị xóa; chỉ còn số liệu tổng hợp.)
 - Khớp chính xác: 53,8% (21/39); trong ±1 mức: 97,4%.
 - Kappa có trọng số bình phương 0,76 [0,57-0,89]; tuyến tính 0,61; không trọng số 0,39.
 - Nhị phân: khớp 84,6%, kappa 0,69. Spearman 0,82 (trung bình trong từng CV: 0,88).

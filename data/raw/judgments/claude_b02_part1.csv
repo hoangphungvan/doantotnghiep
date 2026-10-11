@@ -14,7 +14,7 @@ Backend_SEN_01,jd_1551,adjacent,15,3,3,0,0,1,1,Angular front-end 7 năm; CV back
 Backend_SEN_01,jd_1562,adjacent,40,3,3,0,0,0,1,Fullstack React/Next/Node/AWS; CV có AWS và 5+ năm nhưng không có React-Node
 Backend_SEN_01,jd_1622,same,41,3,3,0,0,1,1,PHP senior; CV có DB/mentoring/tiếng Anh; thiếu PHP và frontend
 Backend_SEN_01,jd_1637,different,63,3,3,0,0,0,1,BA ngân hàng Card; CV backend Fintech có microservices-DB; khác vai trò
-FE_MID_01,jd_0008,same,76,2,1,-1,0,0,3,Khớp JS/Vue/HTML-CSS/2 năm; thiếu jQuery-Bootstrap-uni-app
+FE_MID_01,jd_0008,same,55,2,1,-1,0,0,2,Khớp JS/Vue/HTML-CSS/2 năm; thiếu jQuery-Bootstrap-uni-app [điều chỉnh sau khi đối chiếu phần cuối mô tả JD]
 FE_MID_01,jd_0032,different,5,2,2,0,0,0,0,Phân tích tài chính
 FE_MID_01,jd_0163,adjacent,10,2,2,0,0,1,1,Fullstack Java+React 4 năm; CV Vue
 FE_MID_01,jd_0215,adjacent,64,2,2,0,0,0,1,Mobile 4 năm; CV có REST/Git/UI nhưng không có mobile
@@ -38,7 +38,7 @@ FS_SEN_01,jd_0507,different,0,3,3,0,0,0,0,Giám đốc kinh doanh
 FS_SEN_01,jd_0564,adjacent,10,3,3,0,0,1,1,Salesforce; CV không có
 FS_SEN_01,jd_1037,different,5,3,3,0,0,0,0,BI leader
 FS_SEN_01,jd_1126,adjacent,10,3,3,0,0,0,1,QA Manager; CV không làm QA
-FS_SEN_01,jd_1163,same,72,3,2,-1,0,0,3,Khớp bằng/SQL/Git/React/Docker/kinh nghiệm; thiếu Java-Spring/noSQL
+FS_SEN_01,jd_1163,same,72,3,2,-1,0,1,2,Khớp bằng/SQL/Git/React/Docker/kinh nghiệm; thiếu Java-Spring/noSQL [điều chỉnh sau khi đối chiếu phần cuối mô tả JD]
 FS_SEN_01,jd_1228,same,87,3,2,-1,0,0,3,Khớp PHP/React/MySQL/Linux/OOP; thiếu AWS
 FS_SEN_01,jd_1562,same,15,3,3,0,0,0,1,Fullstack React/Next/Node/mobile/AWS; CV PHP
 FS_SEN_01,jd_1637,different,5,3,3,0,0,0,0,BA ngân hàng Card
