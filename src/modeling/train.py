@@ -78,6 +78,17 @@ def split_by_query(data_list: list, val_ratio: float = 0.2):
             [data_list[i] for i in indices[-n_val:]])
 
 
+def attach_pair_features(graphs: list) -> int:
+    """Gắn data.g_feat (đặc trưng LLM theo cặp, data/processed/pair_features.csv) vào từng đồ thị. Trả về số đặc trưng."""
+    import pandas as pd
+    from src.extraction.pair_features import FEATURE_NAMES, OUT_CSV
+    df = pd.read_csv(OUT_CSV).set_index(["cv_id", "jd_id"])
+    for g in graphs:
+        row = df.loc[(g.cv_source, g.jd_source), FEATURE_NAMES].values.astype("float32")
+        g.g_feat = torch.tensor(row).view(1, -1)
+    return len(FEATURE_NAMES)
+
+
 def print_grade_distribution(data_list: list, name: str):
     """In phân phối nhãn theo thang 0..NUM_GRADES."""
     grades = [d.y.item() for d in data_list]
@@ -200,7 +211,8 @@ def train(data_list: list,
           patience: int = 15,
           pos_weight: float = None,
           train_data: list = None,
-          val_data: list = None) -> tuple:
+          val_data: list = None,
+          extra_dim: int = 0) -> tuple:
     """
     Pipeline huấn luyện đầy đủ với nhãn thang 0..NUM_GRADES.
 
@@ -216,6 +228,7 @@ def train(data_list: list,
         save_path: Đường dẫn lưu model tốt nhất
         patience: Số epoch chờ trước khi early stop
         pos_weight: Chỉ dùng khi train nhãn nhị phân thuần (mặc định: không)
+        extra_dim: số đặc trưng toàn cục theo cặp trong data.g_feat (0 = không dùng)
         train_data, val_data: truyền cả hai để tự chia tập (vd cross-validation); bỏ qua val_ratio
 
     Returns:
@@ -239,7 +252,7 @@ def train(data_list: list,
     train_loader = DataLoader(train_data, batch_size=batch_size, shuffle=True)
     val_loader = DataLoader(val_data, batch_size=batch_size, shuffle=False)
 
-    model = GCNModel(input_dim=input_dim).to(device)
+    model = GCNModel(input_dim=input_dim, extra_dim=extra_dim).to(device)
     optimizer = Adam(model.parameters(), lr=lr, weight_decay=config.WEIGHT_DECAY)
     scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=5)
     loss_fn = get_loss_fn(pos_weight=pos_weight).to(device)
@@ -280,6 +293,7 @@ def train(data_list: list,
             torch.save({
                 "model_state_dict": model.state_dict(),
                 "input_dim": input_dim,
+                "extra_dim": extra_dim,
                 "epoch": epoch,
                 "val_metrics": val_metrics,
             }, save_path)
@@ -314,13 +328,16 @@ def train(data_list: list,
 
 def cross_validate(graphs: list, k: int = 5, seed: int = 42, epochs: int = None,
                    batch_size: int = None, lr: float = None, patience: int = 20,
-                   n_boot: int = 500) -> dict:
+                   n_boot: int = 500, pair_features: bool = False) -> dict:
     """
     K-fold cross-validation theo nhóm CV: mỗi CV nằm ở tập test đúng một lần.
 
     Mỗi fold: 15% CV còn lại làm val (early stopping + chọn α của Hybrid), phần dư để train.
     So GCN với Random / TF-IDF / SBERT / Hybrid trên cùng điểm dự đoán out-of-fold; chỉ số
     gộp trên toàn bộ CV, khoảng tin cậy 95% bootstrap theo CV. Lưu data/processed/cv_results.{csv,md}.
+
+    pair_features=True: thêm GCN có đặc trưng toàn cục theo cặp do LLM đọc trực tiếp (pair_features.py), Hybrid
+    của nó, và GBM chỉ dùng đặc trưng LLM + SBERT cosine (để tách đóng góp của đặc trưng khỏi GCN).
     """
     from src.evaluation.baselines import tfidf_cosine_scores
     from src.evaluation.hybrid import (build_query_groups, compute_graph_scores,
@@ -330,6 +347,11 @@ def cross_validate(graphs: list, k: int = 5, seed: int = 42, epochs: int = None,
     np.random.default_rng(seed).shuffle(qids)
     rng = np.random.default_rng(seed)
     methods = ["Random", "TF-IDF + cosine", "SBERT + cosine", "GCN", "Hybrid (GCN + SBERT)"]
+    extra = 0
+    if pair_features:
+        from sklearn.ensemble import HistGradientBoostingRegressor
+        extra = attach_pair_features(graphs)
+        methods += ["GBM (đặc trưng LLM + SBERT)", "GCN + đặc trưng LLM", "Hybrid (GCN + đặc trưng + SBERT)"]
     oof = {m: [] for m in methods}   # (graph, score) out-of-fold
     alphas, fold_ndcg = [], []
     input_dim = graphs[0].x.shape[1]
@@ -351,15 +373,31 @@ def cross_validate(graphs: list, k: int = 5, seed: int = 42, epochs: int = None,
         scores = {"Random": rng.random(len(test)), "TF-IDF + cosine": tfidf_cosine_scores(test),
                   "SBERT + cosine": ss, "GCN": gs,
                   "Hybrid (GCN + SBERT)": alpha * gs + (1 - alpha) * _minmax_fit(ss_va)(ss)}
+        if pair_features:
+            feats = lambda gl: np.hstack([torch.cat([g.g_feat for g in gl]).numpy(), compute_semantic_scores(gl)[:, None]])
+            gbm = HistGradientBoostingRegressor(max_iter=200, learning_rate=0.05, max_depth=4, random_state=0)
+            gbm.fit(feats(rest), [g.y.item() for g in rest])
+            model2, _ = train(rest, input_dim, num_epochs=epochs, batch_size=batch_size, lr=lr, patience=patience,
+                              train_data=tr, val_data=va, extra_dim=extra,
+                              save_path=os.path.join(config.MODEL_DIR, "cv_folds", f"fold{i + 1}_pf.pt"))
+            gs2_va = compute_graph_scores(model2, va)
+            alpha2, _ = tune_alpha(va, gs2_va, ss_va)
+            gs2 = compute_graph_scores(model2, test)
+            scores.update({"GBM (đặc trưng LLM + SBERT)": gbm.predict(feats(test)), "GCN + đặc trưng LLM": gs2,
+                           "Hybrid (GCN + đặc trưng + SBERT)": alpha2 * gs2 + (1 - alpha2) * _minmax_fit(ss_va)(ss)})
         for m in methods:
             oof[m] += list(zip(test, scores[m]))
         fold_ndcg.append(evaluate_ranking(build_query_groups(test, gs), ks=config.RANKING_KS).get("ndcg@5"))
 
     import pandas as pd
     # Điểm GCN out-of-fold của từng cặp: dùng để hiệu chỉnh ngưỡng điểm → mức 0..3 (calibrate_thresholds.py)
-    pd.DataFrame([{"cv_id": g.cv_source, "jd_id": g.jd_source, "grade": int(g.y.item()), "gcn_score": float(s)}
-                  for g, s in oof["GCN"]]).to_csv(
-        os.path.join(config.DATA_PROCESSED_DIR, "cv_oof_predictions.csv"), index=False)
+    col = {"GCN": "gcn_score", "GCN + đặc trưng LLM": "gcnpf_score", "GBM (đặc trưng LLM + SBERT)": "gbm_score"}
+    oof_df = pd.DataFrame([{"cv_id": g.cv_source, "jd_id": g.jd_source, "grade": int(g.y.item()), "gcn_score": float(s)}
+                           for g, s in oof["GCN"]])
+    for m, c in col.items():
+        if m in oof and m != "GCN":
+            oof_df[c] = [float(s) for _, s in oof[m]]
+    oof_df.to_csv(os.path.join(config.DATA_PROCESSED_DIR, "cv_oof_predictions.csv"), index=False)
 
     results, rows = {}, []
     for m in methods:
@@ -398,6 +436,79 @@ def cross_validate(graphs: list, k: int = 5, seed: int = 42, epochs: int = None,
     return results
 
 
+def cross_validate_stack(graphs: list, k: int = 5, inner_k: int = 5, seed: int = 42, epochs: int = None,
+                         batch_size: int = None, lr: float = None, patience: int = 20) -> dict:
+    """
+    Đánh giá mô hình xếp chồng (stacker.py) bằng cross-validation LỒNG NHAU, không rò rỉ:
+    mỗi fold ngoài chia CV thành test / phần còn lại; trên phần còn lại, điểm GCN dùng để huấn luyện stacker là điểm
+    out-of-fold của K trong (GCN chưa thấy cặp đó), còn điểm GCN trên test do GCN huấn luyện trên toàn bộ phần còn lại.
+    Lưu data/processed/stack_oof_predictions.csv và in chỉ số xếp hạng + chia mức 0-3.
+    """
+    import pandas as pd
+    from sklearn.metrics import cohen_kappa_score, f1_score
+    from src.evaluation.calibrate_thresholds import apply, fit_thresholds
+    from src.evaluation.hybrid import build_query_groups, compute_graph_scores
+    from src.modeling.stacker import build_features, make_stacker
+
+    attach_pair_features(graphs)
+    input_dim = graphs[0].x.shape[1]
+    qids = np.array(sorted({get_query_id(g) for g in graphs}))
+    np.random.default_rng(seed).shuffle(qids)
+    tmp = os.path.join(config.MODEL_DIR, "cv_folds", "stack_tmp.pt")
+    kw = dict(num_epochs=epochs, batch_size=batch_size, lr=lr, patience=patience, save_path=tmp)
+    oof = []
+
+    for i, test_q in enumerate(np.array_split(qids, k)):
+        test_q = set(test_q)
+        test = [g for g in graphs if get_query_id(g) in test_q]
+        rest = [g for g in graphs if get_query_id(g) not in test_q]
+        print(f"\n{'#'*70}\n# FOLD NGOÀI {i + 1}/{k}: {len(test_q)} CV test, {len(rest)} cặp train\n{'#'*70}")
+
+        rest_q = np.array(sorted({get_query_id(g) for g in rest}))
+        np.random.default_rng(seed + i).shuffle(rest_q)
+        inner = {}
+        for j, held in enumerate(np.array_split(rest_q, inner_k)):
+            held = set(held)
+            itest = [g for g in rest if get_query_id(g) in held]
+            itrain = [g for g in rest if get_query_id(g) not in held]
+            tr, va = split_by_query(itrain, val_ratio=0.15)
+            m, _ = train(itrain, input_dim, train_data=tr, val_data=va, **kw)
+            for g, s in zip(itest, compute_graph_scores(m, itest)):
+                inner[(g.cv_source, g.jd_source)] = s
+        tr, va = split_by_query(rest, val_ratio=0.15)
+        m, _ = train(rest, input_dim, train_data=tr, val_data=va, **kw)
+        test_gcn = compute_graph_scores(m, test)
+
+        stacker = make_stacker().fit(build_features(rest, [inner[(g.cv_source, g.jd_source)] for g in rest]),
+                                     [g.y.item() for g in rest])
+        for g, gs, ss in zip(test, test_gcn, stacker.predict(build_features(test, test_gcn))):
+            oof.append({"cv_id": g.cv_source, "jd_id": g.jd_source, "grade": int(g.y.item()),
+                        "gcn_score": float(gs), "stack_score": float(ss)})
+
+    df = pd.DataFrame(oof)
+    df.to_csv(os.path.join(config.DATA_PROCESSED_DIR, "stack_oof_predictions.csv"), index=False)
+    g_, folds = df.grade.values, None
+    cvs = np.array(sorted(df.cv_id.unique()))
+    np.random.default_rng(0).shuffle(cvs)
+    fold = df.cv_id.map({c: n % 5 for n, c in enumerate(cvs)}).values
+    print("\n=== Kết quả cross-validation lồng nhau ===")
+    for col, name in (("gcn_score", "GCN"), ("stack_score", "Stacker (GCN + đặc trưng LLM + cosine)")):
+        s = df[col].values
+        pred = np.zeros_like(g_)
+        for f in range(5):
+            th, _ = fit_thresholds(s[fold != f], g_[fold != f])
+            pred[fold == f] = apply(s[fold == f], th)
+        groups = {}
+        for c, gr, sc in zip(df.cv_id, g_, s):
+            groups.setdefault(c, []).append((gr, sc))
+        r = evaluate_ranking(groups, ks=config.RANKING_KS)
+        print(f"{name}\n  xếp hạng: {format_ranking_metrics(r)}".replace("\n", "\n  "))
+        print(f"  mức 0-3 (ngưỡng cross-fit): chính xác {np.mean(pred == g_):.1%} | ±1 {np.mean(abs(pred - g_) <= 1):.1%} | "
+              f"macro-F1 {f1_score(g_, pred, average='macro'):.3f} | QWK {cohen_kappa_score(g_, pred, weights='quadratic'):.3f} | "
+              f"nhị phân(>=2) {np.mean((pred >= 2) == (g_ >= 2)):.1%} | F1/mức {np.round(f1_score(g_, pred, average=None), 2)}")
+    return df
+
+
 if __name__ == "__main__":
     import argparse
     from src.data_collection.prepare_training_data import load_all_graphs
@@ -409,6 +520,10 @@ if __name__ == "__main__":
     parser.add_argument("--patience",  type=int,   default=20)
     parser.add_argument("--cv",        type=int,   default=0,
                         help="K>1: chạy K-fold cross-validation theo CV và so sánh baseline (không lưu model chính)")
+    parser.add_argument("--stack", action="store_true",
+                        help="Đánh giá mô hình xếp chồng (GCN + đặc trưng LLM) bằng cross-validation lồng nhau (~30-40 phút)")
+    parser.add_argument("--pair-features", action="store_true",
+                        help="Dùng đặc trưng LLM theo cặp (cần data/processed/pair_features.csv); với --cv thì so sánh có/không")
     parser.add_argument("--save",      type=str,   default=None,
                         help="Đường dẫn lưu model (mặc định: models/best_model.pt)")
     args = parser.parse_args()
@@ -429,15 +544,22 @@ if __name__ == "__main__":
               f"hiện chỉ có: {sorted(grades)}")
         raise SystemExit(1)
 
+    if args.stack:
+        cross_validate_stack(graphs, k=max(args.cv, 5), epochs=args.epochs, batch_size=args.batch, lr=args.lr,
+                             patience=args.patience)
+        raise SystemExit(0)
+
     if args.cv > 1:
         cross_validate(graphs, k=args.cv, epochs=args.epochs, batch_size=args.batch, lr=args.lr,
-                       patience=args.patience)
+                       patience=args.patience, pair_features=args.pair_features)
         raise SystemExit(0)
 
     input_dim = graphs[0].x.shape[1]
+    extra_dim = attach_pair_features(graphs) if args.pair_features else 0
     model, history = train(
         data_list=graphs,
         input_dim=input_dim,
+        extra_dim=extra_dim,
         num_epochs=args.epochs,
         batch_size=args.batch,
         lr=args.lr,

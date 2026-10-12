@@ -404338,5 +404338,288 @@
     "role": [
       "Nhân viên kinh doanh"
     ]
+  },
+  "640616e615a2cd4cd8717f5d7821e9d433eea371a2be09eeebbe8a51d909633d": {
+    "soft_skills": [
+      "Làm việc nhóm",
+      "Tiếp nhận góp ý",
+      "Quản lý thời gian",
+      "Tiếng Anh B1"
+    ],
+    "hard_skills": [
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Thiết kế banner",
+      "Thiết kế ảnh sản phẩm",
+      "Thiết kế bộ nhận diện",
+      "Chỉnh sửa hậu kỳ ảnh",
+      "Quay dựng video",
+      "Adobe Premiere",
+      "Nghiên cứu xu hướng thiết kế",
+      "Chụp ảnh sản phẩm"
+    ],
+    "education": [
+      "Cao đẳng"
+    ],
+    "field_of_education": [
+      "Thiết kế đồ họa"
+    ],
+    "industry_sector": [
+      "Thương mại điện tử",
+      "Bán lẻ",
+      "Hàng tiêu dùng"
+    ],
+    "role": [
+      "Nhà thiết kế đồ họa",
+      "Graphic Designer",
+      "Thiết kế cấp trung"
+    ]
+  },
+  "3663a40fb4baf7e967c922f405ddfb54e3b7c7be12e6ae379090da3064969108": {
+    "soft_skills": [
+      "làm việc nhóm",
+      "lắng nghe",
+      "phối hợp",
+      "tỉ mỉ",
+      "cẩn thận",
+      "làm việc trong môi trường áp lực cao",
+      "quản lý thời gian",
+      "trách nhiệm",
+      "cam kết"
+    ],
+    "hard_skills": [
+      "Photoshop",
+      "Illustrator",
+      "nghiên cứu cơ bản",
+      "nắm bắt xu hướng thiết kế",
+      "hiểu hành vi khách hàng",
+      "chụp hình",
+      "quay video",
+      "chỉnh sửa hậu kỳ"
+    ],
+    "education": [
+      "Cao Đẳng"
+    ],
+    "field_of_education": [
+      "Thiết kế đồ họa"
+    ],
+    "industry_sector": [
+      "thương mại điện tử",
+      "hàng tiêu dùng"
+    ],
+    "role": [
+      "Nhà thiết kế đồ họa"
+    ]
+  },
+  "4e636e9a780ad9b5d8bd19661279a8588363e4f7dd89bcaacc7c20bc75dba3d4": {
+    "soft_skills": [
+      "Tư duy giải quyết vấn đề",
+      "Làm việc nhóm",
+      "Tiếp thu góp ý",
+      "Đọc hiểu tài liệu kỹ thuật tiếng Anh"
+    ],
+    "hard_skills": [
+      "Unity",
+      "C#",
+      "Lập trình hướng đối tượng",
+      "Cấu trúc dữ liệu và giải thuật",
+      "Git",
+      "Kiểm thử",
+      "Sửa lỗi gameplay",
+      "Phát triển màn chơi",
+      "Giao diện",
+      "Hiệu ứng",
+      "Tích hợp âm thanh",
+      "Tích hợp quảng cáo",
+      "Thiết kế hệ thống nhân vật",
+      "Lưu tiến trình"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Công nghệ thông tin"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Phát triển game"
+    ],
+    "role": [
+      "Lập trình viên game",
+      "Unity Developer Intern",
+      "Unity Developer Part-time"
+    ]
+  },
+  "7e664230fb8a5df90018381f4a90e6729b127f258ad543bd57b540725ed69bb7": {
+    "soft_skills": [
+      "troubleshooting",
+      "problem-solving"
+    ],
+    "hard_skills": [
+      "Unity",
+      "C#",
+      "OOP",
+      "data structures",
+      "algorithms",
+      "multiplayer technologies",
+      "Game performance optimization",
+      "resource loading",
+      "quality render",
+      "English (Reading and Writing)"
+    ],
+    "education": [
+      "Đại Học"
+    ],
+    "field_of_education": [],
+    "industry_sector": [
+      "Game Development"
+    ],
+    "role": [
+      "Nhà phát triển trò chơi Unity Junior"
+    ]
+  },
+  "99118571eee927df9842556c5dbb8e20094e92550b2c10c3a0edac350cac0334": {
+    "soft_skills": [
+      "giao tiếp",
+      "tổ chức công việc",
+      "phối hợp giữa các bộ phận",
+      "ghi chép và tổng hợp thông tin"
+    ],
+    "hard_skills": [
+      "Windows",
+      "Microsoft Office",
+      "Google Workspace",
+      "Jira Service Desk",
+      "Excel",
+      "PivotTable",
+      "VLOOKUP",
+      "Word",
+      "PowerPoint",
+      "SQL",
+      "MySQL",
+      "Tiếng Anh B1"
+    ],
+    "education": [
+      "Cao đẳng"
+    ],
+    "field_of_education": [
+      "Công nghệ thông tin"
+    ],
+    "industry_sector": [
+      "Phân phối",
+      "Công nghệ thông tin"
+    ],
+    "role": [
+      "Nhân viên hỗ trợ CNTT",
+      "Hành chính - điều phối",
+      "IT Support"
+    ]
+  },
+  "76a58b985953a8a096d8b2c8aa6fb856f615c11f990bab08bc5aa42e6707f8d0": {
+    "soft_skills": [
+      "tổ chức",
+      "hành chính",
+      "văn thư",
+      "giao tiếp",
+      "ghi chép"
+    ],
+    "hard_skills": [
+      "Excel",
+      "Word",
+      "Google Workspace",
+      "công cụ quản lý dự án",
+      "quy trình phát triển phần mềm",
+      "kiểm thử phần mềm"
+    ],
+    "education": [
+      "Cao đẳng",
+      "Đại học"
+    ],
+    "field_of_education": [
+      "CNTT",
+      "Hệ thống thông tin quản lý"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin"
+    ],
+    "role": [
+      "Nhân Viên Admin Phòng Công Nghệ Thông Tin"
+    ]
+  },
+  "47c37e3b2796be3436c1a96c0014d68581919d1a59aa3519a40ad34f3f3cb774": {
+    "soft_skills": [
+      "Làm việc nhóm",
+      "review code",
+      "hướng dẫn thành viên mới",
+      "Tiếng Anh B2",
+      "đọc tài liệu kỹ thuật"
+    ],
+    "hard_skills": [
+      "Java",
+      "Spring Boot",
+      "Spring Data JPA",
+      "RESTful API",
+      "MySQL",
+      "PostgreSQL",
+      "Redis",
+      "Kafka",
+      "Docker",
+      "Git",
+      "Jenkins",
+      "JUnit",
+      "Tối ưu truy vấn",
+      "xử lý sự cố production",
+      "kiến trúc microservices"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Công nghệ thông tin"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Thanh toán",
+      "Thương mại điện tử"
+    ],
+    "role": [
+      "Backend Developer"
+    ]
+  },
+  "b61409a201222d4e2bd112720a1be82b6dc3ab9cd7d658c3465db87ed9ae7bdf": {
+    "soft_skills": [
+      "làm việc độc lập",
+      "làm việc nhóm",
+      "chịu được áp lực công việc",
+      "tinh thần trách nhiệm cao",
+      "cẩn thận",
+      "tỉ mỉ",
+      "ham học hỏi"
+    ],
+    "hard_skills": [
+      "Mastercam",
+      "NX",
+      "AutoCAD",
+      "lập trình CNC",
+      "vận hành máy CNC",
+      "gia công cơ khí",
+      "đọc hiểu bản vẽ kỹ thuật",
+      "phân tích yêu cầu kỹ thuật"
+    ],
+    "education": [
+      "Cao đẳng",
+      "Đại học"
+    ],
+    "field_of_education": [
+      "Cơ khí",
+      "chế tạo máy"
+    ],
+    "industry_sector": [
+      "Cơ khí",
+      "Chế tạo máy"
+    ],
+    "role": [
+      "Lập Trình CNC"
+    ]
   }
 }

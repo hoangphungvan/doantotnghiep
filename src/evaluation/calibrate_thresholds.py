@@ -69,14 +69,22 @@ def report(name, grades, pred):
 
 
 if __name__ == "__main__":
-    df = pd.read_csv(OOF_CSV)
-    s, g = df.gcn_score.values, df.grade.values
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--oof", default=OOF_CSV, help="CSV điểm out-of-fold (cột cv_id, grade và cột điểm)")
+    ap.add_argument("--col", default="gcn_score", help="Tên cột điểm")
+    ap.add_argument("--out", default=OUT_JSON, help="File JSON ghi ngưỡng")
+    ap.add_argument("--scale", type=float, default=1.0, help="Điểm tối đa của thang (GCN: 1; stacker hồi quy trên grade: 3)")
+    args = ap.parse_args()
+    OUT_JSON = args.out
+    df = pd.read_csv(args.oof)
+    s, g = df[args.col].values, df.grade.values
     cvs = np.array(sorted(df.cv_id.unique()))
     np.random.default_rng(0).shuffle(cvs)
     fold_of = {c: i % 5 for i, c in enumerate(cvs)}
     fold = df.cv_id.map(fold_of).values
 
-    old = np.clip(np.rint(s * config.NUM_GRADES), 0, config.NUM_GRADES).astype(int)
+    old = np.clip(np.rint(s / args.scale * config.NUM_GRADES), 0, config.NUM_GRADES).astype(int)
     cross = np.zeros_like(g)
     for f in range(5):
         th, _ = fit_thresholds(s[fold != f], g[fold != f])

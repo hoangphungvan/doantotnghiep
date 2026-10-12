@@ -41,10 +41,11 @@ ENTITY_WEIGHTS = {
 
 NUM_NODES = 2 + NUM_ENTITY_TYPES * 2  # 14 nodes: 2 main + 6 candidate + 6 JD
 
-# Cosine tối thiểu để coi hai kỹ năng là khớp ngữ nghĩa (diễn giải kết quả).
-# 0.75 chọn theo kiểm tra tay trên 60 cặp với paraphrase-multilingual-MiniLM-L12-v2: dưới ~0.70 nhiều
-# khớp sai (JPA~gRPC, Git~Ruby), từ 0.75 khớp xuyên ngôn ngữ mới đáng tin (làm việc nhóm~Good teamwork).
-# NDCG@5 cao nhất ở 0.60 nhưng là do khớp rộng theo lĩnh vực. Phải hiệu chỉnh lại nếu đổi EMBEDDING_MODEL.
+# Cosine tối thiểu để coi hai mục thực thể là khớp ngữ nghĩa (diễn giải kết quả).
+# Kiểm tra lại trên 178 cặp gán nhãn tay (data/processed/semantic_match_labels.csv,
+# python src/evaluation/calibrate_semantic_threshold.py): tại 0.75 precision ~0.74, recall ~0.40;
+# ngưỡng tối ưu F0.5 (ưu tiên precision, vì khớp sai làm diễn giải sai) là 0.725, khoảng 90% [0.625, 0.75],
+# nên giữ 0.75. Hạ xuống 0.65 thì recall 0.64 nhưng precision chỉ 0.57. Phải hiệu chỉnh lại nếu đổi EMBEDDING_MODEL.
 SEMANTIC_MATCH_THRESHOLD = 0.75
 
 # ---------------------------------------------------------------------------

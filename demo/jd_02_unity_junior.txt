@@ -1,0 +1,5 @@
+Vị trí: Nhà phát triển trò chơi Unity Junior
+Kinh nghiệm: 1 năm
+Học vấn: Đại Học trở lên
+Kỹ năng chuyên môn: Unity, C#, OOP, data structures, algorithms
+Yêu cầu: At least 1 year+ of experience making games using Unity. Good at C#, OOP, data structures, and algorithms. Excellent troubleshooting & problem-solving skills. Understanding of several multiplayer technologies. Game performance optimization (resource loading, quality render ...). Have experience in developing large scale systems with high coin currency. Proficient in English (Reading and Writing).

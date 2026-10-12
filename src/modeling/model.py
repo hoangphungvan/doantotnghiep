@@ -47,8 +47,11 @@ class GCNModel(nn.Module):
     def __init__(self, input_dim: int,
                  hidden_dim: int = None,
                  num_layers: int = None,
-                 dropout: float = None):
+                 dropout: float = None,
+                 extra_dim: int = 0):
+        """extra_dim: số đặc trưng toàn cục theo cặp (data.g_feat, xem pair_features.py); 0 = không dùng."""
         super().__init__()
+        self.extra_dim = extra_dim
 
         hidden_dim = hidden_dim or config.HIDDEN_DIM
         num_layers = num_layers or config.NUM_GCN_LAYERS
@@ -66,7 +69,7 @@ class GCNModel(nn.Module):
 
         # v_c và v_jd concat -> 2 * hidden_dim
         # Thêm element-wise difference và product cho richer interaction
-        classifier_input = hidden_dim * 4
+        classifier_input = hidden_dim * 4 + extra_dim
 
         self.classifier = nn.Sequential(
             nn.Linear(classifier_input, hidden_dim),
@@ -123,6 +126,8 @@ class GCNModel(nn.Module):
         h_diff = h_c - h_jd
         h_prod = h_c * h_jd
         h_combined = torch.cat([h_c, h_jd, h_diff, h_prod], dim=-1)
+        if self.extra_dim:
+            h_combined = torch.cat([h_combined, data.g_feat.view(-1, self.extra_dim).to(h_combined.dtype)], dim=-1)
 
         logits = self.classifier(h_combined)
         return logits

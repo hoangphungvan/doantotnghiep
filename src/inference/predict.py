@@ -13,10 +13,13 @@ if __package__ in (None, ""):
     sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 import config
-from src.extraction.entity_extractor import extract_entities, extract_from_file, normalize_path
+from src.extraction.entity_extractor import (extract_entities, extract_from_file, get_jd_text_by_id, normalize_path,
+                                             read_pdf_text, read_text_file, PDF_TEXT_MIN_CHARS)
+from src.extraction.pair_features import extract_pair_features, to_vector, FEATURE_NAMES
 from src.representation.embedding_generator import EmbeddingGenerator
 from src.representation.graph_builder import build_graph
 from src.modeling.model import GCNModel, target_to_grade
+from src.modeling.stacker import STACKER_FILE, build_features, predict_grade
 from src.inference.explain import gcn_attribution, match_entities, summarize
 
 
@@ -47,6 +50,14 @@ class CJMPredictor:
 
         self.embedding_gen = EmbeddingGenerator()
 
+        # Stacker (GCN + đặc trưng LLM theo cặp): đánh giá cross-validation lồng nhau tốt hơn hẳn GCN đơn; không có file
+        # thì dùng GCN đơn như trước.
+        self.stacker = None
+        if os.path.exists(STACKER_FILE):
+            import joblib
+            self.stacker = joblib.load(STACKER_FILE)
+            print(f"[Predictor] Stacker loaded from {STACKER_FILE}")
+
         print(f"[Predictor] Model loaded from {model_path}")
         print(f"[Predictor] Trained epoch: {checkpoint.get('epoch', '?')}")
         print(f"[Predictor] Val metrics: {checkpoint.get('val_metrics', {})}")
@@ -61,7 +72,7 @@ class CJMPredictor:
         cv_entities = extract_entities(cv_text)
         jd_entities = extract_entities(jd_text)
 
-        return self._predict_from_entities(cv_entities, jd_entities)
+        return self._predict_from_entities(cv_entities, jd_entities, cv_text, jd_text)
 
     def predict_from_files(self, cv_path: str, jd_path: str) -> dict:
         """
@@ -70,15 +81,16 @@ class CJMPredictor:
         """
         cv_entities = extract_from_file(cv_path)
         jd_entities = extract_from_file(jd_path)
-        return self._predict_from_entities(cv_entities, jd_entities)
+        return self._predict_from_entities(cv_entities, jd_entities, _read_any(cv_path), _read_any(jd_path))
 
     def predict_from_entities(self, cv_entities: dict, jd_entities: dict) -> dict:
         """Dự đoán từ entities đã trích xuất sẵn."""
         return self._predict_from_entities(cv_entities, jd_entities)
 
     @torch.no_grad()
-    def _predict_from_entities(self, cv_entities: dict, jd_entities: dict) -> dict:
-        """Core prediction logic."""
+    def _predict_from_entities(self, cv_entities: dict, jd_entities: dict,
+                               cv_text: str = None, jd_text: str = None) -> dict:
+        """Core prediction logic. Có cv_text và jd_text (và stacker) thì dùng stacker; ngược lại dùng GCN đơn."""
         cv_main, cv_feats = self.embedding_gen.build_node_features(cv_entities)
         jd_main, jd_feats = self.embedding_gen.build_node_features(jd_entities)
 
@@ -86,8 +98,16 @@ class CJMPredictor:
         data = data.to(self.device)
 
         logits = self.model(data)
-        score = torch.sigmoid(logits).item()
-        grade = target_to_grade(score)
+        gcn_score = torch.sigmoid(logits).item()
+        score, grade, mode, llm = gcn_score, target_to_grade(gcn_score), "gcn", {}
+        if self.stacker is not None and cv_text and jd_text:
+            llm = extract_pair_features(cv_text, jd_text)
+            vec = to_vector(llm)
+            if vec["pf_valid"]:
+                g = data.cpu()
+                g.g_feat = torch.tensor([[vec[n] for n in FEATURE_NAMES]], dtype=torch.float32)
+                raw = float(self.stacker.predict(build_features([g], [gcn_score]))[0])
+                score, grade, mode = min(1.0, max(0.0, raw / config.NUM_GRADES)), predict_grade(raw), "stacker"
         match = "MATCH" if grade >= config.RELEVANT_GRADE else "NOT MATCH"
 
         entity_match = match_entities(cv_entities, jd_entities, self.embedding_gen)
@@ -95,6 +115,10 @@ class CJMPredictor:
 
         return {
             "score": round(score, 4),
+            "mode": mode,
+            "gcn_score": round(gcn_score, 4),
+            "llm_requirements": llm.get("requirements", []),
+            "llm_conditions": llm.get("conditions", []),
             "grade": grade,
             "grade_label": config.GRADE_LABELS[grade],
             "label": match,
@@ -126,6 +150,17 @@ class CJMPredictor:
                 results.append({"error": str(e)})
 
         return results
+
+
+def _read_any(path: str):
+    """Văn bản thô của file CV/JD (hoặc jd_id); None nếu không đọc được (PDF scan) → khi đó dùng GCN đơn."""
+    path = normalize_path(path)
+    if os.path.exists(path):
+        if path.lower().endswith(".pdf"):
+            text = read_pdf_text(path)
+            return text if len(text) >= PDF_TEXT_MIN_CHARS else None
+        return read_text_file(path)
+    return get_jd_text_by_id(path)
 
 
 def predict_interactive():
