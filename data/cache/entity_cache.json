@@ -404621,5 +404621,267 @@
     "role": [
       "Lập Trình CNC"
     ]
+  },
+  "33c3f5d6185c39a3822d195fa6aaf23d6ef142a9873e4f3fd5d0761af665e88e": {
+    "soft_skills": [
+      "Giao tiếp",
+      "sáng tạo nội dung",
+      "làm việc nhóm",
+      "quản lý thời gian"
+    ],
+    "hard_skills": [
+      "Facebook Ads",
+      "Google Ads",
+      "Google Analytics",
+      "SEO",
+      "Content Marketing",
+      "Social Media Marketing",
+      "Canva",
+      "Photoshop cơ bản",
+      "Microsoft Excel",
+      "PowerPoint"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Marketing"
+    ],
+    "industry_sector": [
+      "Truyền thông",
+      "Digital Marketing"
+    ],
+    "role": [
+      "Digital Marketing Executive"
+    ]
+  },
+  "a76080bfa8749ea90cc16e2bf6b1f811ba9f1c2bbb70ba8a0f0aa0f9957c0963": {
+    "soft_skills": [
+      "khả năng phân tích",
+      "xử lý lỗi"
+    ],
+    "hard_skills": [
+      "Java",
+      "Spring Boot",
+      "Spring Data JPA",
+      "Hibernate",
+      "PostgreSQL",
+      "MySQL",
+      "RESTful API",
+      "Git",
+      "Docker",
+      "Unit Testing",
+      "Backend"
+    ],
+    "education": [],
+    "field_of_education": [],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Phát triển phần mềm"
+    ],
+    "role": [
+      "Java Backend Developer",
+      "Backend Developer"
+    ]
+  },
+  "1f16b33de691e3b15f88063db37592cfb057dff7b2a934feaacd19e6c85371b7": {
+    "soft_skills": [
+      "Giải quyết vấn đề",
+      "hỗ trợ người dùng",
+      "giao tiếp",
+      "làm việc nhóm"
+    ],
+    "hard_skills": [
+      "Windows Server",
+      "Active Directory",
+      "TCP/IP",
+      "LAN/WAN",
+      "DNS",
+      "DHCP",
+      "Cisco Router",
+      "Switch",
+      "CCNA",
+      "Linux Administration",
+      "Bash Scripting",
+      "Git"
+    ],
+    "education": [
+      "Cử nhân"
+    ],
+    "field_of_education": [
+      "Công nghệ thông tin"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin"
+    ],
+    "role": [
+      "IT Support",
+      "System Administrator",
+      "IT Support Engineer"
+    ]
+  },
+  "3501c29c83896eba7eb24d19d0f8bee5647f79c55bcd122110bb96a83cbcf93c": {
+    "soft_skills": [],
+    "hard_skills": [
+      "Python",
+      "SQL",
+      "PostgreSQL",
+      "Pandas",
+      "PySpark",
+      "Apache Spark",
+      "Apache Airflow",
+      "Docker",
+      "Linux",
+      "Git",
+      "ETL/ELT",
+      "Data Pipeline",
+      "Data Warehouse",
+      "Xử lý dữ liệu lớn"
+    ],
+    "education": [],
+    "field_of_education": [],
+    "industry_sector": [
+      "Công nghệ thông tin"
+    ],
+    "role": [
+      "Python Data Engineer"
+    ]
+  },
+  "c27cf5aab8d9d935eeb422c53740dab98a7b2c67bb9d0285ccb9fca0182354f4": {
+    "soft_skills": [
+      "Làm việc nhóm",
+      "giải quyết vấn đề",
+      "chủ động học hỏi"
+    ],
+    "hard_skills": [
+      "Java",
+      "Spring Boot",
+      "Spring Data JPA",
+      "MySQL",
+      "SQL cơ bản",
+      "RESTful API",
+      "Postman",
+      "Git",
+      "Maven",
+      "JUnit",
+      "Docker"
+    ],
+    "education": [
+      "Kỹ sư"
+    ],
+    "field_of_education": [
+      "Công nghệ thông tin"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Phần mềm"
+    ],
+    "role": [
+      "Java Backend Developer",
+      "Junior Java Developer"
+    ]
+  },
+  "a53d85057db8fcfd829d8c973b247139d85b9b683405b33219b94286bc88d34e": {
+    "soft_skills": [
+      "Clean Code",
+      "Hướng dẫn Junior Developer"
+    ],
+    "hard_skills": [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "Hibernate",
+      "Microservices",
+      "RESTful API",
+      "PostgreSQL",
+      "SQL",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "Redis",
+      "Kafka",
+      "RabbitMQ",
+      "Unit Testing",
+      "Thiết kế hệ thống"
+    ],
+    "education": [],
+    "field_of_education": [],
+    "industry_sector": [
+      "Thương mại điện tử",
+      "Công nghệ thông tin"
+    ],
+    "role": [
+      "Senior Java Backend Developer",
+      "Junior Developer",
+      "Backend Developer"
+    ]
+  },
+  "3e217a1fe996cbf524f9dd6fa190d7b6982f052b865d9b58ab61bd2ca1a5ebf7": {
+    "soft_skills": [
+      "Phân tích vấn đề",
+      "làm việc nhóm",
+      "quản lý công việc",
+      "tư duy dữ liệu"
+    ],
+    "hard_skills": [
+      "Python",
+      "SQL",
+      "Pandas",
+      "PySpark",
+      "Apache Spark",
+      "Apache Airflow",
+      "ETL/ELT",
+      "PostgreSQL",
+      "MySQL",
+      "Amazon Redshift",
+      "AWS S3",
+      "AWS EC2",
+      "Docker",
+      "Git",
+      "Linux"
+    ],
+    "education": [
+      "Kỹ sư"
+    ],
+    "field_of_education": [
+      "Khoa học máy tính"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin",
+      "Thương mại điện tử"
+    ],
+    "role": [
+      "Python Data Engineer",
+      "Data Engineer"
+    ]
+  },
+  "0ad960a7926e68606b6c026c4071b1ea3a88c0a7331f401708e2d686535b0fa3": {
+    "soft_skills": [],
+    "hard_skills": [
+      "Python",
+      "ETL/ELT Pipeline",
+      "Data Warehouse",
+      "Apache Airflow",
+      "Pandas",
+      "PySpark",
+      "SQL",
+      "PostgreSQL",
+      "Docker",
+      "AWS",
+      "Git",
+      "Linux",
+      "Amazon Redshift"
+    ],
+    "education": [],
+    "field_of_education": [],
+    "industry_sector": [
+      "Data Engineering",
+      "Thương mại điện tử"
+    ],
+    "role": [
+      "Python Data Engineer",
+      "Data Engineer",
+      "Data Analyst"
+    ]
   }
 }

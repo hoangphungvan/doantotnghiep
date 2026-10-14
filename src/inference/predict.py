@@ -20,7 +20,7 @@ from src.representation.embedding_generator import EmbeddingGenerator
 from src.representation.graph_builder import build_graph
 from src.modeling.model import GCNModel, target_to_grade
 from src.modeling.stacker import STACKER_FILE, build_features, predict_grade
-from src.inference.explain import gcn_attribution, match_entities, summarize
+from src.inference.explain import gcn_attribution, match_entities, recruiter_summary, summarize
 
 
 class CJMPredictor:
@@ -124,7 +124,8 @@ class CJMPredictor:
             "label": match,
             "cv_entities": cv_entities,
             "jd_entities": jd_entities,
-            "explanation": summarize(entity_match, attribution),
+            "explanation": recruiter_summary(grade, llm if mode == "stacker" else None, entity_match),  # ngắn gọn, cho nhà tuyển dụng
+            "explanation_detail": summarize(entity_match, attribution),  # kỹ thuật: khớp từng loại thực thể, đóng góp của nút GCN
             "entity_match": entity_match,
             "gcn_attribution": attribution,
         }
@@ -223,6 +224,8 @@ def predict_interactive():
         print("=" * 40)
         print("\n  Diễn giải (VI):\n" + result["explanation"]["vi"])
         print("\n  Explanation (EN):\n" + result["explanation"]["en"])
+        if input("\nXem chi tiết kỹ thuật? (y/N): ").strip().lower() == "y":
+            print(result["explanation_detail"]["vi"])
 
         if "cv_entities" in result:
             print("\n  CV Entities:")

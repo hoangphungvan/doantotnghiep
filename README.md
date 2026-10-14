@@ -181,9 +181,16 @@ Tạo lại dữ liệu JD từ đầu (chỉ khi cần; cần file VietJobs g�
 
 ### Diễn giải kết quả
 
-`src/inference/explain.py` giải thích mức khớp giữa CV và JD (khớp thực thể, khớp ngữ nghĩa SBERT, đóng góp của từng nút theo occlusion), xuất song ngữ Việt/Anh.
+`result["explanation"]` (`recruiter_summary` trong `src/inference/explain.py`) là bản **ngắn gọn cho nhà tuyển dụng**, song ngữ Việt/Anh, không thuật ngữ: kết luận theo mức (Rất phù hợp / Phù hợp một phần / Ít phù hợp / Không phù hợp), các yêu cầu bắt buộc của JD mà CV đáp ứng, các yêu cầu chưa thấy trong CV, và điều cần lưu ý (điều kiện cứng chưa đáp ứng, thiếu số năm kinh nghiệm, công nghệ trong tiêu đề JD chưa có ở CV). Ví dụ:
 
-Độ tin cậy của phần khớp ngữ nghĩa có giới hạn: kiểm tra trên 178 cặp mục gán nhãn tay cho thấy cosine không phân tách tốt "cùng nghĩa" và "chỉ giống bề ngoài" (Git ~ GitLab, Kustomize ~ Grafana, UI Designer ~ UI/UX Designer đều cosine > 0,75). Với kỹ năng mềm precision chỉ ~0,60 ở mọi ngưỡng. Nên coi các khớp ngữ nghĩa là gợi ý, nhất là kỹ năng mềm. Đổi ngưỡng không khắc phục được vì không tồn tại ngưỡng tách sạch.
+```
+Kết luận: Phù hợp một phần (mức 2/3), đáng cân nhắc, cần làm rõ các điểm còn thiếu.
+Đáp ứng (5/8 yêu cầu bắt buộc): Unity, C#, OOP, data structures, algorithms.
+Chưa thấy trong CV: multiplayer technologies, Game performance optimization, ...
+Cần lưu ý: JD yêu cầu tối thiểu 1 năm kinh nghiệm, CV chưa có kinh nghiệm liên quan.
+```
+
+Nội dung lấy từ đánh giá của LLM về từng yêu cầu (cùng nguồn với đặc trưng của stacker nên nhất quán với mức điểm). Khi không có LLM (hoặc PDF scan), mô hình chạy GCN đơn và bản tóm tắt chỉ liệt kê kỹ năng chuyên môn khớp/thiếu, có ghi chú là ước lượng nhanh. Bản **kỹ thuật** (khớp từng loại thực thể theo cosine, đóng góp của từng nút GCN) vẫn có ở `result["explanation_detail"]` và trong chế độ tương tác của `main.py --mode predict`; độ tin cậy của phần khớp ngữ nghĩa bị giới hạn như đã nêu ở trên (precision ~0,74 tại ngưỡng 0,75, kỹ năng mềm ~0,60), nên không dùng cho nhà tuyển dụng.
 
 ---
 

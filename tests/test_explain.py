@@ -12,7 +12,7 @@ from torch_geometric.data import Data
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import config
-from src.inference.explain import gcn_attribution, match_entities, summarize, NODE_NAMES
+from src.inference.explain import gcn_attribution, match_entities, recruiter_summary, summarize, NODE_NAMES
 
 
 class FakeEmbedder:
@@ -88,6 +88,22 @@ def test_gcn_attribution_sign():
     assert len(attr) == len(NODE_NAMES) == 14
     assert attr["jd_main"] > 0
     assert attr["cv_main"] == 0
+
+
+def test_recruiter_summary():
+    llm = {"requirements": [{"text": "Python", "met": True}, {"text": "SQL", "met": True}, {"text": "Spark", "met": False}],
+           "conditions": [{"text": "IELTS 6.0", "met": False}], "jd_min_years": 2, "cv_years": 0.5, "title_tech_in_cv": False}
+    s = recruiter_summary(2, llm)
+    assert "Phù hợp một phần" in s["vi"] and "2/3" in s["vi"]
+    assert "Đáp ứng (2/3" in s["vi"] and "Spark" in s["vi"].split("Chưa thấy trong CV:")[1]
+    assert "IELTS 6.0" in s["vi"] and "2 năm" in s["vi"] and "0.5 năm" in s["vi"] and "tiêu đề" in s["vi"]
+    assert "Partial match" in s["en"] and "Not found in CV: Spark" in s["en"]
+    assert "Cần lưu ý" not in recruiter_summary(3, {"requirements": [{"text": "Python", "met": True}], "jd_min_years": 1, "cv_years": 3})["vi"]
+    assert "chưa có kinh nghiệm liên quan" in recruiter_summary(1, {"requirements": [{"text": "a", "met": False}], "jd_min_years": 3, "cv_years": 0})["vi"]
+    many = {"requirements": [{"text": f"kỹ năng {i}", "met": False} for i in range(9)]}
+    assert "và 3 mục khác" in recruiter_summary(0, many)["vi"]
+    fallback = recruiter_summary(1, None, match_entities({"hard_skills": ["Python"]}, {"hard_skills": ["Python", "Java"]}))
+    assert "Ước lượng nhanh" in fallback["vi"] and "Java" in fallback["vi"]
 
 
 def test_summarize_bilingual():

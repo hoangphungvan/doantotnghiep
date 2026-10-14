@@ -40,13 +40,6 @@ print(f"\nĐúng mức: {hits}/{len(rows)}; lệch tối đa 1 mức: {sum(abs(e
 for r, res in blocks:
     print("\n" + "-" * 78)
     print(f"{r.pair_id}: {r.cv_file} ↔ {r.jd_file} | kỳ vọng {r.expected_grade}, mô hình {res['grade']} ({res['score']})")
-    if res["mode"] == "stacker":
-        unmet = [q["text"] for q in res["llm_requirements"] if not q.get("met")]
-        met = [q["text"] for q in res["llm_requirements"] if q.get("met")]
-        print(f"[Mô hình: GCN + LLM đọc trực tiếp] điểm GCN {res['gcn_score']}")
-        print("Yêu cầu bắt buộc CV đáp ứng:", "; ".join(met) or "không có")
-        print("Yêu cầu bắt buộc CV chưa đáp ứng:", "; ".join(unmet) or "không có")
-        print("Điều kiện cứng chưa đáp ứng:", "; ".join(c["text"] for c in res["llm_conditions"] if not c.get("met")) or "không có")
     print(res["explanation"]["vi"])
 
 if "--save" in sys.argv:

@@ -166,3 +166,79 @@ def summarize(match: dict, attribution: dict = None, top_k: int = 3) -> dict:
         lines["en"].append("Nodes lowering the score: " + (", ".join(top_neg) or "none") + ".")
 
     return {"vi": "\n".join(lines["vi"]), "en": "\n".join(lines["en"])}
+
+
+# ---------------------------------------------------------------------------
+# Diễn giải ngắn gọn cho nhà tuyển dụng
+# ---------------------------------------------------------------------------
+
+_VERDICT = {
+    3: ("Rất phù hợp", "nên mời phỏng vấn", "Strong match", "worth interviewing"),
+    2: ("Phù hợp một phần", "đáng cân nhắc, cần làm rõ các điểm còn thiếu", "Partial match", "worth considering; clarify the gaps"),
+    1: ("Ít phù hợp", "cùng lĩnh vực nhưng thiếu nhiều yêu cầu", "Weak match", "related field but many requirements missing"),
+    0: ("Không phù hợp", "khác hẳn lĩnh vực hoặc không đáp ứng yêu cầu", "Not a match", "different field or requirements not met"),
+}
+
+
+def _fmt_years(x) -> str:
+    try:
+        return f"{float(x):g}"
+    except (TypeError, ValueError):
+        return "?"
+
+
+def _items(names: list, limit: int = 6, vi: bool = True) -> str:
+    shown = ", ".join(names[:limit])
+    rest = len(names) - limit
+    return shown + (f" và {rest} mục khác" if vi else f" and {rest} more") if rest > 0 else shown
+
+
+def recruiter_summary(grade: int, llm: dict = None, match: dict = None) -> dict:
+    """
+    Diễn giải ngắn, không thuật ngữ, cho nhà tuyển dụng: kết luận, điểm đáp ứng, điểm còn thiếu, điều cần lưu ý.
+
+    llm: kết quả thô của pair_features.extract_pair_features (yêu cầu bắt buộc, điều kiện cứng, số năm, công nghệ tiêu đề).
+    match: kết quả match_entities, chỉ dùng khi không có llm (ước lượng thô theo kỹ năng chuyên môn).
+    """
+    v_vi, why_vi, v_en, why_en = _VERDICT[grade]
+    vi = [f"Kết luận: {v_vi} (mức {grade}/3), {why_vi}."]
+    en = [f"Verdict: {v_en} (level {grade}/3), {why_en}."]
+
+    reqs = [r for r in (llm or {}).get("requirements", []) if isinstance(r, dict) and r.get("text")]
+    if reqs:
+        met = [r["text"] for r in reqs if r.get("met")]
+        unmet = [r["text"] for r in reqs if not r.get("met")]
+        vi.append(f"Đáp ứng ({len(met)}/{len(reqs)} yêu cầu bắt buộc): {_items(met) or 'chưa có mục nào'}.")
+        en.append(f"Met ({len(met)}/{len(reqs)} required items): {_items(met, vi=False) or 'none'}.")
+        vi.append(f"Chưa thấy trong CV: {_items(unmet) or 'không có'}.")
+        en.append(f"Not found in CV: {_items(unmet, vi=False) or 'none'}.")
+        notes_vi, notes_en = [], []
+        for c in (llm or {}).get("conditions", []):
+            if isinstance(c, dict) and c.get("text") and not c.get("met"):
+                notes_vi.append(f"chưa đáp ứng điều kiện bắt buộc \"{c['text']}\"")
+                notes_en.append(f"required condition not met: \"{c['text']}\"")
+        try:
+            need, have = float(llm.get("jd_min_years") or 0), float(llm.get("cv_years") or 0)
+        except (TypeError, ValueError):
+            need = have = 0
+        if need > have:
+            notes_vi.append(f"JD yêu cầu tối thiểu {_fmt_years(need)} năm kinh nghiệm, " +
+                            (f"CV có khoảng {_fmt_years(have)} năm" if have > 0 else "CV chưa có kinh nghiệm liên quan"))
+            notes_en.append(f"JD asks for at least {_fmt_years(need)} years of experience, " +
+                            (f"CV shows about {_fmt_years(have)}" if have > 0 else "CV shows no relevant experience"))
+        if llm.get("title_tech_in_cv") is False:
+            notes_vi.append("công nghệ nêu trong tiêu đề JD chưa thấy trong CV")
+            notes_en.append("the technology named in the JD title is not found in the CV")
+        if notes_vi:
+            vi.append("Cần lưu ý: " + "; ".join(notes_vi) + ".")
+            en.append("Please note: " + "; ".join(notes_en) + ".")
+    elif match is not None:
+        hs = match["hard_skills"]
+        vi.append("(Ước lượng nhanh theo kỹ năng chuyên môn, không có đánh giá chi tiết từng yêu cầu.)")
+        en.append("(Quick estimate from technical skills only; no per-requirement assessment.)")
+        vi.append(f"Kỹ năng khớp: {_items([j for _, j, _ in hs['matched']]) or 'chưa có mục nào'}.")
+        en.append(f"Matching skills: {_items([j for _, j, _ in hs['matched']], vi=False) or 'none'}.")
+        vi.append(f"Kỹ năng JD yêu cầu mà CV chưa nêu: {_items(hs['missing']) or 'không có'}.")
+        en.append(f"JD skills not mentioned in CV: {_items(hs['missing'], vi=False) or 'none'}.")
+
+    return {"vi": "\n".join(vi), "en": "\n".join(en)}
