@@ -40,7 +40,7 @@ def _entity_text(entities_json) -> str:
         ents = json.loads(entities_json)
     except (TypeError, json.JSONDecodeError):
         return ""
-    return " ".join(str(item) for items in ents.values() for item in items)
+    return " ".join(str(item) for e in config.ENTITY_TYPES for item in ents.get(e, []))   # bỏ preferred_skills
 
 
 def tfidf_cosine_scores(graphs: list) -> np.ndarray:

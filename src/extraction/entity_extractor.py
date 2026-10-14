@@ -71,6 +71,12 @@ def _save_cache():
         _print("[WARN] Không ghi được entity_cache.json, giữ bản cũ trên đĩa.")
 
 
+# Phiên bản prompt trích xuất: đổi prompt thì tăng số này để cache cũ (do prompt cũ sinh ra) không bị dùng lại.
+# v2: JD chỉ giữ yêu cầu bắt buộc (mục "ưu tiên" tách sang preferred_skills); CV bỏ kỹ năng bị phủ định.
+ENTITY_PROMPT_VERSION = "v2"
+PREFERRED_KEY = "preferred_skills"
+
+
 def get_cache_key(text: str) -> str:
     """Tạo hash SHA256 cho nội dung văn bản."""
     return hashlib.sha256(text.strip().encode("utf-8")).hexdigest()
@@ -79,7 +85,7 @@ def get_cache_key(text: str) -> str:
 def get_cached_entity(key: str) -> Optional[dict]:
     """Lấy thực thể từ cache theo hash hoặc đường dẫn. Kết quả rỗng coi như chưa có."""
     cache = _load_cache()
-    cached = cache.get(key)
+    cached = cache.get(f"{ENTITY_PROMPT_VERSION}:{key}")
     return cached if cached and any(cached.values()) else None
 
 
@@ -88,7 +94,7 @@ def set_cached_entity(key: str, data: dict, save: bool = True):
     if not any(data.values()):
         return
     cache = _load_cache()
-    cache[key] = data
+    cache[f"{ENTITY_PROMPT_VERSION}:{key}"] = data
     if save:
         _save_cache()
 
@@ -139,13 +145,18 @@ Hãy trích xuất các thực thể từ đoạn văn bản dưới đây và t
 
 Mỗi loại trả về dạng danh sách các chuỗi. Nếu không tìm thấy, trả về danh sách rỗng [].
 
+QUY TẮC QUAN TRỌNG:
+- Nếu văn bản là JD: chỉ đưa vào 6 loại thực thể các yêu cầu BẮT BUỘC. Những ý ghi "ưu tiên", "là lợi thế", "điểm cộng", "nice to have", "plus" thì đưa RIÊNG vào "preferred_skills" (danh sách chuỗi), KHÔNG đưa vào 6 loại thực thể.
+- Nếu văn bản là CV: chỉ đưa vào những gì ứng viên THỰC SỰ CÓ hoặc đã từng dùng. BỎ QUA mọi kỹ năng/công nghệ mà CV nói là chưa có, chưa từng dùng, đang tìm hiểu, muốn học hoặc chỉ là định hướng sau này (ví dụ: "chưa có kinh nghiệm frontend", "muốn học Kubernetes" thì KHÔNG trích xuất frontend hay Kubernetes). Với CV, "preferred_skills" luôn là [].
+- Không tự suy diễn kỹ năng mà văn bản không nhắc tới.
+
 Văn bản:
 ---
 {text}
 ---
 
 Trả về JSON đúng định dạng:
-{{"soft_skills": [...], "hard_skills": [...], "education": [...], "field_of_education": [...], "industry_sector": [...], "role": [...]}}"""
+{{"soft_skills": [...], "hard_skills": [...], "education": [...], "field_of_education": [...], "industry_sector": [...], "role": [...], "preferred_skills": [...]}}"""
 
 EXTRACTION_PROMPT_VISION = """Bạn là chuyên gia phân tích CV và Job Description (JD).
 Hãy đọc nội dung từ hình ảnh tài liệu bên dưới, sau đó trích xuất thực thể và trả về **chỉ** JSON thuần túy (không markdown, không giải thích).
@@ -160,8 +171,13 @@ Hãy đọc nội dung từ hình ảnh tài liệu bên dưới, sau đó tríc
 
 Mỗi loại trả về dạng danh sách các chuỗi. Nếu không tìm thấy, trả về danh sách rỗng [].
 
+QUY TẮC QUAN TRỌNG:
+- Nếu văn bản là JD: chỉ đưa vào 6 loại thực thể các yêu cầu BẮT BUỘC. Những ý ghi "ưu tiên", "là lợi thế", "điểm cộng", "nice to have", "plus" thì đưa RIÊNG vào "preferred_skills" (danh sách chuỗi), KHÔNG đưa vào 6 loại thực thể.
+- Nếu văn bản là CV: chỉ đưa vào những gì ứng viên THỰC SỰ CÓ hoặc đã từng dùng. BỎ QUA mọi kỹ năng/công nghệ mà CV nói là chưa có, chưa từng dùng, đang tìm hiểu, muốn học hoặc chỉ là định hướng sau này (ví dụ: "chưa có kinh nghiệm frontend", "muốn học Kubernetes" thì KHÔNG trích xuất frontend hay Kubernetes). Với CV, "preferred_skills" luôn là [].
+- Không tự suy diễn kỹ năng mà văn bản không nhắc tới.
+
 Trả về JSON đúng định dạng:
-{"soft_skills": [...], "hard_skills": [...], "education": [...], "field_of_education": [...], "industry_sector": [...], "role": [...]}"""
+{"soft_skills": [...], "hard_skills": [...], "education": [...], "field_of_education": [...], "industry_sector": [...], "role": [...], "preferred_skills": [...]}"""
 
 
 # ---------------------------------------------------------------------------
@@ -221,6 +237,7 @@ def _parse_entities(raw: str) -> dict:
         parsed = {}
 
     result = {etype: [] for etype in config.ENTITY_TYPES}
+    result[PREFERRED_KEY] = []
     for key in result:
         if key in parsed and isinstance(parsed[key], list):
             result[key] = [str(item) for item in parsed[key]]

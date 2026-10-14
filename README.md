@@ -24,7 +24,7 @@ Mỗi cặp (CV, JD) là một đồ thị 14 nút:
 
 ### 2. Pipeline
 
-1. **Trích xuất thực thể**: LLM trả JSON 6 loại thực thể; cache theo SHA-256 của văn bản (`data/cache/entity_cache.json`, ghi qua tệp tạm).
+1. **Trích xuất thực thể**: LLM trả JSON 6 loại thực thể. Với JD chỉ giữ yêu cầu **bắt buộc**; các ý "ưu tiên / lợi thế" tách riêng sang `preferred_skills` (không đưa vào đồ thị). Với CV chỉ giữ kỹ năng ứng viên **thực sự có**, bỏ câu phủ định ("chưa có kinh nghiệm frontend"). Cache theo SHA-256 của văn bản và phiên bản prompt (`ENTITY_PROMPT_VERSION`, `data/cache/entity_cache.json`, ghi qua tệp tạm).
 2. **Embedding**: `paraphrase-multilingual-MiniLM-L12-v2` (384 chiều) + **DeepSets** (mean/sum/max → 1152 chiều mỗi nút).
 3. **Đồ thị** 14 nút như trên.
 4. **GCN**: pre-aggregation → 3 lớp `GCNConv` (hidden 128) → readout → MLP.
@@ -75,12 +75,12 @@ Chi tiết các vòng kiểm chứng: [data/raw/validation/rounds_summary.md](da
 | Phương pháp | NDCG@1 | NDCG@5 | NDCG@10 | Recall@5 | MRR |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | Random | 0.39 | 0.45 | 0.56 | 0.32 | 0.52 |
-| TF-IDF + cosine | 0.65 | 0.72 | 0.78 | 0.62 | 0.79 |
-| SBERT + cosine | 0.60 | 0.70 | 0.79 | 0.59 | 0.74 |
-| GCN | 0.71 | 0.80 | 0.88 | 0.72 | 0.82 |
-| Hybrid (GCN + SBERT) | 0.70 | 0.79 | 0.88 | 0.67 | 0.83 |
+| TF-IDF + cosine | 0.62 | 0.72 | 0.79 | 0.62 | 0.78 |
+| SBERT + cosine | 0.59 | 0.71 | 0.79 | 0.57 | 0.74 |
+| GCN | 0.64 | 0.77 | 0.85 | 0.70 | 0.77 |
+| Hybrid (GCN + SBERT) | 0.66 | 0.79 | 0.87 | 0.73 | 0.78 |
 
-GCN vượt rõ hai baseline ở NDCG@5 và NDCG@10; ở NDCG@1 và MRR khoảng tin cậy chồng nhau với TF-IDF. Hybrid không hơn GCN đơn trong sai số. Huấn luyện có tính ngẫu nhiên: các lần chạy cross-validation liền nhau lệch tới ~0,04 ở NDCG@1, nên đừng diễn giải chênh lệch nhỏ hơn mức đó. (Bảng đầy đủ kèm các biến thể dùng đặc trưng LLM ở `cv_results.md`.)
+GCN vượt hai baseline ở NDCG@5 và NDCG@10 nhưng khoảng tin cậy chồng nhau ở NDCG@1 và MRR; Hybrid nhỉnh hơn GCN đơn nhưng nằm trong sai số. Huấn luyện có tính ngẫu nhiên: các lần chạy cross-validation liền nhau lệch tới ~0,04 ở NDCG@1, nên đừng diễn giải chênh lệch nhỏ hơn mức đó. (Bảng đầy đủ kèm các biến thể dùng đặc trưng LLM ở `cv_results.md`.)
 
 ### Mô hình xếp chồng (GCN + đặc trưng LLM) — kết quả cuối
 
@@ -88,26 +88,28 @@ GCN vượt rõ hai baseline ở NDCG@5 và NDCG@10; ở NDCG@1 và MRR khoảng
 
 | | NDCG@1 | NDCG@5 | NDCG@10 | MRR | Đúng chính xác mức 0–3 | Trong ±1 mức | Macro-F1 | Phân loại "phù hợp (≥ 2)" |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| GCN đơn | 0.67 | 0.78 | 0.87 | 0.78 | 69.3% | 94.8% | 0.58 | 79.4% |
-| **Stacker** | **0.83** | **0.88** | **0.93** | **0.91** | **75.4%** | **99.2%** | **0.66** | **87.0%** |
+| GCN đơn | 0.67 | 0.75 | 0.85 | 0.76 | 64.2% | 91.8% | 0.54 | 74.3% |
+| **Stacker** | **0.79** | **0.86** | **0.92** | **0.89** | **71.3%** | **99.0%** | **0.63** | **85.3%** |
 
-F1 theo mức (0/1/2/3): GCN đơn 0,92 / 0,76 / 0,31 / 0,32; stacker khoảng 0,91 / 0,80 / 0,40 / 0,58. Mức 2 vẫn là mức khó nhất. Khoảng tin cậy chưa tính cho bảng này (cross-validation lồng nhau tốn khoảng 40 phút).
+F1 theo mức (0/1/2/3): GCN đơn 0,90 / 0,70 / 0,26 / 0,29; stacker 0,86 / 0,79 / 0,45 / 0,42. Mức 2 vẫn là mức khó nhất. Khoảng tin cậy chưa tính cho bảng này (cross-validation lồng nhau tốn khoảng 40 phút). Stacker chia mức bằng cách làm tròn; GCN đơn dùng ngưỡng hiệu chỉnh cross-fit.
 
-**Vì sao GCN đơn yếu ở mức 2–3 (chẩn đoán).** Nhãn 3 là "cùng nghề + độ phủ yêu cầu bắt buộc cao + không vướng cấp độ/điều kiện cứng"; 70% nhãn 2 là "cùng nghề + độ phủ vừa". Nghĩa là phân biệt 2/3 gần như chỉ cần **độ phủ yêu cầu bắt buộc**. Độ phủ tính qua thực thể LLM rồi khớp cosine tương quan chỉ 0,38 với độ phủ chuẩn (0,15 trong cùng nghề) và AUC tách 3 khỏi 2 trong cùng nghề chỉ 0,50–0,66, vì danh sách thực thể lẫn cả mục "ưu tiên" (trung bình 11,9 mục/JD so với 8,3 yêu cầu bắt buộc), kỹ năng bị gộp vào một nút, và cosine không tách được "cùng nghĩa" khỏi "giống bề ngoài". Khi LLM đọc thẳng cặp CV–JD, tương quan đạt 0,66 (mẫu 105 cặp). GCN vẫn phân biệt chủ đề rất tốt (AUC 0,98 giữa khác nghề và cùng nghề), nên được giữ làm một thành phần của stacker.
+**Về việc sửa prompt trích xuất.** Các con số trên đo sau khi sửa prompt (JD chỉ giữ yêu cầu bắt buộc, CV bỏ câu phủ định). Trước khi sửa, cùng quy trình cho stacker NDCG@5 0,88, đúng chính xác 75,4%, phân loại ≥ 2 là 87,0%; GCN đơn NDCG@5 0,78. Mức giảm sau khi sửa (khoảng 0,02 NDCG@5 và 3–4 điểm phần trăm độ chính xác) nằm trong mức nhiễu giữa các lần huấn luyện và lẫn với một thay đổi khác: lần trích xuất lại dùng `gemini-flash-lite-latest` thay cho `gemini-3.1-flash-lite`, nên không tách được ảnh hưởng riêng của prompt. Bản sửa được giữ vì đúng về nghiệp vụ (không tính mục "ưu tiên" là yêu cầu, không coi kỹ năng bị phủ định là có).
+
+**Vì sao GCN đơn yếu ở mức 2–3 (chẩn đoán).** Nhãn 3 là "cùng nghề + độ phủ yêu cầu bắt buộc cao + không vướng cấp độ/điều kiện cứng"; 70% nhãn 2 là "cùng nghề + độ phủ vừa". Nghĩa là phân biệt 2/3 gần như chỉ cần **độ phủ yêu cầu bắt buộc**. (Số đo ở đoạn này lấy trước khi sửa prompt trích xuất.) Độ phủ tính qua thực thể LLM rồi khớp cosine tương quan chỉ 0,38 với độ phủ chuẩn (0,15 trong cùng nghề) và AUC tách 3 khỏi 2 trong cùng nghề chỉ 0,50–0,66, vì danh sách thực thể lẫn cả mục "ưu tiên" (trung bình 11,9 mục/JD so với 8,3 yêu cầu bắt buộc), kỹ năng bị gộp vào một nút, và cosine không tách được "cùng nghĩa" khỏi "giống bề ngoài". Khi LLM đọc thẳng cặp CV–JD, tương quan đạt 0,66 (mẫu 105 cặp). GCN vẫn phân biệt chủ đề rất tốt (AUC 0,98 giữa khác nghề và cùng nghề), nên được giữ làm một thành phần của stacker.
 
 **Lưu ý:** (1) Stacker cần 1 lần gọi LLM cho mỗi cặp lúc suy luận; không có LLM hoặc PDF scan thì tự lùi về GCN đơn. (2) Đặc trưng lúc huấn luyện tính theo lô 15 JD/CV, lúc suy luận theo lô 1 JD cùng prompt; đã so lô với từng cặp (prompt cũ) trên 45 cặp thấy độ phủ tương quan 0,86, nhưng chưa so trực tiếp lô 15 với lô 1 cùng prompt. (3) Đặc trưng LLM do `gemini-flash-lite-latest` sinh; đổi LLM thì kết quả đặc trưng đổi (cache khóa theo tên model) và nên tính lại + huấn luyện lại stacker.
 
 ### Chuyển điểm sang mức 0–3 (GCN đơn)
 
-Cách cũ `round(score×3)` khiến dự đoán dồn về mức 1–2 (chỉ dự đoán 64 cặp mức 3, trong khi nhãn thật có 167). Ngưỡng nay được hiệu chỉnh trên điểm out-of-fold (`python src/evaluation/calibrate_thresholds.py`, lưu ở `models/grade_thresholds.json`), tối đa hóa macro-F1. Đánh giá cross-fit (ngưỡng mỗi fold tìm trên 4 fold còn lại):
+Cách cũ `round(score×3)` khiến dự đoán dồn về mức 1–2 (chỉ dự đoán 61 cặp mức 3, trong khi nhãn thật có 167). Ngưỡng nay được hiệu chỉnh trên điểm out-of-fold (`python src/evaluation/calibrate_thresholds.py`, lưu ở `models/grade_thresholds.json`), tối đa hóa macro-F1. Đánh giá cross-fit (ngưỡng mỗi fold tìm trên 4 fold còn lại):
 
-| | Khớp chính xác | ±1 mức | Macro-F1 | F1 theo mức (0/1/2/3) | Số dự đoán (0/1/2/3) |
-|:---|:---:|:---:|:---:|:---:|:---:|
-| Cách cũ | 70,0% | 94,8% | 0,556 | 0,93 / 0,77 / 0,30 / 0,23 | 444 / 907 / 249 / 64 |
-| Ngưỡng hiệu chỉnh | 67,8% | 93,0% | 0,570 | 0,92 / 0,74 / 0,25 / 0,37 | 431 / 838 / 221 / 174 |
-| Nhãn thật | | | | | 429 / 812 / 256 / 167 |
+| | Khớp chính xác | ±1 mức | Macro-F1 | Số dự đoán (0/1/2/3) |
+|:---|:---:|:---:|:---:|:---:|
+| Cách cũ | 63,4% | 96,0% | 0,529 | 379 / 788 / 436 / 61 |
+| Ngưỡng hiệu chỉnh (0,22 / 0,49 / 0,64) | 64,0% | 94,1% | 0,559 | 420 / 733 / 353 / 158 |
+| Nhãn thật | | | | 429 / 812 / 256 / 167 |
 
-Hiệu chỉnh làm phân bố dự đoán khớp phân bố thật và tăng nhận diện mức 3, nhưng cải thiện chỉ nhỏ và độ chính xác tổng giảm nhẹ: điểm GCN phân tách yếu giữa mức 2 và 3, ngưỡng chỉ dịch chuyển lỗi chứ không loại bỏ được. Với xếp hạng nên dùng điểm liên tục; mức 0–3 chỉ để đọc nhanh.
+Hiệu chỉnh làm phân bố dự đoán gần phân bố thật và tăng nhận diện mức 3, nhưng cải thiện chỉ nhỏ và độ chính xác ±1 giảm: điểm GCN phân tách yếu giữa mức 2 và 3, ngưỡng chỉ dịch chuyển lỗi chứ không loại bỏ được. Với xếp hạng nên dùng điểm liên tục; mức 0–3 chỉ để đọc nhanh.
 
 ### Hạn chế cần nêu khi báo cáo
 
@@ -128,7 +130,7 @@ Yêu cầu Python 3.10+ (đã chạy trên Python 3.13, Windows).
 pip install -r requirements.txt
 ```
 
-Tạo `.env` ở thư mục gốc. Mặc định trong `config.py` là **Groq** (`qwen/qwen3.8-27b`); `.env` ghi đè được để dùng nhà cung cấp khác có API tương thích OpenAI. Cấu hình đã dùng để tạo kết quả trong README là **`gemini-flash-lite-latest`** cho đặc trưng LLM theo cặp (thực thể CV/JD trong cache do `gemini-3.1-flash-lite` trích xuất). Gói miễn phí Gemini giới hạn **500 lượt/ngày/model** (đặc trưng theo cặp gộp 15 JD/lần gọi nên cả bộ chỉ cần 104 lần gọi); Groq miễn phí chậm hơn nhiều (vài chục giây đến vài phút mỗi lần gọi lô lớn):
+Tạo `.env` ở thư mục gốc. Mặc định trong `config.py` là **Groq** (`qwen/qwen3.8-27b`); `.env` ghi đè được để dùng nhà cung cấp khác có API tương thích OpenAI. Cấu hình đã dùng để tạo kết quả trong README là **`gemini-flash-lite-latest`** cho đặc trưng LLM theo cặp (thực thể CV/JD cũng được trích xuất lại bằng `gemini-flash-lite-latest` với prompt v2). Gói miễn phí Gemini giới hạn **500 lượt/ngày/model** (đặc trưng theo cặp gộp 15 JD/lần gọi nên cả bộ chỉ cần 104 lần gọi); Groq miễn phí chậm hơn nhiều (vài chục giây đến vài phút mỗi lần gọi lô lớn):
 
 ```env
 LLM_API_KEY=<khóa API>
@@ -137,7 +139,7 @@ LLM_MODEL=gemini-flash-lite-latest
 EMBEDDING_MODEL=paraphrase-multilingual-MiniLM-L12-v2
 ```
 
-> **Lưu ý khi đổi LLM**: cache thực thể khóa theo nội dung văn bản, không theo model. CV/JD đã có trong `entity_cache.json` luôn dùng kết quả cũ (Gemini); văn bản mới mới gọi LLM đang cấu hình. Đổi nhà cung cấp rồi suy luận trên CV/JD mới có thể cho thực thể hơi khác phân phối lúc huấn luyện; muốn đồng nhất hoàn toàn thì xóa cache và chạy lại `--mode prepare` rồi huấn luyện lại.
+> **Lưu ý khi đổi LLM**: cache thực thể khóa theo nội dung văn bản và phiên bản prompt, **không theo model**. CV/JD đã có trong `entity_cache.json` luôn dùng kết quả cũ; văn bản mới mới gọi LLM đang cấu hình. Đổi nhà cung cấp rồi suy luận trên văn bản mới có thể cho thực thể hơi khác phân phối lúc huấn luyện; muốn đồng nhất hoàn toàn thì xóa các khóa `v2:` trong cache rồi chạy lại `--mode prepare` và huấn luyện lại. (Cache đặc trưng theo cặp `pair_features.jsonl` thì khóa theo cả tên model.)
 
 > Trên Windows nên chạy `python -X utf8 ...` để tránh lỗi hiển thị tiếng Việt.
 
@@ -174,6 +176,7 @@ python -X utf8 demo/run_demo.py
 # Kiểm tra
 python -X utf8 tests/test_dataset_labels.py
 python -X utf8 tests/test_pair_features.py
+python -X utf8 tests/test_entity_extractor.py
 python -X utf8 tests/test_explain.py
 ```
 

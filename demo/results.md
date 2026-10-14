@@ -3,11 +3,11 @@
 | Cặp | Kỳ vọng theo rubric | Mô hình | Điểm | Nhãn |
 |---|:---:|:---:|:---:|---|
 | P1 | 3 | 3 | 1.0 | Phù hợp tốt |
-| P2 | 2 | 2 | 0.6872 | Phù hợp một phần |
-| P3 | 1 | 3 | 0.8969 | Phù hợp tốt |
-| P4 | 0 | 0 | 0.0 | Không phù hợp |
+| P2 | 2 | 1 | 0.4285 | Liên quan ngành |
+| P3 | 1 | 3 | 0.8435 | Phù hợp tốt |
+| P4 | 0 | 0 | 0.0124 | Không phù hợp |
 
-Đúng mức: 3/4.
+Đúng mức: 2/4.
 
 ## P1: cv_01_thiet_ke_do_hoa.txt ↔ jd_01_thiet_ke_do_hoa.txt
 
@@ -21,10 +21,10 @@ Chưa thấy trong CV: không có.
 
 ## P2: cv_02_lap_trinh_game_unity.txt ↔ jd_02_unity_junior.txt
 
-Kỳ vọng 2 (Cùng nghề (Unity/C#/OOP) nhưng mới 8 tháng so với 1 năm, chưa có multiplayer, tối ưu hiệu năng, hệ thống quy mô lớn); mô hình 2.
+Kỳ vọng 2 (Cùng nghề (Unity/C#/OOP) nhưng mới 8 tháng so với 1 năm, chưa có multiplayer, tối ưu hiệu năng, hệ thống quy mô lớn); mô hình 1.
 
 ```
-Kết luận: Phù hợp một phần (mức 2/3), đáng cân nhắc, cần làm rõ các điểm còn thiếu.
+Kết luận: Ít phù hợp (mức 1/3), cùng lĩnh vực nhưng thiếu nhiều yêu cầu.
 Đáp ứng (5/8 yêu cầu bắt buộc): Unity, C#, OOP, data structures, algorithms.
 Chưa thấy trong CV: multiplayer technologies, Game performance optimization, developing large scale systems with high coin currency.
 Cần lưu ý: JD yêu cầu tối thiểu 1 năm kinh nghiệm, CV chưa có kinh nghiệm liên quan.
