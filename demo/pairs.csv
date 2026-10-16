@@ -1,5 +1,0 @@
-pair_id,cv_file,jd_file,jd_id,expected_grade,expected_reason
-P1,cv_01_thiet_ke_do_hoa.txt,jd_01_thiet_ke_do_hoa.txt,jd_1444,3,"Cùng nghề thiết kế đồ họa, đủ Photoshop/Illustrator, 2,5 năm so với 2 năm yêu cầu, cao đẳng đúng điều kiện"
-P2,cv_02_lap_trinh_game_unity.txt,jd_02_unity_junior.txt,jd_1788,2,"Cùng nghề (Unity/C#/OOP) nhưng mới 8 tháng so với 1 năm, chưa có multiplayer, tối ưu hiệu năng, hệ thống quy mô lớn"
-P3,cv_03_ho_tro_cntt.txt,jd_03_admin_cntt.txt,jd_0332,1,"Khác vai trò (hỗ trợ kỹ thuật so với admin/hành chính phòng CNTT) nhưng cùng ngành CNTT và đủ nhiều kỹ năng chung (Excel, Google Workspace, giao tiếp, bằng CNTT)"
-P4,cv_04_backend_java.txt,jd_04_lap_trinh_cnc.txt,jd_0867,0,Khác hẳn lĩnh vực (lập trình phần mềm so với lập trình gia công CNC cơ khí)

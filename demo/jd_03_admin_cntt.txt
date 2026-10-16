@@ -1,5 +1,0 @@
-Vị trí: Nhân Viên Admin Phòng Công Nghệ Thông Tin
-Kinh nghiệm: Không yêu cầu
-Học vấn: Cao đẳng/Đại học chuyên ngành CNTT, Hệ thống thông tin quản lý, Các ngành liên quan
-Kỹ năng chuyên môn: Sử dụng tốt Excel, Word, Google Workspace, Các công cụ quản lý dự án
-Yêu cầu: Tốt nghiệp Cao đẳng/Đại học chuyên ngành CNTT, Hệ thống thông tin quản lý, hoặc các ngành liên quan. Có kỹ năng tổ chức, hành chính, văn thư. Có hiểu biết cơ bản về quy trình phát triển phần mềm và kiểm thử phần mềm. Sử dụng tốt Excel, Word, Google Workspace và các công cụ quản lý dự án. Kỹ năng giao tiếp, ghi chép tốt. Ưu tiên ứng viên đã từng làm tester hoặc admin văn phòng CNTT.

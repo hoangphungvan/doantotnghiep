@@ -1,0 +1,2030 @@
+{
+ "example": {
+  "cv_entities": {
+   "soft_skills": [
+    "Làm việc nhóm",
+    "review code",
+    "hướng dẫn thành viên mới"
+   ],
+   "hard_skills": [
+    "Java",
+    "Spring Boot",
+    "Spring Data JPA",
+    "RESTful API",
+    "MySQL",
+    "PostgreSQL",
+    "Redis",
+    "Kafka",
+    "Docker",
+    "Git",
+    "Jenkins",
+    "JUnit",
+    "Tối ưu truy vấn"
+   ],
+   "education": [
+    "Cử nhân"
+   ],
+   "field_of_education": [
+    "Công nghệ thông tin"
+   ],
+   "industry_sector": [
+    "Công nghệ thông tin",
+    "Thanh toán",
+    "Thương mại điện tử"
+   ],
+   "role": [
+    "Backend Developer"
+   ],
+   "preferred_skills": []
+  },
+  "jd_entities": {
+   "soft_skills": [
+    "làm việc nhóm",
+    "giao tiếp tốt"
+   ],
+   "hard_skills": [
+    "Java",
+    "Spring Boot",
+    "RESTful API",
+    "MySQL",
+    "PostgreSQL",
+    "Git",
+    "Tiếng Anh"
+   ],
+   "education": [
+    "Đại học"
+   ],
+   "field_of_education": [
+    "Công nghệ thông tin"
+   ],
+   "industry_sector": [
+    "Công nghệ thông tin"
+   ],
+   "role": [
+    "Java Backend Developer"
+   ],
+   "preferred_skills": [
+    "Docker",
+    "Kafka",
+    "AWS"
+   ]
+  },
+  "dim": 384,
+  "items": {
+   "cv_hard_skills": {
+    "items": [
+     "Java",
+     "Spring Boot",
+     "Spring Data JPA",
+     "RESTful API",
+     "MySQL",
+     "PostgreSQL",
+     "Redis",
+     "Kafka",
+     "Docker",
+     "Git",
+     "Jenkins",
+     "JUnit",
+     "Tối ưu truy vấn"
+    ],
+    "first3": [
+     [
+      -0.06400000303983688,
+      0.2879999876022339,
+      -0.3580000102519989
+     ],
+     [
+      -0.10599999874830246,
+      -0.017000000923871994,
+      0.6039999723434448
+     ],
+     [
+      -0.38199999928474426,
+      -0.17900000512599945,
+      -0.32600000500679016
+     ],
+     [
+      -0.03200000151991844,
+      -0.11599999666213989,
+      -0.40799999237060547
+     ],
+     [
+      0.0430000014603138,
+      -0.19900000095367432,
+      -0.4830000102519989
+     ],
+     [
+      -0.2669999897480011,
+      0.31200000643730164,
+      -0.5189999938011169
+     ],
+     [
+      -0.20100000500679016,
+      0.050999999046325684,
+      -0.257999986410141
+     ],
+     [
+      0.02199999988079071,
+      0.19300000369548798,
+      -0.6010000109672546
+     ],
+     [
+      0.09099999815225601,
+      -0.05900000035762787,
+      0.13699999451637268
+     ],
+     [
+      -0.3230000138282776,
+      -0.15199999511241913,
+      0.1120000034570694
+     ],
+     [
+      -0.11100000143051147,
+      -0.27000001072883606,
+      -0.2529999911785126
+     ],
+     [
+      -0.07000000029802322,
+      0.25099998712539673,
+      0.11599999666213989
+     ],
+     [
+      0.16300000250339508,
+      0.07000000029802322,
+      -0.10000000149011612
+     ]
+    ],
+    "mean3": [
+     -0.0949999988079071,
+     0.013000000268220901,
+     -0.18000000715255737
+    ],
+    "sum3": [
+     -1.2369999885559082,
+     0.17399999499320984,
+     -2.3380000591278076
+    ],
+    "max3": [
+     0.16300000250339508,
+     0.31200000643730164,
+     0.6039999723434448
+    ],
+    "norms": [
+     5.781000137329102,
+     5.896999835968018,
+     5.165999889373779,
+     4.935999870300293,
+     5.081999778747559,
+     4.568999767303467,
+     3.890000104904175,
+     5.660999774932861,
+     4.76800012588501,
+     5.013999938964844,
+     5.790999889373779,
+     4.046999931335449,
+     2.9489998817443848
+    ]
+   },
+   "jd_hard_skills": {
+    "items": [
+     "Java",
+     "Spring Boot",
+     "RESTful API",
+     "MySQL",
+     "PostgreSQL",
+     "Git",
+     "Tiếng Anh"
+    ],
+    "first3": [
+     [
+      -0.06400000303983688,
+      0.2879999876022339,
+      -0.3580000102519989
+     ],
+     [
+      -0.10599999874830246,
+      -0.017000000923871994,
+      0.6039999723434448
+     ],
+     [
+      -0.03200000151991844,
+      -0.11599999666213989,
+      -0.40799999237060547
+     ],
+     [
+      0.0430000014603138,
+      -0.19900000095367432,
+      -0.4830000102519989
+     ],
+     [
+      -0.2669999897480011,
+      0.31200000643730164,
+      -0.5189999938011169
+     ],
+     [
+      -0.3230000138282776,
+      -0.15199999511241913,
+      0.1120000034570694
+     ],
+     [
+      0.4350000023841858,
+      -0.210999995470047,
+      0.42500001192092896
+     ]
+    ],
+    "mean3": [
+     -0.04500000178813934,
+     -0.014000000432133675,
+     -0.08900000154972076
+    ],
+    "sum3": [
+     -0.3140000104904175,
+     -0.09600000083446503,
+     -0.6259999871253967
+    ],
+    "max3": [
+     0.4350000023841858,
+     0.31200000643730164,
+     0.6039999723434448
+    ],
+    "norms": [
+     5.781000137329102,
+     5.896999835968018,
+     4.935999870300293,
+     5.081999778747559,
+     4.568999767303467,
+     5.013999938964844,
+     5.4079999923706055
+    ]
+   }
+  },
+  "hard_cos": {
+   "cv_items": [
+    "Java",
+    "Spring Boot",
+    "Spring Data JPA",
+    "RESTful API",
+    "MySQL",
+    "PostgreSQL",
+    "Redis",
+    "Kafka",
+    "Docker",
+    "Git",
+    "Jenkins",
+    "JUnit",
+    "Tối ưu truy vấn"
+   ],
+   "jd_items": [
+    "Java",
+    "Spring Boot",
+    "RESTful API",
+    "MySQL",
+    "PostgreSQL",
+    "Git",
+    "Tiếng Anh"
+   ],
+   "matrix": [
+    [
+     1.0,
+     -0.0010000000474974513,
+     0.34200000762939453,
+     0.19499999284744263,
+     0.1889999955892563,
+     0.26600000262260437,
+     0.20600000023841858
+    ],
+    [
+     -0.0010000000474974513,
+     1.0,
+     -0.0010000000474974513,
+     -0.0020000000949949026,
+     0.03200000151991844,
+     0.29100000858306885,
+     0.17499999701976776
+    ],
+    [
+     0.2639999985694885,
+     0.527999997138977,
+     0.24199999868869781,
+     0.20800000429153442,
+     0.24799999594688416,
+     0.25600001215934753,
+     0.006000000052154064
+    ],
+    [
+     0.34200000762939453,
+     -0.0010000000474974513,
+     1.0,
+     0.24799999594688416,
+     0.17499999701976776,
+     0.28200000524520874,
+     0.08299999684095383
+    ],
+    [
+     0.19499999284744263,
+     -0.0020000000949949026,
+     0.24799999594688416,
+     1.0,
+     0.574999988079071,
+     0.11400000005960464,
+     0.035999998450279236
+    ],
+    [
+     0.1889999955892563,
+     0.03200000151991844,
+     0.17499999701976776,
+     0.574999988079071,
+     1.0,
+     0.13600000739097595,
+     -0.03999999910593033
+    ],
+    [
+     0.26100000739097595,
+     0.16099999845027924,
+     0.2280000001192093,
+     0.19300000369548798,
+     0.11599999666213989,
+     0.5080000162124634,
+     0.382999986410141
+    ],
+    [
+     0.02800000086426735,
+     0.05900000035762787,
+     0.06199999898672104,
+     0.017999999225139618,
+     0.0820000022649765,
+     0.20200000703334808,
+     0.20499999821186066
+    ],
+    [
+     0.3109999895095825,
+     0.16099999845027924,
+     0.21400000154972076,
+     0.17800000309944153,
+     0.05999999865889549,
+     0.28299999237060547,
+     0.4189999997615814
+    ],
+    [
+     0.26600000262260437,
+     0.29100000858306885,
+     0.28200000524520874,
+     0.11400000005960464,
+     0.13600000739097595,
+     1.0,
+     0.3370000123977661
+    ],
+    [
+     0.017000000923871994,
+     0.2280000001192093,
+     0.03500000014901161,
+     0.14000000059604645,
+     0.14300000667572021,
+     0.42800000309944153,
+     0.32899999618530273
+    ],
+    [
+     0.28600001335144043,
+     0.35600000619888306,
+     0.27300000190734863,
+     0.19099999964237213,
+     0.21299999952316284,
+     0.5149999856948853,
+     0.38199999928474426
+    ],
+    [
+     0.1589999943971634,
+     0.1509999930858612,
+     0.19099999964237213,
+     0.2150000035762787,
+     0.2759999930858612,
+     0.38100001215934753,
+     0.3700000047683716
+    ]
+   ]
+  },
+  "main_cos": 0.8441457748413086,
+  "cross": {
+   "soft_skills": {
+    "cosine": 0.69,
+    "lambda": 1.0,
+    "weight": 0.69
+   },
+   "hard_skills": {
+    "cosine": 0.894,
+    "lambda": 2.5,
+    "weight": 2.234
+   },
+   "education": {
+    "cosine": 0.602,
+    "lambda": 1.5,
+    "weight": 0.902
+   },
+   "field_of_education": {
+    "cosine": 1.0,
+    "lambda": 2.0,
+    "weight": 2.0
+   },
+   "industry_sector": {
+    "cosine": 0.662,
+    "lambda": 1.5,
+    "weight": 0.993
+   },
+   "role": {
+    "cosine": 0.807,
+    "lambda": 3.0,
+    "weight": 2.422
+   }
+  },
+  "knn_role": {
+   "top": [
+    [
+     13,
+     0.807,
+     0.906
+    ],
+    [
+     1,
+     0.298,
+     0.017
+    ],
+    [
+     4,
+     0.294,
+     0.016
+    ],
+    [
+     2,
+     0.292,
+     0.015
+    ],
+    [
+     9,
+     0.254,
+     0.009
+    ],
+    [
+     0,
+     0.247,
+     0.008
+    ],
+    [
+     5,
+     0.242,
+     0.007
+    ],
+    [
+     11,
+     0.242,
+     0.007
+    ],
+    [
+     12,
+     0.242,
+     0.007
+    ],
+    [
+     10,
+     0.24,
+     0.007
+    ]
+   ]
+  },
+  "n_nodes": 14,
+  "n_edges": 152,
+  "edges": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    13
+   ],
+   [
+    0,
+    7
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    0,
+    12
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    13
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    1,
+    11
+   ],
+   [
+    1,
+    12
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    8
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    9
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    2,
+    10
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    2,
+    11
+   ],
+   [
+    2,
+    12
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    3,
+    9
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    3,
+    11
+   ],
+   [
+    3,
+    12
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    4,
+    10
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    9
+   ],
+   [
+    4,
+    6
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    4,
+    12
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    5,
+    11
+   ],
+   [
+    5,
+    12
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    10
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    6,
+    5
+   ],
+   [
+    6,
+    11
+   ],
+   [
+    6,
+    12
+   ],
+   [
+    6,
+    3
+   ],
+   [
+    6,
+    8
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    6,
+    4
+   ],
+   [
+    6,
+    2
+   ],
+   [
+    6,
+    10
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    13
+   ],
+   [
+    7,
+    1
+   ],
+   [
+    7,
+    4
+   ],
+   [
+    7,
+    2
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    7,
+    0
+   ],
+   [
+    7,
+    5
+   ],
+   [
+    7,
+    11
+   ],
+   [
+    7,
+    12
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    2
+   ],
+   [
+    8,
+    4
+   ],
+   [
+    8,
+    6
+   ],
+   [
+    8,
+    3
+   ],
+   [
+    8,
+    9
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    8,
+    5
+   ],
+   [
+    8,
+    11
+   ],
+   [
+    8,
+    12
+   ],
+   [
+    8,
+    7
+   ],
+   [
+    9,
+    3
+   ],
+   [
+    9,
+    2
+   ],
+   [
+    9,
+    6
+   ],
+   [
+    9,
+    8
+   ],
+   [
+    9,
+    4
+   ],
+   [
+    9,
+    5
+   ],
+   [
+    9,
+    11
+   ],
+   [
+    9,
+    12
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    7
+   ],
+   [
+    10,
+    4
+   ],
+   [
+    10,
+    8
+   ],
+   [
+    10,
+    5
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    10,
+    12
+   ],
+   [
+    10,
+    2
+   ],
+   [
+    10,
+    6
+   ],
+   [
+    10,
+    3
+   ],
+   [
+    10,
+    9
+   ],
+   [
+    10,
+    7
+   ],
+   [
+    11,
+    5
+   ],
+   [
+    11,
+    12
+   ],
+   [
+    11,
+    6
+   ],
+   [
+    11,
+    8
+   ],
+   [
+    11,
+    4
+   ],
+   [
+    11,
+    10
+   ],
+   [
+    11,
+    9
+   ],
+   [
+    11,
+    3
+   ],
+   [
+    11,
+    2
+   ],
+   [
+    11,
+    7
+   ],
+   [
+    12,
+    5
+   ],
+   [
+    12,
+    11
+   ],
+   [
+    12,
+    6
+   ],
+   [
+    12,
+    8
+   ],
+   [
+    12,
+    4
+   ],
+   [
+    12,
+    10
+   ],
+   [
+    12,
+    9
+   ],
+   [
+    12,
+    3
+   ],
+   [
+    12,
+    2
+   ],
+   [
+    12,
+    7
+   ],
+   [
+    13,
+    7
+   ],
+   [
+    13,
+    1
+   ],
+   [
+    13,
+    0
+   ],
+   [
+    13,
+    9
+   ],
+   [
+    13,
+    3
+   ],
+   [
+    13,
+    2
+   ],
+   [
+    13,
+    4
+   ],
+   [
+    13,
+    5
+   ],
+   [
+    13,
+    11
+   ],
+   [
+    13,
+    12
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    8,
+    1
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    9,
+    1
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    10,
+    1
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    11,
+    1
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    6,
+    0
+   ],
+   [
+    12,
+    1
+   ]
+  ],
+  "edge_w": [
+   1.0,
+   0.0177,
+   3.0,
+   2.0,
+   0.0008,
+   0.0008,
+   1.0,
+   0.0,
+   0.0,
+   1.5,
+   1.0,
+   3.0,
+   0.0144,
+   0.0007,
+   2.0,
+   1.5,
+   1.0,
+   2.5,
+   1.5,
+   0.0001,
+   0.6901,
+   0.196,
+   0.1785,
+   0.1172,
+   0.0488,
+   0.0256,
+   0.0145,
+   0.0145,
+   0.0145,
+   0.0121,
+   2.2342,
+   0.1214,
+   0.0666,
+   0.0565,
+   0.0512,
+   0.0106,
+   0.0106,
+   0.0106,
+   0.0101,
+   0.0032,
+   0.9025,
+   0.2365,
+   0.1282,
+   0.0999,
+   0.0634,
+   0.0584,
+   0.0536,
+   0.0536,
+   0.0536,
+   0.0136,
+   2.0,
+   0.4341,
+   0.0833,
+   0.0129,
+   0.0127,
+   0.0086,
+   0.0045,
+   0.0044,
+   0.0038,
+   0.0015,
+   0.2318,
+   0.2318,
+   0.9927,
+   0.0779,
+   0.0677,
+   0.067,
+   0.0387,
+   0.0353,
+   0.0158,
+   0.0022,
+   2.4221,
+   0.0168,
+   0.0159,
+   0.0155,
+   0.0088,
+   3.0,
+   0.0073,
+   0.0073,
+   0.0073,
+   0.0071,
+   0.6901,
+   0.2024,
+   0.0876,
+   0.0774,
+   0.0704,
+   0.0653,
+   0.0463,
+   0.0463,
+   0.0463,
+   0.0034,
+   2.2342,
+   0.1157,
+   0.06,
+   0.0488,
+   0.0376,
+   0.0113,
+   0.0113,
+   0.0113,
+   0.0093,
+   0.0045,
+   0.9025,
+   0.148,
+   0.0704,
+   0.0704,
+   0.0704,
+   0.0542,
+   0.0462,
+   0.0347,
+   0.0303,
+   0.0117,
+   2.0,
+   0.4341,
+   0.0833,
+   0.0129,
+   0.0127,
+   0.0086,
+   0.0045,
+   0.0044,
+   0.0038,
+   0.0015,
+   0.4341,
+   0.4341,
+   0.9927,
+   0.0129,
+   0.0127,
+   0.0086,
+   0.0045,
+   0.0044,
+   0.0038,
+   0.0015,
+   2.4221,
+   3.0,
+   0.0198,
+   0.0072,
+   0.0018,
+   0.0012,
+   0.0004,
+   0.0001,
+   0.0001,
+   0.0001,
+   1.0,
+   1.0,
+   2.5,
+   2.5,
+   2.5,
+   1.5,
+   1.5,
+   2.0,
+   2.0,
+   1.5,
+   1.5,
+   1.5
+  ],
+  "adj_density": 0.8351648351648352,
+  "result": {
+   "score": 1.0,
+   "mode": "stacker",
+   "gcn_score": 0.4408,
+   "grade": 3,
+   "grade_label": "Phù hợp tốt",
+   "label": "MATCH"
+  },
+  "llm_requirements": [
+   {
+    "text": "2 năm kinh nghiệm phát triển backend bằng Java",
+    "met": true
+   },
+   {
+    "text": "Thành thạo Spring Boot",
+    "met": true
+   },
+   {
+    "text": "Thành thạo RESTful API",
+    "met": true
+   },
+   {
+    "text": "Thành thạo cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL)",
+    "met": true
+   },
+   {
+    "text": "Sử dụng tốt Git",
+    "met": true
+   }
+  ],
+  "llm_conditions": [
+   {
+    "text": "Đại học trở lên chuyên ngành Công nghệ thông tin hoặc liên quan",
+    "met": true
+   }
+  ],
+  "llm_raw": {
+   "jd_min_years": 2,
+   "cv_years": 3,
+   "title_tech_in_cv": true
+  },
+  "pf_vector": {
+   "pf_coverage": 1.0,
+   "pf_n_req": 5.0,
+   "pf_years_gap": 0.0,
+   "pf_hard_missing": 0.0,
+   "pf_title_tech_missing": 0.0,
+   "pf_valid": 1.0
+  },
+  "explanation_vi": "Kết luận: Rất phù hợp (mức 3/3), nên mời phỏng vấn.\nĐáp ứng (5/5 yêu cầu bắt buộc): 2 năm kinh nghiệm phát triển backend bằng Java, Thành thạo Spring Boot, Thành thạo RESTful API, Thành thạo cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL), Sử dụng tốt Git.\nChưa thấy trong CV: không có.",
+  "explanation_en": "Verdict: Strong match (level 3/3), worth interviewing.\nMet (5/5 required items): 2 năm kinh nghiệm phát triển backend bằng Java, Thành thạo Spring Boot, Thành thạo RESTful API, Thành thạo cơ sở dữ liệu quan hệ (MySQL hoặc PostgreSQL), Sử dụng tốt Git.\nNot found in CV: none.",
+  "topic_features": [
+   0.843999981880188,
+   0.7049999833106995,
+   0.8980000019073486,
+   0.6019999980926514,
+   1.0,
+   0.7960000038146973,
+   0.8069999814033508
+  ]
+ },
+ "errors": {
+  "confusion_stack": [
+   [
+    337,
+    91,
+    1,
+    0
+   ],
+   [
+    13,
+    650,
+    144,
+    5
+   ],
+   [
+    0,
+    83,
+    146,
+    27
+   ],
+   [
+    2,
+    9,
+    103,
+    53
+   ]
+  ],
+  "confusion_gcn": [
+   [
+    380,
+    44,
+    5,
+    0
+   ],
+   [
+    34,
+    542,
+    196,
+    40
+   ],
+   [
+    2,
+    116,
+    84,
+    54
+   ],
+   [
+    3,
+    46,
+    62,
+    56
+   ]
+  ],
+  "acc_stack": 0.7127403846153846,
+  "acc_gcn": 0.6382211538461539,
+  "within1_stack": 0.9897836538461539,
+  "by_role_match": [
+   {
+    "role_match": "adjacent",
+    "n": 496.0,
+    "acc": 0.837,
+    "mean_abs_err": 0.171
+   },
+   {
+    "role_match": "different",
+    "n": 449.0,
+    "acc": 0.773,
+    "mean_abs_err": 0.229
+   },
+   {
+    "role_match": "same",
+    "n": 719.0,
+    "acc": 0.59,
+    "mean_abs_err": 0.43
+   }
+  ],
+  "by_gap": [
+   {
+    "gap_group": "CV cao hơn JD",
+    "n": 340.0,
+    "acc": 0.635
+   },
+   {
+    "gap_group": "ngang cấp",
+    "n": 1016.0,
+    "acc": 0.72
+   },
+   {
+    "gap_group": "JD cao hơn 1 cấp",
+    "n": 224.0,
+    "acc": 0.741
+   },
+   {
+    "gap_group": "JD cao hơn từ 2 cấp",
+    "n": 84.0,
+    "acc": 0.857
+   }
+  ],
+  "hard_req": {
+   "có": 0.6306306306306306,
+   "không": 0.7253814147018031,
+   "n_có": 222
+  },
+  "worst": [
+   {
+    "cv_id": "BA_MID_01",
+    "jd_id": "jd_0214",
+    "grade": 3,
+    "pred": 0,
+    "stack_score": 0.487,
+    "role_match": "same",
+    "must_have_coverage_pct": 81,
+    "seniority_gap": -1,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Khớp BA/tài liệu/BPMN; thiếu ngân hàng (có bảo hiểm)"
+   },
+   {
+    "cv_id": "BA_MID_01",
+    "jd_id": "jd_0439",
+    "grade": 3,
+    "pred": 0,
+    "stack_score": 0.25,
+    "role_match": "same",
+    "must_have_coverage_pct": 78,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "BA chứng khoán 3 năm: khớp BA/công cụ; thiếu miền tài chính chứng khoán"
+   },
+   {
+    "cv_id": "DEVOPS_SEN_02",
+    "jd_id": "jd_0647",
+    "grade": 1,
+    "pred": 3,
+    "stack_score": 2.577,
+    "role_match": "adjacent",
+    "must_have_coverage_pct": 30,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Lãnh đạo vận hành hạ tầng"
+   },
+   {
+    "cv_id": "DEVOPS_MID_02",
+    "jd_id": "jd_0612",
+    "grade": 1,
+    "pred": 3,
+    "stack_score": 2.543,
+    "role_match": "adjacent",
+    "must_have_coverage_pct": 40,
+    "seniority_gap": -1,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Kỹ thuật máy tính; CV có phần mềm/mạng; thiếu phần cứng/remote tools"
+   },
+   {
+    "cv_id": "DES_SEN_01",
+    "jd_id": "jd_0459",
+    "grade": 3,
+    "pred": 1,
+    "stack_score": 1.122,
+    "role_match": "same",
+    "must_have_coverage_pct": 73,
+    "seniority_gap": -2,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Thiết kế 2 năm: khớp bằng/thẩm mỹ/portfolio; thiếu Adobe"
+   },
+   {
+    "cv_id": "DES_SEN_01",
+    "jd_id": "jd_0984",
+    "grade": 3,
+    "pred": 1,
+    "stack_score": 1.017,
+    "role_match": "same",
+    "must_have_coverage_pct": 74,
+    "seniority_gap": -1,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Thiết kế FMCG: khớp kinh nghiệm/bố cục/giao tiếp; thiếu Adobe và FMCG"
+   },
+   {
+    "cv_id": "DES_FRE_01",
+    "jd_id": "jd_0944",
+    "grade": 3,
+    "pred": 1,
+    "stack_score": 1.414,
+    "role_match": "same",
+    "must_have_coverage_pct": 72,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Intern thiết kế bao bì: khớp tỉ mỉ/giao tiếp; công cụ ở mức cơ bản"
+   },
+   {
+    "cv_id": "DEVOPS_MID_02",
+    "jd_id": "jd_0106",
+    "grade": 1,
+    "pred": 3,
+    "stack_score": 2.535,
+    "role_match": "adjacent",
+    "must_have_coverage_pct": 50,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Có đại học/vSphere; thiếu presales/hybrid cloud"
+   },
+   {
+    "cv_id": "DA_FRE_02",
+    "jd_id": "jd_0267",
+    "grade": 0,
+    "pred": 2,
+    "stack_score": 1.877,
+    "role_match": "different",
+    "must_have_coverage_pct": 25,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 1,
+    "core_tech_missing": 0,
+    "reason": "BA intern"
+   },
+   {
+    "cv_id": "DE_MID_01",
+    "jd_id": "jd_0296",
+    "grade": 3,
+    "pred": 1,
+    "stack_score": 1.242,
+    "role_match": "same",
+    "must_have_coverage_pct": 70,
+    "seniority_gap": 1,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Senior DE: khớp SQL/ADF/DB/Power BI/cloud tương đương; thiếu streaming-dbt"
+   },
+   {
+    "cv_id": "BA_MID_01",
+    "jd_id": "jd_1247",
+    "grade": 3,
+    "pred": 1,
+    "stack_score": 0.742,
+    "role_match": "same",
+    "must_have_coverage_pct": 80,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Khớp BA 3 năm/mô hình hóa/SRS; thiếu Visio-EA-Axure"
+   },
+   {
+    "cv_id": "FS_MID_01",
+    "jd_id": "jd_1163",
+    "grade": 1,
+    "pred": 3,
+    "stack_score": 2.529,
+    "role_match": "same",
+    "must_have_coverage_pct": 61,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 1,
+    "reason": "Khớp bằng/SQL/React/Docker/kinh nghiệm; thiếu Java-Spring [điều chỉnh sau khi đối chiếu phần cuối mô tả JD]"
+   },
+   {
+    "cv_id": "MOB_FRE_01",
+    "jd_id": "jd_1190",
+    "grade": 3,
+    "pred": 1,
+    "stack_score": 1.488,
+    "role_match": "same",
+    "must_have_coverage_pct": 90,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Intern RN/Flutter: khớp sinh viên/lập trình mobile/học nhanh"
+   },
+   {
+    "cv_id": "MOB_MID_01",
+    "jd_id": "jd_0215",
+    "grade": 3,
+    "pred": 1,
+    "stack_score": 1.348,
+    "role_match": "same",
+    "must_have_coverage_pct": 83,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Mobile 4 năm: khớp REST/UI/Git/mobile; CV Flutter thay Kotlin-Swift"
+   },
+   {
+    "cv_id": "PM_MID_01",
+    "jd_id": "jd_1544",
+    "grade": 1,
+    "pred": 3,
+    "stack_score": 2.542,
+    "role_match": "adjacent",
+    "must_have_coverage_pct": 20,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "BA 4 năm khu vực công; CV là PM"
+   },
+   {
+    "cv_id": "SUP_JUN_01",
+    "jd_id": "jd_1390",
+    "grade": 3,
+    "pred": 1,
+    "stack_score": 1.062,
+    "role_match": "same",
+    "must_have_coverage_pct": 85,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Vận hành CNTT: khớp trường công lập/ngành mạng/tiếng Anh/vận hành"
+   },
+   {
+    "cv_id": "SUP_SEN_01",
+    "jd_id": "jd_0773",
+    "grade": 3,
+    "pred": 1,
+    "stack_score": 1.431,
+    "role_match": "same",
+    "must_have_coverage_pct": 80,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Khớp quản lý dịch vụ/ITSM Jira/dẫn dắt nhóm 4; thiếu ServiceNow"
+   },
+   {
+    "cv_id": "DEVOPS_SEN_02",
+    "jd_id": "jd_0018",
+    "grade": 3,
+    "pred": 2,
+    "stack_score": 2.292,
+    "role_match": "same",
+    "must_have_coverage_pct": 70,
+    "seniority_gap": -2,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "SRE junior: khớp AKS/Docker/CI-CD/monitor; thiếu Terraform-Ansible-AWS"
+   },
+   {
+    "cv_id": "SYS_SEN_01",
+    "jd_id": "jd_0647",
+    "grade": 3,
+    "pred": 2,
+    "stack_score": 1.611,
+    "role_match": "same",
+    "must_have_coverage_pct": 81,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Lãnh đạo vận hành: khớp hạ tầng/bảo mật/kiến trúc mạng/dẫn dắt"
+   },
+   {
+    "cv_id": "SYS_SEN_01",
+    "jd_id": "jd_0739",
+    "grade": 2,
+    "pred": 1,
+    "stack_score": 1.47,
+    "role_match": "same",
+    "must_have_coverage_pct": 85,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 1,
+    "reason": "Pentest 5 năm: khớp bảo mật/rủi ro/hệ thống tài chính; CV chưa làm pentest"
+   },
+   {
+    "cv_id": "DES_JUN_01",
+    "jd_id": "jd_0720",
+    "grade": 2,
+    "pred": 1,
+    "stack_score": 1.362,
+    "role_match": "same",
+    "must_have_coverage_pct": 40,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Thiết kế trung cấp+ 1 năm: CV có bằng/kinh nghiệm; thiếu AI-PTS-Corel"
+   },
+   {
+    "cv_id": "SYS_SEN_01",
+    "jd_id": "jd_1191",
+    "grade": 3,
+    "pred": 2,
+    "stack_score": 2.262,
+    "role_match": "same",
+    "must_have_coverage_pct": 90,
+    "seniority_gap": -2,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Khớp an ninh mạng/tấn công/quét lỗ hổng/IDS"
+   },
+   {
+    "cv_id": "DEVOPS_SEN_02",
+    "jd_id": "jd_0106",
+    "grade": 1,
+    "pred": 2,
+    "stack_score": 1.747,
+    "role_match": "adjacent",
+    "must_have_coverage_pct": 35,
+    "seniority_gap": -1,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Presales: khớp cloud Azure; thiếu presales-ảo hóa"
+   },
+   {
+    "cv_id": "SYS_SEN_01",
+    "jd_id": "jd_1554",
+    "grade": 1,
+    "pred": 2,
+    "stack_score": 1.52,
+    "role_match": "same",
+    "must_have_coverage_pct": 45,
+    "seniority_gap": -1,
+    "hard_requirement_missing": 1,
+    "core_tech_missing": 0,
+    "reason": "Giám sát hệ thống: khớp monitoring; thiếu Microsoft System và tiếng Pháp bắt buộc"
+   },
+   {
+    "cv_id": "DES_JUN_01",
+    "jd_id": "jd_0793",
+    "grade": 1,
+    "pred": 2,
+    "stack_score": 1.527,
+    "role_match": "same",
+    "must_have_coverage_pct": 35,
+    "seniority_gap": 2,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "UI/UX Manager 5 năm; CV có wireframe/component nhưng 1.6 năm"
+   },
+   {
+    "cv_id": "SYS_SEN_01",
+    "jd_id": "jd_1600",
+    "grade": 2,
+    "pred": 3,
+    "stack_score": 2.753,
+    "role_match": "adjacent",
+    "must_have_coverage_pct": 90,
+    "seniority_gap": -1,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Giảng viên an ninh mạng: khớp xử lý sự cố/rủi ro/lỗ hổng; thiếu dạy học"
+   },
+   {
+    "cv_id": "SYS_SEN_01",
+    "jd_id": "jd_1637",
+    "grade": 0,
+    "pred": 1,
+    "stack_score": 0.849,
+    "role_match": "different",
+    "must_have_coverage_pct": 10,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "BA ngân hàng Card"
+   },
+   {
+    "cv_id": "DEVOPS_JUN_01",
+    "jd_id": "jd_0037",
+    "grade": 0,
+    "pred": 1,
+    "stack_score": 0.848,
+    "role_match": "different",
+    "must_have_coverage_pct": 5,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "PHP backend"
+   },
+   {
+    "cv_id": "SYS_SEN_02",
+    "jd_id": "jd_0106",
+    "grade": 1,
+    "pred": 2,
+    "stack_score": 2.158,
+    "role_match": "same",
+    "must_have_coverage_pct": 40,
+    "seniority_gap": -1,
+    "hard_requirement_missing": 1,
+    "core_tech_missing": 0,
+    "reason": "Presales: khớp ảo hóa/storage/server; JD yêu cầu đại học; thiếu presales-cloud"
+   },
+   {
+    "cv_id": "DES_JUN_01",
+    "jd_id": "jd_0809",
+    "grade": 2,
+    "pred": 1,
+    "stack_score": 1.241,
+    "role_match": "same",
+    "must_have_coverage_pct": 54,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Khớp bằng/thiết kế 1.6 năm/sáng tạo; thiếu Illustrator-Photoshop-AE"
+   },
+   {
+    "cv_id": "DEVOPS_JUN_01",
+    "jd_id": "jd_0149",
+    "grade": 3,
+    "pred": 2,
+    "stack_score": 1.993,
+    "role_match": "same",
+    "must_have_coverage_pct": 74,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Khớp Linux/Docker/CI-CD/Terraform; thiếu lập trình Java-Go-ArgoCD"
+   },
+   {
+    "cv_id": "DEVOPS_SEN_02",
+    "jd_id": "jd_0107",
+    "grade": 0,
+    "pred": 1,
+    "stack_score": 0.665,
+    "role_match": "different",
+    "must_have_coverage_pct": 0,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "PHP"
+   },
+   {
+    "cv_id": "DEVOPS_JUN_01",
+    "jd_id": "jd_0214",
+    "grade": 0,
+    "pred": 1,
+    "stack_score": 0.604,
+    "role_match": "different",
+    "must_have_coverage_pct": 5,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "BA ngân hàng"
+   },
+   {
+    "cv_id": "DA_FRE_01",
+    "jd_id": "jd_0032",
+    "grade": 1,
+    "pred": 2,
+    "stack_score": 1.684,
+    "role_match": "same",
+    "must_have_coverage_pct": 43,
+    "seniority_gap": 2,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Phân tích tài chính 4 năm: khớp Excel/Power BI; thiếu kinh nghiệm-tài chính-SQL trung cấp"
+   },
+   {
+    "cv_id": "DEVOPS_SEN_02",
+    "jd_id": "jd_0149",
+    "grade": 2,
+    "pred": 3,
+    "stack_score": 2.562,
+    "role_match": "same",
+    "must_have_coverage_pct": 65,
+    "seniority_gap": -2,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Vận hành DevOps: khớp Docker/CI-CD/IaC; thiếu Linux-Ansible-Jenkins"
+   },
+   {
+    "cv_id": "DA_FRE_01",
+    "jd_id": "jd_0151",
+    "grade": 1,
+    "pred": 2,
+    "stack_score": 1.521,
+    "role_match": "same",
+    "must_have_coverage_pct": 48,
+    "seniority_gap": 2,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "DA game 3 năm: khớp Power BI/chi tiết; thiếu SQL-Python mạnh-thống kê"
+   },
+   {
+    "cv_id": "DES_JUN_01",
+    "jd_id": "jd_0967",
+    "grade": 2,
+    "pred": 1,
+    "stack_score": 1.344,
+    "role_match": "same",
+    "must_have_coverage_pct": 62,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Khớp bằng/kinh nghiệm/bố cục; thiếu in ấn và Adobe"
+   },
+   {
+    "cv_id": "SYS_SEN_02",
+    "jd_id": "jd_1550",
+    "grade": 1,
+    "pred": 2,
+    "stack_score": 1.845,
+    "role_match": "adjacent",
+    "must_have_coverage_pct": 55,
+    "seniority_gap": -1,
+    "hard_requirement_missing": 1,
+    "core_tech_missing": 0,
+    "reason": "IT support 4 năm: JD yêu cầu cử nhân; khớp hạ tầng; thiếu M365-CCNA"
+   },
+   {
+    "cv_id": "SYS_SEN_02",
+    "jd_id": "jd_1554",
+    "grade": 1,
+    "pred": 2,
+    "stack_score": 1.552,
+    "role_match": "same",
+    "must_have_coverage_pct": 55,
+    "seniority_gap": -1,
+    "hard_requirement_missing": 1,
+    "core_tech_missing": 0,
+    "reason": "Giám sát hệ thống: khớp mạng/Microsoft; bắt buộc tiếng Pháp"
+   },
+   {
+    "cv_id": "DES_JUN_01",
+    "jd_id": "jd_1007",
+    "grade": 2,
+    "pred": 1,
+    "stack_score": 1.181,
+    "role_match": "same",
+    "must_have_coverage_pct": 50,
+    "seniority_gap": 0,
+    "hard_requirement_missing": 0,
+    "core_tech_missing": 0,
+    "reason": "Khớp bằng/kinh nghiệm/sáng tạo; thiếu Adobe suite"
+   }
+  ],
+  "over_pred_share": 0.16105769230769232,
+  "under_pred_share": 0.12620192307692307,
+  "n_err2plus": 17
+ },
+ "importance": [
+  {
+   "feature": "Điểm GCN (out-of-fold)",
+   "importance": 0.44373546042549983
+  },
+  {
+   "feature": "Chênh lệch số năm kinh nghiệm (LLM)",
+   "importance": 0.11572911836513625
+  },
+  {
+   "feature": "Độ phủ yêu cầu bắt buộc (LLM)",
+   "importance": 0.05231889510168829
+  },
+  {
+   "feature": "Cosine nhóm role",
+   "importance": 0.04208368566908492
+  },
+  {
+   "feature": "Số điều kiện cứng chưa đáp ứng (LLM)",
+   "importance": 0.020605883092817096
+  },
+  {
+   "feature": "Cosine toàn văn CV–JD",
+   "importance": 0.008748196438407138
+  },
+  {
+   "feature": "Cosine nhóm hard_skills",
+   "importance": 0.007920568535344024
+  },
+  {
+   "feature": "Cosine nhóm field_of_education",
+   "importance": 0.007695560002485206
+  },
+  {
+   "feature": "Cosine nhóm soft_skills",
+   "importance": 0.005716493809821473
+  },
+  {
+   "feature": "Cosine nhóm industry_sector",
+   "importance": 0.005205552148489499
+  },
+  {
+   "feature": "Công nghệ tiêu đề JD thiếu ở CV (LLM)",
+   "importance": 0.0050044107949956205
+  },
+  {
+   "feature": "Số yêu cầu (LLM)",
+   "importance": 0.0018587637563265238
+  },
+  {
+   "feature": "Hợp lệ (LLM)",
+   "importance": 0.0
+  },
+  {
+   "feature": "Cosine nhóm education",
+   "importance": -0.0005238914678390433
+  }
+ ],
+ "complexity": {
+  "sbert_load_s": 7.39,
+  "rss_after_sbert_mb": 997.0,
+  "rss_after_all_mb": 1418.0,
+  "params_gcn": 272129,
+  "params_sbert": 117653760,
+  "file_mb": {
+   "best_model.pt": 1.1,
+   "stacker.pkl": 0.31
+  },
+  "graph_file_kb": 71.5,
+  "graph_total_mb": 119.0,
+  "avg_edges": 150.12920673076923,
+  "avg_items_per_pair": null,
+  "items_example": 35,
+  "ms_embed_pair": 343.4,
+  "ms_build_graph": 1.21,
+  "ms_gcn_forward": 1.69,
+  "ms_stacker": 2.06,
+  "gcn_1664_pairs_s": 0.56,
+  "peak_rss_mb": 1551.0
+ }
+}

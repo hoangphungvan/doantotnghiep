@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="628.2pt" height="446.832pt" viewBox="0 0 628.2 446.832" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-14T19:34:52.038884</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 446.832 
+L 628.2 446.832 
+L 628.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 21.0384 434.19888 
+L 138.4416 434.19888 
+Q 146.8116 434.19888 146.8116 425.88288 
+L 146.8116 43.12512 
+Q 146.8116 34.80912 138.4416 34.80912 
+L 21.0384 34.80912 
+Q 12.6684 34.80912 12.6684 43.12512 
+L 12.6684 425.88288 
+Q 12.6684 434.19888 21.0384 434.19888 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #ffffff; stroke-dasharray: 4.44,1.92; stroke-dashoffset: 0; stroke: #7a869a; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 182.8584 434.19888 
+L 423.0216 434.19888 
+Q 431.3916 434.19888 431.3916 425.88288 
+L 431.3916 43.12512 
+Q 431.3916 34.80912 423.0216 34.80912 
+L 182.8584 34.80912 
+Q 174.4884 34.80912 174.4884 43.12512 
+L 174.4884 425.88288 
+Q 174.4884 434.19888 182.8584 434.19888 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #ffffff; stroke-dasharray: 4.44,1.92; stroke-dashoffset: 0; stroke: #7a869a; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 467.4384 434.19888 
+L 607.1616 434.19888 
+Q 615.5316 434.19888 615.5316 425.88288 
+L 615.5316 43.12512 
+Q 615.5316 34.80912 607.1616 34.80912 
+L 467.4384 34.80912 
+Q 459.0684 34.80912 459.0684 43.12512 
+L 459.0684 425.88288 
+Q 459.0684 434.19888 467.4384 434.19888 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #ffffff; stroke-dasharray: 4.44,1.92; stroke-dashoffset: 0; stroke: #7a869a; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 27.1764 217.98288 
+L 132.3036 217.98288 
+Q 135.6516 217.98288 135.6516 214.65648 
+L 135.6516 88.03152 
+Q 135.6516 84.70512 132.3036 84.70512 
+L 27.1764 84.70512 
+Q 23.8284 84.70512 23.8284 88.03152 
+L 23.8284 214.65648 
+Q 23.8284 217.98288 27.1764 217.98288 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #dce6f5; stroke: #33415c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 27.1764 384.30288 
+L 132.3036 384.30288 
+Q 135.6516 384.30288 135.6516 380.97648 
+L 135.6516 276.52752 
+Q 135.6516 273.20112 132.3036 273.20112 
+L 27.1764 273.20112 
+Q 23.8284 273.20112 23.8284 276.52752 
+L 23.8284 380.97648 
+Q 23.8284 384.30288 27.1764 384.30288 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #fce8c8; stroke: #33415c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 188.9964 118.19088 
+L 416.8836 118.19088 
+Q 420.2316 118.19088 420.2316 114.86448 
+L 420.2316 60.31152 
+Q 420.2316 56.98512 416.8836 56.98512 
+L 188.9964 56.98512 
+Q 185.6484 56.98512 185.6484 60.31152 
+L 185.6484 114.86448 
+Q 185.6484 118.19088 188.9964 118.19088 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #dce6f5; stroke: #33415c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 302.94 120.079819 
+Q 302.94 125.009496 302.94 128.485729 
+" clip-path="url(#pf033b992d7)" style="fill: none; stroke: #33415c; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 305.54 123.285729 
+L 302.94 128.485729 
+L 300.34 123.285729 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #33415c; stroke: #33415c; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 188.9964 193.03488 
+L 416.8836 193.03488 
+Q 420.2316 193.03488 420.2316 189.70848 
+L 420.2316 135.15552 
+Q 420.2316 131.82912 416.8836 131.82912 
+L 188.9964 131.82912 
+Q 185.6484 131.82912 185.6484 135.15552 
+L 185.6484 189.70848 
+Q 185.6484 193.03488 188.9964 193.03488 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #dce6f5; stroke: #33415c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 302.94 194.923819 
+Q 302.94 199.853496 302.94 203.329729 
+" clip-path="url(#pf033b992d7)" style="fill: none; stroke: #33415c; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 305.54 198.129729 
+L 302.94 203.329729 
+L 300.34 198.129729 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #33415c; stroke: #33415c; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 188.9964 267.87888 
+L 416.8836 267.87888 
+Q 420.2316 267.87888 420.2316 264.55248 
+L 420.2316 209.99952 
+Q 420.2316 206.67312 416.8836 206.67312 
+L 188.9964 206.67312 
+Q 185.6484 206.67312 185.6484 209.99952 
+L 185.6484 264.55248 
+Q 185.6484 267.87888 188.9964 267.87888 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #ddefd9; stroke: #33415c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 302.94 269.767819 
+Q 302.94 274.697496 302.94 278.173729 
+" clip-path="url(#pf033b992d7)" style="fill: none; stroke: #33415c; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 305.54 272.973729 
+L 302.94 278.173729 
+L 300.34 272.973729 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #33415c; stroke: #33415c; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 188.9964 342.72288 
+L 416.8836 342.72288 
+Q 420.2316 342.72288 420.2316 339.39648 
+L 420.2316 284.84352 
+Q 420.2316 281.51712 416.8836 281.51712 
+L 188.9964 281.51712 
+Q 185.6484 281.51712 185.6484 284.84352 
+L 185.6484 339.39648 
+Q 185.6484 342.72288 188.9964 342.72288 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #fce8c8; stroke: #33415c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 302.94 344.611819 
+Q 302.94 349.541496 302.94 353.017729 
+" clip-path="url(#pf033b992d7)" style="fill: none; stroke: #33415c; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 305.54 347.817729 
+L 302.94 353.017729 
+L 300.34 347.817729 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #33415c; stroke: #33415c; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 188.9964 417.56688 
+L 416.8836 417.56688 
+Q 420.2316 417.56688 420.2316 414.24048 
+L 420.2316 359.68752 
+Q 420.2316 356.36112 416.8836 356.36112 
+L 188.9964 356.36112 
+Q 185.6484 356.36112 185.6484 359.68752 
+L 185.6484 414.24048 
+Q 185.6484 417.56688 188.9964 417.56688 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #ddefd9; stroke: #33415c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 136.812052 149.7993 
+Q 160.651173 120.850576 183.708496 92.851217 
+" clip-path="url(#pf033b992d7)" style="fill: none; stroke: #666677; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 178.395849 95.212525 
+L 183.708496 92.851217 
+L 182.409954 98.51812 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #666677; stroke: #666677; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 137.541566 328.752 
+Q 160.651628 328.752 182.643656 328.752 
+" clip-path="url(#pf033b992d7)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #888899; stroke-linecap: round"/>
+    <path d="M 177.443656 326.152 
+L 182.643656 328.752 
+L 177.443656 331.352 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #888899; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #888899; stroke-linecap: round"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 473.5764 145.91088 
+L 601.0236 145.91088 
+Q 604.3716 145.91088 604.3716 142.58448 
+L 604.3716 71.39952 
+Q 604.3716 68.07312 601.0236 68.07312 
+L 473.5764 68.07312 
+Q 470.2284 68.07312 470.2284 71.39952 
+L 470.2284 142.58448 
+Q 470.2284 145.91088 473.5764 145.91088 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #dce6f5; stroke: #33415c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 473.5764 234.61488 
+L 601.0236 234.61488 
+Q 604.3716 234.61488 604.3716 231.28848 
+L 604.3716 165.64752 
+Q 604.3716 162.32112 601.0236 162.32112 
+L 473.5764 162.32112 
+Q 470.2284 162.32112 470.2284 165.64752 
+L 470.2284 231.28848 
+Q 470.2284 234.61488 473.5764 234.61488 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #ddefd9; stroke: #33415c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 473.5764 323.31888 
+L 601.0236 323.31888 
+Q 604.3716 323.31888 604.3716 319.99248 
+L 604.3716 254.35152 
+Q 604.3716 251.02512 601.0236 251.02512 
+L 473.5764 251.02512 
+Q 470.2284 251.02512 470.2284 254.35152 
+L 470.2284 319.99248 
+Q 470.2284 323.31888 473.5764 323.31888 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #fce8c8; stroke: #33415c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 473.5764 412.02288 
+L 601.0236 412.02288 
+Q 604.3716 412.02288 604.3716 408.69648 
+L 604.3716 343.05552 
+Q 604.3716 339.72912 601.0236 339.72912 
+L 473.5764 339.72912 
+Q 470.2284 339.72912 470.2284 343.05552 
+L 470.2284 408.69648 
+Q 470.2284 412.02288 473.5764 412.02288 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #e6ddf2; stroke: #33415c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 420.881699 238.198083 
+Q 445.229739 179.064634 469.109536 121.068396 
+" clip-path="url(#pf033b992d7)" style="fill: none; stroke: #666677; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 464.725531 124.886837 
+L 469.109536 121.068396 
+L 469.533886 126.866665 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #666677; stroke: #666677; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 421.784396 238.945562 
+Q 445.227945 223.417361 467.646176 208.568296 
+" clip-path="url(#pf033b992d7)" style="fill: none; stroke: #666677; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 461.875169 209.272191 
+L 467.646176 208.568296 
+L 464.746688 213.607439 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #666677; stroke: #666677; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 422.01735 311.49163 
+Q 445.230449 303.803851 467.276071 296.502721 
+" clip-path="url(#pf033b992d7)" style="fill: none; stroke: #666677; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 461.522329 295.669383 
+L 467.276071 296.502721 
+L 463.157156 300.605712 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #666677; stroke: #666677; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 422.072523 389.304905 
+Q 445.229658 384.192075 467.185879 379.344394 
+" clip-path="url(#pf033b992d7)" style="fill: none; stroke: #666677; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 461.547619 377.926639 
+L 467.185879 379.344394 
+L 462.668719 383.004349 
+z
+" clip-path="url(#pf033b992d7)" style="fill: #666677; stroke: #666677; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="79.74" y="23.832" transform="rotate(-0 79.74 23.832)">ĐẦU VÀO (Input)</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="302.94" y="23.832" transform="rotate(-0 302.94 23.832)">XỬ LÝ (Process)</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="537.3" y="23.832" transform="rotate(-0 537.3 23.832)">ĐẦU RA (Output)</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(47.823047 128.030836)">Một cặp (CV, JD)</text>
+    <!-- $(c,\,j)$ -->
+    <g transform="translate(71.145 137.767711)">
+     <text>
+      <tspan x="0" y="-0.921875" style="font-size: 9px; font-family: 'STIXGeneral'">(</tspan>
+      <tspan x="6.992996" y="-0.921875" style="font-size: 9px; font-family: 'STIXGeneral'">,</tspan>
+      <tspan x="14.127617" y="-0.921875" style="font-size: 9px; font-family: 'STIXGeneral'">)</tspan>
+      <tspan x="2.996994" y="-0.921875" style="font-style: italic; font-size: 9px; font-family: 'STIXGeneral'">c</tspan>
+      <tspan x="11.625618" y="-0.921875" style="font-style: italic; font-size: 9px; font-family: 'STIXGeneral'">j</tspan>
+     </text>
+    </g>
+    <!-- $c$: văn bản CV -->
+    <g transform="translate(53.865 147.504586)">
+     <text>
+      <tspan x="0" y="-0.75" style="font-style: italic; font-size: 9px; font-family: 'STIXGeneral'">c</tspan>
+      <tspan x="3.996002" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">:</tspan>
+      <tspan x="6.49649" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="8.74649" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">v</tspan>
+      <tspan x="13.24649" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">ă</tspan>
+      <tspan x="17.241119" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">n</tspan>
+      <tspan x="21.741119" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="23.991119" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">b</tspan>
+      <tspan x="28.491119" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">ả</tspan>
+      <tspan x="32.485748" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">n</tspan>
+      <tspan x="36.985748" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="39.235748" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">C</tspan>
+      <tspan x="45.238678" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">V</tspan>
+     </text>
+    </g>
+    <!-- $j$: văn bản JD -->
+    <g transform="translate(55.845 157.260797)">
+     <text>
+      <tspan x="0" y="-0.75" style="font-style: italic; font-size: 9px; font-family: 'STIXGeneral'">j</tspan>
+      <tspan x="2.501999" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">:</tspan>
+      <tspan x="5.002487" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="7.252487" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">v</tspan>
+      <tspan x="11.752487" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">ă</tspan>
+      <tspan x="15.747116" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">n</tspan>
+      <tspan x="20.247116" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="22.497116" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">b</tspan>
+      <tspan x="26.997116" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">ả</tspan>
+      <tspan x="30.991745" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">n</tspan>
+      <tspan x="35.491745" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="37.741745" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">J</tspan>
+      <tspan x="41.244186" y="-0.75" style="font-size: 9px; font-family: 'Times New Roman'">D</tspan>
+     </text>
+    </g>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(40.844531 169.210758)">(tiếng Việt, tiếng Anh</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(52.055859 178.964508)">hoặc song ngữ)</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(45.051328 310.308504)">Nhãn mức phù hợp</text>
+    <!-- $y\in\{0,1,2,3\}$ -->
+    <g transform="translate(54.675 320.045379)">
+     <text>
+      <tspan x="0" y="-0.875" style="font-style: italic; font-size: 9px; font-family: 'STIXGeneral'">y</tspan>
+      <tspan x="5.295602" y="-0.875" style="font-size: 9px; font-family: 'STIXGeneral'">∈</tspan>
+      <tspan x="12.760196" y="-0.875" style="font-size: 9px; font-family: 'STIXGeneral'">{</tspan>
+      <tspan x="17.080188" y="-0.875" style="font-size: 9px; font-family: 'STIXGeneral'">0</tspan>
+      <tspan x="21.580188" y="-0.875" style="font-size: 9px; font-family: 'STIXGeneral'">,</tspan>
+      <tspan x="25.129788" y="-0.875" style="font-size: 9px; font-family: 'STIXGeneral'">1</tspan>
+      <tspan x="29.629788" y="-0.875" style="font-size: 9px; font-family: 'STIXGeneral'">,</tspan>
+      <tspan x="33.179388" y="-0.875" style="font-size: 9px; font-family: 'STIXGeneral'">2</tspan>
+      <tspan x="37.679388" y="-0.875" style="font-size: 9px; font-family: 'STIXGeneral'">,</tspan>
+      <tspan x="41.228989" y="-0.875" style="font-size: 9px; font-family: 'STIXGeneral'">3</tspan>
+      <tspan x="45.728989" y="-0.875" style="font-size: 9px; font-family: 'STIXGeneral'">}</tspan>
+     </text>
+    </g>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(44.746172 329.782254)">(tùy chọn, chỉ dùng</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(47.621953 341.74909)">khi huấn luyện và</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(62.871328 351.50284)">đánh giá)</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="302.94" y="75.205003" transform="rotate(-0 302.94 75.205003)">Bước 1. Tiền xử lý, trích xuất thông tin</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8.3px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(234.716594 95.591008)">chuẩn hóa văn bản; tách vai trò, kỹ năng,</text>
+    <text style="font-size: 8.3px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(251.244617 106.257286)">học vấn, lĩnh vực, kinh nghiệm</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="302.94" y="150.046823" transform="rotate(-0 302.94 150.046823)">Bước 2. Biểu diễn ngữ nghĩa</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 8.3px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(240.651742 171.414667)">chuyển văn bản/thực thể thành vector</text>
+    <text style="font-size: 8.3px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(238.450297 180.121627)">trong không gian liên tục, đa ngôn ngữ</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="302.94" y="224.901722" transform="rotate(-0 302.94 224.901722)">Bước 3. Đối sánh, tính điểm phù hợp</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 8.3px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(241.438297 244.400764)">so khớp CV–JD theo từng khía cạnh,</text>
+    <!-- tổng hợp thành điểm $s(c,j)$ của cặp -->
+    <g transform="translate(244.923 255.155748)">
+     <text>
+      <tspan x="0" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">t</tspan>
+      <tspan x="2.292114" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">ổ</tspan>
+      <tspan x="6.417114" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">n</tspan>
+      <tspan x="10.542114" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">g</tspan>
+      <tspan x="14.667114" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="16.729614" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">h</tspan>
+      <tspan x="20.854614" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">ợ</tspan>
+      <tspan x="25.217285" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">p</tspan>
+      <tspan x="29.342285" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="31.404785" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">t</tspan>
+      <tspan x="33.696899" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">h</tspan>
+      <tspan x="37.821899" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">à</tspan>
+      <tspan x="41.483643" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">n</tspan>
+      <tspan x="45.608643" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">h</tspan>
+      <tspan x="49.733643" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="51.796143" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">đ</tspan>
+      <tspan x="55.921143" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">i</tspan>
+      <tspan x="58.213257" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">ể</tspan>
+      <tspan x="61.875" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">m</tspan>
+      <tspan x="68.292114" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="88.268616" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="90.331116" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="93.992859" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">ủ</tspan>
+      <tspan x="98.117859" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">a</tspan>
+      <tspan x="101.779602" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="103.842102" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">c</tspan>
+      <tspan x="107.503845" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">ặ</tspan>
+      <tspan x="111.165588" y="-0.875" style="font-size: 8.3px; font-family: 'Times New Roman'">p</tspan>
+      <tspan x="70.354614" y="-0.875" style="font-style: italic; font-size: 8.3px; font-family: 'STIXGeneral'">s</tspan>
+      <tspan x="76.311096" y="-0.875" style="font-style: italic; font-size: 8.3px; font-family: 'STIXGeneral'">c</tspan>
+      <tspan x="83.22789" y="-0.875" style="font-style: italic; font-size: 8.3px; font-family: 'STIXGeneral'">j</tspan>
+      <tspan x="73.563858" y="-0.875" style="font-size: 8.3px; font-family: 'STIXGeneral'">(</tspan>
+      <tspan x="79.974091" y="-0.875" style="font-size: 8.3px; font-family: 'STIXGeneral'">,</tspan>
+      <tspan x="85.521378" y="-0.875" style="font-size: 8.3px; font-family: 'STIXGeneral'">)</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="302.94" y="299.59605" transform="rotate(-0 302.94 299.59605)">Bước 4. Phân mức, sinh diễn giải</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 8.3px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(244.795906 320.123008)">quy điểm về mức 0–3; nêu yêu cầu</text>
+    <text style="font-size: 8.3px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(248.536742 330.789286)">đã đáp ứng / chưa thấy trong CV</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'Times New Roman', 'DejaVu Serif', serif; text-anchor: middle" x="302.94" y="374.581003" transform="rotate(-0 302.94 374.581003)">Bước 5. Xếp hạng CV theo từng JD</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 8.3px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(249.580078 394.967008)">gom điểm các cặp cùng một JD,</text>
+    <text style="font-size: 8.3px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(249.764234 405.633286)">sắp xếp CV theo điểm giảm dần</text>
+   </g>
+   <g id="text_16">
+    <!-- Điểm phù hợp $s(c,j)$ -->
+    <g transform="translate(500.49 105.183562)">
+     <text>
+      <tspan x="0" y="-0.984375" style="font-size: 9px; font-family: 'Times New Roman'">Đ</tspan>
+      <tspan x="6.499512" y="-0.984375" style="font-size: 9px; font-family: 'Times New Roman'">i</tspan>
+      <tspan x="9" y="-0.984375" style="font-size: 9px; font-family: 'Times New Roman'">ể</tspan>
+      <tspan x="12.994629" y="-0.984375" style="font-size: 9px; font-family: 'Times New Roman'">m</tspan>
+      <tspan x="19.995117" y="-0.984375" style="font-size: 9px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="22.245117" y="-0.984375" style="font-size: 9px; font-family: 'Times New Roman'">p</tspan>
+      <tspan x="26.745117" y="-0.984375" style="font-size: 9px; font-family: 'Times New Roman'">h</tspan>
+      <tspan x="31.245117" y="-0.984375" style="font-size: 9px; font-family: 'Times New Roman'">ù</tspan>
+      <tspan x="35.745117" y="-0.984375" style="font-size: 9px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="37.995117" y="-0.984375" style="font-size: 9px; font-family: 'Times New Roman'">h</tspan>
+      <tspan x="42.495117" y="-0.984375" style="font-size: 9px; font-family: 'Times New Roman'">ợ</tspan>
+      <tspan x="47.254395" y="-0.984375" style="font-size: 9px; font-family: 'Times New Roman'">p</tspan>
+      <tspan x="51.754395" y="-0.984375" style="font-size: 9px; font-family: 'Times New Roman'"> </tspan>
+      <tspan x="54.004395" y="-0.984375" style="font-style: italic; font-size: 9px; font-family: 'STIXGeneral'">s</tspan>
+      <tspan x="60.50238" y="-0.984375" style="font-style: italic; font-size: 9px; font-family: 'STIXGeneral'">c</tspan>
+      <tspan x="68.047983" y="-0.984375" style="font-style: italic; font-size: 9px; font-family: 'STIXGeneral'">j</tspan>
+      <tspan x="57.505386" y="-0.984375" style="font-size: 9px; font-family: 'STIXGeneral'">(</tspan>
+      <tspan x="64.498383" y="-0.984375" style="font-size: 9px; font-family: 'STIXGeneral'">,</tspan>
+      <tspan x="70.549982" y="-0.984375" style="font-size: 9px; font-family: 'STIXGeneral'">)</tspan>
+     </text>
+    </g>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(523.684688 114.975281)">của cặp</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(502.110703 195.761672)">Mức phù hợp (0–3)</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(523.684688 205.498547)">của cặp</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(502.930547 285.177937)">Thông tin diễn giải</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(523.684688 294.931687)">của cặp</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(488.386406 372.562348)">Danh sách CV của mỗi JD,</text>
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'DejaVu Serif', serif" transform="translate(494.061328 384.512309)">xếp theo điểm giảm dần</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf033b992d7">
+   <rect x="7.2" y="7.2" width="613.8" height="432.432"/>
+  </clipPath>
+ </defs>
+</svg>

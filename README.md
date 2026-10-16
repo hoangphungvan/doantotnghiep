@@ -170,9 +170,6 @@ python -X utf8 src/modeling/stacker.py
 # 4. Dự đoán cho một cặp CV–JD
 python -X utf8 main.py --mode predict
 
-# Demo 4 cặp CV–JD mới cho hội đồng (xem demo/)
-python -X utf8 demo/run_demo.py
-
 # Kiểm tra
 python -X utf8 tests/test_dataset_labels.py
 python -X utf8 tests/test_pair_features.py
