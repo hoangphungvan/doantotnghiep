@@ -90,6 +90,16 @@ def compute_graph_scores(model: GCNModel, graphs: list,
     return torch.cat(out).numpy().astype(float)
 
 
+HYBRID_FILE = os.path.join(config.MODEL_DIR, "hybrid.json")
+
+
+def hybrid_score(graph_score: float, semantic_score: float, params: dict) -> float:
+    """Hybrid = α·điểm GCN + (1−α)·điểm SBERT chuẩn hóa min-max (params: models/hybrid.json, tạo bởi fit_hybrid.py)."""
+    lo, hi = params["sem_min"], params["sem_max"]
+    sem = min(1.0, max(0.0, (float(semantic_score) - lo) / max(hi - lo, 1e-9)))
+    return params["alpha"] * float(graph_score) + (1.0 - params["alpha"]) * sem
+
+
 # ---------------------------------------------------------------------------
 # Fusion & tuning
 # ---------------------------------------------------------------------------

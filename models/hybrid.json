@@ -1,0 +1,7 @@
+{
+  "alpha": 0.3,
+  "sem_min": 0.06790591776371002,
+  "sem_max": 0.818426787853241,
+  "n_pairs": 1664,
+  "fitted_on": "điểm GCN out-of-fold, α đặt tay"
+}

@@ -1,12 +1,12 @@
 {
   "thresholds": [
-    0.2205583261008247,
-    0.48816497516771623,
-    0.6383401496254879
+    0.34296329342748594,
+    0.5844675132142817,
+    0.7035286400547287
   ],
-  "fitted_on": "out-of-fold GCN scores, 5-fold CV theo CV",
+  "fitted_on": "điểm Hybrid, 5-fold CV theo CV",
   "objective": "macro_f1",
   "n_pairs": 1664,
-  "macro_f1_in_sample": 0.5692,
-  "macro_f1_cross_fit": 0.559
+  "macro_f1_in_sample": 0.5514,
+  "macro_f1_cross_fit": 0.535
 }

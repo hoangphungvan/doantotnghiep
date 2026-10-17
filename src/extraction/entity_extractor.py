@@ -1,10 +1,10 @@
 """
-Module trích xuất thực thể từ văn bản CV/JD sử dụng Groq API (OpenAI-compatible).
+Module trích xuất thực thể từ văn bản CV/JD sử dụng Gemini (endpoint tương thích OpenAI).
 Trích xuất 6 loại: soft_skills, hard_skills, education,
 field_of_education, industry_sector, role.
 
 Hỗ trợ 2 chế độ:
-- Text mode : Đọc text từ PDF/TXT → gửi Groq API
+- Text mode : Đọc text từ PDF/TXT → gửi Gemini API
 - Vision mode: PDF scan/ảnh → chuyển ảnh base64 → gửi Vision Model
 """
 
@@ -104,7 +104,7 @@ def save_entire_cache():
     _save_cache()
 
 
-# Groq Rate Limit retry wait time (giây)
+# Thời gian chờ khi bị giới hạn tốc độ (429) (giây)
 RETRY_WAIT_SECONDS = 10
 
 # Ngưỡng ký tự tối thiểu để coi PDF có text layer hợp lệ
@@ -249,7 +249,7 @@ def _parse_entities(raw: str) -> dict:
 # ---------------------------------------------------------------------------
 
 def _call_llm(messages: list, model: str, max_retries: int = 3) -> Optional[str]:
-    """Gọi LLM API (Groq), retry khi 429. Trả về raw string hoặc None nếu thất bại."""
+    """Gọi LLM API (Gemini), retry khi 429. Trả về raw string hoặc None nếu thất bại."""
     for attempt in range(1, max_retries + 1):
         try:
             _print(f"[INFO] Gọi {model} (lần {attempt}/{max_retries})...")
@@ -358,65 +358,12 @@ def extract_entities_vision(pdf_path: str, model: Optional[str] = None, max_retr
     return result
 
 
-_vietjobs_df = None
-
-
-def get_vietjobs_df():
-    """Lazy-load DataFrame của VietJobs_cntt.csv với index theo jd_id."""
-    global _vietjobs_df
-    if _vietjobs_df is None:
-        csv_path = getattr(config, "VIETJOBS_IT_CSV", os.path.join(config.DATA_RAW_DIR, "VietJobs_cntt.csv"))
-        if os.path.exists(csv_path):
-            import pandas as pd
-            df = pd.read_csv(csv_path)
-            if "jd_id" in df.columns:
-                _vietjobs_df = df.set_index("jd_id", drop=False)
-            else:
-                _vietjobs_df = df
-        else:
-            _vietjobs_df = None
-    return _vietjobs_df
-
-
-def get_jd_text_by_id(identifier: str) -> Optional[str]:
-    """
-    Tra cứu formatted_jd_text từ file CSV VietJobs_cntt.csv theo jd_id hoặc tên file cũ.
-    Hỗ trợ:
-    - 'jd_0021'
-    - 21 hoặc '21'
-    - 'jd_0021_nha_phan_tich_kinh_doanh_cao_cap.txt'
-    - 'data/raw/jds/cntt/jd_0021_nha_phan_tich_kinh_doanh_cao_cap.txt'
-    """
-    df = get_vietjobs_df()
-    if df is None or len(df) == 0:
-        return None
-
-    clean_id = str(identifier).strip().replace("\\", "/")
-    match = re.search(r"jd_(\d+)", clean_id)
-    if match:
-        target_id = f"jd_{int(match.group(1)):04d}"
-    elif clean_id.isdigit():
-        target_id = f"jd_{int(clean_id):04d}"
-    else:
-        target_id = clean_id
-
-    if target_id in df.index:
-        row = df.loc[target_id]
-        if hasattr(row, "iloc"):
-            import pandas as pd
-            if isinstance(row, pd.DataFrame):
-                row = row.iloc[0]
-        return str(row.get("formatted_jd_text", ""))
-    return None
-
-
 def extract_from_file(file_path: str, model: Optional[str] = None, use_cache: bool = True) -> dict:
     """
-    Entry point tự động: đọc file hoặc tra cứu từ VietJobs_cntt.csv và trích xuất thực thể.
+    Entry point tự động: đọc file CV/JD và trích xuất thực thể.
     - PDF có text layer  → text mode
     - PDF scan (text < 50 ký tự) → Vision mode
     - File text (.txt, v.v.) → text mode
-    - jd_id (vd: 'jd_0021') hoặc đường dẫn JD VietJobs → nạp trực tiếp từ VietJobs_cntt.csv
     """
     path = normalize_path(file_path)
 
@@ -424,13 +371,6 @@ def extract_from_file(file_path: str, model: Optional[str] = None, use_cache: bo
         cached = get_cached_entity(path)
         if cached:
             return cached
-        # Kiểm tra theo jd_id nếu path có chứa jd_xxxx
-        match = re.search(r"jd_(\d+)", path)
-        if match:
-            target_id = f"jd_{int(match.group(1)):04d}"
-            cached = get_cached_entity(target_id)
-            if cached:
-                return cached
 
     # 1. Nếu file thực sự tồn tại trên đĩa
     if os.path.exists(path):
@@ -458,18 +398,7 @@ def extract_from_file(file_path: str, model: Optional[str] = None, use_cache: bo
             set_cached_entity(path, res)
         return res
 
-    # 2. Nếu không phải file trên đĩa, tra cứu trực tiếp từ VietJobs_cntt.csv theo jd_id
-    jd_text = get_jd_text_by_id(path)
-    if jd_text:
-        res = extract_entities(jd_text, model, use_cache=use_cache)
-        if use_cache and res:
-            set_cached_entity(path, res)
-            match = re.search(r"jd_(\d+)", path)
-            if match:
-                set_cached_entity(f"jd_{int(match.group(1)):04d}", res)
-        return res
-
-    raise FileNotFoundError(f"Không tìm thấy file hoặc JD ID trong VietJobs: {file_path}")
+    raise FileNotFoundError(f"Không tìm thấy file: {file_path}")
 
 
 if __name__ == "__main__":

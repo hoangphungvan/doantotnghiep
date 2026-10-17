@@ -13,13 +13,14 @@ if __package__ in (None, ""):
     sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 import config
-from src.extraction.entity_extractor import (extract_entities, extract_from_file, get_jd_text_by_id, normalize_path,
+from src.extraction.entity_extractor import (extract_entities, extract_from_file, normalize_path,
                                              read_pdf_text, read_text_file, PDF_TEXT_MIN_CHARS)
-from src.extraction.pair_features import extract_pair_features, to_vector, FEATURE_NAMES
+from src.extraction.pair_features import extract_pair_features, to_vector
 from src.representation.embedding_generator import EmbeddingGenerator
 from src.representation.graph_builder import build_graph
 from src.modeling.model import GCNModel, target_to_grade
-from src.modeling.stacker import STACKER_FILE, build_features, predict_grade
+import json
+from src.evaluation.hybrid import HYBRID_FILE, compute_semantic_scores, hybrid_score
 from src.inference.explain import gcn_attribution, match_entities, recruiter_summary, summarize
 
 
@@ -50,13 +51,10 @@ class CJMPredictor:
 
         self.embedding_gen = EmbeddingGenerator()
 
-        # Stacker (GCN + đặc trưng LLM theo cặp): đánh giá cross-validation lồng nhau tốt hơn hẳn GCN đơn; không có file
-        # thì dùng GCN đơn như trước.
-        self.stacker = None
-        if os.path.exists(STACKER_FILE):
-            import joblib
-            self.stacker = joblib.load(STACKER_FILE)
-            print(f"[Predictor] Stacker loaded from {STACKER_FILE}")
+        if not os.path.exists(HYBRID_FILE):
+            raise FileNotFoundError(f"Không tìm thấy {HYBRID_FILE}. Chạy: python src/evaluation/fit_hybrid.py")
+        with open(HYBRID_FILE, encoding="utf-8") as f:
+            self.hybrid = json.load(f)
 
         print(f"[Predictor] Model loaded from {model_path}")
         print(f"[Predictor] Trained epoch: {checkpoint.get('epoch', '?')}")
@@ -90,7 +88,7 @@ class CJMPredictor:
     @torch.no_grad()
     def _predict_from_entities(self, cv_entities: dict, jd_entities: dict,
                                cv_text: str = None, jd_text: str = None) -> dict:
-        """Core prediction logic. Có cv_text và jd_text (và stacker) thì dùng stacker; ngược lại dùng GCN đơn."""
+        """Core prediction logic. Điểm = Hybrid (α·GCN + (1−α)·SBERT); mức theo ngưỡng hiệu chỉnh; LLM (nếu có cv_text, jd_text) chỉ dùng để diễn giải."""
         cv_main, cv_feats = self.embedding_gen.build_node_features(cv_entities)
         jd_main, jd_feats = self.embedding_gen.build_node_features(jd_entities)
 
@@ -99,15 +97,14 @@ class CJMPredictor:
 
         logits = self.model(data)
         gcn_score = torch.sigmoid(logits).item()
-        score, grade, mode, llm = gcn_score, target_to_grade(gcn_score), "gcn", {}
-        if self.stacker is not None and cv_text and jd_text:
+        sem_score = float(compute_semantic_scores([data])[0])
+        score = hybrid_score(gcn_score, sem_score, self.hybrid)
+        grade = target_to_grade(score)
+        llm = {}
+        if cv_text and jd_text:
             llm = extract_pair_features(cv_text, jd_text)
-            vec = to_vector(llm)
-            if vec["pf_valid"]:
-                g = data.cpu()
-                g.g_feat = torch.tensor([[vec[n] for n in FEATURE_NAMES]], dtype=torch.float32)
-                raw = float(self.stacker.predict(build_features([g], [gcn_score]))[0])
-                score, grade, mode = min(1.0, max(0.0, raw / config.NUM_GRADES)), predict_grade(raw), "stacker"
+            if not to_vector(llm)["pf_valid"]:
+                llm = {}   # LLM lỗi: diễn giải dựa trên đối chiếu thực thể
         match = "MATCH" if grade >= config.RELEVANT_GRADE else "NOT MATCH"
 
         entity_match = match_entities(cv_entities, jd_entities, self.embedding_gen)
@@ -115,8 +112,8 @@ class CJMPredictor:
 
         return {
             "score": round(score, 4),
-            "mode": mode,
             "gcn_score": round(gcn_score, 4),
+            "semantic_score": round(sem_score, 4),
             "llm_requirements": llm.get("requirements", []),
             "llm_conditions": llm.get("conditions", []),
             "grade": grade,
@@ -124,7 +121,7 @@ class CJMPredictor:
             "label": match,
             "cv_entities": cv_entities,
             "jd_entities": jd_entities,
-            "explanation": recruiter_summary(grade, llm if mode == "stacker" else None, entity_match),  # ngắn gọn, cho nhà tuyển dụng
+            "explanation": recruiter_summary(grade, llm or None, entity_match),  # ngắn gọn, cho nhà tuyển dụng
             "explanation_detail": summarize(entity_match, attribution),  # kỹ thuật: khớp từng loại thực thể, đóng góp của nút GCN
             "entity_match": entity_match,
             "gcn_attribution": attribution,
@@ -161,7 +158,7 @@ def _read_any(path: str):
             text = read_pdf_text(path)
             return text if len(text) >= PDF_TEXT_MIN_CHARS else None
         return read_text_file(path)
-    return get_jd_text_by_id(path)
+    return None
 
 
 def predict_interactive():

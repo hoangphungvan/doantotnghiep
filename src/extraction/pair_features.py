@@ -1,21 +1,11 @@
 """
-Đặc trưng theo cặp CV–JD do LLM đọc trực tiếp hai văn bản (không qua danh sách thực thể).
+Đánh giá cặp CV–JD bằng LLM, CHỈ dùng để sinh diễn giải cho nhà tuyển dụng (không tham gia chấm điểm).
 
-Chẩn đoán cho thấy độ phủ tính từ thực thể gần như không dùng được (tương quan 0,22 với độ phủ chuẩn), trong khi LLM
-đọc trực tiếp đạt 0,66. Hàm này lấy: các yêu cầu BẮT BUỘC của JD và CV có bằng chứng đáp ứng hay không, các điều kiện
-cứng, số năm kinh nghiệm yêu cầu so với CV, và công nghệ trong tiêu đề JD có xuất hiện ở CV không.
-
-Một lần gọi LLM xử lý MỘT CV với nhiều JD (huấn luyện: 15 JD/CV = 104 lần gọi cho cả bộ dữ liệu, vừa hạn mức
-500 lượt/ngày của Gemini miễn phí). Suy luận một cặp dùng cùng prompt với lô 1 JD, nên đặc trưng nhất quán.
-Kết quả cache theo hash (phiên bản prompt, model LLM, CV, JD), nên đổi LLM không lẫn kết quả vào data/cache/pair_features.jsonl (ghi nối tiếp).
-
-Chạy hàng loạt cho toàn bộ cặp đã gán nhãn (chạy lại được, bỏ qua cặp đã có):
-    python src/extraction/pair_features.py --workers 3
+LLM đọc trực tiếp hai văn bản và trả về: các yêu cầu BẮT BUỘC của JD mà CV có bằng chứng đáp ứng hay không, các điều
+kiện cứng, số năm kinh nghiệm yêu cầu so với CV, và công nghệ trong tiêu đề JD có xuất hiện ở CV không.
+Kết quả cache theo hash (phiên bản prompt, model LLM, CV, JD) trong data/cache/pair_features.jsonl.
 """
 
-import argparse
-import concurrent.futures as cf
-import glob
 import hashlib
 import json
 import os
@@ -24,7 +14,6 @@ import sys
 import threading
 import time
 
-import numpy as np
 
 if __package__ in (None, ""):
     sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
@@ -33,10 +22,8 @@ import config
 from src.extraction.entity_extractor import _get_client
 
 CACHE_FILE = os.path.join(config.DATA_CACHE_DIR, "pair_features.jsonl")
-OUT_CSV = os.path.join(config.DATA_PROCESSED_DIR, "pair_features.csv")
 FEATURE_NAMES = ["pf_coverage", "pf_n_req", "pf_years_gap", "pf_hard_missing", "pf_title_tech_missing", "pf_valid"]
 
-REASONING_EFFORT = os.getenv("LLM_REASONING_EFFORT")   # vd "none" cho qwen3.x trên Groq; bỏ trống = mặc định của model
 PROMPT_VERSION = "v2-batch"
 PROMPT = """Bạn là chuyên viên tuyển dụng. Dưới đây là MỘT CV và {n} JD. Hãy đánh giá CV với TỪNG JD một cách độc lập (kết quả của JD này không được ảnh hưởng tới JD khác).
 
@@ -60,7 +47,7 @@ _cache = None
 
 
 def _key(cv_text: str, jd_text: str) -> str:
-    return hashlib.sha256((PROMPT_VERSION + "\n" + config.LLM_MODEL + "\n" + str(REASONING_EFFORT) + "\n" + cv_text.strip() + "\n||\n" + jd_text.strip()).encode("utf-8")).hexdigest()
+    return hashlib.sha256((PROMPT_VERSION + "\n" + config.LLM_MODEL + "\n" + cv_text.strip() + "\n||\n" + jd_text.strip()).encode("utf-8")).hexdigest()
 
 
 def _load_cache() -> dict:
@@ -89,10 +76,8 @@ def _call(cv_text: str, jds: dict, max_retries: int = 4) -> dict:
     msg = [{"role": "user", "content": PROMPT.format(n=len(jds), cv=cv_text.strip(), jds=jd_block)}]
     for attempt in range(1, max_retries + 1):
         try:
-            extra = {"reasoning_effort": REASONING_EFFORT} if REASONING_EFFORT else {}   # "none" tắt suy luận → nhanh hơn nhiều
             raw = _get_client().chat.completions.create(
-                model=config.LLM_MODEL, messages=msg, temperature=0, max_tokens=16000,
-                extra_body=extra).choices[0].message.content
+                model=config.LLM_MODEL, messages=msg, temperature=0, max_tokens=16000).choices[0].message.content
             raw = re.sub(r"<think>[\s\S]*?</think>", "", raw)
             res = json.loads(re.search(r"\{[\s\S]*\}", raw).group())["results"]
             return {str(r["jd_id"]): r for r in res
@@ -144,44 +129,3 @@ def to_vector(d: dict) -> dict:
     return {"pf_coverage": cov, "pf_n_req": float(len(reqs)), "pf_years_gap": min(gap, 6.0) / 6.0,
             "pf_hard_missing": float(sum(not c.get("met") for c in conds)),
             "pf_title_tech_missing": float(d.get("title_tech_in_cv") is False), "pf_valid": 1.0}
-
-
-def pair_feature_vector(cv_text: str, jd_text: str, **kw) -> np.ndarray:
-    v = to_vector(extract_pair_features(cv_text, jd_text, **kw))
-    return np.array([v[n] for n in FEATURE_NAMES], dtype=np.float32)
-
-
-if __name__ == "__main__":
-    import pandas as pd
-    from src.data_collection.prepare_training_data import load_pairs
-
-    parser = argparse.ArgumentParser(description="Tính đặc trưng LLM theo cặp: mỗi CV một lần gọi cho toàn bộ JD của nó")
-    parser.add_argument("--workers", type=int, default=3)
-    parser.add_argument("--limit-cvs", type=int, default=None, help="Chỉ N CV đầu (chạy thử)")
-    parser.add_argument("--cvs", type=str, default=None, help="Danh sách CV, cách nhau dấu phẩy (kiểm tra)")
-    parser.add_argument("--out", type=str, default=OUT_CSV)
-    args = parser.parse_args()
-
-    os.makedirs(config.DATA_CACHE_DIR, exist_ok=True)
-    pairs = load_pairs()
-    cv_ids = sorted(pairs.cv_id.unique())
-    if args.cvs:
-        cv_ids = args.cvs.split(",")
-    if args.limit_cvs:
-        cv_ids = cv_ids[:args.limit_cvs]
-    jds = pd.read_csv(os.path.join(config.DATA_RAW_DIR, "selected_jds.csv")).set_index("jd_id").jd_brief
-    t0, done = time.time(), [0]
-
-    def work(cv_id):
-        text = open(glob.glob(os.path.join(config.DATA_RAW_DIR, "cvs_synth", f"{cv_id}.*"))[0], encoding="utf-8").read()
-        mine = pairs[pairs.cv_id == cv_id].jd_id.tolist()
-        res = extract_cv_features(text, {j: jds[j] for j in mine})
-        done[0] += 1
-        print(f"{done[0]}/{len(cv_ids)} CV ({cv_id}: {len(res)}/{len(mine)} JD), {time.time() - t0:.0f}s", flush=True)
-        return [{"cv_id": cv_id, "jd_id": j, **to_vector(res.get(j, {}))} for j in mine]
-
-    with cf.ThreadPoolExecutor(args.workers) as ex:
-        rows = [r for part in ex.map(work, cv_ids) for r in part]
-    df = pd.DataFrame(rows)
-    df.to_csv(args.out, index=False)
-    print(f"[OK] {len(df)} cặp → {args.out}; hợp lệ {int(df.pf_valid.sum())}/{len(df)}; {time.time() - t0:.0f}s")

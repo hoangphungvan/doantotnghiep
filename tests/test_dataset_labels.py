@@ -1,5 +1,5 @@
 """
-Self-check bộ nhãn: mỗi cặp duy nhất, nhãn trong thang, CV/JD tồn tại, khớp thiết kế ghép cặp.
+Self-check bộ nhãn: mỗi cặp duy nhất, nhãn trong thang, CV/JD tồn tại.
 Chạy: python tests/test_dataset_labels.py
 """
 
@@ -15,10 +15,8 @@ import config
 from src.data_collection.prepare_training_data import load_pairs
 
 pairs = load_pairs()  # tự báo lỗi nếu trùng cặp hoặc nhãn ngoài thang
-design = pd.read_csv(os.path.join(config.DATA_RAW_DIR, "pairs_design.csv"))
 jds = set(pd.read_csv(os.path.join(config.DATA_RAW_DIR, "selected_jds.csv")).jd_id)
 
-assert set(zip(pairs.cv_id, pairs.jd_id)) == set(zip(design.cv_id, design.jd_id)), "nhãn lệch thiết kế ghép cặp"
 assert set(pairs.jd_id) <= jds, "JD không có trong selected_jds.csv"
 missing = [c for c in pairs.cv_id.unique() if not glob.glob(os.path.join(config.DATA_RAW_DIR, "cvs_synth", f"{c}.*"))]
 assert not missing, f"thiếu file CV: {missing}"

@@ -2,7 +2,7 @@
 Dựng bộ dữ liệu đồ thị cho GCN từ dữ liệu đã gán nhãn.
 
 Nguồn:
-  data/raw/judgments/claude_b*.csv — nhãn (cv_id, jd_id, grade 0-3)
+  data/raw/pairs_labeled.csv       — nhãn (cv_id, jd_id, grade 0-3) và 4 đặc trưng rubric
   data/raw/cvs_synth/<cv_id>.txt   — CV tổng hợp
   data/raw/selected_jds.csv        — JD thật; dùng cột jd_brief (đúng văn bản người chấm đã đọc)
 
@@ -38,17 +38,16 @@ from src.representation.graph_builder import build_graph
 
 GRAPH_DIR = config.GRAPH_DIR
 MANIFEST_CSV = os.path.join(config.DATA_PROCESSED_DIR, "dataset_manifest.csv")
-JUDGMENTS_GLOB = os.path.join(config.DATA_RAW_DIR, "judgments", "claude_b*.csv")
+LABELS_CSV = os.path.join(config.DATA_RAW_DIR, "pairs_labeled.csv")
 CV_DIR = os.path.join(config.DATA_RAW_DIR, "cvs_synth")
 JD_CSV = os.path.join(config.DATA_RAW_DIR, "selected_jds.csv")
 
 
 def load_pairs() -> pd.DataFrame:
-    """Gộp các file nhãn thành bảng (cv_id, jd_id, grade); báo lỗi nếu trùng cặp hoặc nhãn ngoài thang."""
-    files = sorted(glob.glob(JUDGMENTS_GLOB))
-    if not files:
-        raise FileNotFoundError(f"Không có file nhãn: {JUDGMENTS_GLOB}")
-    df = pd.concat([pd.read_csv(f, usecols=["cv_id", "jd_id", "grade"]) for f in files], ignore_index=True)
+    """Đọc bảng nhãn (cv_id, jd_id, grade); báo lỗi nếu trùng cặp hoặc nhãn ngoài thang."""
+    if not os.path.exists(LABELS_CSV):
+        raise FileNotFoundError(f"Không có file nhãn: {LABELS_CSV}")
+    df = pd.read_csv(LABELS_CSV, usecols=["cv_id", "jd_id", "grade"])
     if df.duplicated(["cv_id", "jd_id"]).any():
         raise ValueError("Có cặp (cv_id, jd_id) bị gán nhãn nhiều lần")
     if not df.grade.between(0, config.NUM_GRADES).all():

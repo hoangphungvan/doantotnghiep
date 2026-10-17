@@ -3,10 +3,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-LLM_API_KEY = os.getenv("LLM_API_KEY") or os.getenv("GROQ_API_KEY") or os.getenv("GEMINI_API_KEY")
-GROQ_API_KEY = LLM_API_KEY
-OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.groq.com/openai/v1")
-LLM_MODEL = os.getenv("LLM_MODEL", "qwen/qwen3.8-27b")
+# LLM: chỉ dùng Gemini (qua endpoint tương thích OpenAI). Khóa API đặt trong .env (không commit): LLM_API_KEY=<khóa Gemini>
+LLM_API_KEY = os.getenv("LLM_API_KEY") or os.getenv("GEMINI_API_KEY")
+OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://generativelanguage.googleapis.com/v1beta/openai/")
+LLM_MODEL = os.getenv("LLM_MODEL", "gemini-flash-lite-latest")
 
 # Model đa ngôn ngữ (hỗ trợ tiếng Việt tốt hơn all-MiniLM-L6-v2 vốn chủ yếu tiếng Anh).
 # paraphrase-multilingual-MiniLM-L12-v2 cùng dim 384 nên không đổi kiến trúc model.
@@ -42,10 +42,8 @@ ENTITY_WEIGHTS = {
 NUM_NODES = 2 + NUM_ENTITY_TYPES * 2  # 14 nodes: 2 main + 6 candidate + 6 JD
 
 # Cosine tối thiểu để coi hai mục thực thể là khớp ngữ nghĩa (diễn giải kết quả).
-# Kiểm tra lại trên 178 cặp gán nhãn tay (data/processed/semantic_match_labels.csv,
-# python src/evaluation/calibrate_semantic_threshold.py): tại 0.75 precision ~0.74, recall ~0.40;
-# ngưỡng tối ưu F0.5 (ưu tiên precision, vì khớp sai làm diễn giải sai) là 0.725, khoảng 90% [0.625, 0.75],
-# nên giữ 0.75. Hạ xuống 0.65 thì recall 0.64 nhưng precision chỉ 0.57. Phải hiệu chỉnh lại nếu đổi EMBEDDING_MODEL.
+# Đo trên 178 cặp gán nhãn tay: tại 0.75 precision ~0.74, recall ~0.40 (ưu tiên precision, vì khớp sai làm diễn giải sai).
+# Phải hiệu chỉnh lại nếu đổi EMBEDDING_MODEL.
 SEMANTIC_MATCH_THRESHOLD = 0.75
 
 # ---------------------------------------------------------------------------
@@ -83,10 +81,8 @@ NUM_EPOCHS = 100
 BATCH_SIZE = 32
 
 DATA_RAW_DIR = os.path.join(os.path.dirname(__file__), "data", "raw")
-VIETJOBS_IT_CSV = os.path.join(DATA_RAW_DIR, "VietJobs_cntt.csv")
 DATA_PROCESSED_DIR = os.path.join(os.path.dirname(__file__), "data", "processed")
 DATA_CACHE_DIR = os.path.join(os.path.dirname(__file__), "data", "cache")
 ENTITY_CACHE_FILE = os.path.join(DATA_CACHE_DIR, "entity_cache.json")
-JD_EMBEDDINGS_CACHE_FILE = os.path.join(DATA_CACHE_DIR, "jd_embeddings_cache.pt")
 GRAPH_DIR = os.path.join(DATA_PROCESSED_DIR, "graphs")
 MODEL_DIR = os.path.join(os.path.dirname(__file__), "models")

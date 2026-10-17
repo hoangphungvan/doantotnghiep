@@ -1,5 +1,5 @@
 """
-Hiệu chỉnh ngưỡng chuyển điểm GCN (sigmoid ∈ [0,1]) sang mức 0..3.
+Hiệu chỉnh ngưỡng chuyển điểm (GCN hoặc Hybrid, ∈ [0,1]) sang mức 0..3.
 
 Cách cũ round(score*3) giả định điểm phân bố đều theo mức; thực tế GCN dồn điểm về giữa thang nên
 hầu như mọi cặp rơi vào mức 1-2. Ở đây tìm 3 ngưỡng t1<t2<t3 tối đa hóa kappa trọng số bình phương
@@ -74,7 +74,7 @@ if __name__ == "__main__":
     ap.add_argument("--oof", default=OOF_CSV, help="CSV điểm out-of-fold (cột cv_id, grade và cột điểm)")
     ap.add_argument("--col", default="gcn_score", help="Tên cột điểm")
     ap.add_argument("--out", default=OUT_JSON, help="File JSON ghi ngưỡng")
-    ap.add_argument("--scale", type=float, default=1.0, help="Điểm tối đa của thang (GCN: 1; stacker hồi quy trên grade: 3)")
+    ap.add_argument("--scale", type=float, default=1.0, help="Điểm tối đa của thang (mặc định 1)")
     args = ap.parse_args()
     OUT_JSON = args.out
     df = pd.read_csv(args.oof)
@@ -103,7 +103,7 @@ if __name__ == "__main__":
     th, k = fit_thresholds(s, g)
     os.makedirs(config.MODEL_DIR, exist_ok=True)
     with open(OUT_JSON, "w", encoding="utf-8") as f:
-        json.dump({"thresholds": th, "fitted_on": "out-of-fold GCN scores, 5-fold CV theo CV", "objective": "macro_f1",
+        json.dump({"thresholds": th, "fitted_on": f"out-of-fold {args.col}, 5-fold CV theo CV", "objective": "macro_f1",
                    "n_pairs": int(len(df)), "macro_f1_in_sample": round(k, 4),
                    "macro_f1_cross_fit": round(f1_score(g, cross, average="macro"), 4)},
                   f, indent=2)

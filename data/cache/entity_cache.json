@@ -10412,5 +10412,75 @@
       "Amazon Redshift",
       "xây dựng pipeline phục vụ hệ thống phân tích thương mại điện tử"
     ]
+  },
+  "v2:c61e6eaaf3ce79eac6a95263e8ce6c3086f376eb84efd8f5294e3354ae8af8be": {
+    "soft_skills": [
+      "Phân tích vấn đề",
+      "làm việc nhóm",
+      "quản lý công việc",
+      "tư duy dữ liệu"
+    ],
+    "hard_skills": [
+      "Python",
+      "SQL",
+      "Apache Airflow",
+      "Pandas",
+      "PySpark",
+      "Apache Spark",
+      "ETL/ELT",
+      "PostgreSQL",
+      "MySQL",
+      "Amazon Redshift",
+      "AWS S3",
+      "AWS EC2",
+      "Docker",
+      "Git",
+      "Linux"
+    ],
+    "education": [
+      "Kỹ sư"
+    ],
+    "field_of_education": [
+      "Khoa học máy tính"
+    ],
+    "industry_sector": [
+      "Công nghệ thông tin"
+    ],
+    "role": [
+      "Python Data Engineer",
+      "Data Engineer"
+    ],
+    "preferred_skills": []
+  },
+  "v2:7da6a0182dd418d2557fdf88eab316c20658e81a5dbd46d96390308d8f2aa9e9": {
+    "soft_skills": [],
+    "hard_skills": [
+      "Python",
+      "Pandas",
+      "PySpark",
+      "Apache Airflow",
+      "SQL",
+      "PostgreSQL",
+      "ETL/ELT",
+      "Data Warehouse",
+      "Docker",
+      "AWS",
+      "Git",
+      "Linux"
+    ],
+    "education": [],
+    "field_of_education": [],
+    "industry_sector": [
+      "Data Engineering"
+    ],
+    "role": [
+      "Python Data Engineer",
+      "Data Engineer",
+      "Data Analyst"
+    ],
+    "preferred_skills": [
+      "Amazon Redshift",
+      "Thương mại điện tử"
+    ]
   }
 }
