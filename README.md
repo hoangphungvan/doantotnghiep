@@ -183,6 +183,7 @@ Kết luận (mức) lấy từ Hybrid, danh sách đáp ứng lấy từ đánh
 │   ├── processed/                # cv_oof_predictions.csv, graphs/ (sinh ra, không commit)
 │   └── cache/                    # entity_cache.json
 ├── models/                       # best_model.pt, hybrid.json, grade_thresholds.json
+├── examples/                     # cv_example.txt, jd_example.txt: một cặp CV–JD để chạy thử
 └── tests/
 ```
 
