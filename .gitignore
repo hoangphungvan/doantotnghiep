@@ -5,3 +5,6 @@ __pycache__/
 data/processed/graphs/
 models/cv_folds/
 data/cache/entity_cache.json.tmp
+
+# Mã dựng báo cáo, hình và số liệu thực nghiệm (giữ cục bộ, không commit)
+report/
