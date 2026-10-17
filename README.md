@@ -64,7 +64,7 @@ Nhãn đo **năng lực làm được việc**: ứng viên dư kinh nghiệm kh
 
 ## Kết quả
 
-Chiều chính là **mỗi JD xếp hạng các CV**. Cách chia dữ liệu quyết định độ lạc quan của kết quả, nên báo cáo ba cách chia (điểm out-of-fold, bootstrap theo truy vấn; mã trong `report/`):
+Chiều chính là **mỗi JD xếp hạng các CV**. Cách chia dữ liệu quyết định độ lạc quan của kết quả, nên báo cáo ba cách chia (điểm out-of-fold, bootstrap theo truy vấn):
 
 | Cách chia | CV mới? | JD mới? | NDCG@5 Hybrid (α = 0,3) | NDCG@5 SBERT cosine |
 |:---|:---:|:---:|:---:|:---:|
@@ -72,7 +72,7 @@ Chiều chính là **mỗi JD xếp hạng các CV**. Cách chia dữ liệu quy
 | Theo JD | không | có | 0,85 | 0,83 |
 | **Loại trừ cả hai** | có | có | 0,89 | 0,89 |
 
-**Cách chia loại trừ cả hai** (đại diện cho triển khai thật: ứng viên mới, tin tuyển dụng mới; 187 truy vấn, GCN 3 seed; `python report/double_split_eval.py`). Mỗi lượt chỉ huấn luyện trên khoảng 666 cặp nên mô hình học yếu hơn; danh sách ngắn (khoảng 5 CV) nên NDCG cao hơn các bảng khác, chỉ so sánh trong cùng bảng:
+**Cách chia loại trừ cả hai** (đại diện cho triển khai thật: ứng viên mới, tin tuyển dụng mới; 187 truy vấn, GCN 3 seed). Mỗi lượt chỉ huấn luyện trên khoảng 666 cặp nên mô hình học yếu hơn; danh sách ngắn (khoảng 5 CV) nên NDCG cao hơn các bảng khác, chỉ so sánh trong cùng bảng:
 
 | Phương pháp | NDCG@5 | NDCG@10 | MRR | AUC |
 |:---|:---:|:---:|:---:|:---:|
@@ -87,7 +87,7 @@ Chiều chính là **mỗi JD xếp hạng các CV**. Cách chia dữ liệu quy
 
 **Đọc kết quả thận trọng.**
 - Với ứng viên và JD mới, Hybrid (α = 0,3) **chỉ ngang** SBERT cosine thuần (NDCG@5 0,890 so với 0,889), GCN đơn kém hơn (0,832); khoảng tin cậy chồng nhau. Ở chuẩn này NDCG@10 gần như phẳng với α từ 0 đến 0,6. Hybrid có lợi rõ khi mô hình đã thấy CV hoặc JD lúc huấn luyện hoặc ở chiều ứng viên.
-- Chẩn đoán (`report/diagnostics.py`): điểm Hybrid chỉ giải thích khoảng 54% biến thiên của nhãn, trong khi 7 đặc trưng của rubric giải thích 99%; trong cùng vai trò, tách mức 3 khỏi mức 2 bằng độ phủ yêu cầu thật đạt AUC 0,94, còn điểm Hybrid chỉ 0,64. Thông tin còn thiếu là độ phủ yêu cầu bắt buộc và lệch cấp độ. Thêm dữ liệu có lợi (AUC GCN 0,73 → 0,83 khi dữ liệu huấn luyện tăng 25% → 100%) nhưng chưa đủ.
+- Chẩn đoán: điểm Hybrid chỉ giải thích khoảng 54% biến thiên của nhãn, trong khi 7 đặc trưng của rubric giải thích 99%; trong cùng vai trò, tách mức 3 khỏi mức 2 bằng độ phủ yêu cầu thật đạt AUC 0,94, còn điểm Hybrid chỉ 0,64. Thông tin còn thiếu là độ phủ yêu cầu bắt buộc và lệch cấp độ. Thêm dữ liệu có lợi (AUC GCN 0,73 → 0,83 khi dữ liệu huấn luyện tăng 25% → 100%) nhưng chưa đủ.
 - α = 0,3 là lựa chọn trung gian: với CV mới, chọn α theo NDCG@10 theo JD cho α = 0 (SBERT thuần); α = 0,3 chỉ kém 0,011 NDCG@10 ở tình huống đó và được lợi ở các tình huống còn lại.
 - Dao động giữa các lần huấn luyện GCN khoảng ±0,01 NDCG, ±0,015 AUC; không diễn giải chênh lệch nhỏ hơn.
 
@@ -151,8 +151,6 @@ python -X utf8 tests/test_entity_extractor.py
 python -X utf8 tests/test_explain.py
 ```
 
-Số liệu và hình trong báo cáo: `report/` (`experiments.py`, `rank_by_jd.py`, `jd_split_eval.py`, `double_split_eval.py`, `diagnostics.py`, `analysis.py`, `figures.py`, `build_report.py`).
-
 ### Diễn giải kết quả
 
 `result["explanation"]` (`recruiter_summary` trong `src/inference/explain.py`) là bản ngắn gọn, song ngữ Việt/Anh cho nhà tuyển dụng, ví dụ:
@@ -185,7 +183,6 @@ Kết luận (mức) lấy từ Hybrid, danh sách đáp ứng lấy từ đánh
 │   ├── processed/                # cv_oof_predictions.csv, graphs/ (sinh ra, không commit)
 │   └── cache/                    # entity_cache.json
 ├── models/                       # best_model.pt, hybrid.json, grade_thresholds.json
-├── report/                       # mã dựng báo cáo, hình, số liệu thực nghiệm
 └── tests/
 ```
 
