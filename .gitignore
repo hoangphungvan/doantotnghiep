@@ -8,3 +8,11 @@ data/cache/entity_cache.json.tmp
 
 # Mã dựng báo cáo, hình và số liệu thực nghiệm (giữ cục bộ, không commit)
 report/
+
+# Bộ dữ liệu công khai tải từ ngoài (lớn, không commit)
+data/raw/cnamuangtoun/
+data/raw/lang-ukrecruitment-dataset-candidate-profiles-english/
+data/raw/vacancy-resume-matching-dataset-main/
+
+# Cache embedding (tự tính lại khi chạy, lớn)
+data/cache/req_emb_*.npz

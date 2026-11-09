@@ -151,6 +151,19 @@ python -X utf8 tests/test_entity_extractor.py
 python -X utf8 tests/test_explain.py
 ```
 
+### Mô hình mức yêu cầu (đồ thị yêu cầu JD – mục CV)
+
+Kết quả trích xuất yêu cầu bằng LLM đã có sẵn trong `data/cache/req_cache.json`, nên chạy lại không cần khóa API. Embedding BGE-M3 sẽ được tính lại ở lần chạy đầu và lưu vào `data/cache/req_emb_*.npz`. Kết quả được ghi vào `report/results/`.
+
+```bash
+# Cấu hình chính, 5 seed, chia fold theo JD (đổi "jd" thành "double" để loại trừ cả hai chiều CV và JD)
+python -X utf8 src/modeling/train_req.py jd --seeds 5 --configs pair_skip_mlp_specfeat
+# → report/results/req_jd.csv (điểm trên tập kiểm tra), req_jd_val.csv (NDCG@10 trên validation), maxsim_req.csv
+
+# Bộ ngoài resume-job-fit: cần tải trước data/raw/cnamuangtoun/ (thư mục này không có trong repo)
+python -X utf8 src/modeling/train_ext.py --protocol jd --configs pair_skip_mlp_specfeat
+```
+
 ### Diễn giải kết quả
 
 `result["explanation"]` (`recruiter_summary` trong `src/inference/explain.py`) là bản ngắn gọn, song ngữ Việt/Anh cho nhà tuyển dụng, ví dụ:
