@@ -248,7 +248,7 @@ def _parse_entities(raw: str) -> dict:
 # Core API call with retry
 # ---------------------------------------------------------------------------
 
-def _call_llm(messages: list, model: str, max_retries: int = 3) -> Optional[str]:
+def _call_llm(messages: list, model: str, max_retries: int = 3, temperature: float = 0.1) -> Optional[str]:
     """Gọi LLM API (Gemini), retry khi 429. Trả về raw string hoặc None nếu thất bại."""
     for attempt in range(1, max_retries + 1):
         try:
@@ -256,7 +256,7 @@ def _call_llm(messages: list, model: str, max_retries: int = 3) -> Optional[str]
             resp = _get_client().chat.completions.create(
                 model=model,
                 messages=messages,
-                temperature=0.1,
+                temperature=temperature,
                 max_tokens=2000,
             )
             raw = resp.choices[0].message.content.strip()

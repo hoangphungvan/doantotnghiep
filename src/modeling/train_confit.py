@@ -4,7 +4,8 @@ Baseline ConFit (nhận xét của cô): bi-encoder tinh chỉnh bằng học t�
  - Batch không lặp JD/CV; các CV trong batch đã biết là phù hợp (nhãn >= 2) với JD neo bị che khỏi mẫu âm (tránh âm giả).
  - Cùng fold, cùng cách tách 15% JD làm validation, cùng seed với mô hình chính (src/modeling/train_req.py).
    Epoch tốt nhất (kể cả epoch 0 = chưa tinh chỉnh) chọn bằng NDCG@10 trên validation.
-Chạy: python src/modeling/train_confit.py <jd|double> [--seeds 5] [--epochs 3] [--maxlen 256] [--model ...]
+Chạy: python src/modeling/train_confit.py <jd|double|ext> [--seeds 5] [--epochs 3] [--maxlen 256] [--model ...]
+      ext = resume-job-fit (cnamuangtoun), cùng fold với train_ext.py --protocol jd (gộp train+test, 5 fold theo JD)
       Trên GPU (Kaggle): notebooks/kaggle_confit.ipynb, dùng --maxlen 512
 Ra:   report/results/confit_<protocol><tag>.csv (cv_id, jd_id, qid, seed, score), confit_<protocol><tag>_val.csv
 """
@@ -40,6 +41,20 @@ def pairs_used():
     P = pd.read_csv(os.path.join(config.DATA_RAW_DIR, "pairs_labeled.csv"))
     P = P[[ok(cv[c], "CV") and ok(jd[j], "JD") for c, j in zip(P.cv_id, P.jd_id)]]
     return [SimpleNamespace(cv_id=c, jd_id=j, grade=int(y)) for c, j, y in zip(P.cv_id, P.jd_id, P.grade)], cv, jd
+
+
+def pairs_ext():
+    """Đúng tập cặp của train_ext.py --protocol jd: train rồi test gốc, cả hai phía trích xuất được mục, cặp trùng giữ lần đầu."""
+    from src.modeling.train_ext import load, sid
+    d, C = load(), R._load()
+    ok = lambda t, k: bool((C.get(R._key(t, k)) or {}).get("items"))
+    gs, seen, cv, jd = [], set(), {}, {}
+    for r in pd.concat([d["train"], d["test"]]).itertuples():
+        if ok(r.resume_text, "CV") and ok(r.job_description_text, "JD") and (r.cv_id, r.jd_id) not in seen:
+            seen.add((r.cv_id, r.jd_id))
+            gs.append(SimpleNamespace(cv_id=r.cv_id, jd_id=r.jd_id, grade=int(r.grade)))
+            cv[r.cv_id], jd[r.jd_id] = r.resume_text, r.job_description_text
+    return gs, cv, jd
 
 
 def batches(trip, bs, rng):
@@ -124,7 +139,7 @@ def train_fold(tr, va, test, cv, jd, a, seed):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("protocol", choices=["jd", "double"])
+    ap.add_argument("protocol", choices=["jd", "double", "ext"])
     ap.add_argument("--seeds", type=int, default=5)
     ap.add_argument("--epochs", type=int, default=3)
     ap.add_argument("--maxlen", type=int, default=256)
@@ -135,8 +150,9 @@ if __name__ == "__main__":
     ap.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     ap.add_argument("--tag", default="")
     a = ap.parse_args()
-    gs, cv, jd = pairs_used()
-    folds, qf = splits(gs, a.protocol)
+    gs, cv, jd = pairs_ext() if a.protocol == "ext" else pairs_used()
+    folds, qf = splits(gs, "jd" if a.protocol == "ext" else a.protocol)
+    print(len(gs), "cặp", flush=True)
     rows, vrows = [], []
     for seed in range(a.seeds):
         for f, pool, test in folds:
