@@ -56,6 +56,9 @@ class ReqGNN(nn.Module):
         s = self.edge_mlp(torch.cat([h["req"][ei[0]], h["item"][ei[1]], h["req"][ei[0]] * h["item"][ei[1]], cos], 1)).squeeze(-1)
         if self.skip:
             s = s + self.sc * (cos.squeeze(-1) - self.c0)
+        m = getattr(self, "edge_mask", None)              # mặt nạ cạnh khớp trong [0,1] (GNNExplainer, report/b_gnnexplainer.py); 0 = bỏ cạnh
+        if m is not None:
+            s = m * s + (1 - m) * -4.0                    # -4: cùng giá trị với yêu cầu không có mục khớp
         n = h["req"].size(0)
         c = scatter(s, ei[0], 0, dim_size=n, reduce="max" if self.agg == "max" else "mean")
         c = torch.where(torch.bincount(ei[0], minlength=n) > 0, c, torch.full_like(c, -4.0))  # yêu cầu không có mục cùng loại

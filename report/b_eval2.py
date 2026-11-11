@@ -47,14 +47,16 @@ else:
 BASE = {"maxsim_req": "MaxSim (mức yêu cầu)", "maxsim_hard|BGE-M3": "MaxSim hard_skills BGE-M3", "sbert|MiniLM (hiện tại)": "SBERT MiniLM",
         "sbert|BGE-M3": "SBERT BGE-M3", "sbert|mE5-base": "SBERT mE5-base", "sbert|Vietnamese-SBERT": "SBERT Vietnamese",
         "ce|bge-reranker-v2-m3": "Cross-encoder bge-reranker-v2-m3", "llm|gemini-3.5-flash-lite": "LLM chấm điểm (Gemini 3.5 Flash-Lite, nhiệt độ 0)", "bm25": "BM25", "tfidf": "TF-IDF", "gcn_old": "GCN 14 nút (cũ)", "hybrid_old": "Hybrid cũ", "mlp_old": "MLP"}
-CF = os.path.join(RES, f"confit_{P}{a.confit}.csv")
-if os.path.exists(CF):                      # baseline có huấn luyện (nhiều seed): cột = điểm trung bình các seed, bảng in ± độ lệch chuẩn
-    CF = pd.read_csv(CF)
-    n = CF.groupby("seed").size()
-    CF = CF[CF.seed.isin(n[n == n.max()].index)]          # bỏ seed chạy dở (chưa đủ mọi fold)
-    print("ConFit: dùng seed", sorted(CF.seed.unique()))
-    base = base.merge(CF.groupby(["cv_id", "jd_id"]).score.mean().rename("confit").reset_index(), on=["cv_id", "jd_id"])
-    BASE["confit"] = "ConFit (bi-encoder MNRL)"
+SEEDED = {}                                # baseline có huấn luyện (nhiều seed): cột = điểm trung bình các seed, bảng in ± độ lệch chuẩn
+for k, (f, nme) in {"confit": (f"confit_{P}{a.confit}.csv", "ConFit (bi-encoder MNRL)"), "bilstm": (f"bilstm_{P}.csv", "BiLSTM (siamese, PJFNN rút gọn)")}.items():
+    f = os.path.join(RES, f)
+    if os.path.exists(f):
+        x = pd.read_csv(f)
+        n = x.groupby("seed").size()
+        x = x[x.seed.isin(n[n == n.max()].index)]          # bỏ seed chạy dở (chưa đủ mọi fold)
+        print(nme, ": dùng seed", sorted(x.seed.unique()))
+        base = base.merge(x.groupby(["cv_id", "jd_id"]).score.mean().rename(k).reset_index(), on=["cv_id", "jd_id"])
+        BASE[k], SEEDED[k] = nme, x
 BASE = {k: v for k, v in BASE.items() if k in base.columns}
 
 # --- chọn cấu hình chính trên validation ---
@@ -101,8 +103,8 @@ for cfg in sorted(set(L.config)):
     mm = pd.DataFrame(ms)
     rows.append((f"req-GNN [{cfg}]" + (" *" if cfg == main else ""), mm.mean().to_dict(), mm.std().to_dict()))
 for k, nme in BASE.items():
-    if k == "confit":
-        mm = pd.DataFrame([allm(base.drop(columns="confit").merge(x[["cv_id", "jd_id", "score"]], on=["cv_id", "jd_id"]), "score") for _, x in CF.groupby("seed")])
+    if k in SEEDED:
+        mm = pd.DataFrame([allm(base.drop(columns=k).merge(x[["cv_id", "jd_id", "score"]], on=["cv_id", "jd_id"]), "score") for _, x in SEEDED[k].groupby("seed")])
         rows.append((nme, mm.mean().to_dict(), mm.std().to_dict() if len(mm) > 1 else None))
     else:
         rows.append((nme, allm(base, k), None))
