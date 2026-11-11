@@ -8,6 +8,7 @@ Nút:
 Cạnh:
   (req -match-> item) và chiều ngược: nối yêu cầu với mục CV CÙNG LOẠI, thuộc tính = cosine; mỗi yêu cầu chỉ giữ top-m (M_TOP)
   (spec -cmp-> spec): JD→CV cho cấp độ và cho số năm; thuộc tính = [chênh JD−CV, max(0, JD−CV)] để phạt khi CV thấp hơn JD
+Chuẩn hóa ESCO (tùy chọn, REQ_ESCO=<ngưỡng>): xem src/representation/esco.py.
 Embedding: mô hình đa ngữ mạnh hơn MiniLM (mặc định BAAI/bge-m3), cache theo văn bản trong data/cache/req_emb_<tên>.npz.
 """
 
@@ -20,10 +21,12 @@ from torch_geometric.data import HeteroData
 
 import config
 from src.extraction.requirement_extractor import ITEM_TYPES, LEVELS
+from src.representation.esco import esco_text
 
 EMB_MODEL = os.getenv("REQ_EMB_MODEL", "BAAI/bge-m3")
 M_TOP = int(os.getenv("REQ_M_TOP", "3"))     # ablation top-m: đặt biến môi trường trước khi import
-DEFAULT_GRAPH = "REQ_M_TOP" not in os.environ and "REQ_EMB_MODEL" not in os.environ
+ESCO_TAU = float(os.getenv("REQ_ESCO", "0"))  # > 0: thay mục hard/soft skill bằng nhãn ESCO khi độ giống >= ngưỡng (src/representation/esco.py)
+DEFAULT_GRAPH = "REQ_M_TOP" not in os.environ and "REQ_EMB_MODEL" not in os.environ and not ESCO_TAU
 YEAR_SCALE = 10.0
 _model = None
 _store = None
@@ -71,7 +74,8 @@ def _spec(kind, side, val, scale):
 def build_pair_graph(cv: dict, jd: dict, emb: Embedder, grade=None, m_top: int = M_TOP) -> HeteroData:
     """cv, jd: kết quả extract_requirements. Mỗi bên cần ≥1 mục."""
     ri, ci = jd["items"], cv["items"]
-    er, ec = emb.encode([x["text"] for x in ri]), emb.encode([x["text"] for x in ci])
+    txt = (lambda x: esco_text(x["text"], x["type"], ESCO_TAU, EMB_MODEL)) if ESCO_TAU else (lambda x: x["text"])
+    er, ec = emb.encode([txt(x) for x in ri]), emb.encode([txt(x) for x in ci])
     d = HeteroData()
     d["req"].x = torch.from_numpy(np.hstack([er, np.stack([np.concatenate([_onehot(x["type"]), [float(x["required"]), (x["years"] or 0) / YEAR_SCALE]]) for x in ri]).astype(np.float32)]))
     d["item"].x = torch.from_numpy(np.hstack([ec, np.stack([np.concatenate([_onehot(x["type"]), [(x["years"] or 0) / YEAR_SCALE]]) for x in ci]).astype(np.float32)]))

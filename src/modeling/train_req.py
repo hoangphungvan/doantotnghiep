@@ -213,7 +213,7 @@ if __name__ == "__main__":
             print("xong", name, "seed", seed, flush=True)
         pd.DataFrame(rows, columns=["cv_id", "jd_id", "qid", "config", "seed", "score"]).to_csv(os.path.join(RES, f"req_{a.protocol}{a.tag}.csv"), index=False)
         pd.DataFrame(vrows, columns=["config", "seed", "fold", "val_ndcg10"]).to_csv(os.path.join(RES, f"req_{a.protocol}{a.tag}_val.csv"), index=False)
-    if DEFAULT_GRAPH:                                     # không ghi đè baseline MaxSim khi chạy ablation top-m/embedding
-        ms = pd.DataFrame([(g.cv_id, g.jd_id, maxsim_req(g)) for g in gs], columns=["cv_id", "jd_id", "maxsim_req"])
-        ms.to_csv(os.path.join(RES, "maxsim_req.csv"), index=False)
+    ms = pd.DataFrame([(g.cv_id, g.jd_id, maxsim_req(g)) for g in gs], columns=["cv_id", "jd_id", "maxsim_req"])
+    # biến thể đồ thị (top-m/embedding/ESCO) ghi MaxSim riêng theo tag, không ghi đè baseline MaxSim chính
+    ms.to_csv(os.path.join(RES, "maxsim_req.csv" if DEFAULT_GRAPH else f"maxsim_req_{a.protocol}{a.tag}.csv"), index=False)
     print("đã lưu")
