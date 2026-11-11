@@ -5,7 +5,9 @@ Cấu hình chính pair_skip_mlp_specfeat, chia theo JD, 5 seed (cùng fold/vali
 Cả hai cách cho một độ quan trọng trên mỗi CẠNH KHỚP (yêu cầu JD, mục CV):
  - attention : w_r · σ(s_e)  (trọng số attention của yêu cầu × độ khớp của cạnh, đúng các đại lượng dùng để sinh lời giải thích)
  - GNNExplainer (Ying et al., 2019): học mặt nạ mềm m_e = σ(θ_e) trên cạnh khớp (s_e -> m_e·s_e + (1-m_e)·(-4)),
-   mục tiêu bài toán hồi quy như PyG: (f(m) - f_gốc)^2 + 0,005·Σm + 1,0·entropy(m); Adam lr 0,01, 100 bước (mặc định PyG), θ khởi tạo N(1; 0,1).
+   mục tiêu bài toán hồi quy như PyG: (f(m) - f_gốc)^2 + 0,005·Σm + 1,0·entropy(m); Adam lr 0,01, 100 bước, θ ~ N(0, std) với
+   std = gain(relu)·sqrt(2/(2N)), N = số nút của đồ thị (đúng mặc định torch_geometric.explain.algorithm.GNNExplainer).
+   Lưu ý: với phép max, cạnh không phải max không nhận gradient từ số hạng giữ điểm; mặt nạ của chúng chỉ do hai số hạng điều chuẩn quyết định.
  - ngẫu nhiên: đối chứng.
 Độ đo (mỗi cặp kiểm tra, mỗi seed):
  - xóa top-k cạnh (k = 1, 3) theo từng cách -> điểm giảm bao nhiêu (càng lớn càng trung thành)
@@ -43,10 +45,11 @@ def fwd(m, B, mask=None):
     return out
 
 
-def gnnexplainer(m, B, f0, eg, n_graph, epochs=100, lr=0.01, size=0.005, ent=1.0, seed=0):
+def gnnexplainer(m, B, f0, eg, n_graph, n_nodes, epochs=100, lr=0.01, size=0.005, ent=1.0, seed=0):
     torch.manual_seed(seed)
     E = eg.numel()
-    th = torch.nn.Parameter(1 + 0.1 * torch.randn(E))
+    std = torch.nn.init.calculate_gain("relu") * torch.sqrt(2.0 / (2 * n_nodes[eg].float()))
+    th = torch.nn.Parameter(torch.randn(E) * std)
     opt = torch.optim.Adam([th], lr=lr)
     for _ in range(epochs):
         mk = torch.sigmoid(th)
@@ -102,7 +105,8 @@ if __name__ == "__main__":
             imp = {"attention": w[ei[0]] * torch.sigmoid(s)}
             secs["attention"] += time.time() - t0
             t0 = time.time()
-            imp["gnnexplainer"] = gnnexplainer(m, B, f0, eg, ng, seed=seed)
+            nn_ = torch.bincount(B["req"].batch, minlength=ng) + torch.bincount(B["item"].batch, minlength=ng)
+            imp["gnnexplainer"] = gnnexplainer(m, B, f0, eg, ng, nn_, seed=seed)
             secs["gnnexplainer"] += time.time() - t0
             imp["random"] = torch.rand(eg.numel(), generator=rng)
             ne = torch.bincount(eg, minlength=ng)
