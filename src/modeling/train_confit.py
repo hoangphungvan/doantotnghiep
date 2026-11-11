@@ -141,6 +141,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("protocol", choices=["jd", "double", "ext"])
     ap.add_argument("--seeds", type=int, default=5)
+    ap.add_argument("--seed0", type=int, default=0, help="seed đầu tiên (chạy thêm seed mà không lặp lại)")
     ap.add_argument("--epochs", type=int, default=3)
     ap.add_argument("--maxlen", type=int, default=256)
     ap.add_argument("--bs", type=int, default=16)
@@ -154,7 +155,7 @@ if __name__ == "__main__":
     folds, qf = splits(gs, "jd" if a.protocol == "ext" else a.protocol)
     print(len(gs), "cặp", flush=True)
     rows, vrows = [], []
-    for seed in range(a.seeds):
+    for seed in range(a.seed0, a.seed0 + a.seeds):
         for f, pool, test in folds:
             js = sorted({g.jd_id for g in pool})
             vj = set(np.random.default_rng(seed).choice(js, size=max(1, int(0.15 * len(js))), replace=False))
