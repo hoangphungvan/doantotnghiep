@@ -20,8 +20,9 @@ MAIN = "pair_skip_mlp_specfeat"
 NAME = {"abl_nospec": "Bỏ cấp độ/số năm (đặc trưng + phạt)", "abl_nopen": "Bỏ phạt đơn điệu cấp độ/số năm",
         "abl_noreq": "Bỏ phân biệt bắt buộc/ưu tiên", "abl_mean": "max → mean", "abl_noattn": "attention → trọng số đều",
         "abl_bce": "loss pairwise → BCE", "abl_noskip": "Bỏ đường tắt cosine", "abl_L1": "+1 lớp GATv2", "abl_L2": "+2 lớp GATv2",
-        "abl_L3": "+3 lớp GATv2", "m1": "top-m = 1", "m5": "top-m = 5", "me5": "Embedding mE5-base thay BGE-M3"}
-VAR = ("m1", "m5", "me5")
+        "abl_L3": "+3 lớp GATv2", "m1": "top-m = 1", "m5": "top-m = 5", "me5": "Embedding mE5-base thay BGE-M3",
+        "esco": "Chuẩn hóa kỹ năng ESCO (ngưỡng 0,85)"}
+VAR = ("m1", "m5", "me5", "esco")
 
 
 def load(setting):
