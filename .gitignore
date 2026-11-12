@@ -14,6 +14,7 @@ data/raw/cnamuangtoun/
 data/raw/lang-ukrecruitment-dataset-candidate-profiles-english/
 data/raw/vacancy-resume-matching-dataset-main/
 data/raw/esco/
+data/raw/snehaanbhawal/
 
 # Cache embedding (tự tính lại khi chạy, lớn)
 data/cache/req_emb_*.npz
