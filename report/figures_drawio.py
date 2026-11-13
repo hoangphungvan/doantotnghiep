@@ -178,7 +178,7 @@ def hinh_2_4():
     d.edge(e, f, "Không: epoch kế", ex=0, ey=0.5, nx=0, ny=0.6, pts=((50, 645), (50, 396)))
     o = d.box(330, 980, 360, 120, "Kết thúc huấn luyện", "nạp lại trạng thái tốt nhất → mô hình chấm điểm;<br>NDCG@10 validation để chọn cấu hình", "io")
     d.edge(e, o, "Có: dừng", ex=0.5, ey=1, nx=0.5, ny=0)
-    d.text(760, 760, 690, 120, "Ký hiệu: s = điểm phù hợp của cặp (logit, không giới hạn);<br>y = mức phù hợp 0–3 do người gán; c_r = độ phủ (logit) của yêu cầu r;<br>"
+    d.text(760, 760, 690, 120, "Ký hiệu: s = điểm phù hợp của cặp (logit, không giới hạn);<br>y = mức phù hợp của cặp (nhãn của bộ dữ liệu); c_r = độ phủ (logit) của yêu cầu r;<br>"
            "w_r = trọng số attention của yêu cầu r (tổng bằng 1 trong mỗi đồ thị).", 13, italic=False, align="left", color="#000000")
     d.legend(1120, [("io", "Dữ liệu / kết quả"), ("prep", "Lan truyền xuôi"), ("level", "Hàm mất mát"), ("rank", "Lan truyền ngược"),
                     ("score", "Cập nhật tham số"), ("graph", "Validation"), ("label", "Điều kiện rẽ nhánh")], step=190)
