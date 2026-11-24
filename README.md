@@ -242,13 +242,18 @@ python -X utf8 tests/test_explain.py
 
 ### Chạy trên Kaggle
 
-Dùng notebook [`kaggle/cjm_kaggle.ipynb`](kaggle/cjm_kaggle.ipynb):
-1. Push code lên GitHub, kể cả `models/req_model.pt`.
-2. Trên Kaggle chọn *Create → Notebook → File → Import Notebook* rồi tải file này lên.
-3. Bật *GPU T4* và *Internet*.
-4. Sửa `BRANCH` trong cell đầu cho đúng nhánh, rồi chọn *Run All*.
+Các notebook nằm trong `notebooks/`. Notebook chính là [`notebooks/kaggle_main_v2.ipynb`](notebooks/kaggle_main_v2.ipynb), cùng khuôn với `kaggle_main.ipynb` (v1). Notebook này:
+- huấn luyện mô hình triển khai `main_pairbce`;
+- so sánh `pair_skip_mlp_specfeat` với `main_pairbce`, mỗi cấu hình 5 seed, trên 3 thiết lập: bộ đề tài chia theo JD, bộ đề tài loại trừ cả hai chiều, và resume-job-fit;
+- in NDCG@10 ở ô gần cuối.
 
-Notebook tự clone repo vào `/kaggle/working`, cài `torch_geometric`, tải hai bộ dữ liệu ngoài vào đúng đường dẫn mà code cần, sau đó chạy `final`, đánh giá `jd`/`double` và kiểm định ngoài. Kết quả được gom vào `cjm_outputs.zip` ở tab *Output*. Không cần khóa Gemini, vì kết quả trích xuất của mọi bộ dữ liệu đã có trong `req_cache.json`. Repo private thì thêm secret `GITHUB_TOKEN`.
+Cách chạy:
+1. Trên Kaggle chọn *Create → New Notebook*, rồi *File → Import Notebook* và tải file lên.
+2. Bật *GPU T4 x2* và *Internet*.
+3. Bấm *Save Version → Save & Run All*.
+4. Lấy `req_model.pt` và `*_kaggle2*.csv` ở tab *Output*.
+
+Không cần khóa Gemini: kết quả trích xuất đã có trong `req_cache.json`. Notebook clone nhánh `new-update-version`; muốn chạy nhánh khác thì sửa ở ô đầu.
 
 ### Ví dụ diễn giải (`result["explanation"]["vi"]`)
 

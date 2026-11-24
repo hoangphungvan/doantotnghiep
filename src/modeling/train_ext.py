@@ -101,8 +101,9 @@ if __name__ == "__main__":
         emb.encode(texts)                                     # mã hóa một lần, tránh ghi cache lặp lại cho từng cặp
     tr, te = graphs(data["train"], cache, emb), graphs(data["test"], cache, emb)
     print(f"train {len(tr)} cặp, test {len(te)} cặp", flush=True)
-    if DEFAULT_GRAPH:                                     # không ghi đè baseline MaxSim khi chạy ablation top-m/embedding
-        pd.DataFrame([(g.cv_id, g.jd_id, maxsim_req(g)) for g in tr + te], columns=["cv_id", "jd_id", "maxsim_req"]).drop_duplicates(["cv_id", "jd_id"]).to_csv(os.path.join(RES, "ext_cna_maxsim.csv"), index=False)
+    # biến thể đồ thị (top-m/embedding/ESCO) ghi MaxSim riêng theo tag, không ghi đè baseline MaxSim chính
+    pd.DataFrame([(g.cv_id, g.jd_id, maxsim_req(g)) for g in tr + te], columns=["cv_id", "jd_id", "maxsim_req"]).drop_duplicates(["cv_id", "jd_id"]).to_csv(
+        os.path.join(RES, "ext_cna_maxsim.csv" if DEFAULT_GRAPH else f"ext_cna_maxsim{a.tag}.csv"), index=False)
     dims = {k: tr[0][k].x.size(1) for k in ("req", "item", "spec")}
     if a.protocol == "official":
         folds = [(0, tr, te)]
