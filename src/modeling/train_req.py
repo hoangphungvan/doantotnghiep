@@ -6,6 +6,7 @@ Mỗi lượt: 15% JD của phần huấn luyện làm validation (dừng sớm 
 tập kiểm tra chỉ được chấm một lần sau khi mô hình đã chốt. Nhiều seed.
 
 Chạy: python src/modeling/train_req.py <jd|double> [--seeds 5] [--configs pair,pair_skip,...]
+      python src/modeling/train_req.py final     # mô hình triển khai -> models/req_model.pt (dùng bởi CJMPredictor)
 Ra:   report/results/req_<protocol>.csv      (cv_id, jd_id, qid, config, seed, score)  điểm trên tập kiểm tra
       report/results/req_<protocol>_val.csv  (config, seed, fold, val_ndcg10)           để chọn cấu hình
 """
@@ -26,7 +27,7 @@ from src.data_collection.extract_requirements_all import load_texts
 from src.evaluation.metrics import ndcg_at_k
 from src.extraction import requirement_extractor as R
 from src.modeling.req_model import ReqGNN
-from src.representation.req_graph import DEFAULT_GRAPH, Embedder, build_pair_graph
+from src.representation.req_graph import DEFAULT_GRAPH, M_TOP, Embedder, build_pair_graph
 
 RES = os.path.join(ROOT, "report", "results")
 os.makedirs(RES, exist_ok=True)  # report/ không nằm trong repo
@@ -60,6 +61,7 @@ CONFIGS.update({
     "abl_mean": ("pair", {**MAIN, "agg": "mean"}),                         # max -> mean
     "abl_noattn": ("pair", {**MAIN, "attn": False}),                       # attention -> trọng số đều
     "abl_bce": ("bce", MAIN),                                              # loss pairwise -> BCE theo điểm
+    "main_pairbce": ("pair_bce", MAIN),                                     # pairwise + BCE (cấu hình triển khai)
     "abl_noskip": ("pair", {**MAIN, "skip": False}),                       # bỏ đường tắt cosine
     "abl_L1": ("pair", {**MAIN, "layers": 1}),                             # thêm 1/2/3 lớp truyền tin GATv2
     "abl_L2": ("pair", {**MAIN, "layers": 2}),
@@ -141,7 +143,10 @@ def run(train, val, test, name, seed, dims, key="jd_id", ret_model=False):
     torch.manual_seed(seed)
     rng = np.random.default_rng(seed)
     m = ReqGNN(dims, **kw)
-    lossf = (lambda m_, b: pair_loss(m_(b), b, key)) if loss_kind == "pair" else (lambda m_, b: F.binary_cross_entropy_with_logits(m_(b), b.y))
+    bce = lambda o, b: F.binary_cross_entropy_with_logits(o, b.y)
+    lossf = {"pair": lambda m_, b: pair_loss(m_(b), b, key), "bce": lambda m_, b: bce(m_(b), b),
+             # pair + BCE: BCE neo thang điểm chung giữa các JD (cần cho mức 0–3 tuyệt đối), pair giữ thứ tự trong JD
+             "pair_bce": lambda m_, b: (lambda o: pair_loss(o, b, key) + bce(o, b))(m_(b))}[loss_kind]
     vb = jd_batches(val, 16, False, key=key)
     opt = torch.optim.AdamW(m.parameters(), lr=1e-3, weight_decay=1e-4)
     best, bad, state = 1e9, 0, None
@@ -189,7 +194,55 @@ def splits(gs, protocol):
     return out, lambda g: f"{cell[(g.cv_id, g.jd_id)]}|{g.jd_id}"
 
 
+def split_val(pool, seed):
+    """Tách 15% JD của pool làm validation (dừng sớm)."""
+    js = sorted({g.jd_id for g in pool})
+    vj = set(np.random.default_rng(seed).choice(js, size=max(1, int(0.15 * len(js))), replace=False))
+    return [g for g in pool if g.jd_id not in vj], [g for g in pool if g.jd_id in vj]
+
+
+FINAL_FILE = os.path.join(config.MODEL_DIR, "req_model.pt")
+
+
+def train_final(gs, dims, name="main_pairbce", seed=0):
+    """Mô hình triển khai -> models/req_model.pt.
+    (1) 5 fold theo JD: điểm out-of-fold trên tập kiểm tra -> NDCG@10 và ngưỡng mức 0–3.
+        Loss pair + BCE neo thang điểm chung, nên ngưỡng fit trên điểm out-of-fold gộp dùng được cho mô hình cuối;
+        macro-F1 báo cáo theo cross-fit (ngưỡng của mỗi fold fit trên 4 fold còn lại).
+    (2) Huấn luyện lại trên toàn bộ (15% JD làm validation dừng sớm)."""
+    from sklearn.metrics import f1_score
+    from src.evaluation.calibrate_thresholds import apply, fit_thresholds
+    grade = {(g.cv_id, g.jd_id): g.grade for g in gs}
+    oof, fold = [], []
+    for f, pool, test in splits(gs, "jd")[0]:
+        out = run(*split_val(pool, seed), test, name, seed, dims)[0]
+        oof += out
+        fold += [f] * len(out)
+    s = 1 / (1 + np.exp(-np.array([x[2] for x in oof])))
+    gr, fold = np.array([grade[(c, j)] for c, j, _ in oof]), np.array(fold)
+    pred = np.zeros_like(gr)
+    for f in np.unique(fold):
+        pred[fold == f] = apply(s[fold == f], fit_thresholds(s[fold != f], gr[fold != f])[0])
+    by = {}
+    for (c, j, _), a, b in zip(oof, gr, s):
+        by.setdefault(j, []).append((a, b))
+    nd = np.mean([ndcg_at_k([a for a, _ in x], [b for _, b in x], 10) for x in by.values() if len(x) >= 2 and any(a >= 2 for a, _ in x)])
+    f1, exact = f1_score(gr, pred, average="macro"), float(np.mean(pred == gr))
+    th = fit_thresholds(s, gr)[0]
+    print(f"5 fold theo JD (tập kiểm tra): NDCG@10 {nd:.3f} | mức 0–3 (cross-fit): macro-F1 {f1:.3f}, khớp chính xác {exact:.1%}")
+    _, vn, m = run(*split_val(gs, seed), [], name, seed, dims, ret_model=True)
+    os.makedirs(config.MODEL_DIR, exist_ok=True)
+    torch.save({"state": m.state_dict(), "dims": dims, "kw": CONFIGS[name][1], "config": name, "emb_model": Embedder().name,
+                "m_top": M_TOP, "thresholds": th, "oof_ndcg10": float(nd), "oof_macro_f1": float(f1), "oof_exact": exact,
+                "val_ndcg10": vn}, FINAL_FILE)
+    print(f"đã lưu {FINAL_FILE} (val NDCG@10 {vn:.3f}, ngưỡng {[round(t, 3) for t in th]})")
+
+
 if __name__ == "__main__":
+    if sys.argv[1:2] == ["final"]:                        # python src/modeling/train_req.py final
+        gs = build_all()
+        train_final(gs, {k: gs[0][k].x.size(1) for k in ("req", "item", "spec")})
+        sys.exit()
     ap = argparse.ArgumentParser()
     ap.add_argument("protocol", choices=["jd", "double"])
     ap.add_argument("--seeds", type=int, default=5)
@@ -203,9 +256,7 @@ if __name__ == "__main__":
     for name in a.configs.split(","):
         for seed in range(a.seeds):
             for f, pool, test in folds:
-                js = sorted({g.jd_id for g in pool})
-                vj = set(np.random.default_rng(seed).choice(js, size=max(1, int(0.15 * len(js))), replace=False))
-                tr, va = [g for g in pool if g.jd_id not in vj], [g for g in pool if g.jd_id in vj]
+                tr, va = split_val(pool, seed)
                 out, vn = run(tr, va, test, name, seed, dims)
                 vrows.append((name, seed, f, vn))
                 q = {(g.cv_id, g.jd_id): qf(g) for g in test}

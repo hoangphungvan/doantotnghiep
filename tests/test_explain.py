@@ -114,6 +114,48 @@ def test_summarize_bilingual():
     assert "Node đẩy điểm lên" in text["vi"] and "Nodes raising" in text["en"]
 
 
+def test_requirement_details_and_model_readout():
+    """ReqGNN chưa huấn luyện trên đồ thị nhỏ: mỗi yêu cầu có 1 dòng; yêu cầu không có mục CV cùng loại thì không 'met'."""
+    from torch_geometric.data import Batch
+    from src.modeling.req_model import ReqGNN
+    from src.representation.req_graph import build_pair_graph
+
+    class Emb:
+        def encode(self, texts):
+            v = np.array([[1.0, 0.0] if "py" in t.lower() else [0.0, 1.0] for t in texts], dtype=np.float32)
+            return v
+
+    it = lambda t, k="hard_skill", req=True: {"text": t, "type": k, "required": req, "years": None}
+    cv = {"level": "junior", "total_years": 1, "items": [it("Python"), it("Docker")]}
+    jd = {"level": "senior", "total_years": 5, "items": [it("python 3"), it("Thạc sĩ", "education"), it("K8s", req=False)]}
+    g = Batch.from_data_list([build_pair_graph(cv, jd, Emb())])
+    m = ReqGNN({k: g[k].x.size(1) for k in ("req", "item", "spec")}, skip=True, layers=0, spec_feat=True).eval()
+    with torch.no_grad():
+        m(g)
+    from src.inference.explain import requirement_details
+    d = requirement_details(m, g, cv, jd)
+    assert [r["text"] for r in d] == ["python 3", "Thạc sĩ", "K8s"]
+    assert d[0]["met"] and d[0]["best_match"] == "Python"       # skip-cosine: cos=1 → phủ cao
+    assert not d[1]["met"] and d[1]["best_match"] is None       # không có mục CV loại education
+    assert abs(sum(r["weight"] for r in d) - 1) < 2e-3           # attention softmax trong một đồ thị (weight làm tròn 3 chữ số)
+    s = recruiter_summary(1, {"requirements": [r for r in d if r["required"]], "level_gap": ("senior", "junior")})
+    assert "senior" in s["vi"] and "1/2" in s["vi"]
+
+
+def test_gcn_batched_readout_matches_single():
+    from torch_geometric.data import Batch
+    from src.modeling.model import GCNModel
+    from src.representation.graph_builder import build_graph
+    torch.manual_seed(0)
+    f = lambda: {e: np.random.randn(12) for e in config.ENTITY_TYPES}
+    gs = [build_graph(np.random.randn(12), f(), np.random.randn(12), f()) for _ in range(3)]
+    m = GCNModel(input_dim=12).eval()
+    with torch.no_grad():
+        single = torch.cat([m(g) for g in gs])
+        batched = m(Batch.from_data_list(gs))
+    assert torch.allclose(single, batched, atol=1e-5)
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_") and callable(fn):

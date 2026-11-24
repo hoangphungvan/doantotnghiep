@@ -1,5 +1,9 @@
 """
 Pipeline dự đoán: đánh giá mức độ phù hợp giữa CV và JD.
+
+Hai engine:
+- "req" (mặc định khi có models/req_model.pt): mô hình mức yêu cầu ReqGNN; điểm và diễn giải lấy từ cùng một mô hình.
+- "gcn": đồ thị 14 nút + Hybrid (α·GCN + (1−α)·SBERT), diễn giải bằng LLM riêng.
 """
 
 import os
@@ -21,22 +25,29 @@ from src.representation.graph_builder import build_graph
 from src.modeling.model import GCNModel, target_to_grade
 import json
 from src.evaluation.hybrid import HYBRID_FILE, compute_semantic_scores, hybrid_score
-from src.inference.explain import gcn_attribution, match_entities, recruiter_summary, summarize
+from src.inference.explain import gcn_attribution, match_entities, recruiter_summary, requirement_details, summarize
+
+REQ_MODEL_FILE = os.path.join(config.MODEL_DIR, "req_model.pt")
 
 
 class CJMPredictor:
     """Predictor cho Candidate-Job Matching."""
 
     def __init__(self, model_path: str = None,
-                 device: Optional[torch.device] = None):
+                 device: Optional[torch.device] = None, engine: str = None):
         """
         Args:
             model_path: Đường dẫn tới file model đã train
             device: CPU hoặc CUDA
+            engine: "req" | "gcn"; mặc định "req" nếu có models/req_model.pt
         """
         self.device = device or torch.device(
             "cuda" if torch.cuda.is_available() else "cpu"
         )
+        self.engine = engine or ("req" if os.path.exists(REQ_MODEL_FILE) else "gcn")
+        if self.engine == "req":
+            self._init_req(model_path or REQ_MODEL_FILE)
+            return
 
         model_path = model_path or os.path.join(config.MODEL_DIR, "best_model.pt")
         if not os.path.exists(model_path):
@@ -60,13 +71,56 @@ class CJMPredictor:
         print(f"[Predictor] Trained epoch: {checkpoint.get('epoch', '?')}")
         print(f"[Predictor] Val metrics: {checkpoint.get('val_metrics', {})}")
 
+    def _init_req(self, path: str):
+        from src.modeling.req_model import ReqGNN
+        from src.representation.req_graph import Embedder
+        if not os.path.exists(path):
+            raise FileNotFoundError(f"Không tìm thấy {path}. Chạy: python src/modeling/train_req.py final")
+        self.ckpt = torch.load(path, weights_only=False, map_location="cpu")
+        self.model = ReqGNN(self.ckpt["dims"], **self.ckpt["kw"])
+        self.model.load_state_dict(self.ckpt["state"])
+        self.model.eval()
+        self.emb = Embedder(self.ckpt["emb_model"])   # cùng model embedding lúc huấn luyện
+        print(f"[Predictor] ReqGNN ({self.ckpt['config']}, {self.ckpt['emb_model']}), out-of-fold NDCG@10 {self.ckpt['oof_ndcg10']:.3f}")
+
+    @torch.no_grad()
+    def _predict_req(self, cv_text: str, jd_text: str) -> dict:
+        """Điểm = sigmoid(ReqGNN); mức theo ngưỡng lưu trong checkpoint; diễn giải đọc độ phủ từng yêu cầu của chính mô hình."""
+        from torch_geometric.data import Batch
+        from src.extraction.requirement_extractor import LEVELS, extract_requirements, save_cache
+        from src.representation.req_graph import build_pair_graph
+        cv, jd = extract_requirements(cv_text, "CV"), extract_requirements(jd_text, "JD")
+        save_cache()
+        if not cv["items"] or not jd["items"]:
+            raise ValueError("Không trích xuất được yêu cầu JD hoặc mục CV (LLM lỗi / văn bản rỗng)")
+        g = Batch.from_data_list([build_pair_graph(cv, jd, self.emb, m_top=self.ckpt["m_top"])])
+        score = torch.sigmoid(self.model(g)).item()
+        grade = int(sum(score >= t for t in self.ckpt["thresholds"]))
+        reqs = requirement_details(self.model, g, cv, jd)
+        jl, cl = jd["level"], cv["level"]
+        facts = {"requirements": [r for r in reqs if r["required"]], "jd_min_years": jd["total_years"], "cv_years": cv["total_years"],
+                 "level_gap": (jl, cl) if jl and cl and LEVELS.index(jl) > LEVELS.index(cl) else None}
+        return {
+            "engine": "req",
+            "score": round(score, 4),
+            "grade": grade,
+            "grade_label": config.GRADE_LABELS[grade],
+            "label": "MATCH" if grade >= config.RELEVANT_GRADE else "NOT MATCH",
+            "requirements": reqs,
+            "cv_requirements": cv,
+            "jd_requirements": jd,
+            "explanation": recruiter_summary(grade, facts),
+        }
+
     def predict_from_text(self, cv_text: str, jd_text: str) -> dict:
         """
         Dự đoán từ text thô.
 
         Returns:
-            dict với keys: score, label, cv_entities, jd_entities
+            dict với keys: score, grade, label, explanation (+ chi tiết theo engine)
         """
+        if self.engine == "req":
+            return self._predict_req(cv_text, jd_text)
         cv_entities = extract_entities(cv_text)
         jd_entities = extract_entities(jd_text)
 
@@ -75,14 +129,21 @@ class CJMPredictor:
     def predict_from_files(self, cv_path: str, jd_path: str) -> dict:
         """
         Dự đoán từ file CV và JD.
-        Tự động chọn text mode hoặc Vision mode tùy loại PDF.
+        Tự động chọn text mode hoặc Vision mode tùy loại PDF (Vision chỉ có ở engine "gcn").
         """
+        if self.engine == "req":
+            cv_text, jd_text = _read_any(cv_path), _read_any(jd_path)
+            if not cv_text or not jd_text:
+                raise ValueError("Không đọc được văn bản (PDF scan?). Dùng CJMPredictor(engine='gcn') để đọc bằng Vision.")
+            return self._predict_req(cv_text, jd_text)
         cv_entities = extract_from_file(cv_path)
         jd_entities = extract_from_file(jd_path)
         return self._predict_from_entities(cv_entities, jd_entities, _read_any(cv_path), _read_any(jd_path))
 
     def predict_from_entities(self, cv_entities: dict, jd_entities: dict) -> dict:
-        """Dự đoán từ entities đã trích xuất sẵn."""
+        """Dự đoán từ entities đã trích xuất sẵn (chỉ engine "gcn")."""
+        if self.engine == "req":
+            raise ValueError("engine 'req' cần văn bản: dùng predict_from_text")
         return self._predict_from_entities(cv_entities, jd_entities)
 
     @torch.no_grad()
@@ -222,7 +283,7 @@ def predict_interactive():
         print("\n  Diễn giải (VI):\n" + result["explanation"]["vi"])
         print("\n  Explanation (EN):\n" + result["explanation"]["en"])
         if input("\nXem chi tiết kỹ thuật? (y/N): ").strip().lower() == "y":
-            print(result["explanation_detail"]["vi"])
+            _print_detail(result)
 
         if "cv_entities" in result:
             print("\n  CV Entities:")
@@ -233,6 +294,16 @@ def predict_interactive():
                 print(f"    {k}: {v}")
 
 
+def _print_detail(result: dict):
+    """Chi tiết kỹ thuật: engine req in độ phủ từng yêu cầu; engine gcn in khớp thực thể + đóng góp nút."""
+    if result.get("engine") == "req":
+        for r in result["requirements"]:
+            tag = "bắt buộc" if r["required"] else "ưu tiên"
+            print(f"  [{'x' if r['met'] else ' '}] {r['text']} ({tag}, phủ {r['coverage']:.2f}, trọng số {r['weight']:.2f}) <- {r['best_match']}")
+    else:
+        print(result["explanation_detail"]["vi"])
+
+
 if __name__ == "__main__":
     import argparse
 
@@ -240,13 +311,14 @@ if __name__ == "__main__":
     parser.add_argument("--cv", type=str, help="Duong dan CV (PDF/TXT)")
     parser.add_argument("--jd", type=str, help="Duong dan JD (PDF/TXT) hoac jd_id (vd jd_0105)")
     parser.add_argument("--model", type=str, default=None)
+    parser.add_argument("--engine", choices=["req", "gcn"], default=None)
     parser.add_argument("--interactive", action="store_true")
     args = parser.parse_args()
 
     if args.interactive or not (args.cv and args.jd):
         predict_interactive()
     else:
-        predictor = CJMPredictor(model_path=args.model)
+        predictor = CJMPredictor(model_path=args.model, engine=args.engine)
         cv_path = normalize_path(args.cv)
         jd_path = normalize_path(args.jd)
         if os.path.exists(cv_path) and (os.path.exists(jd_path) or jd_path.lower().startswith("jd_")):
@@ -256,12 +328,6 @@ if __name__ == "__main__":
         print(f"\nKET QUA: {result['label']}")
         print(f"Diem: {result['score']}")
         print(f"Muc: {result['grade']}/3 — {result['grade_label']}")
-        print("\nCV Entities:")
-        for k, v in result["cv_entities"].items():
-            if v:
-                print(f"  {k}: {v}")
-        print("\nJD Entities:")
-        for k, v in result["jd_entities"].items():
-            if v:
-                print(f"  {k}: {v}")
+        print("\n" + result["explanation"]["vi"] + "\n")
+        _print_detail(result)
 

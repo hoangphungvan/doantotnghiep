@@ -102,20 +102,10 @@ class GCNModel(nn.Module):
             x = self.dropout(x)
             x = x + residual  # residual connection
 
-        batch_vec = getattr(data, 'batch', None)
-        if batch_vec is not None:
-            batch_size = batch_vec.max().item() + 1
-
-            v_c_list = []
-            v_jd_list = []
-            for b in range(batch_size):
-                mask = (batch_vec == b)
-                nodes_in_graph = mask.nonzero(as_tuple=True)[0]
-                v_c_list.append(x[nodes_in_graph[0]])
-                v_jd_list.append(x[nodes_in_graph[1]])
-
-            h_c = torch.stack(v_c_list)
-            h_jd = torch.stack(v_jd_list)
+        ptr = getattr(data, 'ptr', None)
+        if ptr is not None:                      # Batch: nút 0/1 của mỗi đồ thị nằm ở vị trí ptr và ptr+1
+            h_c = x[ptr[:-1] + config.NODE_CANDIDATE]
+            h_jd = x[ptr[:-1] + config.NODE_JD]
         else:
             h_c = x[config.NODE_CANDIDATE].unsqueeze(0)
             h_jd = x[config.NODE_JD].unsqueeze(0)

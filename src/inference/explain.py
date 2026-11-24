@@ -226,6 +226,10 @@ def recruiter_summary(grade: int, llm: dict = None, match: dict = None) -> dict:
                             (f"CV có khoảng {_fmt_years(have)} năm" if have > 0 else "CV chưa có kinh nghiệm liên quan"))
             notes_en.append(f"JD asks for at least {_fmt_years(need)} years of experience, " +
                             (f"CV shows about {_fmt_years(have)}" if have > 0 else "CV shows no relevant experience"))
+        if llm.get("level_gap"):
+            jl, cl = llm["level_gap"]
+            notes_vi.append(f"JD tuyển cấp {jl}, CV ở cấp {cl}")
+            notes_en.append(f"JD hires at {jl} level, CV is at {cl} level")
         if llm.get("title_tech_in_cv") is False:
             notes_vi.append("công nghệ nêu trong tiêu đề JD chưa thấy trong CV")
             notes_en.append("the technology named in the JD title is not found in the CV")
@@ -242,3 +246,22 @@ def recruiter_summary(grade: int, llm: dict = None, match: dict = None) -> dict:
         en.append(f"JD skills not mentioned in CV: {_items(hs['missing'], vi=False) or 'none'}.")
 
     return {"vi": "\n".join(vi), "en": "\n".join(en)}
+
+
+# ---------------------------------------------------------------------------
+# Diễn giải mô hình mức yêu cầu (ReqGNN): đọc thẳng từ mô hình nên khớp với điểm
+# ---------------------------------------------------------------------------
+
+def requirement_details(model, g, cv: dict, jd: dict) -> list:
+    """Sau khi đã gọi model(g) (g là Batch 1 đồ thị): mỗi yêu cầu JD kèm độ phủ, trọng số attention và mục CV khớp nhất.
+    met = logit độ phủ > 0 (tức sigmoid > 0.5).
+    ponytail: ngưỡng 0.5 trên độ phủ chưa hiệu chỉnh riêng; nếu diễn giải lệch nhãn nhiều, fit ngưỡng trên nhãn từng yêu cầu."""
+    w, c, s = model.last
+    ei = g["req", "match", "item"].edge_index
+    out = []
+    for r, it in enumerate(jd["items"]):
+        e = (ei[0] == r).nonzero().flatten()
+        best = cv["items"][int(ei[1][e[s[e].argmax()]])]["text"] if len(e) else None
+        out.append({"text": it["text"], "type": it["type"], "required": it["required"], "met": bool(c[r] > 0),
+                    "coverage": round(float(torch.sigmoid(c[r])), 3), "weight": round(float(w[r]), 3), "best_match": best})
+    return out

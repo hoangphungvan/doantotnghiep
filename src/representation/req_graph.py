@@ -25,35 +25,27 @@ EMB_MODEL = os.getenv("REQ_EMB_MODEL", "BAAI/bge-m3")
 M_TOP = int(os.getenv("REQ_M_TOP", "3"))     # ablation top-m: đặt biến môi trường trước khi import
 DEFAULT_GRAPH = "REQ_M_TOP" not in os.environ and "REQ_EMB_MODEL" not in os.environ
 YEAR_SCALE = 10.0
-_model = None
-_store = None
-
-
-def _cache_path():
-    return os.path.join(config.DATA_CACHE_DIR, "req_emb_" + re.sub(r"\W+", "_", EMB_MODEL) + ".npz")
-
-
 class Embedder:
-    """encode(list[str]) -> ma trận chuẩn hóa; nhớ vector theo văn bản."""
+    """encode(list[str]) -> ma trận chuẩn hóa; nhớ vector theo văn bản. name: model embedding (mặc định EMB_MODEL)."""
 
-    def __init__(self):
-        p = _cache_path()
-        self.vec = {}
-        if os.path.exists(p):
-            z = np.load(p, allow_pickle=True)
+    def __init__(self, name: str = None):
+        self.name = name or EMB_MODEL
+        self.path = os.path.join(config.DATA_CACHE_DIR, "req_emb_" + re.sub(r"\W+", "_", self.name) + ".npz")
+        self.model, self.vec = None, {}
+        if os.path.exists(self.path):
+            z = np.load(self.path, allow_pickle=True)
             self.vec = dict(zip(z["keys"].tolist(), z["vecs"]))
 
     def encode(self, texts):
-        global _model
         miss = sorted({t for t in texts if t not in self.vec})
         if miss:
-            if _model is None:
+            if self.model is None:
                 from sentence_transformers import SentenceTransformer
-                _model = SentenceTransformer(EMB_MODEL)
-                _model.max_seq_length = 128  # mỗi mục chỉ là cụm từ ngắn
-            v = _model.encode(miss, normalize_embeddings=True, batch_size=64, show_progress_bar=False)
+                self.model = SentenceTransformer(self.name)
+                self.model.max_seq_length = 128  # mỗi mục chỉ là cụm từ ngắn
+            v = self.model.encode(miss, normalize_embeddings=True, batch_size=64, show_progress_bar=False)
             self.vec.update(zip(miss, v.astype(np.float32)))
-            np.savez(_cache_path(), keys=np.array(list(self.vec), dtype=object), vecs=np.stack(list(self.vec.values())))
+            np.savez(self.path, keys=np.array(list(self.vec), dtype=object), vecs=np.stack(list(self.vec.values())))
         return np.stack([self.vec[t] for t in texts]) if texts else np.zeros((0, 1024), np.float32)
 
 
